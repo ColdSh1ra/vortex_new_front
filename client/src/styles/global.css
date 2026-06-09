@@ -1,0 +1,78 @@
+:root {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  --yellow-bg-color: #FFAC00;
+  --main-text-color: #fff;
+  --grey-color: #D4D4D4;
+  --blue-color-1: #798192;
+  --blue-color-2: #49556E;
+  --blue-color-3: #2B3342;
+  --blue-color-4: #19202E;
+  --blue-color-5: #0C121E;
+  --desktop-padding: 60px;
+  --desktop-gap: 8px; /* mobile as well */
+  --mobile-padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.header {
+  /* position: fixed;
+  top: 8px;
+  left: 60px; */
+  /* width: 100%; */
+  margin: 6px 60px 10px 60px;
+  background: var(--blue-color-3);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 30px;
+}
+
+.header .brand.header-logo-container {
+  height: fit-content;
+  display: flex;
+}
+
+.header .nav-list {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header img.tecdoc-license-link {
+  width: 107px;
+  height: 30px;
+  border-radius: 8px;
+}
+.header .nav-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.header .nav-link.tcd-link{
+  height: fit-content;
+  display: flex;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  margin: 0 auto;
+  max-width: 920px;
+  padding: 24px;
+}
