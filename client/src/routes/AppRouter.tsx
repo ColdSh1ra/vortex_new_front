@@ -3,6 +3,7 @@ import HeaderMain from '../components/layout/HeaderMain';
 import ContactPage from '../pages/ContactPage';
 import FaqPage from '../pages/FaqPage';
 import MainPage from '../pages/MainPage';
+import FooterMain from "../components/layout/FooterMain";
 
 function AppRouter() {
   return (
@@ -16,6 +17,7 @@ function AppRouter() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
+        <FooterMain />
     </div>
   );
 }
