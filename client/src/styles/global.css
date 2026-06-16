@@ -1,7 +1,7 @@
 :root {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
-  --yellow-bg-color: #FFAC00;
+  --orange-bg-color: #FFAC00;
   --main-text-color: #fff;
   --grey-color: #D4D4D4;
   --blue-color-1: #798192;
@@ -10,7 +10,9 @@
   --blue-color-4: #19202E;
   --blue-color-5: #0C121E;
   --desktop-padding: 60px;
-  --desktop-gap: 8px; /* mobile as well */
+  --gap-8: 8px; /* mobile as well */
+  --gap-20: 20px;
+  --gap-40: 40px;
   --mobile-padding: 20px;
   --border-radius: 20px;
 }
@@ -41,6 +43,26 @@ body {
   border-radius: var(--border-radius);
 }
 
+
+.display-flex{
+  display: flex;
+}
+.align-content-center{
+  justify-content: center;
+  align-items: center;
+}
+.flex-column{
+  flex-direction: column;
+}
+.default-gap{
+  gap: var(--gap-8);
+}
+.gap-40{
+  gap: var(--gap-40);
+}
+.gap-20{
+  gap: var(--gap-20);
+}
 .app-shell .nav-link {
   color: #ffffff;
   font-size: 16px;
@@ -48,6 +70,8 @@ body {
   line-height: 100%;
   text-decoration: none;
   text-align: center;
+  z-index: 12;
+  width: fit-content;
 }
 
 /* header styles */
@@ -100,30 +124,49 @@ body {
   background-color: var(--blue-color-3);
   color: #ffffff;
   padding: 32px;
-
   text-align: center;
-  /*width: 100%;*/
   flex-direction: column;
   gap: 40px;
 
 }
 .footer .absolute-footer-el{
   position: absolute;
-  z-index: 1;
+  z-index: -1;
+  user-select: none;
 }
+
 .footer .absolute-footer-el.footer-bg-text{
   bottom: -80px;
   left: 10%;
-  color: rgb(255 255 255 / 0.16);
+  color: rgb(121 129 146 / 0.12);
   font-size: 260px;
   font-weight: 700;
   line-height: 100%;
+}
 
+.footer .absolute-footer-el.conic-bg-container{
+  top: -180px;
+  right: -5%;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background-image: radial-gradient(circle at 50% 50%, #FFAC00FF -55%, rgb(43 51 66 / 0.14) 55%)
+}
+
+.footer .footer-menu-points{
+  align-items: center;
+}
+
+.footer .footer-bottom-container{
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: var(--gap-8);
+  z-index: 1;
 }
 
 
 /* footer styles */
-
 
 .main-content {
   margin: 0 auto;
@@ -144,5 +187,19 @@ body {
   border-radius: 50px;
   padding: 12px 24px;
   cursor: pointer;
+}
+
+.circle-button-link {
+  /*display: flex;*/
+  overflow: hidden;
+}
+.circle-button-link .circle-btn-inner-wrapper{
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--orange-bg-color);
 }
 /* Button Styles */

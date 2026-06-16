@@ -7,7 +7,7 @@ type CircleButtonLinkProps = {
 function CircleButtonLink({ linkPath, imageUrl }: CircleButtonLinkProps) {
     return (
         <Link className="circle-button-link" to={linkPath}>
-            <div className="circle-btn-inner-wrapper">
+            <div className="circle-btn-inner-wrapper display-flex align-content-center">
                 <img src={imageUrl} alt="circle button" />
             </div>
         </Link>

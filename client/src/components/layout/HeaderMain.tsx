@@ -12,7 +12,9 @@ function HeaderMain() {
   return (
     <header className="header">
       <div className="brand header-logo-container">
-        <img src="./../../public/imgs/vortex-logo-115.png" alt="company logo" />
+          <Link to={'/'}>
+              <img src="./../../public/imgs/vortex-logo-115.png" alt="company logo" />
+          </Link>
       </div>
       <nav>
         <ul className="nav-list">
@@ -28,7 +30,7 @@ function HeaderMain() {
       <ButtonFill
         btnFunction={() => {}}
         btnText="Cпробувати Безкоштовно"
-        bgColor="var(--yellow-bg-color)"
+        bgColor="var(--orange-bg-color)"
         textColor="#000"
       />
       <Link className="tcd-link nav-link" to="/tecdoc-license">

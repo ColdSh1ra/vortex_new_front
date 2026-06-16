@@ -22,24 +22,26 @@ function FooterMain() {
             <div className={'absolute-footer-el footer-bg-text'}>
                 VORTEX
             </div>
-            <div className={'absolute-footer-el conic-bg-container'}/>
+            <div className={'absolute-footer-el display-flex conic-bg-container'}/>
 
 
             <div className="footer-logo-container">
-                <img src="./../../public/imgs/vortex-logo-115.png" alt="company logo" />
+                <Link to={'/'}>
+                    <img src="./../../public/imgs/vortex-logo-115.png" alt="company logo" />
+                </Link>
             </div>
-            <div className={'footer-menu-points'}>
+            <div className={'footer-menu-points display-flex flex-column gap-40'}>
                 {footerMenuLinks.map((mp, index) => (
                     <Link className={'nav-link basic-mp footer-menu-point'} key={'menuPoint' + index} to={mp.path}>
                         { mp.name}
                     </Link>
                 ))}
             </div>
-            <div className={'footer-bottom-container'}>
+            <div className={'footer-bottom-container display-flex'}>
                 <div className={'copyright'}>
                     Copyright &#169; {currentYear} Vortex
                 </div>
-                <div className={'footer-additional-links'}>
+                <div className={'footer-additional-links display-flex gap-20'}>
                     {footerSocialLinks.map((sl, index) => (
                         <CircleButtonLink
                             linkPath={sl.path}
