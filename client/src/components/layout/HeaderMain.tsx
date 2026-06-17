@@ -13,7 +13,7 @@ function HeaderMain() {
     <header className="header">
       <div className="brand header-logo-container">
           <Link to={'/'}>
-              <img src="./../../public/imgs/vortex-logo-115.png" alt="company logo" />
+              <img src="./../../public/imgs/vortex-logo-115.svg" alt="company logo" />
           </Link>
       </div>
       <nav>

@@ -127,7 +127,11 @@ body {
   text-align: center;
   flex-direction: column;
   gap: 40px;
-
+  /*background-image: url("../../public/imgs/noisy-yellow-bg-xl.svg");*/
+  /*background-size: cover;*/
+  /*background-position: right 0 top 20px;*/
+  /*background-repeat: no-repeat;*/
+  /*position: relative;*/
 }
 .footer .absolute-footer-el{
   position: absolute;
@@ -150,7 +154,8 @@ body {
   width: 700px;
   height: 700px;
   border-radius: 50%;
-  background-image: radial-gradient(circle at 50% 50%, #FFAC00FF -55%, rgb(43 51 66 / 0.14) 55%)
+  background-image: radial-gradient(circle at 50% 50%, #FFAC00FF -55%, rgb(43 51 66 / 0.14) 55%);
+  /*backdrop-filter: contrast(1) saturate(10);*/
 }
 
 .footer .footer-menu-points{
@@ -170,8 +175,7 @@ body {
 
 .main-content {
   margin: 0 auto;
-  max-width: 920px;
-  padding: 24px;
+  max-width: 100%;
 }
 
 

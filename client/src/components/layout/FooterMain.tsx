@@ -27,7 +27,7 @@ function FooterMain() {
 
             <div className="footer-logo-container">
                 <Link to={'/'}>
-                    <img src="./../../public/imgs/vortex-logo-115.png" alt="company logo" />
+                    <img src="./../../public/imgs/vortex-logo-115.svg" alt="company logo" />
                 </Link>
             </div>
             <div className={'footer-menu-points display-flex flex-column gap-40'}>
