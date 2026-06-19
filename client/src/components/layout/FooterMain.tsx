@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import CircleButtonLink from "../buttons/CircleButtonLink";
+import CircleButtonLink from "../default/CircleButtonLink";
 const footerMenuLinks = [
     { name: "Облік СТО", path: "/" },
     { name: "Розробка веб-сайтів", path: "/contact" },

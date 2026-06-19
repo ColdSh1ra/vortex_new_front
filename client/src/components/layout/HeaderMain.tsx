@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import type { NavigationLink } from "../../types/navigation";
-import ButtonFill from "../buttons/ButtonFIll";
+import ButtonFill from "../default/ButtonFIll";
 
 const menuLinks: NavigationLink[] = [
   { name: "Main", path: "/" },
