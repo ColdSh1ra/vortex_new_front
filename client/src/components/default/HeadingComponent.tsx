@@ -2,11 +2,11 @@ import React from "react";
 
 interface HeadingProps {
     children: React.ReactNode,
-    className?: string
+    adClassName?: string
 }
 
-function Heading({children, className}: HeadingProps) {
-    return <h1 className={"text-2xl font-bold" + className}>{children}</h1>
+function Heading({children, adClassName}: HeadingProps) {
+    return <h1 className={"text-2xl font-bold" + adClassName}>{children}</h1>
 }
 
 export default Heading

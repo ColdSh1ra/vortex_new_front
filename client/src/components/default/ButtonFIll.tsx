@@ -10,8 +10,6 @@ function ButtonIconContainer({ btnIcon = "" }) {
 }
 
 function ButtonFill({
-  bgColor = "",
-  textColor = "",
   btnText = "",
   btnFunction = () => {},
   btnIcon = "",
@@ -20,12 +18,8 @@ function ButtonFill({
   return (
     <>
       <button
-        className={"button btn-fill" + dynamicClass}
+        className={"button button-filled" + dynamicClass}
         onClick={btnFunction}
-        style={{
-          backgroundColor: bgColor,
-          color: textColor,
-        }}
       >
         {btnText}
         <ButtonIconContainer btnIcon={btnIcon} />

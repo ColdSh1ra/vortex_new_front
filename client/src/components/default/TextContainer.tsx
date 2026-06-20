@@ -16,10 +16,10 @@ function TextContainer({Heading, Description, ContainerClass, HeadingClass, Desc
             <div className={ContainerClass + 'heading'}>
                 <HeadingComponent
                     children={Heading}
-                    className={HeadingClass}/>
+                    adClassName={HeadingClass}/>
                 <DescriptionComponent
                     children={Description}
-                    className={DescriptionClass}/>
+                    adClassName={DescriptionClass}/>
             </div>
         </>
     )

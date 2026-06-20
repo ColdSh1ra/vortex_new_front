@@ -3,7 +3,9 @@
   font-weight: 400;
   --orange-bg-color: #FFAC00;
   --main-text-color: #fff;
-  --grey-color: #D4D4D4;
+  --grey-dark-text: #0C121E;
+  --grey-color-100: #D4D4D4;
+  --grey-color-200: #798192;
   --blue-color-1: #798192;
   --blue-color-2: #49556E;
   --blue-color-3: #2B3342;
@@ -81,6 +83,8 @@ body {
   left: 60px; */
   /* width: 100%; */
   /*margin-top: 14px;*/
+  height: 64px;
+  gap: var(--gap-8);
   margin: 14px 60px 0 60px;
   background: var(--blue-color-3);
   color: #ffffff;
@@ -179,19 +183,86 @@ body {
 }
 
 
-/* Button Styles */
+/*  --BUTTONS--  */
 .button{
   display: flex;
   align-items: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s all ease;
+}
+
+.button.button-filled{
   font-size: 16px;
   font-weight: 600;
   line-height: 100%;
-  outline: none;
-  border: none;
   border-radius: 50px;
   padding: 12px 24px;
-  cursor: pointer;
+  color: var(--grey-dark-text);
 }
+
+.button.button-filled.no-icon{
+  padding: 10px 16px;
+}
+
+.button.button-filled.with-icon{
+  padding: 10px 6px 10px 16px;
+}
+
+.button.button-filled.white{
+  background-color: var(--main-text-color);
+  border: 1px solid var(--orange-bg-color);
+}
+.button.button-filled.white:hover{
+  background-color: var(--orange-bg-color);
+}
+.button.button-filled.white:focus{
+  border: 2px solid var(--orange-bg-color);
+  background-color: var(--main-text-color);
+}
+.button.button-filled.white:active{
+  border: 2px solid var(--main-text-color);
+  background-color: var(--orange-bg-color);
+}
+.button.button-filled.white:disabled{
+  background-color: var(--grey-color-100);
+  border: 1px solid var(--grey-color-200);
+  color: var(--blue-color-3);
+  cursor: not-allowed;
+}
+
+
+.button.button-filled.orange{
+  background-color: var(--orange-bg-color);
+}
+.button.button-filled.orange:hover{
+  background-color: var(--main-text-color);
+}
+.button.button-filled.orange:focus{
+  border: 2px solid var(--main-text-color);
+  background-color: var(--orange-bg-color);
+}
+.button.button-filled.orange:active{
+  border: 2px solid var(--orange-bg-color);
+  background-color: var(--main-text-color);
+}
+.button.button-filled.orange:disabled{
+  background-color: var(--grey-color-100);
+  border: none;
+  color: var(--blue-color-3);
+  cursor: not-allowed;
+}
+
+
+
+.button.button-outline{
+  background-color: transparent;
+  color: var(--orange-bg-color);
+  border: 1px solid var(--orange-bg-color);
+}
+/*  --BUTTONS--  */
+
 
 .circle-button-link {
   /*display: flex;*/

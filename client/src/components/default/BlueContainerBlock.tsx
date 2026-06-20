@@ -3,6 +3,7 @@ import React from "react";
 interface BlueContainerBlockProps {
     BlockContent?: React.ReactNode;
     Heading?: React.ReactNode | null
+    ShowHeading?: boolean
 }
 
 function BlockHeading({Heading}: BlueContainerBlockProps) {
@@ -14,13 +15,13 @@ function BlockHeading({Heading}: BlueContainerBlockProps) {
         )
     } else <></>
 }
-function BlueContainerBlock( {BlockContent, Heading}: BlueContainerBlockProps) {
+function BlueContainerBlock( {BlockContent, Heading, ShowHeading }: BlueContainerBlockProps) {
 
 
     return (
         <>
             <div className={'display-flex blue-container'}>
-                <BlockHeading Heading={Heading}/>
+                {ShowHeading && <BlockHeading Heading={Heading}/>}
                 {BlockContent}
             </div>
         </>

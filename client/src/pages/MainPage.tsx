@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import { getContent } from '../services/api';
 import type { VortexContent } from '../types/content';
+import BlueContainerBlock from "../components/default/BlueContainerBlock";
+import TextContainer from "../components/default/TextContainer";
+import ButtonFill from "../components/default/ButtonFIll";
 
 function MainPage() {
   const [content, setContent] = useState<VortexContent | null>(null);
@@ -29,10 +32,31 @@ function MainPage() {
       {error && <p>Невдалось завантажити сторінку: {error}</p>}
       {content && (
         <>
-          <h2>{content.homepage.title}</h2>
-          <p>{content.homepage.subtitle}</p>
-          <p>Total clicks: {content.stats.totalClicks}</p>
-          <p>Form submissions: {content.stats.formSubmissions}</p>
+          <BlueContainerBlock ShowHeading={true}
+                              Heading={
+                                <TextContainer
+                                  Heading={content.homepage.title}
+                                  Description={content.homepage.subtitle}
+                                  ContainerClass="homepage-text-container"
+                                  HeadingClass="homepage-title"
+                                  DescriptionClass="homepage-subtitle"
+                                />
+                              }
+                              BlockContent={
+                                <div className={'container-block-actions display-flex align-content-center'}>
+                                  <ButtonFill
+                                      btnFunction={() => {}}
+                                      btnText={'Спробувати Безкоштовно'}
+                                      btnIcon={'/../../public/imgs/chevron-right-double.svg'}
+                                  />
+                                </div>
+                              }
+          >
+          </BlueContainerBlock>
+          {/*<h2>{content.homepage.title}</h2>*/}
+          {/*<p>{content.homepage.subtitle}</p>*/}
+          {/*<p>Total clicks: {content.stats.totalClicks}</p>*/}
+          {/*<p>Form submissions: {content.stats.formSubmissions}</p>*/}
         </>
       )}
     </section>

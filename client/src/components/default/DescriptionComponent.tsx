@@ -2,11 +2,11 @@ import React from "react";
 
 interface DescriptionProps {
     children: React.ReactNode,
-    className?: string
+    adClassName?: string
 }
 
-function Description({children, className}: DescriptionProps) {
-    return <p className={"text-2xl font-bold" + className}>{children}</p>
+function Description({children, adClassName}: DescriptionProps) {
+    return <p className={"text-2xl font-bold" + adClassName}>{children}</p>
 }
 
 export default Description

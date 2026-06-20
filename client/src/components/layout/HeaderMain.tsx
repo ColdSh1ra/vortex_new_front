@@ -30,8 +30,7 @@ function HeaderMain() {
       <ButtonFill
         btnFunction={() => {}}
         btnText="Cпробувати Безкоштовно"
-        bgColor="var(--orange-bg-color)"
-        textColor="#000"
+        dynamicClass={' orange no-icon'}
       />
       <Link className="tcd-link nav-link" to="/tecdoc-license">
         <img
