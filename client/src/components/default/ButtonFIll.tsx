@@ -1,7 +1,7 @@
 function ButtonIconContainer({ btnIcon = "" }) {
   if (btnIcon !== "") {
     return (
-      <div className="button-icon-container">
+      <div className="display-flex align-content-center button-icon-container">
         <img src={btnIcon} alt="button explaining icon" />
       </div>
     );
@@ -18,7 +18,7 @@ function ButtonFill({
   return (
     <>
       <button
-        className={"button button-filled" + dynamicClass}
+        className={" button button-filled" + dynamicClass}
         onClick={btnFunction}
       >
         {btnText}

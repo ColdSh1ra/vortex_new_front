@@ -29,6 +29,7 @@ body {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
+  background-color: var(--blue-color-5);
   /*padding: 0 60px;*/
 }
 
@@ -75,7 +76,13 @@ body {
   z-index: 12;
   width: fit-content;
 }
-
+.blue-container{
+  background-color: var(--blue-color-3);
+  padding: 52px;
+  border-radius: 20px;
+  gap: 28px;
+  
+}
 /* header styles */
 .header {
   /* position: fixed;
@@ -188,7 +195,7 @@ body {
   display: flex;
   align-items: center;
   outline: none;
-  border: none;
+  border: 2px solid transparent;
   cursor: pointer;
   transition: 0.4s all ease;
 }
@@ -199,9 +206,21 @@ body {
   line-height: 100%;
   border-radius: 50px;
   padding: 12px 24px;
+  height: 40px;
+  gap: 6px;
   color: var(--grey-dark-text);
 }
-
+.button .button-icon-container{
+  width: 28px;
+  height: 28px;
+  /*padding: 10px;*/
+  border-radius: 50%;
+}
+.button .button-icon-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .button.button-filled.no-icon{
   padding: 10px 16px;
 }

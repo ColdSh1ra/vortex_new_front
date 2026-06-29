@@ -4,6 +4,7 @@ interface BlueContainerBlockProps {
     BlockContent?: React.ReactNode;
     Heading?: React.ReactNode | null
     ShowHeading?: boolean
+    AdditionalClass?: string
 }
 
 function BlockHeading({Heading}: BlueContainerBlockProps) {
@@ -15,12 +16,12 @@ function BlockHeading({Heading}: BlueContainerBlockProps) {
         )
     } else <></>
 }
-function BlueContainerBlock( {BlockContent, Heading, ShowHeading }: BlueContainerBlockProps) {
+function BlueContainerBlock( {BlockContent, Heading, ShowHeading, AdditionalClass }: BlueContainerBlockProps) {
 
 
     return (
         <>
-            <div className={'display-flex blue-container'}>
+            <div className={AdditionalClass + ' display-flex flex-column blue-container'}>
                 {ShowHeading && <BlockHeading Heading={Heading}/>}
                 {BlockContent}
             </div>
