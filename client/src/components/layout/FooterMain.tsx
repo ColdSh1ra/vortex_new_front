@@ -22,7 +22,7 @@ function FooterMain() {
             <div className={'absolute-footer-el footer-bg-text'}>
                 VORTEX
             </div>
-            <div className={'absolute-footer-el display-flex conic-bg-container'}/>
+            <div className={'absolute-footer-el display-flex radial-bg-container'}/>
 
 
             <div className="footer-logo-container">

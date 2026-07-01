@@ -159,7 +159,7 @@ body {
   line-height: 100%;
 }
 
-.footer .absolute-footer-el.conic-bg-container{
+.footer .absolute-footer-el.radial-bg-container{
   top: -180px;
   right: -5%;
   width: 700px;
@@ -168,7 +168,9 @@ body {
   background-image: radial-gradient(circle at 50% 50%, #FFAC00FF -55%, rgb(43 51 66 / 0.14) 55%);
   /*backdrop-filter: contrast(1) saturate(10);*/
 }
-
+.radial-bg-container{
+  background-image: radial-gradient(circle at 50% 50%, #FFAC00FF -55%, rgb(43 51 66 / 0.14) 55%);
+}
 .footer .footer-menu-points{
   align-items: center;
 }

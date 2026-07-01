@@ -31,9 +31,16 @@ function MainPageHeroContent() {
             {error && <p>Невдалось завантажити сторінку: {error}</p>}
             {content && (
                 <>
-                    <div className={''}></div>
+                    <div className={'radial-bg-container'}/>
+
+                    <div className={'hero-page-shadow-container'}>
+                        <img сlassName={'image hero-page'} src='./../../public/imgs/vx-screenshot-1.png' alt='inside app screenshot'/>
+                        <img src='./../../public/imgs/vx-screenshot-2.png' alt='inside app screenshot'/>
+                        <img src='./../../public/imgs/vx-screenshot-3.png' alt='inside app screenshot'/>
+                    </div>
                     <BlueContainerBlock
                         ShowHeading={true}
+                        AdditionalClass={''}
                         Heading={
                             <TextContainer
                                 Heading={content.homepage.title}

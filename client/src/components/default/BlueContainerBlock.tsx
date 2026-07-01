@@ -16,7 +16,7 @@ function BlockHeading({Heading}: BlueContainerBlockProps) {
         )
     } else <></>
 }
-function BlueContainerBlock( {BlockContent, Heading, ShowHeading, AdditionalClass }: BlueContainerBlockProps) {
+function BlueContainerBlock( {BlockContent, Heading, ShowHeading, AdditionalClass = ''}: BlueContainerBlockProps) {
 
 
     return (
