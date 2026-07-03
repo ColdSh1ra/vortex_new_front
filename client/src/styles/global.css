@@ -27,7 +27,7 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
   background-color: var(--blue-color-5);
   /*padding: 0 60px;*/
@@ -81,7 +81,7 @@ body {
   padding: 52px;
   border-radius: 20px;
   gap: 28px;
-  
+  height: fit-content;
 }
 /* header styles */
 .header {
@@ -299,3 +299,44 @@ body {
   background-color: var(--orange-bg-color);
 }
 /* Button Styles */
+
+
+/* HERO PAGE STYLES */
+.section-container.hero-page{
+  height: 100vh;
+}
+
+.section-container.hero-page .hero-page-shadow-container {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  gap: -200px;
+  border-radius: 40px;
+  overflow: hidden;
+  position: absolute;
+}
+.section-container.hero-page .hero-page-shadow-container img.hero-page-image{
+  position: absolute;
+  bottom: 0;
+  width: 800px;
+  object-fit: contain;
+  transform: rotate(-25deg);
+  filter: brightness(0.5);
+  backdrop-filter: drop-shadow(30px 10px 4px #444);
+}
+.section-container.hero-page .hero-page-shadow-container img.hero-page-image.screen-shot-1{
+  left: 100px;
+}
+.section-container.hero-page .hero-page-shadow-container img.hero-page-image.screen-shot-2{
+  left: 50%;
+}
+.section-container.hero-page .hero-page-shadow-container img.hero-page-image.screen-shot-3{
+  left: auto;
+  right: 100px
+}
+.section-container .absolute-container{
+  position: absolute;
+  z-index: -2;
+}
+
+/* HERO PAGE STYLES */

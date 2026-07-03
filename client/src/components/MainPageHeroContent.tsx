@@ -31,12 +31,14 @@ function MainPageHeroContent() {
             {error && <p>Невдалось завантажити сторінку: {error}</p>}
             {content && (
                 <>
-                    <div className={'radial-bg-container'}/>
-
-                    <div className={'hero-page-shadow-container'}>
-                        <img сlassName={'image hero-page'} src='./../../public/imgs/vx-screenshot-1.png' alt='inside app screenshot'/>
-                        <img src='./../../public/imgs/vx-screenshot-2.png' alt='inside app screenshot'/>
-                        <img src='./../../public/imgs/vx-screenshot-3.png' alt='inside app screenshot'/>
+                    <div className={'radial-bg-container absolute-container'}/>
+                    <div className={'absolute-container vortex-logo-container'}>
+                        <img className={'image vortex-logo'} src='./../../public/bgs/logo.svg' alt='company logo'/>
+                    </div>
+                    <div className={'hero-page-shadow-container display-flex align-content-center absolute-container'}>
+                        <img className={'hero-page-image screen-shot-1'} src='./../../public/imgs/vx-screenshot-1.png' alt='inside app screenshot'/>
+                        <img className={'hero-page-image screen-shot-2'} src='./../../public/imgs/vx-screenshot-2.png' alt='inside app screenshot'/>
+                        <img className={'hero-page-image screen-shot-3'} src='./../../public/imgs/vx-screenshot-3.png' alt='inside app screenshot'/>
                     </div>
                     <BlueContainerBlock
                         ShowHeading={true}
