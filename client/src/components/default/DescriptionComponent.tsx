@@ -6,7 +6,7 @@ interface DescriptionProps {
 }
 
 function Description({children, adClassName}: DescriptionProps) {
-    return <p className={"text-2xl font-bold" + adClassName}>{children}</p>
+    return <p className={"paragraph text-2xl font-bold " + adClassName}>{children}</p>
 }
 
 export default Description

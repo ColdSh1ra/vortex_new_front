@@ -32,9 +32,7 @@ function MainPageHeroContent() {
             {content && (
                 <>
                     <div className={'radial-bg-container absolute-container'}/>
-                    <div className={'absolute-container vortex-logo-container'}>
-                        <img className={'image vortex-logo'} src='./../../public/bgs/logo.svg' alt='company logo'/>
-                    </div>
+                    <img className={'absolute-container image vortex-logo'} src='./../../public/bgs/logo.svg' alt='company logo'/>
                     <div className={'hero-page-shadow-container display-flex align-content-center absolute-container'}>
                         <img className={'hero-page-image screen-shot-1'} src='./../../public/imgs/vx-screenshot-1.png' alt='inside app screenshot'/>
                         <img className={'hero-page-image screen-shot-2'} src='./../../public/imgs/vx-screenshot-2.png' alt='inside app screenshot'/>
@@ -42,12 +40,12 @@ function MainPageHeroContent() {
                     </div>
                     <BlueContainerBlock
                         ShowHeading={true}
-                        AdditionalClass={''}
+                        AdditionalClass={'homepage-text-container '}
                         Heading={
                             <TextContainer
                                 Heading={content.homepage.title}
                                 Description={content.homepage.subtitle}
-                                ContainerClass="homepage-text-container "
+                                ContainerClass="gap-8 display-flex flex-column align-content-center "
                                 HeadingClass="homepage-title"
                                 DescriptionClass="homepage-subtitle"
                             />

@@ -24,6 +24,10 @@
 
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -32,17 +36,23 @@ body {
   background-color: var(--blue-color-5);
   /*padding: 0 60px;*/
 }
+h1.heading{
+  margin: 0;
 
+}
+p.paragraph{
+  margin: 0;
+}
 .app-shell {
   min-height: 100vh;
 }
 /*.app-shell main.main-content .section-container{*/
 .app-shell .section-container{
   margin: 0 60px;
-  position: relative;
+  /*position: relative;*/
   z-index: 10;
   display: flex;
-  overflow: hidden;
+  /*overflow: hidden;*/
   border-radius: var(--border-radius);
 }
 
@@ -57,7 +67,7 @@ body {
 .flex-column{
   flex-direction: column;
 }
-.default-gap{
+.default-gap, .gap-8{
   gap: var(--gap-8);
 }
 .gap-40{
@@ -138,6 +148,8 @@ body {
   text-align: center;
   flex-direction: column;
   gap: 40px;
+  position: relative;
+  overflow: hidden;
   /*background-image: url("../../public/imgs/noisy-yellow-bg-xl.svg");*/
   /*background-size: cover;*/
   /*background-position: right 0 top 20px;*/
@@ -339,4 +351,43 @@ body {
   z-index: -2;
 }
 
+.section-container.hero-page .absolute-container.image.vortex-logo{
+  left: 0;
+  animation: logo-spin infinite 120s linear;
+}
+
+.section-container.hero-page .homepage-text-container{
+  max-width: 770px;
+  margin: auto;
+}
+.section-container.hero-page .homepage-text-container .homepage-title,
+.section-container.hero-page .homepage-text-container .homepage-subtitle{
+  color: var(--main-text-color);
+  text-align: center;
+}
+.section-container.hero-page .homepage-text-container .homepage-title{
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.section-container.hero-page .homepage-text-container .homepage-subtitle{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+}
 /* HERO PAGE STYLES */
+
+
+/* --- ANIMATIONS --- */
+
+@keyframes logo-spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/* --- ANIMATIONS --- */
