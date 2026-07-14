@@ -1,13 +1,19 @@
 export type AboutUsContent = {
-  title: string;
-  description: string;
-  cards_data: object[];
+  about_us_title: string;
+  about_us_subtitle: string;
+  about_us_blocks: AboutUsBlock[];
+};
+
+export type AboutUsBlock = {
+  about_us_title: string;
+  about_us_description: string;
+  about_us_image_path: string;
 };
 
 export type HomepageContent = {
   title: string;
   subtitle: string;
-  about_us: AboutUsContent;
+  about_us_block: AboutUsContent;
 };
 
 export type VortexContent = {

@@ -1,10 +1,12 @@
 import MainPageHeroContent from "../components/MainPageHeroContent";
+import AboutUsComponent from "../components/AboutUsComponent";
 
 
 function MainPage() {
   return (
       <>
-        <MainPageHeroContent/>
+          <MainPageHeroContent/>
+          <AboutUsComponent/>
       </>
   );
 }

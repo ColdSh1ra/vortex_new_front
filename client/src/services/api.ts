@@ -1,4 +1,4 @@
-import type { VortexContent } from '../types/content';
+import type { HomepageContent, VortexContent } from '../types/content';
 
 const API_BASE_URL = 'http://localhost:5001/api';
 
@@ -10,4 +10,12 @@ export async function getContent(): Promise<VortexContent> {
   }
 
   return response.json() as Promise<VortexContent>;
+}
+
+export async function getHomepageContent<Key extends keyof HomepageContent>(
+  key: Key
+): Promise<HomepageContent[Key]> {
+  const content = await getContent();
+
+  return content.homepage[key];
 }

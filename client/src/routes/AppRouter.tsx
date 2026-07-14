@@ -4,6 +4,7 @@ import ContactPage from '../pages/ContactPage';
 import FaqPage from '../pages/FaqPage';
 import MainPage from '../pages/MainPage';
 import FooterMain from "../components/layout/FooterMain";
+import CarServicePage from "../pages/CarServicePage";
 
 function AppRouter() {
   return (
@@ -13,6 +14,8 @@ function AppRouter() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/contact" element={<ContactPage />} />
+
+            <Route path="/car-service" element={<CarServicePage/>} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

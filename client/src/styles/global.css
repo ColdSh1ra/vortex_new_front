@@ -352,13 +352,14 @@ p.paragraph{
 }
 
 .section-container.hero-page .absolute-container.image.vortex-logo{
-  left: 0;
+  left: -150px;
+  top: 0px;
   animation: logo-spin infinite 120s linear;
 }
 
 .section-container.hero-page .homepage-text-container{
   max-width: 770px;
-  margin: auto;
+  margin: 100px auto auto auto;
 }
 .section-container.hero-page .homepage-text-container .homepage-title,
 .section-container.hero-page .homepage-text-container .homepage-subtitle{

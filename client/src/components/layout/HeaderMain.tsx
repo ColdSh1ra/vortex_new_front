@@ -3,9 +3,12 @@ import type { NavigationLink } from "../../types/navigation";
 import ButtonFill from "../default/ButtonFIll";
 
 const menuLinks: NavigationLink[] = [
-  { name: "Main", path: "/" },
-  { name: "Contact", path: "/contact" },
-  { name: "FAQ", path: "/faq" },
+    { name: "Головна", path: "/" },
+    { name: "Облік СТО", path: "/car-service" },
+    { name: "Розробка веб-сайтів", path: "/websites" },
+    { name: "Ціни", path: "/pricing" },
+    { name: "Запитання", path: "/faq" },
+    { name: "Contact", path: "/contact" },
 ];
 
 function HeaderMain() {
