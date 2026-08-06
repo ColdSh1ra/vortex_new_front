@@ -43,6 +43,16 @@ h1.heading{
 p.paragraph{
   margin: 0;
 }
+.text-color-orange{
+  color: var(--orange-bg-color);
+}
+.text-color-white{
+  color: var(--main-text-color);
+}
+.text-color-grey-dark{
+  color: var(--grey-dark-text);
+}
+.text-color-grey-light{}
 .app-shell {
   min-height: 100vh;
 }
@@ -60,11 +70,24 @@ p.paragraph{
 .display-flex{
   display: flex;
 }
+.display-flex.flex-direction-row{
+  flex-direction: row;
+}
+.display-flex.row-reverse{
+  flex-direction: row-reverse;
+}
+.display-flex.column-reverse{
+  flex-direction: column-reverse;
+}
 .align-content-center{
   justify-content: center;
   align-items: center;
 }
-.flex-column{
+.jc-space-between{
+  justify-content: space-between;
+}
+.jc-center{}
+.display-flex.flex-column{
   flex-direction: column;
 }
 .default-gap, .gap-8{
@@ -377,6 +400,46 @@ p.paragraph{
   font-weight: 600;
   line-height: 130%;
 }
+/* --- ABOUT US CONTENT STYLES --- */
+.section-container.about-us-content{
+  color: white;
+  background-color: var(--blue-color-3);
+  padding: 80px 60px;
+}
+.section-container.about-us-content .about-us-hero-title{
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.section-container.about-us-content .about-us-hero-subtitle{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  max-width: 610px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-container.about-us-content .about-us-block{
+  justify-content: flex-start;
+  padding: 40px;
+  width: 100%;
+}
+.section-container.about-us-content .about-us-block .about-us-info-element{
+  justify-content: flex-start;
+  margin: auto 0;
+}
+.section-container.about-us-content .about-us-block:not(:last-child){
+  border-top: 1px solid var(--grey-color-200);
+}
+
+.section-container.about-us-content .au-image-outer-wrapper{
+  width: 260px;
+  height: 260px;
+}
+/* --- ABOUT US CONTENT STYLES --- */
+
 /* HERO PAGE STYLES */
 
 
