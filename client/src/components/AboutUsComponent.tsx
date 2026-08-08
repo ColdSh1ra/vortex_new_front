@@ -52,31 +52,33 @@ function AboutUs() {
                     />
 
                     {content.about_us_blocks.map((block, index) => (
-                        <div className={'about-us-block display-flex jc-space-between' +
-                            (index % 2 === 0 ? ' row-reverse ' : ' flex-direction-row ')}
-                             key={index}>
-                            <div className={'about-us-info-element display-flex flex-column'}
-                                 key={block.about_us_title + index}>
-                                <HeadingComponent
-                                    children={'/'+ (index + 1)}
-                                    adClassName={'about-us-index text-color-orange'}
+                        <div className={'about-us-block'}>
+                            <div className={'about-us-block-inner-wrapper display-flex jc-space-between' +
+                                (index % 2 === 0 ? ' row-reverse ' : ' flex-direction-row ')}
+                                 key={index}>
+                                <div className={'about-us-info-element gap-8 display-flex flex-column'}
+                                     key={block.about_us_title + index}>
+                                    <HeadingComponent
+                                        children={'/'+ (index + 1)}
+                                        adClassName={'about-us-index text-color-orange'}
                                     />
-                                <HeadingComponent
-                                    children={block.about_us_title}
-                                    adClassName={'about-us-title text-color-white'}
-                                />
-                                <DescriptionComponent
-                                    children={block.about_us_description}
-                                    adClassName={'about-us-description text-color-white'}
-                                />
-                            </div>
-                            <div className={'display-flex align-content-center au-image-outer-wrapper'}>
-                                <div style={right_p_style} className={' p-absolute-element radial-bg-container '}></div>
-                                <img src={block.about_us_image_path}
-                                     className={' image'}
-                                     width="160"
-                                     height="160"
-                                     alt={'about us image'} />
+                                    <HeadingComponent
+                                        children={block.about_us_title}
+                                        adClassName={'about-us-title text-color-white'}
+                                    />
+                                    <DescriptionComponent
+                                        children={block.about_us_description}
+                                        adClassName={'about-us-description text-color-white'}
+                                    />
+                                </div>
+                                <div className={'display-flex align-content-center au-image-outer-wrapper'}>
+                                    <div style={right_p_style} className={' p-absolute-element radial-bg-container '}></div>
+                                    <img src={block.about_us_image_path}
+                                         className={' image'}
+                                         width="160"
+                                         height="160"
+                                         alt={'about us image'} />
+                                </div>
                             </div>
                         </div>
                     ))}

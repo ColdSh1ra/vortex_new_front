@@ -404,7 +404,7 @@ p.paragraph{
 .section-container.about-us-content{
   color: white;
   background-color: var(--blue-color-3);
-  padding: 80px 60px;
+  padding: 40px;
   overflow: hidden;
   margin-bottom: 80px;
 }
@@ -425,9 +425,15 @@ p.paragraph{
 }
 .section-container.about-us-content .about-us-block{
   border-top: 1px solid var(--blue-color-2);
+
+  width: 100%;
+}
+.section-container.about-us-content .about-us-block .about-us-block-inner-wrapper{
+  max-width: 80%;
+  width: 100%;
   padding: 40px;
   gap: 120px;
-  width: 100%;
+  margin: 0 auto;
 }
 .section-container.about-us-content .about-us-block .about-us-info-element{
   justify-content: flex-start;
@@ -440,8 +446,8 @@ p.paragraph{
   z-index: 1;
 }
 .section-container.about-us-content .au-image-outer-wrapper .radial-bg-container{
-  width: 660px;
-  height: 660px;
+  width: 500px;
+  height: 500px;
 }
 
 .section-container.about-us-content .about-us-block .au-image-outer-wrapper img.image{
