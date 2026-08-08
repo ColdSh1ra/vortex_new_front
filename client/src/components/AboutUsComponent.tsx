@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import type { CSSProperties } from 'react';
 import { getHomepageContent } from '../services/api';
 import type { AboutUsContent } from '../types/content';
 import HeadingComponent from "./default/HeadingComponent";
@@ -6,6 +7,16 @@ import DescriptionComponent from "./default/DescriptionComponent";
 // import BlueContainerBlock from "../components/default/BlueContainerBlock";
 // import TextContainer from "../components/default/TextContainer";
 // import ButtonFill from "../components/default/ButtonFIll";
+const randNumberGenerator = () :number => {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+const min: number = 95;
+const max: number = 105;
+//const right_positioning_value: number = -Math.floor(Math.random() * (max - min + 1) + min);
+const right_p_style: CSSProperties = {
+    right: `${randNumberGenerator}%`,
+};
 
 function AboutUs() {
     const [content, setContent] = useState<AboutUsContent | null>(null);
@@ -60,13 +71,12 @@ function AboutUs() {
                                 />
                             </div>
                             <div className={'display-flex align-content-center au-image-outer-wrapper'}>
-                                <div className={' '}>
-                                    <img src={block.about_us_image_path}
-                                         className={'radial-bg-container image'}
-                                         width="160"
-                                         height="160"
-                                         alt={'about us image'} />
-                                </div>
+                                <div style={right_p_style} className={' p-absolute-element radial-bg-container '}></div>
+                                <img src={block.about_us_image_path}
+                                     className={' image'}
+                                     width="160"
+                                     height="160"
+                                     alt={'about us image'} />
                             </div>
                         </div>
                     ))}
