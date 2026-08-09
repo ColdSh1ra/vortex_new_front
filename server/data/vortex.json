@@ -37,7 +37,12 @@
           "about_us_image_path": "/imgs/3dicons_premium/wallet.png"
         }
       ]
-    }
+    },
+    "hero_page_slider_images": [
+      "/imgs/slider_images/slide_1.png",
+      "/imgs/slider_images/slide_2.png",
+      "/imgs/slider_images/slide_3.png"
+    ]
   },
   "stats": {
     "totalClicks": 0,

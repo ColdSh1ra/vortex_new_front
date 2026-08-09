@@ -35,7 +35,9 @@ function AboutUs() {
             }
         }
 
-        loadContent();
+        loadContent().then(r => {
+            console.log(r, "about us content READY!!!");
+        });
     }, []);
 
     return (

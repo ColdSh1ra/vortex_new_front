@@ -10,10 +10,16 @@ export type AboutUsBlock = {
   about_us_image_path: string;
 };
 
+export type HeroPageSliderSection = {
+  section_title: string;
+  slide_image_paths: string[];
+}
+
 export type HomepageContent = {
   title: string;
   subtitle: string;
   about_us_block: AboutUsContent;
+  hero_page_slider_section: HeroPageSliderSection;
 };
 
 export type VortexContent = {
