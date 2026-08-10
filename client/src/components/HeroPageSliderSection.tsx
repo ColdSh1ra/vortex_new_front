@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-//import React from 'react';
+import React from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import {getHomepageContent} from "../services/api";
 import type { HeroPageSliderSection } from "../types/content";
 
-function HeroPageSliderSection() {
+function HeroPageSliderSectionComponent(): React.ReactNode {
     const [content, setContent] = useState<HeroPageSliderSection | null>(null)
     const [isLoading, setIsLoading] = useState<boolean>(true)
     const [error, setError] = useState<string | null>(null)
@@ -46,13 +46,13 @@ function HeroPageSliderSection() {
                             <ButtonNext>Next</ButtonNext>
                         </div>
                         <Slider>
-                            <Slide index={0}>
-                                <div className={'slide-content'}>
-                                    {content.slide_image_paths.map((slidePath, index) => (
-                                        <img key={index} className={'image slider-image'} src={slidePath} alt={`Slide ${index}`} />
-                                    ))}
-                                </div>
-                            </Slide>
+                            {content.slide_image_paths.map((slidePath, index) => (
+                                <Slide key={'slide_' + index} index={index}>
+                                    <div className={'slide-content'}>
+                                        <img key={index} className={'image slider-image'} src={slidePath} alt={`slide image ${index}`} />
+                                    </div>
+                                </Slide>
+                            ))}
                         </Slider>
                     </CarouselProvider>
                 </div>
@@ -61,4 +61,4 @@ function HeroPageSliderSection() {
     );
 }
 
-export default HeroPageSliderSection
+export default HeroPageSliderSectionComponent

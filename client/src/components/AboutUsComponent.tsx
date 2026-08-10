@@ -41,11 +41,11 @@ function AboutUs() {
     }, []);
 
     return (
-        <section className="about-us-content section-container">
+        <section className="about-us-content section-container display-flex align-content-center">
             {isLoading && <p>Іде завантаження...</p>}
             {error && <p>Невдалось завантажити сторінку: {error}</p>}
             {content && (
-                <div className={'display-flex flex-column align-content-center'}>
+                <div className={'display-flex flex-column align-content-center width-100-p'}>
                     <HeadingComponent children={content.about_us_title}
                                       adClassName={'about-us-hero-title text-color-orange'}
                     />
@@ -54,10 +54,10 @@ function AboutUs() {
                     />
 
                     {content.about_us_blocks.map((block, index) => (
-                        <div className={'about-us-block'}>
+                        <div key={'about-us-block' + index} className={'about-us-block'}>
                             <div className={'about-us-block-inner-wrapper display-flex jc-space-between' +
                                 (index % 2 === 0 ? ' row-reverse ' : ' flex-direction-row ')}
-                                 key={index}>
+                                >
                                 <div className={'about-us-info-element gap-8 display-flex flex-column'}
                                      key={block.about_us_title + index}>
                                     <HeadingComponent
