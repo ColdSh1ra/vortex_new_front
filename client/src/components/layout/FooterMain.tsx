@@ -8,10 +8,10 @@ const footerMenuLinks = [
     { name: "Контакти", path: "/contacts" },
 ];
 const footerSocialLinks = [
-    { name: "Facebook", path: "/", image_url: './../../public/icons/sm_black/facebook.svg'},
-    { name: "YouTube", path: "/", image_url: './../../public/icons/sm_black/youtube.svg'},
-    { name: "Telegram", path: "/", image_url: './../../public/icons/sm_black/telegram.svg'},
-    { name: "Instagram", path: "/", image_url: './../../public/icons/sm_black/instagram.svg'},
+    { name: "Facebook", path: "/", image_url: '/icons/sm_black/facebook.svg'},
+    { name: "YouTube", path: "/", image_url: '/icons/sm_black/youtube.svg'},
+    { name: "Telegram", path: "/", image_url: '/icons/sm_black/telegram.svg'},
+    { name: "Instagram", path: "/", image_url: '/icons/sm_black/instagram.svg'},
 ];
 function FooterMain() {
     const currentYear = new Date().getFullYear();
@@ -27,7 +27,7 @@ function FooterMain() {
 
             <div className="footer-logo-container">
                 <Link to={'/'}>
-                    <img src="./../../public/imgs/vortex-logo-115.svg" alt="company logo" />
+                    <img src="/imgs/vortex-logo-115.svg" alt="company logo" />
                 </Link>
             </div>
             <div className={'footer-menu-points display-flex flex-column gap-40'}>

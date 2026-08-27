@@ -38,11 +38,14 @@
         }
       ]
     },
-    "hero_page_slider_images": [
-      "/imgs/slider_images/slide_1.png",
-      "/imgs/slider_images/slide_2.png",
-      "/imgs/slider_images/slide_3.png"
-    ]
+    "hero_page_slider_section": {
+      "section_title": "Так виглядатиме ваша система",
+      "slide_image_paths": [
+        "/imgs/slider_images/slide_1.png",
+        "/imgs/slider_images/slide_2.png",
+        "/imgs/slider_images/slide_3.png"
+      ]
+    }
   },
   "stats": {
     "totalClicks": 0,

@@ -1,15 +1,20 @@
 import { useEffect, useState } from 'react';
-//import React from 'react';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import {getHomepageContent} from "../services/api";
-import type { HeroPageSliderSection } from "../types/content";
+import type { HeroPageSliderSection as HeroPageSliderSectionContent } from "../types/content";
+import { useInitialContent } from '../context/ContentContext';
 
 function HeroPageSliderSection() {
-    const [content, setContent] = useState<HeroPageSliderSection | null>(null)
-    const [isLoading, setIsLoading] = useState<boolean>(true)
+    const initialContent = useInitialContent()?.homepage.hero_page_slider_section ?? null;
+    const [content, setContent] = useState<HeroPageSliderSectionContent | null>(initialContent)
+    const [isLoading, setIsLoading] = useState<boolean>(!initialContent)
     const [error, setError] = useState<string | null>(null)
+    const [currentSlide, setCurrentSlide] = useState(0)
 
     useEffect(() => {
+        if (content) {
+            return;
+        }
+
         async function loadContent() {
             try {
                 const sliderSectionContent = await getHomepageContent("hero_page_slider_section");
@@ -20,44 +25,82 @@ function HeroPageSliderSection() {
                 setIsLoading(false)
             }
         }
-        loadContent().then(r => console.log(r, "hero page slider content READY!!"));
-    })
+        loadContent();
+    }, [content])
+
+    useEffect(() => {
+        if (!content || content.slide_image_paths.length < 2) {
+            return;
+        }
+
+        const intervalId = window.setInterval(() => {
+            setCurrentSlide((slide) => (slide + 1) % content.slide_image_paths.length);
+        }, 5000);
+
+        return () => window.clearInterval(intervalId);
+    }, [content]);
+
+    const goToPreviousSlide = () => {
+        if (!content) {
+            return;
+        }
+
+        setCurrentSlide((slide) => (
+            slide === 0 ? content.slide_image_paths.length - 1 : slide - 1
+        ));
+    };
+
+    const goToNextSlide = () => {
+        if (!content) {
+            return;
+        }
+
+        setCurrentSlide((slide) => (slide + 1) % content.slide_image_paths.length);
+    };
+
     return (
-        <div className={'section-container hero-page-slider-section'}>
+        <section className={'section-container hero-page-slider-section'}>
             {isLoading && <div className={'loading'}>Іде завантаження</div>}
             {error && <div className={'error'}>{error}</div>}
             {content && (
                 <div className={'slider-wrapper'}>
-                    <div className={'section-title'}>
+                    <h2 className={'section-title'}>
+                        {content.section_title}
+                    </h2>
+
+                    <div className={'carousel-buttons'}>
+                        <button type="button" onClick={goToPreviousSlide} aria-label="Previous slide">
+                            <img src="/icons/slider_scroll_right.svg" alt="" />
+                        </button>
+                        <button type="button" onClick={goToNextSlide} aria-label="Next slide">
+                            <img src="/icons/slider_scroll_right.svg" alt="" />
+                        </button>
+                    </div>
+
+                    <div className={'carousel-container'}>
+                        <div
+                            className={'slider-track'}
+                            style={{
+                                transform: `translateX(calc(-${currentSlide * 66.666667}% - ${currentSlide * 5}px))`,
+                            }}
+                        >
+                            {content.slide_image_paths.map((slidePath, index) => (
+                                <div
+                                    className={'slide-content display-flex align-content-center'}
+                                    key={'slide_' + index + slidePath}
+                                >
+                                    <img
+                                        className={'image slider-image'}
+                                        src={slidePath}
+                                        alt={`Slide ${index + 1}`} />
+                                </div>
+                            ))}
+                        </div>
 
                     </div>
-                    <CarouselProvider
-                        naturalSlideWidth={1200}
-                        naturalSlideHeight={600}
-                        totalSlides={content.slide_image_paths.length}
-                        isIntrinsicHeight={true}
-                        infinite={true}
-                        isPlaying={true}
-                        interval={5000}
-                        className={'carousel-container'}
-                    >
-                        <div className={'carousel-buttons'}>
-                            <ButtonBack>Back</ButtonBack>
-                            <ButtonNext>Next</ButtonNext>
-                        </div>
-                        <Slider>
-                            <Slide index={0}>
-                                <div className={'slide-content'}>
-                                    {content.slide_image_paths.map((slidePath, index) => (
-                                        <img key={index} className={'image slider-image'} src={slidePath} alt={`Slide ${index}`} />
-                                    ))}
-                                </div>
-                            </Slide>
-                        </Slider>
-                    </CarouselProvider>
                 </div>
             )}
-        </div>
+        </section>
     );
 }
 

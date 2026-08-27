@@ -1,16 +1,22 @@
 import { useEffect, useState } from 'react';
 import { getContent } from '../services/api';
 import type { VortexContent } from '../types/content';
+import { useInitialContent } from '../context/ContentContext';
 import BlueContainerBlock from "../components/default/BlueContainerBlock";
 import TextContainer from "../components/default/TextContainer";
 import ButtonFill from "../components/default/ButtonFIll";
 
 function MainPageHeroContent() {
-    const [content, setContent] = useState<VortexContent | null>(null);
-    const [isLoading, setIsLoading] = useState(true);
+    const initialContent = useInitialContent();
+    const [content, setContent] = useState<VortexContent | null>(initialContent);
+    const [isLoading, setIsLoading] = useState(!initialContent);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
+        if (content) {
+            return;
+        }
+
         async function loadContent() {
             try {
                 const apiContent = await getContent();
@@ -23,7 +29,7 @@ function MainPageHeroContent() {
         }
 
         loadContent();
-    }, []);
+    }, [content]);
 
     return (
         <section className="hero-page section-container">
@@ -32,11 +38,11 @@ function MainPageHeroContent() {
             {content && (
                 <>
                     <div className={'radial-bg-container absolute-container'}/>
-                    <img className={'absolute-container image vortex-logo'} src='./../../public/bgs/logo2.svg' alt='company logo'/>
+                    <img className={'absolute-container image vortex-logo'} src='/bgs/logo2.svg' alt='company logo'/>
                     <div className={'hero-page-shadow-container display-flex align-content-center absolute-container'}>
-                        <img className={'hero-page-image screen-shot-1'} src='./../../public/imgs/vx-screenshot-1.png' alt='inside app screenshot'/>
-                        <img className={'hero-page-image screen-shot-2'} src='./../../public/imgs/vx-screenshot-2.png' alt='inside app screenshot'/>
-                        <img className={'hero-page-image screen-shot-3'} src='./../../public/imgs/vx-screenshot-3.png' alt='inside app screenshot'/>
+                        <img className={'hero-page-image screen-shot-1'} src='/imgs/vx-screenshot-1.png' alt='inside app screenshot'/>
+                        <img className={'hero-page-image screen-shot-2'} src='/imgs/vx-screenshot-2.png' alt='inside app screenshot'/>
+                        <img className={'hero-page-image screen-shot-3'} src='/imgs/vx-screenshot-3.png' alt='inside app screenshot'/>
                     </div>
                     <BlueContainerBlock
                         ShowHeading={true}
@@ -56,7 +62,7 @@ function MainPageHeroContent() {
                                     dynamicClass={' orange with-icon'}
                                     btnFunction={() => {}}
                                     btnText={'Спробувати Безкоштовно'}
-                                    btnIcon={'./../../public/icons/chevron-right-double.svg'}
+                                    btnIcon={'/icons/chevron-right-double.svg'}
                                 />
                             </div>
                         }

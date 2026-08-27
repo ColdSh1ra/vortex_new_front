@@ -459,6 +459,117 @@ p.paragraph{
 }
 /* --- ABOUT US CONTENT STYLES --- */
 
+/* --- HERO PAGE SLIDER STYLES --- */
+.section-container.hero-page-slider-section{
+  background-color: var(--blue-color-5);
+  color: var(--main-text-color);
+  margin-bottom: 80px;
+  overflow: hidden;
+  padding: 72px 0 106px;
+}
+
+.section-container.hero-page-slider-section .slider-wrapper{
+  width: 100%;
+}
+
+.section-container.hero-page-slider-section .section-title{
+  color: var(--orange-bg-color);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-container.hero-page-slider-section .carousel-container{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.section-container.hero-page-slider-section .slider-track{
+  display: flex;
+  gap: var(--gap-8);
+  transition: transform 450ms ease;
+  width: 100%;
+}
+
+.section-container.hero-page-slider-section .slide-content{
+  align-items: flex-start;
+  flex: 0 0 calc(66.666667% - 3px);
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.section-container.hero-page-slider-section .slider-image{
+  border-radius: 20px;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.section-container.hero-page-slider-section .carousel-buttons{
+  display: flex;
+  gap: var(--gap-8);
+  justify-content: flex-end;
+  margin: 42px 66px 26px 0;
+}
+
+.section-container.hero-page-slider-section .carousel-buttons button{
+  align-items: center;
+  background: var(--blue-color-3);
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 200ms ease, transform 200ms ease;
+  width: 44px;
+}
+
+.section-container.hero-page-slider-section .carousel-buttons button:hover{
+  background: var(--blue-color-2);
+}
+
+.section-container.hero-page-slider-section .carousel-buttons button:active{
+  transform: scale(.96);
+}
+
+.section-container.hero-page-slider-section .carousel-buttons button:focus-visible{
+  outline: 2px solid var(--orange-bg-color);
+  outline-offset: 2px;
+}
+
+.section-container.hero-page-slider-section .carousel-buttons img{
+  height: 24px;
+  width: 24px;
+}
+
+.section-container.hero-page-slider-section .carousel-buttons button:first-child img{
+  filter: grayscale(1) brightness(1.8);
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .section-container.hero-page-slider-section{
+    padding: 48px 0 64px;
+  }
+
+  .section-container.hero-page-slider-section .section-title{
+    font-size: 30px;
+    padding: 0 20px;
+  }
+
+  .section-container.hero-page-slider-section .carousel-buttons{
+    margin: 30px 20px 18px 0;
+  }
+
+}
+/* --- HERO PAGE SLIDER STYLES --- */
+
 /* HERO PAGE STYLES */
 
 

@@ -1,11 +1,19 @@
 import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './routes/AppRouter';
+import { ContentProvider } from './context/ContentContext';
+import type { VortexContent } from './types/content';
 
-function App() {
+type AppProps = {
+  initialContent?: VortexContent | null;
+};
+
+function App({ initialContent = null }: AppProps) {
   return (
-    <BrowserRouter>
-      <AppRouter />
-    </BrowserRouter>
+    <ContentProvider content={initialContent}>
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
+    </ContentProvider>
   );
 }
 

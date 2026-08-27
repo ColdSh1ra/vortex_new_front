@@ -16,7 +16,7 @@ function HeaderMain() {
     <header className="header">
       <div className="brand header-logo-container">
           <Link to={'/'}>
-              <img src="./../../public/imgs/vortex-logo-115.svg" alt="company logo" />
+              <img src="/imgs/vortex-logo-115.svg" alt="company logo" />
           </Link>
       </div>
       <nav>
@@ -38,7 +38,7 @@ function HeaderMain() {
       <Link className="tcd-link nav-link" to="/tecdoc-license">
         <img
           className="tecdoc-license-link"
-          src="/../../public/imgs/tecdoc-button.png"
+          src="/imgs/tecdoc-button.png"
           alt="tecdoc license page"
         />
       </Link>

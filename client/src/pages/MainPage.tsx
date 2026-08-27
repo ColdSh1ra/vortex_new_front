@@ -1,5 +1,6 @@
 import MainPageHeroContent from "../components/MainPageHeroContent";
 import AboutUsComponent from "../components/AboutUsComponent";
+import HeroPageSliderSection from "../components/HeroPageSliderSection";
 
 
 function MainPage() {
@@ -7,6 +8,7 @@ function MainPage() {
       <>
           <MainPageHeroContent/>
           <AboutUsComponent/>
+          <HeroPageSliderSection/>
       </>
   );
 }
