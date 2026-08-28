@@ -45,6 +45,134 @@
         "/imgs/slider_images/slide_2.png",
         "/imgs/slider_images/slide_3.png"
       ]
+    },
+    "why_vortex_section": {
+      "section_title": "Що вміє Vortex?",
+      "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+      "cards": [
+        {
+          "title": "Lorem ipsum",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+          "image_src": ""
+        },
+        {
+          "title": "Dolor sit amet",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum et donec sed odio dui.",
+          "image_src": ""
+        },
+        {
+          "title": "Consectetur elit",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
+          "image_src": ""
+        },
+        {
+          "title": "Aenean commodo",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
+          "image_src": ""
+        }
+      ]
+    },
+    "why_vortex_showcase_section": {
+      "section_title": "Що вміє Vortex?",
+      "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+      "cards": [
+        {
+          "title": "Lorem ipsum",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+          "image_src": ""
+        },
+        {
+          "title": "Dolor sit amet",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum et donec sed odio dui.",
+          "image_src": ""
+        },
+        {
+          "title": "Consectetur elit",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
+          "image_src": ""
+        },
+        {
+          "title": "Aenean commodo",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
+          "image_src": ""
+        }
+      ]
+    },
+    "vortex_audience_section": {
+      "section_title": "Кому підійде Vortex?",
+      "cards": [
+        {
+          "title": "Lorem ipsum dolor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "cta_text": "Lorem ipsum",
+          "image_src": ""
+        },
+        {
+          "title": "Consectetur adipiscing",
+          "description": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt.",
+          "cta_text": "Lorem ipsum",
+          "image_src": ""
+        },
+        {
+          "title": "Tempor incididunt",
+          "description": "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
+          "cta_text": "Lorem ipsum",
+          "image_src": ""
+        },
+        {
+          "title": "Magna aliqua",
+          "description": "Lorem ipsum dolor sit amet, quis nostrud exercitation ullamco.",
+          "cta_text": "Lorem ipsum",
+          "image_src": ""
+        }
+      ]
+    },
+    "client_testimonials_section": {
+      "section_title": "Наші клієнти про нас",
+      "pros_title": "Lorem ipsum Vortex:",
+      "cons_title": "Dolor sit amet Vortex:",
+      "reviews": [
+        {
+          "company_name": "Lorem Company",
+          "company_type": "Lorem ipsum dolor",
+          "image_src": "",
+          "pros": ["Lorem ipsum", "Dolor sit amet", "Consectetur adipiscing"],
+          "cons": ["Tempor incididunt", "Labore et dolore"],
+          "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+          "link_text": "Lorem ipsum",
+          "link_href": "#"
+        },
+        {
+          "company_name": "Ipsum Group",
+          "company_type": "Consectetur adipiscing",
+          "image_src": "",
+          "pros": ["Aenean commodo", "Ligula eget dolor", "Cum sociis natoque"],
+          "cons": ["Donec quam felis", "Ultricies nec"],
+          "quote": "Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.",
+          "link_text": "Lorem ipsum",
+          "link_href": "#"
+        },
+        {
+          "company_name": "Dolor Service",
+          "company_type": "Eiusmod tempor",
+          "image_src": "",
+          "pros": ["Integer tincidunt", "Cras dapibus", "Vivamus elementum"],
+          "cons": ["Aenean vulputate", "Eleifend tellus"],
+          "quote": "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.",
+          "link_text": "Lorem ipsum",
+          "link_href": "#"
+        },
+        {
+          "company_name": "Amet Market",
+          "company_type": "Magna aliqua",
+          "image_src": "",
+          "pros": ["Phasellus viverra", "Nulla ut metus", "Varius laoreet"],
+          "cons": ["Quisque rutrum", "Aenean imperdiet"],
+          "quote": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi nam eget dui.",
+          "link_text": "Lorem ipsum",
+          "link_href": "#"
+        }
+      ]
     }
   },
   "stats": {
