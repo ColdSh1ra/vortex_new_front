@@ -1570,6 +1570,135 @@ p.paragraph{
 }
 /* --- INTEGRATIONS CATALOG SECTION --- */
 
+/* --- VORTEX SYNC SECTION --- */
+.app-shell .section-container.vortex-sync-section{
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    var(--blue-color-5) 0%,
+    #aeb3bc 26%,
+    #f4f4f5 52%,
+    var(--main-text-color) 100%
+  );
+  border-radius: 0;
+  margin: 0;
+  min-height: 1020px;
+  padding: clamp(150px, 15vw, 278px) 0 clamp(110px, 8vw, 145px);
+  width: 100%;
+}
+
+.vortex-sync-grid{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 1808px;
+  padding: 0 var(--desktop-padding);
+  width: 100%;
+}
+
+.vortex-sync-copy,
+.vortex-sync-visual{
+  border-radius: 24px;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.vortex-sync-copy{
+  background-color: var(--grey-color-100);
+  color: var(--blue-color-4);
+  padding: 98px 50px 54px;
+}
+
+.vortex-sync-copy h2{
+  font-size: 48px;
+  line-height: 1;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+}
+
+.vortex-sync-description{
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.vortex-sync-description p{
+  margin: 0 0 12px;
+}
+
+.vortex-sync-description p:last-child{
+  margin-bottom: 0;
+}
+
+.vortex-sync-visual{
+  background-color: var(--blue-color-3);
+  background-image: url('/imgs/vortex-sync-diagram.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 1100px) {
+  .app-shell .section-container.vortex-sync-section{
+    min-height: 0;
+    padding-bottom: 100px;
+    padding-top: 150px;
+  }
+
+  .vortex-sync-copy,
+  .vortex-sync-visual{
+    min-height: 520px;
+  }
+
+  .vortex-sync-copy{
+    padding: 64px 38px 44px;
+  }
+
+  .vortex-sync-copy h2{
+    font-size: 40px;
+  }
+
+  .vortex-sync-description{
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-shell .section-container.vortex-sync-section{
+    padding: 96px 0 72px;
+  }
+
+  .vortex-sync-grid{
+    gap: var(--gap-8);
+    grid-template-columns: 1fr;
+    padding: 0 var(--mobile-padding);
+  }
+
+  .vortex-sync-copy,
+  .vortex-sync-visual{
+    border-radius: var(--border-radius);
+    min-height: 0;
+  }
+
+  .vortex-sync-copy{
+    padding: 42px 26px;
+  }
+
+  .vortex-sync-copy h2{
+    font-size: 34px;
+    margin-bottom: 24px;
+  }
+
+  .vortex-sync-description{
+    font-size: 16px;
+  }
+
+  .vortex-sync-visual{
+    aspect-ratio: 1.15 / 1;
+  }
+}
+/* --- VORTEX SYNC SECTION --- */
+
 /* HERO PAGE STYLES */
 
 

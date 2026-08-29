@@ -7,6 +7,7 @@ import VortexAudienceComponent from "../components/VortexAudienceComponent";
 import ClientTestimonialsComponent from "../components/ClientTestimonialsComponent";
 import IntegrationsNetworkComponent from "../components/integrations/IntegrationsNetworkComponent";
 import IntegrationsCatalogComponent from "../components/integrations/IntegrationsCatalogComponent";
+import VortexSyncComponent from "../components/integrations/VortexSyncComponent";
 
 
 function MainPage() {
@@ -21,6 +22,7 @@ function MainPage() {
           <ClientTestimonialsComponent/>
           <IntegrationsNetworkComponent/>
           <IntegrationsCatalogComponent/>
+          <VortexSyncComponent/>
       </>
   );
 }
