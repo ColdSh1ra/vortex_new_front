@@ -173,6 +173,90 @@
           "link_href": "#"
         }
       ]
+    },
+    "integrations_catalog_section": {
+      "section_title": "Lorem ipsum",
+      "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "cards": [
+        {
+          "title": "Lorem ipsum",
+          "image_src": "blank_image",
+          "features": [
+            "Lorem ipsum dolor sit amet",
+            "Consectetur adipiscing elit",
+            "Aenean commodo ligula eget dolor",
+            "Donec quam felis ultricies nec",
+            "Pellentesque eu pretium quis"
+          ],
+          "link_text": "Lorem ipsum",
+          "link_href": "/"
+        },
+        {
+          "title": "Dolor sit amet",
+          "image_src": "blank_image",
+          "features": [
+            "Lorem ipsum dolor sit amet",
+            "Consectetur adipiscing elit",
+            "Aenean commodo ligula eget dolor",
+            "Donec quam felis ultricies nec",
+            "Pellentesque eu pretium quis"
+          ],
+          "link_text": "Lorem ipsum",
+          "link_href": "/"
+        },
+        {
+          "title": "Consectetur elit",
+          "image_src": "blank_image",
+          "features": [
+            "Lorem ipsum dolor sit amet",
+            "Consectetur adipiscing elit",
+            "Aenean commodo ligula eget dolor",
+            "Donec quam felis ultricies nec",
+            "Pellentesque eu pretium quis"
+          ],
+          "link_text": "Lorem ipsum",
+          "link_href": "/"
+        },
+        {
+          "title": "Aenean commodo",
+          "image_src": "blank_image",
+          "features": [
+            "Lorem ipsum dolor sit amet",
+            "Consectetur adipiscing elit",
+            "Aenean commodo ligula eget dolor",
+            "Donec quam felis ultricies nec",
+            "Pellentesque eu pretium quis"
+          ],
+          "link_text": "Lorem ipsum",
+          "link_href": "/"
+        },
+        {
+          "title": "Integer tincidunt",
+          "image_src": "blank_image",
+          "features": [
+            "Lorem ipsum dolor sit amet",
+            "Consectetur adipiscing elit",
+            "Aenean commodo ligula eget dolor",
+            "Donec quam felis ultricies nec",
+            "Pellentesque eu pretium quis"
+          ],
+          "link_text": "Lorem ipsum",
+          "link_href": "/"
+        },
+        {
+          "title": "Vivamus elementum",
+          "image_src": "blank_image",
+          "features": [
+            "Lorem ipsum dolor sit amet",
+            "Consectetur adipiscing elit",
+            "Aenean commodo ligula eget dolor",
+            "Donec quam felis ultricies nec",
+            "Pellentesque eu pretium quis"
+          ],
+          "link_text": "Lorem ipsum",
+          "link_href": "/"
+        }
+      ]
     }
   },
   "stats": {

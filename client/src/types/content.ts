@@ -57,6 +57,20 @@ export type ClientTestimonialsSection = {
   reviews: ClientTestimonial[];
 };
 
+export type IntegrationCatalogCard = {
+  title: string;
+  image_src: string;
+  features: string[];
+  link_text: string;
+  link_href: string;
+};
+
+export type IntegrationsCatalogSection = {
+  section_title: string;
+  section_description: string;
+  cards: IntegrationCatalogCard[];
+};
+
 export type HomepageContent = {
   title: string;
   subtitle: string;
@@ -66,6 +80,7 @@ export type HomepageContent = {
   why_vortex_showcase_section: WhyVortexSection;
   vortex_audience_section: VortexAudienceSection;
   client_testimonials_section: ClientTestimonialsSection;
+  integrations_catalog_section: IntegrationsCatalogSection;
 };
 
 export type VortexContent = {

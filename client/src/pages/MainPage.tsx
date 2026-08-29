@@ -5,6 +5,8 @@ import WhyVortexComponent from "../components/WhyVortexComponent";
 import WhyVortexShowcaseComponent from "../components/WhyVortexShowcaseComponent";
 import VortexAudienceComponent from "../components/VortexAudienceComponent";
 import ClientTestimonialsComponent from "../components/ClientTestimonialsComponent";
+import IntegrationsNetworkComponent from "../components/integrations/IntegrationsNetworkComponent";
+import IntegrationsCatalogComponent from "../components/integrations/IntegrationsCatalogComponent";
 
 
 function MainPage() {
@@ -17,6 +19,8 @@ function MainPage() {
           <WhyVortexShowcaseComponent/>
           <VortexAudienceComponent/>
           <ClientTestimonialsComponent/>
+          <IntegrationsNetworkComponent/>
+          <IntegrationsCatalogComponent/>
       </>
   );
 }
