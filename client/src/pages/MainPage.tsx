@@ -1,3 +1,4 @@
+import { useState } from "react";
 import MainPageHeroContent from "../components/MainPageHeroContent";
 import AboutUsComponent from "../components/AboutUsComponent";
 import HeroPageSliderSection from "../components/HeroPageSliderSection";
@@ -9,9 +10,14 @@ import IntegrationsNetworkComponent from "../components/integrations/Integration
 import IntegrationsCatalogComponent from "../components/integrations/IntegrationsCatalogComponent";
 import VortexSyncComponent from "../components/integrations/VortexSyncComponent";
 import CarServiceOverviewComponent from "../components/CarServiceOverviewComponent";
+import WebsiteDevelopmentComponent from "../components/WebsiteDevelopmentComponent";
+import PricingCalculatorComponent from "../components/PricingCalculatorComponent";
+import TrialRequestComponent from "../components/TrialRequestComponent";
 
 
 function MainPage() {
+  const [totalSum, setTotalSum] = useState(0);
+
   return (
       <>
           <MainPageHeroContent/>
@@ -25,6 +31,9 @@ function MainPage() {
           <IntegrationsCatalogComponent/>
           <VortexSyncComponent/>
           <CarServiceOverviewComponent/>
+          <WebsiteDevelopmentComponent/>
+          <PricingCalculatorComponent onTotalChange={setTotalSum}/>
+          <TrialRequestComponent totalSum={totalSum} requestedProduct="vortex"/>
       </>
   );
 }
