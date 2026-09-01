@@ -71,6 +71,12 @@ export type IntegrationsCatalogSection = {
   cards: IntegrationCatalogCard[];
 };
 
+export type CarServiceSection = {
+  heading: string;
+  description: string;
+  car_service_features: string[];
+};
+
 export type HomepageContent = {
   title: string;
   subtitle: string;
@@ -81,6 +87,7 @@ export type HomepageContent = {
   vortex_audience_section: VortexAudienceSection;
   client_testimonials_section: ClientTestimonialsSection;
   integrations_catalog_section: IntegrationsCatalogSection;
+  car_service_section: CarServiceSection;
 };
 
 export type VortexContent = {

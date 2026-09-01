@@ -8,6 +8,7 @@ import ClientTestimonialsComponent from "../components/ClientTestimonialsCompone
 import IntegrationsNetworkComponent from "../components/integrations/IntegrationsNetworkComponent";
 import IntegrationsCatalogComponent from "../components/integrations/IntegrationsCatalogComponent";
 import VortexSyncComponent from "../components/integrations/VortexSyncComponent";
+import CarServiceOverviewComponent from "../components/CarServiceOverviewComponent";
 
 
 function MainPage() {
@@ -23,6 +24,7 @@ function MainPage() {
           <IntegrationsNetworkComponent/>
           <IntegrationsCatalogComponent/>
           <VortexSyncComponent/>
+          <CarServiceOverviewComponent/>
       </>
   );
 }
