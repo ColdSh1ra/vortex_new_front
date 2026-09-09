@@ -26,8 +26,8 @@ function buildTelegramMessage({
 
   const messageLines = [
     'Нова заявка на тестову Vortex',
-    `Ім'я: ${name}`,
-    `Номер телефону: ${phone}`,
+    `Ім'я: <b>${name}</b>`,
+    `Номер телефону: <b>${phone}</b>`,
     `Розрахована сума: $${formatMoney(total_sum)}`,
   ];
 
@@ -72,7 +72,9 @@ async function sendTelegramNotification(requested_product, requestData) {
         signal: controller.signal,
       });
 
-      if (!response.ok) {
+      const result = await response.json();
+
+      if (!response.ok || !result.ok) {
         const error = new Error(`Telegram delivery failed for ${tg_tag}`);
         error.code = 'TELEGRAM_DELIVERY_FAILED';
         throw error;
