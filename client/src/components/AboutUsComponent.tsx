@@ -1,23 +1,9 @@
 import { useEffect, useState } from 'react';
-import type { CSSProperties } from 'react';
 import { getHomepageContent } from '../services/api';
 import type { AboutUsContent } from '../types/content';
 import { useInitialContent } from '../context/ContentContext';
 import HeadingComponent from "./default/HeadingComponent";
 import DescriptionComponent from "./default/DescriptionComponent";
-// import BlueContainerBlock from "../components/default/BlueContainerBlock";
-// import TextContainer from "../components/default/TextContainer";
-// import ButtonFill from "../components/default/ButtonFIll";
-const min: number = 95;
-const max: number = 105;
-
-const getRightPositionStyle = (index: number): CSSProperties => {
-    const position = -(min + (index % (max - min + 1)));
-
-    return {
-        right: `${position}%`,
-    };
-};
 
 function AboutUs() {
     const initialContent = useInitialContent()?.homepage.about_us_block ?? null;
@@ -49,7 +35,7 @@ function AboutUs() {
             {isLoading && <p>Іде завантаження...</p>}
             {error && <p>Невдалось завантажити сторінку: {error}</p>}
             {content && (
-                <div className={'display-flex flex-column align-content-center'}>
+                <div className={'display-flex flex-column align-content-center width-100-p'}>
                     <HeadingComponent children={content.about_us_title}
                                       adClassName={'about-us-hero-title text-color-orange'}
                     />
@@ -78,7 +64,7 @@ function AboutUs() {
                                     />
                                 </div>
                                 <div className={'display-flex align-content-center au-image-outer-wrapper'}>
-                                    <div style={getRightPositionStyle(index)} className={' p-absolute-element radial-bg-container '}></div>
+                                    <div className="radial-bg-container" aria-hidden="true" />
                                     <img src={block.about_us_image_path}
                                          className={' image'}
                                          width="160"

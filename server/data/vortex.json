@@ -179,81 +179,80 @@
       "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
       "cards": [
         {
-          "title": "Lorem ipsum",
+          "title": "TecDoc Inside",
           "image_src": "blank_image",
           "features": [
-            "Lorem ipsum dolor sit amet",
-            "Consectetur adipiscing elit",
-            "Aenean commodo ligula eget dolor",
-            "Donec quam felis ultricies nec",
-            "Pellentesque eu pretium quis"
+            "Пошук авто по VIN",
+            "Підбір запчастин до авто, фільтр по улюбленим брендам, конструктивним вузлам",
+            "Застосування запчастин по авто",
+            "Пошук інформації про запчастини",
+            "Підбір запчастин в каталозі найбільшої бази даних світу"
           ],
-          "link_text": "Lorem ipsum",
+          "link_text": "Детальніше",
           "link_href": "/"
         },
         {
-          "title": "Dolor sit amet",
+          "title": "Checkbox",
           "image_src": "blank_image",
           "features": [
-            "Lorem ipsum dolor sit amet",
-            "Consectetur adipiscing elit",
-            "Aenean commodo ligula eget dolor",
-            "Donec quam felis ultricies nec",
-            "Pellentesque eu pretium quis"
+            "Онлайн каса прямо у Vortex",
+            "Формування та друк фіскальних чеків на термопринтери",
+            "Видача та формування фіскальних чеків",
+            "Відсутні витрати на придбання обладнання",
+            "Зручне керування підключенням",
+            "Можливість налаштування декількох акаунтів checkbox, декількох кас/касирів всередині одного акаунту"
           ],
-          "link_text": "Lorem ipsum",
+          "link_text": "Детальніше",
           "link_href": "/"
         },
         {
-          "title": "Consectetur elit",
+          "title": "Нова Пошта",
           "image_src": "blank_image",
           "features": [
-            "Lorem ipsum dolor sit amet",
-            "Consectetur adipiscing elit",
-            "Aenean commodo ligula eget dolor",
-            "Donec quam felis ultricies nec",
-            "Pellentesque eu pretium quis"
+            "Налаштування відправника за замовчуванням",
+            "Генерування експрес ТТН. На відділення чи адресу, з контролем платежу чи без, декілька місць чи одне та багато інших інтегрованих налаштувань",
+            "Можливість друку стікерів місць та цілої експрес ТТН на А4",
+            "Оновлення бази даних відділень по АПІ"
           ],
-          "link_text": "Lorem ipsum",
+          "link_text": "Детальніше",
           "link_href": "/"
         },
         {
-          "title": "Aenean commodo",
+          "title": "Turbo SMS",
           "image_src": "blank_image",
           "features": [
-            "Lorem ipsum dolor sit amet",
-            "Consectetur adipiscing elit",
-            "Aenean commodo ligula eget dolor",
-            "Donec quam felis ultricies nec",
-            "Pellentesque eu pretium quis"
+            "Автоматичне посилання SMS по різних подіях",
+            "Можливість відправити SMS вручну з довільним текстом або шаблоном",
+            "Розсилка SMS декільком отримувачам",
+            "Історія відправлених СМС",
+            "Відстежування балансу, сповіщення «баланс SMS майже вичерпано»"
           ],
-          "link_text": "Lorem ipsum",
+          "link_text": "Детальніше",
           "link_href": "/"
         },
         {
-          "title": "Integer tincidunt",
+          "title": "API банків",
           "image_src": "blank_image",
           "features": [
-            "Lorem ipsum dolor sit amet",
-            "Consectetur adipiscing elit",
-            "Aenean commodo ligula eget dolor",
-            "Donec quam felis ultricies nec",
-            "Pellentesque eu pretium quis"
+            "Підключення до вашого рахунку",
+            "Перегляд останніх транзакцій",
+            "Формування фін. транзакції в Vortex зі списку реальних транзакцій в 1 клік!",
+            "Всі транзакції в одному списку зі зручними фільтрами: по рахунку та виду операції, а також загальним пошуком по сумі, отримувачу, примітці тощо"
           ],
-          "link_text": "Lorem ipsum",
+          "link_text": "Детальніше",
           "link_href": "/"
         },
         {
-          "title": "Vivamus elementum",
+          "title": "Binotel",
           "image_src": "blank_image",
           "features": [
-            "Lorem ipsum dolor sit amet",
-            "Consectetur adipiscing elit",
-            "Aenean commodo ligula eget dolor",
-            "Donec quam felis ultricies nec",
-            "Pellentesque eu pretium quis"
+            "Контроль втрачених дзвінків",
+            "Перегляд історії дзвінків по клієнту в Vortex",
+            "Швидке створення клієнта при вхідному дзвінку з незареєстрованого номеру",
+            "Прослуховування дзвінка та контроль якості",
+            "Перехід на клієнта у Vortex при вхідному дзвінку з зареєстрованого номеру"
           ],
-          "link_text": "Lorem ipsum",
+          "link_text": "Детальніше",
           "link_href": "/"
         }
       ]
