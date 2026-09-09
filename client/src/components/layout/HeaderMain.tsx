@@ -8,7 +8,7 @@ const menuLinks: NavigationLink[] = [
     { name: "Розробка веб-сайтів", path: "/websites" },
     { name: "Ціни", path: "/pricing" },
     { name: "Запитання", path: "/faq" },
-    { name: "Contact", path: "/contact" },
+    { name: "Контакти", path: "/contact" },
 ];
 
 function HeaderMain() {
