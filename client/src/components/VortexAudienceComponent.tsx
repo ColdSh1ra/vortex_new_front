@@ -22,7 +22,6 @@ function VortexAudienceComponent() {
 
   return (
     <section className="section-container vortex-audience-section">
-      <div className="radial-bg-container" aria-hidden="true" />
       {error && <p className="audience-status">{error}</p>}
       {content && (
         <div className="vortex-audience-wrapper">
@@ -34,13 +33,13 @@ function VortexAudienceComponent() {
                   <span>{index + 1}/</span>
                   <h3>{card.title}</h3>
                   <p>{card.description}</p>
-                  <button type="button">
+                  <a href="#trial-request" className="audience-cta">
                     {card.cta_text}
-                    <b aria-hidden="true">››</b>
-                  </button>
+                    <span aria-hidden="true">»</span>
+                  </a>
                 </div>
-                <div className="audience-image-frame">
-                  {card.image_src && <img src={card.image_src} alt="" />}
+                <div className="audience-image-frame" aria-hidden="true">
+                  {card.image_src && <img src={card.image_src} alt="" width="256" height="256" loading="lazy" />}
                 </div>
               </article>
             ))}

@@ -102,28 +102,28 @@
       "section_title": "Кому підійде Vortex?",
       "cards": [
         {
-          "title": "Lorem ipsum dolor",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "cta_text": "Lorem ipsum",
-          "image_src": ""
+          "title": "Магазини автозапчастин",
+          "description": "для зручного управління товарами та замовленнями",
+          "cta_text": "Спробувати Безкоштовно",
+          "image_src": "/imgs/3d_clay/3dicons-bag-dynamic-clay.png"
         },
         {
-          "title": "Consectetur adipiscing",
-          "description": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt.",
-          "cta_text": "Lorem ipsum",
-          "image_src": ""
+          "title": "СТО та автосервіси",
+          "description": "для контролю робіт, запасів і взаємодії з клієнтами",
+          "cta_text": "Спробувати Безкоштовно",
+          "image_src": "/imgs/3d_clay/3dicons-tool-dynamic-clay.png"
         },
         {
-          "title": "Tempor incididunt",
-          "description": "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
-          "cta_text": "Lorem ipsum",
-          "image_src": ""
+          "title": "Оптові компанії",
+          "description": "для організації складського обліку та ефективної логістики",
+          "cta_text": "Спробувати Безкоштовно",
+          "image_src": "/imgs/3d_clay/3dicons-location-dynamic-clay.png"
         },
         {
-          "title": "Magna aliqua",
-          "description": "Lorem ipsum dolor sit amet, quis nostrud exercitation ullamco.",
-          "cta_text": "Lorem ipsum",
-          "image_src": ""
+          "title": "Інтернет-магазини",
+          "description": "для інтеграції з онлайн-продажами та швидкої обробки замовлень",
+          "cta_text": "Спробувати Безкоштовно",
+          "image_src": "/imgs/3d_clay/3dicons-computer-dynamic-clay.png"
         }
       ]
     },

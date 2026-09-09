@@ -139,7 +139,7 @@ function TrialRequestComponent({
   };
 
   return (
-    <section className="section-container trial-request-section">
+    <section className="section-container trial-request-section" id="trial-request">
       <div className="trial-request-wrapper">
         <div className="trial-request-visual" aria-hidden="true">
           <img className={'logo-spin-animation'} src="/imgs/vortex_logo_large.svg" alt="vortex svg logo" />
