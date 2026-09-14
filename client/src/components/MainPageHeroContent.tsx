@@ -3,7 +3,6 @@ import { getContent } from '../services/api';
 import type { VortexContent } from '../types/content';
 import { useInitialContent } from '../context/ContentContext';
 import BlueContainerBlock from "../components/default/BlueContainerBlock";
-import TextContainer from "../components/default/TextContainer";
 import ButtonFill from "../components/default/ButtonFIll";
 
 function MainPageHeroContent() {
@@ -31,6 +30,8 @@ function MainPageHeroContent() {
         loadContent();
     }, [content]);
 
+    const [titleAccent = '', ...titleLines] = content?.homepage.title.split('\n') ?? [];
+
     return (
         <section className="hero-page section-container">
             {isLoading && <p>Іде завантаження...</p>}
@@ -48,13 +49,13 @@ function MainPageHeroContent() {
                         ShowHeading={true}
                         AdditionalClass={'homepage-text-container '}
                         Heading={
-                            <TextContainer
-                                Heading={content.homepage.title}
-                                Description={content.homepage.subtitle}
-                                ContainerClass="gap-8 display-flex flex-column align-content-center "
-                                HeadingClass="homepage-title"
-                                DescriptionClass="homepage-subtitle"
-                            />
+                            <div className="homepage-heading gap-8 display-flex flex-column align-content-center">
+                                <h1 className="homepage-title">
+                                    <span className="homepage-title-accent">{titleAccent.trim()}</span>
+                                    <span className="homepage-title-main">{titleLines.join('\n').trim()}</span>
+                                </h1>
+                                <p className="homepage-subtitle">{content.homepage.subtitle}</p>
+                            </div>
                         }
                         BlockContent={
                             <div className={'container-block-actions display-flex align-content-center'}>
@@ -63,6 +64,11 @@ function MainPageHeroContent() {
                                     btnFunction={() => {}}
                                     btnText={'Спробувати Безкоштовно'}
                                     btnIcon={'/icons/chevron-right-double.svg'}
+                                />
+                                <ButtonFill
+                                    dynamicClass={' button-outline hero-demo-button no-icon'}
+                                    btnFunction={() => {}}
+                                    btnText={'Спробувати Демо'}
                                 />
                             </div>
                         }

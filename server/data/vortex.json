@@ -9,17 +9,17 @@
         {
           "about_us_title": "Облік для магазину запчастин і СТО в одному місці",
           "about_us_description": "Рішення спеціально розроблено для вашої сфери — без зайвого функціоналу, з фокусом на склад, замовлення, клієнтів і облік послуг.",
-          "about_us_image_path": "/imgs/3dicons_premium/folder.png"
+          "about_us_image_path": "/imgs/3dicons_premium/monitor.png"
         },
         {
           "about_us_title": "Автоматизація без складнощів",
           "about_us_description": "Замість Excel — сучасна система, яка спрощує облік, пришвидшує обробку замовлень і допомагає уникати помилок.",
-          "about_us_image_path": "/imgs/3dicons_premium/monitor.png"
+          "about_us_image_path": "/imgs/3dicons_premium/folder.png"
         },
         {
           "about_us_title": "Інтеграції з постачальниками",
           "about_us_description": "Підключення до основних постачальників і каталогів автозапчастин. Автоматичне оновлення цін і залишків — без ручної роботи.",
-          "about_us_image_path": "/imgs/3dicons_premium/message.png"
+          "about_us_image_path": "/imgs/3dicons_premium/like.png"
         },
         {
           "about_us_title": "Вебсайт у подарунок",
@@ -29,7 +29,7 @@
         {
           "about_us_title": "Обмін інформацією з іншими нашими клієнтами",
           "about_us_description": "Спілкуйтеся з іншими магазинами, що користуються Vortex. Обмінюйтесь інформацією щодо наявності деталей.",
-          "about_us_image_path": "/imgs/3dicons_premium/like.png"
+          "about_us_image_path": "/imgs/3dicons_premium/message.png"
         },
         {
           "about_us_title": "Зростання прибутку",
@@ -48,26 +48,26 @@
     },
     "why_vortex_section": {
       "section_title": "Що вміє Vortex?",
-      "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+      "section_description": "Система Vortex наповнена широкими можливостями, все продумано до найдрібніших деталей та розробено командою професіоналів саме у цій сфері",
       "cards": [
         {
-          "title": "Lorem ipsum",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+          "title": "Контрагенти",
+          "description": "Історія продажів, робіт СТО, пробігу авто, документів тощо. Потужний модуль звірки взаєморозрахунків. Персональні націнки та кредитні умови.",
           "image_src": ""
         },
         {
-          "title": "Dolor sit amet",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum et donec sed odio dui.",
+          "title": "Склад",
+          "description": "Автоматична система закупки (т. зв. MIN-MAX), адресна система розміщення позицій на складі, система контролю збору товару на видачу та багато іншого",
           "image_src": ""
         },
         {
-          "title": "Consectetur elit",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
+          "title": "Фінанси",
+          "description": "Контроль всіх приходів та витрат: оплати постачальникам, зарплати, каси менеджерів та купа інших фінансових аспектів. І все це — мультивалютне",
           "image_src": ""
         },
         {
-          "title": "Aenean commodo",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
+          "title": "Фіскалізація",
+          "description": "В тандемі з Checkbox, ми даємо можливість фіскалізувати ваші продажі не встановлюючи касовий апарат.",
           "image_src": ""
         }
       ]

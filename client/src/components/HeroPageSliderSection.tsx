@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import {getHomepageContent} from "../services/api";
 import type { HeroPageSliderSection as HeroPageSliderSectionContent } from "../types/content";
 import { useInitialContent } from '../context/ContentContext';
@@ -9,6 +9,8 @@ function HeroPageSliderSection() {
     const [isLoading, setIsLoading] = useState<boolean>(!initialContent)
     const [error, setError] = useState<string | null>(null)
     const [currentSlide, setCurrentSlide] = useState(0)
+    const carouselRef = useRef<HTMLDivElement>(null)
+    const scrollAnimationFrame = useRef<number | null>(null)
 
     useEffect(() => {
         if (content) {
@@ -28,34 +30,90 @@ function HeroPageSliderSection() {
         loadContent();
     }, [content])
 
+    const scrollToSlide = useCallback((requestedSlide: number) => {
+        if (!content) {
+            return;
+        }
+
+        const slideCount = content.slide_image_paths.length;
+
+        if (slideCount === 0) {
+            return;
+        }
+
+        const nextSlide = (requestedSlide + slideCount) % slideCount;
+        const slideElement = carouselRef.current
+            ?.querySelectorAll<HTMLElement>('.slide-content')[nextSlide];
+
+        setCurrentSlide(nextSlide);
+        carouselRef.current?.scrollTo({
+            left: slideElement?.offsetLeft ?? 0,
+            behavior: 'smooth',
+        });
+    }, [content]);
+
     useEffect(() => {
         if (!content || content.slide_image_paths.length < 2) {
             return;
         }
 
         const intervalId = window.setInterval(() => {
-            setCurrentSlide((slide) => (slide + 1) % content.slide_image_paths.length);
+            scrollToSlide(currentSlide + 1);
         }, 5000);
 
         return () => window.clearInterval(intervalId);
-    }, [content]);
+    }, [content, currentSlide, scrollToSlide]);
 
-    const goToPreviousSlide = () => {
-        if (!content) {
+    useEffect(() => () => {
+        if (scrollAnimationFrame.current !== null) {
+            window.cancelAnimationFrame(scrollAnimationFrame.current);
+        }
+    }, []);
+
+    const updateCurrentSlideFromScroll = () => {
+        if (scrollAnimationFrame.current !== null || !carouselRef.current) {
             return;
         }
 
-        setCurrentSlide((slide) => (
-            slide === 0 ? content.slide_image_paths.length - 1 : slide - 1
-        ));
+        scrollAnimationFrame.current = window.requestAnimationFrame(() => {
+            const carousel = carouselRef.current;
+
+            if (!carousel) {
+                scrollAnimationFrame.current = null;
+                return;
+            }
+
+            const carouselCenter = carousel.scrollLeft + carousel.clientWidth / 2;
+            const slides = Array.from(
+                carousel.querySelectorAll<HTMLElement>('.slide-content')
+            );
+
+            if (slides.length === 0) {
+                scrollAnimationFrame.current = null;
+                return;
+            }
+
+            const closestSlide = slides.reduce((closestIndex, slide, index) => {
+                const slideCenter = slide.offsetLeft + slide.offsetWidth / 2;
+                const closestElement = slides[closestIndex];
+                const closestCenter = closestElement.offsetLeft + closestElement.offsetWidth / 2;
+
+                return Math.abs(slideCenter - carouselCenter) < Math.abs(closestCenter - carouselCenter)
+                    ? index
+                    : closestIndex;
+            }, 0);
+
+            setCurrentSlide(closestSlide);
+            scrollAnimationFrame.current = null;
+        });
+    };
+
+    const goToPreviousSlide = () => {
+        scrollToSlide(currentSlide - 1);
     };
 
     const goToNextSlide = () => {
-        if (!content) {
-            return;
-        }
-
-        setCurrentSlide((slide) => (slide + 1) % content.slide_image_paths.length);
+        scrollToSlide(currentSlide + 1);
     };
 
     return (
@@ -77,13 +135,12 @@ function HeroPageSliderSection() {
                         </button>
                     </div>
 
-                    <div className={'carousel-container'}>
-                        <div
-                            className={'slider-track'}
-                            style={{
-                                transform: `translateX(calc(-${currentSlide * 66.666667}% - ${currentSlide * 5}px))`,
-                            }}
-                        >
+                    <div
+                        className={'carousel-container'}
+                        ref={carouselRef}
+                        onScroll={updateCurrentSlideFromScroll}
+                    >
+                        <div className={'slider-track'}>
                             {content.slide_image_paths.map((slidePath, index) => (
                                 <div
                                     className={'slide-content display-flex align-content-center'}
@@ -92,7 +149,8 @@ function HeroPageSliderSection() {
                                     <img
                                         className={'image slider-image'}
                                         src={slidePath}
-                                        alt={`Slide ${index + 1}`} />
+                                        alt={`Slide ${index + 1}`}
+                                        draggable={false} />
                                 </div>
                             ))}
                         </div>
