@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Тимчасове фото працівника</title>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#798192"/><stop offset="1" stop-color="#2b3342"/></linearGradient></defs>
+  <rect width="256" height="256" rx="28" fill="url(#bg)"/>
+  <circle cx="128" cy="92" r="43" fill="#fff"/>
+  <path d="M47 235c7-55 36-86 81-86s74 31 81 86" fill="#ffac00"/>
+  <circle cx="128" cy="128" r="108" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="5"/>
+</svg>

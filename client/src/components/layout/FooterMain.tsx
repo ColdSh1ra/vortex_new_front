@@ -5,7 +5,7 @@ const footerMenuLinks = [
     { name: "Розробка веб-сайтів", path: "/contact" },
     { name: "Ціни", path: "/faq" },
     { name: "Запитання", path: "/faq" },
-    { name: "Контакти", path: "/contacts" },
+    { name: "Контакти", path: "/contact" },
 ];
 const footerSocialLinks = [
     { name: "Facebook", path: "/", image_url: '/icons/sm_black/facebook.svg'},

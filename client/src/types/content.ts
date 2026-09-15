@@ -125,8 +125,36 @@ export type HomepageContent = {
   website_development_section: WebsiteDevelopmentSection;
 };
 
+export type FaqDataItem = {
+  topic: string;
+  answer: string;
+};
+
+export type ContactWorker = {
+  contact_topic: string;
+  full_name: string;
+  role: string;
+  phone: string;
+  photo_path: string;
+  messenger_links: {
+    telegram?: string;
+    viber?: string;
+    whatsapp?: string;
+    email?: string;
+  };
+};
+
+export type ContactsContent = {
+  title: string;
+  subtitle: string;
+  workers: ContactWorker[];
+};
+
 export type VortexContent = {
   homepage: HomepageContent;
+  FAQ: FaqDataItem[];
+  videos: FaqDataItem[];
+  contacts: ContactsContent;
   settings: {
     pricing_calculator: PricingCalculatorSettings;
   };

@@ -11,6 +11,42 @@ const { CLIENT_ORIGINS } = require('./config/constants');
 const app = express();
 const clientDistPath = path.join(__dirname, '..', '..', 'client', 'dist', 'client');
 const ssrEntryPath = path.join(__dirname, '..', '..', 'client', 'dist', 'server', 'entry-server.js');
+const clientManifestPath = path.join(clientDistPath, '.vite', 'manifest.json');
+
+async function getRouteStylesheet(url) {
+  try {
+    const manifest = JSON.parse(await fs.readFile(clientManifestPath, 'utf8'));
+    const pathname = new URL(url, 'http://localhost').pathname;
+    let sourceFiles = [
+      'src/styles/main.css',
+      'src/styles/trial-request.css',
+    ];
+
+    if (pathname === '/faq' || pathname.startsWith('/faq/')) {
+      sourceFiles = ['src/styles/faq.css'];
+    } else if (pathname === '/contact' || pathname.startsWith('/contact/')) {
+      sourceFiles = [
+        'src/styles/contact.css',
+        'src/styles/trial-request.css',
+      ];
+    }
+    const cssFiles = sourceFiles.flatMap((sourceFile) => {
+      const entry = manifest[sourceFile];
+
+      if (!entry) {
+        return [];
+      }
+
+      return entry.css || (entry.file.endsWith('.css') ? [entry.file] : []);
+    });
+
+    return cssFiles
+      .map((file) => `<link rel="stylesheet" href="/${file}">`)
+      .join('');
+  } catch {
+    return '';
+  }
+}
 
 app.disable('x-powered-by');
 app.use((req, res, next) => {
@@ -51,8 +87,10 @@ app.use(async (req, res, next) => {
     const { render } = await import(pathToFileURL(ssrEntryPath).href);
     const { appHtml } = render(req.originalUrl, content);
     const serializedContent = JSON.stringify(content).replace(/</g, '\\u003c');
+    const routeStylesheet = await getRouteStylesheet(req.originalUrl);
     const html = template
       .replace('<!--ssr-outlet-->', appHtml)
+      .replace('<!--route-styles-->', routeStylesheet)
       .replace(
         '<!--initial-content-->',
         `<script>window.__VORTEX_CONTENT__=${serializedContent}</script>`,

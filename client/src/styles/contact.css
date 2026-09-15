@@ -1,0 +1,352 @@
+.contacts-route {
+  background-color: var(--blue-color-5);
+  color: var(--grey-dark-text);
+  position: relative;
+}
+
+.contacts-route::before {
+  background: #fff;
+  content: "";
+  height: 110px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.contacts-route .main-content {
+  background: #fff;
+  width: 100%;
+}
+
+.contacts-page {
+  background: #fff;
+}
+
+.contacts-page-content {
+  margin: 0 var(--desktop-padding);
+  padding-top: 42px;
+}
+
+.contacts-breadcrumbs {
+  border-bottom: 1px solid var(--grey-color-100);
+  padding-bottom: 20px;
+}
+
+.contacts-breadcrumbs ol {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-breadcrumbs a {
+  color: var(--grey-dark-text);
+  text-decoration: none;
+}
+
+.contacts-breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.contacts-breadcrumbs [aria-current="page"],
+.contacts-breadcrumbs [aria-hidden="true"] {
+  color: var(--grey-color-200);
+}
+
+.contacts-section {
+  margin-top: 28px;
+}
+
+.contacts-intro {
+  align-items: center;
+  background: var(--grey-color-100);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 160px;
+  padding: 32px 40px;
+  text-align: center;
+}
+
+.contacts-intro h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+.contacts-intro p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.contacts-workers-grid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 8px;
+}
+
+.contact-worker-card {
+  background: #d4d4d4;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  padding: 40px;
+}
+
+.contact-worker-profile {
+  display: grid;
+  gap: 8px 16px;
+  grid-template-columns: 112px minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+}
+
+.contact-worker-topic {
+  align-self: end;
+  font-size: 22px;
+  font-weight: 700;
+  grid-column: 2;
+  grid-row: 1;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.contact-worker-photo {
+  border-radius: 16px;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  height: 112px;
+  object-fit: cover;
+  width: 112px;
+}
+
+.contact-worker-identity {
+  align-self: start;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.contact-worker-name,
+.contact-worker-role {
+  margin: 0;
+}
+
+.contact-worker-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.contact-worker-role {
+  font-size: 15px;
+  line-height: 1.2;
+  margin-top: 6px;
+}
+
+.contact-worker-phone {
+  align-items: center;
+  color: var(--grey-dark-text);
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  gap: 10px;
+  line-height: 1;
+  width: fit-content;
+}
+
+.contact-worker-phone img {
+  height: 22px;
+  width: 22px;
+}
+
+.contact-worker-messengers {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+
+.contact-worker-messengers a {
+  align-items: center;
+  border-radius: 6px;
+  display: flex;
+  height: 26px;
+  justify-content: center;
+  width: 26px;
+}
+
+.contact-worker-messengers a:focus-visible,
+.contact-worker-phone:focus-visible {
+  outline: 2px solid var(--orange-bg-color);
+  outline-offset: 3px;
+}
+
+.contact-worker-messengers img {
+  height: 24px;
+  width: 24px;
+}
+
+.contacts-bottom-transition {
+  background: linear-gradient(180deg, #fff 0%, #f8f9fa 20%, #9ba0a8 58%, var(--blue-color-5) 100%);
+  height: 260px;
+  margin-top: 18px;
+}
+
+.contacts-route .footer {
+  box-shadow: 0 0 0 100vmax var(--blue-color-5);
+  clip-path: inset(0 -100vmax);
+  margin-top: 0;
+}
+
+.app-shell.contacts-route .section-container.trial-request-section {
+  padding-bottom: 56px;
+  padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .contacts-route::before {
+    height: 92px;
+  }
+
+  .contacts-page-content {
+    margin: 0;
+    padding: 32px var(--mobile-padding) 0;
+  }
+
+  .contacts-breadcrumbs {
+    padding-bottom: 20px;
+  }
+
+  .contacts-breadcrumbs ol {
+    font-size: 18px;
+    gap: 10px;
+  }
+
+  .contacts-section {
+    margin-top: 24px;
+  }
+
+  .contacts-intro {
+    border-radius: 12px;
+    min-height: 165px;
+    padding: 24px 20px;
+  }
+
+  .contacts-intro h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+
+  .contacts-intro p {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .contacts-workers-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-worker-card {
+    border-radius: 12px;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .contact-worker-profile {
+    gap: 16px;
+    grid-template-columns: 140px minmax(0, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  .contact-worker-topic {
+    font-size: 23px;
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .contact-worker-photo {
+    border-radius: 12px;
+    grid-column: 1;
+    grid-row: 2;
+    height: 140px;
+    width: 140px;
+  }
+
+  .contact-worker-identity {
+    align-self: start;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .contact-worker-name {
+    font-size: 18px;
+  }
+
+  .contact-worker-role {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  .contact-worker-phone {
+    font-size: 22px;
+    gap: 12px;
+  }
+
+  .contact-worker-phone img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .contact-worker-messengers {
+    gap: 18px;
+  }
+
+  .contact-worker-messengers a {
+    height: 32px;
+    width: 32px;
+  }
+
+  .contact-worker-messengers img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .contacts-bottom-transition {
+    height: 180px;
+  }
+
+  .app-shell.contacts-route .section-container.trial-request-section {
+    padding-bottom: 72px;
+    padding-top: 48px;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact-worker-profile {
+    grid-template-columns: 116px minmax(0, 1fr);
+  }
+
+  .contact-worker-photo {
+    height: 116px;
+    width: 116px;
+  }
+
+  .contact-worker-topic {
+    font-size: 21px;
+  }
+
+  .contact-worker-phone {
+    font-size: 18px;
+  }
+}

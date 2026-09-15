@@ -7,6 +7,7 @@ import RecaptchaCheckbox from './default/RecaptchaCheckbox';
 type TrialRequestComponentProps = {
   totalSum: number;
   requestedProduct?: RequestedProduct;
+  showCalculatedPrice?: boolean;
 };
 
 type FormErrors = {
@@ -22,6 +23,7 @@ const PHONE_PATTERN = /^[+()\d\s-]{7,30}$/;
 function TrialRequestComponent({
   totalSum,
   requestedProduct = 'vortex',
+  showCalculatedPrice = true,
 }: TrialRequestComponentProps) {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
@@ -159,7 +161,7 @@ function TrialRequestComponent({
               а деякі залишити (налаштування інтеграцій, імпорту прайсів,
               суб’єктів господарювання тощо)
             </p>
-            <strong>Розрахована вартість: ${safeTotal}</strong>
+            {showCalculatedPrice && <strong>Розрахована вартість: ${safeTotal}</strong>}
           </div>
 
           <form onSubmit={handleSubmit} noValidate>

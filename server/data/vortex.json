@@ -312,6 +312,105 @@
       "cta_text": "Детальніше Про Сайт"
     }
   },
+  "FAQ": [
+    {
+      "topic": "Який термін дії Демо-версії?",
+      "answer": "<p>Демо-версія є безкоштовною та надається на 14 днів. Функціонал Демо-версії не відрізняється від платної версії.</p>"
+    },
+    {
+      "topic": "Після закінчення тестового періоду, введені мною дані зберігаються?",
+      "answer": "<p>Ми рекомендуємо протестувати весь функціонал програми, не переймаючись через можливі помилки. Після завершення тестування ми можемо як видалити, так і залишити будь-які з ваших даних — за вашим вибором.</p>"
+    },
+    {
+      "topic": "Які гарантії збереження моїх даних та їх захист від передачі третім лицям?",
+      "answer": "<p>Наші сервери розташовані в надійних дата-центрах Німеччини та Фінляндії. Файли із залишками, контрагентами та їхніми балансами можна завантажувати самостійно або налаштувати автоматичне надсилання цих даних на пошту. Також є можливість підписати двосторонній договір про нерозповсюдження інформації.</p>"
+    },
+    {
+      "topic": "Чи безкоштовні оновлення?",
+      "answer": "<p>Так, оновлення безкоштовні.</p>"
+    },
+    {
+      "topic": "Мені потрібний додатковий функціонал, що можете запропонувати?",
+      "answer": "<p>Якщо ви не знайшли в програмі рішення для своїх потреб, ми можемо розробити додатковий функціонал після попереднього обговорення вартості та строків.</p>"
+    },
+    {
+      "topic": "Як розпочати роботу?",
+      "answer": "<ol><li>Завантажте свою наявність через імпортер прайсів, вибравши в полі складу «-1». Файл обов’язково має містити 4 колонки: артикул, бренд, кількість і вхідна ціна.</li><li>Імпортуйте своїх клієнтів через клієнти → список → у верхньому правому кутку кнопка «імпортувати».</li><li>Налаштуйте автоматичне завантаження прайсів актуальних вам постачальників через адміністрування → сторонні сервіси та синхронізація.</li><li>Створіть користувачів через адміністрування → користувачі → список → у верхньому правому кутку кнопка «додати».</li></ol>"
+    }
+  ],
+  "videos": [
+    {
+      "topic": "Як завантажити прайс?",
+      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=g95YUJmOvXM\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Завантаження прайсу</strong><span>Інструкція з налаштування</span><i aria-hidden=\"true\">▶</i></a></div>"
+    },
+    {
+      "topic": "Як оформити замовлення від постачальника?",
+      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+від+постачальника\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Замовлення від постачальника</strong><span>Покрокова відеоінструкція</span><i aria-hidden=\"true\">▶</i></a></div>"
+    },
+    {
+      "topic": "Як оформити замовлення зі складу?",
+      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+зі+складу\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Замовлення зі складу</strong><span>Покрокова відеоінструкція</span><i aria-hidden=\"true\">▶</i></a></div>"
+    },
+    {
+      "topic": "Як оформити прихід товару?",
+      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=JkVtG0KNoVw\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Замовлення та прийом товару</strong><span>Інструкція з налаштування</span><i aria-hidden=\"true\">▶</i></a><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+великий+прийом+товару\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Великий прийом товару</strong><span>Інструкція з налаштування</span><i aria-hidden=\"true\">▶</i></a></div>"
+    }
+  ],
+  "contacts": {
+    "title": "Контакти",
+    "subtitle": "Залишились запитання?\nМи завжди раді допомогти Вам, ми тут для Вас",
+    "workers": [
+      {
+        "contact_topic": "Для отримання тестової версії / з питань консультації",
+        "full_name": "Крістіна Васильняк",
+        "role": "Тех. підтримка",
+        "phone": "+38 (097) 866-36-90",
+        "photo_path": "/imgs/contacts/worker-1.svg",
+        "messenger_links": {
+          "telegram": "https://t.me/vortex_support",
+          "viber": "viber://chat?number=%2B380978663690",
+          "whatsapp": "https://wa.me/380978663690",
+          "email": "mailto:support@crm-vortex.com"
+        }
+      },
+      {
+        "contact_topic": "По питанням інтеграцій / тех. питанням / розробкам",
+        "full_name": "Олександр Васильєв",
+        "role": "Розробник",
+        "phone": "+38 (095) 677-50-02",
+        "photo_path": "/imgs/contacts/worker-2.svg",
+        "messenger_links": {
+          "telegram": "https://t.me/vortex_development",
+          "viber": "viber://chat?number=%2B380956775002",
+          "whatsapp": "https://wa.me/380956775002",
+          "email": "mailto:development@crm-vortex.com"
+        }
+      },
+      {
+        "contact_topic": "По питанням співпраці / бізнес пропозицій / тощо",
+        "full_name": "Володимир Маркович",
+        "role": "Засновник",
+        "phone": "+38 (066) 728-23-02",
+        "photo_path": "/imgs/contacts/worker-3.svg",
+        "messenger_links": {
+          "telegram": "https://t.me/vortex_business",
+          "viber": "viber://chat?number=%2B380667282302",
+          "email": "mailto:business@crm-vortex.com"
+        }
+      },
+      {
+        "contact_topic": "По питанням співпраці / бізнес пропозицій / тощо",
+        "full_name": "Артем Криворутченко",
+        "role": "Засновник",
+        "phone": "+38 (050) 957-66-74",
+        "photo_path": "/imgs/contacts/worker-4.svg",
+        "messenger_links": {
+          "viber": "viber://chat?number=%2B380509576674",
+          "email": "mailto:partnership@crm-vortex.com"
+        }
+      }
+    ]
+  },
   "settings": {
     "pricing_calculator": {
       "currency": "$",
