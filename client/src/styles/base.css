@@ -238,8 +238,14 @@ div.p-absolute-element {
 }
 
 .radial-bg-container {
-  background-image: radial-gradient(circle at center, rgb(255 172 0 / .32) 0%, rgb(255 172 0 / .12) 35%, rgb(255 172 0 / 0) 70%);
-  filter: blur(1.5rem);
+  background-image: radial-gradient(
+    circle at center,
+    rgb(255 172 0 / .2) 0%,
+    rgb(255 172 0 / .1) 28%,
+    rgb(255 172 0 / .035) 52%,
+    rgb(255 172 0 / 0) 76%
+  );
+  filter: blur(2rem);
   pointer-events: none;
 }
 

@@ -25,8 +25,10 @@ function MainPage() {
           <HeroPageSliderSection/>
           <WhyVortexComponent/>
           <WhyVortexShowcaseComponent/>
-          <VortexAudienceComponent/>
-          <ClientTestimonialsComponent/>
+          <div className="audience-testimonials-group">
+              <VortexAudienceComponent/>
+              <ClientTestimonialsComponent/>
+          </div>
           <IntegrationsNetworkComponent/>
           <IntegrationsCatalogComponent/>
           <VortexSyncComponent/>
