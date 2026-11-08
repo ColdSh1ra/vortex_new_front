@@ -1,49 +1,24 @@
-import { useEffect, useState } from 'react';
-import { getContent } from '../services/api';
-import type { VortexContent } from '../types/content';
+import { useI18n } from '../context/ContentContext';
 import { useInitialContent } from '../context/ContentContext';
 import BlueContainerBlock from "../components/default/BlueContainerBlock";
 import ButtonFill from "../components/default/ButtonFIll";
 
 function MainPageHeroContent() {
-    const initialContent = useInitialContent();
-    const [content, setContent] = useState<VortexContent | null>(initialContent);
-    const [isLoading, setIsLoading] = useState(!initialContent);
-    const [error, setError] = useState<string | null>(null);
-
-    useEffect(() => {
-        if (content) {
-            return;
-        }
-
-        async function loadContent() {
-            try {
-                const apiContent = await getContent();
-                setContent(apiContent);
-            } catch (loadError) {
-                setError(loadError instanceof Error ? loadError.message : 'Unknown error');
-            } finally {
-                setIsLoading(false);
-            }
-        }
-
-        loadContent();
-    }, [content]);
+  const { t } = useI18n();
+    const content = useInitialContent();
 
     const [titleAccent = '', ...titleLines] = content?.homepage.title.split('\n') ?? [];
 
     return (
         <section className="hero-page section-container">
-            {isLoading && <p>Іде завантаження...</p>}
-            {error && <p>Невдалось завантажити сторінку: {error}</p>}
             {content && (
                 <>
                     <div className={'radial-bg-container absolute-container'}/>
-                    <img className={'absolute-container image vortex-logo'} src='/bgs/logo2.svg' alt='company logo'/>
+                    <img className={'absolute-container image vortex-logo'} src='/bgs/logo2.svg' alt='Vortex'/>
                     <div className={'hero-page-shadow-container display-flex align-content-center absolute-container'}>
-                        <img className={'hero-page-image screen-shot-1'} src='/imgs/vx-screenshot-1.png' alt='inside app screenshot'/>
-                        <img className={'hero-page-image screen-shot-2'} src='/imgs/vx-screenshot-2.png' alt='inside app screenshot'/>
-                        <img className={'hero-page-image screen-shot-3'} src='/imgs/vx-screenshot-3.png' alt='inside app screenshot'/>
+                        <img className={'hero-page-image screen-shot-1'} src='/imgs/vx-screenshot-1.png' alt=''/>
+                        <img className={'hero-page-image screen-shot-2'} src='/imgs/vx-screenshot-2.png' alt=''/>
+                        <img className={'hero-page-image screen-shot-3'} src='/imgs/vx-screenshot-3.png' alt=''/>
                     </div>
                     <BlueContainerBlock
                         ShowHeading={true}
@@ -61,14 +36,14 @@ function MainPageHeroContent() {
                             <div className={'container-block-actions display-flex align-content-center'}>
                                 <ButtonFill
                                     dynamicClass={' orange with-icon'}
-                                    btnFunction={() => {}}
-                                    btnText={'Спробувати Безкоштовно'}
+                                    btnFunction={() => document.getElementById('trial-request')?.scrollIntoView({ behavior: 'smooth' })}
+                                    btnText={t('common.tryFree')}
                                     btnIcon={'/icons/chevron-right-double.svg'}
                                 />
                                 <ButtonFill
                                     dynamicClass={' button-outline hero-demo-button no-icon'}
-                                    btnFunction={() => {}}
-                                    btnText={'Спробувати Демо'}
+                                    btnFunction={() => document.getElementById('trial-request')?.scrollIntoView({ behavior: 'smooth' })}
+                                    btnText={t('common.tryDemo')}
                                 />
                             </div>
                         }

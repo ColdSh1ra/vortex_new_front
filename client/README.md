@@ -1,3 +1,27 @@
+## Localized content and workshop page
+
+Site content lives in `server/data/vortex.json`, under `ua`, `cz`, `sk`, `en`, and `pl`.
+Each locale has the same structure. `ui` contains interface labels and messages, and
+`car_service` contains the six workshop page blocks. Add text to every locale;
+`useI18n().t(key, values)` supports `{name}` interpolation and Ukrainian fallback.
+The public locale codes `ua` and `cz` map to HTML/reCAPTCHA language tags `uk` and `cs`.
+
+The header selector updates all sections without resetting the pricing calculator.
+Selection persists in `vortex-language` localStorage and a same-named cookie, which
+also controls the initial server render. Workshop styles are in
+`src/styles/car-service.css` and load on `/car-service`, including SSR.
+
+Trial requests include `source_page` (`home`, `contact`, or `car-service`) and
+`language`. Both are validated by the API and included in Telegram notifications.
+A configured `VITE_RECAPTCHA_SITE_KEY`, server reCAPTCHA secret, and Telegram bot
+are required for real delivery.
+
+The supplied design contains document names, but no PDF files or URLs. Fill in
+`car_service.blocks[1].documents[].href` in each locale to enable downloads.
+Until then, document names are shown as plain text.
+
+Validation: `npm run build` from the repository root; `npm --prefix server test`.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +92,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Website development page
+
+`/websites` uses `src/styles/websites.css`. The page layout and package configuration
+are in `src/pages/WebsiteDevelopmentPage.tsx` and `src/data/websitePlans.ts`.
+New service labels and page captions live in `src/locales/{ua,cz,sk,en,pl}.json`;
+the existing introductory copy is reused from the homepage content.
+
+Add the following images to `client/public/imgs/websites` to replace the white placeholders:
+
+- `overview.png`: the introductory preview.
+- `example-free.png`: the free template preview.
+- `example-practical.png`: the Practical template preview.
+- `example-maximum.png`: the Maximum template preview.
+
+The same filenames also support `.jpg`, `.jpeg`, `.webp`, and `.avif` extensions.
+Images are discovered during Vite development/build, so rebuild after adding them
+for production. Use one image format per filename.
+
+Choosing a package scrolls to the form and includes `website_package` and the
+`websites` source in the request and Telegram notification.

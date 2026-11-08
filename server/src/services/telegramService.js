@@ -11,6 +11,9 @@ function buildTelegramMessage({
   phone,
   total_sum,
   location,
+  source_page = 'home',
+  language = 'ua',
+  website_package,
 }) {
   if (requested_product === 'tecdoc') {
     const error = new Error('TecDoc requests are not implemented yet');
@@ -25,11 +28,18 @@ function buildTelegramMessage({
   }
 
   const messageLines = [
-    'Нова заявка на тестову Vortex',
+    source_page === 'websites' ? 'Нова заявка на розробку сайту Vortex' : 'Нова заявка на тестову Vortex',
+    `Сторінка: ${{ home: 'Головна', contact: 'Контакти', 'car-service': 'Облік СТО', websites: 'Розробка веб-сайтів' }[source_page] || source_page}`,
+    `Мова: ${language}`,
     `Ім'я: <b>${name}</b>`,
     `Номер телефону: <b>${phone}</b>`,
     `Розрахована сума: $${formatMoney(total_sum)}`,
   ];
+
+  if (website_package) {
+    const packageName = { free: 'Безкоштовний', practical: 'Практичний', maximum: 'Максимальний' }[website_package];
+    messageLines.push(`Пакет сайту: ${packageName}`);
+  }
 
   if (location) {
     const latitude = location.latitude.toFixed(6);

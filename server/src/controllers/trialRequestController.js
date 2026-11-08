@@ -8,11 +8,17 @@ const ALLOWED_FIELDS = new Set([
   'total_sum',
   'recaptcha_token',
   'location',
+  'source_page',
+  'language',
+  'website_package',
 ]);
 const NAME_PATTERN = /^[\p{L}\p{M} .'-]{2,80}$/u;
 const NAME_LETTER_PATTERN = /\p{L}/u;
 const PHONE_PATTERN = /^[+()\d\s-]{7,30}$/;
 const ALLOWED_PRODUCTS = new Set(['vortex', 'tecdoc']);
+const ALLOWED_SOURCES = new Set(['home', 'contact', 'car-service', 'websites']);
+const WEBSITE_PACKAGES = new Set(['free', 'practical', 'maximum']);
+const ALLOWED_LANGUAGES = new Set(['ua', 'cz', 'sk', 'en', 'pl']);
 
 function normalizeAndValidateTrialRequest(body) {
   if (!body || typeof body !== 'object' || Array.isArray(body)) {
@@ -25,6 +31,18 @@ function normalizeAndValidateTrialRequest(body) {
   }
 
   if (!ALLOWED_PRODUCTS.has(body.requested_product)) {
+    return { valid: false };
+  }
+
+  const sourcePage = body.source_page ?? 'home';
+  const language = body.language ?? 'ua';
+  if (!ALLOWED_SOURCES.has(sourcePage) || !ALLOWED_LANGUAGES.has(language)) {
+    return { valid: false };
+  }
+
+  if (body.website_package !== undefined && (
+    sourcePage !== 'websites' || !WEBSITE_PACKAGES.has(body.website_package)
+  )) {
     return { valid: false };
   }
 
@@ -102,6 +120,9 @@ function normalizeAndValidateTrialRequest(body) {
   return {
     valid: true,
     data: {
+      source_page: sourcePage,
+      language,
+      ...(body.website_package !== undefined ? { website_package: body.website_package } : {}),
       requested_product: body.requested_product,
       name,
       phone,

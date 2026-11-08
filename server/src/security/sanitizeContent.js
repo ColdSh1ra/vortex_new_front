@@ -47,12 +47,14 @@ function sanitizeAnswerCollection(DOMPurify, collection) {
 
 async function sanitizeContentHtml(content) {
   const DOMPurify = await getDomPurify();
-
-  return {
-    ...content,
-    FAQ: sanitizeAnswerCollection(DOMPurify, content.FAQ),
-    videos: sanitizeAnswerCollection(DOMPurify, content.videos),
-  };
+  return Object.fromEntries(Object.entries(content).map(([language, localized]) => [
+    language,
+    {
+      ...localized,
+      FAQ: sanitizeAnswerCollection(DOMPurify, localized.FAQ),
+      videos: sanitizeAnswerCollection(DOMPurify, localized.videos),
+    },
+  ]));
 }
 
 module.exports = sanitizeContentHtml;

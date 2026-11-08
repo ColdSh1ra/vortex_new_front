@@ -1,8 +1,10 @@
+import { useI18n } from '../../context/ContentContext';
 import { useEffect, useState } from 'react';
 import IntegrationBranch from './IntegrationBranch';
 import { INTEGRATION_HUB_POSITION, integrations } from './integrationData';
 
 function IntegrationsNetworkComponent() {
+  const { t } = useI18n();
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -22,19 +24,14 @@ function IntegrationsNetworkComponent() {
   return (
     <section className="section-container integrations-network-section" id="integrations">
       <header className="integrations-network-header">
-        <h2>Усі постачальники в одному місці</h2>
-        <p>
-          Одним з основних завдань Vortex є агрегація наявностей усіх постачальників
-          в одному місці, а також спрощення співпраці з ними. У рамках цих інтеграцій
-          ви матимете можливість автоматично отримувати прайси постачальників,
-          оформляти замовлення та завантажувати накладні за допомогою API.
-        </p>
+        <h2>{t('network.title')}</h2>
+        <p>{t('network.description')}</p>
       </header>
 
       <div
         className="integrations-network-map"
         role="img"
-        aria-label="Постачальники, підключені до системи Vortex"
+        aria-label={t('network.alt')}
       >
         <div className="integrations-network-glow" aria-hidden="true" />
 

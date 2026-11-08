@@ -1,30 +1,12 @@
-import { useEffect, useState } from 'react';
 import { useInitialContent } from '../../context/ContentContext';
-import { getHomepageContent } from '../../services/api';
-import type { IntegrationsCatalogSection } from '../../types/content';
 
 const BLANK_IMAGE_VALUE = 'blank_image';
 
 function IntegrationsCatalogComponent() {
-  const initialContent = useInitialContent()?.homepage.integrations_catalog_section ?? null;
-  const [content, setContent] = useState<IntegrationsCatalogSection | null>(initialContent);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (content) {
-      return;
-    }
-
-    getHomepageContent('integrations_catalog_section')
-      .then(setContent)
-      .catch((loadError: unknown) => {
-        setError(loadError instanceof Error ? loadError.message : 'Unknown error');
-      });
-  }, [content]);
+  const content = useInitialContent()?.homepage.integrations_catalog_section ?? null;
 
   return (
     <section className="section-container integrations-catalog-section" id="integrations-catalog">
-      {error && <p className="integrations-catalog-status">{error}</p>}
 
       {content && (
         <div className="integrations-catalog-wrapper">
@@ -43,7 +25,7 @@ function IntegrationsCatalogComponent() {
                     className={`integration-catalog-logo${hasImage ? '' : ' is-placeholder'}`}
                     aria-hidden={!hasImage}
                   >
-                    {hasImage && <img src={card.image_src} alt={`${card.title} logo`} />}
+                    {hasImage && <img src={card.image_src} alt={card.title} />}
                   </div>
 
                   <h3>{card.title}</h3>

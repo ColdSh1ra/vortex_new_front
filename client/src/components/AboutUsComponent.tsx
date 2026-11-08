@@ -1,37 +1,10 @@
-import { useEffect, useState } from 'react';
-import { getHomepageContent } from '../services/api';
-import type { AboutUsContent } from '../types/content';
 import { useInitialContent } from '../context/ContentContext';
 
 function AboutUs() {
-    const initialContent = useInitialContent()?.homepage.about_us_block ?? null;
-    const [content, setContent] = useState<AboutUsContent | null>(initialContent);
-    const [isLoading, setIsLoading] = useState(!initialContent);
-    const [error, setError] = useState<string | null>(null);
-
-    useEffect(() => {
-        if (content) {
-            return;
-        }
-
-        async function loadContent() {
-            try {
-                const aboutUsContent = await getHomepageContent("about_us_block");
-                setContent(aboutUsContent);
-            } catch (loadError) {
-                setError(loadError instanceof Error ? loadError.message : 'Unknown error');
-            } finally {
-                setIsLoading(false);
-            }
-        }
-
-        loadContent();
-    }, [content]);
+    const content = useInitialContent()?.homepage.about_us_block ?? null;
 
     return (
         <section className="about-us-content section-container">
-            {isLoading && <p>Іде завантаження...</p>}
-            {error && <p>Невдалось завантажити сторінку: {error}</p>}
             {content && (
                 <div className="about-us-wrapper display-flex flex-column align-content-center width-100-p">
                     <div className="about-us-header">

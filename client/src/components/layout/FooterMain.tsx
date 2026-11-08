@@ -1,12 +1,13 @@
+import { useI18n } from '../../context/ContentContext';
 import { Link } from "react-router-dom";
 import CircleButtonLink from "../default/CircleButtonLink";
-const footerMenuLinks = [
-    { name: "Облік СТО", path: "/" },
-    { name: "Розробка веб-сайтів", path: "/contact" },
-    { name: "Ціни", path: "/faq" },
-    { name: "Запитання", path: "/faq" },
-    { name: "Контакти", path: "/contact" },
-];
+function getFooterMenuLinks(t: (key: string) => string) { return [
+    { name: t("nav.carService"), path: "/car-service" },
+    { name: t("nav.websites"), path: "/websites" },
+    { name: t("nav.pricing"), path: "/#pricing" },
+    { name: t("nav.faq"), path: "/faq" },
+    { name: t("nav.contacts"), path: "/contact" },
+]; }
 const footerSocialLinks = [
     { name: "Facebook", path: "/", image_url: '/icons/sm_black/facebook.svg'},
     { name: "YouTube", path: "/", image_url: '/icons/sm_black/youtube.svg'},
@@ -14,6 +15,8 @@ const footerSocialLinks = [
     { name: "Instagram", path: "/", image_url: '/icons/sm_black/instagram.svg'},
 ];
 function FooterMain() {
+    const { t } = useI18n();
+    const footerMenuLinks = getFooterMenuLinks(t);
     const currentYear = new Date().getFullYear();
 
     return (
@@ -27,7 +30,7 @@ function FooterMain() {
 
             <div className="footer-logo-container">
                 <Link to={'/'}>
-                    <img src="/imgs/vortex-logo-115.svg" alt="company logo" />
+                    <img src="/imgs/vortex-logo-115.svg" alt="Vortex" />
                 </Link>
             </div>
             <div className={'footer-menu-points display-flex flex-column gap-40'}>
@@ -39,12 +42,13 @@ function FooterMain() {
             </div>
             <div className={'footer-bottom-container display-flex'}>
                 <div className={'copyright'}>
-                    Copyright &#169; {currentYear} Vortex
+                    {t('common.copyright', { year: currentYear })}
                 </div>
                 <div className={'footer-additional-links display-flex gap-20'}>
                     {footerSocialLinks.map((sl, index) => (
                         <CircleButtonLink
                             linkPath={sl.path}
+                            label={sl.name}
                             imageUrl={sl.image_url}
                             key={'socialLink' + index + sl.name}>
                         </CircleButtonLink>
@@ -52,7 +56,7 @@ function FooterMain() {
                 </div>
                 <div className={'privacy-policy-link'}>
                     <Link className={'nav-link basic-mp'} to={'/privacy-policy'}>
-                        Політика конфіденційності
+                        {t('common.privacy')}
                     </Link>
                 </div>
             </div>

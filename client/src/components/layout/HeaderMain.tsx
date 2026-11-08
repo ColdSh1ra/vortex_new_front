@@ -1,16 +1,18 @@
+import { useI18n } from '../../context/ContentContext';
+import LanguageSwitcher from './LanguageSwitcher';
 import { useEffect, useRef, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import type { NavigationLink } from "../../types/navigation";
 import ButtonFill from "../default/ButtonFIll";
 
-const menuLinks: NavigationLink[] = [
-    { name: "Головна", path: "/" },
-    { name: "Облік СТО", path: "/car-service" },
-    { name: "Розробка веб-сайтів", path: "/websites" },
-    { name: "Ціни", path: "/pricing" },
-    { name: "Запитання", path: "/faq" },
-    { name: "Контакти", path: "/contact" },
-];
+function getMenuLinks(t: (key: string) => string, pricingPath: string): NavigationLink[] { return [
+    { name: t("nav.home"), path: "/" },
+    { name: t("nav.carService"), path: "/car-service" },
+    { name: t("nav.websites"), path: "/websites" },
+    { name: t("nav.pricing"), path: pricingPath },
+    { name: t("nav.faq"), path: "/faq" },
+    { name: t("nav.contacts"), path: "/contact" },
+]; }
 
 const socialLinks = [
   { name: "Facebook", path: "/", icon: "/icons/sm_black/facebook.svg" },
@@ -20,11 +22,16 @@ const socialLinks = [
 ];
 
 function HeaderMain() {
+  const { t } = useI18n();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const lastScrollY = useRef(0);
   const scrollAnimationFrame = useRef<number | null>(null);
   const location = useLocation();
+  const pricingPath = ['/car-service', '/websites'].includes(location.pathname)
+    ? `${location.pathname}#pricing` : '/#pricing';
+  const menuLinks = getMenuLinks(t, pricingPath);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setIsMenuOpen(false);
@@ -93,15 +100,22 @@ function HeaderMain() {
     };
   }, [isMenuOpen]);
 
+  const goToTrial = () => {
+    setIsMenuOpen(false);
+    const form = document.getElementById('trial-request');
+    if (form) { form.scrollIntoView({ behavior: 'smooth' }); }
+    else { navigate('/contact#trial-request'); }
+  };
+
   return (
     <header className={`header${isMenuOpen ? " mobile-menu-active" : ""}${isHeaderVisible ? "" : " header-is-hidden"}`}>
       <div className="desktop-header-content">
         <div className="brand header-logo-container">
           <Link to={'/'}>
-              <img src="/imgs/vortex-logo-115.svg" alt="company logo" />
+              <img src="/imgs/vortex-logo-115.svg" alt="Vortex" />
           </Link>
         </div>
-        <nav aria-label="Основна навігація">
+        <nav aria-label={t('common.navigation')}>
           <ul className="nav-list">
             {menuLinks.map((link) => (
               <li key={link.path}>
@@ -113,15 +127,16 @@ function HeaderMain() {
           </ul>
         </nav>
         <ButtonFill
-          btnFunction={() => {}}
-          btnText="Cпробувати Безкоштовно"
+          btnFunction={goToTrial}
+          btnText={t('common.tryFree')}
           dynamicClass={' orange no-icon'}
         />
+        <LanguageSwitcher />
         <Link className="tcd-link nav-link" to="/tecdoc-license">
           <img
             className="tecdoc-license-link"
             src="/imgs/tecdoc-button.png"
-            alt="TecAlliance — офіційний партнер"
+            alt={t('common.partner')}
           />
         </Link>
       </div>
@@ -135,10 +150,11 @@ function HeaderMain() {
           >
             <img src="/imgs/vortex-logo-115.svg" alt="Vortex" />
           </Link>
+          <LanguageSwitcher />
           <button
             className={`mobile-menu-toggle${isMenuOpen ? " is-open" : ""}`}
             type="button"
-            aria-label={isMenuOpen ? "Закрити меню" : "Відкрити меню"}
+            aria-label={t(isMenuOpen ? 'common.closeMenu' : 'common.openMenu')}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-navigation"
             onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
@@ -149,10 +165,10 @@ function HeaderMain() {
 
         <div id="mobile-navigation" className="mobile-menu-panel" aria-hidden={!isMenuOpen}>
           <Link className="mobile-tecdoc-link" to="/tecdoc-license" onClick={() => setIsMenuOpen(false)}>
-            <img src="/imgs/tecdoc-button.png" alt="TecAlliance — офіційний партнер" />
+            <img src="/imgs/tecdoc-button.png" alt={t('common.partner')} />
           </Link>
 
-          <nav aria-label="Мобільна навігація">
+          <nav aria-label={t('common.mobileNavigation')}>
             <ul className="mobile-nav-list">
               {menuLinks.slice(1).map((link) => (
                 <li key={link.path}>
@@ -166,13 +182,13 @@ function HeaderMain() {
 
           <div className="mobile-menu-cta">
             <ButtonFill
-              btnFunction={() => setIsMenuOpen(false)}
-              btnText="Cпробувати Безкоштовно"
+              btnFunction={goToTrial}
+              btnText={t('common.tryFree')}
               dynamicClass=" orange no-icon"
             />
           </div>
 
-          <div className="mobile-social-links" aria-label="Соціальні мережі">
+          <div className="mobile-social-links" aria-label={t('common.socials')}>
             {socialLinks.map((link) => (
               <Link key={link.name} to={link.path} aria-label={link.name}>
                 <img src={link.icon} alt="" />
@@ -181,9 +197,9 @@ function HeaderMain() {
           </div>
 
           <Link className="mobile-privacy-link" to="/privacy-policy" onClick={() => setIsMenuOpen(false)}>
-            Політика Конфіденційності
+            {t('common.privacy')}
           </Link>
-          <p className="mobile-copyright">Copyright&nbsp; © &nbsp;{new Date().getFullYear()} Vortex</p>
+          <p className="mobile-copyright">{t('common.copyright', { year: new Date().getFullYear() })}</p>
         </div>
       </div>
     </header>

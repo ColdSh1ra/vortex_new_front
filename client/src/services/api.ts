@@ -1,4 +1,5 @@
-import type { HomepageContent, VortexContent } from '../types/content';
+import type { ContentCatalog, Language } from '../types/content';
+import type { WebsitePackage } from '../data/websitePlans';
 
 const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '/api').replace(/\/$/, '');
 
@@ -11,6 +12,9 @@ export type TrialRequestLocation = {
 };
 
 export type TrialRequestPayload = {
+  source_page: 'home' | 'contact' | 'car-service' | 'websites';
+  website_package?: WebsitePackage;
+  language: Language;
   requested_product: RequestedProduct;
   name: string;
   phone: string;
@@ -19,22 +23,14 @@ export type TrialRequestPayload = {
   location: TrialRequestLocation | null;
 };
 
-export async function getContent(): Promise<VortexContent> {
+export async function getContent(): Promise<ContentCatalog> {
   const response = await fetch(`${API_BASE_URL}/content`);
 
   if (!response.ok) {
     throw new Error('Failed to fetch content from API');
   }
 
-  return response.json() as Promise<VortexContent>;
-}
-
-export async function getHomepageContent<Key extends keyof HomepageContent>(
-  key: Key
-): Promise<HomepageContent[Key]> {
-  const content = await getContent();
-
-  return content.homepage[key];
+  return response.json() as Promise<ContentCatalog>;
 }
 
 export async function submitTrialRequest(payload: TrialRequestPayload): Promise<void> {
@@ -48,9 +44,9 @@ export async function submitTrialRequest(payload: TrialRequestPayload): Promise<
     body: JSON.stringify(payload),
   });
 
-  const result = await response.json().catch(() => null) as { message?: string } | null;
-
   if (!response.ok) {
-    throw new Error(result?.message || 'Не вдалося відправити заявку. Спробуйте ще раз.');
+    const error = new Error('trial_request_failed');
+    Object.assign(error, { status: response.status });
+    throw error;
   }
 }

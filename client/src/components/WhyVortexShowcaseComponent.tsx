@@ -1,25 +1,10 @@
-import { useEffect, useState } from 'react';
-import { useInitialContent } from '../context/ContentContext';
-import { getHomepageContent } from '../services/api';
-import type { WhyVortexSection } from '../types/content';
+import { useState } from 'react';
+import { useInitialContent, useI18n } from '../context/ContentContext';
 
 function WhyVortexShowcaseComponent() {
-  const initialContent = useInitialContent()?.homepage.why_vortex_showcase_section ?? null;
-  const [content, setContent] = useState<WhyVortexSection | null>(initialContent);
+  const { t } = useI18n();
+  const content = useInitialContent()?.homepage.why_vortex_showcase_section ?? null;
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (content) {
-      return;
-    }
-
-    getHomepageContent('why_vortex_showcase_section')
-      .then(setContent)
-      .catch((loadError: unknown) => {
-        setError(loadError instanceof Error ? loadError.message : 'Unknown error');
-      });
-  }, [content]);
 
   const previousSlide = () => {
     setCurrentSlide((slide) => Math.max(slide - 1, 0));
@@ -36,7 +21,6 @@ function WhyVortexShowcaseComponent() {
   return (
     <section className="section-container why-vortex-section why-vortex-showcase-section">
       <div className="radial-bg-container" aria-hidden="true" />
-      {error && <p className="why-vortex-status">{error}</p>}
       {content && (
         <div className="why-vortex-wrapper">
           <header className="why-vortex-header">
@@ -49,7 +33,7 @@ function WhyVortexShowcaseComponent() {
               type="button"
               onClick={previousSlide}
               disabled={currentSlide === 0}
-              aria-label="Previous cards"
+              aria-label={t('common.previous')}
             >
               <img src="/icons/slider_scroll_right.svg" alt="" />
             </button>
@@ -57,7 +41,7 @@ function WhyVortexShowcaseComponent() {
               type="button"
               onClick={nextSlide}
               disabled={currentSlide === content.cards.length - 1}
-              aria-label="Next cards"
+              aria-label={t('common.next')}
             >
               <img src="/icons/slider_scroll_right.svg" alt="" />
             </button>

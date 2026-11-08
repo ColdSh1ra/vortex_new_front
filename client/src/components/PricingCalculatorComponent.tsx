@@ -1,7 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { useInitialContent } from '../context/ContentContext';
-import { getContent } from '../services/api';
-import type { PricingCalculatorSettings } from '../types/content';
+import { useI18n } from '../context/ContentContext';
 import SelectComponent from './default/SelectComponent';
 
 type PricingCalculatorComponentProps = {
@@ -16,6 +14,7 @@ type CounterProps = {
 };
 
 function QuantityCounter({ id, label, value, onChange }: CounterProps) {
+  const { t } = useI18n();
   return (
     <div className="pricing-counter">
       <span className="pricing-counter-label">{label}</span>
@@ -24,7 +23,7 @@ function QuantityCounter({ id, label, value, onChange }: CounterProps) {
           type="button"
           onClick={() => onChange(Math.max(0, value - 1))}
           disabled={value === 0}
-          aria-label={`Зменшити: ${label}`}
+          aria-label={t('pricing.decrease', { label })}
         >
           <img src="/icons/sm_black/minus.svg" alt="" />
         </button>
@@ -32,7 +31,7 @@ function QuantityCounter({ id, label, value, onChange }: CounterProps) {
         <button
           type="button"
           onClick={() => onChange(value + 1)}
-          aria-label={`Збільшити: ${label}`}
+          aria-label={t('pricing.increase', { label })}
         >
           <img src="/icons/sm_black/plus.svg" alt="" />
         </button>
@@ -42,8 +41,9 @@ function QuantityCounter({ id, label, value, onChange }: CounterProps) {
 }
 
 function PricingCalculatorComponent({ onTotalChange }: PricingCalculatorComponentProps) {
-  const initialSettings = useInitialContent()?.settings.pricing_calculator ?? null;
-  const [settings, setSettings] = useState<PricingCalculatorSettings | null>(initialSettings);
+  const { content, t } = useI18n();
+  const settings = content?.settings.pricing_calculator;
+  const initialSettings = settings;
   const [managerCount, setManagerCount] = useState(initialSettings?.default_manager_count ?? 0);
   const [storeCount, setStoreCount] = useState(initialSettings?.default_store_count ?? 0);
   const [selectedIntegrations, setSelectedIntegrations] = useState<string[]>(
@@ -51,30 +51,8 @@ function PricingCalculatorComponent({ onTotalChange }: PricingCalculatorComponen
       .filter((integration) => integration.selected_by_default)
       .map((integration) => integration.id) ?? [],
   );
-  const [error, setError] = useState<string | null>(null);
   const sectionRef = useRef<HTMLElement>(null);
 
-  useEffect(() => {
-    if (settings) {
-      return;
-    }
-
-    getContent()
-      .then((content) => {
-        const loadedSettings = content.settings.pricing_calculator;
-        setSettings(loadedSettings);
-        setManagerCount(loadedSettings.default_manager_count);
-        setStoreCount(loadedSettings.default_store_count);
-        setSelectedIntegrations(
-          loadedSettings.integrations
-            .filter((integration) => integration.selected_by_default)
-            .map((integration) => integration.id),
-        );
-      })
-      .catch((loadError: unknown) => {
-        setError(loadError instanceof Error ? loadError.message : 'Unknown error');
-      });
-  }, [settings]);
 
   const totals = useMemo(() => {
     if (!settings) {
@@ -126,27 +104,26 @@ function PricingCalculatorComponent({ onTotalChange }: PricingCalculatorComponen
   };
 
   return (
-    <section className="section-container pricing-calculator-section" ref={sectionRef}>
-      {error && <p className="pricing-calculator-status">{error}</p>}
+    <section className="section-container pricing-calculator-section" id="pricing" ref={sectionRef}>
 
       {settings && (
         <div className="pricing-calculator-wrapper">
-          <h2 className="pricing-calculator-title">Ціни</h2>
+          <h2 className="pricing-calculator-title">{t('nav.pricing')}</h2>
 
           <div className="pricing-calculator-grid">
             <div className="pricing-calculator-options">
-              <h3>Ваша вартість користування VORTEX</h3>
+              <h3>{t('pricing.title')}</h3>
 
               <div className="pricing-calculator-fields">
                 <QuantityCounter
                   id="manager-count"
-                  label="Оберіть кількість акаунтів для менеджерів"
+                  label={t('pricing.managers')}
                   value={managerCount}
                   onChange={setManagerCount}
                 />
                 <QuantityCounter
                   id="store-count"
-                  label="Вкажіть кількість філій"
+                  label={t('pricing.branches')}
                   value={storeCount}
                   onChange={setStoreCount}
                 />
@@ -156,7 +133,7 @@ function PricingCalculatorComponent({ onTotalChange }: PricingCalculatorComponen
                     <SelectComponent
                       id={`pricing-${integration.id}`}
                       key={integration.id}
-                      label={`Інтеграція з ${integration.label}`}
+                      label={t('pricing.integration', { name: integration.label })}
                       selected={selectedIntegrations.includes(integration.id)}
                       onChange={(selected) => toggleIntegration(integration.id, selected)}
                     />
@@ -180,22 +157,22 @@ function PricingCalculatorComponent({ onTotalChange }: PricingCalculatorComponen
             <aside className="pricing-calculator-summary">
               <img src="/bgs/logo2.svg" alt="" aria-hidden="true" />
               <div>
-                <p><strong>{settings.currency}{totals.monthly}</strong> на місяць</p>
-                <output aria-live="polite">{settings.currency}{totals.oneTime} одноразова плата</output>
+                <p><strong>{settings.currency}{totals.monthly}</strong> {t('pricing.monthly')}</p>
+                <output aria-live="polite">{settings.currency}{totals.oneTime} {t('pricing.oneTime')}</output>
               </div>
             </aside>
           </div>
 
           <div className="pricing-cta pricing-cta-trial">
-            <h3>Спробуйте VORTEX на 14 днів безкоштовно!</h3>
-            <p>Повноцінне користування системою без оплати</p>
-            <a href="/contact">Спробувати Безкоштовно</a>
+            <h3>{t('pricing.trialTitle')}</h3>
+            <p>{t('pricing.trialDescription')}</p>
+            <a href="#trial-request">{t('common.tryFree')}</a>
           </div>
 
           <div className="pricing-cta pricing-cta-demo">
-            <h3>Замовте демонстрацію демо-версії просто зараз!</h3>
-            <p>Відео-демонстрація користування системою від наших спеціалістів</p>
-            <a href="/contact">Спробувати Демо</a>
+            <h3>{t('pricing.demoTitle')}</h3>
+            <p>{t('pricing.demoDescription')}</p>
+            <a href="#trial-request">{t('common.tryDemo')}</a>
           </div>
         </div>
       )}

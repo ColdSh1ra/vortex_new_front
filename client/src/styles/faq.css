@@ -1,17 +1,8 @@
 .faq-route {
-  background-color: var(--blue-color-5);
+  background-color: #fff;
   color: var(--grey-dark-text);
+  display: flow-root;
   position: relative;
-}
-
-.faq-route::before {
-  background: #fff;
-  content: "";
-  height: 110px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .faq-route .main-content {
@@ -264,10 +255,6 @@
 }
 
 @media (max-width: 768px) {
-  .faq-route::before {
-    height: 92px;
-  }
-
   .faq-page-content {
     margin: 0;
     padding: 32px var(--mobile-padding) 0;

@@ -1,15 +1,16 @@
 import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './routes/AppRouter';
 import { ContentProvider } from './context/ContentContext';
-import type { VortexContent } from './types/content';
+import type { ContentCatalog, Language } from './types/content';
 
 type AppProps = {
-  initialContent?: VortexContent | null;
+  initialContent?: ContentCatalog | null;
+  initialLanguage?: Language;
 };
 
-function App({ initialContent = null }: AppProps) {
+function App({ initialContent = null, initialLanguage = 'ua' }: AppProps) {
   return (
-    <ContentProvider content={initialContent}>
+    <ContentProvider content={initialContent} initialLanguage={initialLanguage}>
       <BrowserRouter>
         <AppRouter />
       </BrowserRouter>

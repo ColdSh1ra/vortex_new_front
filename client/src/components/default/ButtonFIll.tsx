@@ -2,7 +2,7 @@ function ButtonIconContainer({ btnIcon = "" }) {
   if (btnIcon !== "") {
     return (
       <div className="display-flex align-content-center button-icon-container">
-        <img src={btnIcon} alt="button explaining icon" />
+        <img src={btnIcon} alt="" />
       </div>
     );
   }

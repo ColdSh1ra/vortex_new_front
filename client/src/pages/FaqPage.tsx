@@ -1,9 +1,6 @@
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import FaqDataContainer from '../components/FaqDataContainer';
-import { useInitialContent } from '../context/ContentContext';
-import { getContent } from '../services/api';
-import type { VortexContent } from '../types/content';
+import { useI18n } from '../context/ContentContext';
 import { sanitizeJsonLd } from '../utils/sanitizeHtml';
 
 const SITE_URL = 'https://crm-vortex.com';
@@ -20,30 +17,7 @@ function htmlToPlainText(html: string) {
 }
 
 function FaqPage() {
-  const initialContent = useInitialContent();
-  const [content, setContent] = useState<VortexContent | null>(initialContent);
-
-  useEffect(() => {
-    if (content) {
-      return;
-    }
-
-    let isMounted = true;
-
-    getContent()
-      .then((loadedContent) => {
-        if (isMounted) {
-          setContent(loadedContent);
-        }
-      })
-      .catch(() => {
-        // Content will appear after the API is available.
-      });
-
-    return () => {
-      isMounted = false;
-    };
-  }, [content]);
+  const { content, t } = useI18n();
 
   const faqItems = content?.FAQ ?? [];
   const videoItems = content?.videos ?? [];
@@ -67,13 +41,13 @@ function FaqPage() {
       {
         '@type': 'ListItem',
         position: 1,
-        name: 'Головна сторінка',
+        name: t('common.home'),
         item: `${SITE_URL}/`,
       },
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Запитання',
+        name: t('nav.faq'),
         item: `${SITE_URL}/faq`,
       },
     ],
@@ -82,11 +56,11 @@ function FaqPage() {
   return (
     <div className="faq-page">
       <div className="faq-page-content">
-        <nav className="faq-breadcrumbs" aria-label="Хлібні крихти">
+        <nav className="faq-breadcrumbs" aria-label={t('common.breadcrumbs')}>
           <ol>
-            <li><Link to="/">Головна сторінка</Link></li>
+            <li><Link to="/">{t('common.home')}</Link></li>
             <li aria-hidden="true">/</li>
-            <li aria-current="page">Запитання</li>
+            <li aria-current="page">{t('nav.faq')}</li>
           </ol>
         </nav>
 
@@ -105,7 +79,7 @@ function FaqPage() {
         </section>
 
         <section className="faq-section faq-functionality" aria-labelledby="functionality-heading">
-          <h2 id="functionality-heading" className="faq-section-title">Функціонал</h2>
+          <h2 id="functionality-heading" className="faq-section-title">{t('faq.functionality')}</h2>
           <div className="faq-list">
             {videoItems.map((item, index) => (
               <FaqDataContainer

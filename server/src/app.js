@@ -29,6 +29,10 @@ async function getRouteStylesheet(url) {
         'src/styles/contact.css',
         'src/styles/trial-request.css',
       ];
+    } else if (pathname === '/car-service' || pathname.startsWith('/car-service/')) {
+      sourceFiles.push('src/styles/car-service.css');
+    } else if (pathname === '/websites' || pathname.startsWith('/websites/')) {
+      sourceFiles = ['src/styles/websites.css', 'src/styles/trial-request.css'];
     }
     const cssFiles = sourceFiles.flatMap((sourceFile) => {
       const entry = manifest[sourceFile];
@@ -85,15 +89,19 @@ app.use(async (req, res, next) => {
     const template = await fs.readFile(path.join(clientDistPath, 'index.html'), 'utf8');
     const content = await contentService.fetchContent();
     const { render } = await import(pathToFileURL(ssrEntryPath).href);
-    const { appHtml } = render(req.originalUrl, content);
+    const savedLanguage = req.headers.cookie?.match(/(?:^|;\s*)vortex-language=(ua|cz|sk|en|pl)(?:;|$)/)?.[1];
+    const language = savedLanguage || 'ua';
+    const languageTag = { ua: 'uk', cz: 'cs', sk: 'sk', en: 'en', pl: 'pl' }[language];
+    const { appHtml } = render(req.originalUrl, content, language);
     const serializedContent = JSON.stringify(content).replace(/</g, '\\u003c');
     const routeStylesheet = await getRouteStylesheet(req.originalUrl);
     const html = template
+      .replace('<html lang="uk">', `<html lang="${languageTag}">`)
       .replace('<!--ssr-outlet-->', appHtml)
       .replace('<!--route-styles-->', routeStylesheet)
       .replace(
         '<!--initial-content-->',
-        `<script>window.__VORTEX_CONTENT__=${serializedContent}</script>`,
+        `<script>window.__VORTEX_CONTENT__=${serializedContent};window.__VORTEX_LANGUAGE__="${language}"</script>`,
       );
 
     res.status(200).set({ 'Content-Type': 'text/html' }).send(html);

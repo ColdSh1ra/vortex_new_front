@@ -1,15 +1,17 @@
 /// <reference types="vite/client" />
 
-import type { VortexContent } from './types/content';
+import type { ContentCatalog, Language } from './types/content';
 
 declare global {
   interface Window {
-    __VORTEX_CONTENT__?: VortexContent;
+    __VORTEX_CONTENT__?: ContentCatalog;
+    __VORTEX_LANGUAGE__?: Language;
     grecaptcha?: {
       render: (
         container: HTMLElement,
         options: {
           sitekey: string;
+          hl?: string;
           callback: (token: string) => void;
           'expired-callback': () => void;
           'error-callback': () => void;

@@ -21,7 +21,7 @@ export const integrations: IntegrationNode[] = [
     animationDelay: 0,
   },
   {
-    name: 'Техномир',
+    name: 'supplier.technomir',
     imageSrc: '/imgs/integrations/technomir-logo.png',
     x: 58,
     y: 9,
@@ -61,7 +61,7 @@ export const integrations: IntegrationNode[] = [
     animationDelay: 2100,
   },
   {
-    name: 'Юнік Трейд',
+    name: 'supplier.uniq',
     imageSrc: '/imgs/integrations/uniq_logo.png',
     x: 8,
     y: 77,
@@ -117,7 +117,7 @@ export const integrations: IntegrationNode[] = [
     animationDelay: 1860,
   },
   {
-    name: 'Groupauto Україна',
+    name: 'supplier.groupauto',
     imageSrc: '/imgs/integrations/vladislav.png',
     x: 62,
     y: 70,

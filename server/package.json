@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "telegram:test": "node scripts/testTelegram.js"
+    "telegram:test": "node scripts/testTelegram.js",
+    "test": "node --test test/*.test.js"
   },
   "keywords": [],
   "author": "",

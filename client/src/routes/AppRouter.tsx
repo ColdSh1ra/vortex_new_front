@@ -1,37 +1,61 @@
 import { useEffect } from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import HeaderMain from '../components/layout/HeaderMain';
+import FooterMain from '../components/layout/FooterMain';
 import ContactPage from '../pages/ContactPage';
 import FaqPage from '../pages/FaqPage';
 import MainPage from '../pages/MainPage';
-import FooterMain from "../components/layout/FooterMain";
-import CarServicePage from "../pages/CarServicePage";
+import CarServicePage from '../pages/CarServicePage';
+import WebsiteDevelopmentPage from '../pages/WebsiteDevelopmentPage';
+import { useI18n } from '../context/ContentContext';
 import { loadPageStyles } from '../styles/loadPageStyles';
 
 function AppRouter() {
   const location = useLocation();
+  const { content, failed, t } = useI18n();
+  const hasContent = !!content;
   const isFaqPage = location.pathname === '/faq' || location.pathname.startsWith('/faq/');
   const isContactPage = location.pathname === '/contact' || location.pathname.startsWith('/contact/');
-  const routeClassName = isFaqPage ? ' faq-route' : isContactPage ? ' contacts-route' : '';
+  const isCarServicePage = location.pathname === '/car-service' || location.pathname.startsWith('/car-service/');
+  const isWebsitesPage = location.pathname === '/websites' || location.pathname.startsWith('/websites/');
+  const routeClassName = isFaqPage ? ' faq-route'
+    : isContactPage ? ' contacts-route'
+      : isCarServicePage ? ' car-service-route'
+        : isWebsitesPage ? ' websites-route' : '';
 
   useEffect(() => {
-    void loadPageStyles(location.pathname);
-  }, [location.pathname]);
+    let active = true;
+    const styles = loadPageStyles(location.pathname);
+    if (location.hash) {
+      void styles.then(() => {
+        window.requestAnimationFrame(() => {
+          if (active) document.getElementById(location.hash.slice(1))?.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    } else {
+      window.scrollTo(0, 0);
+    }
+    return () => { active = false; };
+  }, [location.pathname, location.hash, hasContent]);
 
   return (
     <div className={`app-shell document-body main-content-container${routeClassName}`}>
       <HeaderMain />
       <main className="main-content">
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-
-            <Route path="/car-service" element={<CarServicePage/>} />
-          <Route path="/faq" element={<FaqPage />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
+        {!content ? (
+          <p className="content-status" role="status">{t(failed ? 'common.loadError' : 'common.loading')}</p>
+        ) : (
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/car-service" element={<CarServicePage />} />
+            <Route path="/websites" element={<WebsiteDevelopmentPage />} />
+            <Route path="/faq" element={<FaqPage />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        )}
       </main>
-        <FooterMain/>
+      <FooterMain />
     </div>
   );
 }

@@ -1,25 +1,10 @@
-import { useEffect, useState } from 'react';
-import { useInitialContent } from '../context/ContentContext';
-import { getHomepageContent } from '../services/api';
-import type { ClientTestimonialsSection } from '../types/content';
+import { useState } from 'react';
+import { useInitialContent, useI18n } from '../context/ContentContext';
 
 function ClientTestimonialsComponent() {
-  const initialContent = useInitialContent()?.homepage.client_testimonials_section ?? null;
-  const [content, setContent] = useState<ClientTestimonialsSection | null>(initialContent);
+  const { t } = useI18n();
+  const content = useInitialContent()?.homepage.client_testimonials_section ?? null;
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (content) {
-      return;
-    }
-
-    getHomepageContent('client_testimonials_section')
-      .then(setContent)
-      .catch((loadError: unknown) => {
-        setError(loadError instanceof Error ? loadError.message : 'Unknown error');
-      });
-  }, [content]);
 
   const previousSlide = () => {
     setCurrentSlide((slide) => Math.max(slide - 1, 0));
@@ -36,7 +21,6 @@ function ClientTestimonialsComponent() {
   return (
     <section className="section-container client-testimonials-section">
       <div className="radial-bg-container" aria-hidden="true" />
-      {error && <p className="testimonials-status">{error}</p>}
       {content && (
         <div className="client-testimonials-wrapper">
           <h2>{content.section_title}</h2>
@@ -46,7 +30,7 @@ function ClientTestimonialsComponent() {
               type="button"
               onClick={previousSlide}
               disabled={currentSlide === 0}
-              aria-label="Previous testimonials"
+              aria-label={t('common.previous')}
             >
               <img src="/icons/slider_scroll_right.svg" alt="" />
             </button>
@@ -54,7 +38,7 @@ function ClientTestimonialsComponent() {
               type="button"
               onClick={nextSlide}
               disabled={currentSlide === content.reviews.length - 1}
-              aria-label="Next testimonials"
+              aria-label={t('common.next')}
             >
               <img src="/icons/slider_scroll_right.svg" alt="" />
             </button>

@@ -1,3 +1,4 @@
+import { LANGUAGE_TAGS, useI18n } from '../../context/ContentContext';
 import { useEffect, useRef } from 'react';
 
 type RecaptchaCheckboxProps = {
@@ -7,6 +8,7 @@ type RecaptchaCheckboxProps = {
 };
 
 function RecaptchaCheckbox({ siteKey, onTokenChange, resetSignal }: RecaptchaCheckboxProps) {
+  const { t, language } = useI18n();
   const containerRef = useRef<HTMLDivElement>(null);
   const widgetIdRef = useRef<number | null>(null);
   const callbackRef = useRef(onTokenChange);
@@ -26,6 +28,7 @@ function RecaptchaCheckbox({ siteKey, onTokenChange, resetSignal }: RecaptchaChe
 
       widgetIdRef.current = window.grecaptcha.render(containerRef.current, {
         sitekey: siteKey,
+        hl: LANGUAGE_TAGS[language],
         callback: (token: string) => callbackRef.current(token),
         'expired-callback': () => callbackRef.current(null),
         'error-callback': () => callbackRef.current(null),
@@ -57,7 +60,7 @@ function RecaptchaCheckbox({ siteKey, onTokenChange, resetSignal }: RecaptchaChe
     return () => {
       active = false;
     };
-  }, [siteKey]);
+  }, [siteKey, language]);
 
   useEffect(() => {
     if (widgetIdRef.current !== null && window.grecaptcha) {
@@ -67,7 +70,7 @@ function RecaptchaCheckbox({ siteKey, onTokenChange, resetSignal }: RecaptchaChe
   }, [resetSignal]);
 
   if (!siteKey) {
-    return <p className="recaptcha-configuration-error">reCAPTCHA не налаштовано.</p>;
+    return <p className="recaptcha-configuration-error">{t('trial.captchaUnavailable')}</p>;
   }
 
   return <div className="recaptcha-checkbox" ref={containerRef} />;

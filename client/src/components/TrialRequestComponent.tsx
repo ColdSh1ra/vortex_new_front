@@ -1,13 +1,17 @@
-import { useMemo, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useI18n } from '../context/ContentContext';
+import { useEffect, useMemo, useState } from 'react';
 import { submitTrialRequest } from '../services/api';
 import type { RequestedProduct, TrialRequestLocation } from '../services/api';
 import InputComponent from './default/InputComponent';
 import RecaptchaCheckbox from './default/RecaptchaCheckbox';
+import type { WebsitePackage } from '../data/websitePlans';
 
 type TrialRequestComponentProps = {
   totalSum: number;
   requestedProduct?: RequestedProduct;
   showCalculatedPrice?: boolean;
+  websitePackage?: WebsitePackage;
 };
 
 type FormErrors = {
@@ -24,7 +28,13 @@ function TrialRequestComponent({
   totalSum,
   requestedProduct = 'vortex',
   showCalculatedPrice = true,
+  websitePackage,
 }: TrialRequestComponentProps) {
+  const { t, language } = useI18n();
+  const pageLocation = useLocation();
+  const sourcePage = pageLocation.pathname.startsWith('/car-service') ? 'car-service'
+    : pageLocation.pathname.startsWith('/contact') ? 'contact'
+      : pageLocation.pathname.startsWith('/websites') ? 'websites' : 'home';
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
@@ -35,6 +45,8 @@ function TrialRequestComponent({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [recaptchaResetSignal, setRecaptchaResetSignal] = useState(0);
 
+  useEffect(() => { setRecaptchaToken(null); }, [language]);
+
   const safeTotal = useMemo(() => {
     const numericTotal = Number(totalSum);
     return Number.isFinite(numericTotal) && numericTotal >= 0
@@ -44,11 +56,11 @@ function TrialRequestComponent({
 
   const requestLocation = () => {
     if (!navigator.geolocation) {
-      setLocationStatus('Ваш браузер не підтримує геолокацію.');
+      setLocationStatus('trial.locationUnsupported');
       return;
     }
 
-    setLocationStatus('Очікуємо дозвіл на доступ до геолокації…');
+    setLocationStatus('trial.locationWaiting');
     navigator.geolocation.getCurrentPosition(
       (position) => {
         setLocation({
@@ -56,11 +68,11 @@ function TrialRequestComponent({
           longitude: position.coords.longitude,
           accuracy: position.coords.accuracy,
         });
-        setLocationStatus('Геолокацію буде додано до заявки.');
+        setLocationStatus('trial.locationSuccess');
       },
       () => {
         setLocation(null);
-        setLocationStatus('Геолокацію не надано. Заявку можна відправити без неї.');
+        setLocationStatus('trial.locationDenied');
       },
       {
         enableHighAccuracy: false,
@@ -77,7 +89,7 @@ function TrialRequestComponent({
     const phoneDigits = normalizedPhone.replace(/\D/g, '');
 
     if (!NAME_PATTERN.test(normalizedName) || !NAME_LETTER_PATTERN.test(normalizedName)) {
-      nextErrors.name = 'Введіть коректне ім’я (2–80 символів).';
+      nextErrors.name = 'trial.nameError';
     }
 
     if (
@@ -85,11 +97,11 @@ function TrialRequestComponent({
       || phoneDigits.length < 7
       || phoneDigits.length > 15
     ) {
-      nextErrors.phone = 'Введіть коректний номер телефону.';
+      nextErrors.phone = 'trial.phoneError';
     }
 
     if (!recaptchaToken) {
-      nextErrors.recaptcha = 'Підтвердьте, що ви не робот.';
+      nextErrors.recaptcha = 'trial.captchaError';
     }
 
     setErrors(nextErrors);
@@ -113,6 +125,9 @@ function TrialRequestComponent({
 
     try {
       await submitTrialRequest({
+        source_page: sourcePage,
+        language,
+        ...(sourcePage === 'websites' && websitePackage ? { website_package: websitePackage } : {}),
         requested_product: requestedProduct,
         name: validation.normalizedName,
         phone: validation.normalizedPhone,
@@ -126,13 +141,13 @@ function TrialRequestComponent({
       setLocation(null);
       setLocationStatus('');
       setErrors({});
-      setSubmitStatus('Дякуємо! Заявку успішно відправлено.');
+      setSubmitStatus('trial.success');
       setRecaptchaResetSignal((value) => value + 1);
     } catch (submitError) {
       setSubmitStatus(
-        submitError instanceof Error
-          ? submitError.message
-          : 'Не вдалося відправити заявку. Спробуйте ще раз.',
+        submitError && typeof submitError === 'object' && 'status' in submitError && submitError.status === 503
+          ? 'trial.unavailable'
+          : 'trial.error',
       );
       setRecaptchaResetSignal((value) => value + 1);
     } finally {
@@ -144,80 +159,77 @@ function TrialRequestComponent({
     <section className="section-container trial-request-section" id="trial-request">
       <div className="trial-request-wrapper">
         <div className="trial-request-visual" aria-hidden="true">
-          <img className={'logo-spin-animation'} src="/imgs/vortex_logo_large.svg" alt="vortex svg logo" />
+          <img className={'logo-spin-animation'} src="/imgs/vortex_logo_large.svg" alt="" />
         </div>
 
         <div className="trial-request-content">
           <header>
-            <h2>Безкоштовні 14 днів!</h2>
-            <p>Нема що думати, варто спробувати!</p>
+            <h2>{t('trial.title')}</h2>
+            <p>{t('trial.subtitle')}</p>
           </header>
 
           <div className="trial-request-info">
-            <h3>Безкоштовна версія функціонально нічим не відрізняється від платної!</h3>
-            <p>
-              Після завершення тест драйву, деякі дані можна буде видалити
-              (тестові фінансові операції, замовлення, прийоми товару тощо),
-              а деякі залишити (налаштування інтеграцій, імпорту прайсів,
-              суб’єктів господарювання тощо)
-            </p>
-            {showCalculatedPrice && <strong>Розрахована вартість: ${safeTotal}</strong>}
+            <h3>{t('trial.infoTitle')}</h3>
+            <p>{t('trial.info')}</p>
+            {showCalculatedPrice && <strong>{t('trial.price', { total: safeTotal })}</strong>}
+            {websitePackage && <strong aria-live="polite">{t('websites.selectedPlan', { name: t(`websites.plan.${websitePackage}`) })}</strong>}
           </div>
 
           <form onSubmit={handleSubmit} noValidate>
             <InputComponent
               id="trial-request-name"
-              label="Як до вас звертатись?"
+              label={t('trial.name')}
               name="name"
               type="text"
               autoComplete="name"
               maxLength={80}
-              placeholder="Введіть своє ім’я"
+              placeholder={t('trial.namePlaceholder')}
               value={name}
-              error={errors.name}
+              error={errors.name ? t(errors.name) : undefined}
               onChange={(event) => setName(event.target.value)}
             />
 
             <InputComponent
               id="trial-request-phone"
-              label="Номер телефону"
+              label={t('trial.phone')}
               name="phone"
               type="tel"
               inputMode="tel"
               autoComplete="tel"
               maxLength={30}
-              placeholder="+380"
+              placeholder={t('trial.phonePlaceholder')}
               value={phone}
-              error={errors.phone}
+              error={errors.phone ? t(errors.phone) : undefined}
               onChange={(event) => setPhone(event.target.value)}
             />
 
             <div className="trial-request-location">
               <button type="button" onClick={requestLocation}>
-                {location ? 'Геолокацію додано' : 'Додати мою геолокацію'}
+                {t(location ? 'trial.locationAdded' : 'trial.location')}
               </button>
-              {locationStatus && <span aria-live="polite">{locationStatus}</span>}
+              {locationStatus && <span aria-live="polite">{t(locationStatus)}</span>}
             </div>
 
             <RecaptchaCheckbox
+              key={language}
               siteKey={import.meta.env.VITE_RECAPTCHA_SITE_KEY ?? ''}
               onTokenChange={setRecaptchaToken}
               resetSignal={recaptchaResetSignal}
             />
-            {errors.recaptcha && <span className="trial-request-recaptcha-error" role="alert">{errors.recaptcha}</span>}
+            {errors.recaptcha && <span className="trial-request-recaptcha-error" role="alert">{t(errors.recaptcha)}</span>}
 
             <button
               className="trial-request-submit"
               type="submit"
               disabled={isSubmitting || !import.meta.env.VITE_RECAPTCHA_SITE_KEY}
             >
-              {isSubmitting ? 'Відправляємо…' : 'Відправити'}
+              {t(isSubmitting ? 'trial.sending' : 'trial.send')}
               <span aria-hidden="true">
                 <img src="/icons/chevron-right-double.svg" alt="" />
               </span>
             </button>
 
-            {submitStatus && <p className="trial-request-status" aria-live="polite">{submitStatus}</p>}
+            {submitStatus && <p className="trial-request-status" aria-live="polite">{t(submitStatus)}</p>}
           </form>
         </div>
       </div>

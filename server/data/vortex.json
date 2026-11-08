@@ -1,457 +1,3407 @@
 {
-  "homepage": {
-    "title": "CRM VORTEX - \nнадійна та перевірена система обліку \nдля магазинів автозапчастин та СТО",
-    "subtitle": "CRM Vortex забезпечує повний контроль над бізнесом автозапчастин і СТО: від обліку товарів і замовлень до контролю фінансів та ефективності співробітників. Єдина система об’єднує 95% операцій в одному інтерфейсі, що мінімізує втрати, оптимізує роботу команди та збільшує прибуток.",
-    "about_us_block": {
-      "about_us_title": "Про нас",
-      "about_us_subtitle": "Система Vortex пропонує інструменти, які ви не знайдете в інших CRM: гнучке управління складом, окремі інтерфейси для менеджерів і пакувальників, розширену матрицю статусів та автоматичну фіскалізацію. Завдяки цим функціям ви підвищите точність процесів, зменшите втрати замовлень і зможете зосередитися на розвитку бізнесу.",
-      "about_us_blocks": [
-        {
-          "about_us_title": "Облік для магазину запчастин і СТО в одному місці",
-          "about_us_description": "Рішення спеціально розроблено для вашої сфери — без зайвого функціоналу, з фокусом на склад, замовлення, клієнтів і облік послуг.",
-          "about_us_image_path": "/imgs/3dicons_premium/monitor.png"
-        },
-        {
-          "about_us_title": "Автоматизація без складнощів",
-          "about_us_description": "Замість Excel — сучасна система, яка спрощує облік, пришвидшує обробку замовлень і допомагає уникати помилок.",
-          "about_us_image_path": "/imgs/3dicons_premium/folder.png"
-        },
-        {
-          "about_us_title": "Інтеграції з постачальниками",
-          "about_us_description": "Підключення до основних постачальників і каталогів автозапчастин. Автоматичне оновлення цін і залишків — без ручної роботи.",
-          "about_us_image_path": "/imgs/3dicons_premium/like.png"
-        },
-        {
-          "about_us_title": "Вебсайт у подарунок",
-          "about_us_description": "Створимо сучасний сайт для Вашого магазину. Є можливість отримати сайт-шаблон безкоштовно, або створимо його під Ваші потреби.",
-          "about_us_image_path": "/imgs/3dicons_premium/gift.png"
-        },
-        {
-          "about_us_title": "Обмін інформацією з іншими нашими клієнтами",
-          "about_us_description": "Спілкуйтеся з іншими магазинами, що користуються Vortex. Обмінюйтесь інформацією щодо наявності деталей.",
-          "about_us_image_path": "/imgs/3dicons_premium/message.png"
-        },
-        {
-          "about_us_title": "Зростання прибутку",
-          "about_us_description": "Контроль над кожним етапом — від заявки до продажу. Менше втрат, кращий сервіс, більше замовлень.",
-          "about_us_image_path": "/imgs/3dicons_premium/wallet.png"
-        }
-      ]
-    },
-    "hero_page_slider_section": {
-      "section_title": "Так виглядатиме ваша система",
-      "slide_image_paths": [
-        "/imgs/slider_images/slide_1.png",
-        "/imgs/slider_images/slide_2.png",
-        "/imgs/slider_images/slide_3.png"
-      ]
-    },
-    "why_vortex_section": {
-      "section_title": "Що вміє Vortex?",
-      "section_description": "Система Vortex наповнена широкими можливостями, все продумано до найдрібніших деталей та розробено командою професіоналів саме у цій сфері",
-      "cards": [
-        {
-          "title": "Контрагенти",
-          "description": "Історія продажів, робіт СТО, пробігу авто, документів тощо. Потужний модуль звірки взаєморозрахунків. Персональні націнки та кредитні умови.",
-          "image_src": ""
-        },
-        {
-          "title": "Склад",
-          "description": "Автоматична система закупки (т. зв. MIN-MAX), адресна система розміщення позицій на складі, система контролю збору товару на видачу та багато іншого",
-          "image_src": ""
-        },
-        {
-          "title": "Фінанси",
-          "description": "Контроль всіх приходів та витрат: оплати постачальникам, зарплати, каси менеджерів та купа інших фінансових аспектів. І все це — мультивалютне",
-          "image_src": ""
-        },
-        {
-          "title": "Фіскалізація",
-          "description": "В тандемі з Checkbox, ми даємо можливість фіскалізувати ваші продажі не встановлюючи касовий апарат.",
-          "image_src": ""
-        }
-      ]
-    },
-    "why_vortex_showcase_section": {
-      "section_title": "Що вміє Vortex?",
-      "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
-      "cards": [
-        {
-          "title": "Lorem ipsum",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
-          "image_src": ""
-        },
-        {
-          "title": "Dolor sit amet",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum et donec sed odio dui.",
-          "image_src": ""
-        },
-        {
-          "title": "Consectetur elit",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
-          "image_src": ""
-        },
-        {
-          "title": "Aenean commodo",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
-          "image_src": ""
-        }
-      ]
-    },
-    "vortex_audience_section": {
-      "section_title": "Кому підійде Vortex?",
-      "cards": [
-        {
-          "title": "Магазини автозапчастин",
-          "description": "для зручного управління товарами та замовленнями",
-          "cta_text": "Спробувати Безкоштовно",
-          "image_src": "/imgs/3d_clay/3dicons-bag-dynamic-clay.png"
-        },
-        {
-          "title": "СТО та автосервіси",
-          "description": "для контролю робіт, запасів і взаємодії з клієнтами",
-          "cta_text": "Спробувати Безкоштовно",
-          "image_src": "/imgs/3d_clay/3dicons-tool-dynamic-clay.png"
-        },
-        {
-          "title": "Оптові компанії",
-          "description": "для організації складського обліку та ефективної логістики",
-          "cta_text": "Спробувати Безкоштовно",
-          "image_src": "/imgs/3d_clay/3dicons-location-dynamic-clay.png"
-        },
-        {
-          "title": "Інтернет-магазини",
-          "description": "для інтеграції з онлайн-продажами та швидкої обробки замовлень",
-          "cta_text": "Спробувати Безкоштовно",
-          "image_src": "/imgs/3d_clay/3dicons-computer-dynamic-clay.png"
-        }
-      ]
-    },
-    "client_testimonials_section": {
-      "section_title": "Наші клієнти про нас",
-      "pros_title": "Lorem ipsum Vortex:",
-      "cons_title": "Dolor sit amet Vortex:",
-      "reviews": [
-        {
-          "company_name": "Lorem Company",
-          "company_type": "Lorem ipsum dolor",
-          "image_src": "",
-          "pros": ["Lorem ipsum", "Dolor sit amet", "Consectetur adipiscing"],
-          "cons": ["Tempor incididunt", "Labore et dolore"],
-          "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
-          "link_text": "Lorem ipsum",
-          "link_href": "#"
-        },
-        {
-          "company_name": "Ipsum Group",
-          "company_type": "Consectetur adipiscing",
-          "image_src": "",
-          "pros": ["Aenean commodo", "Ligula eget dolor", "Cum sociis natoque"],
-          "cons": ["Donec quam felis", "Ultricies nec"],
-          "quote": "Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.",
-          "link_text": "Lorem ipsum",
-          "link_href": "#"
-        },
-        {
-          "company_name": "Dolor Service",
-          "company_type": "Eiusmod tempor",
-          "image_src": "",
-          "pros": ["Integer tincidunt", "Cras dapibus", "Vivamus elementum"],
-          "cons": ["Aenean vulputate", "Eleifend tellus"],
-          "quote": "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.",
-          "link_text": "Lorem ipsum",
-          "link_href": "#"
-        },
-        {
-          "company_name": "Amet Market",
-          "company_type": "Magna aliqua",
-          "image_src": "",
-          "pros": ["Phasellus viverra", "Nulla ut metus", "Varius laoreet"],
-          "cons": ["Quisque rutrum", "Aenean imperdiet"],
-          "quote": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi nam eget dui.",
-          "link_text": "Lorem ipsum",
-          "link_href": "#"
-        }
-      ]
-    },
-    "integrations_catalog_section": {
-      "section_title": "Lorem ipsum",
-      "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
-      "cards": [
-        {
-          "title": "TecDoc Inside",
-          "image_src": "blank_image",
-          "features": [
-            "Пошук авто по VIN",
-            "Підбір запчастин до авто, фільтр по улюбленим брендам, конструктивним вузлам",
-            "Застосування запчастин по авто",
-            "Пошук інформації про запчастини",
-            "Підбір запчастин в каталозі найбільшої бази даних світу"
-          ],
-          "link_text": "Детальніше",
-          "link_href": "/"
-        },
-        {
-          "title": "Checkbox",
-          "image_src": "blank_image",
-          "features": [
-            "Онлайн каса прямо у Vortex",
-            "Формування та друк фіскальних чеків на термопринтери",
-            "Видача та формування фіскальних чеків",
-            "Відсутні витрати на придбання обладнання",
-            "Зручне керування підключенням",
-            "Можливість налаштування декількох акаунтів checkbox, декількох кас/касирів всередині одного акаунту"
-          ],
-          "link_text": "Детальніше",
-          "link_href": "/"
-        },
-        {
-          "title": "Нова Пошта",
-          "image_src": "blank_image",
-          "features": [
-            "Налаштування відправника за замовчуванням",
-            "Генерування експрес ТТН. На відділення чи адресу, з контролем платежу чи без, декілька місць чи одне та багато інших інтегрованих налаштувань",
-            "Можливість друку стікерів місць та цілої експрес ТТН на А4",
-            "Оновлення бази даних відділень по АПІ"
-          ],
-          "link_text": "Детальніше",
-          "link_href": "/"
-        },
-        {
-          "title": "Turbo SMS",
-          "image_src": "blank_image",
-          "features": [
-            "Автоматичне посилання SMS по різних подіях",
-            "Можливість відправити SMS вручну з довільним текстом або шаблоном",
-            "Розсилка SMS декільком отримувачам",
-            "Історія відправлених СМС",
-            "Відстежування балансу, сповіщення «баланс SMS майже вичерпано»"
-          ],
-          "link_text": "Детальніше",
-          "link_href": "/"
-        },
-        {
-          "title": "API банків",
-          "image_src": "blank_image",
-          "features": [
-            "Підключення до вашого рахунку",
-            "Перегляд останніх транзакцій",
-            "Формування фін. транзакції в Vortex зі списку реальних транзакцій в 1 клік!",
-            "Всі транзакції в одному списку зі зручними фільтрами: по рахунку та виду операції, а також загальним пошуком по сумі, отримувачу, примітці тощо"
-          ],
-          "link_text": "Детальніше",
-          "link_href": "/"
-        },
-        {
-          "title": "Binotel",
-          "image_src": "blank_image",
-          "features": [
-            "Контроль втрачених дзвінків",
-            "Перегляд історії дзвінків по клієнту в Vortex",
-            "Швидке створення клієнта при вхідному дзвінку з незареєстрованого номеру",
-            "Прослуховування дзвінка та контроль якості",
-            "Перехід на клієнта у Vortex при вхідному дзвінку з зареєстрованого номеру"
-          ],
-          "link_text": "Детальніше",
-          "link_href": "/"
-        }
-      ]
-    },
-    "car_service_section": {
-      "heading": "Облік СТО",
-      "description": "Vortex допомагає вести облік не лише магазинам автозапчастин, а й сервісам технічного обслуговування.",
-      "car_service_features": [
-        "Керування довідником робіт СТО",
-        "Керування списком постів та майстрів",
-        "Запис клієнта на певну дату",
-        "Зручний графічний розклад СТО",
-        "Керування гаражем клієнта",
-        "Історія пробігу",
-        "Можливість додавання нагадувань",
-        "Друк різноманітних документів: акти, рахунки, замовлення-наряди, діагностика",
-        "Розрахунок зарплати механіка та майстра-приймальника",
-        "Гарна та інформативна статистика"
-      ]
-    },
-    "website_development_section": {
-      "heading": "Розробка веб-сайтів",
-      "gift_message": "Користуйтесь VORTEX та в подарунок отримуйте безкоштовний сайт для магазину автозапчастин чи СТО!",
-      "description_paragraphs": [
-        "Наш шаблонний сайт забезпечує потреби понад 80% наших клієнтів.",
-        "Вебсайт швидкий, простий у розумінні та повністю інтегрований в систему обліку.",
-        "Каталоги, наявності, ціни, описи, картинки з CRM автоматично транслюються на сайт.",
-        "Ви власноруч можете змінити логотип, колірну гамму, меню, тексти та інше.",
-        "Ми також надаємо послуги SEO-оптимізації, налаштування Google Ads та інші інструменти просування сайту."
-      ],
-      "website_image_src": "/imgs/websites/site_2.png",
-      "benefit_groups": [
-        {
-          "items": [
-            "Респонсивний",
-            "Ефективний",
-            "Швидкий",
-            "Оптимізований",
-            "Лаконічний",
-            "Функціональний"
-          ],
-          "image_src": "/imgs/3dicons_premium/3d-rocket-premium.png"
-        },
-        {
-          "items": [
-            "Каталог товарів",
-            "Обрані товари на головній",
-            "SEO-оптимізація*",
-            "Підбір по TecDoc*",
-            "LiqPay*"
-          ],
-          "image_src": "/imgs/3dicons_premium/3d-fire.png",
-          "note": "*платні послуги"
-        }
-      ],
-      "upgrade_message": "Також у Вас є можливість покращити веб-сайт, додавши додаткові корисні функції, обравши пакет “Практичний” або ж “Максимальний”",
-      "cta_text": "Детальніше Про Сайт"
-    }
-  },
-  "FAQ": [
-    {
-      "topic": "Який термін дії Демо-версії?",
-      "answer": "<p>Демо-версія є безкоштовною та надається на 14 днів. Функціонал Демо-версії не відрізняється від платної версії.</p>"
-    },
-    {
-      "topic": "Після закінчення тестового періоду, введені мною дані зберігаються?",
-      "answer": "<p>Ми рекомендуємо протестувати весь функціонал програми, не переймаючись через можливі помилки. Після завершення тестування ми можемо як видалити, так і залишити будь-які з ваших даних — за вашим вибором.</p>"
-    },
-    {
-      "topic": "Які гарантії збереження моїх даних та їх захист від передачі третім лицям?",
-      "answer": "<p>Наші сервери розташовані в надійних дата-центрах Німеччини та Фінляндії. Файли із залишками, контрагентами та їхніми балансами можна завантажувати самостійно або налаштувати автоматичне надсилання цих даних на пошту. Також є можливість підписати двосторонній договір про нерозповсюдження інформації.</p>"
-    },
-    {
-      "topic": "Чи безкоштовні оновлення?",
-      "answer": "<p>Так, оновлення безкоштовні.</p>"
-    },
-    {
-      "topic": "Мені потрібний додатковий функціонал, що можете запропонувати?",
-      "answer": "<p>Якщо ви не знайшли в програмі рішення для своїх потреб, ми можемо розробити додатковий функціонал після попереднього обговорення вартості та строків.</p>"
-    },
-    {
-      "topic": "Як розпочати роботу?",
-      "answer": "<ol><li>Завантажте свою наявність через імпортер прайсів, вибравши в полі складу «-1». Файл обов’язково має містити 4 колонки: артикул, бренд, кількість і вхідна ціна.</li><li>Імпортуйте своїх клієнтів через клієнти → список → у верхньому правому кутку кнопка «імпортувати».</li><li>Налаштуйте автоматичне завантаження прайсів актуальних вам постачальників через адміністрування → сторонні сервіси та синхронізація.</li><li>Створіть користувачів через адміністрування → користувачі → список → у верхньому правому кутку кнопка «додати».</li></ol>"
-    }
-  ],
-  "videos": [
-    {
-      "topic": "Як завантажити прайс?",
-      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=g95YUJmOvXM\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Завантаження прайсу</strong><span>Інструкція з налаштування</span><i aria-hidden=\"true\">▶</i></a></div>"
-    },
-    {
-      "topic": "Як оформити замовлення від постачальника?",
-      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+від+постачальника\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Замовлення від постачальника</strong><span>Покрокова відеоінструкція</span><i aria-hidden=\"true\">▶</i></a></div>"
-    },
-    {
-      "topic": "Як оформити замовлення зі складу?",
-      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+зі+складу\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Замовлення зі складу</strong><span>Покрокова відеоінструкція</span><i aria-hidden=\"true\">▶</i></a></div>"
-    },
-    {
-      "topic": "Як оформити прихід товару?",
-      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=JkVtG0KNoVw\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Замовлення та прийом товару</strong><span>Інструкція з налаштування</span><i aria-hidden=\"true\">▶</i></a><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+великий+прийом+товару\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Великий прийом товару</strong><span>Інструкція з налаштування</span><i aria-hidden=\"true\">▶</i></a></div>"
-    }
-  ],
-  "contacts": {
-    "title": "Контакти",
-    "subtitle": "Залишились запитання?\nМи завжди раді допомогти Вам, ми тут для Вас",
-    "workers": [
-      {
-        "contact_topic": "Для отримання тестової версії / з питань консультації",
-        "full_name": "Крістіна Васильняк",
-        "role": "Тех. підтримка",
-        "phone": "+38 (097) 866-36-90",
-        "photo_path": "/imgs/contacts/worker-1.svg",
-        "messenger_links": {
-          "telegram": "https://t.me/vortex_support",
-          "viber": "viber://chat?number=%2B380978663690",
-          "whatsapp": "https://wa.me/380978663690",
-          "email": "mailto:support@crm-vortex.com"
-        }
+  "ua": {
+    "homepage": {
+      "title": "CRM VORTEX - \nнадійна та перевірена система обліку \nдля магазинів автозапчастин та СТО",
+      "subtitle": "CRM Vortex забезпечує повний контроль над бізнесом автозапчастин і СТО: від обліку товарів і замовлень до контролю фінансів та ефективності співробітників. Єдина система об’єднує 95% операцій в одному інтерфейсі, що мінімізує втрати, оптимізує роботу команди та збільшує прибуток.",
+      "about_us_block": {
+        "about_us_title": "Про нас",
+        "about_us_subtitle": "Система Vortex пропонує інструменти, які ви не знайдете в інших CRM: гнучке управління складом, окремі інтерфейси для менеджерів і пакувальників, розширену матрицю статусів та автоматичну фіскалізацію. Завдяки цим функціям ви підвищите точність процесів, зменшите втрати замовлень і зможете зосередитися на розвитку бізнесу.",
+        "about_us_blocks": [
+          {
+            "about_us_title": "Облік для магазину запчастин і СТО в одному місці",
+            "about_us_description": "Рішення спеціально розроблено для вашої сфери — без зайвого функціоналу, з фокусом на склад, замовлення, клієнтів і облік послуг.",
+            "about_us_image_path": "/imgs/3dicons_premium/monitor.png"
+          },
+          {
+            "about_us_title": "Автоматизація без складнощів",
+            "about_us_description": "Замість Excel — сучасна система, яка спрощує облік, пришвидшує обробку замовлень і допомагає уникати помилок.",
+            "about_us_image_path": "/imgs/3dicons_premium/folder.png"
+          },
+          {
+            "about_us_title": "Інтеграції з постачальниками",
+            "about_us_description": "Підключення до основних постачальників і каталогів автозапчастин. Автоматичне оновлення цін і залишків — без ручної роботи.",
+            "about_us_image_path": "/imgs/3dicons_premium/like.png"
+          },
+          {
+            "about_us_title": "Вебсайт у подарунок",
+            "about_us_description": "Створимо сучасний сайт для Вашого магазину. Є можливість отримати сайт-шаблон безкоштовно, або створимо його під Ваші потреби.",
+            "about_us_image_path": "/imgs/3dicons_premium/gift.png"
+          },
+          {
+            "about_us_title": "Обмін інформацією з іншими нашими клієнтами",
+            "about_us_description": "Спілкуйтеся з іншими магазинами, що користуються Vortex. Обмінюйтесь інформацією щодо наявності деталей.",
+            "about_us_image_path": "/imgs/3dicons_premium/message.png"
+          },
+          {
+            "about_us_title": "Зростання прибутку",
+            "about_us_description": "Контроль над кожним етапом — від заявки до продажу. Менше втрат, кращий сервіс, більше замовлень.",
+            "about_us_image_path": "/imgs/3dicons_premium/wallet.png"
+          }
+        ]
       },
-      {
-        "contact_topic": "По питанням інтеграцій / тех. питанням / розробкам",
-        "full_name": "Олександр Васильєв",
-        "role": "Розробник",
-        "phone": "+38 (095) 677-50-02",
-        "photo_path": "/imgs/contacts/worker-2.svg",
-        "messenger_links": {
-          "telegram": "https://t.me/vortex_development",
-          "viber": "viber://chat?number=%2B380956775002",
-          "whatsapp": "https://wa.me/380956775002",
-          "email": "mailto:development@crm-vortex.com"
-        }
+      "hero_page_slider_section": {
+        "section_title": "Так виглядатиме ваша система",
+        "slide_image_paths": [
+          "/imgs/slider_images/slide_1.png",
+          "/imgs/slider_images/slide_2.png",
+          "/imgs/slider_images/slide_3.png"
+        ]
       },
-      {
-        "contact_topic": "По питанням співпраці / бізнес пропозицій / тощо",
-        "full_name": "Володимир Маркович",
-        "role": "Засновник",
-        "phone": "+38 (066) 728-23-02",
-        "photo_path": "/imgs/contacts/worker-3.svg",
-        "messenger_links": {
-          "telegram": "https://t.me/vortex_business",
-          "viber": "viber://chat?number=%2B380667282302",
-          "email": "mailto:business@crm-vortex.com"
-        }
+      "why_vortex_section": {
+        "section_title": "Що вміє Vortex?",
+        "section_description": "Система Vortex наповнена широкими можливостями, все продумано до найдрібніших деталей та розробено командою професіоналів саме у цій сфері",
+        "cards": [
+          {
+            "title": "Контрагенти",
+            "description": "Історія продажів, робіт СТО, пробігу авто, документів тощо. Потужний модуль звірки взаєморозрахунків. Персональні націнки та кредитні умови.",
+            "image_src": ""
+          },
+          {
+            "title": "Склад",
+            "description": "Автоматична система закупки (т. зв. MIN-MAX), адресна система розміщення позицій на складі, система контролю збору товару на видачу та багато іншого",
+            "image_src": ""
+          },
+          {
+            "title": "Фінанси",
+            "description": "Контроль всіх приходів та витрат: оплати постачальникам, зарплати, каси менеджерів та купа інших фінансових аспектів. І все це — мультивалютне",
+            "image_src": ""
+          },
+          {
+            "title": "Фіскалізація",
+            "description": "В тандемі з Checkbox, ми даємо можливість фіскалізувати ваші продажі не встановлюючи касовий апарат.",
+            "image_src": ""
+          }
+        ]
       },
-      {
-        "contact_topic": "По питанням співпраці / бізнес пропозицій / тощо",
-        "full_name": "Артем Криворутченко",
-        "role": "Засновник",
-        "phone": "+38 (050) 957-66-74",
-        "photo_path": "/imgs/contacts/worker-4.svg",
-        "messenger_links": {
-          "viber": "viber://chat?number=%2B380509576674",
-          "email": "mailto:partnership@crm-vortex.com"
-        }
+      "why_vortex_showcase_section": {
+        "section_title": "Що вміє Vortex?",
+        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+        "cards": [
+          {
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+            "image_src": ""
+          },
+          {
+            "title": "Dolor sit amet",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum et donec sed odio dui.",
+            "image_src": ""
+          },
+          {
+            "title": "Consectetur elit",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
+            "image_src": ""
+          },
+          {
+            "title": "Aenean commodo",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
+            "image_src": ""
+          }
+        ]
+      },
+      "vortex_audience_section": {
+        "section_title": "Кому підійде Vortex?",
+        "cards": [
+          {
+            "title": "Магазини автозапчастин",
+            "description": "для зручного управління товарами та замовленнями",
+            "cta_text": "Спробувати Безкоштовно",
+            "image_src": "/imgs/3d_clay/3dicons-bag-dynamic-clay.png"
+          },
+          {
+            "title": "СТО та автосервіси",
+            "description": "для контролю робіт, запасів і взаємодії з клієнтами",
+            "cta_text": "Спробувати Безкоштовно",
+            "image_src": "/imgs/3d_clay/3dicons-tool-dynamic-clay.png"
+          },
+          {
+            "title": "Оптові компанії",
+            "description": "для організації складського обліку та ефективної логістики",
+            "cta_text": "Спробувати Безкоштовно",
+            "image_src": "/imgs/3d_clay/3dicons-location-dynamic-clay.png"
+          },
+          {
+            "title": "Інтернет-магазини",
+            "description": "для інтеграції з онлайн-продажами та швидкої обробки замовлень",
+            "cta_text": "Спробувати Безкоштовно",
+            "image_src": "/imgs/3d_clay/3dicons-computer-dynamic-clay.png"
+          }
+        ]
+      },
+      "client_testimonials_section": {
+        "section_title": "Наші клієнти про нас",
+        "pros_title": "Lorem ipsum Vortex:",
+        "cons_title": "Dolor sit amet Vortex:",
+        "reviews": [
+          {
+            "company_name": "Lorem Company",
+            "company_type": "Lorem ipsum dolor",
+            "image_src": "",
+            "pros": [
+              "Lorem ipsum",
+              "Dolor sit amet",
+              "Consectetur adipiscing"
+            ],
+            "cons": [
+              "Tempor incididunt",
+              "Labore et dolore"
+            ],
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Ipsum Group",
+            "company_type": "Consectetur adipiscing",
+            "image_src": "",
+            "pros": [
+              "Aenean commodo",
+              "Ligula eget dolor",
+              "Cum sociis natoque"
+            ],
+            "cons": [
+              "Donec quam felis",
+              "Ultricies nec"
+            ],
+            "quote": "Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Dolor Service",
+            "company_type": "Eiusmod tempor",
+            "image_src": "",
+            "pros": [
+              "Integer tincidunt",
+              "Cras dapibus",
+              "Vivamus elementum"
+            ],
+            "cons": [
+              "Aenean vulputate",
+              "Eleifend tellus"
+            ],
+            "quote": "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Amet Market",
+            "company_type": "Magna aliqua",
+            "image_src": "",
+            "pros": [
+              "Phasellus viverra",
+              "Nulla ut metus",
+              "Varius laoreet"
+            ],
+            "cons": [
+              "Quisque rutrum",
+              "Aenean imperdiet"
+            ],
+            "quote": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi nam eget dui.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          }
+        ]
+      },
+      "integrations_catalog_section": {
+        "section_title": "Lorem ipsum",
+        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "cards": [
+          {
+            "title": "TecDoc Inside",
+            "image_src": "blank_image",
+            "features": [
+              "Пошук авто по VIN",
+              "Підбір запчастин до авто, фільтр по улюбленим брендам, конструктивним вузлам",
+              "Застосування запчастин по авто",
+              "Пошук інформації про запчастини",
+              "Підбір запчастин в каталозі найбільшої бази даних світу"
+            ],
+            "link_text": "Детальніше",
+            "link_href": "/"
+          },
+          {
+            "title": "Checkbox",
+            "image_src": "blank_image",
+            "features": [
+              "Онлайн каса прямо у Vortex",
+              "Формування та друк фіскальних чеків на термопринтери",
+              "Видача та формування фіскальних чеків",
+              "Відсутні витрати на придбання обладнання",
+              "Зручне керування підключенням",
+              "Можливість налаштування декількох акаунтів checkbox, декількох кас/касирів всередині одного акаунту"
+            ],
+            "link_text": "Детальніше",
+            "link_href": "/"
+          },
+          {
+            "title": "Нова Пошта",
+            "image_src": "blank_image",
+            "features": [
+              "Налаштування відправника за замовчуванням",
+              "Генерування експрес ТТН. На відділення чи адресу, з контролем платежу чи без, декілька місць чи одне та багато інших інтегрованих налаштувань",
+              "Можливість друку стікерів місць та цілої експрес ТТН на А4",
+              "Оновлення бази даних відділень по АПІ"
+            ],
+            "link_text": "Детальніше",
+            "link_href": "/"
+          },
+          {
+            "title": "Turbo SMS",
+            "image_src": "blank_image",
+            "features": [
+              "Автоматичне посилання SMS по різних подіях",
+              "Можливість відправити SMS вручну з довільним текстом або шаблоном",
+              "Розсилка SMS декільком отримувачам",
+              "Історія відправлених СМС",
+              "Відстежування балансу, сповіщення «баланс SMS майже вичерпано»"
+            ],
+            "link_text": "Детальніше",
+            "link_href": "/"
+          },
+          {
+            "title": "API банків",
+            "image_src": "blank_image",
+            "features": [
+              "Підключення до вашого рахунку",
+              "Перегляд останніх транзакцій",
+              "Формування фін. транзакції в Vortex зі списку реальних транзакцій в 1 клік!",
+              "Всі транзакції в одному списку зі зручними фільтрами: по рахунку та виду операції, а також загальним пошуком по сумі, отримувачу, примітці тощо"
+            ],
+            "link_text": "Детальніше",
+            "link_href": "/"
+          },
+          {
+            "title": "Binotel",
+            "image_src": "blank_image",
+            "features": [
+              "Контроль втрачених дзвінків",
+              "Перегляд історії дзвінків по клієнту в Vortex",
+              "Швидке створення клієнта при вхідному дзвінку з незареєстрованого номеру",
+              "Прослуховування дзвінка та контроль якості",
+              "Перехід на клієнта у Vortex при вхідному дзвінку з зареєстрованого номеру"
+            ],
+            "link_text": "Детальніше",
+            "link_href": "/"
+          }
+        ]
+      },
+      "car_service_section": {
+        "heading": "Облік СТО",
+        "description": "Vortex допомагає вести облік не лише магазинам автозапчастин, а й сервісам технічного обслуговування.",
+        "car_service_features": [
+          "Керування довідником робіт СТО",
+          "Керування списком постів та майстрів",
+          "Запис клієнта на певну дату",
+          "Зручний графічний розклад СТО",
+          "Керування гаражем клієнта",
+          "Історія пробігу",
+          "Можливість додавання нагадувань",
+          "Друк різноманітних документів: акти, рахунки, замовлення-наряди, діагностика",
+          "Розрахунок зарплати механіка та майстра-приймальника",
+          "Гарна та інформативна статистика"
+        ]
+      },
+      "website_development_section": {
+        "heading": "Розробка веб-сайтів",
+        "gift_message": "Користуйтесь VORTEX та в подарунок отримуйте безкоштовний сайт для магазину автозапчастин чи СТО!",
+        "description_paragraphs": [
+          "Наш шаблонний сайт забезпечує потреби понад 80% наших клієнтів.",
+          "Вебсайт швидкий, простий у розумінні та повністю інтегрований в систему обліку.",
+          "Каталоги, наявності, ціни, описи, картинки з CRM автоматично транслюються на сайт.",
+          "Ви власноруч можете змінити логотип, колірну гамму, меню, тексти та інше.",
+          "Ми також надаємо послуги SEO-оптимізації, налаштування Google Ads та інші інструменти просування сайту."
+        ],
+        "website_image_src": "/imgs/websites/site_2.png",
+        "benefit_groups": [
+          {
+            "items": [
+              "Респонсивний",
+              "Ефективний",
+              "Швидкий",
+              "Оптимізований",
+              "Лаконічний",
+              "Функціональний"
+            ],
+            "image_src": "/imgs/3dicons_premium/3d-rocket-premium.png"
+          },
+          {
+            "items": [
+              "Каталог товарів",
+              "Обрані товари на головній",
+              "SEO-оптимізація*",
+              "Підбір по TecDoc*",
+              "LiqPay*"
+            ],
+            "image_src": "/imgs/3dicons_premium/3d-fire.png",
+            "note": "*платні послуги"
+          }
+        ],
+        "upgrade_message": "Також у Вас є можливість покращити веб-сайт, додавши додаткові корисні функції, обравши пакет “Практичний” або ж “Максимальний”",
+        "cta_text": "Детальніше Про Сайт"
       }
-    ]
-  },
-  "settings": {
-    "pricing_calculator": {
-      "currency": "$",
-      "base_monthly_price": 50,
-      "increment": 20,
-      "default_manager_count": 3,
-      "default_store_count": 1,
-      "integrations": [
+    },
+    "FAQ": [
+      {
+        "topic": "Який термін дії Демо-версії?",
+        "answer": "<p>Демо-версія є безкоштовною та надається на 14 днів. Функціонал Демо-версії не відрізняється від платної версії.</p>"
+      },
+      {
+        "topic": "Після закінчення тестового періоду, введені мною дані зберігаються?",
+        "answer": "<p>Ми рекомендуємо протестувати весь функціонал програми, не переймаючись через можливі помилки. Після завершення тестування ми можемо як видалити, так і залишити будь-які з ваших даних — за вашим вибором.</p>"
+      },
+      {
+        "topic": "Які гарантії збереження моїх даних та їх захист від передачі третім лицям?",
+        "answer": "<p>Наші сервери розташовані в надійних дата-центрах Німеччини та Фінляндії. Файли із залишками, контрагентами та їхніми балансами можна завантажувати самостійно або налаштувати автоматичне надсилання цих даних на пошту. Також є можливість підписати двосторонній договір про нерозповсюдження інформації.</p>"
+      },
+      {
+        "topic": "Чи безкоштовні оновлення?",
+        "answer": "<p>Так, оновлення безкоштовні.</p>"
+      },
+      {
+        "topic": "Мені потрібний додатковий функціонал, що можете запропонувати?",
+        "answer": "<p>Якщо ви не знайшли в програмі рішення для своїх потреб, ми можемо розробити додатковий функціонал після попереднього обговорення вартості та строків.</p>"
+      },
+      {
+        "topic": "Як розпочати роботу?",
+        "answer": "<ol><li>Завантажте свою наявність через імпортер прайсів, вибравши в полі складу «-1». Файл обов’язково має містити 4 колонки: артикул, бренд, кількість і вхідна ціна.</li><li>Імпортуйте своїх клієнтів через клієнти → список → у верхньому правому кутку кнопка «імпортувати».</li><li>Налаштуйте автоматичне завантаження прайсів актуальних вам постачальників через адміністрування → сторонні сервіси та синхронізація.</li><li>Створіть користувачів через адміністрування → користувачі → список → у верхньому правому кутку кнопка «додати».</li></ol>"
+      }
+    ],
+    "videos": [
+      {
+        "topic": "Як завантажити прайс?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=g95YUJmOvXM\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Завантаження прайсу</strong><span>Інструкція з налаштування</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "Як оформити замовлення від постачальника?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+від+постачальника\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Замовлення від постачальника</strong><span>Покрокова відеоінструкція</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "Як оформити замовлення зі складу?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+зі+складу\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Замовлення зі складу</strong><span>Покрокова відеоінструкція</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "Як оформити прихід товару?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=JkVtG0KNoVw\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Замовлення та прийом товару</strong><span>Інструкція з налаштування</span><i aria-hidden=\"true\">▶</i></a><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+великий+прийом+товару\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Великий прийом товару</strong><span>Інструкція з налаштування</span><i aria-hidden=\"true\">▶</i></a></div>"
+      }
+    ],
+    "contacts": {
+      "title": "Контакти",
+      "subtitle": "Залишились запитання?\nМи завжди раді допомогти Вам, ми тут для Вас",
+      "workers": [
         {
-          "id": "tecdoc",
-          "label": "TecDoc",
-          "price": 25,
-          "billing_period": "monthly",
-          "selected_by_default": false
+          "contact_topic": "Для отримання тестової версії / з питань консультації",
+          "full_name": "Крістіна Васильняк",
+          "role": "Тех. підтримка",
+          "phone": "+38 (097) 866-36-90",
+          "photo_path": "/imgs/contacts/worker-1.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_support",
+            "viber": "viber://chat?number=%2B380978663690",
+            "whatsapp": "https://wa.me/380978663690",
+            "email": "mailto:support@crm-vortex.com"
+          }
         },
         {
-          "id": "binotel",
-          "label": "Binotel",
-          "price": 50,
-          "billing_period": "one_time",
-          "selected_by_default": true
+          "contact_topic": "По питанням інтеграцій / тех. питанням / розробкам",
+          "full_name": "Олександр Васильєв",
+          "role": "Розробник",
+          "phone": "+38 (095) 677-50-02",
+          "photo_path": "/imgs/contacts/worker-2.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_development",
+            "viber": "viber://chat?number=%2B380956775002",
+            "whatsapp": "https://wa.me/380956775002",
+            "email": "mailto:development@crm-vortex.com"
+          }
         },
         {
-          "id": "nova-poshta",
-          "label": "Новою поштою",
-          "price": 20,
-          "billing_period": "one_time",
-          "selected_by_default": true
+          "contact_topic": "По питанням співпраці / бізнес пропозицій / тощо",
+          "full_name": "Володимир Маркович",
+          "role": "Засновник",
+          "phone": "+38 (066) 728-23-02",
+          "photo_path": "/imgs/contacts/worker-3.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_business",
+            "viber": "viber://chat?number=%2B380667282302",
+            "email": "mailto:business@crm-vortex.com"
+          }
+        },
+        {
+          "contact_topic": "По питанням співпраці / бізнес пропозицій / тощо",
+          "full_name": "Артем Криворутченко",
+          "role": "Засновник",
+          "phone": "+38 (050) 957-66-74",
+          "photo_path": "/imgs/contacts/worker-4.svg",
+          "messenger_links": {
+            "viber": "viber://chat?number=%2B380509576674",
+            "email": "mailto:partnership@crm-vortex.com"
+          }
         }
-      ],
-      "included_features": [
-        "Будь-скільки акаунтів інших працівників",
-        "Турбота про клієнта",
-        "Безлімітне завантаження прайсів",
-        "Всі доступні статистики",
-        "Весь функціонал фінансового обліку"
+      ]
+    },
+    "settings": {
+      "pricing_calculator": {
+        "currency": "$",
+        "base_monthly_price": 50,
+        "increment": 20,
+        "default_manager_count": 3,
+        "default_store_count": 1,
+        "integrations": [
+          {
+            "id": "tecdoc",
+            "label": "TecDoc",
+            "price": 25,
+            "billing_period": "monthly",
+            "selected_by_default": false
+          },
+          {
+            "id": "binotel",
+            "label": "Binotel",
+            "price": 50,
+            "billing_period": "one_time",
+            "selected_by_default": true
+          },
+          {
+            "id": "nova-poshta",
+            "label": "Новою поштою",
+            "price": 20,
+            "billing_period": "one_time",
+            "selected_by_default": true
+          }
+        ],
+        "included_features": [
+          "Будь-скільки акаунтів інших працівників",
+          "Турбота про клієнта",
+          "Безлімітне завантаження прайсів",
+          "Всі доступні статистики",
+          "Весь функціонал фінансового обліку"
+        ]
+      }
+    },
+    "stats": {
+      "totalClicks": 0,
+      "formSubmissions": 0
+    },
+    "ui": {
+      "nav.home": "Головна",
+      "nav.carService": "Облік СТО",
+      "nav.websites": "Розробка веб-сайтів",
+      "nav.pricing": "Ціни",
+      "nav.faq": "Запитання",
+      "nav.contacts": "Контакти",
+      "common.home": "Головна сторінка",
+      "common.breadcrumbs": "Хлібні крихти",
+      "common.tryFree": "Спробувати Безкоштовно",
+      "common.tryDemo": "Спробувати Демо",
+      "common.privacy": "Політика конфіденційності",
+      "common.language": "Мова сайту",
+      "common.navigation": "Основна навігація",
+      "common.mobileNavigation": "Мобільна навігація",
+      "common.openMenu": "Відкрити меню",
+      "common.closeMenu": "Закрити меню",
+      "common.socials": "Соціальні мережі",
+      "common.partner": "TecAlliance — офіційний партнер",
+      "common.loading": "Завантаження…",
+      "common.loadError": "Не вдалося завантажити сторінку.",
+      "common.previous": "Попередній слайд",
+      "common.next": "Наступний слайд",
+      "common.slide": "Слайд {number}",
+      "common.messengers": "Месенджери: {name}",
+      "faq.title": "FAQ",
+      "faq.functionality": "Функціонал",
+      "pricing.title": "Ваша вартість користування VORTEX",
+      "pricing.managers": "Оберіть кількість акаунтів для менеджерів",
+      "pricing.branches": "Вкажіть кількість філій",
+      "pricing.decrease": "Зменшити: {label}",
+      "pricing.increase": "Збільшити: {label}",
+      "pricing.integration": "Інтеграція з {name}",
+      "pricing.monthly": "на місяць",
+      "pricing.oneTime": "одноразова плата",
+      "pricing.trialTitle": "Спробуйте VORTEX на 14 днів безкоштовно!",
+      "pricing.trialDescription": "Повноцінне користування системою без оплати",
+      "pricing.demoTitle": "Замовте демонстрацію демо-версії просто зараз!",
+      "pricing.demoDescription": "Відеодемонстрація користування системою від наших спеціалістів",
+      "trial.title": "Безкоштовні 14 днів!",
+      "trial.subtitle": "Нема що думати, варто спробувати!",
+      "trial.infoTitle": "Безкоштовна версія функціонально нічим не відрізняється від платної!",
+      "trial.info": "Після завершення тест-драйву деякі дані можна буде видалити (тестові фінансові операції, замовлення, прийоми товару тощо), а деякі залишити (налаштування інтеграцій, імпорту прайсів, суб’єктів господарювання тощо).",
+      "trial.price": "Розрахована вартість: ${total}",
+      "trial.name": "Як до вас звертатись?",
+      "trial.namePlaceholder": "Введіть своє ім’я",
+      "trial.phone": "Номер телефону",
+      "trial.phonePlaceholder": "+380",
+      "trial.location": "Додати мою геолокацію",
+      "trial.locationAdded": "Геолокацію додано",
+      "trial.locationUnsupported": "Ваш браузер не підтримує геолокацію.",
+      "trial.locationWaiting": "Очікуємо дозвіл на доступ до геолокації…",
+      "trial.locationSuccess": "Геолокацію буде додано до заявки.",
+      "trial.locationDenied": "Геолокацію не надано. Заявку можна відправити без неї.",
+      "trial.nameError": "Введіть коректне ім’я (2–80 символів).",
+      "trial.phoneError": "Введіть коректний номер телефону.",
+      "trial.captchaError": "Підтвердьте, що ви не робот.",
+      "trial.success": "Дякуємо! Заявку успішно відправлено.",
+      "trial.error": "Не вдалося відправити заявку. Спробуйте ще раз.",
+      "trial.unavailable": "Сервіс заявок ще не налаштовано.",
+      "trial.sending": "Відправляємо…",
+      "trial.send": "Відправити",
+      "trial.captchaUnavailable": "reCAPTCHA не налаштовано.",
+      "network.title": "Усі постачальники в одному місці",
+      "network.description": "Одним з основних завдань Vortex є агрегація наявностей усіх постачальників в одному місці, а також спрощення співпраці з ними. У рамках цих інтеграцій ви матимете можливість автоматично отримувати прайси постачальників, оформляти замовлення та завантажувати накладні за допомогою API.",
+      "network.alt": "Постачальники, підключені до системи Vortex",
+      "sync.title": "Vortex Sync",
+      "sync.first": "Розроблена нами технологія Sync (читається як «сінк», або «синк») дозволяє вам швидко налаштувати онлайн-обмін наявностями та замовленнями з іншим магазином, що користується Vortex.",
+      "sync.second": "Ви самі вирішуєте, чи бачитимуть вас інші клієнти в списку потенційних підключень, які наявності їм передавати та яку націнку застосовувати до них.",
+      "sync.third": "Усі наявності, завантажені у вашу програму через Sync, будуть відмічені спеціальним тегом. При їх замовленні інша сторона відразу формує замовлення та надсилає менеджерам сповіщення «Нове замовлення Sync». Таке ж сповіщення отримаєте і ви, якщо інша сторона замовить у вас.",
+      "sync.fourth": "Оновлювати склади з наявностями при цьому не потрібно — Sync подбає про це замість вас.",
+      "sync.alt": "Швидкий обмін товарами між двома клієнтами Vortex Sync",
+      "sync.client": "Клієнт Vortex {number}",
+      "carOverview.link": "Детальніше про облік СТО",
+      "carOverview.alt": "Інтерфейс обліку СТО Vortex на ноутбуці",
+      "carOverview.first": "Оскільки ми самі є власниками сервісу ТО, при розробці цього модуля спирались на власний досвід роботи, з усіма його проблемами та нюансами.",
+      "carOverview.second": "Пізніше, коли ми почали постачати програму іншим СТО по Україні, їхній підхід до роботи та бачення системи обліку СТО ми врахували під час розробки продукту.",
+      "carOverview.third": "Приєднавшись, ви також допомагатимете нам створювати найкращу систему обліку для СТО та магазинів автозапчастин.",
+      "website.alt": "Приклад шаблонного сайту магазину автозапчастин",
+      "language.ua": "Українська",
+      "language.cz": "Čeština",
+      "language.sk": "Slovenčina",
+      "language.en": "English",
+      "language.pl": "Polski",
+      "supplier.technomir": "Техномир",
+      "supplier.uniq": "Юнік Трейд",
+      "supplier.groupauto": "Groupauto Україна",
+      "common.copyright": "Copyright © {year} Vortex"
+    },
+    "car_service": {
+      "title": "Облік СТО",
+      "subtitle": "Vortex допомагає вести облік не лише магазинам автозапчастин, а й сервісам технічного обслуговування.",
+      "blocks": [
+        {
+          "id": "works",
+          "title": "Довідник робіт СТО",
+          "image_src": "/imgs/car-service/calendar.png",
+          "image_alt": "Довідник робіт СТО",
+          "paragraphs": [
+            "У комплекті з програмою ви отримаєте базовий довідник робіт СТО. До нього входять приблизно 15 категорій, з 10–20 роботами у кожній з них. При цьому ви можете додавати як категорії, так і роботи до них.",
+            "При створенні роботи підтримуються такі поля: категорія, назва, кількість нормо-годин, вартість однієї нормо-години, валюта, примітка.",
+            "Також до робіт СТО можна додавати шаблони запитів на підбір запчастин. Наприклад, до роботи «заміна фільтра салону» додаємо шаблон «фільтр салону». При створенні запису СТО з цією роботою система автоматично запропонує створити запит на підбір менеджеру з продажу запчастин."
+          ]
+        },
+        {
+          "id": "documents",
+          "title": "Документи",
+          "image_src": "/imgs/car-service/company.png",
+          "image_alt": "Документи",
+          "paragraphs": [
+            "У будь-якому бізнесі (у тому числі СТО) формати друку відіграють важливу роль. Vortex знає це і намагається постійно покращувати свою систему документів.",
+            "Сьогодні практично кожна дія у Vortex супроводжується відповідним документом, який, своєю чергою, має форму друку."
+          ],
+          "list_intro": "Нижче представлені приклади документів СТО, про які часто запитують клієнти:",
+          "documents": [
+            {
+              "label": "Замовлення-наряд.pdf",
+              "href": null
+            },
+            {
+              "label": "Акт прийому-передачі.pdf",
+              "href": null
+            },
+            {
+              "label": "Акт виконаних робіт.pdf",
+              "href": null
+            }
+          ],
+          "note": "*Vortex за окрему плату може змінити формат друку певного документа під ваші персональні потреби."
+        },
+        {
+          "id": "booking",
+          "title": "Запис на СТО",
+          "image_src": "/imgs/car-service/bookings.png",
+          "image_alt": "Запис на СТО",
+          "paragraphs": [
+            "Під час запису на СТО ви мусите обов’язково вказати клієнта, пост СТО та час надання сервісу. Роботи можна внести відразу або після створення запису (якщо ви одразу не знаєте, що буде робитись по авто). Ще одним важливим полем є авто клієнта. Ви можете внести VIN-код, номер авто, пробіг, марку, модель та специфікацію авто. По кожній роботі в записі СТО та по самому запису ведеться історія змін. Відповідно, ви завжди будете знати, хто, коли і яку зміну вніс до системи."
+          ],
+          "list_intro": "Декілька цікавих функцій, пов’язаних із записом СТО:",
+          "items": [
+            "До запису СТО можна прикріпляти файли (.pdf, .xlsx, .png тощо).",
+            "До робіт можна вказувати знижку.",
+            "Запис СТО можна завершувати частково. До одного запису може бути сформовано декілька актів виконаних робіт.",
+            "Майстер може відмічати роботу зробленою. Це не завершує запис, а лише спрощує розуміння, які роботи вже зроблені, а які ні.",
+            "Введений пробіг зберігається в гаражі клієнта. Детальніше про це — у наступних блоках."
+          ]
+        },
+        {
+          "id": "statistics",
+          "title": "Статистика",
+          "image_src": "/imgs/vx-screenshot-1.png",
+          "image_alt": "Статистика",
+          "paragraphs": [
+            "Статистика по СТО у Vortex представлена одним великим модулем, де ви можете переглядати всі основні параметри вашого підприємства."
+          ],
+          "list_intro": "До таких параметрів входять:",
+          "items": [
+            "Заробіток по боксу (посту)",
+            "Заробіток по майстру-виконавцю робіт",
+            "Заробіток по майстру-приймальнику",
+            "Загальний заробіток СТО",
+            "Витрати СТО по категоріях",
+            "Список найпопулярніших робіт",
+            "Список виконаних майстром робіт за період"
+          ]
+        },
+        {
+          "id": "calendar",
+          "title": "Календар записів",
+          "image_src": "/imgs/car-service/calendar.png",
+          "image_alt": "Календар записів",
+          "paragraphs": [
+            "Календар записів слугує для простого візуального сприйняття робочих процесів на вашому СТО, швидкого знаходження вільного часу для запису та легкого ведення обліку записів."
+          ],
+          "list_intro": "Календар існує у двох видах:",
+          "items": [
+            "По всіх постах за вибраний день.",
+            "По вибраному посту за тиждень."
+          ],
+          "closing_paragraphs": [
+            "У календарі ви можете швидко створити запис СТО, клікнувши на час початку та кінця виконання робіт. Також можна швидко відредагувати запис, скасувати його чи завершити.",
+            "У Vortex у кожного клієнта є кошик, у якому можуть бути і роботи СТО. Спочатку можна додати необхідні роботи в кошик, а потім у календарі на основі цього кошика створити запис СТО."
+          ]
+        },
+        {
+          "id": "mileage",
+          "title": "Історія пробігу",
+          "image_src": "/imgs/car-service/company.png",
+          "image_alt": "Історія пробігу",
+          "paragraphs": [
+            "При введенні даних авто в записі СТО воно зберігається в гаражі клієнта. Якщо в записі ввести пробіг, створиться запис в історії пробігу авто. Це дозволяє зберігати інформацію про те, які роботи і при якому пробігу робилися, та робити висновки про необхідність проведення регламентних робіт.",
+            "Модуль історії пробігу підтримує створення нагадувань клієнту на дату, пробіг або обидві умови. Нагадування на дату відправить клієнту SMS у вказаний день. Нагадування на пробіг повідомить менеджера, коли в новому записі СТО буде введено пробіг більший за заданий для цього клієнта."
+          ]
+        }
       ]
     }
   },
-  "stats": {
-    "totalClicks": 0,
-    "formSubmissions": 0
+  "cz": {
+    "homepage": {
+      "title": "CRM VORTEX —\nspolehlivý a ověřený systém evidence\npro prodejny autodílů a autoservisy",
+      "subtitle": "CRM Vortex poskytuje plnou kontrolu nad prodejnou autodílů i autoservisem: od evidence zboží a objednávek po finance a výkon zaměstnanců. Jediný systém spojuje 95 % operací v jednom rozhraní, omezuje ztráty, zefektivňuje práci týmu a zvyšuje zisk.",
+      "about_us_block": {
+        "about_us_title": "O nás",
+        "about_us_subtitle": "Vortex nabízí nástroje, které v jiných CRM nenajdete: flexibilní správu skladu, samostatná rozhraní pro manažery a baliče, rozšířenou matici stavů a automatickou fiskalizaci. Zpřesněte procesy, omezte ztracené objednávky a soustřeďte se na rozvoj podnikání.",
+        "about_us_blocks": [
+          {
+            "about_us_title": "Evidence prodejny autodílů a autoservisu na jednom místě",
+            "about_us_description": "Řešení navržené pro váš obor, se zaměřením na sklad, objednávky, zákazníky a evidenci služeb, bez zbytečných funkcí.",
+            "about_us_image_path": "/imgs/3dicons_premium/monitor.png"
+          },
+          {
+            "about_us_title": "Automatizace bez komplikací",
+            "about_us_description": "Nahraďte Excel moderním systémem, který zjednodušuje evidenci, zrychluje zpracování objednávek a pomáhá předcházet chybám.",
+            "about_us_image_path": "/imgs/3dicons_premium/folder.png"
+          },
+          {
+            "about_us_title": "Integrace s dodavateli",
+            "about_us_description": "Připojte se k hlavním dodavatelům a katalogům autodílů. Ceny a zásoby se aktualizují automaticky, bez ruční práce.",
+            "about_us_image_path": "/imgs/3dicons_premium/like.png"
+          },
+          {
+            "about_us_title": "Webové stránky jako dárek",
+            "about_us_description": "Vytvoříme moderní web pro vaši prodejnu. Získejte šablonový web zdarma nebo řešení na míru vašim potřebám.",
+            "about_us_image_path": "/imgs/3dicons_premium/gift.png"
+          },
+          {
+            "about_us_title": "Sdílení informací s dalšími zákazníky Vortex",
+            "about_us_description": "Spojte se s dalšími prodejnami používajícími Vortex a sdílejte informace o dostupnosti dílů.",
+            "about_us_image_path": "/imgs/3dicons_premium/message.png"
+          },
+          {
+            "about_us_title": "Růst zisku",
+            "about_us_description": "Kontrola každého kroku od poptávky po prodej. Méně ztrát, lepší služby, více objednávek.",
+            "about_us_image_path": "/imgs/3dicons_premium/wallet.png"
+          }
+        ]
+      },
+      "hero_page_slider_section": {
+        "section_title": "Takto bude vypadat váš systém",
+        "slide_image_paths": [
+          "/imgs/slider_images/slide_1.png",
+          "/imgs/slider_images/slide_2.png",
+          "/imgs/slider_images/slide_3.png"
+        ]
+      },
+      "why_vortex_section": {
+        "section_title": "Co Vortex umí?",
+        "section_description": "Vortex nabízí rozsáhlé možnosti, promyšlené do nejmenších detailů a vyvinuté týmem odborníků z oboru.",
+        "cards": [
+          {
+            "title": "Obchodní partneři",
+            "description": "Historie prodejů, servisních prací, nájezdu vozidel a dokumentů. Výkonné párování vzájemných účtů, individuální přirážky a úvěrové podmínky.",
+            "image_src": ""
+          },
+          {
+            "title": "Sklad",
+            "description": "Automatický nákup (MIN-MAX), adresné skladování, kontrola vychystávání zboží a mnoho dalšího.",
+            "image_src": ""
+          },
+          {
+            "title": "Finance",
+            "description": "Kontrola všech příjmů a výdajů: plateb dodavatelům, mezd, pokladen manažerů a dalších finančních operací, vše ve více měnách.",
+            "image_src": ""
+          },
+          {
+            "title": "Fiskalizace",
+            "description": "Ve spojení s Checkbox můžete fiskalizovat prodeje bez instalace registrační pokladny.",
+            "image_src": ""
+          }
+        ]
+      },
+      "why_vortex_showcase_section": {
+        "section_title": "Co Vortex umí?",
+        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+        "cards": [
+          {
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+            "image_src": ""
+          },
+          {
+            "title": "Dolor sit amet",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum et donec sed odio dui.",
+            "image_src": ""
+          },
+          {
+            "title": "Consectetur elit",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
+            "image_src": ""
+          },
+          {
+            "title": "Aenean commodo",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
+            "image_src": ""
+          }
+        ]
+      },
+      "vortex_audience_section": {
+        "section_title": "Pro koho je Vortex?",
+        "cards": [
+          {
+            "title": "Prodejny autodílů",
+            "description": "pro pohodlnou správu zboží a objednávek",
+            "cta_text": "Vyzkoušet zdarma",
+            "image_src": "/imgs/3d_clay/3dicons-bag-dynamic-clay.png"
+          },
+          {
+            "title": "Autoservisy a opravny",
+            "description": "pro správu prací, zásob a vztahů se zákazníky",
+            "cta_text": "Vyzkoušet zdarma",
+            "image_src": "/imgs/3d_clay/3dicons-tool-dynamic-clay.png"
+          },
+          {
+            "title": "Velkoobchodní společnosti",
+            "description": "pro skladovou evidenci a efektivní logistiku",
+            "cta_text": "Vyzkoušet zdarma",
+            "image_src": "/imgs/3d_clay/3dicons-location-dynamic-clay.png"
+          },
+          {
+            "title": "Internetové obchody",
+            "description": "pro integraci online prodeje a rychlé zpracování objednávek",
+            "cta_text": "Vyzkoušet zdarma",
+            "image_src": "/imgs/3d_clay/3dicons-computer-dynamic-clay.png"
+          }
+        ]
+      },
+      "client_testimonials_section": {
+        "section_title": "Co o nás říkají zákazníci",
+        "pros_title": "Lorem ipsum Vortex:",
+        "cons_title": "Dolor sit amet Vortex:",
+        "reviews": [
+          {
+            "company_name": "Lorem Company",
+            "company_type": "Lorem ipsum dolor",
+            "image_src": "",
+            "pros": [
+              "Lorem ipsum",
+              "Dolor sit amet",
+              "Consectetur adipiscing"
+            ],
+            "cons": [
+              "Tempor incididunt",
+              "Labore et dolore"
+            ],
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Ipsum Group",
+            "company_type": "Consectetur adipiscing",
+            "image_src": "",
+            "pros": [
+              "Aenean commodo",
+              "Ligula eget dolor",
+              "Cum sociis natoque"
+            ],
+            "cons": [
+              "Donec quam felis",
+              "Ultricies nec"
+            ],
+            "quote": "Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Dolor Service",
+            "company_type": "Eiusmod tempor",
+            "image_src": "",
+            "pros": [
+              "Integer tincidunt",
+              "Cras dapibus",
+              "Vivamus elementum"
+            ],
+            "cons": [
+              "Aenean vulputate",
+              "Eleifend tellus"
+            ],
+            "quote": "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Amet Market",
+            "company_type": "Magna aliqua",
+            "image_src": "",
+            "pros": [
+              "Phasellus viverra",
+              "Nulla ut metus",
+              "Varius laoreet"
+            ],
+            "cons": [
+              "Quisque rutrum",
+              "Aenean imperdiet"
+            ],
+            "quote": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi nam eget dui.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          }
+        ]
+      },
+      "integrations_catalog_section": {
+        "section_title": "Lorem ipsum",
+        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "cards": [
+          {
+            "title": "TecDoc Inside",
+            "image_src": "blank_image",
+            "features": [
+              "Vyhledání vozidla podle VIN",
+              "Výběr dílů pro vozidlo, filtrování podle oblíbených značek a konstrukčních celků",
+              "Použití dílů ve vozidlech",
+              "Vyhledávání informací o dílech",
+              "Výběr dílů v katalogu největší světové databáze"
+            ],
+            "link_text": "Více informací",
+            "link_href": "/"
+          },
+          {
+            "title": "Checkbox",
+            "image_src": "blank_image",
+            "features": [
+              "Online pokladna přímo ve Vortex",
+              "Vytváření a tisk fiskálních účtenek na termotiskárnách",
+              "Vydávání a vytváření fiskálních účtenek",
+              "Bez nákladů na nákup zařízení",
+              "Pohodlná správa připojení",
+              "Nastavení více účtů Checkbox a více pokladen či pokladníků v jednom účtu"
+            ],
+            "link_text": "Více informací",
+            "link_href": "/"
+          },
+          {
+            "title": "Nova Poshta",
+            "image_src": "blank_image",
+            "features": [
+              "Nastavení výchozího odesílatele",
+              "Vytváření expresních nákladních listů pro doručení na pobočku či adresu, s kontrolou platby i bez ní, pro jeden či více balíků a s dalšími možnostmi",
+              "Tisk štítků zásilek a celých expresních nákladních listů na A4",
+              "Aktualizace databáze poboček přes API"
+            ],
+            "link_text": "Více informací",
+            "link_href": "/"
+          },
+          {
+            "title": "Turbo SMS",
+            "image_src": "blank_image",
+            "features": [
+              "Automatické odesílání SMS při různých událostech",
+              "Ruční odesílání SMS s vlastním textem nebo šablonou",
+              "Hromadné odesílání SMS více příjemcům",
+              "Historie odeslaných SMS",
+              "Sledování zůstatku a upozornění na nízký kredit SMS"
+            ],
+            "link_text": "Více informací",
+            "link_href": "/"
+          },
+          {
+            "title": "Bankovní API",
+            "image_src": "blank_image",
+            "features": [
+              "Připojení k vašemu bankovnímu účtu",
+              "Zobrazení posledních transakcí",
+              "Vytvoření finanční transakce ve Vortex ze skutečné bankovní transakce jedním kliknutím!",
+              "Všechny transakce v jednom seznamu s filtry podle účtu a typu operace a vyhledáváním podle částky, příjemce, poznámky a dalších údajů"
+            ],
+            "link_text": "Více informací",
+            "link_href": "/"
+          },
+          {
+            "title": "Binotel",
+            "image_src": "blank_image",
+            "features": [
+              "Kontrola zmeškaných hovorů",
+              "Historie hovorů zákazníka ve Vortex",
+              "Rychlé vytvoření zákazníka při hovoru z neregistrovaného čísla",
+              "Poslech hovorů a kontrola kvality",
+              "Otevření profilu zákazníka ve Vortex při hovoru z registrovaného čísla"
+            ],
+            "link_text": "Více informací",
+            "link_href": "/"
+          }
+        ]
+      },
+      "car_service_section": {
+        "heading": "Evidence autoservisu",
+        "description": "Vortex pomáhá s evidencí nejen prodejnám autodílů, ale také autoservisům.",
+        "car_service_features": [
+          "Správa katalogu servisních prací",
+          "Správa servisních stání a mechaniků",
+          "Objednání zákazníka na konkrétní datum",
+          "Přehledný grafický rozvrh autoservisu",
+          "Správa garáže zákazníka",
+          "Historie nájezdu",
+          "Vytváření připomínek",
+          "Tisk dokumentů: protokoly, faktury, zakázkové listy a diagnostika",
+          "Výpočet mezd mechaniků a servisních poradců",
+          "Přehledné a informativní statistiky"
+        ]
+      },
+      "website_development_section": {
+        "heading": "Tvorba webových stránek",
+        "gift_message": "Používejte VORTEX a získejte zdarma web pro svou prodejnu autodílů nebo autoservis!",
+        "description_paragraphs": [
+          "Náš šablonový web splňuje potřeby více než 80 % našich zákazníků.",
+          "Web je rychlý, přehledný a plně integrovaný se systémem evidence.",
+          "Katalogy, zásoby, ceny, popisy a obrázky z CRM se automaticky přenášejí na web.",
+          "Logo, barvy, menu, texty a další prvky můžete měnit sami.",
+          "Nabízíme také SEO optimalizaci, nastavení Google Ads a další nástroje propagace webu."
+        ],
+        "website_image_src": "/imgs/websites/site_2.png",
+        "benefit_groups": [
+          {
+            "items": [
+              "Responzivní",
+              "Efektivní",
+              "Rychlý",
+              "Optimalizovaný",
+              "Přehledný",
+              "Funkční"
+            ],
+            "image_src": "/imgs/3dicons_premium/3d-rocket-premium.png"
+          },
+          {
+            "items": [
+              "Katalog zboží",
+              "Vybrané zboží na hlavní stránce",
+              "SEO optimalizace*",
+              "Výběr dílů podle TecDoc*",
+              "LiqPay*"
+            ],
+            "image_src": "/imgs/3dicons_premium/3d-fire.png",
+            "note": "*placené služby"
+          }
+        ],
+        "upgrade_message": "Svůj web můžete rozšířit o další užitečné funkce výběrem balíčku „Praktický“ nebo „Maximální“.",
+        "cta_text": "Více o webu"
+      }
+    },
+    "FAQ": [
+      {
+        "topic": "Jak dlouho platí demoverze?",
+        "answer": "<p>Demoverze je zdarma na 14 dní a nabízí stejné funkce jako placená verze.</p>"
+      },
+      {
+        "topic": "Zůstanou má data zachována po skončení zkušební doby?",
+        "answer": "<p>Doporučujeme vyzkoušet všechny funkce bez obav z chyb. Po skončení testování můžeme podle vašeho přání libovolná data smazat nebo ponechat.</p>"
+      },
+      {
+        "topic": "Jak chráníte má data před ztrátou a předáním třetím stranám?",
+        "answer": "<p>Naše servery jsou umístěny ve spolehlivých datových centrech v Německu a Finsku. Soubory se zásobami, obchodními partnery a jejich zůstatky si můžete stáhnout sami nebo nastavit automatické zasílání e-mailem. Lze také uzavřít vzájemnou dohodu o mlčenlivosti.</p>"
+      },
+      {
+        "topic": "Jsou aktualizace zdarma?",
+        "answer": "<p>Ano, aktualizace jsou zdarma.</p>"
+      },
+      {
+        "topic": "Potřebuji další funkce. Co můžete nabídnout?",
+        "answer": "<p>Pokud v programu nenajdete řešení svých potřeb, můžeme po dohodě o ceně a termínu vyvinout další funkce.</p>"
+      },
+      {
+        "topic": "Jak začít?",
+        "answer": "<ol><li>Nahrajte zásoby pomocí importéru ceníků a v poli skladu vyberte „-1“. Soubor musí obsahovat čtyři sloupce: číslo dílu, značku, množství a nákupní cenu.</li><li>Importujte zákazníky přes Zákazníci → Seznam → Importovat vpravo nahoře.</li><li>Nastavte automatické stahování ceníků dodavatelů přes Administrace → Externí služby a synchronizace.</li><li>Vytvořte uživatele přes Administrace → Uživatelé → Seznam → Přidat vpravo nahoře.</li></ol>"
+      }
+    ],
+    "videos": [
+      {
+        "topic": "Jak nahrát ceník?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=g95YUJmOvXM\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Nahrání ceníku</strong><span>Návod k nastavení</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "Jak vytvořit objednávku u dodavatele?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+від+постачальника\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Objednávka u dodavatele</strong><span>Videonávod krok za krokem</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "Jak vytvořit objednávku ze skladu?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+зі+складу\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Objednávka ze skladu</strong><span>Videonávod krok za krokem</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "Jak zaevidovat příjem zboží?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=JkVtG0KNoVw\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Objednání a příjem zboží</strong><span>Návod k nastavení</span><i aria-hidden=\"true\">▶</i></a><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+великий+прийом+товару\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Velký příjem zboží</strong><span>Návod k nastavení</span><i aria-hidden=\"true\">▶</i></a></div>"
+      }
+    ],
+    "contacts": {
+      "title": "Kontakty",
+      "subtitle": "Máte dotazy?\nVždy vám rádi pomůžeme, jsme tu pro vás.",
+      "workers": [
+        {
+          "contact_topic": "Zkušební verze a konzultace",
+          "full_name": "Kristina Vasylyniak",
+          "role": "Technická podpora",
+          "phone": "+38 (097) 866-36-90",
+          "photo_path": "/imgs/contacts/worker-1.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_support",
+            "viber": "viber://chat?number=%2B380978663690",
+            "whatsapp": "https://wa.me/380978663690",
+            "email": "mailto:support@crm-vortex.com"
+          }
+        },
+        {
+          "contact_topic": "Integrace, technické dotazy a vývoj",
+          "full_name": "Oleksandr Vasyliev",
+          "role": "Vývojář",
+          "phone": "+38 (095) 677-50-02",
+          "photo_path": "/imgs/contacts/worker-2.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_development",
+            "viber": "viber://chat?number=%2B380956775002",
+            "whatsapp": "https://wa.me/380956775002",
+            "email": "mailto:development@crm-vortex.com"
+          }
+        },
+        {
+          "contact_topic": "Spolupráce a obchodní nabídky",
+          "full_name": "Volodymyr Markovych",
+          "role": "Zakladatel",
+          "phone": "+38 (066) 728-23-02",
+          "photo_path": "/imgs/contacts/worker-3.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_business",
+            "viber": "viber://chat?number=%2B380667282302",
+            "email": "mailto:business@crm-vortex.com"
+          }
+        },
+        {
+          "contact_topic": "Spolupráce a obchodní nabídky",
+          "full_name": "Artem Kryvorutchenko",
+          "role": "Zakladatel",
+          "phone": "+38 (050) 957-66-74",
+          "photo_path": "/imgs/contacts/worker-4.svg",
+          "messenger_links": {
+            "viber": "viber://chat?number=%2B380509576674",
+            "email": "mailto:partnership@crm-vortex.com"
+          }
+        }
+      ]
+    },
+    "settings": {
+      "pricing_calculator": {
+        "currency": "$",
+        "base_monthly_price": 50,
+        "increment": 20,
+        "default_manager_count": 3,
+        "default_store_count": 1,
+        "integrations": [
+          {
+            "id": "tecdoc",
+            "label": "TecDoc",
+            "price": 25,
+            "billing_period": "monthly",
+            "selected_by_default": false
+          },
+          {
+            "id": "binotel",
+            "label": "Binotel",
+            "price": 50,
+            "billing_period": "one_time",
+            "selected_by_default": true
+          },
+          {
+            "id": "nova-poshta",
+            "label": "Nova Poshta",
+            "price": 20,
+            "billing_period": "one_time",
+            "selected_by_default": true
+          }
+        ],
+        "included_features": [
+          "Neomezený počet účtů ostatních zaměstnanců",
+          "Péče o zákazníky",
+          "Neomezené nahrávání ceníků",
+          "Všechny dostupné statistiky",
+          "Všechny funkce finanční evidence"
+        ]
+      }
+    },
+    "stats": {
+      "totalClicks": 0,
+      "formSubmissions": 0
+    },
+    "ui": {
+      "nav.home": "Domů",
+      "nav.carService": "Evidence autoservisu",
+      "nav.websites": "Tvorba webových stránek",
+      "nav.pricing": "Ceny",
+      "nav.faq": "Dotazy",
+      "nav.contacts": "Kontakty",
+      "common.home": "Hlavní stránka",
+      "common.breadcrumbs": "Drobečková navigace",
+      "common.tryFree": "Vyzkoušet zdarma",
+      "common.tryDemo": "Požádat o ukázku",
+      "common.privacy": "Zásady ochrany osobních údajů",
+      "common.language": "Jazyk webu",
+      "common.navigation": "Hlavní navigace",
+      "common.mobileNavigation": "Mobilní navigace",
+      "common.openMenu": "Otevřít menu",
+      "common.closeMenu": "Zavřít menu",
+      "common.socials": "Sociální sítě",
+      "common.partner": "TecAlliance — oficiální partner",
+      "common.loading": "Načítání…",
+      "common.loadError": "Stránku se nepodařilo načíst.",
+      "common.previous": "Předchozí snímek",
+      "common.next": "Další snímek",
+      "common.slide": "Snímek {number}",
+      "common.messengers": "Komunikátory: {name}",
+      "faq.title": "FAQ",
+      "faq.functionality": "Funkce",
+      "pricing.title": "Vaše cena za používání VORTEX",
+      "pricing.managers": "Vyberte počet účtů pro manažery",
+      "pricing.branches": "Zadejte počet poboček",
+      "pricing.decrease": "Snížit: {label}",
+      "pricing.increase": "Zvýšit: {label}",
+      "pricing.integration": "Integrace s {name}",
+      "pricing.monthly": "měsíčně",
+      "pricing.oneTime": "jednorázový poplatek",
+      "pricing.trialTitle": "Vyzkoušejte VORTEX na 14 dní zdarma!",
+      "pricing.trialDescription": "Plné využití systému zdarma",
+      "pricing.demoTitle": "Objednejte si ukázku systému ještě dnes!",
+      "pricing.demoDescription": "Videoukázka systému s našimi specialisty",
+      "trial.title": "14 dní zdarma!",
+      "trial.subtitle": "Vyzkoušejte to!",
+      "trial.infoTitle": "Bezplatná verze má všechny funkce placené verze!",
+      "trial.info": "Po zkušební době můžete smazat testovací finanční operace, objednávky a příjmy zboží a ponechat nastavení integrací, importů ceníků a firemních údajů.",
+      "trial.price": "Vypočtená cena: ${total}",
+      "trial.name": "Jak vás máme oslovovat?",
+      "trial.namePlaceholder": "Zadejte své jméno",
+      "trial.phone": "Telefonní číslo",
+      "trial.phonePlaceholder": "+380",
+      "trial.location": "Přidat mou polohu",
+      "trial.locationAdded": "Poloha přidána",
+      "trial.locationUnsupported": "Váš prohlížeč nepodporuje geolokaci.",
+      "trial.locationWaiting": "Čekáme na povolení přístupu k poloze…",
+      "trial.locationSuccess": "Vaše poloha bude přidána k žádosti.",
+      "trial.locationDenied": "Poloha nebyla poskytnuta. Žádost lze odeslat i bez ní.",
+      "trial.nameError": "Zadejte platné jméno (2–80 znaků).",
+      "trial.phoneError": "Zadejte platné telefonní číslo.",
+      "trial.captchaError": "Potvrďte, že nejste robot.",
+      "trial.success": "Děkujeme! Žádost byla úspěšně odeslána.",
+      "trial.error": "Žádost se nepodařilo odeslat. Zkuste to znovu.",
+      "trial.unavailable": "Služba žádostí zatím není nastavena.",
+      "trial.sending": "Odesílání…",
+      "trial.send": "Odeslat",
+      "trial.captchaUnavailable": "reCAPTCHA není nastavena.",
+      "network.title": "Všichni dodavatelé na jednom místě",
+      "network.description": "Vortex sdružuje zásoby všech dodavatelů na jednom místě a usnadňuje spolupráci s nimi. Integrace umožňují automaticky přijímat ceníky, vytvářet objednávky a stahovat dodací listy přes API.",
+      "network.alt": "Dodavatelé připojení k systému Vortex",
+      "sync.title": "Vortex Sync",
+      "sync.first": "Naše technologie Sync umožňuje rychle nastavit online výměnu zásob a objednávek s jinou prodejnou používající Vortex.",
+      "sync.second": "Sami rozhodujete, zda vás ostatní zákazníci uvidí, jaké zásoby jim zpřístupníte a jakou přirážku použijete.",
+      "sync.third": "Zásoby přijaté přes Sync mají zvláštní označení. Jejich objednání automaticky vytvoří objednávku u partnera a upozorní manažery. Stejné upozornění dostanete, když partner objedná u vás.",
+      "sync.fourth": "Zásoby nemusíte aktualizovat ručně — Sync to udělá za vás.",
+      "sync.alt": "Rychlá výměna zboží mezi dvěma zákazníky Vortex Sync",
+      "sync.client": "Zákazník Vortex {number}",
+      "carOverview.link": "Více o evidenci autoservisu",
+      "carOverview.alt": "Rozhraní autoservisu Vortex na notebooku",
+      "carOverview.first": "Jako majitelé autoservisu jsme při vývoji modulu vycházeli z vlastních zkušeností, včetně všech problémů a detailů.",
+      "carOverview.second": "Když jsme začali program dodávat dalším autoservisům na Ukrajině, jejich přístup a představy jsme také zohlednili ve vývoji.",
+      "carOverview.third": "Když se připojíte, pomůžete nám tvořit nejlepší systém evidence pro autoservisy a prodejny autodílů.",
+      "website.alt": "Ukázka šablonového webu prodejny autodílů",
+      "language.ua": "Українська",
+      "language.cz": "Čeština",
+      "language.sk": "Slovenčina",
+      "language.en": "English",
+      "language.pl": "Polski",
+      "supplier.technomir": "Technomir",
+      "supplier.uniq": "Uniq Trade",
+      "supplier.groupauto": "Groupauto Ukraine",
+      "common.copyright": "Copyright © {year} Vortex"
+    },
+    "car_service": {
+      "title": "Evidence autoservisu",
+      "subtitle": "Vortex pomáhá s evidencí nejen prodejnám autodílů, ale také autoservisům.",
+      "blocks": [
+        {
+          "id": "works",
+          "title": "Katalog servisních prací",
+          "image_src": "/imgs/car-service/calendar.png",
+          "image_alt": "Katalog servisních prací",
+          "paragraphs": [
+            "Součástí programu je základní katalog servisních prací s přibližně 15 kategoriemi a 10–20 pracemi v každé. Můžete přidávat vlastní kategorie i práce.",
+            "U každé práce lze zadat kategorii, název, počet normohodin, cenu za normohodinu, měnu a poznámku.",
+            "K pracím lze přidat šablony požadavků na výběr dílů. Například k práci „výměna kabinového filtru“ připojíte šablonu „kabinový filtr“. Při objednání této práce systém nabídne automatické vytvoření požadavku pro prodejce dílů."
+          ]
+        },
+        {
+          "id": "documents",
+          "title": "Dokumenty",
+          "image_src": "/imgs/car-service/company.png",
+          "image_alt": "Dokumenty",
+          "paragraphs": [
+            "Tištěné dokumenty hrají důležitou roli v každém podnikání, včetně autoservisu. Vortex to ví a průběžně vylepšuje svůj systém dokumentů.",
+            "Dnes téměř každou akci ve Vortex doprovází odpovídající dokument s tiskovou sestavou."
+          ],
+          "list_intro": "Příklady servisních dokumentů, na které se zákazníci často ptají:",
+          "documents": [
+            {
+              "label": "Zakázkový list.pdf",
+              "href": null
+            },
+            {
+              "label": "Předávací protokol.pdf",
+              "href": null
+            },
+            {
+              "label": "Protokol o provedených pracích.pdf",
+              "href": null
+            }
+          ],
+          "note": "*Za příplatek může Vortex upravit tiskovou sestavu dokumentu podle vašich potřeb."
+        },
+        {
+          "id": "booking",
+          "title": "Objednání do autoservisu",
+          "image_src": "/imgs/car-service/bookings.png",
+          "image_alt": "Objednání do autoservisu",
+          "paragraphs": [
+            "Při objednání je nutné zadat zákazníka, servisní stání a čas. Práce můžete přidat hned nebo později, pokud zatím nejsou známé. Zadejte vozidlo zákazníka včetně VIN, registrační značky, nájezdu, značky, modelu a specifikace. U každé zakázky i práce se uchovává historie změn, takže vždy víte, kdo, kdy a co změnil."
+          ],
+          "list_intro": "Užitečné funkce servisních zakázek:",
+          "items": [
+            "Připojení souborů k zakázce (.pdf, .xlsx, .png a další).",
+            "Nastavení slevy na práce.",
+            "Částečné dokončení zakázky a vytvoření více protokolů o provedených pracích k jedné zakázce.",
+            "Mechanik může označit práci jako hotovou bez uzavření zakázky, takže je průběh prací přehledný.",
+            "Zadaný nájezd se ukládá do garáže zákazníka. Více v následujících blocích."
+          ]
+        },
+        {
+          "id": "statistics",
+          "title": "Statistiky",
+          "image_src": "/imgs/vx-screenshot-1.png",
+          "image_alt": "Statistiky",
+          "paragraphs": [
+            "Statistiky autoservisu ve Vortex sdružují všechny klíčové ukazatele vašeho podniku v jednom rozsáhlém modulu."
+          ],
+          "list_intro": "Mezi tyto ukazatele patří:",
+          "items": [
+            "Výdělek podle servisního stání",
+            "Výdělek podle mechanika",
+            "Výdělek podle servisního poradce",
+            "Celkový výdělek autoservisu",
+            "Výdaje autoservisu podle kategorií",
+            "Seznam nejoblíbenějších prací",
+            "Práce provedené mechanikem za zvolené období"
+          ]
+        },
+        {
+          "id": "calendar",
+          "title": "Kalendář zakázek",
+          "image_src": "/imgs/car-service/calendar.png",
+          "image_alt": "Kalendář zakázek",
+          "paragraphs": [
+            "Kalendář přehledně zobrazuje práci autoservisu, pomáhá rychle najít volné termíny a usnadňuje evidenci zakázek."
+          ],
+          "list_intro": "Kalendář nabízí dva pohledy:",
+          "items": [
+            "Všechna servisní stání pro vybraný den.",
+            "Vybrané servisní stání na týden."
+          ],
+          "closing_paragraphs": [
+            "Zakázku vytvoříte kliknutím na čas začátku a konce práce. Zakázky můžete také rychle upravit, zrušit nebo dokončit.",
+            "Každý zákazník ve Vortex má košík, který může obsahovat i servisní práce. Nejprve přidejte potřebné práce a poté z košíku vytvořte zakázku v kalendáři."
+          ]
+        },
+        {
+          "id": "mileage",
+          "title": "Historie nájezdu",
+          "image_src": "/imgs/car-service/company.png",
+          "image_alt": "Historie nájezdu",
+          "paragraphs": [
+            "Údaje o vozidle ze servisní zakázky se ukládají do garáže zákazníka. Zadaný nájezd vytvoří záznam v historii, která ukazuje, jaké práce byly při daném nájezdu provedeny, a pomáhá plánovat pravidelnou údržbu.",
+            "Modul historie nájezdu podporuje připomínky podle data, nájezdu nebo obou podmínek. Připomínka podle data odešle zákazníkovi SMS v určený den. Připomínka podle nájezdu upozorní manažera, jakmile nová zakázka zaznamená nájezd nad nastavený limit."
+          ]
+        }
+      ]
+    }
+  },
+  "sk": {
+    "homepage": {
+      "title": "CRM VORTEX —\nspoľahlivý a overený systém evidencie\npre predajne autodielov a autoservisy",
+      "subtitle": "CRM Vortex poskytuje úplnú kontrolu nad predajňou autodielov aj autoservisom: od evidencie tovaru a objednávok po financie a výkon zamestnancov. Jediný systém spája 95 % operácií v jednom rozhraní, znižuje straty, zefektívňuje prácu tímu a zvyšuje zisk.",
+      "about_us_block": {
+        "about_us_title": "O nás",
+        "about_us_subtitle": "Vortex ponúka nástroje, ktoré v iných CRM nenájdete: flexibilnú správu skladu, samostatné rozhrania pre manažérov a baličov, rozšírenú maticu stavov a automatickú fiškalizáciu. Spresnite procesy, obmedzte stratené objednávky a sústreďte sa na rozvoj podnikania.",
+        "about_us_blocks": [
+          {
+            "about_us_title": "Evidencia predajne autodielov a autoservisu na jednom mieste",
+            "about_us_description": "Riešenie navrhnuté pre váš odbor, so zameraním na sklad, objednávky, zákazníkov a evidenciu služieb, bez zbytočných funkcií.",
+            "about_us_image_path": "/imgs/3dicons_premium/monitor.png"
+          },
+          {
+            "about_us_title": "Automatizácia bez komplikácií",
+            "about_us_description": "Nahraďte Excel moderným systémom, ktorý zjednodušuje evidenciu, zrýchľuje spracovanie objednávok a pomáha predchádzať chybám.",
+            "about_us_image_path": "/imgs/3dicons_premium/folder.png"
+          },
+          {
+            "about_us_title": "Integrácie s dodávateľmi",
+            "about_us_description": "Pripojte sa k hlavným dodávateľom a katalógom autodielov. Ceny a zásoby sa aktualizujú automaticky, bez ručnej práce.",
+            "about_us_image_path": "/imgs/3dicons_premium/like.png"
+          },
+          {
+            "about_us_title": "Webové stránky ako darček",
+            "about_us_description": "Vytvoríme moderný web pre vašu predajňu. Získajte šablónový web zadarmo alebo riešenie na mieru vašim potrebám.",
+            "about_us_image_path": "/imgs/3dicons_premium/gift.png"
+          },
+          {
+            "about_us_title": "Zdieľanie informácií s ďalšími zákazníkmi Vortex",
+            "about_us_description": "Spojte sa s ďalšími predajňami používajúcimi Vortex a zdieľajte informácie o dostupnosti dielov.",
+            "about_us_image_path": "/imgs/3dicons_premium/message.png"
+          },
+          {
+            "about_us_title": "Rast zisku",
+            "about_us_description": "Kontrola každého kroku od dopytu po predaj. Menej strát, lepšie služby, viac objednávok.",
+            "about_us_image_path": "/imgs/3dicons_premium/wallet.png"
+          }
+        ]
+      },
+      "hero_page_slider_section": {
+        "section_title": "Takto bude vyzerať váš systém",
+        "slide_image_paths": [
+          "/imgs/slider_images/slide_1.png",
+          "/imgs/slider_images/slide_2.png",
+          "/imgs/slider_images/slide_3.png"
+        ]
+      },
+      "why_vortex_section": {
+        "section_title": "Čo Vortex dokáže?",
+        "section_description": "Vortex ponúka rozsiahle možnosti, premyslené do najmenších detailov a vyvinuté tímom odborníkov z odboru.",
+        "cards": [
+          {
+            "title": "Obchodní partneri",
+            "description": "História predajov, servisných prác, nájazdu vozidiel a dokumentov. Výkonné párovanie vzájomných účtov, individuálne prirážky a úverové podmienky.",
+            "image_src": ""
+          },
+          {
+            "title": "Sklad",
+            "description": "Automatický nákup (MIN-MAX), adresné skladovanie, kontrola vychystávania tovaru a mnoho ďalšieho.",
+            "image_src": ""
+          },
+          {
+            "title": "Financie",
+            "description": "Kontrola všetkých príjmov a výdavkov: platieb dodávateľom, miezd, pokladní manažérov a ďalších finančných operácií, všetko vo viacerých menách.",
+            "image_src": ""
+          },
+          {
+            "title": "Fiškalizácia",
+            "description": "V spojení s Checkbox môžete fiškalizovať predaje bez inštalácie registračnej pokladnice.",
+            "image_src": ""
+          }
+        ]
+      },
+      "why_vortex_showcase_section": {
+        "section_title": "Čo Vortex dokáže?",
+        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+        "cards": [
+          {
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+            "image_src": ""
+          },
+          {
+            "title": "Dolor sit amet",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum et donec sed odio dui.",
+            "image_src": ""
+          },
+          {
+            "title": "Consectetur elit",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
+            "image_src": ""
+          },
+          {
+            "title": "Aenean commodo",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
+            "image_src": ""
+          }
+        ]
+      },
+      "vortex_audience_section": {
+        "section_title": "Pre koho je Vortex?",
+        "cards": [
+          {
+            "title": "Predajne autodielov",
+            "description": "pre pohodlnú správu tovaru a objednávok",
+            "cta_text": "Vyskúšať zadarmo",
+            "image_src": "/imgs/3d_clay/3dicons-bag-dynamic-clay.png"
+          },
+          {
+            "title": "Autoservisy a opravovne",
+            "description": "pre správu prác, zásob a vzťahov so zákazníkmi",
+            "cta_text": "Vyskúšať zadarmo",
+            "image_src": "/imgs/3d_clay/3dicons-tool-dynamic-clay.png"
+          },
+          {
+            "title": "Veľkoobchodné spoločnosti",
+            "description": "pre skladovú evidenciu a efektívnu logistiku",
+            "cta_text": "Vyskúšať zadarmo",
+            "image_src": "/imgs/3d_clay/3dicons-location-dynamic-clay.png"
+          },
+          {
+            "title": "Internetové obchody",
+            "description": "pre integráciu online predaja a rýchle spracovanie objednávok",
+            "cta_text": "Vyskúšať zadarmo",
+            "image_src": "/imgs/3d_clay/3dicons-computer-dynamic-clay.png"
+          }
+        ]
+      },
+      "client_testimonials_section": {
+        "section_title": "Čo o nás hovoria zákazníci",
+        "pros_title": "Lorem ipsum Vortex:",
+        "cons_title": "Dolor sit amet Vortex:",
+        "reviews": [
+          {
+            "company_name": "Lorem Company",
+            "company_type": "Lorem ipsum dolor",
+            "image_src": "",
+            "pros": [
+              "Lorem ipsum",
+              "Dolor sit amet",
+              "Consectetur adipiscing"
+            ],
+            "cons": [
+              "Tempor incididunt",
+              "Labore et dolore"
+            ],
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Ipsum Group",
+            "company_type": "Consectetur adipiscing",
+            "image_src": "",
+            "pros": [
+              "Aenean commodo",
+              "Ligula eget dolor",
+              "Cum sociis natoque"
+            ],
+            "cons": [
+              "Donec quam felis",
+              "Ultricies nec"
+            ],
+            "quote": "Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Dolor Service",
+            "company_type": "Eiusmod tempor",
+            "image_src": "",
+            "pros": [
+              "Integer tincidunt",
+              "Cras dapibus",
+              "Vivamus elementum"
+            ],
+            "cons": [
+              "Aenean vulputate",
+              "Eleifend tellus"
+            ],
+            "quote": "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Amet Market",
+            "company_type": "Magna aliqua",
+            "image_src": "",
+            "pros": [
+              "Phasellus viverra",
+              "Nulla ut metus",
+              "Varius laoreet"
+            ],
+            "cons": [
+              "Quisque rutrum",
+              "Aenean imperdiet"
+            ],
+            "quote": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi nam eget dui.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          }
+        ]
+      },
+      "integrations_catalog_section": {
+        "section_title": "Lorem ipsum",
+        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "cards": [
+          {
+            "title": "TecDoc Inside",
+            "image_src": "blank_image",
+            "features": [
+              "Vyhľadanie vozidla podľa VIN",
+              "Výber dielov pre vozidlo, filtrovanie podľa obľúbených značiek a konštrukčných celkov",
+              "Použitie dielov vo vozidlách",
+              "Vyhľadávanie informácií o dieloch",
+              "Výber dielov v katalógu najväčšej svetovej databázy"
+            ],
+            "link_text": "Viac informácií",
+            "link_href": "/"
+          },
+          {
+            "title": "Checkbox",
+            "image_src": "blank_image",
+            "features": [
+              "Online pokladnica priamo vo Vortex",
+              "Vytváranie a tlač fiškálnych bločkov na termotlačiarňach",
+              "Vydávanie a vytváranie fiškálnych bločkov",
+              "Bez nákladov na nákup zariadenia",
+              "Pohodlná správa pripojení",
+              "Nastavenie viacerých účtov Checkbox a viacerých pokladníc či pokladníkov v jednom účte"
+            ],
+            "link_text": "Viac informácií",
+            "link_href": "/"
+          },
+          {
+            "title": "Nova Poshta",
+            "image_src": "blank_image",
+            "features": [
+              "Nastavenie predvoleného odosielateľa",
+              "Vytváranie expresných nákladných listov pre doručenie na pobočku či adresu, s kontrolou platby aj bez nej, pre jeden či viac balíkov a s ďalšími možnosťami",
+              "Tlač štítkov zásielok a celých expresných nákladných listov na A4",
+              "Aktualizácia databázy pobočiek cez API"
+            ],
+            "link_text": "Viac informácií",
+            "link_href": "/"
+          },
+          {
+            "title": "Turbo SMS",
+            "image_src": "blank_image",
+            "features": [
+              "Automatické odosielanie SMS pri rôznych udalostiach",
+              "Ručné odosielanie SMS s vlastným textom alebo šablónou",
+              "Hromadné odosielanie SMS viacerým príjemcom",
+              "História odoslaných SMS",
+              "Sledovanie zostatku a upozornenie na nízky kredit SMS"
+            ],
+            "link_text": "Viac informácií",
+            "link_href": "/"
+          },
+          {
+            "title": "Bankové API",
+            "image_src": "blank_image",
+            "features": [
+              "Pripojenie k vášmu bankovému účtu",
+              "Zobrazenie posledných transakcií",
+              "Vytvorenie finančnej transakcie vo Vortex zo skutočnej bankovej transakcie jedným kliknutím!",
+              "Všetky transakcie v jednom zozname s filtrami podľa účtu a typu operácie a vyhľadávaním podľa sumy, príjemcu, poznámky a ďalších údajov"
+            ],
+            "link_text": "Viac informácií",
+            "link_href": "/"
+          },
+          {
+            "title": "Binotel",
+            "image_src": "blank_image",
+            "features": [
+              "Kontrola zmeškaných hovorov",
+              "História hovorov zákazníka vo Vortex",
+              "Rýchle vytvorenie zákazníka pri hovore z neregistrovaného čísla",
+              "Počúvanie hovorov a kontrola kvality",
+              "Otvorenie profilu zákazníka vo Vortex pri hovore z registrovaného čísla"
+            ],
+            "link_text": "Viac informácií",
+            "link_href": "/"
+          }
+        ]
+      },
+      "car_service_section": {
+        "heading": "Evidencia autoservisu",
+        "description": "Vortex pomáha s evidenciou nielen predajniam autodielov, ale aj autoservisom.",
+        "car_service_features": [
+          "Správa katalógu servisných prác",
+          "Správa servisných stanovíšť a mechanikov",
+          "Objednanie zákazníka na konkrétny dátum",
+          "Prehľadný grafický rozvrh autoservisu",
+          "Správa garáže zákazníka",
+          "História nájazdu",
+          "Vytváranie pripomienok",
+          "Tlač dokumentov: protokoly, faktúry, zákazkové listy a diagnostika",
+          "Výpočet miezd mechanikov a servisných poradcov",
+          "Prehľadné a informatívne štatistiky"
+        ]
+      },
+      "website_development_section": {
+        "heading": "Tvorba webových stránok",
+        "gift_message": "Používajte VORTEX a získajte zadarmo web pre svoju predajňu autodielov alebo autoservis!",
+        "description_paragraphs": [
+          "Náš šablónový web spĺňa potreby viac ako 80 % našich zákazníkov.",
+          "Web je rýchly, prehľadný a plne integrovaný so systémom evidencie.",
+          "Katalógy, zásoby, ceny, popisy a obrázky z CRM sa automaticky prenášajú na web.",
+          "Logo, farby, menu, texty a ďalšie prvky môžete meniť sami.",
+          "Ponúkame aj SEO optimalizáciu, nastavenie Google Ads a ďalšie nástroje propagácie webu."
+        ],
+        "website_image_src": "/imgs/websites/site_2.png",
+        "benefit_groups": [
+          {
+            "items": [
+              "Responzívny",
+              "Efektívny",
+              "Rýchly",
+              "Optimalizovaný",
+              "Prehľadný",
+              "Funkčný"
+            ],
+            "image_src": "/imgs/3dicons_premium/3d-rocket-premium.png"
+          },
+          {
+            "items": [
+              "Katalóg tovaru",
+              "Vybraný tovar na hlavnej stránke",
+              "SEO optimalizácia*",
+              "Výber dielov podľa TecDoc*",
+              "LiqPay*"
+            ],
+            "image_src": "/imgs/3dicons_premium/3d-fire.png",
+            "note": "*platené služby"
+          }
+        ],
+        "upgrade_message": "Svoj web môžete rozšíriť o ďalšie užitočné funkcie výberom balíka „Praktický“ alebo „Maximálny“.",
+        "cta_text": "Viac o webe"
+      }
+    },
+    "FAQ": [
+      {
+        "topic": "Ako dlho platí demoverzia?",
+        "answer": "<p>Demoverzia je zadarmo na 14 dní a ponúka rovnaké funkcie ako platená verzia.</p>"
+      },
+      {
+        "topic": "Zostanú moje údaje zachované po skončení skúšobnej doby?",
+        "answer": "<p>Odporúčame vyskúšať všetky funkcie bez obáv z chýb. Po skončení testovania môžeme podľa vášho želania ľubovoľné údaje vymazať alebo ponechať.</p>"
+      },
+      {
+        "topic": "Ako chránite moje údaje pred stratou a poskytnutím tretím stranám?",
+        "answer": "<p>Naše servery sú umiestnené v spoľahlivých dátových centrách v Nemecku a Fínsku. Súbory so zásobami, obchodnými partnermi a ich zostatkami si môžete stiahnuť sami alebo nastaviť automatické zasielanie e-mailom. Možno tiež uzavrieť vzájomnú dohodu o mlčanlivosti.</p>"
+      },
+      {
+        "topic": "Sú aktualizácie zadarmo?",
+        "answer": "<p>Áno, aktualizácie sú zadarmo.</p>"
+      },
+      {
+        "topic": "Potrebujem ďalšie funkcie. Čo môžete ponúknuť?",
+        "answer": "<p>Ak v programe nenájdete riešenie svojich potrieb, môžeme po dohode o cene a termíne vyvinúť ďalšie funkcie.</p>"
+      },
+      {
+        "topic": "Ako začať?",
+        "answer": "<ol><li>Nahrajte zásoby pomocou importéra cenníkov a v poli skladu vyberte „-1“. Súbor musí obsahovať štyri stĺpce: číslo dielu, značku, množstvo a nákupnú cenu.</li><li>Importujte zákazníkov cez Zákazníci → Zoznam → Importovať vpravo hore.</li><li>Nastavte automatické sťahovanie cenníkov dodávateľov cez Administrácia → Externé služby a synchronizácia.</li><li>Vytvorte používateľov cez Administrácia → Používatelia → Zoznam → Pridať vpravo hore.</li></ol>"
+      }
+    ],
+    "videos": [
+      {
+        "topic": "Ako nahrať cenník?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=g95YUJmOvXM\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Nahranie cenníka</strong><span>Návod na nastavenie</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "Ako vytvoriť objednávku u dodávateľa?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+від+постачальника\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Objednávka u dodávateľa</strong><span>Videonávod krok za krokom</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "Ako vytvoriť objednávku zo skladu?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+зі+складу\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Objednávka zo skladu</strong><span>Videonávod krok za krokom</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "Ako zaevidovať príjem tovaru?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=JkVtG0KNoVw\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Objednanie a príjem tovaru</strong><span>Návod na nastavenie</span><i aria-hidden=\"true\">▶</i></a><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+великий+прийом+товару\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Veľký príjem tovaru</strong><span>Návod na nastavenie</span><i aria-hidden=\"true\">▶</i></a></div>"
+      }
+    ],
+    "contacts": {
+      "title": "Kontakty",
+      "subtitle": "Máte otázky?\nVždy vám radi pomôžeme, sme tu pre vás.",
+      "workers": [
+        {
+          "contact_topic": "Skúšobná verzia a konzultácie",
+          "full_name": "Kristina Vasylyniak",
+          "role": "Technická podpora",
+          "phone": "+38 (097) 866-36-90",
+          "photo_path": "/imgs/contacts/worker-1.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_support",
+            "viber": "viber://chat?number=%2B380978663690",
+            "whatsapp": "https://wa.me/380978663690",
+            "email": "mailto:support@crm-vortex.com"
+          }
+        },
+        {
+          "contact_topic": "Integrácie, technické otázky a vývoj",
+          "full_name": "Oleksandr Vasyliev",
+          "role": "Vývojár",
+          "phone": "+38 (095) 677-50-02",
+          "photo_path": "/imgs/contacts/worker-2.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_development",
+            "viber": "viber://chat?number=%2B380956775002",
+            "whatsapp": "https://wa.me/380956775002",
+            "email": "mailto:development@crm-vortex.com"
+          }
+        },
+        {
+          "contact_topic": "Spolupráca a obchodné ponuky",
+          "full_name": "Volodymyr Markovych",
+          "role": "Zakladateľ",
+          "phone": "+38 (066) 728-23-02",
+          "photo_path": "/imgs/contacts/worker-3.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_business",
+            "viber": "viber://chat?number=%2B380667282302",
+            "email": "mailto:business@crm-vortex.com"
+          }
+        },
+        {
+          "contact_topic": "Spolupráca a obchodné ponuky",
+          "full_name": "Artem Kryvorutchenko",
+          "role": "Zakladateľ",
+          "phone": "+38 (050) 957-66-74",
+          "photo_path": "/imgs/contacts/worker-4.svg",
+          "messenger_links": {
+            "viber": "viber://chat?number=%2B380509576674",
+            "email": "mailto:partnership@crm-vortex.com"
+          }
+        }
+      ]
+    },
+    "settings": {
+      "pricing_calculator": {
+        "currency": "$",
+        "base_monthly_price": 50,
+        "increment": 20,
+        "default_manager_count": 3,
+        "default_store_count": 1,
+        "integrations": [
+          {
+            "id": "tecdoc",
+            "label": "TecDoc",
+            "price": 25,
+            "billing_period": "monthly",
+            "selected_by_default": false
+          },
+          {
+            "id": "binotel",
+            "label": "Binotel",
+            "price": 50,
+            "billing_period": "one_time",
+            "selected_by_default": true
+          },
+          {
+            "id": "nova-poshta",
+            "label": "Nova Poshta",
+            "price": 20,
+            "billing_period": "one_time",
+            "selected_by_default": true
+          }
+        ],
+        "included_features": [
+          "Neobmedzený počet účtov ostatných zamestnancov",
+          "Starostlivosť o zákazníkov",
+          "Neobmedzené nahrávanie cenníkov",
+          "Všetky dostupné štatistiky",
+          "Všetky funkcie finančnej evidencie"
+        ]
+      }
+    },
+    "stats": {
+      "totalClicks": 0,
+      "formSubmissions": 0
+    },
+    "ui": {
+      "nav.home": "Domov",
+      "nav.carService": "Evidencia autoservisu",
+      "nav.websites": "Tvorba webových stránok",
+      "nav.pricing": "Ceny",
+      "nav.faq": "Otázky",
+      "nav.contacts": "Kontakty",
+      "common.home": "Hlavná stránka",
+      "common.breadcrumbs": "Omrvinková navigácia",
+      "common.tryFree": "Vyskúšať zadarmo",
+      "common.tryDemo": "Požiadať o ukážku",
+      "common.privacy": "Zásady ochrany osobných údajov",
+      "common.language": "Jazyk webu",
+      "common.navigation": "Hlavná navigácia",
+      "common.mobileNavigation": "Mobilná navigácia",
+      "common.openMenu": "Otvoriť menu",
+      "common.closeMenu": "Zavrieť menu",
+      "common.socials": "Sociálne siete",
+      "common.partner": "TecAlliance — oficiálny partner",
+      "common.loading": "Načítavanie…",
+      "common.loadError": "Stránku sa nepodarilo načítať.",
+      "common.previous": "Predchádzajúca snímka",
+      "common.next": "Ďalšia snímka",
+      "common.slide": "Snímka {number}",
+      "common.messengers": "Komunikátory: {name}",
+      "faq.title": "FAQ",
+      "faq.functionality": "Funkcie",
+      "pricing.title": "Vaša cena za používanie VORTEX",
+      "pricing.managers": "Vyberte počet účtov pre manažérov",
+      "pricing.branches": "Zadajte počet pobočiek",
+      "pricing.decrease": "Znížiť: {label}",
+      "pricing.increase": "Zvýšiť: {label}",
+      "pricing.integration": "Integrácia s {name}",
+      "pricing.monthly": "mesačne",
+      "pricing.oneTime": "jednorazový poplatok",
+      "pricing.trialTitle": "Vyskúšajte VORTEX na 14 dní zadarmo!",
+      "pricing.trialDescription": "Plné využitie systému zadarmo",
+      "pricing.demoTitle": "Objednajte si ukážku systému ešte dnes!",
+      "pricing.demoDescription": "Videoukážka systému s našimi špecialistami",
+      "trial.title": "14 dní zadarmo!",
+      "trial.subtitle": "Vyskúšajte to!",
+      "trial.infoTitle": "Bezplatná verzia má všetky funkcie platenej verzie!",
+      "trial.info": "Po skúšobnej dobe môžete vymazať testovacie finančné operácie, objednávky a príjmy tovaru a ponechať nastavenia integrácií, importov cenníkov a firemných údajov.",
+      "trial.price": "Vypočítaná cena: ${total}",
+      "trial.name": "Ako vás máme oslovovať?",
+      "trial.namePlaceholder": "Zadajte svoje meno",
+      "trial.phone": "Telefónne číslo",
+      "trial.phonePlaceholder": "+380",
+      "trial.location": "Pridať moju polohu",
+      "trial.locationAdded": "Poloha pridaná",
+      "trial.locationUnsupported": "Váš prehliadač nepodporuje geolokáciu.",
+      "trial.locationWaiting": "Čakáme na povolenie prístupu k polohe…",
+      "trial.locationSuccess": "Vaša poloha bude pridaná k žiadosti.",
+      "trial.locationDenied": "Poloha nebola poskytnutá. Žiadosť možno odoslať aj bez nej.",
+      "trial.nameError": "Zadajte platné meno (2–80 znakov).",
+      "trial.phoneError": "Zadajte platné telefónne číslo.",
+      "trial.captchaError": "Potvrďte, že nie ste robot.",
+      "trial.success": "Ďakujeme! Žiadosť bola úspešne odoslaná.",
+      "trial.error": "Žiadosť sa nepodarilo odoslať. Skúste to znova.",
+      "trial.unavailable": "Služba žiadostí zatiaľ nie je nastavená.",
+      "trial.sending": "Odosielanie…",
+      "trial.send": "Odoslať",
+      "trial.captchaUnavailable": "reCAPTCHA nie je nastavená.",
+      "network.title": "Všetci dodávatelia na jednom mieste",
+      "network.description": "Vortex združuje zásoby všetkých dodávateľov na jednom mieste a uľahčuje spoluprácu s nimi. Integrácie umožňujú automaticky prijímať cenníky, vytvárať objednávky a sťahovať dodacie listy cez API.",
+      "network.alt": "Dodávatelia pripojení k systému Vortex",
+      "sync.title": "Vortex Sync",
+      "sync.first": "Naša technológia Sync umožňuje rýchlo nastaviť online výmenu zásob a objednávok s inou predajňou používajúcou Vortex.",
+      "sync.second": "Sami rozhodujete, či vás ostatní zákazníci uvidia, aké zásoby im sprístupníte a akú prirážku použijete.",
+      "sync.third": "Zásoby prijaté cez Sync majú osobitné označenie. Ich objednanie automaticky vytvorí objednávku u partnera a upozorní manažérov. Rovnaké upozornenie dostanete, keď partner objedná u vás.",
+      "sync.fourth": "Zásoby nemusíte aktualizovať ručne — Sync to urobí za vás.",
+      "sync.alt": "Rýchla výmena tovaru medzi dvoma zákazníkmi Vortex Sync",
+      "sync.client": "Zákazník Vortex {number}",
+      "carOverview.link": "Viac o evidencii autoservisu",
+      "carOverview.alt": "Rozhranie autoservisu Vortex na notebooku",
+      "carOverview.first": "Ako majitelia autoservisu sme pri vývoji modulu vychádzali z vlastných skúseností vrátane všetkých problémov a detailov.",
+      "carOverview.second": "Keď sme začali program dodávať ďalším autoservisom na Ukrajine, ich prístup a predstavy sme tiež zohľadnili vo vývoji.",
+      "carOverview.third": "Keď sa pripojíte, pomôžete nám tvoriť najlepší systém evidencie pre autoservisy a predajne autodielov.",
+      "website.alt": "Ukážka šablónového webu predajne autodielov",
+      "language.ua": "Українська",
+      "language.cz": "Čeština",
+      "language.sk": "Slovenčina",
+      "language.en": "English",
+      "language.pl": "Polski",
+      "supplier.technomir": "Technomir",
+      "supplier.uniq": "Uniq Trade",
+      "supplier.groupauto": "Groupauto Ukraine",
+      "common.copyright": "Copyright © {year} Vortex"
+    },
+    "car_service": {
+      "title": "Evidencia autoservisu",
+      "subtitle": "Vortex pomáha s evidenciou nielen predajniam autodielov, ale aj autoservisom.",
+      "blocks": [
+        {
+          "id": "works",
+          "title": "Katalóg servisných prác",
+          "image_src": "/imgs/car-service/calendar.png",
+          "image_alt": "Katalóg servisných prác",
+          "paragraphs": [
+            "Súčasťou programu je základný katalóg servisných prác s približne 15 kategóriami a 10–20 prácami v každej. Môžete pridávať vlastné kategórie aj práce.",
+            "Pri každej práci možno zadať kategóriu, názov, počet normohodín, cenu za normohodinu, menu a poznámku.",
+            "K prácam možno pridať šablóny požiadaviek na výber dielov. Napríklad k práci „výmena kabínového filtra“ pripojíte šablónu „kabínový filter“. Pri objednaní tejto práce systém ponúkne automatické vytvorenie požiadavky pre predajcu dielov."
+          ]
+        },
+        {
+          "id": "documents",
+          "title": "Dokumenty",
+          "image_src": "/imgs/car-service/company.png",
+          "image_alt": "Dokumenty",
+          "paragraphs": [
+            "Tlačené dokumenty hrajú dôležitú úlohu v každom podnikaní vrátane autoservisu. Vortex to vie a priebežne vylepšuje svoj systém dokumentov.",
+            "Dnes takmer každú akciu vo Vortex sprevádza zodpovedajúci dokument s tlačovou zostavou."
+          ],
+          "list_intro": "Príklady servisných dokumentov, na ktoré sa zákazníci často pýtajú:",
+          "documents": [
+            {
+              "label": "Zákazkový list.pdf",
+              "href": null
+            },
+            {
+              "label": "Odovzdávací protokol.pdf",
+              "href": null
+            },
+            {
+              "label": "Protokol o vykonaných prácach.pdf",
+              "href": null
+            }
+          ],
+          "note": "*Za príplatok môže Vortex upraviť tlačovú zostavu dokumentu podľa vašich potrieb."
+        },
+        {
+          "id": "booking",
+          "title": "Objednanie do autoservisu",
+          "image_src": "/imgs/car-service/bookings.png",
+          "image_alt": "Objednanie do autoservisu",
+          "paragraphs": [
+            "Pri objednaní je nutné zadať zákazníka, servisné stanovište a čas. Práce môžete pridať hneď alebo neskôr, ak zatiaľ nie sú známe. Zadajte vozidlo zákazníka vrátane VIN, evidenčného čísla, nájazdu, značky, modelu a špecifikácie. Pri každej zákazke aj práci sa uchováva história zmien, takže vždy viete, kto, kedy a čo zmenil."
+          ],
+          "list_intro": "Užitočné funkcie servisných zákaziek:",
+          "items": [
+            "Pripojenie súborov k zákazke (.pdf, .xlsx, .png a ďalšie).",
+            "Nastavenie zľavy na práce.",
+            "Čiastočné dokončenie zákazky a vytvorenie viacerých protokolov o vykonaných prácach k jednej zákazke.",
+            "Mechanik môže označiť prácu ako hotovú bez uzavretia zákazky, takže je priebeh prác prehľadný.",
+            "Zadaný nájazd sa ukladá do garáže zákazníka. Viac v nasledujúcich blokoch."
+          ]
+        },
+        {
+          "id": "statistics",
+          "title": "Štatistiky",
+          "image_src": "/imgs/vx-screenshot-1.png",
+          "image_alt": "Štatistiky",
+          "paragraphs": [
+            "Štatistiky autoservisu vo Vortex združujú všetky kľúčové ukazovatele vášho podniku v jednom rozsiahlom module."
+          ],
+          "list_intro": "Medzi tieto ukazovatele patria:",
+          "items": [
+            "Zárobok podľa servisného stanovišťa",
+            "Zárobok podľa mechanika",
+            "Zárobok podľa servisného poradcu",
+            "Celkový zárobok autoservisu",
+            "Výdavky autoservisu podľa kategórií",
+            "Zoznam najobľúbenejších prác",
+            "Práce vykonané mechanikom za zvolené obdobie"
+          ]
+        },
+        {
+          "id": "calendar",
+          "title": "Kalendár zákaziek",
+          "image_src": "/imgs/car-service/calendar.png",
+          "image_alt": "Kalendár zákaziek",
+          "paragraphs": [
+            "Kalendár prehľadne zobrazuje prácu autoservisu, pomáha rýchlo nájsť voľné termíny a uľahčuje evidenciu zákaziek."
+          ],
+          "list_intro": "Kalendár ponúka dva pohľady:",
+          "items": [
+            "Všetky servisné stanovištia pre vybraný deň.",
+            "Vybrané servisné stanovište na týždeň."
+          ],
+          "closing_paragraphs": [
+            "Zákazku vytvoríte kliknutím na čas začiatku a konca práce. Zákazky môžete tiež rýchlo upraviť, zrušiť alebo dokončiť.",
+            "Každý zákazník vo Vortex má košík, ktorý môže obsahovať aj servisné práce. Najprv pridajte potrebné práce a potom z košíka vytvorte zákazku v kalendári."
+          ]
+        },
+        {
+          "id": "mileage",
+          "title": "História nájazdu",
+          "image_src": "/imgs/car-service/company.png",
+          "image_alt": "História nájazdu",
+          "paragraphs": [
+            "Údaje o vozidle zo servisnej zákazky sa ukladajú do garáže zákazníka. Zadaný nájazd vytvorí záznam v histórii, ktorá ukazuje, aké práce boli pri danom nájazde vykonané, a pomáha plánovať pravidelnú údržbu.",
+            "Modul histórie nájazdu podporuje pripomienky podľa dátumu, nájazdu alebo oboch podmienok. Pripomienka podľa dátumu odošle zákazníkovi SMS v určený deň. Pripomienka podľa nájazdu upozorní manažéra, keď nová zákazka zaznamená nájazd nad nastavený limit."
+          ]
+        }
+      ]
+    }
+  },
+  "en": {
+    "homepage": {
+      "title": "CRM VORTEX —\na reliable, proven management system\nfor auto parts stores and workshops",
+      "subtitle": "CRM Vortex gives you full control over your auto parts business and workshop: from inventory and orders to finances and employee performance. One system brings 95% of operations into a single interface, reducing losses, streamlining teamwork and increasing profit.",
+      "about_us_block": {
+        "about_us_title": "About us",
+        "about_us_subtitle": "Vortex offers tools you will not find in other CRMs: flexible inventory management, separate interfaces for managers and packers, an advanced status matrix and automated fiscal receipts. Improve process accuracy, reduce lost orders and focus on growing your business.",
+        "about_us_blocks": [
+          {
+            "about_us_title": "Auto parts store and workshop management in one place",
+            "about_us_description": "Designed specifically for your industry, with a focus on inventory, orders, customers and service records, without unnecessary features.",
+            "about_us_image_path": "/imgs/3dicons_premium/monitor.png"
+          },
+          {
+            "about_us_title": "Automation made simple",
+            "about_us_description": "Replace Excel with a modern system that simplifies record keeping, speeds up order processing and helps prevent errors.",
+            "about_us_image_path": "/imgs/3dicons_premium/folder.png"
+          },
+          {
+            "about_us_title": "Supplier integrations",
+            "about_us_description": "Connect to major auto parts suppliers and catalogs. Prices and stock levels update automatically, with no manual work.",
+            "about_us_image_path": "/imgs/3dicons_premium/like.png"
+          },
+          {
+            "about_us_title": "A website as a gift",
+            "about_us_description": "We will build a modern website for your store. Choose a free template website or a custom solution tailored to your needs.",
+            "about_us_image_path": "/imgs/3dicons_premium/gift.png"
+          },
+          {
+            "about_us_title": "Share information with other Vortex customers",
+            "about_us_description": "Connect with other stores using Vortex and exchange information about parts availability.",
+            "about_us_image_path": "/imgs/3dicons_premium/message.png"
+          },
+          {
+            "about_us_title": "Increase your profit",
+            "about_us_description": "Control every step from inquiry to sale. Fewer losses, better service, more orders.",
+            "about_us_image_path": "/imgs/3dicons_premium/wallet.png"
+          }
+        ]
+      },
+      "hero_page_slider_section": {
+        "section_title": "This is what your system will look like",
+        "slide_image_paths": [
+          "/imgs/slider_images/slide_1.png",
+          "/imgs/slider_images/slide_2.png",
+          "/imgs/slider_images/slide_3.png"
+        ]
+      },
+      "why_vortex_section": {
+        "section_title": "What can Vortex do?",
+        "section_description": "Vortex is packed with features, thoughtfully designed down to the last detail by a team of industry professionals.",
+        "cards": [
+          {
+            "title": "Business partners",
+            "description": "Sales, workshop jobs, vehicle mileage and document history. Powerful account reconciliation, individual markups and credit terms.",
+            "image_src": ""
+          },
+          {
+            "title": "Inventory",
+            "description": "Automated purchasing (MIN-MAX), location-based warehouse storage, picking checks and much more.",
+            "image_src": ""
+          },
+          {
+            "title": "Finances",
+            "description": "Track all income and expenses: supplier payments, salaries, managers’ cash accounts and other financial operations, all in multiple currencies.",
+            "image_src": ""
+          },
+          {
+            "title": "Fiscal receipts",
+            "description": "Together with Checkbox, we let you issue fiscal receipts for sales without installing a cash register.",
+            "image_src": ""
+          }
+        ]
+      },
+      "why_vortex_showcase_section": {
+        "section_title": "What can Vortex do?",
+        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+        "cards": [
+          {
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+            "image_src": ""
+          },
+          {
+            "title": "Dolor sit amet",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum et donec sed odio dui.",
+            "image_src": ""
+          },
+          {
+            "title": "Consectetur elit",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
+            "image_src": ""
+          },
+          {
+            "title": "Aenean commodo",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
+            "image_src": ""
+          }
+        ]
+      },
+      "vortex_audience_section": {
+        "section_title": "Who is Vortex for?",
+        "cards": [
+          {
+            "title": "Auto parts stores",
+            "description": "for convenient product and order management",
+            "cta_text": "Try for free",
+            "image_src": "/imgs/3d_clay/3dicons-bag-dynamic-clay.png"
+          },
+          {
+            "title": "Garages and auto workshops",
+            "description": "for managing jobs, stock and customer relationships",
+            "cta_text": "Try for free",
+            "image_src": "/imgs/3d_clay/3dicons-tool-dynamic-clay.png"
+          },
+          {
+            "title": "Wholesale businesses",
+            "description": "for inventory control and efficient logistics",
+            "cta_text": "Try for free",
+            "image_src": "/imgs/3d_clay/3dicons-location-dynamic-clay.png"
+          },
+          {
+            "title": "Online stores",
+            "description": "for integrating online sales and processing orders quickly",
+            "cta_text": "Try for free",
+            "image_src": "/imgs/3d_clay/3dicons-computer-dynamic-clay.png"
+          }
+        ]
+      },
+      "client_testimonials_section": {
+        "section_title": "What our customers say",
+        "pros_title": "Lorem ipsum Vortex:",
+        "cons_title": "Dolor sit amet Vortex:",
+        "reviews": [
+          {
+            "company_name": "Lorem Company",
+            "company_type": "Lorem ipsum dolor",
+            "image_src": "",
+            "pros": [
+              "Lorem ipsum",
+              "Dolor sit amet",
+              "Consectetur adipiscing"
+            ],
+            "cons": [
+              "Tempor incididunt",
+              "Labore et dolore"
+            ],
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Ipsum Group",
+            "company_type": "Consectetur adipiscing",
+            "image_src": "",
+            "pros": [
+              "Aenean commodo",
+              "Ligula eget dolor",
+              "Cum sociis natoque"
+            ],
+            "cons": [
+              "Donec quam felis",
+              "Ultricies nec"
+            ],
+            "quote": "Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Dolor Service",
+            "company_type": "Eiusmod tempor",
+            "image_src": "",
+            "pros": [
+              "Integer tincidunt",
+              "Cras dapibus",
+              "Vivamus elementum"
+            ],
+            "cons": [
+              "Aenean vulputate",
+              "Eleifend tellus"
+            ],
+            "quote": "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Amet Market",
+            "company_type": "Magna aliqua",
+            "image_src": "",
+            "pros": [
+              "Phasellus viverra",
+              "Nulla ut metus",
+              "Varius laoreet"
+            ],
+            "cons": [
+              "Quisque rutrum",
+              "Aenean imperdiet"
+            ],
+            "quote": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi nam eget dui.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          }
+        ]
+      },
+      "integrations_catalog_section": {
+        "section_title": "Lorem ipsum",
+        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "cards": [
+          {
+            "title": "TecDoc Inside",
+            "image_src": "blank_image",
+            "features": [
+              "Find vehicles by VIN",
+              "Find matching parts and filter by favorite brands and vehicle assemblies",
+              "Check parts compatibility with vehicles",
+              "Look up parts information",
+              "Select parts from the world’s largest catalog database"
+            ],
+            "link_text": "Learn more",
+            "link_href": "/"
+          },
+          {
+            "title": "Checkbox",
+            "image_src": "blank_image",
+            "features": [
+              "Online checkout directly in Vortex",
+              "Generate and print fiscal receipts on thermal printers",
+              "Issue and generate fiscal receipts",
+              "No hardware purchase costs",
+              "Easy connection management",
+              "Configure multiple Checkbox accounts and multiple checkouts or cashiers within one account"
+            ],
+            "link_text": "Learn more",
+            "link_href": "/"
+          },
+          {
+            "title": "Nova Poshta",
+            "image_src": "blank_image",
+            "features": [
+              "Set a default sender",
+              "Generate express waybills for branch or address delivery, with or without payment control, for one or multiple parcels, with many other integrated options",
+              "Print parcel labels and complete express waybills on A4",
+              "Update the branch database via API"
+            ],
+            "link_text": "Learn more",
+            "link_href": "/"
+          },
+          {
+            "title": "Turbo SMS",
+            "image_src": "blank_image",
+            "features": [
+              "Send SMS automatically for different events",
+              "Send SMS manually using custom text or a template",
+              "Send SMS to multiple recipients",
+              "Sent SMS history",
+              "Monitor your balance and receive low SMS balance alerts"
+            ],
+            "link_text": "Learn more",
+            "link_href": "/"
+          },
+          {
+            "title": "Bank APIs",
+            "image_src": "blank_image",
+            "features": [
+              "Connect your bank account",
+              "View recent transactions",
+              "Create a financial transaction in Vortex from a real bank transaction in one click!",
+              "All transactions in one list, filtered by account or operation type, with search by amount, recipient, note and more"
+            ],
+            "link_text": "Learn more",
+            "link_href": "/"
+          },
+          {
+            "title": "Binotel",
+            "image_src": "blank_image",
+            "features": [
+              "Track missed calls",
+              "View a customer’s call history in Vortex",
+              "Quickly create a customer record for calls from an unregistered number",
+              "Listen to calls and monitor service quality",
+              "Open the customer’s Vortex profile when a registered number calls"
+            ],
+            "link_text": "Learn more",
+            "link_href": "/"
+          }
+        ]
+      },
+      "car_service_section": {
+        "heading": "Workshop management",
+        "description": "Vortex helps not only auto parts stores but also vehicle service centers manage their business.",
+        "car_service_features": [
+          "Manage the workshop job catalog",
+          "Manage service bays and mechanics",
+          "Book customers for a specific date",
+          "Convenient visual workshop schedule",
+          "Manage the customer’s garage",
+          "Mileage history",
+          "Create reminders",
+          "Print documents: completion certificates, invoices, work orders and diagnostics",
+          "Calculate pay for mechanics and service advisors",
+          "Clear and informative statistics"
+        ]
+      },
+      "website_development_section": {
+        "heading": "Website development",
+        "gift_message": "Use VORTEX and get a free website for your auto parts store or workshop as a gift!",
+        "description_paragraphs": [
+          "Our template website meets the needs of over 80% of our customers.",
+          "The website is fast, easy to use and fully integrated with the management system.",
+          "Catalogs, stock, prices, descriptions and images from the CRM appear on the website automatically.",
+          "You can change the logo, colors, menus, texts and more yourself.",
+          "We also offer SEO, Google Ads setup and other website promotion tools."
+        ],
+        "website_image_src": "/imgs/websites/site_2.png",
+        "benefit_groups": [
+          {
+            "items": [
+              "Responsive",
+              "Effective",
+              "Fast",
+              "Optimized",
+              "Concise",
+              "Functional"
+            ],
+            "image_src": "/imgs/3dicons_premium/3d-rocket-premium.png"
+          },
+          {
+            "items": [
+              "Product catalog",
+              "Featured products on the homepage",
+              "SEO optimization*",
+              "TecDoc parts selection*",
+              "LiqPay*"
+            ],
+            "image_src": "/imgs/3dicons_premium/3d-fire.png",
+            "note": "*paid services"
+          }
+        ],
+        "upgrade_message": "You can also add useful features to your website by choosing the “Practical” or “Maximum” package.",
+        "cta_text": "More about the website"
+      }
+    },
+    "FAQ": [
+      {
+        "topic": "How long does the demo last?",
+        "answer": "<p>The demo is free for 14 days and includes the same features as the paid version.</p>"
+      },
+      {
+        "topic": "Will the data I enter be kept after the trial?",
+        "answer": "<p>We recommend testing all features without worrying about mistakes. After the trial, we can delete or retain any of your data, as you choose.</p>"
+      },
+      {
+        "topic": "How is my data protected from loss and disclosure to third parties?",
+        "answer": "<p>Our servers are hosted in reliable data centers in Germany and Finland. You can download stock, business partner and balance files yourself or schedule automatic email delivery. A mutual non-disclosure agreement is also available.</p>"
+      },
+      {
+        "topic": "Are updates free?",
+        "answer": "<p>Yes, updates are free.</p>"
+      },
+      {
+        "topic": "I need additional features. What can you offer?",
+        "answer": "<p>If the program does not meet a particular need, we can develop additional features after agreeing on the cost and timeline.</p>"
+      },
+      {
+        "topic": "How do I get started?",
+        "answer": "<ol><li>Upload your stock using the price list importer and select “-1” in the warehouse field. The file must contain four columns: part number, brand, quantity and purchase price.</li><li>Import customers via Customers → List → Import in the top right corner.</li><li>Set up automatic supplier price list downloads via Administration → Third-party services and synchronization.</li><li>Create users via Administration → Users → List → Add in the top right corner.</li></ol>"
+      }
+    ],
+    "videos": [
+      {
+        "topic": "How do I upload a price list?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=g95YUJmOvXM\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Uploading a price list</strong><span>Setup guide</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "How do I place an order with a supplier?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+від+постачальника\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Supplier order</strong><span>Step-by-step video guide</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "How do I place an order from stock?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+зі+складу\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Order from stock</strong><span>Step-by-step video guide</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "How do I record incoming goods?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=JkVtG0KNoVw\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Ordering and receiving goods</strong><span>Setup guide</span><i aria-hidden=\"true\">▶</i></a><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+великий+прийом+товару\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Large goods receipt</strong><span>Setup guide</span><i aria-hidden=\"true\">▶</i></a></div>"
+      }
+    ],
+    "contacts": {
+      "title": "Contacts",
+      "subtitle": "Have any questions?\nWe are always happy to help. We are here for you.",
+      "workers": [
+        {
+          "contact_topic": "For a trial version or consultation",
+          "full_name": "Kristina Vasylyniak",
+          "role": "Technical support",
+          "phone": "+38 (097) 866-36-90",
+          "photo_path": "/imgs/contacts/worker-1.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_support",
+            "viber": "viber://chat?number=%2B380978663690",
+            "whatsapp": "https://wa.me/380978663690",
+            "email": "mailto:support@crm-vortex.com"
+          }
+        },
+        {
+          "contact_topic": "Integrations, technical questions and development",
+          "full_name": "Oleksandr Vasyliev",
+          "role": "Developer",
+          "phone": "+38 (095) 677-50-02",
+          "photo_path": "/imgs/contacts/worker-2.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_development",
+            "viber": "viber://chat?number=%2B380956775002",
+            "whatsapp": "https://wa.me/380956775002",
+            "email": "mailto:development@crm-vortex.com"
+          }
+        },
+        {
+          "contact_topic": "Partnerships and business proposals",
+          "full_name": "Volodymyr Markovych",
+          "role": "Founder",
+          "phone": "+38 (066) 728-23-02",
+          "photo_path": "/imgs/contacts/worker-3.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_business",
+            "viber": "viber://chat?number=%2B380667282302",
+            "email": "mailto:business@crm-vortex.com"
+          }
+        },
+        {
+          "contact_topic": "Partnerships and business proposals",
+          "full_name": "Artem Kryvorutchenko",
+          "role": "Founder",
+          "phone": "+38 (050) 957-66-74",
+          "photo_path": "/imgs/contacts/worker-4.svg",
+          "messenger_links": {
+            "viber": "viber://chat?number=%2B380509576674",
+            "email": "mailto:partnership@crm-vortex.com"
+          }
+        }
+      ]
+    },
+    "settings": {
+      "pricing_calculator": {
+        "currency": "$",
+        "base_monthly_price": 50,
+        "increment": 20,
+        "default_manager_count": 3,
+        "default_store_count": 1,
+        "integrations": [
+          {
+            "id": "tecdoc",
+            "label": "TecDoc",
+            "price": 25,
+            "billing_period": "monthly",
+            "selected_by_default": false
+          },
+          {
+            "id": "binotel",
+            "label": "Binotel",
+            "price": 50,
+            "billing_period": "one_time",
+            "selected_by_default": true
+          },
+          {
+            "id": "nova-poshta",
+            "label": "Nova Poshta",
+            "price": 20,
+            "billing_period": "one_time",
+            "selected_by_default": true
+          }
+        ],
+        "included_features": [
+          "Unlimited accounts for other employees",
+          "Customer care",
+          "Unlimited price list uploads",
+          "All available statistics",
+          "Full financial management functionality"
+        ]
+      }
+    },
+    "stats": {
+      "totalClicks": 0,
+      "formSubmissions": 0
+    },
+    "ui": {
+      "nav.home": "Home",
+      "nav.carService": "Workshop management",
+      "nav.websites": "Website development",
+      "nav.pricing": "Pricing",
+      "nav.faq": "Questions",
+      "nav.contacts": "Contacts",
+      "common.home": "Homepage",
+      "common.breadcrumbs": "Breadcrumbs",
+      "common.tryFree": "Try for free",
+      "common.tryDemo": "Request a demo",
+      "common.privacy": "Privacy policy",
+      "common.language": "Website language",
+      "common.navigation": "Main navigation",
+      "common.mobileNavigation": "Mobile navigation",
+      "common.openMenu": "Open menu",
+      "common.closeMenu": "Close menu",
+      "common.socials": "Social media",
+      "common.partner": "TecAlliance — official partner",
+      "common.loading": "Loading…",
+      "common.loadError": "Could not load the page.",
+      "common.previous": "Previous slide",
+      "common.next": "Next slide",
+      "common.slide": "Slide {number}",
+      "common.messengers": "Messengers: {name}",
+      "faq.title": "FAQ",
+      "faq.functionality": "Features",
+      "pricing.title": "Your VORTEX subscription cost",
+      "pricing.managers": "Choose the number of manager accounts",
+      "pricing.branches": "Enter the number of branches",
+      "pricing.decrease": "Decrease: {label}",
+      "pricing.increase": "Increase: {label}",
+      "pricing.integration": "Integration with {name}",
+      "pricing.monthly": "per month",
+      "pricing.oneTime": "one-time fee",
+      "pricing.trialTitle": "Try VORTEX free for 14 days!",
+      "pricing.trialDescription": "Full access to the system at no cost",
+      "pricing.demoTitle": "Book your demo today!",
+      "pricing.demoDescription": "A video walkthrough of the system with our specialists",
+      "trial.title": "14 days free!",
+      "trial.subtitle": "Give it a try!",
+      "trial.infoTitle": "The free version has all the features of the paid version!",
+      "trial.info": "After the trial, you can delete test data such as financial transactions, orders and goods receipts, while keeping integration settings, price list imports and business details.",
+      "trial.price": "Calculated cost: ${total}",
+      "trial.name": "What is your name?",
+      "trial.namePlaceholder": "Enter your name",
+      "trial.phone": "Phone number",
+      "trial.phonePlaceholder": "+380",
+      "trial.location": "Add my location",
+      "trial.locationAdded": "Location added",
+      "trial.locationUnsupported": "Your browser does not support location services.",
+      "trial.locationWaiting": "Waiting for location permission…",
+      "trial.locationSuccess": "Your location will be included in the request.",
+      "trial.locationDenied": "Location unavailable. You can submit without it.",
+      "trial.nameError": "Enter a valid name (2–80 characters).",
+      "trial.phoneError": "Enter a valid phone number.",
+      "trial.captchaError": "Confirm that you are not a robot.",
+      "trial.success": "Thank you! Your request has been sent.",
+      "trial.error": "Could not send the request. Please try again.",
+      "trial.unavailable": "The request service is not configured yet.",
+      "trial.sending": "Sending…",
+      "trial.send": "Send",
+      "trial.captchaUnavailable": "reCAPTCHA is not configured.",
+      "network.title": "All suppliers in one place",
+      "network.description": "Vortex brings all suppliers’ stock together in one place and simplifies working with them. These integrations let you automatically receive price lists, place orders and download invoices via API.",
+      "network.alt": "Suppliers connected to Vortex",
+      "sync.title": "Vortex Sync",
+      "sync.first": "Our Sync technology lets you quickly set up online stock and order exchange with another store using Vortex.",
+      "sync.second": "You decide whether other customers can find you, which stock to share and which markup to apply.",
+      "sync.third": "Stock received via Sync has a special tag. Ordering it automatically creates an order on the other side and notifies the managers. You receive the same notification when a partner orders from you.",
+      "sync.fourth": "No manual stock updates are needed: Sync handles them for you.",
+      "sync.alt": "Fast stock exchange between two Vortex Sync customers",
+      "sync.client": "Vortex customer {number}",
+      "carOverview.link": "More about workshop management",
+      "carOverview.alt": "Vortex workshop interface on a laptop",
+      "carOverview.first": "As workshop owners ourselves, we built this module on our own experience, including its challenges and details.",
+      "carOverview.second": "When we began supplying the program to other workshops across Ukraine, their approach and vision also shaped the product.",
+      "carOverview.third": "By joining us, you too can help shape the best management system for workshops and auto parts stores.",
+      "website.alt": "Example auto parts store website",
+      "language.ua": "Українська",
+      "language.cz": "Čeština",
+      "language.sk": "Slovenčina",
+      "language.en": "English",
+      "language.pl": "Polski",
+      "supplier.technomir": "Technomir",
+      "supplier.uniq": "Uniq Trade",
+      "supplier.groupauto": "Groupauto Ukraine",
+      "common.copyright": "Copyright © {year} Vortex"
+    },
+    "car_service": {
+      "title": "Workshop management",
+      "subtitle": "Vortex helps not only auto parts stores but also vehicle service centers manage their business.",
+      "blocks": [
+        {
+          "id": "works",
+          "title": "Workshop job catalog",
+          "image_src": "/imgs/car-service/calendar.png",
+          "image_alt": "Workshop job catalog",
+          "paragraphs": [
+            "The program includes a basic workshop job catalog with around 15 categories and 10–20 jobs in each. You can add your own categories and jobs.",
+            "Each job supports a category, name, standard labor hours, hourly rate, currency and note.",
+            "You can attach parts inquiry templates to jobs. For example, link a “cabin filter” template to “replace cabin filter”. When booking this job, the system offers to send a parts inquiry to the sales manager automatically."
+          ]
+        },
+        {
+          "id": "documents",
+          "title": "Documents",
+          "image_src": "/imgs/car-service/company.png",
+          "image_alt": "Documents",
+          "paragraphs": [
+            "Printed documents play an important role in any business, including workshops. Vortex recognizes this and continually improves its document system.",
+            "Today, virtually every action in Vortex comes with a corresponding document and a printable form."
+          ],
+          "list_intro": "Examples of workshop documents our customers often ask about:",
+          "documents": [
+            {
+              "label": "Work order.pdf",
+              "href": null
+            },
+            {
+              "label": "Vehicle handover report.pdf",
+              "href": null
+            },
+            {
+              "label": "Work completion certificate.pdf",
+              "href": null
+            }
+          ],
+          "note": "*For an additional fee, Vortex can customize a document’s print layout to your needs."
+        },
+        {
+          "id": "booking",
+          "title": "Workshop bookings",
+          "image_src": "/imgs/car-service/bookings.png",
+          "image_alt": "Workshop bookings",
+          "paragraphs": [
+            "A booking requires the customer, service bay and appointment time. Add jobs immediately or later if the work is not yet known. Record the customer’s vehicle, including VIN, registration number, mileage, make, model and specifications. A change history is kept for each booking and job, so you always know who changed what and when."
+          ],
+          "list_intro": "Useful workshop booking features:",
+          "items": [
+            "Attach files to bookings (.pdf, .xlsx, .png and more).",
+            "Apply discounts to jobs.",
+            "Complete a booking in stages and issue multiple work completion certificates for one booking.",
+            "Mechanics can mark individual jobs as done without closing the booking, making progress clear.",
+            "Mileage is saved in the customer’s garage. Read more in the sections below."
+          ]
+        },
+        {
+          "id": "statistics",
+          "title": "Statistics",
+          "image_src": "/imgs/vx-screenshot-1.png",
+          "image_alt": "Statistics",
+          "paragraphs": [
+            "Vortex workshop statistics bring all key business metrics together in one comprehensive module."
+          ],
+          "list_intro": "These metrics include:",
+          "items": [
+            "Earnings by service bay",
+            "Earnings by mechanic",
+            "Earnings by service advisor",
+            "Total workshop earnings",
+            "Workshop expenses by category",
+            "Most popular jobs",
+            "Jobs completed by each mechanic over a period"
+          ]
+        },
+        {
+          "id": "calendar",
+          "title": "Booking calendar",
+          "image_src": "/imgs/car-service/calendar.png",
+          "image_alt": "Booking calendar",
+          "paragraphs": [
+            "The booking calendar gives you a clear view of workshop activity, helps you find available slots quickly and makes booking management easy."
+          ],
+          "list_intro": "The calendar has two views:",
+          "items": [
+            "All service bays for a selected day.",
+            "A selected service bay for the week."
+          ],
+          "closing_paragraphs": [
+            "Create a booking by clicking its start and end times. You can also quickly edit, cancel or complete bookings.",
+            "Each Vortex customer has a cart that can include workshop jobs. Add the required jobs first, then create a calendar booking directly from that cart."
+          ]
+        },
+        {
+          "id": "mileage",
+          "title": "Mileage history",
+          "image_src": "/imgs/car-service/company.png",
+          "image_alt": "Mileage history",
+          "paragraphs": [
+            "Vehicle details entered in a workshop booking are saved in the customer’s garage. Entering mileage creates a mileage history entry, recording which jobs were carried out at which mileage and helping plan scheduled maintenance.",
+            "The mileage module supports reminders by date, mileage or both. Date reminders send the customer an SMS on the chosen day. Mileage reminders notify the manager when a new booking records a mileage above the set threshold."
+          ]
+        }
+      ]
+    }
+  },
+  "pl": {
+    "homepage": {
+      "title": "CRM VORTEX —\nniezawodny i sprawdzony system zarządzania\ndla sklepów motoryzacyjnych i warsztatów",
+      "subtitle": "CRM Vortex zapewnia pełną kontrolę nad sklepem motoryzacyjnym i warsztatem: od ewidencji towarów i zamówień po finanse i wydajność pracowników. Jeden system łączy 95% operacji w jednym interfejsie, ograniczając straty, usprawniając pracę zespołu i zwiększając zysk.",
+      "about_us_block": {
+        "about_us_title": "O nas",
+        "about_us_subtitle": "Vortex oferuje narzędzia niedostępne w innych CRM: elastyczne zarządzanie magazynem, osobne interfejsy dla menedżerów i pakowaczy, rozbudowaną macierz statusów i automatyczną fiskalizację. Zwiększ dokładność procesów, ogranicz utracone zamówienia i skup się na rozwoju firmy.",
+        "about_us_blocks": [
+          {
+            "about_us_title": "Zarządzanie sklepem motoryzacyjnym i warsztatem w jednym miejscu",
+            "about_us_description": "Rozwiązanie stworzone dla Twojej branży, skupione na magazynie, zamówieniach, klientach i ewidencji usług, bez zbędnych funkcji.",
+            "about_us_image_path": "/imgs/3dicons_premium/monitor.png"
+          },
+          {
+            "about_us_title": "Prosta automatyzacja",
+            "about_us_description": "Zastąp Excel nowoczesnym systemem, który upraszcza ewidencję, przyspiesza obsługę zamówień i pomaga unikać błędów.",
+            "about_us_image_path": "/imgs/3dicons_premium/folder.png"
+          },
+          {
+            "about_us_title": "Integracje z dostawcami",
+            "about_us_description": "Połącz się z głównymi dostawcami i katalogami części. Ceny i stany magazynowe aktualizują się automatycznie, bez pracy ręcznej.",
+            "about_us_image_path": "/imgs/3dicons_premium/like.png"
+          },
+          {
+            "about_us_title": "Strona internetowa w prezencie",
+            "about_us_description": "Stworzymy nowoczesną stronę dla Twojego sklepu. Wybierz bezpłatny szablon lub rozwiązanie dostosowane do Twoich potrzeb.",
+            "about_us_image_path": "/imgs/3dicons_premium/gift.png"
+          },
+          {
+            "about_us_title": "Wymiana informacji z innymi klientami Vortex",
+            "about_us_description": "Kontaktuj się z innymi sklepami korzystającymi z Vortex i wymieniaj informacje o dostępności części.",
+            "about_us_image_path": "/imgs/3dicons_premium/message.png"
+          },
+          {
+            "about_us_title": "Wzrost zysku",
+            "about_us_description": "Kontrola każdego etapu od zapytania do sprzedaży. Mniejsze straty, lepsza obsługa, więcej zamówień.",
+            "about_us_image_path": "/imgs/3dicons_premium/wallet.png"
+          }
+        ]
+      },
+      "hero_page_slider_section": {
+        "section_title": "Tak będzie wyglądał Twój system",
+        "slide_image_paths": [
+          "/imgs/slider_images/slide_1.png",
+          "/imgs/slider_images/slide_2.png",
+          "/imgs/slider_images/slide_3.png"
+        ]
+      },
+      "why_vortex_section": {
+        "section_title": "Co potrafi Vortex?",
+        "section_description": "Vortex oferuje szerokie możliwości, dopracowane w najdrobniejszych szczegółach przez zespół specjalistów z branży.",
+        "cards": [
+          {
+            "title": "Kontrahenci",
+            "description": "Historia sprzedaży, prac warsztatowych, przebiegu pojazdów i dokumentów. Rozbudowane uzgadnianie rozrachunków, indywidualne marże i warunki kredytowe.",
+            "image_src": ""
+          },
+          {
+            "title": "Magazyn",
+            "description": "Automatyczne zakupy (MIN-MAX), adresowe składowanie, kontrola kompletacji towarów i wiele więcej.",
+            "image_src": ""
+          },
+          {
+            "title": "Finanse",
+            "description": "Kontrola wszystkich przychodów i wydatków: płatności dostawcom, wynagrodzeń, kas menedżerów i innych operacji finansowych, w wielu walutach.",
+            "image_src": ""
+          },
+          {
+            "title": "Fiskalizacja",
+            "description": "Dzięki integracji z Checkbox możesz fiskalizować sprzedaż bez instalowania kasy fiskalnej.",
+            "image_src": ""
+          }
+        ]
+      },
+      "why_vortex_showcase_section": {
+        "section_title": "Co potrafi Vortex?",
+        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+        "cards": [
+          {
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+            "image_src": ""
+          },
+          {
+            "title": "Dolor sit amet",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum et donec sed odio dui.",
+            "image_src": ""
+          },
+          {
+            "title": "Consectetur elit",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
+            "image_src": ""
+          },
+          {
+            "title": "Aenean commodo",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
+            "image_src": ""
+          }
+        ]
+      },
+      "vortex_audience_section": {
+        "section_title": "Dla kogo jest Vortex?",
+        "cards": [
+          {
+            "title": "Sklepy motoryzacyjne",
+            "description": "do wygodnego zarządzania towarami i zamówieniami",
+            "cta_text": "Wypróbuj bezpłatnie",
+            "image_src": "/imgs/3d_clay/3dicons-bag-dynamic-clay.png"
+          },
+          {
+            "title": "Warsztaty i serwisy samochodowe",
+            "description": "do zarządzania pracami, zapasami i relacjami z klientami",
+            "cta_text": "Wypróbuj bezpłatnie",
+            "image_src": "/imgs/3d_clay/3dicons-tool-dynamic-clay.png"
+          },
+          {
+            "title": "Hurtownie",
+            "description": "do ewidencji magazynowej i sprawnej logistyki",
+            "cta_text": "Wypróbuj bezpłatnie",
+            "image_src": "/imgs/3d_clay/3dicons-location-dynamic-clay.png"
+          },
+          {
+            "title": "Sklepy internetowe",
+            "description": "do integracji sprzedaży online i szybkiej obsługi zamówień",
+            "cta_text": "Wypróbuj bezpłatnie",
+            "image_src": "/imgs/3d_clay/3dicons-computer-dynamic-clay.png"
+          }
+        ]
+      },
+      "client_testimonials_section": {
+        "section_title": "Co mówią nasi klienci",
+        "pros_title": "Lorem ipsum Vortex:",
+        "cons_title": "Dolor sit amet Vortex:",
+        "reviews": [
+          {
+            "company_name": "Lorem Company",
+            "company_type": "Lorem ipsum dolor",
+            "image_src": "",
+            "pros": [
+              "Lorem ipsum",
+              "Dolor sit amet",
+              "Consectetur adipiscing"
+            ],
+            "cons": [
+              "Tempor incididunt",
+              "Labore et dolore"
+            ],
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Ipsum Group",
+            "company_type": "Consectetur adipiscing",
+            "image_src": "",
+            "pros": [
+              "Aenean commodo",
+              "Ligula eget dolor",
+              "Cum sociis natoque"
+            ],
+            "cons": [
+              "Donec quam felis",
+              "Ultricies nec"
+            ],
+            "quote": "Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Dolor Service",
+            "company_type": "Eiusmod tempor",
+            "image_src": "",
+            "pros": [
+              "Integer tincidunt",
+              "Cras dapibus",
+              "Vivamus elementum"
+            ],
+            "cons": [
+              "Aenean vulputate",
+              "Eleifend tellus"
+            ],
+            "quote": "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          },
+          {
+            "company_name": "Amet Market",
+            "company_type": "Magna aliqua",
+            "image_src": "",
+            "pros": [
+              "Phasellus viverra",
+              "Nulla ut metus",
+              "Varius laoreet"
+            ],
+            "cons": [
+              "Quisque rutrum",
+              "Aenean imperdiet"
+            ],
+            "quote": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi nam eget dui.",
+            "link_text": "Lorem ipsum",
+            "link_href": "#"
+          }
+        ]
+      },
+      "integrations_catalog_section": {
+        "section_title": "Lorem ipsum",
+        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "cards": [
+          {
+            "title": "TecDoc Inside",
+            "image_src": "blank_image",
+            "features": [
+              "Wyszukiwanie pojazdu po VIN",
+              "Dobór części do pojazdu, filtrowanie według ulubionych marek i zespołów konstrukcyjnych",
+              "Sprawdzanie zastosowania części w pojazdach",
+              "Wyszukiwanie informacji o częściach",
+              "Dobór części w katalogu największej bazy danych na świecie"
+            ],
+            "link_text": "Dowiedz się więcej",
+            "link_href": "/"
+          },
+          {
+            "title": "Checkbox",
+            "image_src": "blank_image",
+            "features": [
+              "Kasa online bezpośrednio w Vortex",
+              "Tworzenie i druk paragonów fiskalnych na drukarkach termicznych",
+              "Wystawianie i tworzenie paragonów fiskalnych",
+              "Bez kosztów zakupu sprzętu",
+              "Wygodne zarządzanie połączeniem",
+              "Konfiguracja wielu kont Checkbox oraz wielu kas i kasjerów w ramach jednego konta"
+            ],
+            "link_text": "Dowiedz się więcej",
+            "link_href": "/"
+          },
+          {
+            "title": "Nova Poshta",
+            "image_src": "blank_image",
+            "features": [
+              "Ustawienie domyślnego nadawcy",
+              "Tworzenie ekspresowych listów przewozowych do oddziału lub na adres, z kontrolą płatności lub bez, dla jednej lub wielu paczek i z wieloma dodatkowymi opcjami",
+              "Druk etykiet paczek i pełnych ekspresowych listów przewozowych na A4",
+              "Aktualizacja bazy oddziałów przez API"
+            ],
+            "link_text": "Dowiedz się więcej",
+            "link_href": "/"
+          },
+          {
+            "title": "Turbo SMS",
+            "image_src": "blank_image",
+            "features": [
+              "Automatyczne wysyłanie SMS przy różnych zdarzeniach",
+              "Ręczne wysyłanie SMS z własną treścią lub szablonem",
+              "Wysyłka SMS do wielu odbiorców",
+              "Historia wysłanych SMS",
+              "Monitorowanie salda i powiadomienia o niskim saldzie SMS"
+            ],
+            "link_text": "Dowiedz się więcej",
+            "link_href": "/"
+          },
+          {
+            "title": "API banków",
+            "image_src": "blank_image",
+            "features": [
+              "Połączenie z Twoim rachunkiem bankowym",
+              "Podgląd ostatnich transakcji",
+              "Tworzenie transakcji finansowej w Vortex z rzeczywistej transakcji bankowej jednym kliknięciem!",
+              "Wszystkie transakcje na jednej liście z filtrami według rachunku i typu operacji oraz wyszukiwaniem po kwocie, odbiorcy, notatce i innych danych"
+            ],
+            "link_text": "Dowiedz się więcej",
+            "link_href": "/"
+          },
+          {
+            "title": "Binotel",
+            "image_src": "blank_image",
+            "features": [
+              "Kontrola nieodebranych połączeń",
+              "Historia połączeń klienta w Vortex",
+              "Szybkie tworzenie klienta przy połączeniu z niezarejestrowanego numeru",
+              "Odsłuchiwanie rozmów i kontrola jakości",
+              "Przejście do profilu klienta w Vortex przy połączeniu z zarejestrowanego numeru"
+            ],
+            "link_text": "Dowiedz się więcej",
+            "link_href": "/"
+          }
+        ]
+      },
+      "car_service_section": {
+        "heading": "Zarządzanie warsztatem",
+        "description": "Vortex pomaga w zarządzaniu nie tylko sklepom motoryzacyjnym, ale również serwisom samochodowym.",
+        "car_service_features": [
+          "Zarządzanie katalogiem prac warsztatowych",
+          "Zarządzanie stanowiskami i mechanikami",
+          "Umawianie klientów na wybrany termin",
+          "Wygodny graficzny harmonogram warsztatu",
+          "Zarządzanie garażem klienta",
+          "Historia przebiegu",
+          "Tworzenie przypomnień",
+          "Druk dokumentów: protokołów, faktur, zleceń serwisowych i diagnostyki",
+          "Obliczanie wynagrodzeń mechaników i doradców serwisowych",
+          "Przejrzyste i szczegółowe statystyki"
+        ]
+      },
+      "website_development_section": {
+        "heading": "Tworzenie stron internetowych",
+        "gift_message": "Korzystaj z VORTEX i otrzymaj bezpłatną stronę dla swojego sklepu motoryzacyjnego lub warsztatu!",
+        "description_paragraphs": [
+          "Nasz szablon strony spełnia potrzeby ponad 80% naszych klientów.",
+          "Strona jest szybka, intuicyjna i w pełni zintegrowana z systemem zarządzania.",
+          "Katalogi, stany magazynowe, ceny, opisy i zdjęcia z CRM są automatycznie publikowane na stronie.",
+          "Samodzielnie zmienisz logo, kolory, menu, teksty i inne elementy.",
+          "Oferujemy również optymalizację SEO, konfigurację Google Ads i inne narzędzia promocji strony."
+        ],
+        "website_image_src": "/imgs/websites/site_2.png",
+        "benefit_groups": [
+          {
+            "items": [
+              "Responsywna",
+              "Skuteczna",
+              "Szybka",
+              "Zoptymalizowana",
+              "Przejrzysta",
+              "Funkcjonalna"
+            ],
+            "image_src": "/imgs/3dicons_premium/3d-rocket-premium.png"
+          },
+          {
+            "items": [
+              "Katalog produktów",
+              "Wybrane produkty na stronie głównej",
+              "Optymalizacja SEO*",
+              "Dobór części przez TecDoc*",
+              "LiqPay*"
+            ],
+            "image_src": "/imgs/3dicons_premium/3d-fire.png",
+            "note": "*usługi płatne"
+          }
+        ],
+        "upgrade_message": "Możesz rozbudować stronę o przydatne funkcje, wybierając pakiet „Praktyczny” lub „Maksymalny”.",
+        "cta_text": "Więcej o stronie"
+      }
+    },
+    "FAQ": [
+      {
+        "topic": "Jak długo działa wersja demo?",
+        "answer": "<p>Wersja demo jest bezpłatna przez 14 dni i ma te same funkcje co wersja płatna.</p>"
+      },
+      {
+        "topic": "Czy dane wprowadzone podczas okresu próbnego zostaną zachowane?",
+        "answer": "<p>Zalecamy przetestowanie wszystkich funkcji bez obaw o błędy. Po zakończeniu testów możemy usunąć lub zachować dowolne dane zgodnie z Twoim wyborem.</p>"
+      },
+      {
+        "topic": "Jak chronione są moje dane przed utratą i udostępnieniem osobom trzecim?",
+        "answer": "<p>Nasze serwery znajdują się w niezawodnych centrach danych w Niemczech i Finlandii. Pliki ze stanami magazynowymi, kontrahentami i ich saldami możesz pobierać samodzielnie lub ustawić automatyczne wysyłanie e-mailem. Możemy również zawrzeć obustronną umowę o poufności.</p>"
+      },
+      {
+        "topic": "Czy aktualizacje są bezpłatne?",
+        "answer": "<p>Tak, aktualizacje są bezpłatne.</p>"
+      },
+      {
+        "topic": "Potrzebuję dodatkowych funkcji. Co możecie zaproponować?",
+        "answer": "<p>Jeśli program nie spełnia określonej potrzeby, możemy opracować dodatkowe funkcje po uzgodnieniu kosztów i terminów.</p>"
+      },
+      {
+        "topic": "Jak rozpocząć pracę?",
+        "answer": "<ol><li>Wgraj stany magazynowe przez importer cenników i wybierz „-1” w polu magazynu. Plik musi zawierać cztery kolumny: numer części, markę, ilość i cenę zakupu.</li><li>Importuj klientów przez Klienci → Lista → Importuj w prawym górnym rogu.</li><li>Ustaw automatyczne pobieranie cenników dostawców przez Administracja → Usługi zewnętrzne i synchronizacja.</li><li>Utwórz użytkowników przez Administracja → Użytkownicy → Lista → Dodaj w prawym górnym rogu.</li></ol>"
+      }
+    ],
+    "videos": [
+      {
+        "topic": "Jak wgrać cennik?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=g95YUJmOvXM\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Wgrywanie cennika</strong><span>Instrukcja konfiguracji</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "Jak złożyć zamówienie u dostawcy?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+від+постачальника\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Zamówienie u dostawcy</strong><span>Instrukcja wideo krok po kroku</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "Jak złożyć zamówienie z magazynu?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+зі+складу\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Zamówienie z magazynu</strong><span>Instrukcja wideo krok po kroku</span><i aria-hidden=\"true\">▶</i></a></div>"
+      },
+      {
+        "topic": "Jak zarejestrować przyjęcie towaru?",
+        "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=JkVtG0KNoVw\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Zamawianie i przyjęcie towaru</strong><span>Instrukcja konfiguracji</span><i aria-hidden=\"true\">▶</i></a><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+великий+прийом+товару\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Duże przyjęcie towaru</strong><span>Instrukcja konfiguracji</span><i aria-hidden=\"true\">▶</i></a></div>"
+      }
+    ],
+    "contacts": {
+      "title": "Kontakt",
+      "subtitle": "Masz pytania?\nZawsze chętnie pomożemy, jesteśmy dla Ciebie.",
+      "workers": [
+        {
+          "contact_topic": "Wersja próbna i konsultacje",
+          "full_name": "Kristina Vasylyniak",
+          "role": "Wsparcie techniczne",
+          "phone": "+38 (097) 866-36-90",
+          "photo_path": "/imgs/contacts/worker-1.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_support",
+            "viber": "viber://chat?number=%2B380978663690",
+            "whatsapp": "https://wa.me/380978663690",
+            "email": "mailto:support@crm-vortex.com"
+          }
+        },
+        {
+          "contact_topic": "Integracje, pytania techniczne i rozwój",
+          "full_name": "Oleksandr Vasyliev",
+          "role": "Programista",
+          "phone": "+38 (095) 677-50-02",
+          "photo_path": "/imgs/contacts/worker-2.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_development",
+            "viber": "viber://chat?number=%2B380956775002",
+            "whatsapp": "https://wa.me/380956775002",
+            "email": "mailto:development@crm-vortex.com"
+          }
+        },
+        {
+          "contact_topic": "Współpraca i propozycje biznesowe",
+          "full_name": "Volodymyr Markovych",
+          "role": "Założyciel",
+          "phone": "+38 (066) 728-23-02",
+          "photo_path": "/imgs/contacts/worker-3.svg",
+          "messenger_links": {
+            "telegram": "https://t.me/vortex_business",
+            "viber": "viber://chat?number=%2B380667282302",
+            "email": "mailto:business@crm-vortex.com"
+          }
+        },
+        {
+          "contact_topic": "Współpraca i propozycje biznesowe",
+          "full_name": "Artem Kryvorutchenko",
+          "role": "Założyciel",
+          "phone": "+38 (050) 957-66-74",
+          "photo_path": "/imgs/contacts/worker-4.svg",
+          "messenger_links": {
+            "viber": "viber://chat?number=%2B380509576674",
+            "email": "mailto:partnership@crm-vortex.com"
+          }
+        }
+      ]
+    },
+    "settings": {
+      "pricing_calculator": {
+        "currency": "$",
+        "base_monthly_price": 50,
+        "increment": 20,
+        "default_manager_count": 3,
+        "default_store_count": 1,
+        "integrations": [
+          {
+            "id": "tecdoc",
+            "label": "TecDoc",
+            "price": 25,
+            "billing_period": "monthly",
+            "selected_by_default": false
+          },
+          {
+            "id": "binotel",
+            "label": "Binotel",
+            "price": 50,
+            "billing_period": "one_time",
+            "selected_by_default": true
+          },
+          {
+            "id": "nova-poshta",
+            "label": "Nova Poshta",
+            "price": 20,
+            "billing_period": "one_time",
+            "selected_by_default": true
+          }
+        ],
+        "included_features": [
+          "Dowolna liczba kont pozostałych pracowników",
+          "Opieka nad klientem",
+          "Nieograniczone wgrywanie cenników",
+          "Wszystkie dostępne statystyki",
+          "Pełna funkcjonalność ewidencji finansowej"
+        ]
+      }
+    },
+    "stats": {
+      "totalClicks": 0,
+      "formSubmissions": 0
+    },
+    "ui": {
+      "nav.home": "Strona główna",
+      "nav.carService": "Zarządzanie warsztatem",
+      "nav.websites": "Tworzenie stron internetowych",
+      "nav.pricing": "Ceny",
+      "nav.faq": "Pytania",
+      "nav.contacts": "Kontakt",
+      "common.home": "Strona główna",
+      "common.breadcrumbs": "Ścieżka nawigacji",
+      "common.tryFree": "Wypróbuj bezpłatnie",
+      "common.tryDemo": "Zamów prezentację",
+      "common.privacy": "Polityka prywatności",
+      "common.language": "Język strony",
+      "common.navigation": "Nawigacja główna",
+      "common.mobileNavigation": "Nawigacja mobilna",
+      "common.openMenu": "Otwórz menu",
+      "common.closeMenu": "Zamknij menu",
+      "common.socials": "Media społecznościowe",
+      "common.partner": "TecAlliance — oficjalny partner",
+      "common.loading": "Ładowanie…",
+      "common.loadError": "Nie udało się załadować strony.",
+      "common.previous": "Poprzedni slajd",
+      "common.next": "Następny slajd",
+      "common.slide": "Slajd {number}",
+      "common.messengers": "Komunikatory: {name}",
+      "faq.title": "FAQ",
+      "faq.functionality": "Funkcje",
+      "pricing.title": "Twój koszt korzystania z VORTEX",
+      "pricing.managers": "Wybierz liczbę kont menedżerów",
+      "pricing.branches": "Podaj liczbę oddziałów",
+      "pricing.decrease": "Zmniejsz: {label}",
+      "pricing.increase": "Zwiększ: {label}",
+      "pricing.integration": "Integracja z {name}",
+      "pricing.monthly": "miesięcznie",
+      "pricing.oneTime": "opłata jednorazowa",
+      "pricing.trialTitle": "Wypróbuj VORTEX bezpłatnie przez 14 dni!",
+      "pricing.trialDescription": "Pełny dostęp do systemu bez opłat",
+      "pricing.demoTitle": "Zamów prezentację systemu już teraz!",
+      "pricing.demoDescription": "Prezentacja wideo systemu z naszymi specjalistami",
+      "trial.title": "14 dni bezpłatnie!",
+      "trial.subtitle": "Warto spróbować!",
+      "trial.infoTitle": "Wersja bezpłatna ma wszystkie funkcje wersji płatnej!",
+      "trial.info": "Po okresie próbnym możesz usunąć testowe operacje finansowe, zamówienia i przyjęcia towarów, zachowując ustawienia integracji, importów cenników i dane firmowe.",
+      "trial.price": "Obliczony koszt: ${total}",
+      "trial.name": "Jak się do Ciebie zwracać?",
+      "trial.namePlaceholder": "Wpisz swoje imię",
+      "trial.phone": "Numer telefonu",
+      "trial.phonePlaceholder": "+380",
+      "trial.location": "Dodaj moją lokalizację",
+      "trial.locationAdded": "Lokalizacja dodana",
+      "trial.locationUnsupported": "Twoja przeglądarka nie obsługuje geolokalizacji.",
+      "trial.locationWaiting": "Oczekiwanie na zgodę na dostęp do lokalizacji…",
+      "trial.locationSuccess": "Lokalizacja zostanie dołączona do zgłoszenia.",
+      "trial.locationDenied": "Nie udostępniono lokalizacji. Możesz wysłać zgłoszenie bez niej.",
+      "trial.nameError": "Wpisz poprawne imię (2–80 znaków).",
+      "trial.phoneError": "Wpisz poprawny numer telefonu.",
+      "trial.captchaError": "Potwierdź, że nie jesteś robotem.",
+      "trial.success": "Dziękujemy! Zgłoszenie zostało wysłane.",
+      "trial.error": "Nie udało się wysłać zgłoszenia. Spróbuj ponownie.",
+      "trial.unavailable": "Usługa zgłoszeń nie jest jeszcze skonfigurowana.",
+      "trial.sending": "Wysyłanie…",
+      "trial.send": "Wyślij",
+      "trial.captchaUnavailable": "reCAPTCHA nie jest skonfigurowana.",
+      "network.title": "Wszyscy dostawcy w jednym miejscu",
+      "network.description": "Vortex gromadzi stany magazynowe wszystkich dostawców w jednym miejscu i upraszcza współpracę. Integracje pozwalają automatycznie odbierać cenniki, składać zamówienia i pobierać dokumenty przez API.",
+      "network.alt": "Dostawcy połączeni z systemem Vortex",
+      "sync.title": "Vortex Sync",
+      "sync.first": "Nasza technologia Sync pozwala szybko skonfigurować wymianę stanów magazynowych i zamówień online z innym sklepem korzystającym z Vortex.",
+      "sync.second": "Samodzielnie decydujesz o widoczności dla innych klientów, udostępnianych stanach i stosowanej marży.",
+      "sync.third": "Stany pobrane przez Sync mają specjalną etykietę. Zamówienie automatycznie tworzy zamówienie u partnera i powiadamia menedżerów. Otrzymasz takie samo powiadomienie, gdy partner zamówi u Ciebie.",
+      "sync.fourth": "Nie musisz ręcznie aktualizować stanów — Sync zrobi to za Ciebie.",
+      "sync.alt": "Szybka wymiana towarów między dwoma klientami Vortex Sync",
+      "sync.client": "Klient Vortex {number}",
+      "carOverview.link": "Więcej o zarządzaniu warsztatem",
+      "carOverview.alt": "Interfejs warsztatu Vortex na laptopie",
+      "carOverview.first": "Jako właściciele serwisu stworzyliśmy ten moduł na podstawie własnych doświadczeń, uwzględniając wszystkie wyzwania i szczegóły.",
+      "carOverview.second": "Gdy zaczęliśmy dostarczać program innym warsztatom w Ukrainie, uwzględniliśmy w rozwoju produktu również ich podejście i wizję.",
+      "carOverview.third": "Dołączając do nas, pomożesz tworzyć najlepszy system zarządzania dla warsztatów i sklepów motoryzacyjnych.",
+      "website.alt": "Przykładowa strona sklepu motoryzacyjnego",
+      "language.ua": "Українська",
+      "language.cz": "Čeština",
+      "language.sk": "Slovenčina",
+      "language.en": "English",
+      "language.pl": "Polski",
+      "supplier.technomir": "Technomir",
+      "supplier.uniq": "Uniq Trade",
+      "supplier.groupauto": "Groupauto Ukraine",
+      "common.copyright": "Copyright © {year} Vortex"
+    },
+    "car_service": {
+      "title": "Zarządzanie warsztatem",
+      "subtitle": "Vortex pomaga w zarządzaniu nie tylko sklepom motoryzacyjnym, ale również serwisom samochodowym.",
+      "blocks": [
+        {
+          "id": "works",
+          "title": "Katalog prac warsztatowych",
+          "image_src": "/imgs/car-service/calendar.png",
+          "image_alt": "Katalog prac warsztatowych",
+          "paragraphs": [
+            "Program zawiera podstawowy katalog prac warsztatowych z około 15 kategoriami i 10–20 pracami w każdej. Możesz dodawać własne kategorie i prace.",
+            "Każda praca ma pola: kategoria, nazwa, liczba roboczogodzin, stawka godzinowa, waluta i notatka.",
+            "Do prac możesz dodawać szablony zapytań o części. Na przykład do „wymiany filtra kabinowego” dodaj szablon „filtr kabinowy”. Podczas rezerwacji system zaproponuje automatyczne utworzenie zapytania dla sprzedawcy części."
+          ]
+        },
+        {
+          "id": "documents",
+          "title": "Dokumenty",
+          "image_src": "/imgs/car-service/company.png",
+          "image_alt": "Dokumenty",
+          "paragraphs": [
+            "Dokumenty drukowane odgrywają ważną rolę w każdej firmie, również w warsztacie. Vortex wie o tym i stale udoskonala swój system dokumentów.",
+            "Dziś praktycznie każdej czynności w Vortex towarzyszy odpowiedni dokument z wersją do druku."
+          ],
+          "list_intro": "Przykłady dokumentów warsztatowych, o które często pytają klienci:",
+          "documents": [
+            {
+              "label": "Zlecenie serwisowe.pdf",
+              "href": null
+            },
+            {
+              "label": "Protokół przyjęcia i przekazania.pdf",
+              "href": null
+            },
+            {
+              "label": "Protokół wykonanych prac.pdf",
+              "href": null
+            }
+          ],
+          "note": "*Za dodatkową opłatą Vortex może dostosować układ wydruku dokumentu do Twoich potrzeb."
+        },
+        {
+          "id": "booking",
+          "title": "Rezerwacje w warsztacie",
+          "image_src": "/imgs/car-service/bookings.png",
+          "image_alt": "Rezerwacje w warsztacie",
+          "paragraphs": [
+            "Rezerwacja wymaga wskazania klienta, stanowiska i terminu. Prace możesz dodać od razu lub później, jeśli zakres nie jest jeszcze znany. Zapisz pojazd klienta: VIN, numer rejestracyjny, przebieg, markę, model i specyfikację. Historia zmian rezerwacji i każdej pracy pozwala sprawdzić, kto, kiedy i co zmienił."
+          ],
+          "list_intro": "Przydatne funkcje rezerwacji warsztatowych:",
+          "items": [
+            "Dołączanie plików do rezerwacji (.pdf, .xlsx, .png i innych).",
+            "Przyznawanie rabatów na prace.",
+            "Częściowe zamykanie rezerwacji i tworzenie wielu protokołów wykonanych prac dla jednej rezerwacji.",
+            "Mechanik może oznaczać prace jako wykonane bez zamykania rezerwacji, co ułatwia kontrolę postępu.",
+            "Wprowadzony przebieg jest zapisywany w garażu klienta. Więcej w kolejnych sekcjach."
+          ]
+        },
+        {
+          "id": "statistics",
+          "title": "Statystyki",
+          "image_src": "/imgs/vx-screenshot-1.png",
+          "image_alt": "Statystyki",
+          "paragraphs": [
+            "Statystyki warsztatu w Vortex skupiają wszystkie najważniejsze parametry firmy w jednym rozbudowanym module."
+          ],
+          "list_intro": "Parametry te obejmują:",
+          "items": [
+            "Zarobki według stanowiska",
+            "Zarobki według mechanika",
+            "Zarobki według doradcy serwisowego",
+            "Łączne zarobki warsztatu",
+            "Wydatki warsztatu według kategorii",
+            "Lista najpopularniejszych prac",
+            "Prace wykonane przez mechanika w danym okresie"
+          ]
+        },
+        {
+          "id": "calendar",
+          "title": "Kalendarz rezerwacji",
+          "image_src": "/imgs/car-service/calendar.png",
+          "image_alt": "Kalendarz rezerwacji",
+          "paragraphs": [
+            "Kalendarz przejrzyście pokazuje pracę warsztatu, pomaga szybko znaleźć wolne terminy i ułatwia zarządzanie rezerwacjami."
+          ],
+          "list_intro": "Kalendarz ma dwa widoki:",
+          "items": [
+            "Wszystkie stanowiska w wybranym dniu.",
+            "Wybrane stanowisko na cały tydzień."
+          ],
+          "closing_paragraphs": [
+            "Utwórz rezerwację, klikając godzinę rozpoczęcia i zakończenia prac. Możesz też szybko edytować, anulować lub zamykać rezerwacje.",
+            "Każdy klient Vortex ma koszyk, który może zawierać również prace warsztatowe. Najpierw dodaj potrzebne prace, a następnie utwórz rezerwację w kalendarzu na podstawie koszyka."
+          ]
+        },
+        {
+          "id": "mileage",
+          "title": "Historia przebiegu",
+          "image_src": "/imgs/car-service/company.png",
+          "image_alt": "Historia przebiegu",
+          "paragraphs": [
+            "Dane pojazdu z rezerwacji są zapisywane w garażu klienta. Wpisanie przebiegu tworzy wpis w historii, pokazujący wykonane prace i przebieg w momencie ich realizacji, co ułatwia planowanie przeglądów.",
+            "Moduł historii przebiegu obsługuje przypomnienia według daty, przebiegu lub obu warunków. Przypomnienie daty wysyła klientowi SMS w wybranym dniu. Przypomnienie przebiegu powiadamia menedżera, gdy nowa rezerwacja zawiera przebieg większy od ustalonego progu."
+          ]
+        }
+      ]
+    }
   }
 }

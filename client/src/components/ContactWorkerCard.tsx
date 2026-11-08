@@ -1,3 +1,4 @@
+import { useI18n } from '../context/ContentContext';
 import type { ContactWorker } from '../types/content';
 
 const messengerIcons: Record<keyof ContactWorker['messenger_links'], string> = {
@@ -26,6 +27,7 @@ function getSafeMessengerLink(link: string) {
 }
 
 function ContactWorkerCard({ worker }: { worker: ContactWorker }) {
+  const { t } = useI18n();
   const phoneHref = `tel:${worker.phone.replace(/[^+\d]/g, '')}`;
   const messengerEntries = Object.entries(worker.messenger_links) as Array<
     [keyof ContactWorker['messenger_links'], string | undefined]
@@ -51,7 +53,7 @@ function ContactWorkerCard({ worker }: { worker: ContactWorker }) {
         <span>{worker.phone}</span>
       </a>
 
-      <div className="contact-worker-messengers" aria-label={`Месенджери: ${worker.full_name}`}>
+      <div className="contact-worker-messengers" aria-label={t('common.messengers', { name: worker.full_name })}>
         {messengerEntries.map(([messenger, link]) => link && (
           <a
             key={messenger}

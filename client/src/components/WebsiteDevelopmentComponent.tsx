@@ -1,28 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useI18n } from '../context/ContentContext';
 import { useInitialContent } from '../context/ContentContext';
-import { getHomepageContent } from '../services/api';
-import type { WebsiteDevelopmentSection } from '../types/content';
 
 function WebsiteDevelopmentComponent() {
-  const initialContent = useInitialContent()?.homepage.website_development_section ?? null;
-  const [content, setContent] = useState<WebsiteDevelopmentSection | null>(initialContent);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (content) {
-      return;
-    }
-
-    getHomepageContent('website_development_section')
-      .then(setContent)
-      .catch((loadError: unknown) => {
-        setError(loadError instanceof Error ? loadError.message : 'Unknown error');
-      });
-  }, [content]);
+  const { t } = useI18n();
+  const content = useInitialContent()?.homepage.website_development_section ?? null;
 
   return (
-    <section className="section-container website-development-section">
-      {error && <p className="website-development-status">{error}</p>}
+    <section className="section-container website-development-section" id="website-development">
 
       {content && (
         <div className="website-development-wrapper">
@@ -37,7 +21,7 @@ function WebsiteDevelopmentComponent() {
             <div className="website-development-preview-card">
               <img
                 src={content.website_image_src}
-                alt="Приклад шаблонного сайту магазину автозапчастин"
+                alt={t('website.alt')}
               />
             </div>
 

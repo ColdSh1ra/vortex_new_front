@@ -1,0 +1,194 @@
+.car-service-route {
+  background: var(--blue-color-5);
+  color: var(--grey-dark-text);
+  position: relative;
+  padding-top: 1px;
+}
+
+.car-service-route::before {
+  background: #fff;
+  content: "";
+  height: 110px;
+  position: absolute;
+  inset: 0 0 auto;
+}
+
+.car-service-route .main-content {
+  width: 100%;
+}
+
+.car-service-page-content {
+  padding: 56px var(--desktop-padding) 0;
+}
+
+.car-service-breadcrumbs {
+  border-bottom: 2px solid var(--grey-color-100);
+  padding-bottom: 20px;
+  margin-bottom: 36px;
+}
+
+.car-service-breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.car-service-breadcrumbs a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.car-service-breadcrumbs [aria-current] {
+  color: var(--grey-color-200);
+}
+
+.car-service-intro {
+  background: var(--grey-color-100);
+  border-radius: 20px;
+  padding: 32px 24px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.car-service-intro h1,
+.car-service-copy h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.car-service-intro p {
+  color: var(--blue-color-3);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 800px;
+  margin: 12px auto 0;
+}
+
+.car-service-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.car-service-block {
+  align-items: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 40px;
+}
+
+.car-service-block-reverse .car-service-copy {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.car-service-block-reverse .car-service-image {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.car-service-copy {
+  min-width: 0;
+}
+
+.car-service-copy h2 {
+  margin-bottom: 20px;
+}
+
+.car-service-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.car-service-text p {
+  margin: 0;
+}
+
+.car-service-image {
+  border-radius: 20px;
+  display: block;
+  height: auto;
+  width: 100%;
+  min-width: 0;
+}
+
+.car-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.car-service-list li {
+  background: url('/imgs/sm-dark-blue-logo.svg') no-repeat left 2px / 16px;
+  padding-left: 20px;
+}
+
+.car-service-documents a {
+  color: inherit;
+}
+
+.car-service-text small {
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.car-service-bottom-transition {
+  height: 200px;
+  background: linear-gradient(#fff 0%, #d9d1be 30%, var(--blue-color-5) 100%);
+}
+
+.car-service-page > .pricing-calculator-section,
+.car-service-page > .trial-request-section {
+  color: #fff;
+}
+
+.car-service-route .car-service-page {
+  background-color: var(--blue-color-5);
+}
+
+.car-service-page-content {
+  background: #fff;
+}
+
+
+@media (max-width: 1024px) {
+  .car-service-intro h1,
+  .car-service-copy h2 {
+    font-size: 32px;
+  }
+
+  .car-service-block { column-gap: 24px; }
+}
+
+@media (max-width: 768px) {
+  .car-service-page-content {
+    padding: 32px var(--mobile-padding) 0;
+  }
+
+  .car-service-breadcrumbs {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  .car-service-intro { padding: 28px 16px; }
+  .car-service-intro p { font-size: 22px; }
+  .car-service-block { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .car-service-block-reverse .car-service-copy,
+  .car-service-block-reverse .car-service-image { grid-column: auto; grid-row: auto; }
+  .car-service-copy h2 { font-size: 30px; margin-bottom: 16px; }
+  .car-service-bottom-transition { height: 140px; }
+}

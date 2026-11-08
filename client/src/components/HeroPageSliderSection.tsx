@@ -1,34 +1,15 @@
+import { useI18n } from '../context/ContentContext';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import {getHomepageContent} from "../services/api";
-import type { HeroPageSliderSection as HeroPageSliderSectionContent } from "../types/content";
 import { useInitialContent } from '../context/ContentContext';
 
 function HeroPageSliderSection() {
-    const initialContent = useInitialContent()?.homepage.hero_page_slider_section ?? null;
-    const [content, setContent] = useState<HeroPageSliderSectionContent | null>(initialContent)
-    const [isLoading, setIsLoading] = useState<boolean>(!initialContent)
-    const [error, setError] = useState<string | null>(null)
+  const { t } = useI18n();
+    const content = useInitialContent()?.homepage.hero_page_slider_section ?? null;
+
+
     const [currentSlide, setCurrentSlide] = useState(0)
     const carouselRef = useRef<HTMLDivElement>(null)
     const scrollAnimationFrame = useRef<number | null>(null)
-
-    useEffect(() => {
-        if (content) {
-            return;
-        }
-
-        async function loadContent() {
-            try {
-                const sliderSectionContent = await getHomepageContent("hero_page_slider_section");
-                setContent(sliderSectionContent);
-            } catch (loadError) {
-                setError(loadError instanceof Error ? loadError.message : 'Unknown error')
-            } finally {
-                setIsLoading(false)
-            }
-        }
-        loadContent();
-    }, [content])
 
     const scrollToSlide = useCallback((requestedSlide: number) => {
         if (!content) {
@@ -118,8 +99,6 @@ function HeroPageSliderSection() {
 
     return (
         <section className={'section-container hero-page-slider-section'}>
-            {isLoading && <div className={'loading'}>Іде завантаження</div>}
-            {error && <div className={'error'}>{error}</div>}
             {content && (
                 <div className={'slider-wrapper'}>
                     <h2 className={'section-title'}>
@@ -127,10 +106,10 @@ function HeroPageSliderSection() {
                     </h2>
 
                     <div className={'carousel-buttons'}>
-                        <button type="button" onClick={goToPreviousSlide} aria-label="Previous slide">
+                        <button type="button" onClick={goToPreviousSlide} aria-label={t('common.previous')}>
                             <img src="/icons/slider_scroll_right.svg" alt="" />
                         </button>
-                        <button type="button" onClick={goToNextSlide} aria-label="Next slide">
+                        <button type="button" onClick={goToNextSlide} aria-label={t('common.next')}>
                             <img src="/icons/slider_scroll_right.svg" alt="" />
                         </button>
                     </div>
@@ -149,7 +128,7 @@ function HeroPageSliderSection() {
                                     <img
                                         className={'image slider-image'}
                                         src={slidePath}
-                                        alt={`Slide ${index + 1}`}
+                                        alt={t('common.slide', { number: index + 1 })}
                                         draggable={false} />
                                 </div>
                             ))}

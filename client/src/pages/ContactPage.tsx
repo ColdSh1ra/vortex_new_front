@@ -1,54 +1,28 @@
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ContactWorkerCard from '../components/ContactWorkerCard';
 import TrialRequestComponent from '../components/TrialRequestComponent';
-import { useInitialContent } from '../context/ContentContext';
-import { getContent } from '../services/api';
-import type { VortexContent } from '../types/content';
+import { useI18n } from '../context/ContentContext';
 
 function ContactPage() {
-  const initialContent = useInitialContent();
-  const [content, setContent] = useState<VortexContent | null>(initialContent);
-
-  useEffect(() => {
-    if (content) {
-      return;
-    }
-
-    let isMounted = true;
-
-    getContent()
-      .then((loadedContent) => {
-        if (isMounted) {
-          setContent(loadedContent);
-        }
-      })
-      .catch(() => {
-        // Content will appear after the API is available.
-      });
-
-    return () => {
-      isMounted = false;
-    };
-  }, [content]);
+  const { content, t } = useI18n();
 
   const contacts = content?.contacts;
 
   return (
     <div className="contacts-page">
       <div className="contacts-page-content">
-        <nav className="contacts-breadcrumbs" aria-label="Хлібні крихти">
+        <nav className="contacts-breadcrumbs" aria-label={t('common.breadcrumbs')}>
           <ol>
-            <li><Link to="/">Головна сторінка</Link></li>
+            <li><Link to="/">{t('common.home')}</Link></li>
             <li aria-hidden="true">/</li>
-            <li aria-current="page">Контакти</li>
+            <li aria-current="page">{t('nav.contacts')}</li>
           </ol>
         </nav>
 
         <section className="contacts-section" aria-labelledby="contacts-heading">
           <header className="contacts-intro">
-            <h1 id="contacts-heading">{contacts?.title ?? 'Контакти'}</h1>
-            <p>{contacts?.subtitle ?? 'Залишились запитання? Ми завжди раді допомогти Вам.'}</p>
+            <h1 id="contacts-heading">{contacts?.title}</h1>
+            <p>{contacts?.subtitle}</p>
           </header>
 
           <div className="contacts-workers-grid">

@@ -1,3 +1,4 @@
+import { useI18n } from '../../context/ContentContext';
 import type { CSSProperties } from 'react';
 import type { IntegrationNode } from './integrationData';
 
@@ -8,6 +9,7 @@ type IntegrationBranchProps = {
 };
 
 function IntegrationBranch({ integration, hubX, hubY }: IntegrationBranchProps) {
+  const { t } = useI18n();
   const branchStyle = {
     '--branch-delay': `-${integration.animationDelay}ms`,
   } as CSSProperties;
@@ -48,7 +50,7 @@ function IntegrationBranch({ integration, hubX, hubY }: IntegrationBranchProps) 
         className={`integration-node integration-node-${integration.size}`}
         style={nodeStyle}
       >
-        <img src={integration.imageSrc} alt={integration.name} decoding="async" />
+        <img src={integration.imageSrc} alt={integration.name.startsWith('supplier.') ? t(integration.name) : integration.name} decoding="async" />
       </div>
     </>
   );

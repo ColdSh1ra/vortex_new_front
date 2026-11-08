@@ -151,6 +151,8 @@ export type ContactsContent = {
 };
 
 export type VortexContent = {
+  ui: Record<string, string>;
+  car_service: CarServicePageContent;
   homepage: HomepageContent;
   FAQ: FaqDataItem[];
   videos: FaqDataItem[];
@@ -163,3 +165,24 @@ export type VortexContent = {
     formSubmissions: number;
   };
 };
+
+export type CarServicePageContent = {
+  title: string;
+  subtitle: string;
+  blocks: {
+    id: string;
+    title: string;
+    image_src: string;
+    image_alt: string;
+    paragraphs: string[];
+    list_intro?: string;
+    items?: string[];
+    closing_paragraphs?: string[];
+    documents?: { label: string; href: string | null }[];
+    note?: string;
+  }[];
+};
+
+export const LANGUAGES = ['ua', 'cz', 'sk', 'en', 'pl'] as const;
+export type Language = typeof LANGUAGES[number];
+export type ContentCatalog = Record<Language, VortexContent>;
