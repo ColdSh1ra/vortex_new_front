@@ -4,6 +4,8 @@ import CircleButtonLink from "../default/CircleButtonLink";
 function getFooterMenuLinks(t: (key: string) => string) { return [
     { name: t("nav.carService"), path: "/car-service" },
     { name: t("nav.websites"), path: "/websites" },
+    { name: t("nav.dismantling"), path: "/auto-dismantling" },
+    { name: t("nav.tecdoc"), path: "/tecdoc-license" },
     { name: t("nav.pricing"), path: "/#pricing" },
     { name: t("nav.faq"), path: "/faq" },
     { name: t("nav.contacts"), path: "/contact" },

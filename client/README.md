@@ -113,3 +113,23 @@ for production. Use one image format per filename.
 
 Choosing a package scrolls to the form and includes `website_package` and the
 `websites` source in the request and Telegram notification.
+
+## TecDoc license page
+
+`/tecdoc-license` uses `src/pages/TecDocLicensePage.tsx` and `src/styles/tecdoc.css`.
+The copy and two feature illustrations come from https://crm-vortex.com/tecdoc-license.
+All five language versions are in `src/locales/{ua,cz,sk,en,pl}.json`.
+The hero has no image, and the original integration logos are excluded.
+
+The shared request form uses `requested_product: 'tecdoc'` and
+`source_page: 'tecdoc-license'`. Successful delivery uses the existing server-side
+reCAPTCHA verification and Telegram recipients. The message is:
+
+```text
+Нова заявка на ліцензію TecDoc
+Ім'я: Геннадій, Номер телефону: 0503311565
+```
+
+As with Vortex requests, sending requires `VITE_RECAPTCHA_SITE_KEY` on the client
+and `RECAPTCHA_SECRET_KEY` plus `TELEGRAM_BOT_TOKEN` on the server. Delivery failures
+do not display a success message or clear the form.

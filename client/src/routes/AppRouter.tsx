@@ -7,6 +7,8 @@ import FaqPage from '../pages/FaqPage';
 import MainPage from '../pages/MainPage';
 import CarServicePage from '../pages/CarServicePage';
 import WebsiteDevelopmentPage from '../pages/WebsiteDevelopmentPage';
+import AutoDismantlingPage from '../pages/AutoDismantlingPage';
+import TecDocLicensePage from '../pages/TecDocLicensePage';
 import { useI18n } from '../context/ContentContext';
 import { loadPageStyles } from '../styles/loadPageStyles';
 
@@ -18,10 +20,14 @@ function AppRouter() {
   const isContactPage = location.pathname === '/contact' || location.pathname.startsWith('/contact/');
   const isCarServicePage = location.pathname === '/car-service' || location.pathname.startsWith('/car-service/');
   const isWebsitesPage = location.pathname === '/websites' || location.pathname.startsWith('/websites/');
+  const isDismantlingPage = location.pathname === '/auto-dismantling' || location.pathname.startsWith('/auto-dismantling/');
+  const isTecDocPage = location.pathname === '/tecdoc-license' || location.pathname.startsWith('/tecdoc-license/');
   const routeClassName = isFaqPage ? ' faq-route'
     : isContactPage ? ' contacts-route'
       : isCarServicePage ? ' car-service-route'
-        : isWebsitesPage ? ' websites-route' : '';
+        : isWebsitesPage ? ' websites-route'
+          : isDismantlingPage ? ' dismantling-route'
+            : isTecDocPage ? ' tecdoc-route' : '';
 
   useEffect(() => {
     let active = true;
@@ -50,6 +56,8 @@ function AppRouter() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/car-service" element={<CarServicePage />} />
             <Route path="/websites" element={<WebsiteDevelopmentPage />} />
+            <Route path="/auto-dismantling" element={<AutoDismantlingPage />} />
+            <Route path="/tecdoc-license" element={<TecDocLicensePage />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

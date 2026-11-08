@@ -16,9 +16,7 @@ function buildTelegramMessage({
   website_package,
 }) {
   if (requested_product === 'tecdoc') {
-    const error = new Error('TecDoc requests are not implemented yet');
-    error.code = 'PRODUCT_NOT_IMPLEMENTED';
-    throw error;
+    return `Нова заявка на ліцензію TecDoc\nІм'я: ${name}, Номер телефону: ${phone}`;
   }
 
   if (requested_product !== 'vortex') {
@@ -29,7 +27,7 @@ function buildTelegramMessage({
 
   const messageLines = [
     source_page === 'websites' ? 'Нова заявка на розробку сайту Vortex' : 'Нова заявка на тестову Vortex',
-    `Сторінка: ${{ home: 'Головна', contact: 'Контакти', 'car-service': 'Облік СТО', websites: 'Розробка веб-сайтів' }[source_page] || source_page}`,
+    `Сторінка: ${{ home: 'Головна', contact: 'Контакти', 'car-service': 'Облік СТО', websites: 'Розробка веб-сайтів', 'auto-dismantling': 'Автошрот' }[source_page] || source_page}`,
     `Мова: ${language}`,
     `Ім'я: <b>${name}</b>`,
     `Номер телефону: <b>${phone}</b>`,

@@ -1,0 +1,115 @@
+.dismantling-route {
+  background: #fff;
+  color: var(--grey-dark-text);
+  display: flow-root;
+}
+
+.dismantling-light-content { padding: 56px var(--content-gutter) 0; }
+.dismantling-breadcrumbs { border-bottom: 2px solid var(--grey-color-100); padding-bottom: 20px; }
+.dismantling-breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+.dismantling-breadcrumbs a { color: inherit; text-decoration: none; }
+.dismantling-breadcrumbs a:hover { text-decoration: underline; }
+.dismantling-breadcrumbs [aria-current],
+.dismantling-breadcrumbs [aria-hidden] { color: var(--grey-color-200); }
+
+.dismantling-hero { align-items: center; display: grid; gap: 24px; grid-template-columns: 1.1fr 1fr; padding: 44px 0 36px; }
+.dismantling-eyebrow { color: var(--blue-color-2); font-size: 14px; font-weight: 600; letter-spacing: .06em; margin: 0 0 20px; text-transform: uppercase; }
+.dismantling-hero h1 { font-size: clamp(40px, 4.2vw, 64px); font-weight: 700; line-height: 1.05; margin: 0; text-transform: uppercase; }
+.dismantling-hero h1 > span { display: block; font-size: .7em; line-height: 1.12; margin-top: 12px; max-width: 600px; }
+.dismantling-lead { color: var(--blue-color-2); font-size: 20px; line-height: 1.5; margin: 24px 0 28px; max-width: 580px; }
+.dismantling-cta { align-items: center; background: var(--orange-bg-color); border-radius: 999px; color: var(--grey-dark-text); display: inline-flex; font-size: 16px; font-weight: 600; gap: 24px; min-height: 44px; padding: 8px 8px 8px 20px; text-decoration: none; }
+.dismantling-cta > span { align-items: center; background: rgb(255 255 255 / .45); border-radius: 50%; display: flex; font-size: 22px; height: 30px; justify-content: center; width: 30px; }
+.dismantling-cta:hover { background: #ffd16f; }
+.dismantling-page a:focus-visible { outline: 2px solid var(--blue-color-2); outline-offset: 4px; }
+.dismantling-hero-art { background: radial-gradient(ellipse, rgb(255 172 0 / .12), transparent 68%); }
+.dismantling-hero-art img { display: block; height: auto; width: 100%; }
+.dismantling-section-links { display: grid; gap: 8px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 80px; }
+.dismantling-section-links a { align-items: center; background: #f1f2f4; border-radius: 12px; color: var(--grey-dark-text); display: flex; font-size: 18px; font-weight: 600; gap: 16px; min-height: 72px; padding: 20px; text-decoration: none; }
+.dismantling-section-links a:hover { background: #e5e7eb; }
+.dismantling-section-number { color: var(--blue-color-2); font-size: 16px; }
+.dismantling-section-links a > span:last-child { margin-left: auto; }
+
+.dismantling-page h2 { font-size: 40px; line-height: 1.1; margin: 0 0 20px; text-transform: uppercase; }
+.dismantling-page h3 { font-size: 26px; line-height: 1.2; margin: 0 0 12px; }
+.dismantling-vehicle { align-items: center; background: #f1f2f4; border-radius: 20px; display: grid; gap: 32px 48px; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); padding: 40px; }
+.dismantling-record-art img { display: block; height: auto; margin: 0 auto; max-width: 380px; width: 100%; }
+.dismantling-vehicle-copy > p:not(.dismantling-eyebrow) { color: var(--blue-color-2); font-size: 18px; line-height: 1.5; margin: 0 0 24px; }
+.dismantling-fields { display: grid; gap: 12px 24px; grid-template-columns: repeat(2, minmax(0, 1fr)); list-style: none; margin: 0; padding: 0; }
+.dismantling-fields li { background: url('/imgs/sm-dark-blue-logo.svg') no-repeat left 2px / 18px; font-size: 18px; line-height: 1.3; padding-left: 28px; }
+.dismantling-vehicle-benefits { display: grid; gap: 8px; grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.dismantling-vehicle-benefits article { background: #fff; border-radius: 12px; padding: 28px; }
+.dismantling-vehicle-benefits p { color: var(--blue-color-2); font-size: 18px; line-height: 1.45; margin: 0; }
+
+.dismantling-statuses { padding-top: 96px; }
+.dismantling-section-intro { margin: 0 auto 36px; max-width: 760px; text-align: center; }
+.dismantling-section-intro > p:last-child { color: var(--blue-color-2); font-size: 20px; line-height: 1.45; margin: 0; }
+.dismantling-status-grid { display: grid; gap: 8px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.dismantling-status { border-radius: 20px; padding: 36px; }
+.dismantling-status-active { background: var(--blue-color-3); color: #fff; }
+.dismantling-status-archived { background: #f1f2f4; }
+.dismantling-status-label { align-items: center; border: 1px solid rgb(121 129 146 / .4); border-radius: 999px; display: inline-flex; font-size: 14px; gap: 8px; margin-bottom: 28px; padding: 8px 12px; }
+.dismantling-status-label > span { background: var(--orange-bg-color); border-radius: 50%; height: 8px; width: 8px; }
+.dismantling-status-archived .dismantling-status-label > span { background: var(--grey-color-200); }
+.dismantling-status > p { font-size: 18px; line-height: 1.5; margin: 0; max-width: 520px; }
+.dismantling-status-archived > p { color: var(--blue-color-2); }
+
+.dismantling-transition { background: linear-gradient(#fff, #f5f6f8 20%, #9ba0a8 55%, var(--blue-color-5)); height: 200px; }
+.dismantling-parts { background: var(--blue-color-5); color: #fff; padding: 0 var(--content-gutter) 60px; }
+.dismantling-parts-intro { align-items: center; display: grid; gap: 48px; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
+.dismantling-parts .dismantling-eyebrow { color: var(--grey-color-100); }
+.dismantling-parts h2 { color: var(--orange-bg-color); }
+.dismantling-parts-intro header > p:last-child { font-size: 20px; line-height: 1.5; margin: 0; max-width: 680px; }
+.dismantling-parts-intro > img { display: block; height: auto; max-width: 400px; width: 100%; justify-self: center; }
+.dismantling-methods { display: grid; gap: 8px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 32px; }
+.dismantling-method { background: var(--blue-color-3); border-radius: 20px; padding: 32px; }
+.dismantling-method-number { color: var(--orange-bg-color); display: block; font-size: 24px; font-weight: 700; margin-bottom: 24px; }
+.dismantling-method > p { font-size: 18px; line-height: 1.45; margin: 0; }
+.dismantling-workflow { border: 1px solid var(--blue-color-2); border-radius: 20px; margin-top: 8px; padding: 32px; }
+.dismantling-workflow ol { counter-reset: dismantling-step; display: grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; margin: 24px 0; padding: 0; }
+.dismantling-workflow li { align-items: flex-start; counter-increment: dismantling-step; display: flex; font-size: 18px; gap: 12px; line-height: 1.4; }
+.dismantling-workflow li::before { align-items: center; background: var(--blue-color-3); border-radius: 50%; color: var(--orange-bg-color); content: counter(dismantling-step); display: flex; flex: 0 0 28px; font-size: 16px; height: 28px; justify-content: center; }
+.dismantling-workflow > p { border-top: 1px solid var(--blue-color-2); color: var(--grey-color-100); font-size: 16px; line-height: 1.45; margin: 0; padding-top: 20px; }
+.app-shell.dismantling-route .section-container.trial-request-section { padding-top: 60px; padding-bottom: 100px; }
+.dismantling-route .footer { box-shadow: 0 0 0 100vmax var(--blue-color-5); clip-path: inset(0 -100vmax); }
+#dismantling-vehicle, #dismantling-statuses, #dismantling-parts { scroll-margin-top: 80px; }
+
+@media (max-width: 1100px) {
+  .dismantling-hero h1 { font-size: 48px; }
+  .dismantling-vehicle { gap: 24px; padding: 28px; }
+  .dismantling-method { padding: 24px; }
+  .dismantling-section-links a { gap: 10px; padding: 16px; }
+}
+
+@media (max-width: 768px) {
+  .dismantling-light-content { padding-top: 32px; }
+  .dismantling-breadcrumbs { font-size: 14px; padding-bottom: 20px; }
+  .dismantling-hero { gap: 0; grid-template-columns: minmax(0, 1fr); padding: 36px 0 24px; }
+  .dismantling-hero h1 { font-size: 40px; }
+  .dismantling-hero h1 > span { font-size: 30px; }
+  .dismantling-eyebrow { font-size: 12px; margin-bottom: 16px; }
+  .dismantling-lead { font-size: 18px; line-height: 1.45; margin-top: 20px; }
+  .dismantling-hero-art { max-width: 380px; width: 100%; justify-self: center; }
+  .dismantling-section-links { grid-template-columns: minmax(0, 1fr); margin-bottom: 48px; }
+  .dismantling-section-links a { min-height: 56px; padding: 16px; }
+  .dismantling-page h2 { font-size: 30px; }
+  .dismantling-page h3 { font-size: 24px; }
+  .dismantling-vehicle { grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 24px 20px; }
+  .dismantling-record-art { grid-row: 2; }
+  .dismantling-record-art img { max-width: 250px; }
+  .dismantling-fields { gap: 12px; }
+  .dismantling-fields li { font-size: 16px; }
+  .dismantling-vehicle-benefits { grid-template-columns: minmax(0, 1fr); }
+  .dismantling-vehicle-benefits article { padding: 24px 20px; }
+  .dismantling-statuses { padding-top: 60px; }
+  .dismantling-section-intro > p:last-child { font-size: 18px; }
+  .dismantling-status-grid { grid-template-columns: minmax(0, 1fr); }
+  .dismantling-status { padding: 28px 24px; }
+  .dismantling-transition { height: 140px; }
+  .dismantling-parts-intro { gap: 16px; grid-template-columns: minmax(0, 1fr); }
+  .dismantling-parts-intro header > p:last-child { font-size: 18px; }
+  .dismantling-parts-intro > img { max-width: 280px; }
+  .dismantling-methods, .dismantling-workflow ol { grid-template-columns: minmax(0, 1fr); }
+  .dismantling-methods { margin-top: 16px; }
+  .dismantling-method, .dismantling-workflow { padding: 28px 24px; }
+  .app-shell.dismantling-route .section-container.trial-request-section { padding-top: 32px; padding-bottom: 80px; }
+}

@@ -1,0 +1,106 @@
+.tecdoc-route { background: #fff; color: var(--grey-dark-text); display: flow-root; }
+.tecdoc-light-content { padding: 56px var(--content-gutter) 0; }
+.tecdoc-breadcrumbs { border-bottom: 2px solid var(--grey-color-100); padding-bottom: 20px; }
+.tecdoc-breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+.tecdoc-breadcrumbs a { color: inherit; text-decoration: none; }
+.tecdoc-breadcrumbs a:hover { text-decoration: underline; }
+.tecdoc-breadcrumbs [aria-current], .tecdoc-breadcrumbs [aria-hidden] { color: var(--grey-color-200); }
+.tecdoc-page a:focus-visible { outline: 2px solid var(--blue-color-2); outline-offset: 4px; }
+
+.tecdoc-hero { margin: 0 auto; max-width: 1100px; padding: 72px 0 56px; text-align: center; }
+.tecdoc-eyebrow { color: var(--blue-color-2); font-size: 14px; font-weight: 600; letter-spacing: .06em; margin: 0 0 20px; text-transform: uppercase; }
+.tecdoc-hero > .tecdoc-eyebrow { background: #f1f2f4; border-radius: 999px; display: inline-block; padding: 10px 18px; }
+.tecdoc-hero h1 { font-size: clamp(40px, 4.4vw, 64px); line-height: 1.08; margin: 0 auto; max-width: 920px; text-transform: uppercase; }
+.tecdoc-hero h1 > span { color: var(--orange-bg-color); display: block; margin-bottom: 8px; }
+.tecdoc-hero-description { color: var(--blue-color-2); font-size: 22px; line-height: 1.45; margin: 24px auto 28px; max-width: 700px; }
+.tecdoc-hero-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.tecdoc-primary-link, .tecdoc-secondary-link { align-items: center; border-radius: 999px; color: var(--grey-dark-text); display: inline-flex; font-size: 16px; font-weight: 600; gap: 24px; min-height: 46px; text-decoration: none; }
+.tecdoc-primary-link { background: var(--orange-bg-color); padding: 8px 8px 8px 20px; }
+.tecdoc-primary-link > span { align-items: center; background: rgb(255 255 255 / .45); border-radius: 50%; display: flex; font-size: 22px; height: 30px; justify-content: center; width: 30px; }
+.tecdoc-primary-link:hover { background: #ffd16f; }
+.tecdoc-secondary-link { border: 1px solid var(--grey-color-100); padding: 12px 20px; }
+.tecdoc-secondary-link:hover { background: #f1f2f4; }
+.tecdoc-hero-details { border-top: 1px solid var(--grey-color-100); color: var(--blue-color-2); display: flex; flex-wrap: wrap; font-size: 14px; gap: 16px 36px; justify-content: center; margin: 48px auto 0; max-width: 820px; padding-top: 24px; }
+.tecdoc-hero-details > span { align-items: center; display: flex; gap: 10px; }
+.tecdoc-hero-details > span::before { background: var(--orange-bg-color); border-radius: 50%; content: ""; height: 6px; width: 6px; }
+
+.tecdoc-about { padding: 36px 0 80px; }
+.tecdoc-page h2 { font-size: 40px; line-height: 1.12; margin: 0 0 24px; text-transform: uppercase; }
+.tecdoc-page h3 { font-size: 26px; line-height: 1.2; margin: 0 0 20px; }
+.tecdoc-about > h2 { margin: 0 auto 36px; max-width: 800px; text-align: center; }
+.tecdoc-about-grid { display: grid; gap: 8px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tecdoc-about-grid > article { border-radius: 20px; padding: 36px; }
+.tecdoc-about-catalog { background: #f1f2f4; }
+.tecdoc-about-vortex { background: var(--blue-color-3); color: #fff; }
+.tecdoc-about-vortex h3 { color: var(--orange-bg-color); }
+.tecdoc-about-grid p { font-size: 18px; line-height: 1.5; margin: 0 0 18px; }
+.tecdoc-about-grid p:last-child { margin-bottom: 0; }
+
+.tecdoc-feature-intro, .tecdoc-rmi { align-items: center; display: grid; gap: 48px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tecdoc-feature-intro header > p:last-child, .tecdoc-rmi-copy > p:not(.tecdoc-eyebrow) { color: var(--blue-color-2); font-size: 20px; line-height: 1.5; margin: 0; }
+.tecdoc-feature-image { border-radius: 20px; overflow: hidden; }
+.tecdoc-feature-image img { display: block; height: auto; width: 100%; }
+.tecdoc-statistics { display: grid; gap: 8px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 32px 0 0; }
+.tecdoc-statistics > div { background: #f1f2f4; border-radius: 16px; display: flex; flex-direction: column-reverse; gap: 8px; padding: 24px; }
+.tecdoc-statistics dt { color: var(--blue-color-2); font-size: 18px; }
+.tecdoc-statistics dd { align-items: baseline; display: flex; flex-wrap: wrap; font-size: 40px; font-weight: 700; gap: 6px; line-height: 1.1; margin: 0; }
+.tecdoc-statistics dd > small { font-size: 20px; }
+.tecdoc-rmi { padding: 96px 0 0; }
+.tecdoc-rmi-copy ul { display: grid; gap: 16px; list-style: none; margin: 28px 0 0; padding: 0; }
+.tecdoc-rmi-copy li { background: url('/imgs/sm-dark-blue-logo.svg') no-repeat left 2px / 20px; font-size: 18px; line-height: 1.4; padding-left: 32px; }
+.tecdoc-bottom-transition { background: linear-gradient(#fff, #f5f6f8 20%, #9ba0a8 55%, var(--blue-color-5)); height: 200px; }
+
+.app-shell.tecdoc-route .section-container.trial-request-section { padding-top: 32px; padding-bottom: 100px; }
+.tecdoc-route .trial-request-wrapper { gap: 40px; min-height: 0; }
+.tecdoc-route .trial-request-content { padding-top: 32px; padding-bottom: 32px; }
+.tecdoc-license-price { align-self: stretch; background: var(--blue-color-4); border-radius: 16px; color: #fff; display: flex; flex-direction: column; justify-content: center; padding: 48px 36px; }
+.tecdoc-license-price > .tecdoc-eyebrow { color: var(--grey-color-100); }
+.tecdoc-license-price-value { color: var(--orange-bg-color); font-size: 88px; font-weight: 700; line-height: 1; margin: 0 0 12px; }
+.tecdoc-license-price-period { font-size: 22px; font-weight: 600; margin: 0 0 28px; }
+.tecdoc-license-price-terms { border-top: 1px solid var(--blue-color-2); font-size: 18px; line-height: 1.5; margin: 0; padding-top: 24px; }
+.tecdoc-license-price-trial { color: var(--grey-color-100); font-size: 18px; line-height: 1.5; margin: 20px 0 0; }
+.tecdoc-route .footer { box-shadow: 0 0 0 100vmax var(--blue-color-5); clip-path: inset(0 -100vmax); }
+#tecdoc-features { scroll-margin-top: 80px; }
+
+@media (max-width: 1100px) {
+  .tecdoc-about-grid > article { padding: 28px; }
+  .tecdoc-feature-intro, .tecdoc-rmi { gap: 28px; }
+  .tecdoc-statistics > div { padding: 20px; }
+  .tecdoc-statistics dd { font-size: 34px; }
+  .tecdoc-route .trial-request-wrapper { gap: 24px; }
+  .tecdoc-license-price { padding: 36px 28px; }
+}
+
+@media (max-width: 850px) {
+  .tecdoc-route .trial-request-wrapper { gap: 0; }
+}
+
+@media (max-width: 768px) {
+  .tecdoc-light-content { padding-top: 32px; }
+  .tecdoc-breadcrumbs { font-size: 14px; }
+  .tecdoc-hero { padding-top: 40px; padding-bottom: 32px; }
+  .tecdoc-hero h1 { font-size: 40px; }
+  .tecdoc-eyebrow { font-size: 12px; margin-bottom: 16px; }
+  .tecdoc-hero-description { font-size: 18px; margin-top: 20px; }
+  .tecdoc-hero-actions { align-items: stretch; flex-direction: column; }
+  .tecdoc-primary-link, .tecdoc-secondary-link { justify-content: center; }
+  .tecdoc-hero-details { align-items: center; flex-direction: column; gap: 12px; margin-top: 32px; }
+  .tecdoc-page h2 { font-size: 30px; }
+  .tecdoc-page h3 { font-size: 24px; }
+  .tecdoc-about { padding-top: 28px; padding-bottom: 56px; }
+  .tecdoc-about > h2 { margin-bottom: 24px; }
+  .tecdoc-about-grid, .tecdoc-feature-intro, .tecdoc-rmi { grid-template-columns: minmax(0, 1fr); }
+  .tecdoc-about-grid > article { padding: 28px 24px; }
+  .tecdoc-feature-intro header { grid-row: 1; }
+  .tecdoc-feature-intro header > p:last-child, .tecdoc-rmi-copy > p:not(.tecdoc-eyebrow) { font-size: 18px; }
+  .tecdoc-statistics { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 24px; }
+  .tecdoc-statistics > div { padding: 20px 16px; }
+  .tecdoc-statistics dd { font-size: 32px; }
+  .tecdoc-statistics dd > small { font-size: 16px; }
+  .tecdoc-statistics dt { font-size: 16px; }
+  .tecdoc-rmi { padding-top: 60px; }
+  .tecdoc-bottom-transition { height: 140px; }
+  .tecdoc-license-price { padding: 32px 24px; }
+  .tecdoc-license-price-value { font-size: 72px; }
+  .app-shell.tecdoc-route .section-container.trial-request-section { padding-top: 24px; padding-bottom: 80px; }
+}

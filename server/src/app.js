@@ -33,6 +33,10 @@ async function getRouteStylesheet(url) {
       sourceFiles.push('src/styles/car-service.css');
     } else if (pathname === '/websites' || pathname.startsWith('/websites/')) {
       sourceFiles = ['src/styles/websites.css', 'src/styles/trial-request.css'];
+    } else if (pathname === '/auto-dismantling' || pathname.startsWith('/auto-dismantling/')) {
+      sourceFiles = ['src/styles/auto-dismantling.css', 'src/styles/trial-request.css'];
+    } else if (pathname === '/tecdoc-license' || pathname.startsWith('/tecdoc-license/')) {
+      sourceFiles = ['src/styles/tecdoc.css', 'src/styles/trial-request.css'];
     }
     const cssFiles = sourceFiles.flatMap((sourceFile) => {
       const entry = manifest[sourceFile];

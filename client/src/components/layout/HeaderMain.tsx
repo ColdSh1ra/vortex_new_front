@@ -1,5 +1,6 @@
 import { useI18n } from '../../context/ContentContext';
 import LanguageSwitcher from './LanguageSwitcher';
+import ServicesDropdown from './ServicesDropdown';
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import type { NavigationLink } from "../../types/navigation";
@@ -7,8 +8,6 @@ import ButtonFill from "../default/ButtonFIll";
 
 function getMenuLinks(t: (key: string) => string, pricingPath: string): NavigationLink[] { return [
     { name: t("nav.home"), path: "/" },
-    { name: t("nav.carService"), path: "/car-service" },
-    { name: t("nav.websites"), path: "/websites" },
     { name: t("nav.pricing"), path: pricingPath },
     { name: t("nav.faq"), path: "/faq" },
     { name: t("nav.contacts"), path: "/contact" },
@@ -117,7 +116,9 @@ function HeaderMain() {
         </div>
         <nav aria-label={t('common.navigation')}>
           <ul className="nav-list">
-            {menuLinks.map((link) => (
+            <li><Link className="nav-link" to="/">{t('nav.home')}</Link></li>
+            <ServicesDropdown />
+            {menuLinks.slice(1).map((link) => (
               <li key={link.path}>
                 <Link className="nav-link" to={link.path}>
                   {link.name}
@@ -170,6 +171,7 @@ function HeaderMain() {
 
           <nav aria-label={t('common.mobileNavigation')}>
             <ul className="mobile-nav-list">
+              <ServicesDropdown onNavigate={() => setIsMenuOpen(false)} />
               {menuLinks.slice(1).map((link) => (
                 <li key={link.path}>
                   <Link className="nav-link" to={link.path} onClick={() => setIsMenuOpen(false)}>

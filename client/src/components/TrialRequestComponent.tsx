@@ -31,10 +31,13 @@ function TrialRequestComponent({
   websitePackage,
 }: TrialRequestComponentProps) {
   const { t, language } = useI18n();
+  const isTecDoc = requestedProduct === 'tecdoc';
   const pageLocation = useLocation();
   const sourcePage = pageLocation.pathname.startsWith('/car-service') ? 'car-service'
     : pageLocation.pathname.startsWith('/contact') ? 'contact'
-      : pageLocation.pathname.startsWith('/websites') ? 'websites' : 'home';
+      : pageLocation.pathname.startsWith('/websites') ? 'websites'
+        : pageLocation.pathname.startsWith('/auto-dismantling') ? 'auto-dismantling'
+          : pageLocation.pathname.startsWith('/tecdoc-license') ? 'tecdoc-license' : 'home';
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
@@ -141,7 +144,7 @@ function TrialRequestComponent({
       setLocation(null);
       setLocationStatus('');
       setErrors({});
-      setSubmitStatus('trial.success');
+      setSubmitStatus(isTecDoc ? 'tecdoc.success' : 'trial.success');
       setRecaptchaResetSignal((value) => value + 1);
     } catch (submitError) {
       setSubmitStatus(
@@ -158,24 +161,30 @@ function TrialRequestComponent({
   return (
     <section className="section-container trial-request-section" id="trial-request">
       <div className="trial-request-wrapper">
-        <div className="trial-request-visual" aria-hidden="true">
+        {isTecDoc ? <aside className="tecdoc-license-price">
+          <p className="tecdoc-eyebrow">TecDoc Web Catalog 3.0</p>
+          <p className="tecdoc-license-price-value">25€</p>
+          <p className="tecdoc-license-price-period">{t('tecdoc.pricePeriod')}</p>
+          <p className="tecdoc-license-price-terms">{t('tecdoc.paymentTerms')}</p>
+          <p className="tecdoc-license-price-trial">{t('tecdoc.trialTerms')}</p>
+        </aside> : <div className="trial-request-visual" aria-hidden="true">
           <img className={'logo-spin-animation'} src="/imgs/vortex_logo_large.svg" alt="" />
-        </div>
+        </div>}
 
         <div className="trial-request-content">
           <header>
-            <h2>{t('trial.title')}</h2>
-            <p>{t('trial.subtitle')}</p>
+            <h2>{t(isTecDoc ? 'tecdoc.buyLicense' : 'trial.title')}</h2>
+            <p>{t(isTecDoc ? 'tecdoc.formDescription' : 'trial.subtitle')}</p>
           </header>
 
           <div className="trial-request-info">
-            <h3>{t('trial.infoTitle')}</h3>
-            <p>{t('trial.info')}</p>
-            {showCalculatedPrice && <strong>{t('trial.price', { total: safeTotal })}</strong>}
+            <h3>{t(isTecDoc ? 'tecdoc.trialBadge' : 'trial.infoTitle')}</h3>
+            <p>{t(isTecDoc ? 'tecdoc.trialTerms' : 'trial.info')}</p>
+            {showCalculatedPrice && !isTecDoc && <strong>{t('trial.price', { total: safeTotal })}</strong>}
             {websitePackage && <strong aria-live="polite">{t('websites.selectedPlan', { name: t(`websites.plan.${websitePackage}`) })}</strong>}
           </div>
 
-          <form onSubmit={handleSubmit} noValidate>
+          <form onSubmit={handleSubmit} aria-label={t(isTecDoc ? 'tecdoc.buyLicense' : 'trial.title')} noValidate>
             <InputComponent
               id="trial-request-name"
               label={t('trial.name')}
@@ -203,12 +212,12 @@ function TrialRequestComponent({
               onChange={(event) => setPhone(event.target.value)}
             />
 
-            <div className="trial-request-location">
+            {!isTecDoc && <div className="trial-request-location">
               <button type="button" onClick={requestLocation}>
                 {t(location ? 'trial.locationAdded' : 'trial.location')}
               </button>
               {locationStatus && <span aria-live="polite">{t(locationStatus)}</span>}
-            </div>
+            </div>}
 
             <RecaptchaCheckbox
               key={language}

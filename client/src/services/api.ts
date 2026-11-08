@@ -12,7 +12,7 @@ export type TrialRequestLocation = {
 };
 
 export type TrialRequestPayload = {
-  source_page: 'home' | 'contact' | 'car-service' | 'websites';
+  source_page: 'home' | 'contact' | 'car-service' | 'websites' | 'auto-dismantling' | 'tecdoc-license';
   website_package?: WebsitePackage;
   language: Language;
   requested_product: RequestedProduct;

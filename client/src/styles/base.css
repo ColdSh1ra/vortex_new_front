@@ -144,6 +144,58 @@ p.paragraph {
   width: 107px;
 }
 
+.header .nav-list { align-items: center; }
+.services-navigation { position: relative; }
+.services-toggle {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  gap: 6px;
+  padding: 0;
+}
+.services-toggle svg { flex-shrink: 0; transition: transform 180ms ease; }
+.services-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+.services-toggle:focus-visible { outline: 2px solid var(--grey-color-100); outline-offset: 6px; border-radius: 4px; }
+.services-panel {
+  left: -16px;
+  min-width: 248px;
+  padding-top: 16px;
+  position: absolute;
+  top: 100%;
+  z-index: 2;
+}
+.services-list {
+  background: var(--blue-color-3);
+  border: 1px solid rgb(255 255 255 / .14);
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgb(0 0 0 / .24);
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+}
+.services-list a {
+  align-items: center;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 24px;
+  justify-content: space-between;
+  line-height: 1.3;
+  min-height: 44px;
+  padding: 12px;
+  text-decoration: none;
+}
+.services-list a:hover,
+.services-list a:focus-visible,
+.services-list a[aria-current="page"] { background: rgb(255 255 255 / .1); }
+.services-list a:focus-visible { outline: 2px solid var(--grey-color-100); outline-offset: -2px; }
+.services-list a > span { color: var(--grey-color-100); }
+
 .button {
   align-items: center;
   border: 2px solid transparent;
@@ -383,6 +435,11 @@ div.p-absolute-element {
   }
 
   .mobile-nav-list .nav-link { font-size: 16px; line-height: 1; }
+  .mobile-nav-list .services-navigation { width: 100%; }
+  .mobile-nav-list .services-toggle { margin: 0 auto; }
+  .mobile-nav-list .services-panel { min-width: 0; padding-top: 16px; position: static; }
+  .mobile-nav-list .services-list { background: var(--blue-color-4); box-shadow: none; }
+  .mobile-nav-list .services-list a { font-size: 16px; }
   .mobile-menu-cta { border-bottom: 1px solid var(--grey-color-200); border-top: 1px solid var(--grey-color-200); padding: 18px 0; width: 100%; }
   .mobile-menu-cta .button { justify-content: center; width: 100%; }
   .mobile-social-links { border-bottom: 1px solid var(--grey-color-200); display: flex; gap: 20px; justify-content: center; padding: 18px 0; width: 100%; }

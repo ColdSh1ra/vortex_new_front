@@ -16,7 +16,7 @@ const NAME_PATTERN = /^[\p{L}\p{M} .'-]{2,80}$/u;
 const NAME_LETTER_PATTERN = /\p{L}/u;
 const PHONE_PATTERN = /^[+()\d\s-]{7,30}$/;
 const ALLOWED_PRODUCTS = new Set(['vortex', 'tecdoc']);
-const ALLOWED_SOURCES = new Set(['home', 'contact', 'car-service', 'websites']);
+const ALLOWED_SOURCES = new Set(['home', 'contact', 'car-service', 'websites', 'auto-dismantling', 'tecdoc-license']);
 const WEBSITE_PACKAGES = new Set(['free', 'practical', 'maximum']);
 const ALLOWED_LANGUAGES = new Set(['ua', 'cz', 'sk', 'en', 'pl']);
 
@@ -157,10 +157,6 @@ async function submitTrialRequest(req, res) {
     await sendTelegramNotification(requested_product, notificationData);
     return res.status(200).json({ message: 'Заявку відправлено.' });
   } catch (error) {
-    if (error.code === 'PRODUCT_NOT_IMPLEMENTED') {
-      return res.status(501).json({ message: 'Заявки TecDoc ще не підтримуються.' });
-    }
-
     if (
       error.code === 'RECAPTCHA_NOT_CONFIGURED'
       || error.code === 'TELEGRAM_NOT_CONFIGURED'
