@@ -10,7 +10,7 @@ async function startApplication() {
   const rootElement = document.getElementById('root')!;
   const application = (
     <React.StrictMode>
-      <App initialContent={window.__VORTEX_CONTENT__ ?? null} initialLanguage={window.__VORTEX_LANGUAGE__ ?? 'ua'} />
+      <App initialContent={window.__VORTEX_CONTENT__ ?? null} initialLanguage={window.__VORTEX_LANGUAGE__ ?? 'ua'} initialBlog={window.__VORTEX_BLOG__ ?? null} />
     </React.StrictMode>
   );
 

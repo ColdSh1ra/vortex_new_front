@@ -4,6 +4,7 @@ import { ua as fallbackContent } from '../../../server/data/vortex.json';
 import { getContent } from '../services/api';
 import { LANGUAGES } from '../types/content';
 import { interfaceTranslations } from '../locales';
+import { blogCopy } from '../blog/copy';
 import type { ContentCatalog, Language } from '../types/content';
 
 export const LANGUAGE_TAGS: Record<Language, string> = {
@@ -39,6 +40,7 @@ export function ContentProvider({ children, content = null, initialLanguage = 'u
 
   useEffect(() => {
     // Restore after hydration so server and client initially render the same language.
+    if (window.location.pathname === '/blog' || window.location.pathname.startsWith('/blog/')) return;
     try {
       const saved = localStorage.getItem('vortex-language');
       if (LANGUAGES.includes(saved as Language)) setLanguageState(saved as Language);
@@ -65,6 +67,7 @@ export function useI18n() {
   const content = context.catalog?.[context.language] ?? context.catalog?.ua ?? null;
   const t = (key: string, values: Record<string, string | number> = {}) => {
     const template = interfaceTranslations[context.language][key]
+      ?? (key === 'nav.blog' ? blogCopy[context.language]['nav.blog'] : undefined)
       ?? content?.ui[key]
       ?? interfaceTranslations.ua[key]
       ?? context.catalog?.ua.ui[key]

@@ -1,11 +1,13 @@
 /// <reference types="vite/client" />
 
 import type { ContentCatalog, Language } from './types/content';
+import type { BlogResource } from './blog/types';
 
 declare global {
   interface Window {
     __VORTEX_CONTENT__?: ContentCatalog;
     __VORTEX_LANGUAGE__?: Language;
+    __VORTEX_BLOG__?: BlogResource | null;
     grecaptcha?: {
       render: (
         container: HTMLElement,
@@ -24,6 +26,7 @@ declare global {
   interface ImportMetaEnv {
     readonly VITE_API_BASE_URL?: string;
     readonly VITE_RECAPTCHA_SITE_KEY?: string;
+    readonly VITE_BLOG_DEMO_MODE?: string;
   }
 
   interface ImportMeta {

@@ -6,6 +6,9 @@ const { pathToFileURL } = require('url');
 const contentRoutes = require('./routes/contentRoutes');
 const trialRequestRoutes = require('./routes/trialRequestRoutes');
 const contentService = require('./services/contentService');
+const blogRoutes = require('./routes/blogRoutes');
+const sitemapRoutes = require('./routes/sitemapRoutes');
+const blogService = require('./services/blogService');
 const { CLIENT_ORIGINS } = require('./config/constants');
 
 const app = express();
@@ -37,6 +40,8 @@ async function getRouteStylesheet(url) {
       sourceFiles = ['src/styles/auto-dismantling.css', 'src/styles/trial-request.css'];
     } else if (pathname === '/tecdoc-license' || pathname.startsWith('/tecdoc-license/')) {
       sourceFiles = ['src/styles/tecdoc.css', 'src/styles/trial-request.css'];
+    } else if (pathname === '/blog' || pathname.startsWith('/blog/')) {
+      sourceFiles = ['src/styles/blog.css'];
     }
     const cssFiles = sourceFiles.flatMap((sourceFile) => {
       const entry = manifest[sourceFile];
@@ -81,6 +86,9 @@ app.use(express.json({ limit: '12kb', strict: true }));
 
 app.use('/api', contentRoutes);
 app.use('/api', trialRequestRoutes);
+app.use('/api/blog', blogRoutes);
+app.use('/api', (req, res) => res.status(404).json({ code: 'NOT_FOUND' }));
+app.use(sitemapRoutes);
 
 app.use(express.static(clientDistPath, { index: false }));
 
@@ -92,23 +100,33 @@ app.use(async (req, res, next) => {
   try {
     const template = await fs.readFile(path.join(clientDistPath, 'index.html'), 'utf8');
     const content = await contentService.fetchContent();
-    const { render } = await import(pathToFileURL(ssrEntryPath).href);
+    const { render, loadBlogRoute } = await import(pathToFileURL(ssrEntryPath).href);
+    const requestUrl = new URL(req.originalUrl, 'http://localhost');
+    const isBlog = requestUrl.pathname === '/blog' || requestUrl.pathname.startsWith('/blog/');
     const savedLanguage = req.headers.cookie?.match(/(?:^|;\s*)vortex-language=(ua|cz|sk|en|pl)(?:;|$)/)?.[1];
-    const language = savedLanguage || 'ua';
+    const requestedLanguage = requestUrl.searchParams.get('lang');
+    const language = isBlog ? (['ua', 'cz', 'sk', 'en', 'pl'].includes(requestedLanguage) ? requestedLanguage : 'ua') : savedLanguage || 'ua';
     const languageTag = { ua: 'uk', cz: 'cs', sk: 'sk', en: 'en', pl: 'pl' }[language];
-    const { appHtml } = render(req.originalUrl, content, language);
+    const initialBlog = await loadBlogRoute(req.originalUrl, {
+      apiBaseUrl: isBlog && blogService.configured() ? blogService.apiBaseUrl() : undefined,
+      demoEnabled: process.env.BLOG_DEMO_MODE !== 'false',
+    });
+    const { appHtml, headHtml, statusCode, robots } = render(req.originalUrl, content, language, initialBlog);
     const serializedContent = JSON.stringify(content).replace(/</g, '\\u003c');
     const routeStylesheet = await getRouteStylesheet(req.originalUrl);
     const html = template
       .replace('<html lang="uk">', `<html lang="${languageTag}">`)
       .replace('<!--ssr-outlet-->', appHtml)
       .replace('<!--route-styles-->', routeStylesheet)
+      .replace('<!--seo-head-->', headHtml)
       .replace(
         '<!--initial-content-->',
-        `<script>window.__VORTEX_CONTENT__=${serializedContent};window.__VORTEX_LANGUAGE__="${language}"</script>`,
+        `<script>window.__VORTEX_CONTENT__=${serializedContent};window.__VORTEX_LANGUAGE__="${language}";window.__VORTEX_BLOG__=${JSON.stringify(initialBlog).replace(/</g, '\\u003c')}</script>`,
       );
 
-    res.status(200).set({ 'Content-Type': 'text/html' }).send(html);
+    if (robots.startsWith('noindex')) res.set('X-Robots-Tag', 'noindex, follow');
+    if (statusCode === 503) res.set('Retry-After', '60');
+    res.status(statusCode).set({ 'Content-Type': 'text/html', 'Cache-Control': 'private, no-cache' }).send(html);
   } catch (error) {
     next(error);
   }

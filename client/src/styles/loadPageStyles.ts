@@ -6,6 +6,7 @@ let carServiceStylesPromise: Promise<unknown> | null = null;
 let websitesStylesPromise: Promise<unknown> | null = null;
 let dismantlingStylesPromise: Promise<unknown> | null = null;
 let tecdocStylesPromise: Promise<unknown> | null = null;
+let blogStylesPromise: Promise<unknown> | null = null;
 
 function isFaqPath(pathname: string) {
   return pathname === '/faq' || pathname.startsWith('/faq/');
@@ -16,6 +17,10 @@ function isContactPath(pathname: string) {
 }
 
 export function loadPageStyles(pathname: string) {
+  if (pathname === '/blog' || pathname.startsWith('/blog/')) {
+    blogStylesPromise ??= import('./blog.css');
+    return blogStylesPromise;
+  }
   if (pathname === '/tecdoc-license' || pathname.startsWith('/tecdoc-license/')) {
     tecdocStylesPromise ??= import('./tecdoc.css');
     trialRequestStylesPromise ??= import('./trial-request.css');

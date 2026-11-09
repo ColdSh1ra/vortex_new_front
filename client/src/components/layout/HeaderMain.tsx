@@ -5,11 +5,13 @@ import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import type { NavigationLink } from "../../types/navigation";
 import ButtonFill from "../default/ButtonFIll";
+import { blogUrl } from '../../blog/urls';
 
-function getMenuLinks(t: (key: string) => string, pricingPath: string): NavigationLink[] { return [
+function getMenuLinks(t: (key: string) => string, pricingPath: string, blogPath: string): NavigationLink[] { return [
     { name: t("nav.home"), path: "/" },
     { name: t("nav.pricing"), path: pricingPath },
     { name: t("nav.faq"), path: "/faq" },
+    { name: t("nav.blog"), path: blogPath },
     { name: t("nav.contacts"), path: "/contact" },
 ]; }
 
@@ -21,7 +23,7 @@ const socialLinks = [
 ];
 
 function HeaderMain() {
-  const { t } = useI18n();
+  const { t, language } = useI18n();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const lastScrollY = useRef(0);
@@ -29,7 +31,7 @@ function HeaderMain() {
   const location = useLocation();
   const pricingPath = ['/car-service', '/websites'].includes(location.pathname)
     ? `${location.pathname}#pricing` : '/#pricing';
-  const menuLinks = getMenuLinks(t, pricingPath);
+  const menuLinks = getMenuLinks(t, pricingPath, blogUrl(language));
   const navigate = useNavigate();
 
   useEffect(() => {

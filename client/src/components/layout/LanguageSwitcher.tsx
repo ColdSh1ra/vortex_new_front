@@ -3,9 +3,12 @@ import type { KeyboardEvent } from 'react';
 import { LANGUAGE_TAGS, useI18n } from '../../context/ContentContext';
 import { LANGUAGES } from '../../types/content';
 import type { Language } from '../../types/content';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function LanguageSwitcher() {
   const { language, setLanguage, t } = useI18n();
+  const location = useLocation();
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const menuId = useId();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -31,6 +34,12 @@ function LanguageSwitcher() {
 
   const selectLanguage = (code: Language) => {
     setLanguage(code);
+    if (location.pathname === '/blog' || location.pathname.startsWith('/blog/')) {
+      const params = new URLSearchParams(location.search);
+      if (code === 'ua') params.delete('lang'); else params.set('lang', code);
+      const search = params.toString();
+      navigate(`${location.pathname}${search ? `?${search}` : ''}${location.hash}`);
+    }
     closeMenu();
   };
 

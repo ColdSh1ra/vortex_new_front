@@ -1,13 +1,15 @@
 import { useI18n } from '../../context/ContentContext';
 import { Link } from "react-router-dom";
 import CircleButtonLink from "../default/CircleButtonLink";
-function getFooterMenuLinks(t: (key: string) => string) { return [
+import { blogUrl } from '../../blog/urls';
+function getFooterMenuLinks(t: (key: string) => string, blogPath: string) { return [
     { name: t("nav.carService"), path: "/car-service" },
     { name: t("nav.websites"), path: "/websites" },
     { name: t("nav.dismantling"), path: "/auto-dismantling" },
     { name: t("nav.tecdoc"), path: "/tecdoc-license" },
     { name: t("nav.pricing"), path: "/#pricing" },
     { name: t("nav.faq"), path: "/faq" },
+    { name: t("nav.blog"), path: blogPath },
     { name: t("nav.contacts"), path: "/contact" },
 ]; }
 const footerSocialLinks = [
@@ -17,8 +19,8 @@ const footerSocialLinks = [
     { name: "Instagram", path: "/", image_url: '/icons/sm_black/instagram.svg'},
 ];
 function FooterMain() {
-    const { t } = useI18n();
-    const footerMenuLinks = getFooterMenuLinks(t);
+    const { t, language } = useI18n();
+    const footerMenuLinks = getFooterMenuLinks(t, blogUrl(language));
     const currentYear = new Date().getFullYear();
 
     return (
