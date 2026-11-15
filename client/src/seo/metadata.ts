@@ -4,6 +4,7 @@ import { blogText } from '../blog/copy';
 import { blogLanguage, blogUrl, LANGUAGE_CODES, SITE_URL } from '../blog/urls';
 import type { Language } from '../types/content';
 import { LANGUAGES } from '../types/content';
+import { getApiIntegration, getIntegrationCopy } from '../data/apiIntegrations';
 export type PageSeo = { title: string; description: string; canonical: string; language: Language; robots: string; status: number; image: string; type: string; alternates: { language: string; url: string }[]; schemas: object[]; publishedAt?: string; updatedAt?: string };
 const staticPages = new Set(['/', '/contact', '/faq', '/car-service', '/websites', '/auto-dismantling', '/tecdoc-license']);
 export function buildPageSeo(url: string, currentLanguage: Language, resource: BlogResource | null): PageSeo {
@@ -13,7 +14,19 @@ export function buildPageSeo(url: string, currentLanguage: Language, resource: B
   const organization = { '@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: 'Vortex', url: SITE_URL, logo: `${SITE_URL}/imgs/logo-square.png` };
   const seo: PageSeo = { title: blogText(language, 'homeTitle'), description: blogText(language, 'homeDescription'), canonical: SITE_URL + parsed.pathname, language, robots: 'index,follow,max-image-preview:large', status: 200, image: `${SITE_URL}/imgs/logo-square.png`, type: 'website', alternates: [], schemas: [] };
   if (!route) {
-    if (!staticPages.has(parsed.pathname)) { seo.status = 404; seo.robots = 'noindex,follow'; seo.title = `${blogText(language, 'missing')} | Vortex`; }
+    const integration = getApiIntegration(parsed.pathname.match(/^\/integrations\/([^/]+)\/?$/)?.[1]);
+    if (integration) {
+      const copy = getIntegrationCopy(language);
+      const page = copy.pages[integration.slug];
+      seo.title = `${page.title} — ${copy.eyebrow} | Vortex`;
+      seo.description = page.lead;
+      seo.canonical = `${SITE_URL}/integrations/${integration.slug}`;
+      seo.schemas = [{ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Vortex', item: SITE_URL },
+        { '@type': 'ListItem', position: 2, name: copy.label, item: `${SITE_URL}/#integrations-catalog` },
+        { '@type': 'ListItem', position: 3, name: page.title, item: seo.canonical },
+      ] }];
+    } else if (!staticPages.has(parsed.pathname)) { seo.status = 404; seo.robots = 'noindex,follow'; seo.title = `${blogText(language, 'missing')} | Vortex`; }
     if (parsed.pathname === '/') seo.schemas = [{ '@context': 'https://schema.org', '@graph': [organization, { '@type': 'WebSite', '@id': `${SITE_URL}/#website`, url: SITE_URL, name: 'Vortex', publisher: { '@id': organization['@id'] }, inLanguage: LANGUAGE_CODES[language] }, { '@type': 'SoftwareApplication', '@id': `${SITE_URL}/#software`, name: 'Vortex', url: SITE_URL, applicationCategory: 'BusinessApplication', operatingSystem: 'Web', description: seo.description, publisher: { '@id': organization['@id'] } }, { '@type': 'WebPage', '@id': `${SITE_URL}/#webpage`, url: SITE_URL, name: seo.title, isPartOf: { '@id': `${SITE_URL}/#website` }, about: { '@id': `${SITE_URL}/#software` }, inLanguage: LANGUAGE_CODES[language] }] }];
     return seo;
   }

@@ -1,4 +1,5 @@
 import { useInitialContent } from '../../context/ContentContext';
+import { Link } from 'react-router-dom';
 
 const BLANK_IMAGE_VALUE = 'blank_image';
 
@@ -36,9 +37,17 @@ function IntegrationsCatalogComponent() {
                     ))}
                   </ul>
 
-                  <a className="integration-catalog-link" href={card.link_href}>
+                  {card.partner_links?.length ? (
+                    <div className="integration-catalog-offers">
+                      {card.partner_links.map(link => (
+                        <a key={link.href} href={link.href} target="_blank" rel="sponsored noopener noreferrer">{link.label}</a>
+                      ))}
+                    </div>
+                  ) : null}
+
+                  <Link className="integration-catalog-link" to={card.link_href}>
                     {card.link_text}
-                  </a>
+                  </Link>
                 </article>
               );
             })}

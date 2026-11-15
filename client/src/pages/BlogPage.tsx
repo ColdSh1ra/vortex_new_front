@@ -19,7 +19,7 @@ export default function BlogPage() {
       const copy = post.translations[language];
       return <article className="blog-card" key={post.id}>
         <Link className="blog-card-image" to={blogUrl(language, post.slug)} tabIndex={-1} aria-hidden="true"><img src={post.cover.url} alt={post.cover.alt[language]} width={post.cover.width} height={post.cover.height} loading={index < 4 ? 'eager' : 'lazy'} /></Link>
-        <div className="blog-card-copy"><time dateTime={post.publishedAt}>{formatBlogDate(post.publishedAt, language)}</time><h2><Link to={blogUrl(language, post.slug)}>{copy.title}</Link></h2><p>{copy.excerpt}</p><Link className="blog-card-view" to={blogUrl(language, post.slug)} aria-label={`${blogText(language, 'view')}: ${copy.title}`}>{blogText(language, 'view')}<span aria-hidden="true">→</span></Link></div>
+        <div className="blog-card-copy"><time dateTime={post.publishedAt}>{formatBlogDate(post.publishedAt, language)}</time><h2><Link to={blogUrl(language, post.slug)}>{copy.title}</Link></h2><p>{copy.excerpt}</p><Link className="blog-card-view" to={blogUrl(language, post.slug)} aria-label={`${blogText(language, 'view')}: ${copy.title}`}>{blogText(language, 'view')}<span aria-hidden="true"><img className="chevron-right-icon" src="/icons/chevron-right-double.svg" alt="" width="20" height="20" /></span></Link></div>
       </article>;
     })}</div>}
     {pagination.totalPages > 1 && <nav className="blog-pagination" aria-label={blogText(language, 'pagination')}>

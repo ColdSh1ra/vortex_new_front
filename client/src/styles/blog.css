@@ -50,7 +50,6 @@
 .blog-status a { color: inherit; }
 .blog-status button { align-self: flex-start; background: var(--orange-bg-color); border: 0; border-radius: 999px; cursor: pointer; font: inherit; padding: 12px 24px; }
 .blog-empty { font-size: 20px; min-height: 35vh; }
-.blog-route .footer { box-shadow: 0 0 0 100vmax var(--blue-color-5); clip-path: inset(0 -100vmax); }
 @media (max-width: 1100px) { .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 768px) {
   .blog-page { padding-top: 32px; padding-bottom: 60px; }

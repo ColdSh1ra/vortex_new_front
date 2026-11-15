@@ -24,47 +24,49 @@ function FooterMain() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="footer section-container">
+        <div className="footer-background">
+            <footer className="footer section-container">
 
-            <div className={'absolute-footer-el footer-bg-text'}>
-                VORTEX
-            </div>
-            <div className={'absolute-footer-el display-flex radial-bg-container'}/>
-
-
-            <div className="footer-logo-container">
-                <Link to={'/'}>
-                    <img src="/imgs/vortex-logo-115.svg" alt="Vortex" />
-                </Link>
-            </div>
-            <div className={'footer-menu-points display-flex flex-column gap-40'}>
-                {footerMenuLinks.map((mp, index) => (
-                    <Link className={'nav-link basic-mp footer-menu-point'} key={'menuPoint' + index} to={mp.path}>
-                        { mp.name}
-                    </Link>
-                ))}
-            </div>
-            <div className={'footer-bottom-container display-flex'}>
-                <div className={'copyright'}>
-                    {t('common.copyright', { year: currentYear })}
+                <div className={'absolute-footer-el footer-bg-text'}>
+                    VORTEX
                 </div>
-                <div className={'footer-additional-links display-flex gap-20'}>
-                    {footerSocialLinks.map((sl, index) => (
-                        <CircleButtonLink
-                            linkPath={sl.path}
-                            label={sl.name}
-                            imageUrl={sl.image_url}
-                            key={'socialLink' + index + sl.name}>
-                        </CircleButtonLink>
+                <div className={'absolute-footer-el display-flex radial-bg-container'}/>
+
+
+                <div className="footer-logo-container">
+                    <Link to={'/'}>
+                        <img src="/imgs/vortex-logo-115.svg" alt="Vortex" />
+                    </Link>
+                </div>
+                <div className={'footer-menu-points display-flex flex-column gap-40'}>
+                    {footerMenuLinks.map((mp, index) => (
+                        <Link className={'nav-link basic-mp footer-menu-point'} key={'menuPoint' + index} to={mp.path}>
+                            { mp.name}
+                        </Link>
                     ))}
                 </div>
-                <div className={'privacy-policy-link'}>
-                    <Link className={'nav-link basic-mp'} to={'/privacy-policy'}>
-                        {t('common.privacy')}
-                    </Link>
+                <div className={'footer-bottom-container display-flex'}>
+                    <div className={'copyright'}>
+                        {t('common.copyright', { year: currentYear })}
+                    </div>
+                    <div className={'footer-additional-links display-flex gap-20'}>
+                        {footerSocialLinks.map((sl, index) => (
+                            <CircleButtonLink
+                                linkPath={sl.path}
+                                label={sl.name}
+                                imageUrl={sl.image_url}
+                                key={'socialLink' + index + sl.name}>
+                            </CircleButtonLink>
+                        ))}
+                    </div>
+                    <div className={'privacy-policy-link'}>
+                        <Link className={'nav-link basic-mp'} to={'/privacy-policy'}>
+                            {t('common.privacy')}
+                        </Link>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
     )
 }
 

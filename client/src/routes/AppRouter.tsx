@@ -9,6 +9,7 @@ import CarServicePage from '../pages/CarServicePage';
 import WebsiteDevelopmentPage from '../pages/WebsiteDevelopmentPage';
 import AutoDismantlingPage from '../pages/AutoDismantlingPage';
 import TecDocLicensePage from '../pages/TecDocLicensePage';
+import IntegrationPage from '../pages/IntegrationPage';
 import { useI18n } from '../context/ContentContext';
 import { loadPageStyles } from '../styles/loadPageStyles';
 import BlogPage from '../pages/BlogPage';
@@ -28,12 +29,14 @@ function AppRouter() {
   const isWebsitesPage = location.pathname === '/websites' || location.pathname.startsWith('/websites/');
   const isDismantlingPage = location.pathname === '/auto-dismantling' || location.pathname.startsWith('/auto-dismantling/');
   const isTecDocPage = location.pathname === '/tecdoc-license' || location.pathname.startsWith('/tecdoc-license/');
+  const isIntegrationPage = location.pathname.startsWith('/integrations/');
   const routeClassName = isBlog ? ' blog-route' : isFaqPage ? ' faq-route'
     : isContactPage ? ' contacts-route'
       : isCarServicePage ? ' car-service-route'
         : isWebsitesPage ? ' websites-route'
           : isDismantlingPage ? ' dismantling-route'
-            : isTecDocPage ? ' tecdoc-route' : '';
+            : isTecDocPage ? ' tecdoc-route'
+              : isIntegrationPage ? ' integration-route' : '';
 
   useEffect(() => {
     if (isBlog) {
@@ -72,6 +75,7 @@ function AppRouter() {
             <Route path="/websites" element={<WebsiteDevelopmentPage />} />
             <Route path="/auto-dismantling" element={<AutoDismantlingPage />} />
             <Route path="/tecdoc-license" element={<TecDocLicensePage />} />
+            <Route path="/integrations/:slug" element={<IntegrationPage />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:slug" element={<BlogArticlePage />} />

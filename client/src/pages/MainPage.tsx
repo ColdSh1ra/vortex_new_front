@@ -3,7 +3,6 @@ import MainPageHeroContent from "../components/MainPageHeroContent";
 import AboutUsComponent from "../components/AboutUsComponent";
 import HeroPageSliderSection from "../components/HeroPageSliderSection";
 import WhyVortexComponent from "../components/WhyVortexComponent";
-import WhyVortexShowcaseComponent from "../components/WhyVortexShowcaseComponent";
 import VortexAudienceComponent from "../components/VortexAudienceComponent";
 import ClientTestimonialsComponent from "../components/ClientTestimonialsComponent";
 import IntegrationsNetworkComponent from "../components/integrations/IntegrationsNetworkComponent";
@@ -24,7 +23,6 @@ function MainPage() {
           <AboutUsComponent/>
           <HeroPageSliderSection/>
           <WhyVortexComponent/>
-          <WhyVortexShowcaseComponent/>
           <div className="audience-testimonials-group">
               <VortexAudienceComponent/>
               <ClientTestimonialsComponent/>

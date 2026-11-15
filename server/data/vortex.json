@@ -73,32 +73,6 @@
           }
         ]
       },
-      "why_vortex_showcase_section": {
-        "section_title": "Що вміє Vortex?",
-        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
-        "cards": [
-          {
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
-            "image_src": ""
-          },
-          {
-            "title": "Dolor sit amet",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum et donec sed odio dui.",
-            "image_src": ""
-          },
-          {
-            "title": "Consectetur elit",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
-            "image_src": ""
-          },
-          {
-            "title": "Aenean commodo",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
-            "image_src": ""
-          }
-        ]
-      },
       "vortex_audience_section": {
         "section_title": "Кому підійде Vortex?",
         "cards": [
@@ -204,25 +178,25 @@
         ]
       },
       "integrations_catalog_section": {
-        "section_title": "Lorem ipsum",
-        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "section_title": "API-інтеграції Vortex",
+        "section_description": "Підбирайте запчастини, фіскалізуйте продажі, оформлюйте доставку, звіряйте банківські операції та спілкуйтеся з клієнтами в одній системі. Підключайте потрібні сервіси до Vortex через API — без повторного введення даних і зайвих переходів між програмами.",
         "cards": [
           {
             "title": "TecDoc Inside",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/tecdoc-int-logo.svg",
             "features": [
               "Пошук авто по VIN",
-              "Підбір запчастин до авто, фільтр по улюбленим брендам, конструктивним вузлам",
-              "Застосування запчастин по авто",
+              "Підбір запчастин до авто з фільтрами за обраними брендами та вузлами",
+              "Перевірка застосування запчастин до автомобіля",
               "Пошук інформації про запчастини",
-              "Підбір запчастин в каталозі найбільшої бази даних світу"
+              "Підбір у каталозі однієї з найбільших баз даних автозапчастин"
             ],
             "link_text": "Детальніше",
-            "link_href": "/"
+            "link_href": "/integrations/tecdoc"
           },
           {
             "title": "Checkbox",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/checkbox-int-logo.svg",
             "features": [
               "Онлайн каса прямо у Vortex",
               "Формування та друк фіскальних чеків на термопринтери",
@@ -232,11 +206,34 @@
               "Можливість налаштування декількох акаунтів checkbox, декількох кас/касирів всередині одного акаунту"
             ],
             "link_text": "Детальніше",
-            "link_href": "/"
+            "link_href": "/integrations/checkbox"
+          },
+          {
+            "title": "Вчасно.Каса",
+            "image_src": "/imgs/api-integrations/vchasno-kasa-logo.svg",
+            "features": [
+              "Фіскалізація продажів запчастин і послуг СТО у Vortex",
+              "Електронні чеки та передача даних до податкової",
+              "Підключення торгових точок, кас і ключів касирів",
+              "Готівкові й безготівкові оплати та повернення",
+              "Єдиний процес роботи із замовленням, оплатою та чеком"
+            ],
+            "link_text": "Детальніше",
+            "link_href": "/integrations/vchasno",
+            "partner_links": [
+              {
+                "label": "−50% на перший платіж",
+                "href": "https://service.vchasno.ua/prro-offer?utm_source=vortex"
+              },
+              {
+                "label": "50 грн/міс на 6 місяців",
+                "href": "https://service.vchasno.ua/prro-offer-50?utm_source=vortex"
+              }
+            ]
           },
           {
             "title": "Нова Пошта",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/np-int-logo.svg",
             "features": [
               "Налаштування відправника за замовчуванням",
               "Генерування експрес ТТН. На відділення чи адресу, з контролем платежу чи без, декілька місць чи одне та багато інших інтегрованих налаштувань",
@@ -244,24 +241,24 @@
               "Оновлення бази даних відділень по АПІ"
             ],
             "link_text": "Детальніше",
-            "link_href": "/"
+            "link_href": "/integrations/nova_poshta"
           },
           {
             "title": "Turbo SMS",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/turbosms-int-logo.svg",
             "features": [
-              "Автоматичне посилання SMS по різних подіях",
+              "Автоматичне надсилання SMS за подіями",
               "Можливість відправити SMS вручну з довільним текстом або шаблоном",
               "Розсилка SMS декільком отримувачам",
               "Історія відправлених СМС",
               "Відстежування балансу, сповіщення «баланс SMS майже вичерпано»"
             ],
             "link_text": "Детальніше",
-            "link_href": "/"
+            "link_href": "/integrations/turboSMS"
           },
           {
             "title": "API банків",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/banks-api-int-logo.svg",
             "features": [
               "Підключення до вашого рахунку",
               "Перегляд останніх транзакцій",
@@ -269,11 +266,11 @@
               "Всі транзакції в одному списку зі зручними фільтрами: по рахунку та виду операції, а також загальним пошуком по сумі, отримувачу, примітці тощо"
             ],
             "link_text": "Детальніше",
-            "link_href": "/"
+            "link_href": "/integrations/bank_API"
           },
           {
             "title": "Binotel",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/binotel-int-logo.svg",
             "features": [
               "Контроль втрачених дзвінків",
               "Перегляд історії дзвінків по клієнту в Vortex",
@@ -282,7 +279,7 @@
               "Перехід на клієнта у Vortex при вхідному дзвінку з зареєстрованого номеру"
             ],
             "link_text": "Детальніше",
-            "link_href": "/"
+            "link_href": "/integrations/binotel"
           }
         ]
       },
@@ -754,32 +751,6 @@
           }
         ]
       },
-      "why_vortex_showcase_section": {
-        "section_title": "Co Vortex umí?",
-        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
-        "cards": [
-          {
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
-            "image_src": ""
-          },
-          {
-            "title": "Dolor sit amet",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum et donec sed odio dui.",
-            "image_src": ""
-          },
-          {
-            "title": "Consectetur elit",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
-            "image_src": ""
-          },
-          {
-            "title": "Aenean commodo",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
-            "image_src": ""
-          }
-        ]
-      },
       "vortex_audience_section": {
         "section_title": "Pro koho je Vortex?",
         "cards": [
@@ -885,12 +856,12 @@
         ]
       },
       "integrations_catalog_section": {
-        "section_title": "Lorem ipsum",
-        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "section_title": "API integrace Vortex",
+        "section_description": "Vyhledávejte díly, evidujte tržby, připravujte zásilky, zpracovávejte bankovní transakce a komunikujte se zákazníky v jednom systému. Propojte potřebné služby s Vortex přes API bez opakovaného zadávání dat a přepínání mezi aplikacemi.",
         "cards": [
           {
             "title": "TecDoc Inside",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/tecdoc-int-logo.svg",
             "features": [
               "Vyhledání vozidla podle VIN",
               "Výběr dílů pro vozidlo, filtrování podle oblíbených značek a konstrukčních celků",
@@ -899,11 +870,11 @@
               "Výběr dílů v katalogu největší světové databáze"
             ],
             "link_text": "Více informací",
-            "link_href": "/"
+            "link_href": "/integrations/tecdoc"
           },
           {
             "title": "Checkbox",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/checkbox-int-logo.svg",
             "features": [
               "Online pokladna přímo ve Vortex",
               "Vytváření a tisk fiskálních účtenek na termotiskárnách",
@@ -913,11 +884,34 @@
               "Nastavení více účtů Checkbox a více pokladen či pokladníků v jednom účtu"
             ],
             "link_text": "Více informací",
-            "link_href": "/"
+            "link_href": "/integrations/checkbox"
+          },
+          {
+            "title": "Vchasno.Kasa",
+            "image_src": "/imgs/api-integrations/vchasno-kasa-logo.svg",
+            "features": [
+              "Fiskalizace prodeje dílů a služeb autoservisu ve Vortex",
+              "Elektronické účtenky a odesílání údajů ukrajinské daňové správě",
+              "Propojení provozoven, pokladen a klíčů pokladních",
+              "Hotovostní i bezhotovostní platby a vrácení zboží",
+              "Jednotný postup pro objednávku, platbu a účtenku"
+            ],
+            "link_text": "Více informací",
+            "link_href": "/integrations/vchasno",
+            "partner_links": [
+              {
+                "label": "−50 % na první platbu",
+                "href": "https://service.vchasno.ua/prro-offer?utm_source=vortex"
+              },
+              {
+                "label": "50 UAH měsíčně po dobu 6 měsíců",
+                "href": "https://service.vchasno.ua/prro-offer-50?utm_source=vortex"
+              }
+            ]
           },
           {
             "title": "Nova Poshta",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/np-int-logo.svg",
             "features": [
               "Nastavení výchozího odesílatele",
               "Vytváření expresních nákladních listů pro doručení na pobočku či adresu, s kontrolou platby i bez ní, pro jeden či více balíků a s dalšími možnostmi",
@@ -925,11 +919,11 @@
               "Aktualizace databáze poboček přes API"
             ],
             "link_text": "Více informací",
-            "link_href": "/"
+            "link_href": "/integrations/nova_poshta"
           },
           {
             "title": "Turbo SMS",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/turbosms-int-logo.svg",
             "features": [
               "Automatické odesílání SMS při různých událostech",
               "Ruční odesílání SMS s vlastním textem nebo šablonou",
@@ -938,11 +932,11 @@
               "Sledování zůstatku a upozornění na nízký kredit SMS"
             ],
             "link_text": "Více informací",
-            "link_href": "/"
+            "link_href": "/integrations/turboSMS"
           },
           {
             "title": "Bankovní API",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/banks-api-int-logo.svg",
             "features": [
               "Připojení k vašemu bankovnímu účtu",
               "Zobrazení posledních transakcí",
@@ -950,11 +944,11 @@
               "Všechny transakce v jednom seznamu s filtry podle účtu a typu operace a vyhledáváním podle částky, příjemce, poznámky a dalších údajů"
             ],
             "link_text": "Více informací",
-            "link_href": "/"
+            "link_href": "/integrations/bank_API"
           },
           {
             "title": "Binotel",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/binotel-int-logo.svg",
             "features": [
               "Kontrola zmeškaných hovorů",
               "Historie hovorů zákazníka ve Vortex",
@@ -963,7 +957,7 @@
               "Otevření profilu zákazníka ve Vortex při hovoru z registrovaného čísla"
             ],
             "link_text": "Více informací",
-            "link_href": "/"
+            "link_href": "/integrations/binotel"
           }
         ]
       },
@@ -1435,32 +1429,6 @@
           }
         ]
       },
-      "why_vortex_showcase_section": {
-        "section_title": "Čo Vortex dokáže?",
-        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
-        "cards": [
-          {
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
-            "image_src": ""
-          },
-          {
-            "title": "Dolor sit amet",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum et donec sed odio dui.",
-            "image_src": ""
-          },
-          {
-            "title": "Consectetur elit",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
-            "image_src": ""
-          },
-          {
-            "title": "Aenean commodo",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
-            "image_src": ""
-          }
-        ]
-      },
       "vortex_audience_section": {
         "section_title": "Pre koho je Vortex?",
         "cards": [
@@ -1566,12 +1534,12 @@
         ]
       },
       "integrations_catalog_section": {
-        "section_title": "Lorem ipsum",
-        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "section_title": "API integrácie Vortex",
+        "section_description": "Vyhľadávajte diely, evidujte tržby, pripravujte zásielky, spracúvajte bankové transakcie a komunikujte so zákazníkmi v jednom systéme. Prepojte potrebné služby s Vortex cez API bez opakovaného zadávania údajov a prepínania medzi aplikáciami.",
         "cards": [
           {
             "title": "TecDoc Inside",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/tecdoc-int-logo.svg",
             "features": [
               "Vyhľadanie vozidla podľa VIN",
               "Výber dielov pre vozidlo, filtrovanie podľa obľúbených značiek a konštrukčných celkov",
@@ -1580,11 +1548,11 @@
               "Výber dielov v katalógu najväčšej svetovej databázy"
             ],
             "link_text": "Viac informácií",
-            "link_href": "/"
+            "link_href": "/integrations/tecdoc"
           },
           {
             "title": "Checkbox",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/checkbox-int-logo.svg",
             "features": [
               "Online pokladnica priamo vo Vortex",
               "Vytváranie a tlač fiškálnych bločkov na termotlačiarňach",
@@ -1594,11 +1562,34 @@
               "Nastavenie viacerých účtov Checkbox a viacerých pokladníc či pokladníkov v jednom účte"
             ],
             "link_text": "Viac informácií",
-            "link_href": "/"
+            "link_href": "/integrations/checkbox"
+          },
+          {
+            "title": "Vchasno.Kasa",
+            "image_src": "/imgs/api-integrations/vchasno-kasa-logo.svg",
+            "features": [
+              "Fiskalizácia predaja dielov a služieb autoservisu vo Vortex",
+              "Elektronické pokladničné doklady a odosielanie údajov ukrajinskej daňovej správe",
+              "Prepojenie prevádzok, pokladníc a kľúčov pokladníkov",
+              "Hotovostné aj bezhotovostné platby a vrátenie tovaru",
+              "Jednotný postup pre objednávku, platbu a doklad"
+            ],
+            "link_text": "Viac informácií",
+            "link_href": "/integrations/vchasno",
+            "partner_links": [
+              {
+                "label": "−50 % na prvú platbu",
+                "href": "https://service.vchasno.ua/prro-offer?utm_source=vortex"
+              },
+              {
+                "label": "50 UAH mesačne počas 6 mesiacov",
+                "href": "https://service.vchasno.ua/prro-offer-50?utm_source=vortex"
+              }
+            ]
           },
           {
             "title": "Nova Poshta",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/np-int-logo.svg",
             "features": [
               "Nastavenie predvoleného odosielateľa",
               "Vytváranie expresných nákladných listov pre doručenie na pobočku či adresu, s kontrolou platby aj bez nej, pre jeden či viac balíkov a s ďalšími možnosťami",
@@ -1606,11 +1597,11 @@
               "Aktualizácia databázy pobočiek cez API"
             ],
             "link_text": "Viac informácií",
-            "link_href": "/"
+            "link_href": "/integrations/nova_poshta"
           },
           {
             "title": "Turbo SMS",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/turbosms-int-logo.svg",
             "features": [
               "Automatické odosielanie SMS pri rôznych udalostiach",
               "Ručné odosielanie SMS s vlastným textom alebo šablónou",
@@ -1619,11 +1610,11 @@
               "Sledovanie zostatku a upozornenie na nízky kredit SMS"
             ],
             "link_text": "Viac informácií",
-            "link_href": "/"
+            "link_href": "/integrations/turboSMS"
           },
           {
             "title": "Bankové API",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/banks-api-int-logo.svg",
             "features": [
               "Pripojenie k vášmu bankovému účtu",
               "Zobrazenie posledných transakcií",
@@ -1631,11 +1622,11 @@
               "Všetky transakcie v jednom zozname s filtrami podľa účtu a typu operácie a vyhľadávaním podľa sumy, príjemcu, poznámky a ďalších údajov"
             ],
             "link_text": "Viac informácií",
-            "link_href": "/"
+            "link_href": "/integrations/bank_API"
           },
           {
             "title": "Binotel",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/binotel-int-logo.svg",
             "features": [
               "Kontrola zmeškaných hovorov",
               "História hovorov zákazníka vo Vortex",
@@ -1644,7 +1635,7 @@
               "Otvorenie profilu zákazníka vo Vortex pri hovore z registrovaného čísla"
             ],
             "link_text": "Viac informácií",
-            "link_href": "/"
+            "link_href": "/integrations/binotel"
           }
         ]
       },
@@ -2116,32 +2107,6 @@
           }
         ]
       },
-      "why_vortex_showcase_section": {
-        "section_title": "What can Vortex do?",
-        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
-        "cards": [
-          {
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
-            "image_src": ""
-          },
-          {
-            "title": "Dolor sit amet",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum et donec sed odio dui.",
-            "image_src": ""
-          },
-          {
-            "title": "Consectetur elit",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
-            "image_src": ""
-          },
-          {
-            "title": "Aenean commodo",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
-            "image_src": ""
-          }
-        ]
-      },
       "vortex_audience_section": {
         "section_title": "Who is Vortex for?",
         "cards": [
@@ -2247,12 +2212,12 @@
         ]
       },
       "integrations_catalog_section": {
-        "section_title": "Lorem ipsum",
-        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "section_title": "Vortex API integrations",
+        "section_description": "Find parts, issue fiscal receipts, arrange deliveries, reconcile bank transactions and communicate with customers in one system. Connect the services you need to Vortex through API integrations without entering the same data twice or switching between applications.",
         "cards": [
           {
             "title": "TecDoc Inside",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/tecdoc-int-logo.svg",
             "features": [
               "Find vehicles by VIN",
               "Find matching parts and filter by favorite brands and vehicle assemblies",
@@ -2261,11 +2226,11 @@
               "Select parts from the world’s largest catalog database"
             ],
             "link_text": "Learn more",
-            "link_href": "/"
+            "link_href": "/integrations/tecdoc"
           },
           {
             "title": "Checkbox",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/checkbox-int-logo.svg",
             "features": [
               "Online checkout directly in Vortex",
               "Generate and print fiscal receipts on thermal printers",
@@ -2275,11 +2240,34 @@
               "Configure multiple Checkbox accounts and multiple checkouts or cashiers within one account"
             ],
             "link_text": "Learn more",
-            "link_href": "/"
+            "link_href": "/integrations/checkbox"
+          },
+          {
+            "title": "Vchasno.Kasa",
+            "image_src": "/imgs/api-integrations/vchasno-kasa-logo.svg",
+            "features": [
+              "Fiscalize parts sales and workshop services in Vortex",
+              "Electronic receipts and reporting to the Ukrainian tax authority",
+              "Connect outlets, cash registers and cashier keys",
+              "Cash and cashless payments and refunds",
+              "One workflow for orders, payments and receipts"
+            ],
+            "link_text": "Learn more",
+            "link_href": "/integrations/vchasno",
+            "partner_links": [
+              {
+                "label": "50% off your first payment",
+                "href": "https://service.vchasno.ua/prro-offer?utm_source=vortex"
+              },
+              {
+                "label": "UAH 50/month for 6 months",
+                "href": "https://service.vchasno.ua/prro-offer-50?utm_source=vortex"
+              }
+            ]
           },
           {
             "title": "Nova Poshta",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/np-int-logo.svg",
             "features": [
               "Set a default sender",
               "Generate express waybills for branch or address delivery, with or without payment control, for one or multiple parcels, with many other integrated options",
@@ -2287,11 +2275,11 @@
               "Update the branch database via API"
             ],
             "link_text": "Learn more",
-            "link_href": "/"
+            "link_href": "/integrations/nova_poshta"
           },
           {
             "title": "Turbo SMS",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/turbosms-int-logo.svg",
             "features": [
               "Send SMS automatically for different events",
               "Send SMS manually using custom text or a template",
@@ -2300,11 +2288,11 @@
               "Monitor your balance and receive low SMS balance alerts"
             ],
             "link_text": "Learn more",
-            "link_href": "/"
+            "link_href": "/integrations/turboSMS"
           },
           {
             "title": "Bank APIs",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/banks-api-int-logo.svg",
             "features": [
               "Connect your bank account",
               "View recent transactions",
@@ -2312,11 +2300,11 @@
               "All transactions in one list, filtered by account or operation type, with search by amount, recipient, note and more"
             ],
             "link_text": "Learn more",
-            "link_href": "/"
+            "link_href": "/integrations/bank_API"
           },
           {
             "title": "Binotel",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/binotel-int-logo.svg",
             "features": [
               "Track missed calls",
               "View a customer’s call history in Vortex",
@@ -2325,7 +2313,7 @@
               "Open the customer’s Vortex profile when a registered number calls"
             ],
             "link_text": "Learn more",
-            "link_href": "/"
+            "link_href": "/integrations/binotel"
           }
         ]
       },
@@ -2797,32 +2785,6 @@
           }
         ]
       },
-      "why_vortex_showcase_section": {
-        "section_title": "Co potrafi Vortex?",
-        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
-        "cards": [
-          {
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
-            "image_src": ""
-          },
-          {
-            "title": "Dolor sit amet",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum et donec sed odio dui.",
-            "image_src": ""
-          },
-          {
-            "title": "Consectetur elit",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
-            "image_src": ""
-          },
-          {
-            "title": "Aenean commodo",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
-            "image_src": ""
-          }
-        ]
-      },
       "vortex_audience_section": {
         "section_title": "Dla kogo jest Vortex?",
         "cards": [
@@ -2928,12 +2890,12 @@
         ]
       },
       "integrations_catalog_section": {
-        "section_title": "Lorem ipsum",
-        "section_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "section_title": "Integracje API Vortex",
+        "section_description": "Dobieraj części, wystawiaj paragony fiskalne, przygotowuj przesyłki, rozliczaj transakcje bankowe i kontaktuj się z klientami w jednym systemie. Połącz potrzebne usługi z Vortex przez API bez ponownego wprowadzania danych i przełączania się między aplikacjami.",
         "cards": [
           {
             "title": "TecDoc Inside",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/tecdoc-int-logo.svg",
             "features": [
               "Wyszukiwanie pojazdu po VIN",
               "Dobór części do pojazdu, filtrowanie według ulubionych marek i zespołów konstrukcyjnych",
@@ -2942,11 +2904,11 @@
               "Dobór części w katalogu największej bazy danych na świecie"
             ],
             "link_text": "Dowiedz się więcej",
-            "link_href": "/"
+            "link_href": "/integrations/tecdoc"
           },
           {
             "title": "Checkbox",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/checkbox-int-logo.svg",
             "features": [
               "Kasa online bezpośrednio w Vortex",
               "Tworzenie i druk paragonów fiskalnych na drukarkach termicznych",
@@ -2956,11 +2918,34 @@
               "Konfiguracja wielu kont Checkbox oraz wielu kas i kasjerów w ramach jednego konta"
             ],
             "link_text": "Dowiedz się więcej",
-            "link_href": "/"
+            "link_href": "/integrations/checkbox"
+          },
+          {
+            "title": "Vchasno.Kasa",
+            "image_src": "/imgs/api-integrations/vchasno-kasa-logo.svg",
+            "features": [
+              "Fiskalizacja sprzedaży części i usług warsztatowych w Vortex",
+              "Elektroniczne paragony i przesyłanie danych do ukraińskiej administracji podatkowej",
+              "Łączenie punktów sprzedaży, kas i kluczy kasjerów",
+              "Płatności gotówkowe i bezgotówkowe oraz zwroty",
+              "Jeden proces obsługi zamówienia, płatności i paragonu"
+            ],
+            "link_text": "Dowiedz się więcej",
+            "link_href": "/integrations/vchasno",
+            "partner_links": [
+              {
+                "label": "−50% na pierwszą płatność",
+                "href": "https://service.vchasno.ua/prro-offer?utm_source=vortex"
+              },
+              {
+                "label": "50 UAH miesięcznie przez 6 miesięcy",
+                "href": "https://service.vchasno.ua/prro-offer-50?utm_source=vortex"
+              }
+            ]
           },
           {
             "title": "Nova Poshta",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/np-int-logo.svg",
             "features": [
               "Ustawienie domyślnego nadawcy",
               "Tworzenie ekspresowych listów przewozowych do oddziału lub na adres, z kontrolą płatności lub bez, dla jednej lub wielu paczek i z wieloma dodatkowymi opcjami",
@@ -2968,11 +2953,11 @@
               "Aktualizacja bazy oddziałów przez API"
             ],
             "link_text": "Dowiedz się więcej",
-            "link_href": "/"
+            "link_href": "/integrations/nova_poshta"
           },
           {
             "title": "Turbo SMS",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/turbosms-int-logo.svg",
             "features": [
               "Automatyczne wysyłanie SMS przy różnych zdarzeniach",
               "Ręczne wysyłanie SMS z własną treścią lub szablonem",
@@ -2981,11 +2966,11 @@
               "Monitorowanie salda i powiadomienia o niskim saldzie SMS"
             ],
             "link_text": "Dowiedz się więcej",
-            "link_href": "/"
+            "link_href": "/integrations/turboSMS"
           },
           {
             "title": "API banków",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/banks-api-int-logo.svg",
             "features": [
               "Połączenie z Twoim rachunkiem bankowym",
               "Podgląd ostatnich transakcji",
@@ -2993,11 +2978,11 @@
               "Wszystkie transakcje na jednej liście z filtrami według rachunku i typu operacji oraz wyszukiwaniem po kwocie, odbiorcy, notatce i innych danych"
             ],
             "link_text": "Dowiedz się więcej",
-            "link_href": "/"
+            "link_href": "/integrations/bank_API"
           },
           {
             "title": "Binotel",
-            "image_src": "blank_image",
+            "image_src": "/imgs/api-integrations/binotel-int-logo.svg",
             "features": [
               "Kontrola nieodebranych połączeń",
               "Historia połączeń klienta w Vortex",
@@ -3006,7 +2991,7 @@
               "Przejście do profilu klienta w Vortex przy połączeniu z zarejestrowanego numeru"
             ],
             "link_text": "Dowiedz się więcej",
-            "link_href": "/"
+            "link_href": "/integrations/binotel"
           }
         ]
       },

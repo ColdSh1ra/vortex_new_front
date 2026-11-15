@@ -17,7 +17,7 @@ function VortexAudienceComponent() {
                                     <p>{card.description}</p>
                                     <a href="#trial-request" className="audience-cta">
                                         {card.cta_text}
-                                        <span aria-hidden="true">»</span>
+                                        <span aria-hidden="true"><img className="chevron-right-icon" src="/icons/chevron-right-double.svg" alt="" width="20" height="20" /></span>
                                     </a>
                                 </div>
                                 <div className="audience-image-frame" aria-hidden="true">

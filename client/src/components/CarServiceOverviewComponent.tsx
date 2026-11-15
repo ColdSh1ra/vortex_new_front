@@ -27,7 +27,7 @@ function CarServiceOverviewComponent() {
               <div className="car-service-cta-card">
                 <a href="/car-service">
                   {t('carOverview.link')}
-                  <span aria-hidden="true">››</span>
+                  <span aria-hidden="true"><img className="chevron-right-icon" src="/icons/chevron-right-double.svg" alt="" width="20" height="20" /></span>
                 </a>
               </div>
             </div>

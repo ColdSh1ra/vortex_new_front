@@ -63,6 +63,7 @@ export type IntegrationCatalogCard = {
   features: string[];
   link_text: string;
   link_href: string;
+  partner_links?: { label: string; href: string }[];
 };
 
 export type IntegrationsCatalogSection = {
@@ -117,7 +118,6 @@ export type HomepageContent = {
   about_us_block: AboutUsContent;
   hero_page_slider_section: HeroPageSliderSection;
   why_vortex_section: WhyVortexSection;
-  why_vortex_showcase_section: WhyVortexSection;
   vortex_audience_section: VortexAudienceSection;
   client_testimonials_section: ClientTestimonialsSection;
   integrations_catalog_section: IntegrationsCatalogSection;

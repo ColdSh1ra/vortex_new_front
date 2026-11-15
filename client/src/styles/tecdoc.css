@@ -16,7 +16,7 @@
 .tecdoc-hero-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
 .tecdoc-primary-link, .tecdoc-secondary-link { align-items: center; border-radius: 999px; color: var(--grey-dark-text); display: inline-flex; font-size: 16px; font-weight: 600; gap: 24px; min-height: 46px; text-decoration: none; }
 .tecdoc-primary-link { background: var(--orange-bg-color); padding: 8px 8px 8px 20px; }
-.tecdoc-primary-link > span { align-items: center; background: rgb(255 255 255 / .45); border-radius: 50%; display: flex; font-size: 22px; height: 30px; justify-content: center; width: 30px; }
+.tecdoc-primary-link > span { align-items: center; background: rgb(255 255 255 / .45); border-radius: 50%; display: flex; height: 30px; justify-content: center; width: 30px; }
 .tecdoc-primary-link:hover { background: #ffd16f; }
 .tecdoc-secondary-link { border: 1px solid var(--grey-color-100); padding: 12px 20px; }
 .tecdoc-secondary-link:hover { background: #f1f2f4; }
@@ -59,7 +59,6 @@
 .tecdoc-license-price-period { font-size: 22px; font-weight: 600; margin: 0 0 28px; }
 .tecdoc-license-price-terms { border-top: 1px solid var(--blue-color-2); font-size: 18px; line-height: 1.5; margin: 0; padding-top: 24px; }
 .tecdoc-license-price-trial { color: var(--grey-color-100); font-size: 18px; line-height: 1.5; margin: 20px 0 0; }
-.tecdoc-route .footer { box-shadow: 0 0 0 100vmax var(--blue-color-5); clip-path: inset(0 -100vmax); }
 #tecdoc-features { scroll-margin-top: 80px; }
 
 @media (max-width: 1100px) {

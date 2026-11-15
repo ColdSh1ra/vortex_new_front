@@ -1,0 +1,308 @@
+{
+  "label": "API integrace",
+  "eyebrow": "Integrace s Vortex",
+  "connect": "Připojit integraci",
+  "viewFeatures": "Možnosti integrace",
+  "featuresTitle": "Co integrace přináší",
+  "linksTitle": "Nabídky partnera",
+  "back": "Všechny integrace",
+  "relatedTitle": "Další integrace s Vortex",
+  "pages": {
+    "tecdoc": {
+      "title": "TecDoc Inside",
+      "lead": "Oficiální integrace katalogu TecDoc umožňuje vyhledávat vozidla, vybírat kompatibilní díly a prohlížet technické informace přímo ve Vortex.",
+      "sections": [
+        {
+          "title": "Najděte správné vozidlo",
+          "paragraphs": [
+            "Začněte výběr podle VIN, kódu motoru nebo ručním vyhledáním v katalogu. Údaje o značce, modelu a variantě vám pomohou pracovat se správným vozidlem a rychle přejít k dílům, které jsou pro ně určené."
+          ],
+          "items": [
+            "Vyhledání vozidla podle VIN.",
+            "Výběr vozidla podle kódu motoru nebo ručně.",
+            "Vyplnění značky, modelu a varianty z katalogu."
+          ]
+        },
+        {
+          "title": "Vybírejte díly podle kategorií",
+          "paragraphs": [
+            "Přejděte do požadované skupiny dílů a upřesněte výsledky podle výrobce a parametrů. Filtry a oblíbené značky usnadňují nalezení potřebných položek mezi mnoha možnostmi v katalogu."
+          ],
+          "items": [
+            "Procházení kategorií a konstrukčních celků.",
+            "Filtrování podle značky a parametrů dílu.",
+            "Ověření, zda díl patří k vybranému vozidlu."
+          ]
+        },
+        {
+          "title": "Ověřujte informace a kompatibilitu",
+          "paragraphs": [
+            "Před prodejem si prohlédněte popis dílu, fotografie, technické parametry a referenční čísla. Údaje o alternativách a použití v dalších vozidlech pomáhají porovnat možnosti a vybrat díl podle potřeb zákazníka."
+          ],
+          "items": [
+            "Čísla dílů, originální čísla OEM a alternativy.",
+            "Obrázky, popisy a technické parametry.",
+            "Použití podle modelu, roku a dalších údajů o vozidle."
+          ]
+        }
+      ],
+      "links": []
+    },
+    "checkbox": {
+      "title": "Checkbox",
+      "lead": "Fiskalizujte prodej dílů, služby autoservisu a vrácení zboží ve Vortex prostřednictvím softwarové pokladny Checkbox bez samostatného pokladního zařízení.",
+      "sections": [
+        {
+          "title": "Pokladní operace ve známém systému",
+          "paragraphs": [
+            "Integrace propojuje práci obsluhy s pokladnou a zpracování prodeje. Ve Vortex můžete provádět každodenní pokladní operace a vystavovat fiskální doklady bez ručního přenosu údajů o prodeji do jiné aplikace."
+          ],
+          "items": [
+            "Otevření a uzavření pokladny.",
+            "Vklady a výběry hotovosti z pokladny.",
+            "Fiskalizace zboží, služeb autoservisu a vrácení."
+          ]
+        },
+        {
+          "title": "Připravte si účet Checkbox",
+          "paragraphs": [
+            "Nejprve se zaregistrujte do služby Checkbox a nastavte strukturu své firmy. Vytvořte prodejní místo, pokladnu a účty pokladních, kteří budou zpracovávat transakce. Odkaz na registraci v rámci partnerské nabídky najdete níže."
+          ],
+          "items": [
+            "Registrace firmy ve službě Checkbox.",
+            "Nastavení prodejního místa a pokladny.",
+            "Vytvoření účtů pokladních pro běžný provoz."
+          ]
+        },
+        {
+          "title": "Připojte pokladnu k Vortex",
+          "paragraphs": [
+            "V nastavení integrace Vortex zadejte licenční klíč pokladny a přidejte pokladní pomocí jejich přihlašovacích jmen a hesel Checkbox. Po připojení můžete vystavovat fiskální účtenky a tisknout je na termotiskárně v rámci obvyklého prodejního postupu."
+          ],
+          "items": [
+            "Přidání licenčního klíče pokladny.",
+            "Připojení pokladních pomocí údajů Checkbox.",
+            "Práce s více účty, pokladnami a pokladními."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Zaregistrovat se do Checkbox",
+          "href": "https://my.checkbox.ua/auth/registration?registration_code=exzPKMg1NQFd"
+        }
+      ]
+    },
+    "vchasno": {
+      "title": "Vchasno.Kasa",
+      "lead": "Softwarová pokladna pro fiskalizaci prodeje ve Vortex: elektronické účtenky, pokladny a klíče pokladních v jednom procesu práce s objednávkami a platbami.",
+      "sections": [
+        {
+          "title": "Jak funguje fiskalizace",
+          "paragraphs": [
+            "Pracovník zpracuje prodej nebo platbu ve Vortex. Systém předá službě Vchasno.Kasa zboží či služby, částku, druh platby, pokladnu a pokladního. Služba vystaví fiskální účtenku a odešle údaje finanční správě, zatímco pracovník pokračuje v práci s objednávkou."
+          ],
+          "items": [
+            "Prodej dílů ze skladu nebo objednávky zákazníka.",
+            "Fiskalizace služeb oprav a údržby vozidel.",
+            "Vrácení zboží s odpovídajícím fiskálním dokladem."
+          ]
+        },
+        {
+          "title": "Co potřebujete k připojení",
+          "paragraphs": [
+            "Připravte si účet Vchasno.Kasa, zaregistrovaná prodejní místa, pokladny a klíče pokladních. Poté přidejte parametry integrace do Vortex. Než tým začne systém používat, ověřte nastavení pomocí testovací fiskalizace."
+          ],
+          "items": [
+            "Zaregistrujte firmu a kvalifikovaný elektronický podpis ve službě.",
+            "Vytvořte nebo importujte prodejní místo a pokladnu.",
+            "Nastavte daňové skupiny a druhy plateb.",
+            "Přidejte klíč pokladního a parametry připojení do Vortex.",
+            "Před spuštěním ověřte testovací fiskalizaci."
+          ]
+        },
+        {
+          "title": "Jeden proces pro obchod i autoservis",
+          "paragraphs": [
+            "Prodej, zákazník, objednávka a fiskalizace zůstávají v jednom pracovním postupu. Tím se omezuje ruční duplikování údajů a usnadňuje práce s více prodejními místy. Partnerské nabídky pro připojení Vchasno.Kasa jsou dostupné prostřednictvím odkazů níže."
+          ],
+          "items": [
+            "Elektronická účtenka pro zákazníka po zaplacení.",
+            "Podpora hotovostních i bezhotovostních plateb.",
+            "Správa více pokladen, prodejních míst a odpovědných pokladních."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "−50 % na první platbu",
+          "href": "https://service.vchasno.ua/prro-offer?utm_source=vortex"
+        },
+        {
+          "label": "50 UAH/měsíc po dobu 6 měsíců",
+          "href": "https://service.vchasno.ua/prro-offer-50?utm_source=vortex"
+        }
+      ]
+    },
+    "nova_poshta": {
+      "title": "Nova Poshta",
+      "lead": "Vytvářejte expresní přepravní listy, prohlížejte zásilky a tiskněte přepravní dokumenty přímo ve Vortex díky API integraci s Nova Poshta.",
+      "sections": [
+        {
+          "title": "Nastavte odesílatele",
+          "paragraphs": [
+            "Přidejte účty odesílatelů a vyberte údaje, které se mají používat jako výchozí. Při vytváření přepravního listu lze zvolit potřebný účet. To se hodí, když tým připravuje zásilky jménem různých odesílatelů."
+          ],
+          "items": [
+            "Připojení více účtů odesílatelů.",
+            "Výběr účtu při přípravě zásilky.",
+            "Nastavení výchozího odesílatele."
+          ]
+        },
+        {
+          "title": "Vytvářejte expresní přepravní listy",
+          "paragraphs": [
+            "Zadejte příjemce, způsob doručení a parametry zásilky v rámci svého běžného postupu. Integrace podporuje doručení na pobočku i na adresu, nastavení převodu peněz a kontroly platby i zásilky složené z více balíků."
+          ],
+          "items": [
+            "Výběr pobočky nebo doručovací adresy.",
+            "Popis zásilky, počet balíků a jejich rozměry.",
+            "Tisk štítků balíků a expresního přepravního listu na A4."
+          ]
+        },
+        {
+          "title": "Sledujte zásilky",
+          "paragraphs": [
+            "Seznam obsahuje přepravní listy vytvořené ve Vortex i externí listy, u kterých jste kontrolovali stav. Databáze poboček se aktualizuje přes API; výběr pobočky v objednávce je dostupný i bez aktivace integrace."
+          ],
+          "items": [
+            "Prohlížení a hromadná aktualizace stavů zásilek.",
+            "Přidání přepravních listů do úkolů pro kurýra.",
+            "Aktuální databáze poboček při zpracování objednávek."
+          ]
+        }
+      ],
+      "links": []
+    },
+    "turboSMS": {
+      "title": "TurboSMS",
+      "lead": "Připojte svůj účet TurboSMS k Vortex, abyste mohli posílat zprávy ručně, používat šablony a automaticky informovat zákazníky o důležitých událostech.",
+      "sections": [
+        {
+          "title": "Zprávy a šablony",
+          "paragraphs": [
+            "Pošlete SMS na požadované číslo přímo z Vortex. Pro opakované situace připravte šablony: do textu lze vložit údaje objednávky, například její číslo pomocí {ORDER_ID}. Usnadníte tím komunikaci se zákazníky a omezíte ruční psaní zpráv."
+          ],
+          "items": [
+            "Ruční odesílání SMS s libovolným textem.",
+            "Šablony s doplněním čísla objednávky.",
+            "Rozesílání zpráv více příjemcům."
+          ]
+        },
+        {
+          "title": "Informujte zákazníky automaticky",
+          "paragraphs": [
+            "Nastavte zprávy spouštěné událostmi v pracovním procesu. Zákazník může dostávat SMS o připravené či zrušené objednávce nebo o odeslání zásilky. Zpráva o zrušení pomáhá včas vysvětlit změnu stavu a předejít nedorozuměním."
+          ],
+          "items": [
+            "Oznámení o připravené a odeslané objednávce.",
+            "SMS o zrušení objednávky.",
+            "Připomínky výměny oleje."
+          ]
+        },
+        {
+          "title": "Sledujte historii a zůstatek",
+          "paragraphs": [
+            "Prohlížejte historii odeslaných SMS a zůstatek účtu TurboSMS ve Vortex. Kontrola zůstatku pomáhá včas dobít účet, aby oznámení o objednávkách a připomínky zůstaly vašemu týmu k dispozici."
+          ],
+          "items": [
+            "Historie odeslaných zpráv.",
+            "Zobrazení zbývajícího SMS kreditu.",
+            "Upozornění na téměř vyčerpaný zůstatek."
+          ]
+        }
+      ],
+      "links": []
+    },
+    "bank_API": {
+      "title": "Bankovní API",
+      "lead": "Prohlížejte transakce připojených podnikatelských účtů ve Vortex a vytvářejte finanční operace podle skutečného pohybu peněz.",
+      "sections": [
+        {
+          "title": "Připojte podnikatelský účet",
+          "paragraphs": [
+            "Integrace s bankou pomáhá automatizovat práci s finančními operacemi. Údaje připojeného účtu se zobrazují ve Vortex, aby je pracovník nebo účetní mohli zpracovat v evidenčním systému. Dostupnost připojení závisí na bance a typu účtu."
+          ],
+          "items": [
+            "Připojení účtu pro práci s bankovními transakcemi.",
+            "Přehled skutečných příjmů a výdajů.",
+            "Ověření podpory banky a typu účtu před připojením."
+          ]
+        },
+        {
+          "title": "Převádějte transakce na finanční operace",
+          "paragraphs": [
+            "Vyberte bankovní transakci a jedním kliknutím z ní vytvořte finanční operaci Vortex. Po zaúčtování zmizí ze seznamu nezpracovaných transakcí, takže snáze zjistíte, které pohyby peněz ještě vyžadují pozornost."
+          ],
+          "items": [
+            "Vytvoření finanční operace z bankovní transakce.",
+            "Méně ručního přepisování částek a platebních údajů.",
+            "Samostatný seznam transakcí čekajících na zpracování."
+          ]
+        },
+        {
+          "title": "Najděte potřebné platby",
+          "paragraphs": [
+            "Pracujte s operacemi v jednom seznamu a upřesněte ho podle potřebných kritérií. Použijte filtry podle účtu a druhu operace nebo obecné vyhledávání, když potřebujete najít konkrétní platbu podle známé částky či jiných údajů."
+          ],
+          "items": [
+            "Filtry podle účtu, příjmů a výdajů.",
+            "Vyhledávání podle částky a příjemce.",
+            "Hledání plateb podle poznámky."
+          ]
+        }
+      ],
+      "links": []
+    },
+    "binotel": {
+      "title": "Binotel",
+      "lead": "Propojte telefonii Binotel s evidencí zákazníků ve Vortex: sledujte hovory, otevírejte zákaznické karty a prohlížejte historii komunikace.",
+      "sections": [
+        {
+          "title": "Neztrácejte zákaznické dotazy",
+          "paragraphs": [
+            "Prohlížejte zmeškané hovory a ozvěte se zákazníkům, se kterými se nepodařilo spojit. Údaje o hovorech ve Vortex pomáhají týmu sledovat dotazy a plánovat zpětné volání v rámci každodenní práce."
+          ],
+          "items": [
+            "Kontrola zmeškaných hovorů.",
+            "Údaje potřebné ke zpětnému volání zákazníkovi.",
+            "Historie hovorů na kartě zákazníka Vortex."
+          ]
+        },
+        {
+          "title": "Rozpoznejte zákazníka při hovoru",
+          "paragraphs": [
+            "Když zákazník volá ze známého čísla, otevřete jeho kartu ve Vortex jedním kliknutím. Pokud číslo ještě není zaregistrované, vyskakovací okno pomůže rychle vytvořit nového zákazníka bez přerušení pracovního postupu."
+          ],
+          "items": [
+            "Přechod na zákazníka z příchozího hovoru.",
+            "Rychlá registrace zákazníka z nového čísla.",
+            "Přístup k historii předchozí komunikace."
+          ]
+        },
+        {
+          "title": "Vyhodnocujte hovory a kvalitu služeb",
+          "paragraphs": [
+            "Poslouchejte nahrávky hovorů, abyste mohli rozebírat skutečné situace a zlepšovat zákaznický servis. Historie komunikace pomáhá připomenout podrobnosti dohod a příklady rozhovorů lze využít při školení pracovníků."
+          ],
+          "items": [
+            "Poslech nahrávek hovorů.",
+            "Kontrola kvality komunikace se zákazníky.",
+            "Rozbor hovorů při školení týmu."
+          ]
+        }
+      ],
+      "links": []
+    }
+  }
+}

@@ -195,8 +195,6 @@
 }
 
 .contacts-route .footer {
-  box-shadow: 0 0 0 100vmax var(--blue-color-5);
-  clip-path: inset(0 -100vmax);
   margin-top: 0;
 }
 

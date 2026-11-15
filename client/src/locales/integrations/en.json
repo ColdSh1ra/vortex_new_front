@@ -1,0 +1,308 @@
+{
+  "label": "API integrations",
+  "eyebrow": "Integration with Vortex",
+  "connect": "Connect integration",
+  "viewFeatures": "Integration features",
+  "featuresTitle": "What the integration offers",
+  "linksTitle": "Partner offers",
+  "back": "All integrations",
+  "relatedTitle": "More integrations with Vortex",
+  "pages": {
+    "tecdoc": {
+      "title": "TecDoc Inside",
+      "lead": "The official TecDoc catalogue integration lets you find vehicles, select compatible parts and view technical information directly in Vortex.",
+      "sections": [
+        {
+          "title": "Find the right vehicle",
+          "paragraphs": [
+            "Start with a VIN, an engine code or a manual catalogue search. Make, model and variant details help you work with the correct vehicle and move straight to the parts that apply to it."
+          ],
+          "items": [
+            "Vehicle search by VIN.",
+            "Select a vehicle by engine code or manually.",
+            "Populate make, model and variant from the catalogue."
+          ]
+        },
+        {
+          "title": "Select parts by category",
+          "paragraphs": [
+            "Navigate to the required parts group and narrow the results by manufacturer and specifications. Filters and favourite brands make it easier to find the right items among the many options in the catalogue."
+          ],
+          "items": [
+            "Browse categories and vehicle assemblies.",
+            "Filter by brand and part specifications.",
+            "Check whether a part fits the selected vehicle."
+          ]
+        },
+        {
+          "title": "Check information and compatibility",
+          "paragraphs": [
+            "Before selling a part, review its description, images, technical specifications and reference numbers. Alternative parts and fitment information for other vehicles help you compare options and select a part that meets the customer’s needs."
+          ],
+          "items": [
+            "Part numbers, original OEM references and alternatives.",
+            "Images, descriptions and technical specifications.",
+            "Fitment by model, year and other vehicle details."
+          ]
+        }
+      ],
+      "links": []
+    },
+    "checkbox": {
+      "title": "Checkbox",
+      "lead": "Fiscalise parts sales, workshop services and returns in Vortex through the Checkbox software cash register, without a separate cash register device.",
+      "sections": [
+        {
+          "title": "Cash register operations in your usual system",
+          "paragraphs": [
+            "The integration brings together the manager’s cash register tasks and sales workflow. Run everyday cash register operations and issue fiscal documents in Vortex without manually transferring sales data to another application."
+          ],
+          "items": [
+            "Open and close the cash register.",
+            "Record cash deposits and withdrawals.",
+            "Fiscalise goods, workshop services and returns."
+          ]
+        },
+        {
+          "title": "Prepare your Checkbox account",
+          "paragraphs": [
+            "First register with Checkbox and configure your business setup. Create a sales outlet, a cash register and the cashier accounts that will process transactions. The partner registration link is available below."
+          ],
+          "items": [
+            "Register your company with Checkbox.",
+            "Set up a sales outlet and cash register.",
+            "Create cashier accounts for everyday operations."
+          ]
+        },
+        {
+          "title": "Connect the cash register to Vortex",
+          "paragraphs": [
+            "Enter the cash register licence key in the Vortex integration settings and add cashiers using their Checkbox usernames and passwords. Once connected, you can issue fiscal receipts and print them on a thermal printer within your normal sales workflow."
+          ],
+          "items": [
+            "Add the cash register licence key.",
+            "Connect cashiers using their Checkbox credentials.",
+            "Work with multiple accounts, cash registers and cashiers."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Register with Checkbox",
+          "href": "https://my.checkbox.ua/auth/registration?registration_code=exzPKMg1NQFd"
+        }
+      ]
+    },
+    "vchasno": {
+      "title": "Vchasno.Kasa",
+      "lead": "A software cash register for fiscalising sales in Vortex: electronic receipts, cash registers and cashier keys within your order and payment workflow.",
+      "sections": [
+        {
+          "title": "How fiscalisation works",
+          "paragraphs": [
+            "The manager processes a sale or payment in Vortex. The system sends the goods or services, amount, payment type, cash register and cashier to Vchasno.Kasa. The service issues a fiscal receipt and submits the data to the tax authority while the manager continues working with the order."
+          ],
+          "items": [
+            "Sell parts from stock or a customer order.",
+            "Fiscalise vehicle repair and maintenance services.",
+            "Process goods returns with the corresponding fiscal document."
+          ]
+        },
+        {
+          "title": "What you need to connect",
+          "paragraphs": [
+            "Prepare a Vchasno.Kasa account, registered sales outlets, cash registers and cashier keys. Then add the integration parameters in Vortex. Before the team starts using it, check the configuration with a test fiscal transaction."
+          ],
+          "items": [
+            "Register your company and qualified electronic signature with the service.",
+            "Create or import a sales outlet and cash register.",
+            "Configure tax groups and payment types.",
+            "Add the cashier key and connection settings in Vortex.",
+            "Run a test fiscal transaction before launch."
+          ]
+        },
+        {
+          "title": "One workflow for shops and workshops",
+          "paragraphs": [
+            "Sales, customers, orders and fiscalisation stay within the same workflow. This reduces manual data duplication and supports businesses with multiple sales outlets. Partner offers for connecting Vchasno.Kasa are available through the links below."
+          ],
+          "items": [
+            "An electronic receipt for the customer after payment.",
+            "Support for cash and cashless payments.",
+            "Manage multiple cash registers, sales outlets and responsible cashiers."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "50% off the first payment",
+          "href": "https://service.vchasno.ua/prro-offer?utm_source=vortex"
+        },
+        {
+          "label": "UAH 50/month for 6 months",
+          "href": "https://service.vchasno.ua/prro-offer-50?utm_source=vortex"
+        }
+      ]
+    },
+    "nova_poshta": {
+      "title": "Nova Poshta",
+      "lead": "Create express waybills, view shipping documents and print shipment paperwork directly in Vortex through the Nova Poshta API integration.",
+      "sections": [
+        {
+          "title": "Set up senders",
+          "paragraphs": [
+            "Add sender accounts and choose the details to use by default. Select the appropriate account when creating a waybill. This is useful when your team prepares shipments on behalf of different senders."
+          ],
+          "items": [
+            "Connect multiple sender accounts.",
+            "Select an account when preparing a shipment.",
+            "Configure a default sender."
+          ]
+        },
+        {
+          "title": "Create express waybills",
+          "paragraphs": [
+            "Enter the recipient, delivery method and parcel details within your usual workflow. The integration supports branch or address delivery, money transfers and payment control, as well as shipments consisting of multiple packages."
+          ],
+          "items": [
+            "Choose a delivery branch or address.",
+            "Specify shipment contents, package count and dimensions.",
+            "Print package labels and the express waybill on A4."
+          ]
+        },
+        {
+          "title": "Track shipments",
+          "paragraphs": [
+            "The waybill list includes documents created in Vortex and external waybills whose status you have checked. The branch database is updated through the API; selecting a branch in an order is available even without activating the integration."
+          ],
+          "items": [
+            "View waybill statuses and update them in bulk.",
+            "Add waybills to courier tasks.",
+            "Use an up-to-date branch database when creating orders."
+          ]
+        }
+      ],
+      "links": []
+    },
+    "turboSMS": {
+      "title": "TurboSMS",
+      "lead": "Connect your TurboSMS account to Vortex to send messages manually, use templates and automatically notify customers about important events.",
+      "sections": [
+        {
+          "title": "Messages and templates",
+          "paragraphs": [
+            "Send an SMS to the required number directly from Vortex. Prepare templates for recurring situations: order details can be inserted into the message, such as the order number using {ORDER_ID}. This makes customer communication easier and reduces manual typing."
+          ],
+          "items": [
+            "Send SMS manually with custom text.",
+            "Use templates that insert the order number.",
+            "Send messages to multiple recipients."
+          ]
+        },
+        {
+          "title": "Notify customers automatically",
+          "paragraphs": [
+            "Set up messages triggered by workflow events. Customers can receive SMS notifications when an order is ready, cancelled or shipped. Cancellation messages help explain a status change promptly and prevent misunderstandings."
+          ],
+          "items": [
+            "Notifications when an order is ready or shipped.",
+            "SMS notifications about order cancellations.",
+            "Oil change reminders."
+          ]
+        },
+        {
+          "title": "Monitor history and balance",
+          "paragraphs": [
+            "Review sent SMS history and your TurboSMS account balance in Vortex. Monitoring the balance helps you top up in time so order notifications and reminders remain available to your team."
+          ],
+          "items": [
+            "History of sent messages.",
+            "View the remaining SMS balance.",
+            "Receive alerts when the balance is nearly exhausted."
+          ]
+        }
+      ],
+      "links": []
+    },
+    "bank_API": {
+      "title": "Bank APIs",
+      "lead": "View transactions from connected business accounts in Vortex and create financial entries based on actual account activity.",
+      "sections": [
+        {
+          "title": "Connect a business account",
+          "paragraphs": [
+            "Bank integration helps automate work with financial transactions. Connected account data appears in Vortex so a manager or accountant can process it in the accounting system. Connection availability depends on the bank and account type."
+          ],
+          "items": [
+            "Connect an account to work with bank transactions.",
+            "View actual incoming and outgoing payments.",
+            "Confirm support for your bank and account type before connecting."
+          ]
+        },
+        {
+          "title": "Turn transactions into financial entries",
+          "paragraphs": [
+            "Select a bank transaction and create a Vortex financial entry from it in one click. Once posted, it disappears from the unprocessed transaction list, making it easier to see which account movements still need attention."
+          ],
+          "items": [
+            "Create a financial entry from a bank transaction.",
+            "Reduce manual copying of amounts and payment details.",
+            "Keep a separate list of transactions awaiting processing."
+          ]
+        },
+        {
+          "title": "Find the payments you need",
+          "paragraphs": [
+            "Work with transactions in one list and narrow it down using the appropriate criteria. Filter by account and operation type, or use general search to locate a particular payment by a known amount or other details."
+          ],
+          "items": [
+            "Filter by account, incoming payments and outgoing payments.",
+            "Search by amount and recipient.",
+            "Find payments by their note."
+          ]
+        }
+      ],
+      "links": []
+    },
+    "binotel": {
+      "title": "Binotel",
+      "lead": "Connect Binotel telephony with customer records in Vortex: monitor calls, open customer profiles and review communication history.",
+      "sections": [
+        {
+          "title": "Keep track of enquiries",
+          "paragraphs": [
+            "Review missed calls so you can get back to customers you could not reach. Call information in Vortex helps the team keep track of enquiries and arrange callbacks as part of its everyday work."
+          ],
+          "items": [
+            "Monitor missed calls.",
+            "Access the information needed to call customers back.",
+            "View call history in the Vortex customer profile."
+          ]
+        },
+        {
+          "title": "Recognise customers when they call",
+          "paragraphs": [
+            "When a customer calls from a known number, open their Vortex profile in one click. If the number has not been registered, a pop-up helps you quickly create a new customer without interrupting your workflow."
+          ],
+          "items": [
+            "Open a customer profile from an incoming call.",
+            "Quickly register a customer from a new number.",
+            "Access the history of previous interactions."
+          ]
+        },
+        {
+          "title": "Review conversations and service quality",
+          "paragraphs": [
+            "Listen to call recordings to review real situations and improve customer service. Communication history helps recover the details of agreements, while examples of calls can be used when training managers."
+          ],
+          "items": [
+            "Listen to call recordings.",
+            "Monitor the quality of customer communication.",
+            "Review calls when training the team."
+          ]
+        }
+      ],
+      "links": []
+    }
+  }
+}
