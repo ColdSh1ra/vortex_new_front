@@ -8,6 +8,7 @@ let dismantlingStylesPromise: Promise<unknown> | null = null;
 let tecdocStylesPromise: Promise<unknown> | null = null;
 let blogStylesPromise: Promise<unknown> | null = null;
 let integrationStylesPromise: Promise<unknown> | null = null;
+let privacyStylesPromise: Promise<unknown> | null = null;
 
 function isFaqPath(pathname: string) {
   return pathname === '/faq' || pathname.startsWith('/faq/');
@@ -18,6 +19,10 @@ function isContactPath(pathname: string) {
 }
 
 export function loadPageStyles(pathname: string) {
+  if (pathname === '/privacy-policy' || pathname === '/privacy-policy/') {
+    privacyStylesPromise ??= import('./privacy.css');
+    return privacyStylesPromise;
+  }
   if (pathname.startsWith('/integrations/')) {
     integrationStylesPromise ??= import('./integrations.css');
     return integrationStylesPromise;

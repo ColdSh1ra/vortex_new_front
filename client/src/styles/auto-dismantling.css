@@ -27,7 +27,6 @@
 .dismantling-cta > span { align-items: center; background: rgb(255 255 255 / .45); border-radius: 50%; display: flex; height: 30px; justify-content: center; width: 30px; }
 .dismantling-cta:hover { background: #ffd16f; }
 .dismantling-page a:focus-visible { outline: 2px solid var(--blue-color-2); outline-offset: 4px; }
-.dismantling-hero-art { background: radial-gradient(ellipse, rgb(255 172 0 / .12), transparent 68%); }
 .dismantling-hero-art img { display: block; height: auto; width: 100%; }
 .dismantling-section-links { display: grid; gap: var(--dismantling-card-gap); grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: var(--dismantling-section-gap); }
 .dismantling-section-links a { align-items: center; background: #f1f2f4; border-radius: 12px; color: var(--grey-dark-text); display: flex; font-size: 18px; font-weight: 600; gap: 16px; min-height: 72px; padding: 20px; text-decoration: none; }

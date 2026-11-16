@@ -1,18 +1,33 @@
 # Vortex auto dismantling illustrations
 
-Generated specifically for this module with the built-in ImageGen tool. All three PNG files preserve their generated transparent alpha channel. These are custom illustrations, not assets from a third-party premium icon pack.
+Generated on 2026-11-16 with the built-in ImageGen tool (`transparent_background: true`).
+These custom raster illustrations replace the previous three illustrations and follow the project's
+`3dicons_premium/monitor.png` and `folder.png` visual language: satin graphite, rounded shapes,
+and polished metallic gold accents. They are not licensed assets from a third-party icon pack.
 
-## Assets and generation prompts
+Final assets stored here preserve their generated transparent alpha channel:
 
-### dismantling-car.png
+- `dismantling-car-premium.png` — 1536 × 1024; hero car and detached wheel.
+- `vehicle-record-premium.png` — 1199 × 1312; vehicle document and check badge.
+- `parts-catalog-premium.png` — 1536 × 1024; catalog folder and automotive components.
 
-Use case: stylized-concept. Asset type: premium 3D icon for the Vortex automotive dismantling software landing page. Create a single polished 3D illustration of a compact mustard yellow car in three quarter front isometric view, next to one neatly removed dark blue wheel and a small metallic gear, communicating auto dismantling and reusable parts. Rounded high quality product icon aesthetic, satin enamel and dark navy graphite rubber, restrained gold metallic details, soft studio light from upper left, subtle contact shadow only under the objects. Color palette: warm golden yellow #ffac00, deep slate navy #2b3342, graphite, small silver highlights. Centered cohesive composition, generous empty transparent margin, entire objects visible, clean silhouette, not a scene. Genuinely transparent background and alpha. No environment, no floor plane, no lettering, no logos, no watermark. This must be a raster 3D render, not a flat illustration.
+The originals remain in the ImageGen output directory; these workspace copies are referenced by
+`client/src/pages/AutoDismantlingPage.tsx`. No manual pixel edits were applied. Alpha and actual
+dimensions were verified. Empty alternative text marks the illustrations as decorative because
+adjacent copy conveys their meaning.
 
-### vehicle-record.png
+## Final generation prompts
 
-Use case: stylized-concept. Asset type: premium 3D icon for the Vortex auto dismantling software vehicle record section. Create a single polished 3D illustration of a thick rounded navy graphite clipboard holding a small ivory vehicle identification card. The card shows an embossed miniature golden yellow car silhouette in its upper half and three clean dark abstract data lines below, with a small gold circular chart token leaning at the base to suggest vehicle profitability. Three quarter isometric view, high quality satin enamel and gently reflective gold materials. Color palette warm golden yellow #ffac00, deep slate navy #2b3342, ivory and silver highlights. Soft studio lighting upper left, subtle contact shadow only beneath the objects, centered cohesive composition with generous empty transparent margin, all edges visible. Genuinely transparent background and alpha. No environment, no floor plane, no actual words or digits, no logos, no watermark. Raster 3D render, not flat vector.
+Each asset was generated in its own built-in ImageGen call.
 
-### parts-catalog.png
+### dismantling-car-premium.png
 
-Use case: stylized-concept. Asset type: premium 3D icon for the Vortex auto dismantling software parts selection and catalogs section. Create a single polished 3D illustration of a rounded dark navy open catalog book with a raised golden yellow car door panel, a silver and navy engine block and a compact yellow-rimmed headlight floating neatly in a small coherent exploded view above its pages. Communicate selecting reusable car parts from a visual catalog. Three quarter isometric perspective, satin enamel, soft rounded geometry, restrained gold metallic highlights. Color palette warm golden yellow #ffac00, deep slate navy #2b3342, graphite, warm ivory pages and small silver details. Soft upper left studio lighting, subtle contact shadow only beneath the objects, entire objects fully visible in a centered cohesive composition, generous transparent empty margins. Genuinely transparent background and alpha. No environment or floor plane, no text, no branding, no watermark. Premium raster 3D render, not flat vector.
+Use case: stylized-concept. Asset type: production website illustration for Vortex auto dismantling software. Match a premium 3D icon family: simple chunky rounded shapes, satin graphite navy #44495b body surfaces, restrained highly reflective warm metallic gold accents, soft beveled edges, soft upper-left studio lighting and elegant highlights. Compact object icon composition, not a realistic vehicle advertisement. Truly transparent background and alpha, entire object visible, clean cutout, no colored backdrop, no floor plane, no halo, no glow, no frame, no text, no letters, no numbers, no logo, no watermark. Generous transparent margins. Subject: one small stylized dark graphite hatchback car in three-quarter front isometric view with simplified smooth body and dark windows. One front wheel neatly detached and standing beside the car, gold wheel hubs and gold edge trim only. Predominantly graphite with small gold accents, not a yellow car. No extra gear or tools. Wide landscape composition around 3:2, centered coherent silhouette.
 
+### vehicle-record-premium.png
+
+Use case: stylized-concept. Asset type: production website illustration for Vortex auto dismantling software. Match a premium 3D icon family: simple chunky rounded shapes, satin graphite navy #44495b body surfaces, restrained highly reflective warm metallic gold accents, soft beveled edges, soft upper-left studio lighting and elegant highlights. Compact object icon composition, not a realistic vehicle advertisement. Truly transparent background and alpha, entire object visible, clean cutout, no colored backdrop, no floor plane, no halo, no glow, no frame, no text, no letters, no numbers, no logo, no watermark. Generous transparent margins. Subject: one thick upright graphite vehicle record document card with a slightly folded top corner, a small raised metallic gold miniature car emblem in upper half, two short embossed graphite bars below, one small gold checkmark badge at lower right. Simple minimal premium document icon, no actual UI or text. Three-quarter isometric view. Square-ish to portrait composition, centered.
+
+### parts-catalog-premium.png
+
+Use case: stylized-concept. Asset type: production website illustration for Vortex auto dismantling software. Match a premium 3D icon family: simple chunky rounded shapes, satin graphite navy #44495b body surfaces, restrained highly reflective warm metallic gold accents, soft beveled edges, soft upper-left studio lighting and elegant highlights. Compact object icon composition, not a realistic vehicle advertisement. Truly transparent background and alpha, entire object visible, clean cutout, no colored backdrop, no floor plane, no halo, no glow, no frame, no text, no letters, no numbers, no logo, no watermark. Generous transparent margins. Subject: an open thick graphite catalog folder with restrained gold page edges and three simple arranged automotive components: a graphite and gold gear, one brake disc, and one compact piston. Components neatly emerge together from the open folder as a cohesive premium catalog icon. Rounded simple forms, no intricate engineering detail, mainly graphite with polished gold accents. Three-quarter isometric view. Wide landscape composition around 3:2, centered.

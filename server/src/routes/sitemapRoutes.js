@@ -3,7 +3,7 @@ const blog = require('../services/blogService');
 const router = express.Router();
 const SITE = 'https://crm-vortex.com';
 const LANGUAGES = { ua: 'uk', cz: 'cs', sk: 'sk', en: 'en', pl: 'pl' };
-const STATIC_PATHS = ['/', '/car-service', '/websites', '/auto-dismantling', '/tecdoc-license', '/faq', '/contact'];
+const STATIC_PATHS = ['/', '/car-service', '/websites', '/auto-dismantling', '/tecdoc-license', '/faq', '/contact', '/privacy-policy'];
 const INTEGRATION_SLUGS = ['tecdoc', 'checkbox', 'vchasno', 'nova_poshta', 'turboSMS', 'bank_API', 'binotel'];
 STATIC_PATHS.push(...INTEGRATION_SLUGS.map(slug => `/integrations/${slug}`));
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));

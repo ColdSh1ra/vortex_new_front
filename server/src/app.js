@@ -25,7 +25,9 @@ async function getRouteStylesheet(url) {
       'src/styles/trial-request.css',
     ];
 
-    if (pathname.startsWith('/integrations/')) {
+    if (pathname === '/privacy-policy' || pathname === '/privacy-policy/') {
+      sourceFiles = ['src/styles/privacy.css'];
+    } else if (pathname.startsWith('/integrations/')) {
       sourceFiles = ['src/styles/integrations.css'];
     } else if (pathname === '/faq' || pathname.startsWith('/faq/')) {
       sourceFiles = ['src/styles/faq.css'];

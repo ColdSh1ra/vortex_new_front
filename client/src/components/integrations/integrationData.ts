@@ -69,14 +69,6 @@ export const integrations: IntegrationNode[] = [
     animationDelay: 2520,
   },
   {
-    name: 'Autotechnics',
-    imageSrc: '/imgs/integrations/autotechnics_logo.png',
-    x: 12,
-    y: 45,
-    size: 'large',
-    animationDelay: 2940,
-  },
-  {
     name: 'ASG',
     imageSrc: '/imgs/integrations/ASG.png',
     x: 36,

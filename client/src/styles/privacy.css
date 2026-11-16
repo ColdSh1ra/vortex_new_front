@@ -1,0 +1,264 @@
+.privacy-route {
+  background: #fff;
+  color: var(--grey-dark-text);
+  display: flow-root;
+}
+
+.privacy-page {
+  background: #fff;
+}
+
+.privacy-page-content {
+  margin: 0 var(--desktop-padding);
+  padding: 42px 0 96px;
+}
+
+.privacy-breadcrumbs {
+  border-bottom: 1px solid var(--grey-color-100);
+  padding-bottom: 20px;
+}
+
+.privacy-breadcrumbs ol {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.privacy-breadcrumbs a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.privacy-breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.privacy-breadcrumbs [aria-current="page"],
+.privacy-breadcrumbs [aria-hidden="true"] {
+  color: var(--grey-color-200);
+}
+
+.privacy-document {
+  margin: 56px auto 0;
+  max-width: 880px;
+}
+
+.privacy-document-header {
+  padding-bottom: 32px;
+}
+
+.privacy-eyebrow {
+  color: var(--blue-color-2);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+.privacy-document h1 {
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 700;
+  letter-spacing: -.025em;
+  line-height: 1.05;
+  margin: 0 0 24px;
+  overflow-wrap: anywhere;
+}
+
+.privacy-document-lead {
+  color: var(--blue-color-2);
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 720px;
+}
+
+.privacy-document-date {
+  color: var(--blue-color-2);
+  font-size: 15px;
+  margin: 24px 0 0;
+}
+
+.privacy-contents {
+  background: #f4f5f7;
+  border: 1px solid #e6e8ec;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  padding: 28px 32px;
+}
+
+.privacy-contents h2 {
+  font-size: 22px;
+  line-height: 1.3;
+  margin: 0 0 18px;
+}
+
+.privacy-contents ol {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.privacy-contents li {
+  color: var(--blue-color-2);
+  font-size: 16px;
+  line-height: 1.4;
+  padding-left: 4px;
+}
+
+.privacy-document a {
+  color: inherit;
+  overflow-wrap: anywhere;
+  text-decoration-color: #9da5b3;
+  text-underline-offset: 3px;
+}
+
+.privacy-document a:hover {
+  color: var(--grey-dark-text);
+  text-decoration-color: var(--orange-bg-color);
+}
+
+.privacy-document a:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid var(--orange-bg-color);
+  outline-offset: 4px;
+}
+
+.privacy-section {
+  border-top: 1px solid #e0e3e8;
+  scroll-margin-top: 28px;
+}
+
+.privacy-section > h2 {
+  align-items: baseline;
+  background: #fff;
+  box-shadow: 0 10px 12px -12px rgb(12 18 30 / .2);
+  display: flex;
+  font-size: 27px;
+  font-weight: 600;
+  gap: 18px;
+  line-height: 1.3;
+  margin: 0;
+  padding: 24px 0 20px;
+  position: sticky;
+  top: 16px;
+  z-index: 2;
+}
+
+.privacy-section > h2 > span {
+  color: var(--grey-color-200);
+  flex: 0 0 26px;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+}
+
+.privacy-section-body {
+  color: var(--blue-color-3);
+  font-size: 18px;
+  line-height: 1.7;
+  padding: 0 0 30px 44px;
+}
+
+.privacy-section-body p {
+  margin: 0 0 18px;
+}
+
+.privacy-section-body p:last-child {
+  margin-bottom: 0;
+}
+
+.privacy-section-body ul {
+  margin: 0 0 18px;
+  padding-left: 24px;
+}
+
+.privacy-section-body li + li {
+  margin-top: 8px;
+}
+
+.privacy-section-body strong {
+  color: var(--grey-dark-text);
+  font-weight: 600;
+}
+
+.privacy-section-body code {
+  background: #f0f2f5;
+  border-radius: 4px;
+  font-size: .85em;
+  overflow-wrap: anywhere;
+  padding: 2px 5px;
+}
+
+@media (max-width: 768px) {
+  .privacy-page-content {
+    margin: 0 var(--mobile-padding);
+    padding: 28px 0 56px;
+  }
+
+  .privacy-document {
+    margin-top: 36px;
+  }
+
+  .privacy-document-lead {
+    font-size: 19px;
+  }
+
+  .privacy-contents {
+    margin-bottom: 28px;
+    padding: 22px 20px;
+  }
+
+  .privacy-section {
+    scroll-margin-top: 88px;
+  }
+
+  .privacy-section > h2 {
+    font-size: 22px;
+    gap: 10px;
+    padding: 18px 0 16px;
+    top: 76px;
+  }
+
+  .privacy-section > h2 > span {
+    flex-basis: 22px;
+    font-size: 13px;
+  }
+
+  .privacy-section-body {
+    font-size: 17px;
+    line-height: 1.65;
+    padding: 0 0 26px;
+  }
+}
+
+@media print {
+  .privacy-route .header,
+  .privacy-route .footer,
+  .privacy-breadcrumbs,
+  .privacy-contents {
+    display: none;
+  }
+
+  .privacy-page-content,
+  .privacy-document {
+    margin: 0;
+    max-width: none;
+    padding: 0;
+  }
+
+  .privacy-section > h2 {
+    break-after: avoid;
+    box-shadow: none;
+    position: static;
+  }
+
+  .privacy-section-body {
+    padding-left: 0;
+  }
+}

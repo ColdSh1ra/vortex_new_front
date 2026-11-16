@@ -74,7 +74,7 @@ function ServicesDropdown({ onNavigate }: { onNavigate?: () => void }) {
                 onClick={() => { setIsOpen(false); onNavigate?.(); }}
               >
                 {service.name}
-                <img className="chevron-right-icon" src="/icons/chevron-right-double.svg" alt="" width="20" height="20" />
+                <span className="services-link-icon" aria-hidden="true" />
               </Link>
             </li>
           ))}

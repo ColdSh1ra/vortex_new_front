@@ -6,7 +6,7 @@ import type { Language } from '../types/content';
 import { LANGUAGES } from '../types/content';
 import { getApiIntegration, getIntegrationCopy } from '../data/apiIntegrations';
 export type PageSeo = { title: string; description: string; canonical: string; language: Language; robots: string; status: number; image: string; type: string; alternates: { language: string; url: string }[]; schemas: object[]; publishedAt?: string; updatedAt?: string };
-const staticPages = new Set(['/', '/contact', '/faq', '/car-service', '/websites', '/auto-dismantling', '/tecdoc-license']);
+const staticPages = new Set(['/', '/contact', '/faq', '/car-service', '/websites', '/auto-dismantling', '/tecdoc-license', '/privacy-policy', '/privacy-policy/']);
 export function buildPageSeo(url: string, currentLanguage: Language, resource: BlogResource | null): PageSeo {
   const parsed = new URL(url, SITE_URL);
   const route = blogRoute(url);
@@ -14,6 +14,14 @@ export function buildPageSeo(url: string, currentLanguage: Language, resource: B
   const organization = { '@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: 'Vortex', url: SITE_URL, logo: `${SITE_URL}/imgs/logo-square.png` };
   const seo: PageSeo = { title: blogText(language, 'homeTitle'), description: blogText(language, 'homeDescription'), canonical: SITE_URL + parsed.pathname, language, robots: 'index,follow,max-image-preview:large', status: 200, image: `${SITE_URL}/imgs/logo-square.png`, type: 'website', alternates: [], schemas: [] };
   if (!route) {
+    if (parsed.pathname === '/privacy-policy' || parsed.pathname === '/privacy-policy/') {
+      seo.title = 'Політика конфіденційності | Vortex';
+      seo.description = 'Як Vortex обробляє персональні дані відвідувачів сайту: заявки, контакти, геолокація, cookies, захист даних і ваші права.';
+      seo.canonical = `${SITE_URL}/privacy-policy`;
+      seo.language = 'ua';
+      seo.schemas = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: seo.title, description: seo.description, url: seo.canonical, inLanguage: 'uk' }];
+      return seo;
+    }
     const integration = getApiIntegration(parsed.pathname.match(/^\/integrations\/([^/]+)\/?$/)?.[1]);
     if (integration) {
       const copy = getIntegrationCopy(language);

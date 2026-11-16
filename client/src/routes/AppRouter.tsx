@@ -10,6 +10,7 @@ import WebsiteDevelopmentPage from '../pages/WebsiteDevelopmentPage';
 import AutoDismantlingPage from '../pages/AutoDismantlingPage';
 import TecDocLicensePage from '../pages/TecDocLicensePage';
 import IntegrationPage from '../pages/IntegrationPage';
+import PrivacyPolicyPage from '../pages/PrivacyPolicyPage';
 import { useI18n } from '../context/ContentContext';
 import { loadPageStyles } from '../styles/loadPageStyles';
 import BlogPage from '../pages/BlogPage';
@@ -30,13 +31,15 @@ function AppRouter() {
   const isDismantlingPage = location.pathname === '/auto-dismantling' || location.pathname.startsWith('/auto-dismantling/');
   const isTecDocPage = location.pathname === '/tecdoc-license' || location.pathname.startsWith('/tecdoc-license/');
   const isIntegrationPage = location.pathname.startsWith('/integrations/');
+  const isPrivacyPage = location.pathname === '/privacy-policy' || location.pathname === '/privacy-policy/';
   const routeClassName = isBlog ? ' blog-route' : isFaqPage ? ' faq-route'
     : isContactPage ? ' contacts-route'
       : isCarServicePage ? ' car-service-route'
         : isWebsitesPage ? ' websites-route'
           : isDismantlingPage ? ' dismantling-route'
             : isTecDocPage ? ' tecdoc-route'
-              : isIntegrationPage ? ' integration-route' : '';
+              : isIntegrationPage ? ' integration-route'
+                : isPrivacyPage ? ' privacy-route' : '';
 
   useEffect(() => {
     if (isBlog) {
@@ -65,7 +68,7 @@ function AppRouter() {
       <SeoHead />
       <HeaderMain />
       <main className="main-content">
-        {!content && !isBlog ? (
+        {!content && !isBlog && !isPrivacyPage ? (
           <p className="content-status" role="status">{t(failed ? 'common.loadError' : 'common.loading')}</p>
         ) : (
           <Routes>
@@ -76,6 +79,7 @@ function AppRouter() {
             <Route path="/auto-dismantling" element={<AutoDismantlingPage />} />
             <Route path="/tecdoc-license" element={<TecDocLicensePage />} />
             <Route path="/integrations/:slug" element={<IntegrationPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:slug" element={<BlogArticlePage />} />

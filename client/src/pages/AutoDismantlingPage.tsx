@@ -31,7 +31,7 @@ function AutoDismantlingPage() {
             </a>
           </div>
           <div className="dismantling-hero-art">
-            <img src="/imgs/auto-dismantling/dismantling-car.png" alt="" width="1536" height="1024" fetchPriority="high" />
+            <img src="/imgs/auto-dismantling/dismantling-car-premium.png" alt="" width="1536" height="1024" fetchPriority="high" />
           </div>
         </section>
 
@@ -47,7 +47,7 @@ function AutoDismantlingPage() {
 
         <section className="dismantling-vehicle" id="dismantling-vehicle" aria-labelledby="dismantling-vehicle-heading">
           <div className="dismantling-record-art">
-            <img src="/imgs/auto-dismantling/vehicle-record.png" alt="" width="1312" height="1199" loading="lazy" />
+            <img src="/imgs/auto-dismantling/vehicle-record-premium.png" alt="" width="1199" height="1312" loading="lazy" />
           </div>
           <div className="dismantling-vehicle-copy">
             <p className="dismantling-eyebrow">01 / {t('dismantling.vehicle.label')}</p>
@@ -94,7 +94,7 @@ function AutoDismantlingPage() {
             <h2 id="dismantling-parts-heading">{t('dismantling.parts.title')}</h2>
             <p>{t('dismantling.parts.description')}</p>
           </header>
-          <img src="/imgs/auto-dismantling/parts-catalog.png" alt="" width="1536" height="1024" loading="lazy" />
+          <img src="/imgs/auto-dismantling/parts-catalog-premium.png" alt="" width="1536" height="1024" loading="lazy" />
         </div>
 
         <div className="dismantling-methods">
