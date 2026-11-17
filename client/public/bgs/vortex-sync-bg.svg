@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" fill="none" preserveAspectRatio="none">
+  <!-- Geometry mirrors SYNC_ROUTES in src/components/integrations/syncRoutes.ts. -->
+  <rect width="1000" height="650" fill="#2b3342"/>
+  <g stroke="#fff" stroke-opacity=".065" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter">
+    <path id="upper-express" d="M 250 355 H 285 V 170 H 435 V 205 H 650 V 355 H 750" vector-effect="non-scaling-stroke"/>
+    <path id="upper-detour" d="M 250 355 H 320 V 220 H 500 V 150 H 700 V 355 H 750" vector-effect="non-scaling-stroke"/>
+    <path id="upper-local" d="M 250 355 H 365 V 280 H 570 V 245 H 675 V 355 H 750" vector-effect="non-scaling-stroke"/>
+    <path id="lower-local" d="M 250 355 H 305 V 425 H 460 V 455 H 650 V 355 H 750" vector-effect="non-scaling-stroke"/>
+    <path id="lower-detour" d="M 250 355 H 340 V 485 H 535 V 520 H 705 V 355 H 750" vector-effect="non-scaling-stroke"/>
+    <path id="lower-express" d="M 250 355 H 280 V 550 H 420 V 585 H 670 V 355 H 750" vector-effect="non-scaling-stroke"/>
+  </g>
+</svg>
+

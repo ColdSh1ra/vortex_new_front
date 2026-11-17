@@ -1544,21 +1544,16 @@
 /* --- INTEGRATIONS CATALOG SECTION --- */
 
 /* --- VORTEX SYNC SECTION --- */
-.app-shell .section-container.vortex-sync-section{
+.app-shell .section-container.vortex-sync-section {
   align-items: center;
-  background: linear-gradient(
-    180deg,
-    var(--blue-color-5) 0,
-    #f4f4f5 150px,
-    var(--main-text-color) 200px
-  );
+  background: linear-gradient(180deg, var(--blue-color-5) 0, #f4f4f5 150px, var(--main-text-color) 200px);
   border-radius: 0;
   margin: 0;
   padding: 200px 0 80px;
   width: 100%;
 }
 
-.vortex-sync-grid{
+.vortex-sync-grid {
   display: grid;
   gap: var(--gap-8);
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1568,318 +1563,217 @@
 }
 
 .vortex-sync-copy,
-.vortex-sync-visual{
+.vortex-sync-visual {
   border-radius: var(--border-radius);
   min-height: 468px;
   overflow: hidden;
 }
 
-.vortex-sync-copy{
+.vortex-sync-copy {
   background-color: var(--grey-color-100);
   color: var(--blue-color-4);
   padding: 80px 40px 48px;
 }
 
-.vortex-sync-copy h2{
+.vortex-sync-copy h2 {
   font-size: 40px;
   line-height: 1;
   margin: 0 0 24px;
   text-transform: uppercase;
 }
 
-.vortex-sync-description{
-  font-size: 16px;
-  line-height: 1.35;
-}
+.vortex-sync-description { font-size: 16px; line-height: 1.35; }
+.vortex-sync-description p { margin: 0 0 12px; }
+.vortex-sync-description p:last-child { margin-bottom: 0; }
 
-.vortex-sync-description p{
-  margin: 0 0 12px;
-}
-
-.vortex-sync-description p:last-child{
-  margin-bottom: 0;
-}
-
-.vortex-sync-visual{
-  background-color: var(--blue-color-3);
+.vortex-sync-visual {
+  --sync-client-size: 148px;
+  --sync-item-size: 39px;
+  background: var(--blue-color-3) url('/bgs/vortex-sync-bg.svg') center / 100% 100% no-repeat;
   color: var(--main-text-color);
   isolation: isolate;
   position: relative;
 }
 
-.vortex-sync-visual::before{
-  background: radial-gradient(circle, rgb(255 172 0 / .12) 0, rgb(255 172 0 / 0) 68%);
-  content: '';
-  height: 360px;
-  left: 50%;
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 360px;
-}
-
-.vortex-sync-client{
+.vortex-sync-client {
   align-items: center;
-  bottom: 125px;
   display: flex;
   flex-direction: column;
   gap: 18px;
   position: absolute;
-  width: 44%;
+  top: calc(54.6154% - var(--sync-client-size) / 2);
+  width: 36%;
   z-index: 3;
 }
 
-.vortex-sync-client-left{
-  left: 0;
-}
+.vortex-sync-client-left { left: 0; }
+.vortex-sync-client-right { right: 0; }
+.vortex-sync-client-left span { color: var(--orange-bg-color); }
 
-.vortex-sync-client-right{
-  right: 0;
-}
-
-.vortex-sync-client > img{
+.vortex-sync-client > img {
   display: block;
-  filter:
-    drop-shadow(0 0 8px rgb(255 172 0 / .14))
-    drop-shadow(0 8px 12px rgb(244 244 245 / .1));
-  height: 148px;
+  filter: drop-shadow(0 8px 12px rgb(12 18 30 / .16));
+  height: var(--sync-client-size);
   object-fit: contain;
-  width: 148px;
+  width: var(--sync-client-size);
 }
 
-.vortex-sync-client-left > img{
-  animation: vortex-sync-client-left-glow 1.5s ease-in-out infinite;
-}
-
-.vortex-sync-client-right > img{
-  animation: vortex-sync-client-right-glow 1s ease-in-out infinite;
-}
-
-.vortex-sync-client span{
+.vortex-sync-client span {
+  align-items: center;
+  background: var(--blue-color-3);
+  display: inline-flex;
   font-size: 28px;
   font-weight: 700;
-  line-height: 1;
-  white-space: nowrap;
+  gap: 8px;
+  line-height: 1.15;
+  max-width: 100%;
+  padding: 3px 0;
+  text-align: center;
+  white-space: normal;
 }
 
-.vortex-sync-exchange{
+.vortex-sync-client span::before {
+  background: var(--orange-bg-color);
+  content: '';
+  flex: 0 0 5px;
+  height: 5px;
+}
+.vortex-sync-client-right span::before { background: #fff; }
+
+.vortex-sync-exchange {
   inset: 0;
   pointer-events: none;
   position: absolute;
   z-index: 2;
 }
 
-.vortex-sync-exchange strong{
+.vortex-sync-exchange > strong {
+  background: var(--blue-color-3);
+  border: 1px solid rgb(255 255 255 / .12);
+  border-radius: 8px;
   font-size: 17px;
   left: 50%;
+  letter-spacing: .05em;
+  padding: 10px 16px;
   position: absolute;
   text-transform: uppercase;
-  top: 48%;
+  top: 10%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
 
-.vortex-sync-items{
+.vortex-sync-trails {
+  height: 100%;
   inset: 0;
   position: absolute;
+  width: 100%;
 }
 
-.vortex-sync-items img{
-  height: 39px;
-  left: 25%;
-  opacity: 0;
+.vortex-sync-trail,
+.vortex-sync-parcel {
+  animation-delay: var(--sync-delay);
+  animation-duration: var(--sync-duration);
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.vortex-sync-trail {
+  animation-name: vortex-sync-trace, vortex-sync-presence;
+  stroke: var(--orange-bg-color);
+  stroke-dasharray: 110 1000;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-width: 2.25px;
+}
+.vortex-sync-trail-to-left { stroke: #fff; }
+
+.vortex-sync-parcel {
+  animation-name: vortex-sync-drive, vortex-sync-presence;
+  height: var(--sync-item-size);
+  left: 0;
+  offset-anchor: 50% 50%;
+  offset-path: var(--sync-route);
+  offset-position: 0 0;
+  offset-rotate: 0deg;
   position: absolute;
-  top: 38%;
-  width: 39px;
+  top: 0;
+  width: var(--sync-item-size);
 }
 
-.vortex-sync-items-to-right img{
-  animation: vortex-sync-send-right 1s linear infinite;
-  animation-delay: calc(var(--sync-item-index) * 80ms);
+.vortex-sync-parcel > img {
+  display: block;
+  filter: drop-shadow(0 3px 5px rgb(12 18 30 / .2));
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 
-.vortex-sync-items-to-left img{
-  animation: vortex-sync-send-left 1.5s linear infinite;
-  animation-delay: calc(var(--sync-item-index) * 70ms);
-  left: 75%;
-  top: 58%;
+.vortex-sync-visual[data-ready="false"] .vortex-sync-parcel,
+.vortex-sync-visual[data-ready="false"] .vortex-sync-trails { visibility: hidden; }
+
+.vortex-sync-visual[data-active="false"] .vortex-sync-parcel,
+.vortex-sync-visual[data-active="false"] .vortex-sync-trail { animation-play-state: paused; }
+
+@keyframes vortex-sync-drive {
+  from { offset-distance: 0%; }
+  to { offset-distance: 100%; }
 }
 
-@keyframes vortex-sync-send-right{
-  0%{
-    left: 25%;
-    opacity: 0;
-    transform: translate(-50%, 8px) rotate(-14deg) scale(.72);
-  }
-  4%{
-    opacity: 1;
-  }
-  32%{
-    left: 75%;
-    opacity: 1;
-    transform: translate(-50%, -8px) rotate(14deg) scale(1);
-  }
-  38%, 100%{
-    left: 75%;
-    opacity: 0;
-    transform: translate(-50%, -8px) rotate(14deg) scale(.72);
-  }
+/* The dash's head shares the parcel's progress; only the last 11% of the road
+   is lit. Nothing accumulates on the route after the parcel has passed. */
+@keyframes vortex-sync-trace {
+  from { stroke-dashoffset: 110; }
+  to { stroke-dashoffset: -890; }
 }
 
-@keyframes vortex-sync-send-left{
-  0%{
-    left: 75%;
-    opacity: 0;
-    transform: translate(-50%, -8px) rotate(14deg) scale(.72);
-  }
-  3%{
-    opacity: 1;
-  }
-  25%{
-    left: 25%;
-    opacity: 1;
-    transform: translate(-50%, 8px) rotate(-14deg) scale(1);
-  }
-  30%, 100%{
-    left: 25%;
-    opacity: 0;
-    transform: translate(-50%, 8px) rotate(-14deg) scale(.72);
-  }
-}
-
-@keyframes vortex-sync-client-left-glow{
-  0%, 23%, 45%, 100%{
-    filter:
-      drop-shadow(0 0 8px rgb(255 172 0 / .14))
-      drop-shadow(0 8px 12px rgb(244 244 245 / .1));
-  }
-  29%, 36%{
-    filter:
-      drop-shadow(0 0 13px rgb(255 172 0 / .34))
-      drop-shadow(0 8px 16px rgb(244 244 245 / .2));
-  }
-}
-
-@keyframes vortex-sync-client-right-glow{
-  0%, 30%, 55%, 100%{
-    filter:
-      drop-shadow(0 0 8px rgb(255 172 0 / .14))
-      drop-shadow(0 8px 12px rgb(244 244 245 / .1));
-  }
-  36%, 46%{
-    filter:
-      drop-shadow(0 0 13px rgb(255 172 0 / .34))
-      drop-shadow(0 8px 16px rgb(244 244 245 / .2));
-  }
+@keyframes vortex-sync-presence {
+  0%, 100% { opacity: 0; }
+  5%, 94% { opacity: 1; }
 }
 
 @media (max-width: 1100px) {
-  .app-shell .section-container.vortex-sync-section{
-    min-height: 0;
-    padding-bottom: 40px;
-    padding-top: 160px;
-  }
-
-  .vortex-sync-copy,
-  .vortex-sync-visual{
-    min-height: 520px;
-  }
-
-  .vortex-sync-copy{
-    padding: 64px 38px 44px;
-  }
-
-  .vortex-sync-copy h2{
-    font-size: 40px;
-  }
-
-  .vortex-sync-description{
-    font-size: 17px;
-  }
-
-  .vortex-sync-client span{
-    font-size: 22px;
-  }
+  .app-shell .section-container.vortex-sync-section { padding-bottom: 40px; padding-top: 160px; }
+  .vortex-sync-copy, .vortex-sync-visual { min-height: 520px; }
+  .vortex-sync-copy { padding: 64px 38px 44px; }
+  .vortex-sync-description { font-size: 17px; }
+  .vortex-sync-client span { font-size: 22px; }
 }
 
 @media (max-width: 768px) {
-  .app-shell .section-container.vortex-sync-section{
+  .app-shell .section-container.vortex-sync-section {
     background: linear-gradient(180deg, var(--blue-color-5) 0, #f4f4f5 64px, var(--main-text-color) 96px);
     padding: 96px 0 40px;
   }
-
-  .vortex-sync-grid{
-    gap: var(--gap-8);
-    grid-template-columns: 1fr;
-  }
-
-  .vortex-sync-copy,
-  .vortex-sync-visual{
-    border-radius: var(--border-radius);
-    min-height: 0;
-  }
-
-  .vortex-sync-copy{
-    padding: 42px 26px;
-  }
-
-  .vortex-sync-copy h2{
-    font-size: 34px;
-    margin-bottom: 24px;
-  }
-
-  .vortex-sync-description{
-    font-size: 16px;
-  }
-
-  .vortex-sync-visual{
+  .vortex-sync-grid { grid-template-columns: 1fr; }
+  .vortex-sync-copy, .vortex-sync-visual { min-height: 0; }
+  .vortex-sync-copy { padding: 42px 26px; }
+  .vortex-sync-copy h2 { font-size: 34px; margin-bottom: 24px; }
+  .vortex-sync-description { font-size: 16px; }
+  .vortex-sync-visual {
+    --sync-client-size: clamp(88px, 28vw, 128px);
+    --sync-item-size: 32px;
     aspect-ratio: 1.15 / 1;
   }
-
-  .vortex-sync-client{
-    bottom: 50px;
-    gap: 10px;
+  .vortex-sync-client { gap: 10px; }
+  .vortex-sync-client span {
+    font-size: clamp(14px, 4.6vw, 20px);
+    max-width: none;
+    white-space: nowrap;
   }
-
-  .vortex-sync-client > img{
-    height: clamp(88px, 28vw, 128px);
-    width: clamp(88px, 28vw, 128px);
-  }
-
-  .vortex-sync-client span{
-    font-size: clamp(16px, 5vw, 22px);
-  }
-
-  .vortex-sync-exchange strong{
-    font-size: 14px;
-  }
-
-  .vortex-sync-items img{
-    height: 32px;
-    width: 32px;
-  }
+  .vortex-sync-client-left span { align-self: flex-start; margin-left: 12px; }
+  .vortex-sync-client-right span { align-self: flex-end; margin-right: 12px; }
+  .vortex-sync-exchange > strong { font-size: 14px; padding: 8px 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .vortex-sync-items img,
-  .vortex-sync-client > img{
+  .vortex-sync-trail { animation: none; display: none; }
+  .vortex-sync-parcel {
     animation: none;
-  }
-
-  .vortex-sync-items img{
+    offset-distance: var(--sync-rest-distance);
     opacity: 1;
   }
-
-  .vortex-sync-items-to-right img:nth-child(n + 2),
-  .vortex-sync-items-to-left img{
-    display: none;
-  }
-
-  .vortex-sync-items-to-right img{
-    left: 50%;
-    transform: translate(-50%, -16px);
-  }
+  .vortex-sync-parcel[data-reduced-visible="false"] { display: none; }
 }
 /* --- VORTEX SYNC SECTION --- */
 
