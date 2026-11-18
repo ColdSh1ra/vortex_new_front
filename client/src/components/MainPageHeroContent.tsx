@@ -1,3 +1,4 @@
+import { imageSize } from '../utils/imageSize';
 import { useI18n } from '../context/ContentContext';
 import { useInitialContent } from '../context/ContentContext';
 import BlueContainerBlock from "../components/default/BlueContainerBlock";
@@ -16,9 +17,9 @@ function MainPageHeroContent() {
                     <div className={'radial-bg-container absolute-container'}/>
                     <img className={'absolute-container image vortex-logo'} src='/bgs/logo2.svg' alt='Vortex'/>
                     <div className={'hero-page-shadow-container display-flex align-content-center absolute-container'}>
-                        <img className={'hero-page-image screen-shot-1'} src='/imgs/vx-screenshot-1.png' alt=''/>
-                        <img className={'hero-page-image screen-shot-2'} src='/imgs/vx-screenshot-2.png' alt=''/>
-                        <img className={'hero-page-image screen-shot-3'} src='/imgs/vx-screenshot-3.png' alt=''/>
+                        <img className={'hero-page-image screen-shot-1'} src='/imgs/vx-screenshot-1.png' alt='' {...imageSize('/imgs/vx-screenshot-1.png')} decoding="async"/>
+                        <img className={'hero-page-image screen-shot-2'} src='/imgs/vx-screenshot-2.png' alt='' {...imageSize('/imgs/vx-screenshot-2.png')} decoding="async" fetchPriority="high"/>
+                        <img className={'hero-page-image screen-shot-3'} src='/imgs/vx-screenshot-3.png' alt='' {...imageSize('/imgs/vx-screenshot-3.png')} decoding="async"/>
                     </div>
                     <BlueContainerBlock
                         ShowHeading={true}
@@ -38,7 +39,7 @@ function MainPageHeroContent() {
                                     dynamicClass={' orange with-icon'}
                                     btnFunction={() => document.getElementById('trial-request')?.scrollIntoView({ behavior: 'smooth' })}
                                     btnText={t('common.tryFree')}
-                                    btnIcon={'/icons/chevron-right-double.svg'}
+                                    btnIcon={'/icons/double-chevron-right.svg'}
                                 />
                                 <ButtonFill
                                     dynamicClass={' button-outline hero-demo-button no-icon'}

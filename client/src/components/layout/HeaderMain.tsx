@@ -1,11 +1,14 @@
 import { useI18n } from '../../context/ContentContext';
 import LanguageSwitcher from './LanguageSwitcher';
 import ServicesDropdown from './ServicesDropdown';
-import { useEffect, useRef, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { useLocation, useNavigate } from 'react-router-dom';
+import Link from '../default/LocalizedLink';
 import type { NavigationLink } from "../../types/navigation";
 import ButtonFill from "../default/ButtonFIll";
 import { blogUrl } from '../../blog/urls';
+import { localizedUrl } from '../../seo/urls';
+import { SOCIAL_LINKS } from '../../data/socialLinks';
 
 function getMenuLinks(t: (key: string) => string, pricingPath: string, blogPath: string): NavigationLink[] { return [
     { name: t("nav.home"), path: "/" },
@@ -15,17 +18,17 @@ function getMenuLinks(t: (key: string) => string, pricingPath: string, blogPath:
     { name: t("nav.contacts"), path: "/contact" },
 ]; }
 
-const socialLinks = [
-  { name: "Facebook", path: "/", icon: "/icons/sm_black/facebook.svg" },
-  { name: "YouTube", path: "/", icon: "/icons/sm_black/youtube.svg" },
-  { name: "Telegram", path: "/", icon: "/icons/sm_black/telegram.svg" },
-  { name: "Instagram", path: "/", icon: "/icons/sm_black/instagram.svg" },
-];
 
 function HeaderMain() {
   const { t, language } = useI18n();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [isCompact, setIsCompact] = useState(false);
+  const [revealMotion, setRevealMotion] = useState<'scale' | 'slide'>('scale');
+  const headerRef = useRef<HTMLElement>(null);
+  const fullHeaderRef = useRef<HTMLDivElement>(null);
+  const compactButtonRef = useRef<HTMLButtonElement>(null);
+  const compactRef = useRef(false);
+  const scheduleClearance = useRef<() => void>(() => {});
   const lastScrollY = useRef(0);
   const scrollAnimationFrame = useRef<number | null>(null);
   const location = useLocation();
@@ -34,55 +37,97 @@ function HeaderMain() {
   const menuLinks = getMenuLinks(t, pricingPath, blogUrl(language));
   const navigate = useNavigate();
 
+  const changeHeader = useCallback((compact: boolean, motion: 'scale' | 'slide' = 'scale') => {
+    if (compactRef.current === compact) return;
+    compactRef.current = compact;
+    setRevealMotion(motion);
+    setIsCompact(compact);
+  }, []);
+
   useEffect(() => {
     setIsMenuOpen(false);
-    setIsHeaderVisible(true);
-  }, [location.pathname]);
+    changeHeader(false);
+    lastScrollY.current = Math.max(window.scrollY, 0);
+  }, [location.pathname, location.search, changeHeader]);
 
   useEffect(() => {
-    setIsHeaderVisible(true);
     lastScrollY.current = Math.max(window.scrollY, 0);
-
-    if (isMenuOpen) {
-      return;
-    }
-
     const handleScroll = () => {
-      if (scrollAnimationFrame.current !== null) {
-        return;
-      }
-
+      if (scrollAnimationFrame.current !== null) return;
       scrollAnimationFrame.current = window.requestAnimationFrame(() => {
         const currentScrollY = Math.max(window.scrollY, 0);
-        const scrollDifference = currentScrollY - lastScrollY.current;
+        const difference = currentScrollY - lastScrollY.current;
+        const focused = document.activeElement;
+        const hasKeyboardFocus = focused instanceof HTMLElement
+          && fullHeaderRef.current?.contains(focused) && focused.matches(':focus-visible');
+        const hasOpenControl = !!fullHeaderRef.current?.querySelector('[aria-expanded="true"]');
 
-        if (currentScrollY <= 24) {
-          setIsHeaderVisible(true);
-        } else if (scrollDifference > 6) {
-          setIsHeaderVisible(false);
-        } else if (scrollDifference < -6) {
-          setIsHeaderVisible(true);
+        if (currentScrollY <= 24) changeHeader(false, difference < 0 ? 'slide' : 'scale');
+        else if (!isMenuOpen && !hasKeyboardFocus && !hasOpenControl) {
+          if (difference > 8 && currentScrollY > 96) changeHeader(true);
+          else if (difference < -6) changeHeader(false, 'slide');
         }
-
-        if (Math.abs(scrollDifference) > 6 || currentScrollY <= 24) {
-          lastScrollY.current = currentScrollY;
-        }
-
+        if (Math.abs(difference) > 6 || currentScrollY <= 24) lastScrollY.current = currentScrollY;
         scrollAnimationFrame.current = null;
       });
     };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
+      if (scrollAnimationFrame.current !== null) window.cancelAnimationFrame(scrollAnimationFrame.current);
+      scrollAnimationFrame.current = null;
+    };
+  }, [isMenuOpen, changeHeader]);
 
-      if (scrollAnimationFrame.current !== null) {
-        window.cancelAnimationFrame(scrollAnimationFrame.current);
-        scrollAnimationFrame.current = null;
+  // The invisible full panel keeps its layout height, so collapsing never moves
+  // the page. Sticky titles use the height of the currently visible bar instead.
+  useEffect(() => {
+    const root = document.documentElement;
+    const previous = root.style.getPropertyValue('--site-header-clearance');
+    let frame: number | null = null;
+    const measure = () => {
+      frame = null;
+      const header = headerRef.current;
+      const visible = compactRef.current ? compactButtonRef.current : fullHeaderRef.current;
+      if (!header || !visible) return;
+      const clearance = `${Math.ceil(Math.max(0, header.getBoundingClientRect().top) + visible.offsetHeight + 12)}px`;
+      if (root.style.getPropertyValue('--site-header-clearance') !== clearance) {
+        root.style.setProperty('--site-header-clearance', clearance);
+        window.dispatchEvent(new Event('vortex:header-layout'));
       }
     };
-  }, [isMenuOpen]);
+    const schedule = () => { if (frame === null) frame = window.requestAnimationFrame(measure); };
+    scheduleClearance.current = schedule;
+    const observer = typeof ResizeObserver === 'function' ? new ResizeObserver(schedule) : null;
+    for (const element of [headerRef.current, fullHeaderRef.current, compactButtonRef.current]) {
+      if (element) observer?.observe(element);
+    }
+    window.addEventListener('resize', schedule);
+    window.addEventListener('scroll', schedule, { passive: true });
+    schedule();
+    return () => {
+      observer?.disconnect();
+      window.removeEventListener('resize', schedule);
+      window.removeEventListener('scroll', schedule);
+      if (frame !== null) window.cancelAnimationFrame(frame);
+      scheduleClearance.current = () => {};
+      if (previous) root.style.setProperty('--site-header-clearance', previous);
+      else root.style.removeProperty('--site-header-clearance');
+      window.dispatchEvent(new Event('vortex:header-layout'));
+    };
+  }, []);
+
+  useEffect(() => { scheduleClearance.current(); }, [isCompact]);
+
+  const expandHeader = (keyboard: boolean) => {
+    lastScrollY.current = Math.max(window.scrollY, 0);
+    changeHeader(false);
+    if (keyboard) window.requestAnimationFrame(() => {
+      const selector = window.matchMedia('(max-width: 768px)').matches
+        ? '.mobile-header-bar a[href]' : '.desktop-header-content a[href]';
+      fullHeaderRef.current?.querySelector<HTMLAnchorElement>(selector)?.focus();
+    });
+  };
 
   useEffect(() => {
     document.body.classList.toggle("mobile-menu-open", isMenuOpen);
@@ -105,11 +150,12 @@ function HeaderMain() {
     setIsMenuOpen(false);
     const form = document.getElementById('trial-request');
     if (form) { form.scrollIntoView({ behavior: 'smooth' }); }
-    else { navigate('/contact#trial-request'); }
+    else { navigate(localizedUrl('/contact#trial-request', language)); }
   };
 
   return (
-    <header className={`header${isMenuOpen ? " mobile-menu-active" : ""}${isHeaderVisible ? "" : " header-is-hidden"}`}>
+    <header ref={headerRef} className={`header${isMenuOpen ? ' mobile-menu-active' : ''}${isCompact ? ' header-is-compact' : ''}${revealMotion === 'slide' ? ' header-reveal-from-up' : ''}`}>
+      <div id="header-navigation" ref={fullHeaderRef} className="header-full" inert={isCompact} aria-hidden={isCompact}>
       <div className="desktop-header-content">
         <div className="brand header-logo-container">
           <Link to={'/'}>
@@ -166,7 +212,25 @@ function HeaderMain() {
           </button>
         </div>
 
-        <div id="mobile-navigation" className="mobile-menu-panel" aria-hidden={!isMenuOpen}>
+      </div>
+      </div>
+
+      <button
+        ref={compactButtonRef}
+        className="header-compact-trigger"
+        type="button"
+        aria-label={t('header.expand')}
+        aria-controls="header-navigation"
+        aria-expanded={!isCompact}
+        aria-hidden={!isCompact}
+        tabIndex={isCompact ? 0 : -1}
+        onClick={(event) => expandHeader(event.detail === 0)}
+      >
+        <img src="/imgs/vortex-logo-115.svg" alt="Vortex" />
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 5h12M3 9h12M3 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>
+      </button>
+
+        <div id="mobile-navigation" className="mobile-menu-panel" aria-hidden={!isMenuOpen} inert={!isMenuOpen}>
           <Link className="mobile-tecdoc-link" to="/tecdoc-license" onClick={() => setIsMenuOpen(false)}>
             <img src="/imgs/tecdoc-button.png" alt={t('common.partner')} />
           </Link>
@@ -193,10 +257,10 @@ function HeaderMain() {
           </div>
 
           <div className="mobile-social-links" aria-label={t('common.socials')}>
-            {socialLinks.map((link) => (
-              <Link key={link.name} to={link.path} aria-label={link.name}>
-                <img src={link.icon} alt="" />
-              </Link>
+            {SOCIAL_LINKS.map((link) => (
+              <a key={link.name} href={link.url} aria-label={link.name} target="_blank" rel="noopener noreferrer">
+                <img src={link.imageSrc} alt="" />
+              </a>
             ))}
           </div>
 
@@ -205,7 +269,6 @@ function HeaderMain() {
           </Link>
           <p className="mobile-copyright">{t('common.copyright', { year: new Date().getFullYear() })}</p>
         </div>
-      </div>
     </header>
   );
 }

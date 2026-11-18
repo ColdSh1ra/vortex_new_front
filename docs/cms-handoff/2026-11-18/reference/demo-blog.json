@@ -1,0 +1,1480 @@
+{
+  "status": "demo-only-do-not-publish",
+  "note": "No real CMS articles are stored locally. Current demo reuses the base article sections for all20 summary slugs. This file is reference content only.",
+  "summaries": [
+    {
+      "id": "demo-1",
+      "slug": "inventory-control",
+      "cover": {
+        "url": "/imgs/3dicons_premium/folder.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Як упорядкувати облік автозапчастин",
+          "cz": "Jak uspořádat evidenci autodílů",
+          "sk": "Ako usporiadať evidenciu autodielov",
+          "en": "Organizing auto parts inventory",
+          "pl": "Jak uporządkować ewidencję części"
+        }
+      },
+      "publishedAt": "2026-10-31T09:00:00.000Z",
+      "updatedAt": "2026-10-31T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Як упорядкувати облік автозапчастин",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Як упорядкувати облік автозапчастин | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Jak uspořádat evidenci autodílů",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Jak uspořádat evidenci autodílů | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Ako usporiadať evidenciu autodielov",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Ako usporiadať evidenciu autodielov | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Organizing auto parts inventory",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Organizing auto parts inventory | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Jak uporządkować ewidencję części",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Jak uporządkować ewidencję części | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-2",
+      "slug": "stocktaking",
+      "cover": {
+        "url": "/imgs/3dicons_premium/monitor.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Інвентаризація без зайвої метушні",
+          "cz": "Inventura bez zbytečného shonu",
+          "sk": "Inventúra bez zbytočného zhonu",
+          "en": "Stocktaking without the rush",
+          "pl": "Inwentaryzacja bez pośpiechu"
+        }
+      },
+      "publishedAt": "2026-10-30T09:00:00.000Z",
+      "updatedAt": "2026-10-30T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Інвентаризація без зайвої метушні",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Інвентаризація без зайвої метушні | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Inventura bez zbytečného shonu",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Inventura bez zbytečného shonu | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Inventúra bez zbytočného zhonu",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Inventúra bez zbytočného zhonu | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Stocktaking without the rush",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Stocktaking without the rush | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Inwentaryzacja bez pośpiechu",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Inwentaryzacja bez pośpiechu | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-3",
+      "slug": "suppliers",
+      "cover": {
+        "url": "/imgs/3dicons_premium/3d-document-premium.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Робота з постачальниками",
+          "cz": "Spolupráce s dodavateli",
+          "sk": "Spolupráca s dodávateľmi",
+          "en": "Working with suppliers",
+          "pl": "Współpraca z dostawcami"
+        }
+      },
+      "publishedAt": "2026-10-29T09:00:00.000Z",
+      "updatedAt": "2026-10-29T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Робота з постачальниками",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Робота з постачальниками | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Spolupráce s dodavateli",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Spolupráce s dodavateli | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Spolupráca s dodávateľmi",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Spolupráca s dodávateľmi | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Working with suppliers",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Working with suppliers | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Współpraca z dostawcami",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Współpraca z dostawcami | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-4",
+      "slug": "getting-started",
+      "cover": {
+        "url": "/imgs/3dicons_premium/wallet.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Перші кроки у Vortex",
+          "cz": "První kroky ve Vortex",
+          "sk": "Prvé kroky vo Vortex",
+          "en": "Getting started with Vortex",
+          "pl": "Pierwsze kroki w Vortex"
+        }
+      },
+      "publishedAt": "2026-10-28T09:00:00.000Z",
+      "updatedAt": "2026-10-28T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Перші кроки у Vortex",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Перші кроки у Vortex | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "První kroky ve Vortex",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "První kroky ve Vortex | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Prvé kroky vo Vortex",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Prvé kroky vo Vortex | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Getting started with Vortex",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Getting started with Vortex | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Pierwsze kroki w Vortex",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Pierwsze kroki w Vortex | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-5",
+      "slug": "parts-catalog",
+      "cover": {
+        "url": "/imgs/3dicons_premium/folder.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Підбір деталей через каталог",
+          "cz": "Výběr dílů v katalogu",
+          "sk": "Výber dielov v katalógu",
+          "en": "Finding parts in a catalog",
+          "pl": "Dobór części z katalogu"
+        }
+      },
+      "publishedAt": "2026-10-27T09:00:00.000Z",
+      "updatedAt": "2026-10-27T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Підбір деталей через каталог",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Підбір деталей через каталог | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Výběr dílů v katalogu",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Výběr dílů v katalogu | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Výber dielov v katalógu",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Výber dielov v katalógu | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Finding parts in a catalog",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Finding parts in a catalog | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Dobór części z katalogu",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Dobór części z katalogu | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-6",
+      "slug": "documents",
+      "cover": {
+        "url": "/imgs/3dicons_premium/monitor.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Документи в щоденній роботі",
+          "cz": "Dokumenty v každodenní práci",
+          "sk": "Dokumenty v každodennej práci",
+          "en": "Documents in daily work",
+          "pl": "Dokumenty w codziennej pracy"
+        }
+      },
+      "publishedAt": "2026-10-26T09:00:00.000Z",
+      "updatedAt": "2026-10-26T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Документи в щоденній роботі",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Документи в щоденній роботі | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Dokumenty v každodenní práci",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Dokumenty v každodenní práci | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Dokumenty v každodennej práci",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Dokumenty v každodennej práci | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Documents in daily work",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Documents in daily work | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Dokumenty w codziennej pracy",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Dokumenty w codziennej pracy | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-7",
+      "slug": "warehouse-locations",
+      "cover": {
+        "url": "/imgs/3dicons_premium/3d-document-premium.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Адресне зберігання на складі",
+          "cz": "Skladové pozice",
+          "sk": "Skladové pozície",
+          "en": "Warehouse bin locations",
+          "pl": "Lokalizacje towarów w magazynie"
+        }
+      },
+      "publishedAt": "2026-10-25T09:00:00.000Z",
+      "updatedAt": "2026-10-25T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Адресне зберігання на складі",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Адресне зберігання на складі | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Skladové pozice",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Skladové pozice | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Skladové pozície",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Skladové pozície | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Warehouse bin locations",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Warehouse bin locations | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Lokalizacje towarów w magazynie",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Lokalizacje towarów w magazynie | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-8",
+      "slug": "customer-orders",
+      "cover": {
+        "url": "/imgs/3dicons_premium/wallet.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Контроль клієнтських замовлень",
+          "cz": "Kontrola objednávek zákazníků",
+          "sk": "Kontrola objednávok zákazníkov",
+          "en": "Tracking customer orders",
+          "pl": "Kontrola zamówień klientów"
+        }
+      },
+      "publishedAt": "2026-10-24T09:00:00.000Z",
+      "updatedAt": "2026-10-24T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Контроль клієнтських замовлень",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Контроль клієнтських замовлень | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Kontrola objednávek zákazníků",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Kontrola objednávek zákazníků | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Kontrola objednávok zákazníkov",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Kontrola objednávok zákazníkov | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Tracking customer orders",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Tracking customer orders | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Kontrola zamówień klientów",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Kontrola zamówień klientów | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-9",
+      "slug": "management-reports",
+      "cover": {
+        "url": "/imgs/3dicons_premium/folder.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Звіти для керівника",
+          "cz": "Reporty pro vedoucí",
+          "sk": "Reporty pre vedúcich",
+          "en": "Reports for managers",
+          "pl": "Raporty dla kierownika"
+        }
+      },
+      "publishedAt": "2026-10-23T09:00:00.000Z",
+      "updatedAt": "2026-10-23T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Звіти для керівника",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Звіти для керівника | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Reporty pro vedoucí",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Reporty pro vedoucí | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Reporty pre vedúcich",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Reporty pre vedúcich | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Reports for managers",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Reports for managers | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Raporty dla kierownika",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Raporty dla kierownika | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-10",
+      "slug": "customer-history",
+      "cover": {
+        "url": "/imgs/3dicons_premium/monitor.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Історія взаємодії з клієнтом",
+          "cz": "Historie komunikace se zákazníkem",
+          "sk": "História komunikácie so zákazníkom",
+          "en": "Customer interaction history",
+          "pl": "Historia kontaktów z klientem"
+        }
+      },
+      "publishedAt": "2026-10-22T09:00:00.000Z",
+      "updatedAt": "2026-10-22T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Історія взаємодії з клієнтом",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Історія взаємодії з клієнтом | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Historie komunikace se zákazníkem",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Historie komunikace se zákazníkem | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "História komunikácie so zákazníkom",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "História komunikácie so zákazníkom | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Customer interaction history",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Customer interaction history | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Historia kontaktów z klientem",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Historia kontaktów z klientem | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-11",
+      "slug": "returns",
+      "cover": {
+        "url": "/imgs/3dicons_premium/3d-document-premium.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Як організувати повернення",
+          "cz": "Organizace vrácení zboží",
+          "sk": "Organizácia vrátenia tovaru",
+          "en": "Organizing returns",
+          "pl": "Organizacja zwrotów"
+        }
+      },
+      "publishedAt": "2026-10-21T09:00:00.000Z",
+      "updatedAt": "2026-10-21T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Як організувати повернення",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Як організувати повернення | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Organizace vrácení zboží",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Organizace vrácení zboží | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Organizácia vrátenia tovaru",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Organizácia vrátenia tovaru | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Organizing returns",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Organizing returns | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Organizacja zwrotów",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Organizacja zwrotów | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-12",
+      "slug": "prices-and-stock",
+      "cover": {
+        "url": "/imgs/3dicons_premium/wallet.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Актуальність цін і залишків",
+          "cz": "Aktuální ceny a zásoby",
+          "sk": "Aktuálne ceny a zásoby",
+          "en": "Keeping prices and stock current",
+          "pl": "Aktualne ceny i stany"
+        }
+      },
+      "publishedAt": "2026-10-20T09:00:00.000Z",
+      "updatedAt": "2026-10-20T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Актуальність цін і залишків",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Актуальність цін і залишків | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Aktuální ceny a zásoby",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Aktuální ceny a zásoby | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Aktuálne ceny a zásoby",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Aktuálne ceny a zásoby | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Keeping prices and stock current",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Keeping prices and stock current | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Aktualne ceny i stany",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Aktualne ceny i stany | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-13",
+      "slug": "workshop-planning",
+      "cover": {
+        "url": "/imgs/3dicons_premium/folder.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Планування роботи СТО",
+          "cz": "Plánování práce autoservisu",
+          "sk": "Plánovanie práce autoservisu",
+          "en": "Planning workshop operations",
+          "pl": "Planowanie pracy warsztatu"
+        }
+      },
+      "publishedAt": "2026-10-19T09:00:00.000Z",
+      "updatedAt": "2026-10-19T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Планування роботи СТО",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Планування роботи СТО | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Plánování práce autoservisu",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Plánování práce autoservisu | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Plánovanie práce autoservisu",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Plánovanie práce autoservisu | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Planning workshop operations",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Planning workshop operations | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Planowanie pracy warsztatu",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Planowanie pracy warsztatu | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-14",
+      "slug": "dismantling-records",
+      "cover": {
+        "url": "/imgs/3dicons_premium/monitor.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Облік автомобілів на розборці",
+          "cz": "Evidence vozidel k demontáži",
+          "sk": "Evidencia vozidiel na demontáž",
+          "en": "Tracking dismantling vehicles",
+          "pl": "Ewidencja pojazdów do demontażu"
+        }
+      },
+      "publishedAt": "2026-10-18T09:00:00.000Z",
+      "updatedAt": "2026-10-18T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Облік автомобілів на розборці",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Облік автомобілів на розборці | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Evidence vozidel k demontáži",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Evidence vozidel k demontáži | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Evidencia vozidiel na demontáž",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Evidencia vozidiel na demontáž | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Tracking dismantling vehicles",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Tracking dismantling vehicles | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Ewidencja pojazdów do demontażu",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Ewidencja pojazdów do demontażu | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-15",
+      "slug": "tecdoc-catalog",
+      "cover": {
+        "url": "/imgs/3dicons_premium/3d-document-premium.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Каталог TecDoc у роботі магазину",
+          "cz": "TecDoc v prodejně autodílů",
+          "sk": "TecDoc v predajni autodielov",
+          "en": "TecDoc in a parts store",
+          "pl": "TecDoc w sklepie z częściami"
+        }
+      },
+      "publishedAt": "2026-10-17T09:00:00.000Z",
+      "updatedAt": "2026-10-17T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Каталог TecDoc у роботі магазину",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Каталог TecDoc у роботі магазину | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "TecDoc v prodejně autodílů",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "TecDoc v prodejně autodílů | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "TecDoc v predajni autodielov",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "TecDoc v predajni autodielov | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "TecDoc in a parts store",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "TecDoc in a parts store | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "TecDoc w sklepie z częściami",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "TecDoc w sklepie z częściami | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-16",
+      "slug": "store-website",
+      "cover": {
+        "url": "/imgs/3dicons_premium/wallet.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Сайт магазину автозапчастин",
+          "cz": "Web prodejny autodílů",
+          "sk": "Web predajne autodielov",
+          "en": "An auto parts store website",
+          "pl": "Strona sklepu z częściami"
+        }
+      },
+      "publishedAt": "2026-10-16T09:00:00.000Z",
+      "updatedAt": "2026-10-16T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Сайт магазину автозапчастин",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Сайт магазину автозапчастин | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Web prodejny autodílů",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Web prodejny autodílů | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Web predajne autodielov",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Web predajne autodielov | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "An auto parts store website",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "An auto parts store website | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Strona sklepu z częściami",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Strona sklepu z częściami | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-17",
+      "slug": "automation",
+      "cover": {
+        "url": "/imgs/3dicons_premium/folder.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Автоматизація повторюваних завдань",
+          "cz": "Automatizace opakovaných úkolů",
+          "sk": "Automatizácia opakovaných úloh",
+          "en": "Automating recurring tasks",
+          "pl": "Automatyzacja powtarzalnych zadań"
+        }
+      },
+      "publishedAt": "2026-10-15T09:00:00.000Z",
+      "updatedAt": "2026-10-15T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Автоматизація повторюваних завдань",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Автоматизація повторюваних завдань | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Automatizace opakovaných úkolů",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Automatizace opakovaných úkolů | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Automatizácia opakovaných úloh",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Automatizácia opakovaných úloh | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Automating recurring tasks",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Automating recurring tasks | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Automatyzacja powtarzalnych zadań",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Automatyzacja powtarzalnych zadań | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-18",
+      "slug": "branches",
+      "cover": {
+        "url": "/imgs/3dicons_premium/monitor.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Робота кількох філій",
+          "cz": "Správa více poboček",
+          "sk": "Správa viacerých pobočiek",
+          "en": "Managing multiple branches",
+          "pl": "Zarządzanie oddziałami"
+        }
+      },
+      "publishedAt": "2026-10-14T09:00:00.000Z",
+      "updatedAt": "2026-10-14T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Робота кількох філій",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Робота кількох філій | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Správa více poboček",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Správa více poboček | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Správa viacerých pobočiek",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Správa viacerých pobočiek | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Managing multiple branches",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Managing multiple branches | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Zarządzanie oddziałami",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Zarządzanie oddziałami | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-19",
+      "slug": "sales-analytics",
+      "cover": {
+        "url": "/imgs/3dicons_premium/3d-document-premium.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Аналітика продажів",
+          "cz": "Analýza prodeje",
+          "sk": "Analýza predaja",
+          "en": "Sales analytics",
+          "pl": "Analiza sprzedaży"
+        }
+      },
+      "publishedAt": "2026-10-13T09:00:00.000Z",
+      "updatedAt": "2026-10-13T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Аналітика продажів",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Аналітика продажів | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Analýza prodeje",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Analýza prodeje | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Analýza predaja",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Analýza predaja | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Sales analytics",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Sales analytics | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Analiza sprzedaży",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Analiza sprzedaży | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    },
+    {
+      "id": "demo-20",
+      "slug": "access-control",
+      "cover": {
+        "url": "/imgs/3dicons_premium/wallet.png",
+        "width": 512,
+        "height": 512,
+        "alt": {
+          "ua": "Доступ працівників до даних",
+          "cz": "Přístup zaměstnanců k datům",
+          "sk": "Prístup zamestnancov k dátam",
+          "en": "Employee access to data",
+          "pl": "Dostęp pracowników do danych"
+        }
+      },
+      "publishedAt": "2026-10-12T09:00:00.000Z",
+      "updatedAt": "2026-10-12T09:00:00.000Z",
+      "author": {
+        "name": "Vortex",
+        "type": "Organization"
+      },
+      "translations": {
+        "ua": {
+          "title": "Доступ працівників до даних",
+          "excerpt": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО.",
+          "seo": {
+            "title": "Доступ працівників до даних | Vortex",
+            "description": "Основні кроки та практичні поради для щоденної роботи магазину автозапчастин і СТО."
+          }
+        },
+        "cz": {
+          "title": "Přístup zaměstnanců k datům",
+          "excerpt": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů.",
+          "seo": {
+            "title": "Přístup zaměstnanců k datům | Vortex",
+            "description": "Základní kroky a praktické rady pro každodenní práci prodejen autodílů a autoservisů."
+          }
+        },
+        "sk": {
+          "title": "Prístup zamestnancov k dátam",
+          "excerpt": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov.",
+          "seo": {
+            "title": "Prístup zamestnancov k dátam | Vortex",
+            "description": "Základné kroky a praktické rady pre každodennú prácu predajní autodielov a autoservisov."
+          }
+        },
+        "en": {
+          "title": "Employee access to data",
+          "excerpt": "Essential steps and practical advice for the daily work of auto parts stores and workshops.",
+          "seo": {
+            "title": "Employee access to data | Vortex",
+            "description": "Essential steps and practical advice for the daily work of auto parts stores and workshops."
+          }
+        },
+        "pl": {
+          "title": "Dostęp pracowników do danych",
+          "excerpt": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu.",
+          "seo": {
+            "title": "Dostęp pracowników do danych | Vortex",
+            "description": "Najważniejsze kroki i praktyczne wskazówki do codziennej pracy sklepu z częściami i warsztatu."
+          }
+        }
+      }
+    }
+  ],
+  "base_article": {
+    "id": "demo-1",
+    "slug": "inventory-control",
+    "cover": {
+      "url": "/imgs/3dicons_premium/folder.png",
+      "width": 512,
+      "height": 512,
+      "alt": {
+        "ua": "Облік автозапчастин",
+        "en": "Auto parts inventory",
+        "pl": "Ewidencja części",
+        "cz": "Evidence autodílů",
+        "sk": "Evidencia autodielov"
+      }
+    },
+    "author": {
+      "name": "Vortex",
+      "type": "Organization"
+    },
+    "publishedAt": "2026-10-31T09:00:00.000Z",
+    "updatedAt": "2026-10-31T09:00:00.000Z",
+    "translations": {
+      "ua": {
+        "title": "Як упорядкувати облік автозапчастин",
+        "excerpt": "Практичні кроки для впорядкування даних, залишків і роботи команди.",
+        "seo": {
+          "title": "Облік автозапчастин | Блог Vortex",
+          "description": "Демонстраційна стаття про підготовку даних, контроль залишків та щоденні процеси."
+        },
+        "sections": [
+          {
+            "id": "prepare-data",
+            "heading": "Підготуйте дані про товари",
+            "paragraphs": [
+              "Почніть із назв, артикулів та виробників. Єдиний підхід до заповнення карток допомагає команді швидше знаходити потрібну запчастину.",
+              "Перегляньте дублікати й уточніть інформацію до початку інвентаризації."
+            ]
+          },
+          {
+            "id": "check-stock",
+            "heading": "Перевірте залишки",
+            "paragraphs": [
+              "Порівняйте облікові залишки з фактичною наявністю на складі. Розділіть перевірку на невеликі групи товарів.",
+              "Зафіксуйте розбіжності та їхні причини, щоб виправити процес, а не лише цифри."
+            ]
+          },
+          {
+            "id": "daily-work",
+            "heading": "Узгодьте щоденну роботу",
+            "paragraphs": [
+              "Домовтеся, хто відповідає за приймання, видачу та перевірку документів. Зрозумілий порядок зменшує кількість пропущених операцій.",
+              "Регулярно переглядайте результати разом із командою та оновлюйте робочі інструкції."
+            ]
+          }
+        ]
+      },
+      "en": {
+        "title": "Organizing auto parts inventory",
+        "excerpt": "Practical steps for organizing data, stock and teamwork.",
+        "seo": {
+          "title": "Auto parts inventory | Vortex blog",
+          "description": "A demo article about preparing data, checking stock and daily workflows."
+        },
+        "sections": [
+          {
+            "id": "prepare-data",
+            "heading": "Prepare your product data",
+            "paragraphs": [
+              "Start with names, part numbers and manufacturers. A consistent approach to product records helps the team find the right part faster.",
+              "Review duplicates and clarify information before starting stocktaking."
+            ]
+          },
+          {
+            "id": "check-stock",
+            "heading": "Check stock levels",
+            "paragraphs": [
+              "Compare recorded quantities with actual warehouse stock. Divide the check into small product groups.",
+              "Record discrepancies and their causes so you can improve the process rather than just the numbers."
+            ]
+          },
+          {
+            "id": "daily-work",
+            "heading": "Agree on daily workflows",
+            "paragraphs": [
+              "Agree who handles receiving, dispatch and document checks. Clear responsibilities reduce missed operations.",
+              "Review results with your team regularly and update working instructions."
+            ]
+          }
+        ]
+      },
+      "pl": {
+        "title": "Jak uporządkować ewidencję części",
+        "excerpt": "Praktyczne kroki porządkowania danych, stanów i pracy zespołu.",
+        "seo": {
+          "title": "Ewidencja części | Blog Vortex",
+          "description": "Artykuł demonstracyjny o danych, kontroli stanów i codziennej pracy."
+        },
+        "sections": [
+          {
+            "id": "prepare-data",
+            "heading": "Przygotuj dane produktów",
+            "paragraphs": [
+              "Zacznij od nazw, numerów części i producentów. Jednolity sposób wypełniania kart ułatwia zespołowi znalezienie właściwej części.",
+              "Przejrzyj duplikaty i uzupełnij dane przed inwentaryzacją."
+            ]
+          },
+          {
+            "id": "check-stock",
+            "heading": "Sprawdź stany magazynowe",
+            "paragraphs": [
+              "Porównaj ewidencję z faktycznym stanem magazynu. Podziel kontrolę na niewielkie grupy produktów.",
+              "Zapisz różnice i ich przyczyny, aby poprawić proces, a nie tylko liczby."
+            ]
+          },
+          {
+            "id": "daily-work",
+            "heading": "Uzgodnij codzienną pracę",
+            "paragraphs": [
+              "Ustal, kto odpowiada za przyjęcie, wydanie i kontrolę dokumentów. Jasny podział zadań ogranicza pominięte operacje.",
+              "Regularnie omawiaj wyniki z zespołem i aktualizuj instrukcje pracy."
+            ]
+          }
+        ]
+      },
+      "cz": {
+        "title": "Jak uspořádat evidenci autodílů",
+        "excerpt": "Praktické kroky pro uspořádání dat, zásob a práce týmu.",
+        "seo": {
+          "title": "Evidence autodílů | Blog Vortex",
+          "description": "Ukázkový článek o přípravě dat, kontrole zásob a každodenní práci."
+        },
+        "sections": [
+          {
+            "id": "prepare-data",
+            "heading": "Připravte údaje o produktech",
+            "paragraphs": [
+              "Začněte názvy, čísly dílů a výrobci. Jednotné vyplňování karet pomáhá týmu rychleji najít správný díl.",
+              "Před inventurou projděte duplicity a doplňte informace."
+            ]
+          },
+          {
+            "id": "check-stock",
+            "heading": "Zkontrolujte zásoby",
+            "paragraphs": [
+              "Porovnejte evidované množství se skutečnými zásobami. Rozdělte kontrolu do menších skupin produktů.",
+              "Zaznamenejte rozdíly i příčiny, abyste opravili proces, nejen čísla."
+            ]
+          },
+          {
+            "id": "daily-work",
+            "heading": "Dohodněte každodenní práci",
+            "paragraphs": [
+              "Určete odpovědnost za příjem, výdej a kontrolu dokumentů. Jasný postup snižuje počet vynechaných operací.",
+              "Pravidelně probírejte výsledky s týmem a aktualizujte pracovní pokyny."
+            ]
+          }
+        ]
+      },
+      "sk": {
+        "title": "Ako usporiadať evidenciu autodielov",
+        "excerpt": "Praktické kroky na usporiadanie údajov, zásob a práce tímu.",
+        "seo": {
+          "title": "Evidencia autodielov | Blog Vortex",
+          "description": "Ukážkový článok o príprave údajov, kontrole zásob a každodennej práci."
+        },
+        "sections": [
+          {
+            "id": "prepare-data",
+            "heading": "Pripravte údaje o produktoch",
+            "paragraphs": [
+              "Začnite názvami, číslami dielov a výrobcami. Jednotné vypĺňanie kariet pomáha tímu rýchlejšie nájsť správny diel.",
+              "Pred inventúrou prejdite duplicity a doplňte informácie."
+            ]
+          },
+          {
+            "id": "check-stock",
+            "heading": "Skontrolujte zásoby",
+            "paragraphs": [
+              "Porovnajte evidované množstvo so skutočnými zásobami. Rozdeľte kontrolu do menších skupín produktov.",
+              "Zaznamenajte rozdiely aj príčiny, aby ste opravili proces, nielen čísla."
+            ]
+          },
+          {
+            "id": "daily-work",
+            "heading": "Dohodnite každodennú prácu",
+            "paragraphs": [
+              "Určte zodpovednosť za príjem, výdaj a kontrolu dokumentov. Jasný postup znižuje počet vynechaných operácií.",
+              "Pravidelne preberajte výsledky s tímom a aktualizujte pracovné pokyny."
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

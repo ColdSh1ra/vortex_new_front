@@ -1,3 +1,4 @@
+import { imageSize } from '../utils/imageSize';
 import { useI18n } from '../context/ContentContext';
 import type { ContactWorker } from '../types/content';
 
@@ -40,6 +41,8 @@ function ContactWorkerCard({ worker }: { worker: ContactWorker }) {
         <img
           className="contact-worker-photo"
           src={worker.photo_path}
+          {...imageSize(worker.photo_path)}
+          decoding="async"
           alt={worker.full_name}
         />
         <div className="contact-worker-identity">

@@ -1,3 +1,4 @@
+import ChevronCircle from './default/ChevronCircle';
 import { useLocation } from 'react-router-dom';
 import { useI18n } from '../context/ContentContext';
 import { useEffect, useMemo, useState } from 'react';
@@ -168,7 +169,7 @@ function TrialRequestComponent({
           <p className="tecdoc-license-price-terms">{t('tecdoc.paymentTerms')}</p>
           <p className="tecdoc-license-price-trial">{t('tecdoc.trialTerms')}</p>
         </aside> : <div className="trial-request-visual" aria-hidden="true">
-          <img className={'logo-spin-animation'} src="/imgs/vortex_logo_large.svg" alt="" />
+          <img className={'logo-spin-animation'} src="/imgs/vortex_logo_large.svg" alt="" loading="lazy" decoding="async" />
         </div>}
 
         <div className="trial-request-content">
@@ -233,9 +234,7 @@ function TrialRequestComponent({
               disabled={isSubmitting || !import.meta.env.VITE_RECAPTCHA_SITE_KEY}
             >
               {t(isSubmitting ? 'trial.sending' : 'trial.send')}
-              <span aria-hidden="true">
-                <img src="/icons/chevron-right-double.svg" alt="" />
-              </span>
+              <ChevronCircle />
             </button>
 
             {submitStatus && <p className="trial-request-status" aria-live="polite">{t(submitStatus)}</p>}

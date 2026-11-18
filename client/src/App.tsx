@@ -13,11 +13,11 @@ type AppProps = {
 
 function App({ initialContent = null, initialLanguage = 'ua', initialBlog = null }: AppProps) {
   return (
-    <ContentProvider content={initialContent} initialLanguage={initialLanguage}>
-      <BrowserRouter>
+    <BrowserRouter>
+      <ContentProvider content={initialContent} initialLanguage={initialLanguage}>
         <BlogProvider initialData={initialBlog}><AppRouter /></BlogProvider>
-      </BrowserRouter>
-    </ContentProvider>
+      </ContentProvider>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,49 @@
+{
+  "origin": "https://crm-vortex.com",
+  "languageCodes": {
+    "ua": "uk",
+    "cz": "cs",
+    "sk": "sk",
+    "en": "en",
+    "pl": "pl"
+  },
+  "staticPaths": [
+    "/",
+    "/car-service",
+    "/websites",
+    "/auto-dismantling",
+    "/tecdoc-license",
+    "/faq",
+    "/contact",
+    "/privacy-policy",
+    "/integrations/tecdoc",
+    "/integrations/checkbox",
+    "/integrations/vchasno",
+    "/integrations/nova_poshta",
+    "/integrations/turboSMS",
+    "/integrations/bank_API",
+    "/integrations/binotel"
+  ],
+  "languages": [
+    "ua",
+    "cz",
+    "sk",
+    "en",
+    "pl"
+  ],
+  "blog": {
+    "list": "/blog",
+    "article": "/blog/{slug}",
+    "pagination": "?page={page}",
+    "language_query": "?lang={ua|cz|sk|en|pl}"
+  },
+  "integration_slugs": [
+    "tecdoc",
+    "checkbox",
+    "vchasno",
+    "nova_poshta",
+    "turboSMS",
+    "bank_API",
+    "binotel"
+  ]
+}

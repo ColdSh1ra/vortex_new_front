@@ -1,4 +1,5 @@
 import { useInitialContent } from '../context/ContentContext';
+import StickyHeading from './default/StickyHeading';
 
 function AboutUs() {
     const content = useInitialContent()?.homepage.about_us_block ?? null;
@@ -7,10 +8,10 @@ function AboutUs() {
         <section className="about-us-content section-container">
             {content && (
                 <div className="about-us-wrapper display-flex flex-column align-content-center width-100-p">
+                    <StickyHeading className="about-us-hero-title text-color-orange home-sticky-title">
+                        {content.about_us_title}
+                    </StickyHeading>
                     <div className="about-us-header">
-                        <h2 className="about-us-hero-title text-color-orange">
-                            {content.about_us_title}
-                        </h2>
                         <p className="about-us-hero-subtitle">
                             {content.about_us_subtitle}
                         </p>

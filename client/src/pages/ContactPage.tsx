@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from '../components/default/LocalizedLink';
 import ContactWorkerCard from '../components/ContactWorkerCard';
 import TrialRequestComponent from '../components/TrialRequestComponent';
 import { useI18n } from '../context/ContentContext';

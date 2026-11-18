@@ -14,56 +14,10 @@ const { CLIENT_ORIGINS } = require('./config/constants');
 const app = express();
 const clientDistPath = path.join(__dirname, '..', '..', 'client', 'dist', 'client');
 const ssrEntryPath = path.join(__dirname, '..', '..', 'client', 'dist', 'server', 'entry-server.js');
-const clientManifestPath = path.join(clientDistPath, '.vite', 'manifest.json');
-
-async function getRouteStylesheet(url) {
-  try {
-    const manifest = JSON.parse(await fs.readFile(clientManifestPath, 'utf8'));
-    const pathname = new URL(url, 'http://localhost').pathname;
-    let sourceFiles = [
-      'src/styles/main.css',
-      'src/styles/trial-request.css',
-    ];
-
-    if (pathname === '/privacy-policy' || pathname === '/privacy-policy/') {
-      sourceFiles = ['src/styles/privacy.css'];
-    } else if (pathname.startsWith('/integrations/')) {
-      sourceFiles = ['src/styles/integrations.css'];
-    } else if (pathname === '/faq' || pathname.startsWith('/faq/')) {
-      sourceFiles = ['src/styles/faq.css'];
-    } else if (pathname === '/contact' || pathname.startsWith('/contact/')) {
-      sourceFiles = [
-        'src/styles/contact.css',
-        'src/styles/trial-request.css',
-      ];
-    } else if (pathname === '/car-service' || pathname.startsWith('/car-service/')) {
-      sourceFiles.push('src/styles/car-service.css');
-    } else if (pathname === '/websites' || pathname.startsWith('/websites/')) {
-      sourceFiles = ['src/styles/websites.css', 'src/styles/trial-request.css'];
-    } else if (pathname === '/auto-dismantling' || pathname.startsWith('/auto-dismantling/')) {
-      sourceFiles = ['src/styles/auto-dismantling.css', 'src/styles/trial-request.css'];
-    } else if (pathname === '/tecdoc-license' || pathname.startsWith('/tecdoc-license/')) {
-      sourceFiles = ['src/styles/tecdoc.css', 'src/styles/trial-request.css'];
-    } else if (pathname === '/blog' || pathname.startsWith('/blog/')) {
-      sourceFiles = ['src/styles/blog.css'];
-    }
-    const cssFiles = sourceFiles.flatMap((sourceFile) => {
-      const entry = manifest[sourceFile];
-
-      if (!entry) {
-        return [];
-      }
-
-      return entry.css || (entry.file.endsWith('.css') ? [entry.file] : []);
-    });
-
-    return cssFiles
-      .map((file) => `<link rel="stylesheet" href="/${file}">`)
-      .join('');
-  } catch {
-    return '';
-  }
-}
+const { routeResources } = require('./seo/resources');
+const { canonicalRequest, languageFromSearch, languageCodes } = require('./seo/site');
+const discoveryRoutes = require('./routes/discoveryRoutes');
+const { gzipSync, brotliCompressSync, constants } = require('node:zlib');
 
 app.disable('x-powered-by');
 app.use((req, res, next) => {
@@ -88,16 +42,33 @@ app.use(cors({
 }));
 app.use(express.json({ limit: '12kb', strict: true }));
 
+app.use('/api', (req, res, next) => { res.set('X-Robots-Tag', 'noindex, nofollow'); next(); });
 app.use('/api', contentRoutes);
 app.use('/api', trialRequestRoutes);
 app.use('/api/blog', blogRoutes);
 app.use('/api', (req, res) => res.status(404).json({ code: 'NOT_FOUND' }));
 app.use(sitemapRoutes);
+app.use(discoveryRoutes);
 
-app.use(express.static(clientDistPath, { index: false }));
+// A single deterministic address per language, independent of a visitor's cookies.
+app.use((req, res, next) => {
+  if (!['GET', 'HEAD'].includes(req.method) || req.path.startsWith('/assets/') || req.path.startsWith('/imgs/') || req.path.startsWith('/icons/') || req.path.startsWith('/bgs/')) return next();
+  const normalized = canonicalRequest(req.originalUrl);
+  if (normalized !== req.originalUrl) return res.redirect(301, normalized);
+  next();
+});
+
+app.use(express.static(clientDistPath, {
+  index: false,
+  redirect: false,
+  setHeaders(res, filePath) {
+    if (filePath.includes(`${path.sep}assets${path.sep}`)) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+    else res.setHeader('Cache-Control', 'public, max-age=3600');
+  },
+}));
 
 app.use(async (req, res, next) => {
-  if (req.method !== 'GET') {
+  if (!['GET', 'HEAD'].includes(req.method)) {
     return next();
   }
 
@@ -107,21 +78,21 @@ app.use(async (req, res, next) => {
     const { render, loadBlogRoute } = await import(pathToFileURL(ssrEntryPath).href);
     const requestUrl = new URL(req.originalUrl, 'http://localhost');
     const isBlog = requestUrl.pathname === '/blog' || requestUrl.pathname.startsWith('/blog/');
-    const savedLanguage = req.headers.cookie?.match(/(?:^|;\s*)vortex-language=(ua|cz|sk|en|pl)(?:;|$)/)?.[1];
-    const requestedLanguage = requestUrl.searchParams.get('lang');
-    const language = isBlog ? (['ua', 'cz', 'sk', 'en', 'pl'].includes(requestedLanguage) ? requestedLanguage : 'ua') : savedLanguage || 'ua';
-    const languageTag = { ua: 'uk', cz: 'cs', sk: 'sk', en: 'en', pl: 'pl' }[language];
+    const language = languageFromSearch(requestUrl.search);
+    const languageTag = languageCodes[language];
     const initialBlog = await loadBlogRoute(req.originalUrl, {
       apiBaseUrl: isBlog && blogService.configured() ? blogService.apiBaseUrl() : undefined,
       demoEnabled: process.env.BLOG_DEMO_MODE !== 'false',
     });
     const { appHtml, headHtml, statusCode, robots } = render(req.originalUrl, content, language, initialBlog);
     const serializedContent = JSON.stringify(content).replace(/</g, '\\u003c');
-    const routeStylesheet = await getRouteStylesheet(req.originalUrl);
+    const resources = await routeResources(req.originalUrl, content, initialBlog, template);
     const html = template
       .replace('<html lang="uk">', `<html lang="${languageTag}">`)
-      .replace('<!--ssr-outlet-->', appHtml)
-      .replace('<!--route-styles-->', routeStylesheet)
+      // React emits eager-image hints automatically; the head uses the route's critical images only.
+      .replace('<!--ssr-outlet-->', appHtml.replace(/<link rel="preload" as="image"[^>]*\/>/g, ''))
+      .replace('<!--resource-hints-->', resources.hints)
+      .replace('<!--route-styles-->', resources.styles)
       .replace('<!--seo-head-->', headHtml)
       .replace(
         '<!--initial-content-->',
@@ -130,7 +101,14 @@ app.use(async (req, res, next) => {
 
     if (robots.startsWith('noindex')) res.set('X-Robots-Tag', 'noindex, follow');
     if (statusCode === 503) res.set('Retry-After', '60');
-    res.status(statusCode).set({ 'Content-Type': 'text/html', 'Cache-Control': 'private, no-cache' }).send(html);
+    res.status(statusCode).set({ 'Content-Type': 'text/html; charset=utf-8', 'Content-Language': languageTag, 'Cache-Control': 'public, max-age=0, must-revalidate' });
+    res.vary('Accept-Encoding');
+    // Compress server-rendered HTML including the hydration payload.
+    if (req.acceptsEncodings('br', 'gzip', 'identity') === 'br') {
+      res.set('Content-Encoding', 'br').send(brotliCompressSync(Buffer.from(html), { params: { [constants.BROTLI_PARAM_QUALITY]: 4 } }));
+    } else if (req.acceptsEncodings('gzip', 'identity') === 'gzip') {
+      res.set('Content-Encoding', 'gzip').send(gzipSync(html));
+    } else res.send(html);
   } catch (error) {
     next(error);
   }
@@ -154,7 +132,8 @@ app.use((error, req, res, next) => {
     return res.status(500).json({ message: 'Внутрішня помилка сервера.' });
   }
 
-  return next(error);
+  console.error('Page rendering failed:', error.name);
+  return res.status(503).set({ 'X-Robots-Tag': 'noindex, follow', 'Retry-After': '60', 'Cache-Control': 'no-store' }).type('text/plain').send('Page temporarily unavailable. Please try again shortly.');
 });
 
 module.exports = app;

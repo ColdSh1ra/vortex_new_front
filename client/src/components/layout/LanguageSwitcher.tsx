@@ -3,17 +3,17 @@ import type { KeyboardEvent } from 'react';
 import { LANGUAGE_TAGS, useI18n } from '../../context/ContentContext';
 import { LANGUAGES } from '../../types/content';
 import type { Language } from '../../types/content';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { languageVariantUrl } from '../../seo/urls';
 
 function LanguageSwitcher() {
   const { language, setLanguage, t } = useI18n();
   const location = useLocation();
-  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const menuId = useId();
   const containerRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
-  const optionRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const optionRefs = useRef<(HTMLAnchorElement | null)[]>([]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -34,12 +34,6 @@ function LanguageSwitcher() {
 
   const selectLanguage = (code: Language) => {
     setLanguage(code);
-    if (location.pathname === '/blog' || location.pathname.startsWith('/blog/')) {
-      const params = new URLSearchParams(location.search);
-      if (code === 'ua') params.delete('lang'); else params.set('lang', code);
-      const search = params.toString();
-      navigate(`${location.pathname}${search ? `?${search}` : ''}${location.hash}`);
-    }
     closeMenu();
   };
 
@@ -91,12 +85,12 @@ function LanguageSwitcher() {
           <path d="m4 6 4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
-      {isOpen && (
-        <div className="language-switcher-menu" id={menuId} role="menu" aria-label={t('common.language')} onKeyDown={handleMenuKeyDown}>
+      <div hidden={!isOpen} className="language-switcher-menu" id={menuId} role="menu" aria-label={t('common.language')} onKeyDown={handleMenuKeyDown}>
           {LANGUAGES.map((code, index) => (
-            <button
+            <Link
               className="language-switcher-option"
-              type="button"
+              to={languageVariantUrl(`${location.pathname}${location.search}${location.hash}`, code)}
+              hrefLang={LANGUAGE_TAGS[code]}
               role="menuitemradio"
               aria-checked={code === language}
               tabIndex={-1}
@@ -104,16 +98,18 @@ function LanguageSwitcher() {
               ref={(element) => { optionRefs.current[index] = element; }}
               lang={LANGUAGE_TAGS[code]}
               onClick={() => selectLanguage(code)}
+              onKeyDown={(event) => {
+                if (event.key === ' ') { event.preventDefault(); event.currentTarget.click(); }
+              }}
             >
               <span className="language-switcher-code" aria-hidden="true">{code.toUpperCase()}</span>
               <span>{t(`language.${code}`)}</span>
               <svg className="language-switcher-check" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="m3 8 3 3 7-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </button>
+            </Link>
           ))}
-        </div>
-      )}
+      </div>
     </div>
   );
 }

@@ -1,204 +1,62 @@
+import StickyHeading from '../components/default/StickyHeading';
 import { Link } from 'react-router-dom';
-import { useI18n } from '../context/ContentContext';
+import DOMPurify from 'isomorphic-dompurify';
+import { LANGUAGE_TAGS, useI18n } from '../context/ContentContext';
+import { localizedUrl } from '../seo/urls';
+import type { Language } from '../types/content';
+import ua from '../locales/privacy/ua.json';
+import cz from '../locales/privacy/cz.json';
+import sk from '../locales/privacy/sk.json';
+import en from '../locales/privacy/en.json';
+import pl from '../locales/privacy/pl.json';
 
-const sections = [
-  { id: 'scope', title: 'Про цю політику та зв’язок із нами' },
-  { id: 'data', title: 'Які дані ми отримуємо' },
-  { id: 'purposes', title: 'Для чого та на яких підставах обробляємо дані' },
-  { id: 'location', title: 'Добровільне надання геолокації' },
-  { id: 'cookies', title: 'Cookies і локальне сховище браузера' },
-  { id: 'recaptcha', title: 'Захист форм за допомогою reCAPTCHA' },
-  { id: 'recipients', title: 'Хто може отримувати дані' },
-  { id: 'international', title: 'Обробка даних за межами України' },
-  { id: 'retention', title: 'Строки зберігання та видалення' },
-  { id: 'security', title: 'Захист інформації' },
-  { id: 'rights', title: 'Ваші права' },
-  { id: 'requests', title: 'Як скористатися своїми правами' },
-  { id: 'external', title: 'Зовнішні посилання та дані інших осіб' },
-  { id: 'changes', title: 'Зміни до політики' },
-];
+const copies: Record<Language, typeof ua> = { ua, cz, sk, en, pl };
+const updatedAt = '2026-11-16';
+const policyHtml = (html: string) => DOMPurify.sanitize(html, {
+  ALLOWED_TAGS: ['p', 'ul', 'li', 'a', 'strong', 'code'],
+  ALLOWED_ATTR: ['href', 'target', 'rel'],
+  ALLOW_DATA_ATTR: false,
+});
 
 export default function PrivacyPolicyPage() {
-  const { t } = useI18n();
+  const { t, language } = useI18n();
+  const copy = copies[language];
+  const date = new Intl.DateTimeFormat(LANGUAGE_TAGS[language], {
+    year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
+  }).format(new Date(`${updatedAt}T00:00:00Z`));
 
   return (
     <div className="privacy-page">
       <div className="privacy-page-content">
         <nav className="privacy-breadcrumbs" aria-label={t('common.breadcrumbs')}>
           <ol>
-            <li><Link to="/">{t('common.home')}</Link></li>
+            <li><Link to={localizedUrl('/', language)}>{t('common.home')}</Link></li>
             <li aria-hidden="true">/</li>
-            <li aria-current="page">{t('common.privacy')}</li>
+            <li aria-current="page">{copy.title}</li>
           </ol>
         </nav>
 
-        <article className="privacy-document" lang="uk" aria-labelledby="privacy-heading">
+        <article className="privacy-document" lang={LANGUAGE_TAGS[language]} aria-labelledby="privacy-heading">
           <header className="privacy-document-header">
-            <p className="privacy-eyebrow">Vortex / Правова інформація</p>
-            <h1 id="privacy-heading">Політика конфіденційності</h1>
-            <p className="privacy-document-lead">
-              Як ми обробляємо персональні дані відвідувачів сайту та людей,
-              які звертаються щодо продуктів і послуг Vortex.
-            </p>
-            <p className="privacy-document-date">Дата оновлення: <time dateTime="2026-11-16">16 листопада 2026 року</time></p>
+            <p className="privacy-eyebrow">{copy.eyebrow}</p>
+            <h1 id="privacy-heading">{copy.title}</h1>
+            <p className="privacy-document-lead">{copy.lead}</p>
+            <p className="privacy-document-date">{copy.updated} <time dateTime={updatedAt}>{date}</time></p>
           </header>
 
           <nav className="privacy-contents" aria-labelledby="privacy-contents-heading">
-            <h2 id="privacy-contents-heading">Зміст документа</h2>
+            <h2 id="privacy-contents-heading">{copy.contents}</h2>
             <ol>
-              {sections.map((section) => <li key={section.id}><a href={`#privacy-${section.id}`}>{section.title}</a></li>)}
+              {copy.sections.map(section => <li key={section.id}><a href={`#privacy-${section.id}`}>{section.title}</a></li>)}
             </ol>
           </nav>
 
-          <section className="privacy-section" id="privacy-scope" aria-labelledby="privacy-scope-heading">
-            <h2 id="privacy-scope-heading"><span>01</span>Про цю політику та зв’язок із нами</h2>
-            <div className="privacy-section-body">
-              <p>Ця політика стосується публічного сайту Vortex, його форм заявок, вибору мови та звернень до команди через зазначені на сайті контакти. Вона пояснює, які відомості надходять під час цих дій, навіщо вони потрібні та як реалізувати права щодо них.</p>
-              <p>Володілець персональних даних, отриманих через цей сайт, — ФОП Маркович В.Ю., ідентифікаційний номер 3258910312. У цьому документі «Vortex», «ми» та «наші» означають цього підприємця та команду, яка забезпечує роботу сайту й опрацьовує звернення від його імені.</p>
-              <p>Контакт для питань про персональні дані та реалізації ваших прав: <a href="mailto:crm.vtx@gmail.com">crm.vtx@gmail.com</a>. Адреса для листування: Україна, м. Ужгород, вул. Капушанська, 154а.</p>
-              <p>Обробка даних відбувається з урахуванням <a href="https://zakon.rada.gov.ua/go/2297-17" target="_blank" rel="noopener noreferrer">Закону України «Про захист персональних даних»</a>. Якщо на конкретну обробку поширюється Загальний регламент ЄС про захист даних (GDPR), застосовуються також його вимоги.</p>
-              <p>Ця політика описує маркетинговий сайт. Умови обробки даних у самій CRM, у вашій клієнтській базі або під час виконання окремого договору визначаються відповідними договорами й повідомленнями. Саме відвідування сайту або прочитання цієї політики не є згодою на будь-яке використання персональних даних.</p>
-            </div>
-          </section>
-
-          <section className="privacy-section" id="privacy-data" aria-labelledby="privacy-data-heading">
-            <h2 id="privacy-data-heading"><span>02</span>Які дані ми отримуємо</h2>
-            <div className="privacy-section-body">
-              <p>Для перегляду сторінок не потрібно створювати обліковий запис. Якщо ви надсилаєте заявку на тестування, демонстрацію, розробку сайту або ліцензію TecDoc, форма передає:</p>
-              <ul>
-                <li>ім’я або інше вказане вами звертання та номер телефону;</li>
-                <li>продукт, якого стосується запит, сторінку відправлення та обрану мову;</li>
-                <li>розраховану суму, якщо вона передбачена формою, і вибраний пакет сайту, якщо ви його обрали;</li>
-                <li>координати та показник точності місцезнаходження, якщо ви окремо додали геолокацію;</li>
-                <li>технічний токен reCAPTCHA для перевірки справжності запиту.</li>
-              </ul>
-              <p>Під час зв’язку електронною поштою, телефоном або в месенджері ми також отримуємо відомості, які ви самі повідомляєте, та дані, необхідні для відповіді. Будь ласка, не надсилайте паролі, платіжні реквізити карток, копії документів або чутливі відомості, якщо вони не потрібні для погодженої послуги.</p>
-              <p>Для доставки вебсторінок і захисту сайту сервер та його інфраструктура обробляють технічні відомості про з’єднання, зокрема IP-адресу, час запиту й дані HTTP-заголовків. Склад і строки технічних журналів залежать від налаштувань хостингу. IP-адреса також передається Google під час серверної перевірки reCAPTCHA.</p>
-              <p>Форма сайту не запитує дані банківської картки й не проводить оплату. Відображення тарифу або розрахованої суми саме по собі не є платіжною операцією.</p>
-            </div>
-          </section>
-
-          <section className="privacy-section" id="privacy-purposes" aria-labelledby="privacy-purposes-heading">
-            <h2 id="privacy-purposes-heading"><span>03</span>Для чого та на яких підставах обробляємо дані</h2>
-            <div className="privacy-section-body">
-              <p>Ім’я, телефон і контекст заявки потрібні, щоб відповісти на ваш запит, уточнити потреби, організувати демонстрацію або підготувати пропозицію. Коли звернення стосується майбутнього договору, підставою є вчинення дій до його укладення на ваш запит; для надання замовленої послуги — виконання договору.</p>
-              <p>Технічні дані та антиспам-перевірка використовуються для захисту форм, запобігання зловживанням і забезпечення працездатності сайту. Підставою може бути законний інтерес у безпечній роботі сервісу, з урахуванням ваших прав і вимог застосовного законодавства. Якщо для певної технології закон вимагає попередньої згоди, законний інтерес її не замінює.</p>
-              <p>Для необов’язкової геолокації використовується ваш окремий добровільний вибір. Коли дані необхідні для виконання встановленого законом обов’язку, обробка ґрунтується на такому обов’язку. Ми не використовуємо сам факт подання заявки як необмежений дозвіл на рекламні розсилки.</p>
-              <p>Відмова від надання обов’язкових контактних даних не перешкоджає перегляду сайту, але унеможливлює відправлення форми або відповідь за відсутнім контактом. Автоматична перевірка форми та розрахунок орієнтовної ціни не є автоматизованим рішенням, що створює для вас юридичні наслідки.</p>
-            </div>
-          </section>
-
-          <section className="privacy-section" id="privacy-location" aria-labelledby="privacy-location-heading">
-            <h2 id="privacy-location-heading"><span>04</span>Добровільне надання геолокації</h2>
-            <div className="privacy-section-body">
-              <p>Місцезнаходження запитується лише після натискання кнопки додавання локації та дозволу браузера. Воно додається до заявки, щоб команда могла врахувати ваше розташування під час відповіді. Постійне відстеження переміщень цією функцією не здійснюється.</p>
-              <p>Ви можете не натискати цю кнопку або відхилити запит браузера: форма залишається доступною без координат. Якщо не бажаєте надсилати вже додану локацію, перезавантажте сторінку до відправлення форми. Дозвіл на майбутній доступ можна скасувати в налаштуваннях браузера.</p>
-              <p>Скасування дозволу браузера не видаляє координати, які ви вже відправили. Для видалення даних попереднього звернення напишіть на <a href="mailto:crm.vtx@gmail.com">crm.vtx@gmail.com</a>.</p>
-            </div>
-          </section>
-
-          <section className="privacy-section" id="privacy-cookies" aria-labelledby="privacy-cookies-heading">
-            <h2 id="privacy-cookies-heading"><span>05</span>Cookies і локальне сховище браузера</h2>
-            <div className="privacy-section-body">
-              <p>Щоб запам’ятати обрану вами мову, сайт записує значення <code>vortex-language</code> у cookie та локальне сховище браузера (localStorage). Значення містить код мови, а не ім’я чи номер телефону.</p>
-              <ul>
-                <li><strong>Cookie мови:</strong> установлюється під час вибору мови зі строком до 365 днів; повторний вибір оновлює цей строк.</li>
-                <li><strong>localStorage:</strong> зберігає вибір мови без заданого сайтом автоматичного строку видалення, доки ви не очистите дані або браузер не видалить їх.</li>
-                <li><strong>reCAPTCHA:</strong> під час роботи може встановлювати службовий cookie <code>_GRECAPTCHA</code> та використовувати інші технології Google для захисту від автоматизованих запитів.</li>
-              </ul>
-              <p>Ви можете видалити ці дані або обмежити їх збереження в налаштуваннях браузера. Після очищення вибір мови може скинутися; блокування сервісів Google може перешкодити перевірці та відправленню форми. У такому разі доступні прямі контакти команди.</p>
-              <p>У поточній версії сайту окремі рекламні пікселі та сторонні системи вебаналітики не підключені. Це не виключає технічної обробки сторонніми сервісами, описаної в цій політиці.</p>
-            </div>
-          </section>
-
-          <section className="privacy-section" id="privacy-recaptcha" aria-labelledby="privacy-recaptcha-heading">
-            <h2 id="privacy-recaptcha-heading"><span>06</span>Захист форм за допомогою reCAPTCHA</h2>
-            <div className="privacy-section-body">
-              <p>Коли налаштовано Google reCAPTCHA, сторінка з формою завантажує її скрипт. Під час завантаження й перевірки Google отримує технічні дані про взаємодію, зокрема IP-адресу та відомості про браузер; сервіс може використовувати cookies. Сервер сайту передає Google токен перевірки та IP-адресу запиту.</p>
-              <p>Поля імені й телефону не включаються сайтом у запит серверної перевірки reCAPTCHA. Після успішної перевірки токен не включається до повідомлення команди в Telegram.</p>
-              <p>Докладніше про сервіс: <a href="https://developers.google.com/recaptcha/docs/faq" target="_blank" rel="noopener noreferrer">документація reCAPTCHA</a>, <a href="https://policies.google.com/privacy?hl=uk" target="_blank" rel="noopener noreferrer">Політика конфіденційності Google</a> та <a href="https://policies.google.com/terms?hl=uk" target="_blank" rel="noopener noreferrer">Умови використання Google</a>. Якщо не бажаєте користуватися формою з цим сервісом, зверніться до нас напряму.</p>
-            </div>
-          </section>
-
-          <section className="privacy-section" id="privacy-recipients" aria-labelledby="privacy-recipients-heading">
-            <h2 id="privacy-recipients-heading"><span>07</span>Хто може отримувати дані</h2>
-            <div className="privacy-section-body">
-              <p>Звернення отримують працівники та залучені спеціалісти команди Vortex, яким ці відомості потрібні для відповіді, консультації або надання послуги. Технічне обслуговування сайту потребує участі постачальника хостингу та, за необхідності, інших виконавців, які забезпечують його роботу.</p>
-              <p>Для відображення шрифту сторінки завантажують стилі й файли Google Fonts із доменів <code>fonts.googleapis.com</code> і <code>fonts.gstatic.com</code>. Це з’єднання відбувається під час перегляду сайту незалежно від відправлення форми. Google отримує технічні відомості запиту, зокрема IP-адресу, відомості про браузер і джерело запиту в межах налаштувань передавання referrer. Ім’я та телефон із форми сайт не включає до запитів завантаження шрифту. Докладніше — у <a href="https://developers.google.com/fonts/faq/privacy" target="_blank" rel="noopener noreferrer">довідці Google Fonts про конфіденційність</a>.</p>
-              <p>Заявки з форм доставляються команді через Telegram Bot API. До повідомлення додаються ім’я, телефон і, залежно від форми, мова, сторінка, сума, пакет та координати. Для заявки на TecDoc повідомлення містить ім’я й телефон. Це передавання здійснюється сервером: вам не потрібно мати обліковий запис Telegram.</p>
-              <p>Telegram обробляє повідомлення у своїй хмарній інфраструктурі відповідно до <a href="https://telegram.org/privacy" target="_blank" rel="noopener noreferrer">власної політики конфіденційності</a>. Повідомлення бота не є секретним чатом із наскрізним шифруванням. Просимо не передавати через форму відомості, які не потрібні для зв’язку.</p>
-              <p>Окремі технічні дані отримує Google для reCAPTCHA, як описано вище. Дані також можуть передаватися компетентним органам, коли це прямо передбачено законом і є належна правова підстава. Ми не продаємо контактні дані із заявок і не публікуємо їх на сайті.</p>
-            </div>
-          </section>
-
-          <section className="privacy-section" id="privacy-international" aria-labelledby="privacy-international-heading">
-            <h2 id="privacy-international-heading"><span>08</span>Обробка даних за межами України</h2>
-            <div className="privacy-section-body">
-              <p>Використання Google, Telegram та інфраструктури їхніх постачальників може передбачати обробку даних за межами України, а для користувачів Європейської економічної зони — за її межами. Сам сайт не визначає розташування всіх серверів цих сервісів; відомості про їхню обробку наведені в політиках відповідних постачальників.</p>
-              <p>До міжнародного передавання застосовуються вимоги законодавства про захист персональних даних, зокрема статті 29 Закону України «Про захист персональних даних», а коли застосовний GDPR — його правила щодо передавання до третіх країн. Використання сайту саме по собі не є окремою згодою на будь-яке міжнародне передавання.</p>
-              <p>Інформацію про одержувачів і правову підставу передавання даних конкретного звернення можна запросити через наш контакт із питань конфіденційності.</p>
-            </div>
-          </section>
-
-          <section className="privacy-section" id="privacy-retention" aria-labelledby="privacy-retention-heading">
-            <h2 id="privacy-retention-heading"><span>09</span>Строки зберігання та видалення</h2>
-            <div className="privacy-section-body">
-              <p>Контактні дані та листування зберігаються протягом часу, необхідного для опрацювання звернення й подальшої комунікації щодо запитаної послуги. Якщо відносини продовжуються, строки можуть визначатися договором, обов’язковими вимогами закону або обґрунтованою потребою в захисті прав у спорі. Дані не повинні зберігатися довше, ніж потрібно для відповідної мети.</p>
-              <p>Поточна форма доставляє заявку в Telegram; вона не створює для відвідувача окремого кабінету з історією звернень. Копії повідомлень можуть залишатися в робочому листуванні та інфраструктурі постачальників. Закриття сторінки або очищення браузера не видаляє вже надіслану заявку; автоматичного видалення повідомлення через фіксовану кількість днів форма не виконує.</p>
-              <p>Технічні журнали зберігаються відповідно до налаштувань інфраструктури й потреб безпеки. Строки зберігання даних у Google і Telegram визначаються також правилами цих сервісів. Строки локального збереження вибору мови наведено в розділі про cookies.</p>
-              <p>Щоб уточнити строк щодо своєї заявки або попросити видалення, напишіть нам. Якщо частину даних потрібно зберегти на законній підставі, у відповіді пояснимо підставу та відповідний строк або критерій його визначення.</p>
-            </div>
-          </section>
-
-          <section className="privacy-section" id="privacy-security" aria-labelledby="privacy-security-heading">
-            <h2 id="privacy-security-heading"><span>10</span>Захист інформації</h2>
-            <div className="privacy-section-body">
-              <p>Для захисту звернень застосовуються перевірка вхідних полів, обмеження розміру запитів та антиспам-перевірка. Передавання заявки до Google і Telegram здійснюється через HTTPS. Ключі цих інтеграцій використовуються на сервері й не включаються у вміст повідомлення заявки.</p>
-              <p>Жоден спосіб передавання або зберігання не забезпечує абсолютної безпеки. Не додавайте надмірних даних, перевіряйте адресу сайту перед надсиланням і повідомляйте нас, якщо помітили підозрілу активність або можливе розголошення своїх відомостей.</p>
-            </div>
-          </section>
-
-          <section className="privacy-section" id="privacy-rights" aria-labelledby="privacy-rights-heading">
-            <h2 id="privacy-rights-heading"><span>11</span>Ваші права</h2>
-            <div className="privacy-section-body">
-              <p>У межах і за умов, визначених застосовним законодавством, ви маєте право:</p>
-              <ul>
-                <li>дізнатися джерела, мету й умови обробки своїх даних та відомості про їхнього володільця й одержувачів;</li>
-                <li>отримати доступ до власних персональних даних;</li>
-                <li>вимагати виправлення недостовірних даних та видалення даних, які обробляються незаконно або більше не потрібні;</li>
-                <li>заперечити проти обробки за наявності передбачених законом підстав;</li>
-                <li>відкликати згоду, якщо саме вона була підставою обробки; це не впливає на законність попередньої обробки;</li>
-                <li>захищати свої права в суді та звернутися зі скаргою до Уповноваженого Верховної Ради України з прав людини.</li>
-              </ul>
-              <p>Коли застосовується GDPR, за встановлених ним умов також доступні обмеження обробки, перенесення даних і звернення до компетентного наглядового органу, зокрема за місцем звичайного проживання, роботи або ймовірного порушення. Ці права не є абсолютними: наприклад, видалення може бути обмежене законним обов’язком збереження.</p>
-              <p>Пояснення щодо прав і способів звернення доступні на <a href="https://ombudsman.gov.ua/uk/zahist-personalnih-danih-faq" target="_blank" rel="noopener noreferrer">сайті Уповноваженого</a>. Офіційний текст GDPR доступний на <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener noreferrer">EUR-Lex</a>.</p>
-            </div>
-          </section>
-
-          <section className="privacy-section" id="privacy-requests" aria-labelledby="privacy-requests-heading">
-            <h2 id="privacy-requests-heading"><span>12</span>Як скористатися своїми правами</h2>
-            <div className="privacy-section-body">
-              <p>Надішліть звернення на <a href="mailto:crm.vtx@gmail.com">crm.vtx@gmail.com</a> із темою «Персональні дані». Опишіть, які дані або заявку маєте на увазі та яку дію просите виконати. Для пошуку звернення достатньо почати з орієнтовної дати й контакту, який ви залишали.</p>
-              <p>Щоб не розкрити ваші дані сторонній особі, можемо попросити пропорційне підтвердження особи та інформацію, необхідну за законом. Не надсилайте копію паспорта чи інші надмірні документи без окремого обґрунтованого запиту.</p>
-              <p>Звернення розглядається у строки, установлені законом для відповідного виду запиту. Якщо є законна підстава відмовити, обмежити виконання або продовжити строк, повідомимо про неї. Звернення до нас не обмежує ваше право одразу звернутися до наглядового органу або суду.</p>
-            </div>
-          </section>
-
-          <section className="privacy-section" id="privacy-external" aria-labelledby="privacy-external-heading">
-            <h2 id="privacy-external-heading"><span>13</span>Зовнішні посилання та дані інших осіб</h2>
-            <div className="privacy-section-body">
-              <p>На сайті є посилання на YouTube, месенджери, соціальні мережі й інші ресурси. Після переходу їхні оператори обробляють дані за власними правилами. Зокрема, відеопосилання ведуть на сторонню платформу; її політика застосовується до перегляду на цій платформі.</p>
-              <p>Надсилайте власні контактні дані або дані, які ви маєте законне право передавати для відповідного звернення. Сайт і його пропозиції призначені насамперед для професійного використання; форми не передбачають збирання даних дітей. Якщо ви вважаєте, що дані дитини або іншої особи передані без належної підстави, повідомте нас для перевірки та вжиття необхідних заходів.</p>
-            </div>
-          </section>
-
-          <section className="privacy-section" id="privacy-changes" aria-labelledby="privacy-changes-heading">
-            <h2 id="privacy-changes-heading"><span>14</span>Зміни до політики</h2>
-            <div className="privacy-section-body">
-              <p>Ми оновлюємо цей документ, якщо змінюються функції сайту, порядок обробки або вимоги законодавства. Актуальна редакція розміщується на цій сторінці з датою оновлення. Якщо нова мета обробки потребує окремого повідомлення чи згоди, публікація нової редакції не замінює їх отримання.</p>
-              <p>З усіх питань щодо цієї політики звертайтеся на <a href="mailto:crm.vtx@gmail.com">crm.vtx@gmail.com</a>.</p>
-            </div>
-          </section>
+          {copy.sections.map((section, index) => (
+            <section className="privacy-section" id={`privacy-${section.id}`} aria-labelledby={`privacy-${section.id}-heading`} key={section.id}>
+              <StickyHeading id={`privacy-${section.id}-heading`}><span>{String(index + 1).padStart(2, '0')}</span>{section.title}</StickyHeading>
+              <div className="privacy-section-body" dangerouslySetInnerHTML={{ __html: policyHtml(section.html) }} />
+            </section>
+          ))}
         </article>
       </div>
     </div>

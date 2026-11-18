@@ -112,6 +112,26 @@ export type PricingCalculatorSettings = {
   included_features: string[];
 };
 
+export type VortexPricingPlan = {
+  id: string;
+  name: string;
+  description: string;
+  price: number | null;
+  currency: string;
+  billing_period: 'monthly' | 'yearly' | 'one_time';
+  features: string[];
+  cta_text: string;
+  cta_target: string;
+  highlighted?: boolean;
+};
+
+export type VortexPricingSection = {
+  visible: boolean;
+  section_title: string;
+  section_description: string;
+  plans: VortexPricingPlan[];
+};
+
 export type HomepageContent = {
   title: string;
   subtitle: string;
@@ -123,6 +143,7 @@ export type HomepageContent = {
   integrations_catalog_section: IntegrationsCatalogSection;
   car_service_section: CarServiceSection;
   website_development_section: WebsiteDevelopmentSection;
+  vortex_pricing_section?: VortexPricingSection;
 };
 
 export type FaqDataItem = {

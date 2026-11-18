@@ -1,0 +1,36 @@
+.app-shell .section-container.vortex-plans-section {
+  background: #0b1321;
+  border-radius: 0;
+  color: var(--main-text-color);
+  margin: 0;
+  padding: 88px var(--content-gutter) 32px;
+  width: 100%;
+}
+
+.vortex-plans-wrapper { width: 100%; }
+.vortex-plans-intro { margin: 0 auto 40px; max-width: 760px; text-align: center; }
+.vortex-plans-intro h2 { color: var(--orange-bg-color); font-size: clamp(30px, 3vw, 40px); line-height: 1.1; margin: 0; text-transform: uppercase; }
+.vortex-plans-intro p { font-size: 20px; line-height: 1.5; margin: 20px 0 0; }
+.vortex-plans-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+.vortex-plan { background: var(--blue-color-3); border: 1px solid transparent; border-radius: 20px; display: flex; flex-direction: column; min-width: 0; padding: 32px; }
+.vortex-plan.is-highlighted { border-color: var(--orange-bg-color); }
+.vortex-plan h3 { font-size: 28px; line-height: 1.2; margin: 0; overflow-wrap: anywhere; }
+.vortex-plan-description { color: var(--grey-color-100); font-size: 18px; line-height: 1.5; margin: 16px 0 0; }
+.vortex-plan-price { display: flex; flex-direction: column; gap: 8px; margin: 28px 0 0; }
+.vortex-plan-price strong { color: var(--orange-bg-color); font-size: 44px; line-height: 1.1; overflow-wrap: anywhere; }
+.vortex-plan-price strong span { font-size: .55em; }
+.vortex-plan-price > span { color: var(--grey-color-100); font-size: 16px; }
+.vortex-plan ul { display: grid; gap: 16px; list-style: none; margin: 28px 0 32px; padding: 0; }
+.vortex-plan li { background: url('/imgs/sm-dark-blue-logo.svg') no-repeat left 3px / 18px; font-size: 18px; line-height: 1.4; padding-left: 30px; }
+.vortex-plan-choose { align-items: center; align-self: flex-start; background: var(--orange-bg-color); border-radius: 999px; color: var(--grey-dark-text); display: inline-flex; font-size: 16px; font-weight: 600; gap: 16px; margin-top: auto; min-height: 44px; padding: 8px 8px 8px 20px; text-decoration: none; }
+.vortex-plan-choose:hover { background: #ffd16f; }
+.vortex-plan-choose:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+#vortex-plans { scroll-margin-top: 88px; }
+
+@media (max-width: 768px) {
+  .app-shell .section-container.vortex-plans-section { padding-top: 56px; }
+  .vortex-plans-intro { margin-bottom: 28px; }
+  .vortex-plans-intro p { font-size: 18px; }
+  .vortex-plan { padding: 28px 24px; }
+  .vortex-plan-price strong { font-size: 38px; }
+}

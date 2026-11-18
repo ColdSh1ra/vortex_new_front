@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import ChevronCircle from '../components/default/ChevronCircle';
+import Link from '../components/default/LocalizedLink';
 import TrialRequestComponent from '../components/TrialRequestComponent';
 import { useI18n } from '../context/ContentContext';
 
@@ -27,7 +28,7 @@ function AutoDismantlingPage() {
             <p className="dismantling-lead">{t('dismantling.intro')}</p>
             <a className="dismantling-cta" href="#trial-request">
               {t('common.tryFree')}
-              <span aria-hidden="true"><img className="chevron-right-icon" src="/icons/chevron-right-double.svg" alt="" width="20" height="20" /></span>
+              <ChevronCircle />
             </a>
           </div>
           <div className="dismantling-hero-art">

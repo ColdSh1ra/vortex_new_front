@@ -1,0 +1,10 @@
+{
+  "origin": "https://crm-vortex.com",
+  "languageCodes": { "ua": "uk", "cz": "cs", "sk": "sk", "en": "en", "pl": "pl" },
+  "staticPaths": [
+    "/", "/car-service", "/websites", "/auto-dismantling", "/tecdoc-license",
+    "/faq", "/contact", "/privacy-policy",
+    "/integrations/tecdoc", "/integrations/checkbox", "/integrations/vchasno",
+    "/integrations/nova_poshta", "/integrations/turboSMS", "/integrations/bank_API", "/integrations/binotel"
+  ]
+}

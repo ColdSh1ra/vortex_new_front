@@ -1,0 +1,107 @@
+{
+  "status": "pass",
+  "snapshot_date": "2026-11-18",
+  "scope": "Offline content and artifact integrity; not live CMS API acceptance.",
+  "checks": [
+    {
+      "name": "5 locales, individual files and complete original content",
+      "status": "pass"
+    },
+    {
+      "name": "7 complete integration pages and correct image assignment in every language",
+      "status": "pass"
+    },
+    {
+      "name": "exact Vchasno and Checkbox referrals retained in all languages",
+      "status": "pass"
+    },
+    {
+      "name": "all14 privacy sections, every original field, edition date and anchors",
+      "status": "pass"
+    },
+    {
+      "name": "website pricing: explicit27 service matrix, variants and honest gallery gaps",
+      "status": "pass"
+    },
+    {
+      "name": "TecDoc25EUR/month and all localized terms; Vortex plans hidden and empty",
+      "status": "pass"
+    },
+    {
+      "name": "SEO15 static pages, blog UI, sociallinks and source bytes preserved",
+      "status": "pass"
+    },
+    {
+      "name": "all96 media files: local originals, bundled bytes, MIME, dimensions, response",
+      "status": "pass"
+    },
+    {
+      "name": "demo separated; current presentation and placeholders accurately recorded",
+      "status": "pass"
+    }
+  ],
+  "assertions": 4069,
+  "original_non_ui_scalars_preserved": 1780,
+  "counts": {
+    "ua": {
+      "interface_keys": 217,
+      "integration_cards": 7,
+      "integration_pages": 7,
+      "privacy_sections": 14,
+      "website_plans": 3,
+      "website_services": 27,
+      "vortex_plans": 0,
+      "suppliers": 15,
+      "faq": 6
+    },
+    "cz": {
+      "interface_keys": 217,
+      "integration_cards": 7,
+      "integration_pages": 7,
+      "privacy_sections": 14,
+      "website_plans": 3,
+      "website_services": 27,
+      "vortex_plans": 0,
+      "suppliers": 15,
+      "faq": 6
+    },
+    "sk": {
+      "interface_keys": 217,
+      "integration_cards": 7,
+      "integration_pages": 7,
+      "privacy_sections": 14,
+      "website_plans": 3,
+      "website_services": 27,
+      "vortex_plans": 0,
+      "suppliers": 15,
+      "faq": 6
+    },
+    "en": {
+      "interface_keys": 217,
+      "integration_cards": 7,
+      "integration_pages": 7,
+      "privacy_sections": 14,
+      "website_plans": 3,
+      "website_services": 27,
+      "vortex_plans": 0,
+      "suppliers": 15,
+      "faq": 6
+    },
+    "pl": {
+      "interface_keys": 217,
+      "integration_cards": 7,
+      "integration_pages": 7,
+      "privacy_sections": 14,
+      "website_plans": 3,
+      "website_services": 27,
+      "vortex_plans": 0,
+      "suppliers": 15,
+      "faq": 6
+    }
+  },
+  "media_files": 96,
+  "missing_media": 0,
+  "content_sha256": "93ecaa32e8b5b7750f4f7aa20827553b51218546f12f062689fe5dddba547090",
+  "runtime_files_changed_for_this_handoff": false,
+  "external_API_tested": false
+}

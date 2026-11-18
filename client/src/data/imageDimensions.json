@@ -1,0 +1,210 @@
+{
+  "/imgs/3d_clay/3dicons-bag-dynamic-clay.png": {
+    "width": 274,
+    "height": 274
+  },
+  "/imgs/3d_clay/3dicons-computer-dynamic-clay.png": {
+    "width": 258,
+    "height": 274
+  },
+  "/imgs/3d_clay/3dicons-location-dynamic-clay.png": {
+    "width": 274,
+    "height": 274
+  },
+  "/imgs/3d_clay/3dicons-tool-dynamic-clay.png": {
+    "width": 274,
+    "height": 274
+  },
+  "/imgs/3dicons_premium/3d-fire.png": {
+    "width": 205,
+    "height": 239
+  },
+  "/imgs/3dicons_premium/3d-rocket-premium.png": {
+    "width": 243,
+    "height": 260
+  },
+  "/imgs/3dicons_premium/folder.png": {
+    "width": 500,
+    "height": 500
+  },
+  "/imgs/3dicons_premium/gift.png": {
+    "width": 500,
+    "height": 500
+  },
+  "/imgs/3dicons_premium/like.png": {
+    "width": 500,
+    "height": 500
+  },
+  "/imgs/3dicons_premium/message.png": {
+    "width": 500,
+    "height": 500
+  },
+  "/imgs/3dicons_premium/monitor.png": {
+    "width": 500,
+    "height": 500
+  },
+  "/imgs/3dicons_premium/wallet.png": {
+    "width": 500,
+    "height": 500
+  },
+  "/imgs/api-integrations/banks-api-int-logo.svg": {
+    "width": 137,
+    "height": 46
+  },
+  "/imgs/api-integrations/binotel-int-logo.svg": {
+    "width": 187,
+    "height": 48
+  },
+  "/imgs/api-integrations/checkbox-int-logo.svg": {
+    "width": 168,
+    "height": 46
+  },
+  "/imgs/api-integrations/np-int-logo.svg": {
+    "width": 139,
+    "height": 46
+  },
+  "/imgs/api-integrations/screenshots/bankapi_history.png": {
+    "width": 631,
+    "height": 875
+  },
+  "/imgs/api-integrations/screenshots/bankapi_screenshot-400h.png": {
+    "width": 749,
+    "height": 400
+  },
+  "/imgs/api-integrations/screenshots/binotel_call.png": {
+    "width": 1347,
+    "height": 550
+  },
+  "/imgs/api-integrations/screenshots/binotel_call_history.png": {
+    "width": 901,
+    "height": 877
+  },
+  "/imgs/api-integrations/screenshots/checkbox_screenshot_paydesk.png": {
+    "width": 597,
+    "height": 749
+  },
+  "/imgs/api-integrations/screenshots/checkbox_screenshot_shop.png": {
+    "width": 542,
+    "height": 345
+  },
+  "/imgs/api-integrations/screenshots/novaposhta_screenshot_sender.png": {
+    "width": 613,
+    "height": 647
+  },
+  "/imgs/api-integrations/screenshots/np_step1.png": {
+    "width": 514,
+    "height": 613
+  },
+  "/imgs/api-integrations/screenshots/np_step_2.png": {
+    "width": 512,
+    "height": 852
+  },
+  "/imgs/api-integrations/screenshots/np_step_3.png": {
+    "width": 513,
+    "height": 886
+  },
+  "/imgs/api-integrations/screenshots/np_step_4.png": {
+    "width": 512,
+    "height": 331
+  },
+  "/imgs/api-integrations/screenshots/tecdoc-VIN.jpg": {
+    "width": 1280,
+    "height": 781
+  },
+  "/imgs/api-integrations/screenshots/tecdoc-parts-categories.png": {
+    "width": 1432,
+    "height": 801
+  },
+  "/imgs/api-integrations/screenshots/tecdoc-parts.png": {
+    "width": 1708,
+    "height": 891
+  },
+  "/imgs/api-integrations/screenshots/tecdoc-screenshot-2.jpg": {
+    "width": 1280,
+    "height": 425
+  },
+  "/imgs/api-integrations/screenshots/turbosms_screenshot_blured.jpg": {
+    "width": 962,
+    "height": 712
+  },
+  "/imgs/api-integrations/screenshots/turbosms_screenshot_send_message_blured.jpg": {
+    "width": 1002,
+    "height": 490
+  },
+  "/imgs/api-integrations/screenshots/vchasno-kasa-flow.svg": {
+    "width": 920,
+    "height": 560
+  },
+  "/imgs/api-integrations/screenshots/vchasno-kasa-settings.svg": {
+    "width": 920,
+    "height": 560
+  },
+  "/imgs/api-integrations/tecdoc-int-logo.svg": {
+    "width": 160,
+    "height": 46
+  },
+  "/imgs/api-integrations/turbosms-int-logo.svg": {
+    "width": 187,
+    "height": 46
+  },
+  "/imgs/api-integrations/vchasno-kasa-logo.svg": {
+    "width": 191,
+    "height": 40
+  },
+  "/imgs/auto-dismantling/dismantling-car-premium.png": {
+    "width": 1536,
+    "height": 1024
+  },
+  "/imgs/auto-dismantling/parts-catalog-premium.png": {
+    "width": 1536,
+    "height": 1024
+  },
+  "/imgs/auto-dismantling/vehicle-record-premium.png": {
+    "width": 1199,
+    "height": 1312
+  },
+  "/imgs/car-service/bookings.png": {
+    "width": 705,
+    "height": 392
+  },
+  "/imgs/car-service/calendar.png": {
+    "width": 705,
+    "height": 334
+  },
+  "/imgs/car-service/company.png": {
+    "width": 705,
+    "height": 378
+  },
+  "/imgs/contacts/worker-1.svg": {
+    "width": 256,
+    "height": 256
+  },
+  "/imgs/contacts/worker-2.svg": {
+    "width": 256,
+    "height": 256
+  },
+  "/imgs/contacts/worker-3.svg": {
+    "width": 256,
+    "height": 256
+  },
+  "/imgs/contacts/worker-4.svg": {
+    "width": 256,
+    "height": 256
+  },
+  "/imgs/vx-screenshot-1.png": {
+    "width": 1906,
+    "height": 906
+  },
+  "/imgs/vx-screenshot-2.png": {
+    "width": 1625,
+    "height": 842
+  },
+  "/imgs/vx-screenshot-3.png": {
+    "width": 1624,
+    "height": 840
+  },
+  "/imgs/websites/site_2.png": {
+    "width": 261,
+    "height": 432
+  }
+}

@@ -11,6 +11,7 @@ import VortexSyncComponent from "../components/integrations/VortexSyncComponent"
 import CarServiceOverviewComponent from "../components/CarServiceOverviewComponent";
 import WebsiteDevelopmentComponent from "../components/WebsiteDevelopmentComponent";
 import PricingCalculatorComponent from "../components/PricingCalculatorComponent";
+import VortexPlansComponent from "../components/VortexPlansComponent";
 import TrialRequestComponent from "../components/TrialRequestComponent";
 
 
@@ -32,6 +33,7 @@ function MainPage() {
           <VortexSyncComponent/>
           <CarServiceOverviewComponent/>
           <WebsiteDevelopmentComponent/>
+          <VortexPlansComponent/>
           <PricingCalculatorComponent onTotalChange={setTotalSum}/>
           <TrialRequestComponent totalSum={totalSum} requestedProduct="vortex"/>
       </>

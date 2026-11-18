@@ -1,7 +1,8 @@
 import { useI18n } from '../../context/ContentContext';
-import { Link } from "react-router-dom";
+import Link from '../default/LocalizedLink';
 import CircleButtonLink from "../default/CircleButtonLink";
 import { blogUrl } from '../../blog/urls';
+import { SOCIAL_LINKS } from '../../data/socialLinks';
 function getFooterMenuLinks(t: (key: string) => string, blogPath: string) { return [
     { name: t("nav.carService"), path: "/car-service" },
     { name: t("nav.websites"), path: "/websites" },
@@ -12,12 +13,6 @@ function getFooterMenuLinks(t: (key: string) => string, blogPath: string) { retu
     { name: t("nav.blog"), path: blogPath },
     { name: t("nav.contacts"), path: "/contact" },
 ]; }
-const footerSocialLinks = [
-    { name: "Facebook", path: "/", image_url: '/icons/sm_black/facebook.svg'},
-    { name: "YouTube", path: "/", image_url: '/icons/sm_black/youtube.svg'},
-    { name: "Telegram", path: "/", image_url: '/icons/sm_black/telegram.svg'},
-    { name: "Instagram", path: "/", image_url: '/icons/sm_black/instagram.svg'},
-];
 function FooterMain() {
     const { t, language } = useI18n();
     const footerMenuLinks = getFooterMenuLinks(t, blogUrl(language));
@@ -50,11 +45,11 @@ function FooterMain() {
                         {t('common.copyright', { year: currentYear })}
                     </div>
                     <div className={'footer-additional-links display-flex gap-20'}>
-                        {footerSocialLinks.map((sl, index) => (
+                        {SOCIAL_LINKS.map((sl, index) => (
                             <CircleButtonLink
-                                linkPath={sl.path}
+                                linkPath={sl.url}
                                 label={sl.name}
-                                imageUrl={sl.image_url}
+                                imageUrl={sl.imageSrc}
                                 key={'socialLink' + index + sl.name}>
                             </CircleButtonLink>
                         ))}

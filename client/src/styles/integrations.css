@@ -26,7 +26,7 @@
 .integration-hero-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 12px; }
 .integration-primary-link, .integration-secondary-link { align-items: center; border-radius: 999px; display: inline-flex; font-size: 16px; font-weight: 600; gap: 24px; min-height: 46px; text-decoration: none; }
 .integration-primary-link { background: var(--orange-bg-color); color: var(--grey-dark-text); padding: 8px 8px 8px 22px; }
-.integration-primary-link > span { align-items: center; background: rgb(255 255 255 / .45); border-radius: 50%; display: flex; flex: 0 0 30px; height: 30px; justify-content: center; }
+.integration-primary-link > .chevron-circle { --chevron-circle-size: 30px; }
 .integration-primary-link:hover { background: #ffd16f; }
 .integration-secondary-link { border: 1px solid var(--grey-color-100); color: var(--grey-dark-text); padding: 12px 20px; }
 .integration-secondary-link:hover { background: #f1f2f4; }

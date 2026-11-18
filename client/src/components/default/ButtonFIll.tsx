@@ -1,4 +1,7 @@
+import ChevronCircle from './ChevronCircle';
+
 function ButtonIconContainer({ btnIcon = "" }) {
+  if (btnIcon === '/icons/double-chevron-right.svg') return <ChevronCircle className="button-icon-container" />;
   if (btnIcon !== "") {
     return (
       <div className="display-flex align-content-center button-icon-container">

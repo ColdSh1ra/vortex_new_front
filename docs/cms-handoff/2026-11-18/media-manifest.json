@@ -1,0 +1,2478 @@
+{
+  "scope": "Referenced current content, presentation assets and separately marked demo covers. Local originals only; no generated variants.",
+  "files": [
+    {
+      "url": "/bgs/logo2.svg",
+      "bundled_path": "media/bgs/logo2.svg",
+      "width": 481,
+      "height": 477,
+      "mime": "image/svg+xml",
+      "size": 2943,
+      "sha256": "e0ae8d7060cce92a0f34b8c9572f7bab0fb902a0dcac2bc0facdf45a9a4c2c02",
+      "alt": {
+        "ua": "Vortex",
+        "cz": "Vortex",
+        "sk": "Vortex",
+        "en": "Vortex",
+        "pl": "Vortex"
+      },
+      "sources": [
+        "client/src/components/MainPageHeroContent.tsx",
+        "client/src/components/PricingCalculatorComponent.tsx",
+        "client/src/components/WhyVortexComponent.tsx",
+        "client/src/styles/main.css",
+        "content/cz/homepage/hero/image",
+        "content/en/homepage/hero/image",
+        "content/pl/homepage/hero/image",
+        "content/sk/homepage/hero/image",
+        "content/ua/homepage/hero/image",
+        "reference/presentation/hero/background_logo"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/icons/double-chevron-right.svg",
+      "bundled_path": "media/icons/double-chevron-right.svg",
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 254,
+      "sha256": "766fd74a8ac16d26f5b9f0d77c1e8aefb00ac8372f0454649e1653f8bdc43470",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/MainPageHeroContent.tsx",
+        "client/src/components/default/ButtonFIll.tsx",
+        "client/src/components/default/ChevronCircle.tsx",
+        "client/src/pages/IntegrationPage.tsx",
+        "reference/presentation/chevron/icon"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/icons/paperclip.svg",
+      "bundled_path": "media/icons/paperclip.svg",
+      "width": 24,
+      "height": 24,
+      "mime": "image/svg+xml",
+      "size": 300,
+      "sha256": "3fc8964b47367938406a0ad7506938dcebd9ac260c31c20aabd6e119e209513c",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/styles/base.css"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/icons/slider_scroll_right.svg",
+      "bundled_path": "media/icons/slider_scroll_right.svg",
+      "width": 24,
+      "height": 24,
+      "mime": "image/svg+xml",
+      "size": 214,
+      "sha256": "02c7786ac0ddcfc4e58673c49195e3b20b98323e9e82819b2d0703b0426f912f",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/ClientTestimonialsComponent.tsx",
+        "client/src/components/HeroPageSliderSection.tsx",
+        "client/src/components/WhyVortexComponent.tsx",
+        "client/src/pages/WebsiteDevelopmentPage.tsx"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/icons/sm_black/facebook.svg",
+      "bundled_path": "media/icons/sm_black/facebook.svg",
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 527,
+      "sha256": "892dc3c3586a5b9e037f782f773a40138d3e0b902a651f663471ad980989a6bf",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/data/socialLinks.ts",
+        "content/cz/layout/socials/0/icon",
+        "content/en/layout/socials/0/icon",
+        "content/pl/layout/socials/0/icon",
+        "content/sk/layout/socials/0/icon",
+        "content/ua/layout/socials/0/icon"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/icons/sm_black/instagram.svg",
+      "bundled_path": "media/icons/sm_black/instagram.svg",
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 3229,
+      "sha256": "668aad47a1dd9e601682a8c23dd5529c8025e8a33561a37738914e69caf30513",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/data/socialLinks.ts",
+        "content/cz/layout/socials/3/icon",
+        "content/en/layout/socials/3/icon",
+        "content/pl/layout/socials/3/icon",
+        "content/sk/layout/socials/3/icon",
+        "content/ua/layout/socials/3/icon"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/icons/sm_black/material-symbols_mail-rounded.svg",
+      "bundled_path": "media/icons/sm_black/material-symbols_mail-rounded.svg",
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 1192,
+      "sha256": "2aabb1a651ce20a49cf05f6979cf9b0467db6cacc0b134f75f6f8467e5b681e6",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/ContactWorkerCard.tsx"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/icons/sm_black/minus.svg",
+      "bundled_path": "media/icons/sm_black/minus.svg",
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 215,
+      "sha256": "f5e42662ae3e2531b03454d9a7084efc15ed24950f7a192a36bbc7d90845fe2e",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/PricingCalculatorComponent.tsx"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/icons/sm_black/phone.svg",
+      "bundled_path": "media/icons/sm_black/phone.svg",
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 1536,
+      "sha256": "a72f2d45f8d00159e41bf69a3a46ff4b6c4ab17faa6341d187af101604a4eb12",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/ContactWorkerCard.tsx"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/icons/sm_black/plus.svg",
+      "bundled_path": "media/icons/sm_black/plus.svg",
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 244,
+      "sha256": "0b405f9aa9ba28cd87f7ac05f25d6ff3b97d9aae1ab0eb7058dd6484ec7703eb",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/PricingCalculatorComponent.tsx"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/icons/sm_black/telegram.svg",
+      "bundled_path": "media/icons/sm_black/telegram.svg",
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 491,
+      "sha256": "64cc97537c08a572b4a930a7325a1999cd6c0b840a2cb6b9a7fe53cf446e0eac",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/ContactWorkerCard.tsx",
+        "client/src/data/socialLinks.ts",
+        "content/cz/layout/socials/2/icon",
+        "content/en/layout/socials/2/icon",
+        "content/pl/layout/socials/2/icon",
+        "content/sk/layout/socials/2/icon",
+        "content/ua/layout/socials/2/icon"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/icons/sm_black/viber.svg",
+      "bundled_path": "media/icons/sm_black/viber.svg",
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 4483,
+      "sha256": "79274d91f05a291a145c07f250014e0597656c465ee5f21907f1f821798a6190",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/ContactWorkerCard.tsx"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/icons/sm_black/whatsapp.svg",
+      "bundled_path": "media/icons/sm_black/whatsapp.svg",
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 1302,
+      "sha256": "fd30a99a027eca66593ea7d0b7dbfde996f52ba2e1a46c85bb7ec00e76f3872f",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/ContactWorkerCard.tsx"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/icons/sm_black/youtube.svg",
+      "bundled_path": "media/icons/sm_black/youtube.svg",
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 980,
+      "sha256": "e25e177624164b2c3b830c2d28238d3b39c1eae4120be76f2c5925bc396a6e06",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/data/socialLinks.ts",
+        "content/cz/layout/socials/1/icon",
+        "content/en/layout/socials/1/icon",
+        "content/pl/layout/socials/1/icon",
+        "content/sk/layout/socials/1/icon",
+        "content/ua/layout/socials/1/icon"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3d_clay/3dicons-bag-dynamic-clay.png",
+      "bundled_path": "media/imgs/3d_clay/3dicons-bag-dynamic-clay.png",
+      "width": 274,
+      "height": 274,
+      "mime": "image/png",
+      "size": 29389,
+      "sha256": "a5a8a61cabc04750062e5d9cc486c79a624eaccfcb3b3cf42a4640444ca617aa",
+      "alt": {
+        "ua": "Магазини автозапчастин",
+        "cz": "Prodejny autodílů",
+        "sk": "Predajne autodielov",
+        "en": "Auto parts stores",
+        "pl": "Sklepy motoryzacyjne"
+      },
+      "sources": [
+        "content/cz/homepage/vortex_audience_section/cards/0/image_src",
+        "content/en/homepage/vortex_audience_section/cards/0/image_src",
+        "content/pl/homepage/vortex_audience_section/cards/0/image_src",
+        "content/sk/homepage/vortex_audience_section/cards/0/image_src",
+        "content/ua/homepage/vortex_audience_section/cards/0/image_src"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3d_clay/3dicons-computer-dynamic-clay.png",
+      "bundled_path": "media/imgs/3d_clay/3dicons-computer-dynamic-clay.png",
+      "width": 258,
+      "height": 274,
+      "mime": "image/png",
+      "size": 19790,
+      "sha256": "98ca28e171a549f3358b6b3b5b02013583c4c5044ae1fb967896ab41ffcf2dee",
+      "alt": {
+        "ua": "Інтернет-магазини",
+        "cz": "Internetové obchody",
+        "sk": "Internetové obchody",
+        "en": "Online stores",
+        "pl": "Sklepy internetowe"
+      },
+      "sources": [
+        "content/cz/homepage/vortex_audience_section/cards/3/image_src",
+        "content/en/homepage/vortex_audience_section/cards/3/image_src",
+        "content/pl/homepage/vortex_audience_section/cards/3/image_src",
+        "content/sk/homepage/vortex_audience_section/cards/3/image_src",
+        "content/ua/homepage/vortex_audience_section/cards/3/image_src"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3d_clay/3dicons-location-dynamic-clay.png",
+      "bundled_path": "media/imgs/3d_clay/3dicons-location-dynamic-clay.png",
+      "width": 274,
+      "height": 274,
+      "mime": "image/png",
+      "size": 18120,
+      "sha256": "8a294375c707aaa0f495ba54a9204901a0595c5781a57eeee865139cf1bd4d17",
+      "alt": {
+        "ua": "Оптові компанії",
+        "cz": "Velkoobchodní společnosti",
+        "sk": "Veľkoobchodné spoločnosti",
+        "en": "Wholesale businesses",
+        "pl": "Hurtownie"
+      },
+      "sources": [
+        "content/cz/homepage/vortex_audience_section/cards/2/image_src",
+        "content/en/homepage/vortex_audience_section/cards/2/image_src",
+        "content/pl/homepage/vortex_audience_section/cards/2/image_src",
+        "content/sk/homepage/vortex_audience_section/cards/2/image_src",
+        "content/ua/homepage/vortex_audience_section/cards/2/image_src"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3d_clay/3dicons-tool-dynamic-clay.png",
+      "bundled_path": "media/imgs/3d_clay/3dicons-tool-dynamic-clay.png",
+      "width": 274,
+      "height": 274,
+      "mime": "image/png",
+      "size": 29840,
+      "sha256": "fbb197199af3e608b9d6e3ca9e444358183b9a3bbf6f863d9e9b552a28af8961",
+      "alt": {
+        "ua": "СТО та автосервіси",
+        "cz": "Autoservisy a opravny",
+        "sk": "Autoservisy a opravovne",
+        "en": "Garages and auto workshops",
+        "pl": "Warsztaty i serwisy samochodowe"
+      },
+      "sources": [
+        "content/cz/homepage/vortex_audience_section/cards/1/image_src",
+        "content/en/homepage/vortex_audience_section/cards/1/image_src",
+        "content/pl/homepage/vortex_audience_section/cards/1/image_src",
+        "content/sk/homepage/vortex_audience_section/cards/1/image_src",
+        "content/ua/homepage/vortex_audience_section/cards/1/image_src"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3dicons_premium/3d-document-premium.png",
+      "bundled_path": "media/imgs/3dicons_premium/3d-document-premium.png",
+      "width": 342,
+      "height": 301,
+      "mime": "image/png",
+      "size": 44988,
+      "sha256": "1803ea0d3748c00f905ec48f9124bf64ed022db4c3473ce36ae7fce2852cf2b9",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "reference/demo-blog/summaries/10/cover/url",
+        "reference/demo-blog/summaries/14/cover/url",
+        "reference/demo-blog/summaries/18/cover/url",
+        "reference/demo-blog/summaries/2/cover/url",
+        "reference/demo-blog/summaries/6/cover/url"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3dicons_premium/3d-fire.png",
+      "bundled_path": "media/imgs/3dicons_premium/3d-fire.png",
+      "width": 205,
+      "height": 239,
+      "mime": "image/png",
+      "size": 38874,
+      "sha256": "cf51f0432202059d186035c02ba01640c1e115c2d9e3a14ec61c71da3d69e832",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "content/cz/homepage/website_development_section/benefit_groups/1/image_src",
+        "content/en/homepage/website_development_section/benefit_groups/1/image_src",
+        "content/pl/homepage/website_development_section/benefit_groups/1/image_src",
+        "content/sk/homepage/website_development_section/benefit_groups/1/image_src",
+        "content/ua/homepage/website_development_section/benefit_groups/1/image_src"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3dicons_premium/3d-gift-large.png",
+      "bundled_path": "media/imgs/3dicons_premium/3d-gift-large.png",
+      "width": 171,
+      "height": 171,
+      "mime": "image/png",
+      "size": 36369,
+      "sha256": "1d43cfaeea150a05e2a79d531c8cdd0af5e8a7717e7ce8188e15adeeb137eb41",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/WebsiteDevelopmentComponent.tsx"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3dicons_premium/3d-rocket-premium.png",
+      "bundled_path": "media/imgs/3dicons_premium/3d-rocket-premium.png",
+      "width": 243,
+      "height": 260,
+      "mime": "image/png",
+      "size": 42696,
+      "sha256": "2ee8bcf29465ba784deec9157294e34bc1c1490fc96e051eeba7b3e58e696232",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "content/cz/homepage/website_development_section/benefit_groups/0/image_src",
+        "content/en/homepage/website_development_section/benefit_groups/0/image_src",
+        "content/pl/homepage/website_development_section/benefit_groups/0/image_src",
+        "content/sk/homepage/website_development_section/benefit_groups/0/image_src",
+        "content/ua/homepage/website_development_section/benefit_groups/0/image_src"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3dicons_premium/3dicons-boy-left-premium.png",
+      "bundled_path": "media/imgs/3dicons_premium/3dicons-boy-left-premium.png",
+      "width": 148,
+      "height": 148,
+      "mime": "image/png",
+      "size": 10806,
+      "sha256": "daab80ff2181ce8793c4d03a3803db09bdb02fb0dce0345d3fce1f52a1587bba",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/integrations/VortexSyncComponent.tsx",
+        "reference/presentation/sync/clients/1"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3dicons_premium/3dicons-boy-right-premium.png",
+      "bundled_path": "media/imgs/3dicons_premium/3dicons-boy-right-premium.png",
+      "width": 148,
+      "height": 148,
+      "mime": "image/png",
+      "size": 10769,
+      "sha256": "762d8fbd3d570ad8e951df936075ef248b1d17693cb7f6c9ac90f55e4fc66b88",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/integrations/VortexSyncComponent.tsx",
+        "reference/presentation/sync/clients/0"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3dicons_premium/folder.png",
+      "bundled_path": "media/imgs/3dicons_premium/folder.png",
+      "width": 500,
+      "height": 500,
+      "mime": "image/png",
+      "size": 125484,
+      "sha256": "d1be7a4dc412f097467491b07cb5a807b7ab7571ef4b4b4b6f5996080df912c6",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/pages/BlogArticlePage.tsx",
+        "content/cz/homepage/about_us_block/about_us_blocks/1/about_us_image_path",
+        "content/en/homepage/about_us_block/about_us_blocks/1/about_us_image_path",
+        "content/pl/homepage/about_us_block/about_us_blocks/1/about_us_image_path",
+        "content/sk/homepage/about_us_block/about_us_blocks/1/about_us_image_path",
+        "content/ua/homepage/about_us_block/about_us_blocks/1/about_us_image_path",
+        "reference/demo-blog/base_article/cover/url",
+        "reference/demo-blog/summaries/0/cover/url",
+        "reference/demo-blog/summaries/12/cover/url",
+        "reference/demo-blog/summaries/16/cover/url",
+        "reference/demo-blog/summaries/4/cover/url",
+        "reference/demo-blog/summaries/8/cover/url"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3dicons_premium/gift.png",
+      "bundled_path": "media/imgs/3dicons_premium/gift.png",
+      "width": 500,
+      "height": 500,
+      "mime": "image/png",
+      "size": 144074,
+      "sha256": "186a0038239d06e682ad2d749ca7da0eccee825039ba8c2054211fe29bc94868",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "content/cz/homepage/about_us_block/about_us_blocks/3/about_us_image_path",
+        "content/en/homepage/about_us_block/about_us_blocks/3/about_us_image_path",
+        "content/pl/homepage/about_us_block/about_us_blocks/3/about_us_image_path",
+        "content/sk/homepage/about_us_block/about_us_blocks/3/about_us_image_path",
+        "content/ua/homepage/about_us_block/about_us_blocks/3/about_us_image_path"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3dicons_premium/like.png",
+      "bundled_path": "media/imgs/3dicons_premium/like.png",
+      "width": 500,
+      "height": 500,
+      "mime": "image/png",
+      "size": 136066,
+      "sha256": "d24ee1e15a73fe5eb986f6444a0e4046398096d8efd9de097267fdd1ea98b2d0",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "content/cz/homepage/about_us_block/about_us_blocks/2/about_us_image_path",
+        "content/en/homepage/about_us_block/about_us_blocks/2/about_us_image_path",
+        "content/pl/homepage/about_us_block/about_us_blocks/2/about_us_image_path",
+        "content/sk/homepage/about_us_block/about_us_blocks/2/about_us_image_path",
+        "content/ua/homepage/about_us_block/about_us_blocks/2/about_us_image_path"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3dicons_premium/message.png",
+      "bundled_path": "media/imgs/3dicons_premium/message.png",
+      "width": 500,
+      "height": 500,
+      "mime": "image/png",
+      "size": 111446,
+      "sha256": "4164def9e5467e88e8ad927c1bb6a0d00aa8a03d3448e978b9007ffca7ef5676",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "content/cz/homepage/about_us_block/about_us_blocks/4/about_us_image_path",
+        "content/en/homepage/about_us_block/about_us_blocks/4/about_us_image_path",
+        "content/pl/homepage/about_us_block/about_us_blocks/4/about_us_image_path",
+        "content/sk/homepage/about_us_block/about_us_blocks/4/about_us_image_path",
+        "content/ua/homepage/about_us_block/about_us_blocks/4/about_us_image_path"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3dicons_premium/monitor.png",
+      "bundled_path": "media/imgs/3dicons_premium/monitor.png",
+      "width": 500,
+      "height": 500,
+      "mime": "image/png",
+      "size": 87694,
+      "sha256": "a8193919c812ec3381b757a95ca40a1ae58efe97043c10b6ff10daf7acff99d9",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "content/cz/homepage/about_us_block/about_us_blocks/0/about_us_image_path",
+        "content/en/homepage/about_us_block/about_us_blocks/0/about_us_image_path",
+        "content/pl/homepage/about_us_block/about_us_blocks/0/about_us_image_path",
+        "content/sk/homepage/about_us_block/about_us_blocks/0/about_us_image_path",
+        "content/ua/homepage/about_us_block/about_us_blocks/0/about_us_image_path",
+        "reference/demo-blog/summaries/1/cover/url",
+        "reference/demo-blog/summaries/13/cover/url",
+        "reference/demo-blog/summaries/17/cover/url",
+        "reference/demo-blog/summaries/5/cover/url",
+        "reference/demo-blog/summaries/9/cover/url"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/3dicons_premium/wallet.png",
+      "bundled_path": "media/imgs/3dicons_premium/wallet.png",
+      "width": 500,
+      "height": 500,
+      "mime": "image/png",
+      "size": 148585,
+      "sha256": "483790aaa4f96e12b2cf3300de3fc8175d84b8bf05fb510c886b4c787ae77300",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "content/cz/homepage/about_us_block/about_us_blocks/5/about_us_image_path",
+        "content/en/homepage/about_us_block/about_us_blocks/5/about_us_image_path",
+        "content/pl/homepage/about_us_block/about_us_blocks/5/about_us_image_path",
+        "content/sk/homepage/about_us_block/about_us_blocks/5/about_us_image_path",
+        "content/ua/homepage/about_us_block/about_us_blocks/5/about_us_image_path",
+        "reference/demo-blog/summaries/11/cover/url",
+        "reference/demo-blog/summaries/15/cover/url",
+        "reference/demo-blog/summaries/19/cover/url",
+        "reference/demo-blog/summaries/3/cover/url",
+        "reference/demo-blog/summaries/7/cover/url"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/banks-api-int-logo.svg",
+      "bundled_path": "media/imgs/api-integrations/banks-api-int-logo.svg",
+      "width": 137,
+      "height": 46,
+      "mime": "image/svg+xml",
+      "size": 46776,
+      "sha256": "5a7130afe6b2b8fb01e9c4854bcbfc8eaf64d089056cd26c012f5bc0741d8f51",
+      "alt": {
+        "ua": "API банків",
+        "cz": "Bankovní API",
+        "sk": "Bankové API",
+        "en": "Bank APIs",
+        "pl": "API banków"
+      },
+      "sources": [
+        "client/src/data/apiIntegrations.ts",
+        "content/cz/homepage/integrations_catalog_section/cards/5/image_src",
+        "content/cz/integration_pages/pages/bank_API/logo",
+        "content/en/homepage/integrations_catalog_section/cards/5/image_src",
+        "content/en/integration_pages/pages/bank_API/logo",
+        "content/pl/homepage/integrations_catalog_section/cards/5/image_src",
+        "content/pl/integration_pages/pages/bank_API/logo",
+        "content/sk/homepage/integrations_catalog_section/cards/5/image_src",
+        "content/sk/integration_pages/pages/bank_API/logo",
+        "content/ua/homepage/integrations_catalog_section/cards/5/image_src",
+        "content/ua/integration_pages/pages/bank_API/logo"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/binotel-int-logo.svg",
+      "bundled_path": "media/imgs/api-integrations/binotel-int-logo.svg",
+      "width": 187,
+      "height": 48,
+      "mime": "image/svg+xml",
+      "size": 34033,
+      "sha256": "3f180e39818c64728478bf5e59c930bab1270ea3df41a7f1f77c931cfed70c91",
+      "alt": {
+        "ua": "Binotel",
+        "cz": "Binotel",
+        "sk": "Binotel",
+        "en": "Binotel",
+        "pl": "Binotel"
+      },
+      "sources": [
+        "client/src/data/apiIntegrations.ts",
+        "content/cz/homepage/integrations_catalog_section/cards/6/image_src",
+        "content/cz/integration_pages/pages/binotel/logo",
+        "content/en/homepage/integrations_catalog_section/cards/6/image_src",
+        "content/en/integration_pages/pages/binotel/logo",
+        "content/pl/homepage/integrations_catalog_section/cards/6/image_src",
+        "content/pl/integration_pages/pages/binotel/logo",
+        "content/sk/homepage/integrations_catalog_section/cards/6/image_src",
+        "content/sk/integration_pages/pages/binotel/logo",
+        "content/ua/homepage/integrations_catalog_section/cards/6/image_src",
+        "content/ua/integration_pages/pages/binotel/logo"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/checkbox-int-logo.svg",
+      "bundled_path": "media/imgs/api-integrations/checkbox-int-logo.svg",
+      "width": 168,
+      "height": 46,
+      "mime": "image/svg+xml",
+      "size": 5165,
+      "sha256": "6c0902645faeda5fc49235a286e048e384b16ce441dfcf0665aaee63a6011a0a",
+      "alt": {
+        "ua": "Checkbox",
+        "cz": "Checkbox",
+        "sk": "Checkbox",
+        "en": "Checkbox",
+        "pl": "Checkbox"
+      },
+      "sources": [
+        "client/src/data/apiIntegrations.ts",
+        "content/cz/homepage/integrations_catalog_section/cards/1/image_src",
+        "content/cz/integration_pages/pages/checkbox/logo",
+        "content/en/homepage/integrations_catalog_section/cards/1/image_src",
+        "content/en/integration_pages/pages/checkbox/logo",
+        "content/pl/homepage/integrations_catalog_section/cards/1/image_src",
+        "content/pl/integration_pages/pages/checkbox/logo",
+        "content/sk/homepage/integrations_catalog_section/cards/1/image_src",
+        "content/sk/integration_pages/pages/checkbox/logo",
+        "content/ua/homepage/integrations_catalog_section/cards/1/image_src",
+        "content/ua/integration_pages/pages/checkbox/logo"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/np-int-logo.svg",
+      "bundled_path": "media/imgs/api-integrations/np-int-logo.svg",
+      "width": 139,
+      "height": 46,
+      "mime": "image/svg+xml",
+      "size": 3437,
+      "sha256": "8e5c22dbc2265a88825493377399ea98bf19b04bd9fb68b9d1dd3bb957aafcc3",
+      "alt": {
+        "ua": "Нова Пошта",
+        "cz": "Nova Poshta",
+        "sk": "Nova Poshta",
+        "en": "Nova Poshta",
+        "pl": "Nova Poshta"
+      },
+      "sources": [
+        "client/src/data/apiIntegrations.ts",
+        "content/cz/homepage/integrations_catalog_section/cards/3/image_src",
+        "content/cz/integration_pages/pages/nova_poshta/logo",
+        "content/en/homepage/integrations_catalog_section/cards/3/image_src",
+        "content/en/integration_pages/pages/nova_poshta/logo",
+        "content/pl/homepage/integrations_catalog_section/cards/3/image_src",
+        "content/pl/integration_pages/pages/nova_poshta/logo",
+        "content/sk/homepage/integrations_catalog_section/cards/3/image_src",
+        "content/sk/integration_pages/pages/nova_poshta/logo",
+        "content/ua/homepage/integrations_catalog_section/cards/3/image_src",
+        "content/ua/integration_pages/pages/nova_poshta/logo"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/bankapi_history.png",
+      "bundled_path": "media/imgs/api-integrations/screenshots/bankapi_history.png",
+      "width": 631,
+      "height": 875,
+      "mime": "image/png",
+      "size": 89738,
+      "sha256": "29576b31e9ef0b547d2f7b47a5a62f4c91fae5fc117e9ca54bfb867cdce7d1d9",
+      "alt": {
+        "ua": "Перетворюйте транзакції на операції",
+        "cz": "Převádějte transakce na finanční operace",
+        "sk": "Prevádzajte transakcie na finančné operácie",
+        "en": "Turn transactions into financial entries",
+        "pl": "Zamieniaj transakcje w operacje finansowe"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/bank_API/sections/1/image",
+        "content/en/integration_pages/pages/bank_API/sections/1/image",
+        "content/pl/integration_pages/pages/bank_API/sections/1/image",
+        "content/sk/integration_pages/pages/bank_API/sections/1/image",
+        "content/ua/integration_pages/pages/bank_API/sections/1/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/bankapi_screenshot-400h.png",
+      "bundled_path": "media/imgs/api-integrations/screenshots/bankapi_screenshot-400h.png",
+      "width": 749,
+      "height": 400,
+      "mime": "image/png",
+      "size": 53460,
+      "sha256": "5a469c2b42049013a3022a7ee329f3a6e24a4f361b1cee455458b76f586b2098",
+      "alt": {
+        "ua": "Підключіть бізнес-рахунок",
+        "cz": "Připojte podnikatelský účet",
+        "sk": "Pripojte podnikateľský účet",
+        "en": "Connect a business account",
+        "pl": "Podłącz rachunek firmowy"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/bank_API/sections/0/image",
+        "content/en/integration_pages/pages/bank_API/sections/0/image",
+        "content/pl/integration_pages/pages/bank_API/sections/0/image",
+        "content/sk/integration_pages/pages/bank_API/sections/0/image",
+        "content/ua/integration_pages/pages/bank_API/sections/0/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/binotel_call_history.png",
+      "bundled_path": "media/imgs/api-integrations/screenshots/binotel_call_history.png",
+      "width": 901,
+      "height": 877,
+      "mime": "image/png",
+      "size": 90618,
+      "sha256": "3c8f0680bf9f94bd45da5366ffc7e52cdd257fd48c05f30dc8befed4599f5f2d",
+      "alt": {
+        "ua": "Не втрачайте звернення",
+        "cz": "Neztrácejte zákaznické dotazy",
+        "sk": "Nestrácajte zákaznícke dopyty",
+        "en": "Keep track of enquiries",
+        "pl": "Nie trać zapytań klientów"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/binotel/sections/0/image",
+        "content/en/integration_pages/pages/binotel/sections/0/image",
+        "content/pl/integration_pages/pages/binotel/sections/0/image",
+        "content/sk/integration_pages/pages/binotel/sections/0/image",
+        "content/ua/integration_pages/pages/binotel/sections/0/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/binotel_call.png",
+      "bundled_path": "media/imgs/api-integrations/screenshots/binotel_call.png",
+      "width": 1347,
+      "height": 550,
+      "mime": "image/png",
+      "size": 127865,
+      "sha256": "63cff35c699514e004b42e2603cceb6d8a39ff3a513d9249ad2f7c4fe6fd2653",
+      "alt": {
+        "ua": "Впізнавайте клієнта під час дзвінка",
+        "cz": "Rozpoznejte zákazníka při hovoru",
+        "sk": "Rozpoznajte zákazníka pri hovore",
+        "en": "Recognise customers when they call",
+        "pl": "Rozpoznawaj klienta podczas połączenia"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/binotel/sections/1/image",
+        "content/en/integration_pages/pages/binotel/sections/1/image",
+        "content/pl/integration_pages/pages/binotel/sections/1/image",
+        "content/sk/integration_pages/pages/binotel/sections/1/image",
+        "content/ua/integration_pages/pages/binotel/sections/1/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/checkbox_screenshot_paydesk.png",
+      "bundled_path": "media/imgs/api-integrations/screenshots/checkbox_screenshot_paydesk.png",
+      "width": 597,
+      "height": 749,
+      "mime": "image/png",
+      "size": 69378,
+      "sha256": "b9bf57f8973bc0c61d3df272a680db371e0366f8f5dac806e40bb9f29aab31b9",
+      "alt": {
+        "ua": "Касові операції у звичній системі",
+        "cz": "Pokladní operace ve známém systému",
+        "sk": "Pokladničné operácie v známom systéme",
+        "en": "Cash register operations in your usual system",
+        "pl": "Operacje kasowe w znanym systemie"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/checkbox/sections/0/image",
+        "content/en/integration_pages/pages/checkbox/sections/0/image",
+        "content/pl/integration_pages/pages/checkbox/sections/0/image",
+        "content/sk/integration_pages/pages/checkbox/sections/0/image",
+        "content/ua/integration_pages/pages/checkbox/sections/0/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/checkbox_screenshot_shop.png",
+      "bundled_path": "media/imgs/api-integrations/screenshots/checkbox_screenshot_shop.png",
+      "width": 542,
+      "height": 345,
+      "mime": "image/png",
+      "size": 21361,
+      "sha256": "91f3cd906fc7f50c1563e6c30f20db7957c2b7fc53a20592f88fc217711dac4c",
+      "alt": {
+        "ua": "Підготуйте обліковий запис Checkbox",
+        "cz": "Připravte si účet Checkbox",
+        "sk": "Pripravte si účet Checkbox",
+        "en": "Prepare your Checkbox account",
+        "pl": "Przygotuj konto Checkbox"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/checkbox/sections/1/image",
+        "content/en/integration_pages/pages/checkbox/sections/1/image",
+        "content/pl/integration_pages/pages/checkbox/sections/1/image",
+        "content/sk/integration_pages/pages/checkbox/sections/1/image",
+        "content/ua/integration_pages/pages/checkbox/sections/1/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/novaposhta_screenshot_sender.png",
+      "bundled_path": "media/imgs/api-integrations/screenshots/novaposhta_screenshot_sender.png",
+      "width": 613,
+      "height": 647,
+      "mime": "image/png",
+      "size": 56998,
+      "sha256": "49f322af1bf4907e8f885d3ef9260cac7c17f89d037ab3dfcc8dd361abea4eb7",
+      "alt": {
+        "ua": "Налаштуйте відправників",
+        "cz": "Nastavte odesílatele",
+        "sk": "Nastavte odosielateľov",
+        "en": "Set up senders",
+        "pl": "Skonfiguruj nadawców"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/nova_poshta/sections/0/image",
+        "content/en/integration_pages/pages/nova_poshta/sections/0/image",
+        "content/pl/integration_pages/pages/nova_poshta/sections/0/image",
+        "content/sk/integration_pages/pages/nova_poshta/sections/0/image",
+        "content/ua/integration_pages/pages/nova_poshta/sections/0/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/np_step_2.png",
+      "bundled_path": "media/imgs/api-integrations/screenshots/np_step_2.png",
+      "width": 512,
+      "height": 852,
+      "mime": "image/png",
+      "size": 47970,
+      "sha256": "df3aa0b6d236bec5e7819e8e8ccd1bd1a44e63ac77000667adb4031462a7b8f9",
+      "alt": {
+        "ua": "Нова Пошта — 1",
+        "cz": "Nova Poshta — 1",
+        "sk": "Nova Poshta — 1",
+        "en": "Nova Poshta — 1",
+        "pl": "Nova Poshta — 1"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/nova_poshta/gallery/0/image",
+        "content/en/integration_pages/pages/nova_poshta/gallery/0/image",
+        "content/pl/integration_pages/pages/nova_poshta/gallery/0/image",
+        "content/sk/integration_pages/pages/nova_poshta/gallery/0/image",
+        "content/ua/integration_pages/pages/nova_poshta/gallery/0/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/np_step_3.png",
+      "bundled_path": "media/imgs/api-integrations/screenshots/np_step_3.png",
+      "width": 513,
+      "height": 886,
+      "mime": "image/png",
+      "size": 56896,
+      "sha256": "582422fc9e6c9251ae429cad09da1d76c16f2a6dfd80ba238db44aa51173812c",
+      "alt": {
+        "ua": "Нова Пошта — 2",
+        "cz": "Nova Poshta — 2",
+        "sk": "Nova Poshta — 2",
+        "en": "Nova Poshta — 2",
+        "pl": "Nova Poshta — 2"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/nova_poshta/gallery/1/image",
+        "content/en/integration_pages/pages/nova_poshta/gallery/1/image",
+        "content/pl/integration_pages/pages/nova_poshta/gallery/1/image",
+        "content/sk/integration_pages/pages/nova_poshta/gallery/1/image",
+        "content/ua/integration_pages/pages/nova_poshta/gallery/1/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/np_step_4.png",
+      "bundled_path": "media/imgs/api-integrations/screenshots/np_step_4.png",
+      "width": 512,
+      "height": 331,
+      "mime": "image/png",
+      "size": 29390,
+      "sha256": "b59cf0f3624c2b7e786f074e331eeb44255c531daf4ddc1d64ddc93023620d91",
+      "alt": {
+        "ua": "Нова Пошта — 3",
+        "cz": "Nova Poshta — 3",
+        "sk": "Nova Poshta — 3",
+        "en": "Nova Poshta — 3",
+        "pl": "Nova Poshta — 3"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/nova_poshta/gallery/2/image",
+        "content/en/integration_pages/pages/nova_poshta/gallery/2/image",
+        "content/pl/integration_pages/pages/nova_poshta/gallery/2/image",
+        "content/sk/integration_pages/pages/nova_poshta/gallery/2/image",
+        "content/ua/integration_pages/pages/nova_poshta/gallery/2/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/np_step1.png",
+      "bundled_path": "media/imgs/api-integrations/screenshots/np_step1.png",
+      "width": 514,
+      "height": 613,
+      "mime": "image/png",
+      "size": 40489,
+      "sha256": "5ff066f8c9cd9c9772140f8cced61f6ec7e8fcc73a7912e04d1d038e7b3d78d7",
+      "alt": {
+        "ua": "Оформлюйте експрес-накладні",
+        "cz": "Vytvářejte expresní přepravní listy",
+        "sk": "Vytvárajte expresné prepravné listy",
+        "en": "Create express waybills",
+        "pl": "Wystawiaj ekspresowe listy przewozowe"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/nova_poshta/sections/1/image",
+        "content/en/integration_pages/pages/nova_poshta/sections/1/image",
+        "content/pl/integration_pages/pages/nova_poshta/sections/1/image",
+        "content/sk/integration_pages/pages/nova_poshta/sections/1/image",
+        "content/ua/integration_pages/pages/nova_poshta/sections/1/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/tecdoc-parts-categories.png",
+      "bundled_path": "media/imgs/api-integrations/screenshots/tecdoc-parts-categories.png",
+      "width": 1432,
+      "height": 801,
+      "mime": "image/png",
+      "size": 165192,
+      "sha256": "ed8813a79c818623fb48de2771ddcc9c6d7f47e5264ed7f48fc9ff20a1fb0007",
+      "alt": {
+        "ua": "Підбирайте запчастини за категоріями",
+        "cz": "Vybírejte díly podle kategorií",
+        "sk": "Vyberajte diely podľa kategórií",
+        "en": "Select parts by category",
+        "pl": "Dobieraj części według kategorii"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/tecdoc/sections/1/image",
+        "content/en/integration_pages/pages/tecdoc/sections/1/image",
+        "content/pl/integration_pages/pages/tecdoc/sections/1/image",
+        "content/sk/integration_pages/pages/tecdoc/sections/1/image",
+        "content/ua/integration_pages/pages/tecdoc/sections/1/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/tecdoc-parts.png",
+      "bundled_path": "media/imgs/api-integrations/screenshots/tecdoc-parts.png",
+      "width": 1708,
+      "height": 891,
+      "mime": "image/png",
+      "size": 302739,
+      "sha256": "4f659f0f8d11d4be82aff47b235b7b1ee3889b9573cb550254ed492ba0285f3b",
+      "alt": {
+        "ua": "TecDoc Inside — 1",
+        "cz": "TecDoc Inside — 1",
+        "sk": "TecDoc Inside — 1",
+        "en": "TecDoc Inside — 1",
+        "pl": "TecDoc Inside — 1"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/tecdoc/gallery/0/image",
+        "content/en/integration_pages/pages/tecdoc/gallery/0/image",
+        "content/pl/integration_pages/pages/tecdoc/gallery/0/image",
+        "content/sk/integration_pages/pages/tecdoc/gallery/0/image",
+        "content/ua/integration_pages/pages/tecdoc/gallery/0/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/tecdoc-screenshot-2.jpg",
+      "bundled_path": "media/imgs/api-integrations/screenshots/tecdoc-screenshot-2.jpg",
+      "width": 1280,
+      "height": 425,
+      "mime": "image/jpeg",
+      "size": 60351,
+      "sha256": "50117980249e3149c8561117447aaef20fe965c60d8f0e551a044d404780541d",
+      "alt": {
+        "ua": "Перевіряйте інформацію та сумісність",
+        "cz": "Ověřujte informace a kompatibilitu",
+        "sk": "Overujte informácie a kompatibilitu",
+        "en": "Check information and compatibility",
+        "pl": "Sprawdzaj dane i zgodność"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/tecdoc/sections/2/image",
+        "content/en/integration_pages/pages/tecdoc/sections/2/image",
+        "content/pl/integration_pages/pages/tecdoc/sections/2/image",
+        "content/sk/integration_pages/pages/tecdoc/sections/2/image",
+        "content/ua/integration_pages/pages/tecdoc/sections/2/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/tecdoc-VIN.jpg",
+      "bundled_path": "media/imgs/api-integrations/screenshots/tecdoc-VIN.jpg",
+      "width": 1280,
+      "height": 781,
+      "mime": "image/jpeg",
+      "size": 50744,
+      "sha256": "d350972609e913e8e86fa2fb228e347fc5d9ae220bb139dea3257ff0e1813901",
+      "alt": {
+        "ua": "Знайдіть потрібний автомобіль",
+        "cz": "Najděte správné vozidlo",
+        "sk": "Nájdite správne vozidlo",
+        "en": "Find the right vehicle",
+        "pl": "Znajdź właściwy pojazd"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/tecdoc/sections/0/image",
+        "content/en/integration_pages/pages/tecdoc/sections/0/image",
+        "content/pl/integration_pages/pages/tecdoc/sections/0/image",
+        "content/sk/integration_pages/pages/tecdoc/sections/0/image",
+        "content/ua/integration_pages/pages/tecdoc/sections/0/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/turbosms_screenshot_blured.jpg",
+      "bundled_path": "media/imgs/api-integrations/screenshots/turbosms_screenshot_blured.jpg",
+      "width": 962,
+      "height": 712,
+      "mime": "image/jpeg",
+      "size": 60245,
+      "sha256": "e8972ae40e5119d4be28f30b7862a492f51b7ca8c0b00064e01f50534b9fa9bb",
+      "alt": {
+        "ua": "Повідомлення й шаблони",
+        "cz": "Zprávy a šablony",
+        "sk": "Správy a šablóny",
+        "en": "Messages and templates",
+        "pl": "Wiadomości i szablony"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/turboSMS/sections/0/image",
+        "content/en/integration_pages/pages/turboSMS/sections/0/image",
+        "content/pl/integration_pages/pages/turboSMS/sections/0/image",
+        "content/sk/integration_pages/pages/turboSMS/sections/0/image",
+        "content/ua/integration_pages/pages/turboSMS/sections/0/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/turbosms_screenshot_send_message_blured.jpg",
+      "bundled_path": "media/imgs/api-integrations/screenshots/turbosms_screenshot_send_message_blured.jpg",
+      "width": 1002,
+      "height": 490,
+      "mime": "image/jpeg",
+      "size": 45291,
+      "sha256": "8b8f9828dbf059a67c28810883e19e5b07f3d106aaf2f4de73aed76342587626",
+      "alt": {
+        "ua": "Інформуйте клієнта автоматично",
+        "cz": "Informujte zákazníky automaticky",
+        "sk": "Informujte zákazníkov automaticky",
+        "en": "Notify customers automatically",
+        "pl": "Informuj klienta automatycznie"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/turboSMS/sections/1/image",
+        "content/en/integration_pages/pages/turboSMS/sections/1/image",
+        "content/pl/integration_pages/pages/turboSMS/sections/1/image",
+        "content/sk/integration_pages/pages/turboSMS/sections/1/image",
+        "content/ua/integration_pages/pages/turboSMS/sections/1/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/vchasno-kasa-flow.svg",
+      "bundled_path": "media/imgs/api-integrations/screenshots/vchasno-kasa-flow.svg",
+      "width": 920,
+      "height": 560,
+      "mime": "image/svg+xml",
+      "size": 3705,
+      "sha256": "b6fdce4cfe27297cf3480c41e5449e3ee06a54e8319276f360c327073dfee53a",
+      "alt": {
+        "ua": "Як працює фіскалізація",
+        "cz": "Jak funguje fiskalizace",
+        "sk": "Ako funguje fiskalizácia",
+        "en": "How fiscalisation works",
+        "pl": "Jak działa fiskalizacja"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/vchasno/sections/0/image",
+        "content/en/integration_pages/pages/vchasno/sections/0/image",
+        "content/pl/integration_pages/pages/vchasno/sections/0/image",
+        "content/sk/integration_pages/pages/vchasno/sections/0/image",
+        "content/ua/integration_pages/pages/vchasno/sections/0/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/screenshots/vchasno-kasa-settings.svg",
+      "bundled_path": "media/imgs/api-integrations/screenshots/vchasno-kasa-settings.svg",
+      "width": 920,
+      "height": 560,
+      "mime": "image/svg+xml",
+      "size": 3455,
+      "sha256": "c688ebdcc6719a8cd29698c3040b87b635cb3f3ff7d2310426b5c20e4f30e927",
+      "alt": {
+        "ua": "Що потрібно для підключення",
+        "cz": "Co potřebujete k připojení",
+        "sk": "Čo potrebujete na pripojenie",
+        "en": "What you need to connect",
+        "pl": "Co jest potrzebne do podłączenia"
+      },
+      "sources": [
+        "content/cz/integration_pages/pages/vchasno/sections/1/image",
+        "content/en/integration_pages/pages/vchasno/sections/1/image",
+        "content/pl/integration_pages/pages/vchasno/sections/1/image",
+        "content/sk/integration_pages/pages/vchasno/sections/1/image",
+        "content/ua/integration_pages/pages/vchasno/sections/1/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/tecdoc-int-logo.svg",
+      "bundled_path": "media/imgs/api-integrations/tecdoc-int-logo.svg",
+      "width": 160,
+      "height": 46,
+      "mime": "image/svg+xml",
+      "size": 18172,
+      "sha256": "ed25087faef89c881e61f1fe59221e4f46cff55937d20e56c67229ca9cc1a79a",
+      "alt": {
+        "ua": "TecDoc Inside",
+        "cz": "TecDoc Inside",
+        "sk": "TecDoc Inside",
+        "en": "TecDoc Inside",
+        "pl": "TecDoc Inside"
+      },
+      "sources": [
+        "client/src/data/apiIntegrations.ts",
+        "content/cz/homepage/integrations_catalog_section/cards/0/image_src",
+        "content/cz/integration_pages/pages/tecdoc/logo",
+        "content/en/homepage/integrations_catalog_section/cards/0/image_src",
+        "content/en/integration_pages/pages/tecdoc/logo",
+        "content/pl/homepage/integrations_catalog_section/cards/0/image_src",
+        "content/pl/integration_pages/pages/tecdoc/logo",
+        "content/sk/homepage/integrations_catalog_section/cards/0/image_src",
+        "content/sk/integration_pages/pages/tecdoc/logo",
+        "content/ua/homepage/integrations_catalog_section/cards/0/image_src",
+        "content/ua/integration_pages/pages/tecdoc/logo"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/turbosms-int-logo.svg",
+      "bundled_path": "media/imgs/api-integrations/turbosms-int-logo.svg",
+      "width": 187,
+      "height": 46,
+      "mime": "image/svg+xml",
+      "size": 18709,
+      "sha256": "27d354f1679e9868c4acef21d1052d8846fae0bee9dc7c6dcbc25fcf8ac9a846",
+      "alt": {
+        "ua": "Turbo SMS",
+        "cz": "Turbo SMS",
+        "sk": "Turbo SMS",
+        "en": "Turbo SMS",
+        "pl": "Turbo SMS"
+      },
+      "sources": [
+        "client/src/data/apiIntegrations.ts",
+        "content/cz/homepage/integrations_catalog_section/cards/4/image_src",
+        "content/cz/integration_pages/pages/turboSMS/logo",
+        "content/en/homepage/integrations_catalog_section/cards/4/image_src",
+        "content/en/integration_pages/pages/turboSMS/logo",
+        "content/pl/homepage/integrations_catalog_section/cards/4/image_src",
+        "content/pl/integration_pages/pages/turboSMS/logo",
+        "content/sk/homepage/integrations_catalog_section/cards/4/image_src",
+        "content/sk/integration_pages/pages/turboSMS/logo",
+        "content/ua/homepage/integrations_catalog_section/cards/4/image_src",
+        "content/ua/integration_pages/pages/turboSMS/logo"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/api-integrations/vchasno-kasa-logo.svg",
+      "bundled_path": "media/imgs/api-integrations/vchasno-kasa-logo.svg",
+      "width": 191,
+      "height": 40,
+      "mime": "image/svg+xml",
+      "size": 4733,
+      "sha256": "1209bd472f448c81d9bb37d329e352a85eae07b8cc4b31831eae1bfd8c7d7206",
+      "alt": {
+        "ua": "Вчасно.Каса",
+        "cz": "Vchasno.Kasa",
+        "sk": "Vchasno.Kasa",
+        "en": "Vchasno.Kasa",
+        "pl": "Vchasno.Kasa"
+      },
+      "sources": [
+        "client/src/data/apiIntegrations.ts",
+        "content/cz/homepage/integrations_catalog_section/cards/2/image_src",
+        "content/cz/integration_pages/pages/vchasno/logo",
+        "content/en/homepage/integrations_catalog_section/cards/2/image_src",
+        "content/en/integration_pages/pages/vchasno/logo",
+        "content/pl/homepage/integrations_catalog_section/cards/2/image_src",
+        "content/pl/integration_pages/pages/vchasno/logo",
+        "content/sk/homepage/integrations_catalog_section/cards/2/image_src",
+        "content/sk/integration_pages/pages/vchasno/logo",
+        "content/ua/homepage/integrations_catalog_section/cards/2/image_src",
+        "content/ua/integration_pages/pages/vchasno/logo"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/auto-dismantling/dismantling-car-premium.png",
+      "bundled_path": "media/imgs/auto-dismantling/dismantling-car-premium.png",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/png",
+      "size": 1654062,
+      "sha256": "1f52d9686eaf9e09033520969a392946d02c72538b120cbbf63bb57c00837cc6",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/pages/AutoDismantlingPage.tsx",
+        "content/cz/autoshrot/hero/image",
+        "content/en/autoshrot/hero/image",
+        "content/pl/autoshrot/hero/image",
+        "content/sk/autoshrot/hero/image",
+        "content/ua/autoshrot/hero/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/auto-dismantling/parts-catalog-premium.png",
+      "bundled_path": "media/imgs/auto-dismantling/parts-catalog-premium.png",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/png",
+      "size": 1715770,
+      "sha256": "ff04948d0ac76a1291a0415133ad536205326376e8793d92b07eed15fb445ece",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/pages/AutoDismantlingPage.tsx",
+        "content/cz/autoshrot/removal/image",
+        "content/en/autoshrot/removal/image",
+        "content/pl/autoshrot/removal/image",
+        "content/sk/autoshrot/removal/image",
+        "content/ua/autoshrot/removal/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/auto-dismantling/vehicle-record-premium.png",
+      "bundled_path": "media/imgs/auto-dismantling/vehicle-record-premium.png",
+      "width": 1199,
+      "height": 1312,
+      "mime": "image/png",
+      "size": 1161445,
+      "sha256": "95bd0d837f729b1daf02dfd8829ad3d89a5524c52c4d35e3478d2815b100c935",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/pages/AutoDismantlingPage.tsx",
+        "content/cz/autoshrot/car/image",
+        "content/en/autoshrot/car/image",
+        "content/pl/autoshrot/car/image",
+        "content/sk/autoshrot/car/image",
+        "content/ua/autoshrot/car/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/car-service/bookings.png",
+      "bundled_path": "media/imgs/car-service/bookings.png",
+      "width": 705,
+      "height": 392,
+      "mime": "image/png",
+      "size": 66504,
+      "sha256": "e1d6e1616e576a67b988f54adfec5b0bf3dfe788eba64b2ed35fa42ffd172e30",
+      "alt": {
+        "ua": "Запис на СТО",
+        "cz": "Objednání do autoservisu",
+        "sk": "Objednanie do autoservisu",
+        "en": "Workshop bookings",
+        "pl": "Rezerwacje w warsztacie"
+      },
+      "sources": [
+        "content/cz/car_service/blocks/2/image_src",
+        "content/en/car_service/blocks/2/image_src",
+        "content/pl/car_service/blocks/2/image_src",
+        "content/sk/car_service/blocks/2/image_src",
+        "content/ua/car_service/blocks/2/image_src"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/car-service/calendar.png",
+      "bundled_path": "media/imgs/car-service/calendar.png",
+      "width": 705,
+      "height": 334,
+      "mime": "image/png",
+      "size": 74466,
+      "sha256": "0ba1184f72496818693a16f43f8ba59de08dc9752cbae4a4b0af508c0e5fb967",
+      "alt": {
+        "ua": "Довідник робіт СТО",
+        "cz": "Katalog servisních prací",
+        "sk": "Katalóg servisných prác",
+        "en": "Workshop job catalog",
+        "pl": "Katalog prac warsztatowych"
+      },
+      "sources": [
+        "content/cz/car_service/blocks/0/image_src",
+        "content/cz/car_service/blocks/4/image_src",
+        "content/en/car_service/blocks/0/image_src",
+        "content/en/car_service/blocks/4/image_src",
+        "content/pl/car_service/blocks/0/image_src",
+        "content/pl/car_service/blocks/4/image_src",
+        "content/sk/car_service/blocks/0/image_src",
+        "content/sk/car_service/blocks/4/image_src",
+        "content/ua/car_service/blocks/0/image_src",
+        "content/ua/car_service/blocks/4/image_src"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/car-service/company.png",
+      "bundled_path": "media/imgs/car-service/company.png",
+      "width": 705,
+      "height": 378,
+      "mime": "image/png",
+      "size": 73174,
+      "sha256": "6a532ca4ec6547d106f26c3f2cf9bf3333ffe2e92704e9af5fab4295d4bd6b97",
+      "alt": {
+        "ua": "Документи",
+        "cz": "Dokumenty",
+        "sk": "Dokumenty",
+        "en": "Documents",
+        "pl": "Dokumenty"
+      },
+      "sources": [
+        "content/cz/car_service/blocks/1/image_src",
+        "content/cz/car_service/blocks/5/image_src",
+        "content/en/car_service/blocks/1/image_src",
+        "content/en/car_service/blocks/5/image_src",
+        "content/pl/car_service/blocks/1/image_src",
+        "content/pl/car_service/blocks/5/image_src",
+        "content/sk/car_service/blocks/1/image_src",
+        "content/sk/car_service/blocks/5/image_src",
+        "content/ua/car_service/blocks/1/image_src",
+        "content/ua/car_service/blocks/5/image_src"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/contacts/worker-1.svg",
+      "bundled_path": "media/imgs/contacts/worker-1.svg",
+      "width": 256,
+      "height": 256,
+      "mime": "image/svg+xml",
+      "size": 612,
+      "sha256": "588947a4aa558f5e246c57139bc79c30783ae897fbb1754e82642a109fa7570b",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "content/cz/contacts/workers/0/photo_path",
+        "content/en/contacts/workers/0/photo_path",
+        "content/pl/contacts/workers/0/photo_path",
+        "content/sk/contacts/workers/0/photo_path",
+        "content/ua/contacts/workers/0/photo_path"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/contacts/worker-2.svg",
+      "bundled_path": "media/imgs/contacts/worker-2.svg",
+      "width": 256,
+      "height": 256,
+      "mime": "image/svg+xml",
+      "size": 608,
+      "sha256": "41fa87629d9bb971b432d8f282f0ee90d739c517a9260f77648c9ed0b20838ec",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "content/cz/contacts/workers/1/photo_path",
+        "content/en/contacts/workers/1/photo_path",
+        "content/pl/contacts/workers/1/photo_path",
+        "content/sk/contacts/workers/1/photo_path",
+        "content/ua/contacts/workers/1/photo_path"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/contacts/worker-3.svg",
+      "bundled_path": "media/imgs/contacts/worker-3.svg",
+      "width": 256,
+      "height": 256,
+      "mime": "image/svg+xml",
+      "size": 612,
+      "sha256": "0058dbeb857cdba94c5a522aed6ccc989e95b0010bc7634e8b5f207ad791cc40",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "content/cz/contacts/workers/2/photo_path",
+        "content/en/contacts/workers/2/photo_path",
+        "content/pl/contacts/workers/2/photo_path",
+        "content/sk/contacts/workers/2/photo_path",
+        "content/ua/contacts/workers/2/photo_path"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/contacts/worker-4.svg",
+      "bundled_path": "media/imgs/contacts/worker-4.svg",
+      "width": 256,
+      "height": 256,
+      "mime": "image/svg+xml",
+      "size": 611,
+      "sha256": "c7cece88494ba1cedae7a65602a1e93693194e0d0bf9bc9d7d9c7eef9b9ed450",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "content/cz/contacts/workers/3/photo_path",
+        "content/en/contacts/workers/3/photo_path",
+        "content/pl/contacts/workers/3/photo_path",
+        "content/sk/contacts/workers/3/photo_path",
+        "content/ua/contacts/workers/3/photo_path"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/ASG.png",
+      "bundled_path": "media/imgs/integrations/ASG.png",
+      "width": 233,
+      "height": 67,
+      "mime": "image/png",
+      "size": 2304,
+      "sha256": "33a7fc868dfffb5e55b982379745ed619bef042f3b16abefb700ed5fc12a2bdf",
+      "alt": {
+        "ua": "ASG",
+        "cz": "ASG",
+        "sk": "ASG",
+        "en": "ASG",
+        "pl": "ASG"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/7/logo",
+        "content/en/homepage/suppliers_section/suppliers/7/logo",
+        "content/pl/homepage/suppliers_section/suppliers/7/logo",
+        "content/sk/homepage/suppliers_section/suppliers/7/logo",
+        "content/ua/homepage/suppliers_section/suppliers/7/logo",
+        "reference/presentation/supplier_network/nodes/7/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/autooriginal.png",
+      "bundled_path": "media/imgs/integrations/autooriginal.png",
+      "width": 129,
+      "height": 83,
+      "mime": "image/png",
+      "size": 1860,
+      "sha256": "f2eb7d1dcfa8e550ff0abd62dd1de6c7be1d974fc3a9365ba873b5b6214b248b",
+      "alt": {
+        "ua": "AutoOriginal",
+        "cz": "AutoOriginal",
+        "sk": "AutoOriginal",
+        "en": "AutoOriginal",
+        "pl": "AutoOriginal"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/3/logo",
+        "content/en/homepage/suppliers_section/suppliers/3/logo",
+        "content/pl/homepage/suppliers_section/suppliers/3/logo",
+        "content/sk/homepage/suppliers_section/suppliers/3/logo",
+        "content/ua/homepage/suppliers_section/suppliers/3/logo",
+        "reference/presentation/supplier_network/nodes/3/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/bastion-logo.png",
+      "bundled_path": "media/imgs/integrations/bastion-logo.png",
+      "width": 77,
+      "height": 108,
+      "mime": "image/png",
+      "size": 1097,
+      "sha256": "cb83aff0b3edc5eec64d3b7b7e0f62ca4e2461be493b5c2c47e33713439a9b22",
+      "alt": {
+        "ua": "Bastion",
+        "cz": "Bastion",
+        "sk": "Bastion",
+        "en": "Bastion",
+        "pl": "Bastion"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/9/logo",
+        "content/en/homepage/suppliers_section/suppliers/9/logo",
+        "content/pl/homepage/suppliers_section/suppliers/9/logo",
+        "content/sk/homepage/suppliers_section/suppliers/9/logo",
+        "content/ua/homepage/suppliers_section/suppliers/9/logo",
+        "reference/presentation/supplier_network/nodes/9/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/bm-logo.png",
+      "bundled_path": "media/imgs/integrations/bm-logo.png",
+      "width": 127,
+      "height": 124,
+      "mime": "image/png",
+      "size": 1287,
+      "sha256": "f94736d5cc22aec16253757085f3ca66efc2840fc36bcd4157c788e39dd5a9cc",
+      "alt": {
+        "ua": "BM Parts",
+        "cz": "BM Parts",
+        "sk": "BM Parts",
+        "en": "BM Parts",
+        "pl": "BM Parts"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/2/logo",
+        "content/en/homepage/suppliers_section/suppliers/2/logo",
+        "content/pl/homepage/suppliers_section/suppliers/2/logo",
+        "content/sk/homepage/suppliers_section/suppliers/2/logo",
+        "content/ua/homepage/suppliers_section/suppliers/2/logo",
+        "reference/presentation/supplier_network/nodes/2/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/Elit.png",
+      "bundled_path": "media/imgs/integrations/Elit.png",
+      "width": 117,
+      "height": 32,
+      "mime": "image/png",
+      "size": 486,
+      "sha256": "9680e0c4ae4a3ab1ad0d39af26d03c61151c9c24435fa3c0b2f371613973d9cb",
+      "alt": {
+        "ua": "Elit",
+        "cz": "Elit",
+        "sk": "Elit",
+        "en": "Elit",
+        "pl": "Elit"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/0/logo",
+        "content/en/homepage/suppliers_section/suppliers/0/logo",
+        "content/pl/homepage/suppliers_section/suppliers/0/logo",
+        "content/sk/homepage/suppliers_section/suppliers/0/logo",
+        "content/ua/homepage/suppliers_section/suppliers/0/logo",
+        "reference/presentation/supplier_network/nodes/0/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/forcars.png",
+      "bundled_path": "media/imgs/integrations/forcars.png",
+      "width": 301,
+      "height": 106,
+      "mime": "image/png",
+      "size": 5366,
+      "sha256": "82334d3b01b0ecbf88bc2f98374fbac6f897b8206ee98a7c2c99762d932dcdcf",
+      "alt": {
+        "ua": "4Cars",
+        "cz": "4Cars",
+        "sk": "4Cars",
+        "en": "4Cars",
+        "pl": "4Cars"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/10/logo",
+        "content/en/homepage/suppliers_section/suppliers/10/logo",
+        "content/pl/homepage/suppliers_section/suppliers/10/logo",
+        "content/sk/homepage/suppliers_section/suppliers/10/logo",
+        "content/ua/homepage/suppliers_section/suppliers/10/logo",
+        "reference/presentation/supplier_network/nodes/10/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/ford_org_ua.png",
+      "bundled_path": "media/imgs/integrations/ford_org_ua.png",
+      "width": 518,
+      "height": 196,
+      "mime": "image/png",
+      "size": 6559,
+      "sha256": "db3d44880b37b550658c980ec13a4959e09ad0bfb1aa6d7d2cbf76798d6e6500",
+      "alt": {
+        "ua": "Ford.org.ua",
+        "cz": "Ford.org.ua",
+        "sk": "Ford.org.ua",
+        "en": "Ford.org.ua",
+        "pl": "Ford.org.ua"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/13/logo",
+        "content/en/homepage/suppliers_section/suppliers/13/logo",
+        "content/pl/homepage/suppliers_section/suppliers/13/logo",
+        "content/sk/homepage/suppliers_section/suppliers/13/logo",
+        "content/ua/homepage/suppliers_section/suppliers/13/logo",
+        "reference/presentation/supplier_network/nodes/13/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/intercars_logo.png",
+      "bundled_path": "media/imgs/integrations/intercars_logo.png",
+      "width": 256,
+      "height": 256,
+      "mime": "image/png",
+      "size": 2347,
+      "sha256": "2bd3117d19d368a8a2742db20726f6b9bfdd73c7ef6d949781215ff7275a8600",
+      "alt": {
+        "ua": "Inter Cars",
+        "cz": "Inter Cars",
+        "sk": "Inter Cars",
+        "en": "Inter Cars",
+        "pl": "Inter Cars"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/8/logo",
+        "content/en/homepage/suppliers_section/suppliers/8/logo",
+        "content/pl/homepage/suppliers_section/suppliers/8/logo",
+        "content/sk/homepage/suppliers_section/suppliers/8/logo",
+        "content/ua/homepage/suppliers_section/suppliers/8/logo",
+        "reference/presentation/supplier_network/nodes/8/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/omega-logo.jpg",
+      "bundled_path": "media/imgs/integrations/omega-logo.jpg",
+      "width": 625,
+      "height": 384,
+      "mime": "image/jpeg",
+      "size": 14952,
+      "sha256": "5dfe75ca18b17712f734c92f561fb7fa31a2c686fd2587ed82b35582b7f375bd",
+      "alt": {
+        "ua": "Omega",
+        "cz": "Omega",
+        "sk": "Omega",
+        "en": "Omega",
+        "pl": "Omega"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/5/logo",
+        "content/en/homepage/suppliers_section/suppliers/5/logo",
+        "content/pl/homepage/suppliers_section/suppliers/5/logo",
+        "content/sk/homepage/suppliers_section/suppliers/5/logo",
+        "content/ua/homepage/suppliers_section/suppliers/5/logo",
+        "reference/presentation/supplier_network/nodes/5/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/partline-logo.png",
+      "bundled_path": "media/imgs/integrations/partline-logo.png",
+      "width": 100,
+      "height": 100,
+      "mime": "image/png",
+      "size": 349,
+      "sha256": "c5187c2487a5508eb43cbed3321048bcfc543c94cb10965074a81cd9d8dc9f94",
+      "alt": {
+        "ua": "Partline",
+        "cz": "Partline",
+        "sk": "Partline",
+        "en": "Partline",
+        "pl": "Partline"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/14/logo",
+        "content/en/homepage/suppliers_section/suppliers/14/logo",
+        "content/pl/homepage/suppliers_section/suppliers/14/logo",
+        "content/sk/homepage/suppliers_section/suppliers/14/logo",
+        "content/ua/homepage/suppliers_section/suppliers/14/logo",
+        "reference/presentation/supplier_network/nodes/14/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/s-line-logo.svg",
+      "bundled_path": "media/imgs/integrations/s-line-logo.svg",
+      "width": 31,
+      "height": 50,
+      "mime": "image/svg+xml",
+      "size": 6168,
+      "sha256": "2e3301c6ede0a1340013871c804cc9e1da8d79d2637dfde4887e3d59bd4b01a2",
+      "alt": {
+        "ua": "S-Line",
+        "cz": "S-Line",
+        "sk": "S-Line",
+        "en": "S-Line",
+        "pl": "S-Line"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/4/logo",
+        "content/en/homepage/suppliers_section/suppliers/4/logo",
+        "content/pl/homepage/suppliers_section/suppliers/4/logo",
+        "content/sk/homepage/suppliers_section/suppliers/4/logo",
+        "content/ua/homepage/suppliers_section/suppliers/4/logo",
+        "reference/presentation/supplier_network/nodes/4/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/technomir-logo.png",
+      "bundled_path": "media/imgs/integrations/technomir-logo.png",
+      "width": 180,
+      "height": 207,
+      "mime": "image/png",
+      "size": 1296,
+      "sha256": "ab9a85b45a312495c90a5f151398c528c9aa66755690068c16e463cfd93c90b7",
+      "alt": {
+        "ua": "Техномир",
+        "cz": "Technomir",
+        "sk": "Technomir",
+        "en": "Technomir",
+        "pl": "Technomir"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/1/logo",
+        "content/en/homepage/suppliers_section/suppliers/1/logo",
+        "content/pl/homepage/suppliers_section/suppliers/1/logo",
+        "content/sk/homepage/suppliers_section/suppliers/1/logo",
+        "content/ua/homepage/suppliers_section/suppliers/1/logo",
+        "reference/presentation/supplier_network/nodes/1/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/twin.png",
+      "bundled_path": "media/imgs/integrations/twin.png",
+      "width": 188,
+      "height": 82,
+      "mime": "image/png",
+      "size": 928,
+      "sha256": "7228d6e00dc0b47fee53094e02eda222cf01b68e1fda8521ca349a68a5b4d672",
+      "alt": {
+        "ua": "Twin",
+        "cz": "Twin",
+        "sk": "Twin",
+        "en": "Twin",
+        "pl": "Twin"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/11/logo",
+        "content/en/homepage/suppliers_section/suppliers/11/logo",
+        "content/pl/homepage/suppliers_section/suppliers/11/logo",
+        "content/sk/homepage/suppliers_section/suppliers/11/logo",
+        "content/ua/homepage/suppliers_section/suppliers/11/logo",
+        "reference/presentation/supplier_network/nodes/11/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/uniq_logo.png",
+      "bundled_path": "media/imgs/integrations/uniq_logo.png",
+      "width": 880,
+      "height": 492,
+      "mime": "image/png",
+      "size": 15652,
+      "sha256": "9b32bd06db3f4590750c0f9413e7710febed58a53d46432429a9f2e75296ff22",
+      "alt": {
+        "ua": "Юнік Трейд",
+        "cz": "Uniq Trade",
+        "sk": "Uniq Trade",
+        "en": "Uniq Trade",
+        "pl": "Uniq Trade"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/6/logo",
+        "content/en/homepage/suppliers_section/suppliers/6/logo",
+        "content/pl/homepage/suppliers_section/suppliers/6/logo",
+        "content/sk/homepage/suppliers_section/suppliers/6/logo",
+        "content/ua/homepage/suppliers_section/suppliers/6/logo",
+        "reference/presentation/supplier_network/nodes/6/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/integrations/vladislav.png",
+      "bundled_path": "media/imgs/integrations/vladislav.png",
+      "width": 300,
+      "height": 61,
+      "mime": "image/png",
+      "size": 3002,
+      "sha256": "14326b4bc9f873854bb53a7d3a4eb4924d983135a972699b150a795065a7928b",
+      "alt": {
+        "ua": "Groupauto Україна",
+        "cz": "Groupauto Ukraine",
+        "sk": "Groupauto Ukraine",
+        "en": "Groupauto Ukraine",
+        "pl": "Groupauto Ukraine"
+      },
+      "sources": [
+        "client/src/components/integrations/integrationData.ts",
+        "content/cz/homepage/suppliers_section/suppliers/12/logo",
+        "content/en/homepage/suppliers_section/suppliers/12/logo",
+        "content/pl/homepage/suppliers_section/suppliers/12/logo",
+        "content/sk/homepage/suppliers_section/suppliers/12/logo",
+        "content/ua/homepage/suppliers_section/suppliers/12/logo",
+        "reference/presentation/supplier_network/nodes/12/imageSrc"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/laptop-screenshot.png",
+      "bundled_path": "media/imgs/laptop-screenshot.png",
+      "width": 528,
+      "height": 333,
+      "mime": "image/png",
+      "size": 33943,
+      "sha256": "519de2b76a7031796b40acab95141f0018471da3c5a45e40ec4d796058e0ad8a",
+      "alt": {
+        "ua": "Інтерфейс обліку СТО Vortex на ноутбуці",
+        "cz": "Rozhraní autoservisu Vortex na notebooku",
+        "sk": "Rozhranie autoservisu Vortex na notebooku",
+        "en": "Vortex workshop interface on a laptop",
+        "pl": "Interfejs warsztatu Vortex na laptopie"
+      },
+      "sources": [
+        "client/src/styles/main.css",
+        "content/cz/homepage/car_service_section/image",
+        "content/en/homepage/car_service_section/image",
+        "content/pl/homepage/car_service_section/image",
+        "content/sk/homepage/car_service_section/image",
+        "content/ua/homepage/car_service_section/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/logo-square.png",
+      "bundled_path": "media/imgs/logo-square.png",
+      "width": 96,
+      "height": 96,
+      "mime": "image/png",
+      "size": 4295,
+      "sha256": "0a99352d69c8889d757ebb5888c979434167cfc8c176c89eac7592952435d4d2",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/integrations/IntegrationsNetworkComponent.tsx",
+        "client/src/seo/metadata.ts",
+        "content/cz/seo/autoshrot/share_image",
+        "content/cz/seo/blog/share_image",
+        "content/cz/seo/car_service/share_image",
+        "content/cz/seo/contacts/share_image",
+        "content/cz/seo/faq/share_image",
+        "content/cz/seo/home/share_image",
+        "content/cz/seo/integrations/bank_API/share_image",
+        "content/cz/seo/integrations/binotel/share_image",
+        "content/cz/seo/integrations/checkbox/share_image",
+        "content/cz/seo/integrations/nova_poshta/share_image",
+        "content/cz/seo/integrations/tecdoc/share_image",
+        "content/cz/seo/integrations/turboSMS/share_image",
+        "content/cz/seo/integrations/vchasno/share_image",
+        "content/cz/seo/privacy_policy/share_image",
+        "content/cz/seo/tecdoc/share_image",
+        "content/cz/seo/websites/share_image",
+        "content/en/seo/autoshrot/share_image",
+        "content/en/seo/blog/share_image",
+        "content/en/seo/car_service/share_image",
+        "content/en/seo/contacts/share_image",
+        "content/en/seo/faq/share_image",
+        "content/en/seo/home/share_image",
+        "content/en/seo/integrations/bank_API/share_image",
+        "content/en/seo/integrations/binotel/share_image",
+        "content/en/seo/integrations/checkbox/share_image",
+        "content/en/seo/integrations/nova_poshta/share_image",
+        "content/en/seo/integrations/tecdoc/share_image",
+        "content/en/seo/integrations/turboSMS/share_image",
+        "content/en/seo/integrations/vchasno/share_image",
+        "content/en/seo/privacy_policy/share_image",
+        "content/en/seo/tecdoc/share_image",
+        "content/en/seo/websites/share_image",
+        "content/pl/seo/autoshrot/share_image",
+        "content/pl/seo/blog/share_image",
+        "content/pl/seo/car_service/share_image",
+        "content/pl/seo/contacts/share_image",
+        "content/pl/seo/faq/share_image",
+        "content/pl/seo/home/share_image",
+        "content/pl/seo/integrations/bank_API/share_image",
+        "content/pl/seo/integrations/binotel/share_image",
+        "content/pl/seo/integrations/checkbox/share_image",
+        "content/pl/seo/integrations/nova_poshta/share_image",
+        "content/pl/seo/integrations/tecdoc/share_image",
+        "content/pl/seo/integrations/turboSMS/share_image",
+        "content/pl/seo/integrations/vchasno/share_image",
+        "content/pl/seo/privacy_policy/share_image",
+        "content/pl/seo/tecdoc/share_image",
+        "content/pl/seo/websites/share_image",
+        "content/sk/seo/autoshrot/share_image",
+        "content/sk/seo/blog/share_image",
+        "content/sk/seo/car_service/share_image",
+        "content/sk/seo/contacts/share_image",
+        "content/sk/seo/faq/share_image",
+        "content/sk/seo/home/share_image",
+        "content/sk/seo/integrations/bank_API/share_image",
+        "content/sk/seo/integrations/binotel/share_image",
+        "content/sk/seo/integrations/checkbox/share_image",
+        "content/sk/seo/integrations/nova_poshta/share_image",
+        "content/sk/seo/integrations/tecdoc/share_image",
+        "content/sk/seo/integrations/turboSMS/share_image",
+        "content/sk/seo/integrations/vchasno/share_image",
+        "content/sk/seo/privacy_policy/share_image",
+        "content/sk/seo/tecdoc/share_image",
+        "content/sk/seo/websites/share_image",
+        "content/ua/seo/autoshrot/share_image",
+        "content/ua/seo/blog/share_image",
+        "content/ua/seo/car_service/share_image",
+        "content/ua/seo/contacts/share_image",
+        "content/ua/seo/faq/share_image",
+        "content/ua/seo/home/share_image",
+        "content/ua/seo/integrations/bank_API/share_image",
+        "content/ua/seo/integrations/binotel/share_image",
+        "content/ua/seo/integrations/checkbox/share_image",
+        "content/ua/seo/integrations/nova_poshta/share_image",
+        "content/ua/seo/integrations/tecdoc/share_image",
+        "content/ua/seo/integrations/turboSMS/share_image",
+        "content/ua/seo/integrations/vchasno/share_image",
+        "content/ua/seo/privacy_policy/share_image",
+        "content/ua/seo/tecdoc/share_image",
+        "content/ua/seo/websites/share_image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/slider_images/slide_1.png",
+      "bundled_path": "media/imgs/slider_images/slide_1.png",
+      "width": 1624,
+      "height": 907,
+      "mime": "image/png",
+      "size": 84170,
+      "sha256": "c95c759dd665b66496ab851d481978403ddcf18198350f253765e300dba5bbeb",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "content/cz/homepage/hero_page_slider_section/slide_image_paths/0",
+        "content/en/homepage/hero_page_slider_section/slide_image_paths/0",
+        "content/pl/homepage/hero_page_slider_section/slide_image_paths/0",
+        "content/sk/homepage/hero_page_slider_section/slide_image_paths/0",
+        "content/ua/homepage/hero_page_slider_section/slide_image_paths/0"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/slider_images/slide_2.png",
+      "bundled_path": "media/imgs/slider_images/slide_2.png",
+      "width": 1627,
+      "height": 865,
+      "mime": "image/png",
+      "size": 160409,
+      "sha256": "9fc9a60a68f0372c84556a741baf6064b13f931a3de0368e5c747a70835a08fc",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "content/cz/homepage/hero_page_slider_section/slide_image_paths/1",
+        "content/en/homepage/hero_page_slider_section/slide_image_paths/1",
+        "content/pl/homepage/hero_page_slider_section/slide_image_paths/1",
+        "content/sk/homepage/hero_page_slider_section/slide_image_paths/1",
+        "content/ua/homepage/hero_page_slider_section/slide_image_paths/1"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/slider_images/slide_3.png",
+      "bundled_path": "media/imgs/slider_images/slide_3.png",
+      "width": 1626,
+      "height": 795,
+      "mime": "image/png",
+      "size": 192027,
+      "sha256": "eb3c84fbd70b09408a4c6fd7458363e302169cb7e71dd2851743beb76f507890",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "content/cz/homepage/hero_page_slider_section/slide_image_paths/2",
+        "content/en/homepage/hero_page_slider_section/slide_image_paths/2",
+        "content/pl/homepage/hero_page_slider_section/slide_image_paths/2",
+        "content/sk/homepage/hero_page_slider_section/slide_image_paths/2",
+        "content/ua/homepage/hero_page_slider_section/slide_image_paths/2"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/sm-dark-blue-logo.svg",
+      "bundled_path": "media/imgs/sm-dark-blue-logo.svg",
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 2836,
+      "sha256": "012f1d94fca262f95ac01c34883c229b656456491b70f53673e81c9eba3ae8d4",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/CarServiceOverviewComponent.tsx",
+        "client/src/components/WebsiteDevelopmentComponent.tsx",
+        "client/src/styles/auto-dismantling.css",
+        "client/src/styles/car-service.css",
+        "client/src/styles/integrations.css",
+        "client/src/styles/tecdoc.css",
+        "client/src/styles/vortex-plans.css",
+        "client/src/styles/websites.css"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/tecdoc-button.png",
+      "bundled_path": "media/imgs/tecdoc-button.png",
+      "width": 600,
+      "height": 169,
+      "mime": "image/png",
+      "size": 13804,
+      "sha256": "3e5d54d6a1f2118942789c8753be145a454d0c6848d43104d7847f1501805aac",
+      "alt": {
+        "ua": "TecAlliance — офіційний партнер",
+        "cz": "TecAlliance — oficiální partner",
+        "sk": "TecAlliance — oficiálny partner",
+        "en": "TecAlliance — official partner",
+        "pl": "TecAlliance — oficjalny partner"
+      },
+      "sources": [
+        "client/src/components/layout/HeaderMain.tsx",
+        "content/cz/layout/partner_images/0/image",
+        "content/en/layout/partner_images/0/image",
+        "content/pl/layout/partner_images/0/image",
+        "content/sk/layout/partner_images/0/image",
+        "content/ua/layout/partner_images/0/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/tecdoc/tecdoc-parts.png",
+      "bundled_path": "media/imgs/tecdoc/tecdoc-parts.png",
+      "width": 701,
+      "height": 414,
+      "mime": "image/png",
+      "size": 52056,
+      "sha256": "b1a2268a43b7b2d88fe63d4ae02164f680f382857a535d166879875688c40ec8",
+      "alt": {
+        "ua": "Ілюстрація підбору автомобільних запчастин у каталозі TecDoc",
+        "cz": "Ilustrace výběru automobilových dílů v katalogu TecDoc",
+        "sk": "Ilustrácia výberu automobilových dielov v katalógu TecDoc",
+        "en": "Illustration of automotive parts selection in the TecDoc catalog",
+        "pl": "Ilustracja doboru części samochodowych w katalogu TecDoc"
+      },
+      "sources": [
+        "client/src/pages/TecDocLicensePage.tsx",
+        "content/cz/tecdoc/sections/1/image",
+        "content/en/tecdoc/sections/1/image",
+        "content/pl/tecdoc/sections/1/image",
+        "content/sk/tecdoc/sections/1/image",
+        "content/ua/tecdoc/sections/1/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/tecdoc/tecdoc-screenshot.png",
+      "bundled_path": "media/imgs/tecdoc/tecdoc-screenshot.png",
+      "width": 760,
+      "height": 444,
+      "mime": "image/png",
+      "size": 21145,
+      "sha256": "a584a512dfcef9ac557a98d5eb7e684e7af10092cfe8c43489dae6850578b4fe",
+      "alt": {
+        "ua": "Ілюстрація технічного обслуговування та діагностики автомобіля з TecRMI",
+        "cz": "Ilustrace údržby a diagnostiky vozidla s TecRMI",
+        "sk": "Ilustrácia údržby a diagnostiky vozidla s TecRMI",
+        "en": "Illustration of vehicle maintenance and diagnostics with TecRMI",
+        "pl": "Ilustracja obsługi technicznej i diagnostyki pojazdu z TecRMI"
+      },
+      "sources": [
+        "client/src/pages/TecDocLicensePage.tsx",
+        "content/cz/tecdoc/sections/2/image",
+        "content/en/tecdoc/sections/2/image",
+        "content/pl/tecdoc/sections/2/image",
+        "content/sk/tecdoc/sections/2/image",
+        "content/ua/tecdoc/sections/2/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/vortex_logo_large.svg",
+      "bundled_path": "media/imgs/vortex_logo_large.svg",
+      "width": 481,
+      "height": 477,
+      "mime": "image/svg+xml",
+      "size": 2830,
+      "sha256": "9760fbc3d24024f2f3b4f416f40f8d2083196fa93d25e6c0ac3755c7f31c7a71",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/TrialRequestComponent.tsx"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/vortex-logo-115.svg",
+      "bundled_path": "media/imgs/vortex-logo-115.svg",
+      "width": 115,
+      "height": 30,
+      "mime": "image/svg+xml",
+      "size": 5060,
+      "sha256": "72ce1d17e26365674a6f37cadfefcac559c508e967dce8c3daf02b50c1e89f69",
+      "alt": {
+        "ua": "Vortex",
+        "cz": "Vortex",
+        "sk": "Vortex",
+        "en": "Vortex",
+        "pl": "Vortex"
+      },
+      "sources": [
+        "client/src/components/layout/FooterMain.tsx",
+        "client/src/components/layout/HeaderMain.tsx",
+        "content/cz/layout/footer_logo",
+        "content/cz/layout/header_logo",
+        "content/en/layout/footer_logo",
+        "content/en/layout/header_logo",
+        "content/pl/layout/footer_logo",
+        "content/pl/layout/header_logo",
+        "content/sk/layout/footer_logo",
+        "content/sk/layout/header_logo",
+        "content/ua/layout/footer_logo",
+        "content/ua/layout/header_logo"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/vx-screenshot-1.png",
+      "bundled_path": "media/imgs/vx-screenshot-1.png",
+      "width": 1906,
+      "height": 906,
+      "mime": "image/png",
+      "size": 214863,
+      "sha256": "d0fb2d3fb1ecc051cd9d4d75a0742ddf98a778bcdf6e539e9ba312e57ec2585c",
+      "alt": {
+        "ua": "Статистика",
+        "cz": "Statistiky",
+        "sk": "Štatistiky",
+        "en": "Statistics",
+        "pl": "Statystyki"
+      },
+      "sources": [
+        "client/src/components/MainPageHeroContent.tsx",
+        "content/cz/car_service/blocks/3/image_src",
+        "content/cz/homepage/hero/screenshots/0/image",
+        "content/en/car_service/blocks/3/image_src",
+        "content/en/homepage/hero/screenshots/0/image",
+        "content/pl/car_service/blocks/3/image_src",
+        "content/pl/homepage/hero/screenshots/0/image",
+        "content/sk/car_service/blocks/3/image_src",
+        "content/sk/homepage/hero/screenshots/0/image",
+        "content/ua/car_service/blocks/3/image_src",
+        "content/ua/homepage/hero/screenshots/0/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/vx-screenshot-2.png",
+      "bundled_path": "media/imgs/vx-screenshot-2.png",
+      "width": 1625,
+      "height": 842,
+      "mime": "image/png",
+      "size": 133688,
+      "sha256": "a2b3651de361dd245e84c1071ce50a302d80a17760bcdcbd9fc5ccba6f142425",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/MainPageHeroContent.tsx",
+        "content/cz/homepage/hero/screenshots/1/image",
+        "content/en/homepage/hero/screenshots/1/image",
+        "content/pl/homepage/hero/screenshots/1/image",
+        "content/sk/homepage/hero/screenshots/1/image",
+        "content/ua/homepage/hero/screenshots/1/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/vx-screenshot-3.png",
+      "bundled_path": "media/imgs/vx-screenshot-3.png",
+      "width": 1624,
+      "height": 840,
+      "mime": "image/png",
+      "size": 187307,
+      "sha256": "19b5e7dbf661fb67d4c77a74ca1a20d5cfd0f4c58621315ee1946c2bf20b4d46",
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "sources": [
+        "client/src/components/MainPageHeroContent.tsx",
+        "content/cz/homepage/hero/screenshots/2/image",
+        "content/en/homepage/hero/screenshots/2/image",
+        "content/pl/homepage/hero/screenshots/2/image",
+        "content/sk/homepage/hero/screenshots/2/image",
+        "content/ua/homepage/hero/screenshots/2/image"
+      ],
+      "variants": []
+    },
+    {
+      "url": "/imgs/websites/site_2.png",
+      "bundled_path": "media/imgs/websites/site_2.png",
+      "width": 261,
+      "height": 432,
+      "mime": "image/png",
+      "size": 59519,
+      "sha256": "4429a2bde359ad38c6ae790ef42ed16a1af130bff689cb1e594a73d914cd7c28",
+      "alt": {
+        "ua": "Приклад шаблонного сайту магазину автозапчастин",
+        "cz": "Ukázka šablonového webu prodejny autodílů",
+        "sk": "Ukážka šablónového webu predajne autodielov",
+        "en": "Example auto parts store website",
+        "pl": "Przykładowa strona sklepu motoryzacyjnego"
+      },
+      "sources": [
+        "content/cz/homepage/website_development_section/website_image_src",
+        "content/en/homepage/website_development_section/website_image_src",
+        "content/pl/homepage/website_development_section/website_image_src",
+        "content/sk/homepage/website_development_section/website_image_src",
+        "content/ua/homepage/website_development_section/website_image_src"
+      ],
+      "variants": []
+    }
+  ],
+  "missing": []
+}

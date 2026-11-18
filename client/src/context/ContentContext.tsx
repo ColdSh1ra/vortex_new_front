@@ -6,10 +6,11 @@ import { LANGUAGES } from '../types/content';
 import { interfaceTranslations } from '../locales';
 import { blogCopy } from '../blog/copy';
 import type { ContentCatalog, Language } from '../types/content';
+import { useLocation } from 'react-router-dom';
+import { languageFromSearch } from '../seo/urls';
+import site from '../../../shared/site.json';
 
-export const LANGUAGE_TAGS: Record<Language, string> = {
-  ua: 'uk', cz: 'cs', sk: 'sk', en: 'en', pl: 'pl',
-};
+export const LANGUAGE_TAGS: Record<Language, string> = site.languageCodes;
 
 const ContentContext = createContext<{
   catalog: ContentCatalog | null;
@@ -18,13 +19,14 @@ const ContentContext = createContext<{
   failed: boolean;
 } | null>(null);
 
-export function ContentProvider({ children, content = null, initialLanguage = 'ua' }: {
+export function ContentProvider({ children, content = null }: {
   children: ReactNode;
   content?: ContentCatalog | null;
   initialLanguage?: Language;
 }) {
   const [catalog, setCatalog] = useState(content);
-  const [language, setLanguageState] = useState<Language>(initialLanguage);
+  const location = useLocation();
+  const language = languageFromSearch(location.search);
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
@@ -39,21 +41,11 @@ export function ContentProvider({ children, content = null, initialLanguage = 'u
   }, [catalog]);
 
   useEffect(() => {
-    // Restore after hydration so server and client initially render the same language.
-    if (window.location.pathname === '/blog' || window.location.pathname.startsWith('/blog/')) return;
-    try {
-      const saved = localStorage.getItem('vortex-language');
-      if (LANGUAGES.includes(saved as Language)) setLanguageState(saved as Language);
-    } catch { /* The selector also works when storage is unavailable. */ }
-  }, []);
-
-  useEffect(() => {
     document.documentElement.lang = LANGUAGE_TAGS[language];
   }, [language]);
 
   const setLanguage = (next: Language) => {
     if (!LANGUAGES.includes(next)) return;
-    setLanguageState(next);
     document.cookie = `vortex-language=${next}; Path=/; Max-Age=31536000; SameSite=Lax`;
     try { localStorage.setItem('vortex-language', next); } catch { /* Optional persistence. */ }
   };

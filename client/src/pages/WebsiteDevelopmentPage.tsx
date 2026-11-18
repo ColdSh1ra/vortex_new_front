@@ -1,5 +1,6 @@
+import ChevronCircle from '../components/default/ChevronCircle';
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../components/default/LocalizedLink';
 import TrialRequestComponent from '../components/TrialRequestComponent';
 import { useI18n } from '../context/ContentContext';
 import {
@@ -151,7 +152,7 @@ function WebsiteDevelopmentPage() {
                 </ul>
                 <button className="website-plan-choose" type="button" onClick={() => choosePackage(plan.id)} aria-describedby={`website-plan-${plan.id}`}>
                   {t('websites.choose')}
-                  <span aria-hidden="true"><img src="/icons/chevron-right-double.svg" alt="" /></span>
+                  <ChevronCircle />
                 </button>
               </article>
             ))}

@@ -1,4 +1,12 @@
+# Public pages and their language variants are crawlable.
 User-agent: *
+Allow: /
+Disallow: /api/
+
+# Search/retrieval bots use the same public-content rules.
+User-agent: OAI-SearchBot
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
 Allow: /
 Disallow: /api/
 

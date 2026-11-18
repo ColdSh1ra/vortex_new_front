@@ -8,19 +8,21 @@ import { BlogProvider } from './blog/BlogContext';
 import type { BlogResource } from './blog/types';
 import { loadBlogRoute } from './blog/loadBlogRoute';
 import { buildPageSeo, renderSeoHead } from './seo/metadata';
+import { languageFromSearch } from './seo/urls';
 
 export { loadBlogRoute };
-export function render(url: string, initialContent: ContentCatalog, language: Language = 'ua', initialBlog: BlogResource | null = null) {
+export function render(url: string, initialContent: ContentCatalog, _language: Language = 'ua', initialBlog: BlogResource | null = null) {
+  const language = languageFromSearch(new URL(url, 'https://crm-vortex.com').search);
   const appHtml = renderToString(
     <React.StrictMode>
-      <ContentProvider content={initialContent} initialLanguage={language}>
-        <MemoryRouter initialEntries={[url]}>
+      <MemoryRouter initialEntries={[url]}>
+        <ContentProvider content={initialContent} initialLanguage={language}>
           <BlogProvider initialData={initialBlog}><AppRouter /></BlogProvider>
-        </MemoryRouter>
-      </ContentProvider>
+        </ContentProvider>
+      </MemoryRouter>
     </React.StrictMode>,
   );
 
-  const seo = buildPageSeo(url, language, initialBlog);
+  const seo = buildPageSeo(url, language, initialBlog, initialContent);
   return { appHtml, headHtml: renderSeoHead(seo), statusCode: seo.status, robots: seo.robots };
 }

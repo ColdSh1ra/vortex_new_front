@@ -1,0 +1,308 @@
+{
+  "label": "Integracje API",
+  "eyebrow": "Integracja z Vortex",
+  "connect": "Podłącz integrację",
+  "viewFeatures": "Możliwości integracji",
+  "featuresTitle": "Co daje integracja",
+  "linksTitle": "Oferty partnera",
+  "back": "Wszystkie integracje",
+  "relatedTitle": "Inne integracje z Vortex",
+  "pages": {
+    "tecdoc": {
+      "title": "TecDoc Inside",
+      "lead": "Oficjalna integracja z katalogiem TecDoc pozwala znajdować pojazdy, dobierać pasujące części i przeglądać informacje techniczne bezpośrednio w Vortex.",
+      "sections": [
+        {
+          "title": "Znajdź właściwy pojazd",
+          "paragraphs": [
+            "Rozpocznij dobór od numeru VIN, kodu silnika lub ręcznego wyszukiwania w katalogu. Dane marki, modelu i wersji pomagają pracować z właściwym pojazdem i szybciej przejść do przeznaczonych do niego części."
+          ],
+          "items": [
+            "Wyszukiwanie pojazdu po numerze VIN.",
+            "Wybór pojazdu po kodzie silnika lub ręcznie.",
+            "Uzupełnianie marki, modelu i wersji z katalogu."
+          ]
+        },
+        {
+          "title": "Dobieraj części według kategorii",
+          "paragraphs": [
+            "Przejdź do odpowiedniej grupy części i zawęź wyniki według producenta oraz parametrów. Filtry i ulubione marki ułatwiają odnalezienie potrzebnych pozycji wśród wielu propozycji dostępnych w katalogu."
+          ],
+          "items": [
+            "Nawigacja według kategorii i zespołów pojazdu.",
+            "Filtrowanie według marki i parametrów części.",
+            "Sprawdzanie, czy część pasuje do wybranego pojazdu."
+          ]
+        },
+        {
+          "title": "Sprawdzaj dane i zgodność",
+          "paragraphs": [
+            "Przed sprzedażą przejrzyj opis części, zdjęcia, parametry techniczne i numery referencyjne. Informacje o zamiennikach oraz zastosowaniu w innych pojazdach pomagają porównać możliwości i wybrać część zgodnie z potrzebami klienta."
+          ],
+          "items": [
+            "Numery części, oryginalne numery OEM i zamienniki.",
+            "Zdjęcia, opisy oraz parametry techniczne.",
+            "Zastosowanie według modelu, rocznika i innych danych pojazdu."
+          ]
+        }
+      ],
+      "links": []
+    },
+    "checkbox": {
+      "title": "Checkbox",
+      "lead": "Fiskalizuj sprzedaż części, usługi warsztatu i zwroty w Vortex przez programową kasę Checkbox — bez osobnego urządzenia kasowego.",
+      "sections": [
+        {
+          "title": "Operacje kasowe w znanym systemie",
+          "paragraphs": [
+            "Integracja łączy obsługę kasy przez pracownika z procesem sprzedaży. W Vortex możesz wykonywać codzienne operacje kasowe i wystawiać dokumenty fiskalne bez ręcznego przenoszenia danych sprzedaży do innego programu."
+          ],
+          "items": [
+            "Otwieranie i zamykanie kasy.",
+            "Wpłaty i wypłaty gotówki z kasy.",
+            "Fiskalizacja towarów, usług warsztatu i zwrotów."
+          ]
+        },
+        {
+          "title": "Przygotuj konto Checkbox",
+          "paragraphs": [
+            "Najpierw zarejestruj się w Checkbox i skonfiguruj strukturę swojej firmy. Utwórz punkt sprzedaży, kasę i konta kasjerów, którzy będą obsługiwać transakcje. Link do rejestracji w ramach oferty partnera znajdziesz poniżej."
+          ],
+          "items": [
+            "Rejestracja firmy w Checkbox.",
+            "Konfiguracja punktu sprzedaży i kasy.",
+            "Tworzenie kont kasjerów do codziennej pracy."
+          ]
+        },
+        {
+          "title": "Podłącz kasę do Vortex",
+          "paragraphs": [
+            "W ustawieniach integracji Vortex wpisz klucz licencyjny kasy i dodaj kasjerów, podając ich loginy oraz hasła do Checkbox. Po podłączeniu możesz wystawiać paragony fiskalne i drukować je na drukarce termicznej w ramach zwykłego procesu sprzedaży."
+          ],
+          "items": [
+            "Dodanie klucza licencyjnego kasy.",
+            "Podłączenie kasjerów przy użyciu danych Checkbox.",
+            "Obsługa wielu kont, kas i kasjerów."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Zarejestruj się w Checkbox",
+          "href": "https://my.checkbox.ua/auth/registration?registration_code=exzPKMg1NQFd"
+        }
+      ]
+    },
+    "vchasno": {
+      "title": "Vchasno.Kasa",
+      "lead": "Programowa kasa do fiskalizacji sprzedaży w Vortex: elektroniczne paragony, kasy i klucze kasjerów we wspólnym procesie obsługi zamówień oraz płatności.",
+      "sections": [
+        {
+          "title": "Jak działa fiskalizacja",
+          "paragraphs": [
+            "Pracownik rejestruje sprzedaż lub płatność w Vortex. System przekazuje do Vchasno.Kasa towary lub usługi, kwotę, rodzaj płatności, kasę i kasjera. Usługa wystawia paragon fiskalny i przesyła dane do urzędu skarbowego, a pracownik kontynuuje obsługę zamówienia."
+          ],
+          "items": [
+            "Sprzedaż części z magazynu lub zamówienia klienta.",
+            "Fiskalizacja usług naprawy i serwisu pojazdów.",
+            "Zwroty towarów z odpowiednim dokumentem fiskalnym."
+          ]
+        },
+        {
+          "title": "Co jest potrzebne do podłączenia",
+          "paragraphs": [
+            "Przygotuj konto Vchasno.Kasa, zarejestrowane punkty sprzedaży, kasy i klucze kasjerów. Następnie dodaj parametry integracji w Vortex. Zanim zespół rozpocznie pracę, sprawdź konfigurację za pomocą testowej fiskalizacji."
+          ],
+          "items": [
+            "Zarejestruj firmę i kwalifikowany podpis elektroniczny w usłudze.",
+            "Utwórz lub zaimportuj punkt sprzedaży i kasę.",
+            "Skonfiguruj grupy podatkowe i rodzaje płatności.",
+            "Dodaj klucz kasjera i parametry połączenia w Vortex.",
+            "Przeprowadź testową fiskalizację przed uruchomieniem."
+          ]
+        },
+        {
+          "title": "Wspólny proces dla sklepu i warsztatu",
+          "paragraphs": [
+            "Sprzedaż, klient, zamówienie i fiskalizacja pozostają w jednym procesie pracy. Ogranicza to ręczne powielanie danych i ułatwia obsługę wielu punktów sprzedaży. Oferty partnera dotyczące podłączenia Vchasno.Kasa są dostępne pod poniższymi linkami."
+          ],
+          "items": [
+            "Elektroniczny paragon dla klienta po płatności.",
+            "Obsługa płatności gotówkowych i bezgotówkowych.",
+            "Kontrola wielu kas, punktów sprzedaży i odpowiedzialnych kasjerów."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "−50% na pierwszą płatność",
+          "href": "https://service.vchasno.ua/prro-offer?utm_source=vortex"
+        },
+        {
+          "label": "50 UAH/mies. przez 6 miesięcy",
+          "href": "https://service.vchasno.ua/prro-offer-50?utm_source=vortex"
+        }
+      ]
+    },
+    "nova_poshta": {
+      "title": "Nova Poshta",
+      "lead": "Twórz ekspresowe listy przewozowe, przeglądaj przesyłki i drukuj dokumenty bezpośrednio w Vortex dzięki integracji API z Nova Poshta.",
+      "sections": [
+        {
+          "title": "Skonfiguruj nadawców",
+          "paragraphs": [
+            "Dodaj konta nadawców i wybierz dane używane domyślnie. Podczas tworzenia listu przewozowego możesz wskazać odpowiednie konto. To wygodne rozwiązanie, gdy zespół przygotowuje przesyłki w imieniu różnych nadawców."
+          ],
+          "items": [
+            "Podłączenie wielu kont nadawców.",
+            "Wybór konta podczas przygotowywania przesyłki.",
+            "Ustawienie domyślnego nadawcy."
+          ]
+        },
+        {
+          "title": "Wystawiaj ekspresowe listy przewozowe",
+          "paragraphs": [
+            "Wpisz odbiorcę, sposób dostawy i parametry paczki w ramach zwykłego procesu pracy. Integracja obsługuje dostawę do oddziału lub pod adres, ustawienia przekazu pieniężnego i kontroli płatności, a także przesyłki wielopaczkowe."
+          ],
+          "items": [
+            "Wybór oddziału lub adresu dostawy.",
+            "Opis przesyłki, liczba paczek i ich wymiary.",
+            "Drukowanie etykiet paczek i listu przewozowego na A4."
+          ]
+        },
+        {
+          "title": "Śledź przesyłki",
+          "paragraphs": [
+            "Lista obejmuje listy przewozowe utworzone w Vortex oraz dokumenty zewnętrzne, których status sprawdzano. Baza oddziałów aktualizuje się przez API; wybór oddziału w zamówieniu jest dostępny nawet bez aktywacji integracji."
+          ],
+          "items": [
+            "Przeglądanie i zbiorcza aktualizacja statusów przesyłek.",
+            "Dodawanie listów przewozowych do zadań kuriera.",
+            "Aktualna baza oddziałów przy obsłudze zamówień."
+          ]
+        }
+      ],
+      "links": []
+    },
+    "turboSMS": {
+      "title": "TurboSMS",
+      "lead": "Podłącz konto TurboSMS do Vortex, aby ręcznie wysyłać wiadomości, korzystać z szablonów i automatycznie informować klientów o ważnych zdarzeniach.",
+      "sections": [
+        {
+          "title": "Wiadomości i szablony",
+          "paragraphs": [
+            "Wyślij SMS na wybrany numer bezpośrednio z Vortex. Przygotuj szablony dla powtarzalnych sytuacji: do treści można wstawiać dane zamówienia, na przykład jego numer za pomocą {ORDER_ID}. Ułatwia to kontakt z klientami i ogranicza ręczne wpisywanie wiadomości."
+          ],
+          "items": [
+            "Ręczne wysyłanie SMS z dowolną treścią.",
+            "Szablony z wstawianiem numeru zamówienia.",
+            "Wysyłanie wiadomości do wielu odbiorców."
+          ]
+        },
+        {
+          "title": "Informuj klienta automatycznie",
+          "paragraphs": [
+            "Skonfiguruj wiadomości wyzwalane zdarzeniami w procesie pracy. Klient może otrzymywać SMS o gotowym lub anulowanym zamówieniu, a także o wysłaniu paczki. Wiadomość o anulowaniu pomaga szybko wyjaśnić zmianę statusu i uniknąć nieporozumień."
+          ],
+          "items": [
+            "Powiadomienia o gotowym i wysłanym zamówieniu.",
+            "SMS o anulowaniu zamówienia.",
+            "Przypomnienia o wymianie oleju."
+          ]
+        },
+        {
+          "title": "Kontroluj historię i saldo",
+          "paragraphs": [
+            "Przeglądaj historię wysłanych SMS oraz saldo konta TurboSMS w Vortex. Kontrola salda pomaga odpowiednio wcześnie doładować konto, aby powiadomienia o zamówieniach i przypomnienia były nadal dostępne dla zespołu."
+          ],
+          "items": [
+            "Historia wysłanych wiadomości.",
+            "Podgląd pozostałego salda SMS.",
+            "Powiadomienia o niemal wyczerpanym saldzie."
+          ]
+        }
+      ],
+      "links": []
+    },
+    "bank_API": {
+      "title": "API banków",
+      "lead": "Przeglądaj transakcje podłączonych rachunków firmowych w Vortex i twórz operacje finansowe na podstawie rzeczywistych przepływów pieniężnych.",
+      "sections": [
+        {
+          "title": "Podłącz rachunek firmowy",
+          "paragraphs": [
+            "Integracja z bankiem pomaga zautomatyzować pracę z operacjami finansowymi. Dane podłączonego rachunku pojawiają się w Vortex, aby pracownik lub księgowy mogli obsługiwać je w systemie ewidencji. Dostępność połączenia zależy od banku i rodzaju rachunku."
+          ],
+          "items": [
+            "Podłączenie rachunku do obsługi transakcji bankowych.",
+            "Podgląd rzeczywistych wpływów i wydatków.",
+            "Potwierdzenie obsługi banku i rodzaju rachunku przed podłączeniem."
+          ]
+        },
+        {
+          "title": "Zamieniaj transakcje w operacje finansowe",
+          "paragraphs": [
+            "Wybierz transakcję bankową i utwórz na jej podstawie operację finansową Vortex jednym kliknięciem. Po zaksięgowaniu znika ona z listy nieprzetworzonych transakcji, dzięki czemu łatwiej ustalić, które przepływy nadal wymagają uwagi."
+          ],
+          "items": [
+            "Tworzenie operacji finansowej z transakcji bankowej.",
+            "Mniej ręcznego przepisywania kwot i danych płatności.",
+            "Osobna lista transakcji oczekujących na przetworzenie."
+          ]
+        },
+        {
+          "title": "Znajduj potrzebne płatności",
+          "paragraphs": [
+            "Pracuj z operacjami na jednej liście i zawężaj ją według potrzebnych kryteriów. Używaj filtrów rachunku i rodzaju operacji lub wyszukiwania ogólnego, aby odnaleźć konkretną płatność po znanej kwocie bądź innych danych."
+          ],
+          "items": [
+            "Filtry rachunku, wpływów i wydatków.",
+            "Wyszukiwanie po kwocie i odbiorcy.",
+            "Wyszukiwanie płatności po opisie."
+          ]
+        }
+      ],
+      "links": []
+    },
+    "binotel": {
+      "title": "Binotel",
+      "lead": "Połącz telefonię Binotel z ewidencją klientów w Vortex: kontroluj połączenia, otwieraj karty klientów i przeglądaj historię kontaktów.",
+      "sections": [
+        {
+          "title": "Nie trać zapytań klientów",
+          "paragraphs": [
+            "Przeglądaj nieodebrane połączenia, aby oddzwaniać do klientów, z którymi nie udało się porozmawiać. Informacje o połączeniach w Vortex pomagają zespołowi kontrolować zapytania i planować kontakt zwrotny w codziennej pracy."
+          ],
+          "items": [
+            "Kontrola nieodebranych połączeń.",
+            "Dane potrzebne do oddzwonienia do klienta.",
+            "Historia połączeń w karcie klienta Vortex."
+          ]
+        },
+        {
+          "title": "Rozpoznawaj klienta podczas połączenia",
+          "paragraphs": [
+            "Gdy klient dzwoni ze znanego numeru, otwórz jego kartę w Vortex jednym kliknięciem. Jeśli numer nie jest jeszcze zarejestrowany, wyskakujące okno pomoże szybko utworzyć nowego klienta bez przerywania procesu pracy."
+          ],
+          "items": [
+            "Przejście do klienta z połączenia przychodzącego.",
+            "Szybka rejestracja klienta z nowego numeru.",
+            "Dostęp do historii wcześniejszych kontaktów."
+          ]
+        },
+        {
+          "title": "Analizuj rozmowy i jakość obsługi",
+          "paragraphs": [
+            "Odsłuchuj nagrania połączeń, aby analizować rzeczywiste sytuacje i poprawiać jakość obsługi. Historia kontaktów pomaga odtworzyć szczegóły ustaleń, a przykłady rozmów można wykorzystywać podczas szkolenia pracowników."
+          ],
+          "items": [
+            "Odsłuchiwanie nagrań rozmów.",
+            "Kontrola jakości komunikacji z klientami.",
+            "Analiza połączeń podczas szkolenia zespołu."
+          ]
+        }
+      ],
+      "links": []
+    }
+  }
+}

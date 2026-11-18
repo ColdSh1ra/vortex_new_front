@@ -1,0 +1,2597 @@
+{
+  "homepage": {
+    "title": "CRM VORTEX —\nspolehlivý a ověřený systém evidence\npro prodejny autodílů a autoservisy",
+    "subtitle": "CRM Vortex poskytuje plnou kontrolu nad prodejnou autodílů i autoservisem: od evidence zboží a objednávek po finance a výkon zaměstnanců. Jediný systém spojuje 95 % operací v jednom rozhraní, omezuje ztráty, zefektivňuje práci týmu a zvyšuje zisk.",
+    "about_us_block": {
+      "about_us_title": "O nás",
+      "about_us_subtitle": "Vortex nabízí nástroje, které v jiných CRM nenajdete: flexibilní správu skladu, samostatná rozhraní pro manažery a baliče, rozšířenou matici stavů a automatickou fiskalizaci. Zpřesněte procesy, omezte ztracené objednávky a soustřeďte se na rozvoj podnikání.",
+      "about_us_blocks": [
+        {
+          "about_us_title": "Evidence prodejny autodílů a autoservisu na jednom místě",
+          "about_us_description": "Řešení navržené pro váš obor, se zaměřením na sklad, objednávky, zákazníky a evidenci služeb, bez zbytečných funkcí.",
+          "about_us_image_path": "/imgs/3dicons_premium/monitor.png"
+        },
+        {
+          "about_us_title": "Automatizace bez komplikací",
+          "about_us_description": "Nahraďte Excel moderním systémem, který zjednodušuje evidenci, zrychluje zpracování objednávek a pomáhá předcházet chybám.",
+          "about_us_image_path": "/imgs/3dicons_premium/folder.png"
+        },
+        {
+          "about_us_title": "Integrace s dodavateli",
+          "about_us_description": "Připojte se k hlavním dodavatelům a katalogům autodílů. Ceny a zásoby se aktualizují automaticky, bez ruční práce.",
+          "about_us_image_path": "/imgs/3dicons_premium/like.png"
+        },
+        {
+          "about_us_title": "Webové stránky jako dárek",
+          "about_us_description": "Vytvoříme moderní web pro vaši prodejnu. Získejte šablonový web zdarma nebo řešení na míru vašim potřebám.",
+          "about_us_image_path": "/imgs/3dicons_premium/gift.png"
+        },
+        {
+          "about_us_title": "Sdílení informací s dalšími zákazníky Vortex",
+          "about_us_description": "Spojte se s dalšími prodejnami používajícími Vortex a sdílejte informace o dostupnosti dílů.",
+          "about_us_image_path": "/imgs/3dicons_premium/message.png"
+        },
+        {
+          "about_us_title": "Růst zisku",
+          "about_us_description": "Kontrola každého kroku od poptávky po prodej. Méně ztrát, lepší služby, více objednávek.",
+          "about_us_image_path": "/imgs/3dicons_premium/wallet.png"
+        }
+      ],
+      "visible": true
+    },
+    "hero_page_slider_section": {
+      "section_title": "Takto bude vypadat váš systém",
+      "slide_image_paths": [
+        "/imgs/slider_images/slide_1.png",
+        "/imgs/slider_images/slide_2.png",
+        "/imgs/slider_images/slide_3.png"
+      ],
+      "visible": true
+    },
+    "why_vortex_section": {
+      "section_title": "Co Vortex umí?",
+      "section_description": "Vortex nabízí rozsáhlé možnosti, promyšlené do nejmenších detailů a vyvinuté týmem odborníků z oboru.",
+      "cards": [
+        {
+          "title": "Obchodní partneři",
+          "description": "Historie prodejů, servisních prací, nájezdu vozidel a dokumentů. Výkonné párování vzájemných účtů, individuální přirážky a úvěrové podmínky.",
+          "image_src": ""
+        },
+        {
+          "title": "Sklad",
+          "description": "Automatický nákup (MIN-MAX), adresné skladování, kontrola vychystávání zboží a mnoho dalšího.",
+          "image_src": ""
+        },
+        {
+          "title": "Finance",
+          "description": "Kontrola všech příjmů a výdajů: plateb dodavatelům, mezd, pokladen manažerů a dalších finančních operací, vše ve více měnách.",
+          "image_src": ""
+        },
+        {
+          "title": "Fiskalizace",
+          "description": "Ve spojení s Checkbox můžete fiskalizovat prodeje bez instalace registrační pokladny.",
+          "image_src": ""
+        }
+      ],
+      "visible": true
+    },
+    "vortex_audience_section": {
+      "section_title": "Pro koho je Vortex?",
+      "cards": [
+        {
+          "title": "Prodejny autodílů",
+          "description": "pro pohodlnou správu zboží a objednávek",
+          "cta_text": "Vyzkoušet zdarma",
+          "image_src": "/imgs/3d_clay/3dicons-bag-dynamic-clay.png"
+        },
+        {
+          "title": "Autoservisy a opravny",
+          "description": "pro správu prací, zásob a vztahů se zákazníky",
+          "cta_text": "Vyzkoušet zdarma",
+          "image_src": "/imgs/3d_clay/3dicons-tool-dynamic-clay.png"
+        },
+        {
+          "title": "Velkoobchodní společnosti",
+          "description": "pro skladovou evidenci a efektivní logistiku",
+          "cta_text": "Vyzkoušet zdarma",
+          "image_src": "/imgs/3d_clay/3dicons-location-dynamic-clay.png"
+        },
+        {
+          "title": "Internetové obchody",
+          "description": "pro integraci online prodeje a rychlé zpracování objednávek",
+          "cta_text": "Vyzkoušet zdarma",
+          "image_src": "/imgs/3d_clay/3dicons-computer-dynamic-clay.png"
+        }
+      ],
+      "visible": true
+    },
+    "client_testimonials_section": {
+      "section_title": "Co o nás říkají zákazníci",
+      "pros_title": "Lorem ipsum Vortex:",
+      "cons_title": "Dolor sit amet Vortex:",
+      "reviews": [
+        {
+          "company_name": "Lorem Company",
+          "company_type": "Lorem ipsum dolor",
+          "image_src": "",
+          "pros": [
+            "Lorem ipsum",
+            "Dolor sit amet",
+            "Consectetur adipiscing"
+          ],
+          "cons": [
+            "Tempor incididunt",
+            "Labore et dolore"
+          ],
+          "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+          "link_text": "Lorem ipsum",
+          "link_href": "#"
+        },
+        {
+          "company_name": "Ipsum Group",
+          "company_type": "Consectetur adipiscing",
+          "image_src": "",
+          "pros": [
+            "Aenean commodo",
+            "Ligula eget dolor",
+            "Cum sociis natoque"
+          ],
+          "cons": [
+            "Donec quam felis",
+            "Ultricies nec"
+          ],
+          "quote": "Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.",
+          "link_text": "Lorem ipsum",
+          "link_href": "#"
+        },
+        {
+          "company_name": "Dolor Service",
+          "company_type": "Eiusmod tempor",
+          "image_src": "",
+          "pros": [
+            "Integer tincidunt",
+            "Cras dapibus",
+            "Vivamus elementum"
+          ],
+          "cons": [
+            "Aenean vulputate",
+            "Eleifend tellus"
+          ],
+          "quote": "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.",
+          "link_text": "Lorem ipsum",
+          "link_href": "#"
+        },
+        {
+          "company_name": "Amet Market",
+          "company_type": "Magna aliqua",
+          "image_src": "",
+          "pros": [
+            "Phasellus viverra",
+            "Nulla ut metus",
+            "Varius laoreet"
+          ],
+          "cons": [
+            "Quisque rutrum",
+            "Aenean imperdiet"
+          ],
+          "quote": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi nam eget dui.",
+          "link_text": "Lorem ipsum",
+          "link_href": "#"
+        }
+      ],
+      "visible": true
+    },
+    "integrations_catalog_section": {
+      "section_title": "API integrace Vortex",
+      "section_description": "Vyhledávejte díly, evidujte tržby, připravujte zásilky, zpracovávejte bankovní transakce a komunikujte se zákazníky v jednom systému. Propojte potřebné služby s Vortex přes API bez opakovaného zadávání dat a přepínání mezi aplikacemi.",
+      "cards": [
+        {
+          "title": "TecDoc Inside",
+          "image_src": "/imgs/api-integrations/tecdoc-int-logo.svg",
+          "features": [
+            "Vyhledání vozidla podle VIN",
+            "Výběr dílů pro vozidlo, filtrování podle oblíbených značek a konstrukčních celků",
+            "Použití dílů ve vozidlech",
+            "Vyhledávání informací o dílech",
+            "Výběr dílů v katalogu největší světové databáze"
+          ],
+          "link_text": "Více informací",
+          "link_href": "/integrations/tecdoc"
+        },
+        {
+          "title": "Checkbox",
+          "image_src": "/imgs/api-integrations/checkbox-int-logo.svg",
+          "features": [
+            "Online pokladna přímo ve Vortex",
+            "Vytváření a tisk fiskálních účtenek na termotiskárnách",
+            "Vydávání a vytváření fiskálních účtenek",
+            "Bez nákladů na nákup zařízení",
+            "Pohodlná správa připojení",
+            "Nastavení více účtů Checkbox a více pokladen či pokladníků v jednom účtu"
+          ],
+          "link_text": "Více informací",
+          "link_href": "/integrations/checkbox"
+        },
+        {
+          "title": "Vchasno.Kasa",
+          "image_src": "/imgs/api-integrations/vchasno-kasa-logo.svg",
+          "features": [
+            "Fiskalizace prodeje dílů a služeb autoservisu ve Vortex",
+            "Elektronické účtenky a odesílání údajů ukrajinské daňové správě",
+            "Propojení provozoven, pokladen a klíčů pokladních",
+            "Hotovostní i bezhotovostní platby a vrácení zboží",
+            "Jednotný postup pro objednávku, platbu a účtenku"
+          ],
+          "link_text": "Více informací",
+          "link_href": "/integrations/vchasno",
+          "partner_links": [
+            {
+              "label": "−50 % na první platbu",
+              "href": "https://service.vchasno.ua/prro-offer?utm_source=vortex"
+            },
+            {
+              "label": "50 UAH měsíčně po dobu 6 měsíců",
+              "href": "https://service.vchasno.ua/prro-offer-50?utm_source=vortex"
+            }
+          ]
+        },
+        {
+          "title": "Nova Poshta",
+          "image_src": "/imgs/api-integrations/np-int-logo.svg",
+          "features": [
+            "Nastavení výchozího odesílatele",
+            "Vytváření expresních nákladních listů pro doručení na pobočku či adresu, s kontrolou platby i bez ní, pro jeden či více balíků a s dalšími možnostmi",
+            "Tisk štítků zásilek a celých expresních nákladních listů na A4",
+            "Aktualizace databáze poboček přes API"
+          ],
+          "link_text": "Více informací",
+          "link_href": "/integrations/nova_poshta"
+        },
+        {
+          "title": "Turbo SMS",
+          "image_src": "/imgs/api-integrations/turbosms-int-logo.svg",
+          "features": [
+            "Automatické odesílání SMS při různých událostech",
+            "Ruční odesílání SMS s vlastním textem nebo šablonou",
+            "Hromadné odesílání SMS více příjemcům",
+            "Historie odeslaných SMS",
+            "Sledování zůstatku a upozornění na nízký kredit SMS"
+          ],
+          "link_text": "Více informací",
+          "link_href": "/integrations/turboSMS"
+        },
+        {
+          "title": "Bankovní API",
+          "image_src": "/imgs/api-integrations/banks-api-int-logo.svg",
+          "features": [
+            "Připojení k vašemu bankovnímu účtu",
+            "Zobrazení posledních transakcí",
+            "Vytvoření finanční transakce ve Vortex ze skutečné bankovní transakce jedním kliknutím!",
+            "Všechny transakce v jednom seznamu s filtry podle účtu a typu operace a vyhledáváním podle částky, příjemce, poznámky a dalších údajů"
+          ],
+          "link_text": "Více informací",
+          "link_href": "/integrations/bank_API"
+        },
+        {
+          "title": "Binotel",
+          "image_src": "/imgs/api-integrations/binotel-int-logo.svg",
+          "features": [
+            "Kontrola zmeškaných hovorů",
+            "Historie hovorů zákazníka ve Vortex",
+            "Rychlé vytvoření zákazníka při hovoru z neregistrovaného čísla",
+            "Poslech hovorů a kontrola kvality",
+            "Otevření profilu zákazníka ve Vortex při hovoru z registrovaného čísla"
+          ],
+          "link_text": "Více informací",
+          "link_href": "/integrations/binotel"
+        }
+      ],
+      "visible": true
+    },
+    "car_service_section": {
+      "heading": "Evidence autoservisu",
+      "description": "Vortex pomáhá s evidencí nejen prodejnám autodílů, ale také autoservisům.",
+      "car_service_features": [
+        "Správa katalogu servisních prací",
+        "Správa servisních stání a mechaniků",
+        "Objednání zákazníka na konkrétní datum",
+        "Přehledný grafický rozvrh autoservisu",
+        "Správa garáže zákazníka",
+        "Historie nájezdu",
+        "Vytváření připomínek",
+        "Tisk dokumentů: protokoly, faktury, zakázkové listy a diagnostika",
+        "Výpočet mezd mechaniků a servisních poradců",
+        "Přehledné a informativní statistiky"
+      ],
+      "visible": true,
+      "paragraphs": [
+        "Jako majitelé autoservisu jsme při vývoji modulu vycházeli z vlastních zkušeností, včetně všech problémů a detailů.",
+        "Když jsme začali program dodávat dalším autoservisům na Ukrajině, jejich přístup a představy jsme také zohlednili ve vývoji.",
+        "Když se připojíte, pomůžete nám tvořit nejlepší systém evidence pro autoservisy a prodejny autodílů."
+      ],
+      "link_text": "Více o evidenci autoservisu",
+      "link_target": "/car-service",
+      "image": "/imgs/laptop-screenshot.png",
+      "image_alt": "Rozhraní autoservisu Vortex na notebooku"
+    },
+    "website_development_section": {
+      "heading": "Tvorba webových stránek",
+      "gift_message": "Používejte VORTEX a získejte zdarma web pro svou prodejnu autodílů nebo autoservis!",
+      "description_paragraphs": [
+        "Náš šablonový web splňuje potřeby více než 80 % našich zákazníků.",
+        "Web je rychlý, přehledný a plně integrovaný se systémem evidence.",
+        "Katalogy, zásoby, ceny, popisy a obrázky z CRM se automaticky přenášejí na web.",
+        "Logo, barvy, menu, texty a další prvky můžete měnit sami.",
+        "Nabízíme také SEO optimalizaci, nastavení Google Ads a další nástroje propagace webu."
+      ],
+      "website_image_src": "/imgs/websites/site_2.png",
+      "benefit_groups": [
+        {
+          "items": [
+            "Responzivní",
+            "Efektivní",
+            "Rychlý",
+            "Optimalizovaný",
+            "Přehledný",
+            "Funkční"
+          ],
+          "image_src": "/imgs/3dicons_premium/3d-rocket-premium.png"
+        },
+        {
+          "items": [
+            "Katalog zboží",
+            "Vybrané zboží na hlavní stránce",
+            "SEO optimalizace*",
+            "Výběr dílů podle TecDoc*",
+            "LiqPay*"
+          ],
+          "image_src": "/imgs/3dicons_premium/3d-fire.png",
+          "note": "*placené služby"
+        }
+      ],
+      "upgrade_message": "Svůj web můžete rozšířit o další užitečné funkce výběrem balíčku „Praktický“ nebo „Maximální“.",
+      "cta_text": "Více o webu",
+      "visible": true,
+      "website_image_alt": "Ukázka šablonového webu prodejny autodílů",
+      "cta_target": "/websites"
+    },
+    "vortex_pricing_section": {
+      "visible": false,
+      "section_title": "Balíčky Vortex",
+      "section_description": "",
+      "plans": [],
+      "billing_labels": {
+        "monthly": "měsíčně",
+        "yearly": "ročně",
+        "one_time": "jednorázová platba"
+      }
+    },
+    "hero": {
+      "cta_text": "Vyzkoušet zdarma",
+      "cta_target": "#trial-request",
+      "image": "/bgs/logo2.svg",
+      "image_alt": "Vortex",
+      "screenshots": [
+        {
+          "image": "/imgs/vx-screenshot-1.png",
+          "alt": ""
+        },
+        {
+          "image": "/imgs/vx-screenshot-2.png",
+          "alt": ""
+        },
+        {
+          "image": "/imgs/vx-screenshot-3.png",
+          "alt": ""
+        }
+      ]
+    },
+    "suppliers_section": {
+      "visible": true,
+      "title": "Všichni dodavatelé na jednom místě",
+      "description": "Vortex sdružuje zásoby všech dodavatelů na jednom místě a usnadňuje spolupráci s nimi. Integrace umožňují automaticky přijímat ceníky, vytvářet objednávky a stahovat dodací listy přes API.",
+      "image": "",
+      "image_alt": "Dodavatelé připojení k systému Vortex",
+      "suppliers": [
+        {
+          "id": "supplier-1",
+          "name": "Elit",
+          "logo": "/imgs/integrations/Elit.png",
+          "logo_alt": "Elit"
+        },
+        {
+          "id": "supplier-2",
+          "name": "Technomir",
+          "logo": "/imgs/integrations/technomir-logo.png",
+          "logo_alt": "Technomir"
+        },
+        {
+          "id": "supplier-3",
+          "name": "BM Parts",
+          "logo": "/imgs/integrations/bm-logo.png",
+          "logo_alt": "BM Parts"
+        },
+        {
+          "id": "supplier-4",
+          "name": "AutoOriginal",
+          "logo": "/imgs/integrations/autooriginal.png",
+          "logo_alt": "AutoOriginal"
+        },
+        {
+          "id": "supplier-5",
+          "name": "S-Line",
+          "logo": "/imgs/integrations/s-line-logo.svg",
+          "logo_alt": "S-Line"
+        },
+        {
+          "id": "supplier-6",
+          "name": "Omega",
+          "logo": "/imgs/integrations/omega-logo.jpg",
+          "logo_alt": "Omega"
+        },
+        {
+          "id": "supplier-7",
+          "name": "Uniq Trade",
+          "logo": "/imgs/integrations/uniq_logo.png",
+          "logo_alt": "Uniq Trade"
+        },
+        {
+          "id": "supplier-8",
+          "name": "ASG",
+          "logo": "/imgs/integrations/ASG.png",
+          "logo_alt": "ASG"
+        },
+        {
+          "id": "supplier-9",
+          "name": "Inter Cars",
+          "logo": "/imgs/integrations/intercars_logo.png",
+          "logo_alt": "Inter Cars"
+        },
+        {
+          "id": "supplier-10",
+          "name": "Bastion",
+          "logo": "/imgs/integrations/bastion-logo.png",
+          "logo_alt": "Bastion"
+        },
+        {
+          "id": "supplier-11",
+          "name": "4Cars",
+          "logo": "/imgs/integrations/forcars.png",
+          "logo_alt": "4Cars"
+        },
+        {
+          "id": "supplier-12",
+          "name": "Twin",
+          "logo": "/imgs/integrations/twin.png",
+          "logo_alt": "Twin"
+        },
+        {
+          "id": "supplier-13",
+          "name": "Groupauto Ukraine",
+          "logo": "/imgs/integrations/vladislav.png",
+          "logo_alt": "Groupauto Ukraine"
+        },
+        {
+          "id": "supplier-14",
+          "name": "Ford.org.ua",
+          "logo": "/imgs/integrations/ford_org_ua.png",
+          "logo_alt": "Ford.org.ua"
+        },
+        {
+          "id": "supplier-15",
+          "name": "Partline",
+          "logo": "/imgs/integrations/partline-logo.png",
+          "logo_alt": "Partline"
+        }
+      ]
+    },
+    "sync_section": {
+      "visible": true,
+      "title": "Vortex Sync",
+      "paragraphs": [
+        "Naše technologie Sync umožňuje rychle nastavit online výměnu zásob a objednávek s jinou prodejnou používající Vortex.",
+        "Sami rozhodujete, zda vás ostatní zákazníci uvidí, jaké zásoby jim zpřístupníte a jakou přirážku použijete.",
+        "Zásoby přijaté přes Sync mají zvláštní označení. Jejich objednání automaticky vytvoří objednávku u partnera a upozorní manažery. Stejné upozornění dostanete, když partner objedná u vás.",
+        "Zásoby nemusíte aktualizovat ručně — Sync to udělá za vás."
+      ],
+      "client_label": "Zákazník Vortex {number}",
+      "image": "",
+      "image_alt": "Rychlá výměna zboží mezi dvěma zákazníky Vortex Sync"
+    }
+  },
+  "FAQ": [
+    {
+      "topic": "Jak dlouho platí demoverze?",
+      "answer": "<p>Demoverze je zdarma na 14 dní a nabízí stejné funkce jako placená verze.</p>"
+    },
+    {
+      "topic": "Zůstanou má data zachována po skončení zkušební doby?",
+      "answer": "<p>Doporučujeme vyzkoušet všechny funkce bez obav z chyb. Po skončení testování můžeme podle vašeho přání libovolná data smazat nebo ponechat.</p>"
+    },
+    {
+      "topic": "Jak chráníte má data před ztrátou a předáním třetím stranám?",
+      "answer": "<p>Naše servery jsou umístěny ve spolehlivých datových centrech v Německu a Finsku. Soubory se zásobami, obchodními partnery a jejich zůstatky si můžete stáhnout sami nebo nastavit automatické zasílání e-mailem. Lze také uzavřít vzájemnou dohodu o mlčenlivosti.</p>"
+    },
+    {
+      "topic": "Jsou aktualizace zdarma?",
+      "answer": "<p>Ano, aktualizace jsou zdarma.</p>"
+    },
+    {
+      "topic": "Potřebuji další funkce. Co můžete nabídnout?",
+      "answer": "<p>Pokud v programu nenajdete řešení svých potřeb, můžeme po dohodě o ceně a termínu vyvinout další funkce.</p>"
+    },
+    {
+      "topic": "Jak začít?",
+      "answer": "<ol><li>Nahrajte zásoby pomocí importéru ceníků a v poli skladu vyberte „-1“. Soubor musí obsahovat čtyři sloupce: číslo dílu, značku, množství a nákupní cenu.</li><li>Importujte zákazníky přes Zákazníci → Seznam → Importovat vpravo nahoře.</li><li>Nastavte automatické stahování ceníků dodavatelů přes Administrace → Externí služby a synchronizace.</li><li>Vytvořte uživatele přes Administrace → Uživatelé → Seznam → Přidat vpravo nahoře.</li></ol>"
+    }
+  ],
+  "videos": [
+    {
+      "topic": "Jak nahrát ceník?",
+      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=g95YUJmOvXM\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Nahrání ceníku</strong><span>Návod k nastavení</span><i aria-hidden=\"true\">▶</i></a></div>"
+    },
+    {
+      "topic": "Jak vytvořit objednávku u dodavatele?",
+      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+від+постачальника\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Objednávka u dodavatele</strong><span>Videonávod krok za krokem</span><i aria-hidden=\"true\">▶</i></a></div>"
+    },
+    {
+      "topic": "Jak vytvořit objednávku ze skladu?",
+      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+зі+складу\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Objednávka ze skladu</strong><span>Videonávod krok za krokem</span><i aria-hidden=\"true\">▶</i></a></div>"
+    },
+    {
+      "topic": "Jak zaevidovat příjem zboží?",
+      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=JkVtG0KNoVw\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Objednání a příjem zboží</strong><span>Návod k nastavení</span><i aria-hidden=\"true\">▶</i></a><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+великий+прийом+товару\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Velký příjem zboží</strong><span>Návod k nastavení</span><i aria-hidden=\"true\">▶</i></a></div>"
+    }
+  ],
+  "contacts": {
+    "title": "Kontakty",
+    "subtitle": "Máte dotazy?\nVždy vám rádi pomůžeme, jsme tu pro vás.",
+    "workers": [
+      {
+        "contact_topic": "Zkušební verze a konzultace",
+        "full_name": "Kristina Vasylyniak",
+        "role": "Technická podpora",
+        "phone": "+38 (097) 866-36-90",
+        "photo_path": "/imgs/contacts/worker-1.svg",
+        "messenger_links": {
+          "telegram": "https://t.me/vortex_support",
+          "viber": "viber://chat?number=%2B380978663690",
+          "whatsapp": "https://wa.me/380978663690",
+          "email": "mailto:support@crm-vortex.com"
+        }
+      },
+      {
+        "contact_topic": "Integrace, technické dotazy a vývoj",
+        "full_name": "Oleksandr Vasyliev",
+        "role": "Vývojář",
+        "phone": "+38 (095) 677-50-02",
+        "photo_path": "/imgs/contacts/worker-2.svg",
+        "messenger_links": {
+          "telegram": "https://t.me/vortex_development",
+          "viber": "viber://chat?number=%2B380956775002",
+          "whatsapp": "https://wa.me/380956775002",
+          "email": "mailto:development@crm-vortex.com"
+        }
+      },
+      {
+        "contact_topic": "Spolupráce a obchodní nabídky",
+        "full_name": "Volodymyr Markovych",
+        "role": "Zakladatel",
+        "phone": "+38 (066) 728-23-02",
+        "photo_path": "/imgs/contacts/worker-3.svg",
+        "messenger_links": {
+          "telegram": "https://t.me/vortex_business",
+          "viber": "viber://chat?number=%2B380667282302",
+          "email": "mailto:business@crm-vortex.com"
+        }
+      },
+      {
+        "contact_topic": "Spolupráce a obchodní nabídky",
+        "full_name": "Artem Kryvorutchenko",
+        "role": "Zakladatel",
+        "phone": "+38 (050) 957-66-74",
+        "photo_path": "/imgs/contacts/worker-4.svg",
+        "messenger_links": {
+          "viber": "viber://chat?number=%2B380509576674",
+          "email": "mailto:partnership@crm-vortex.com"
+        }
+      }
+    ]
+  },
+  "settings": {
+    "pricing_calculator": {
+      "currency": "$",
+      "base_monthly_price": 50,
+      "increment": 20,
+      "default_manager_count": 3,
+      "default_store_count": 1,
+      "integrations": [
+        {
+          "id": "tecdoc",
+          "label": "TecDoc",
+          "price": 25,
+          "billing_period": "monthly",
+          "selected_by_default": false
+        },
+        {
+          "id": "binotel",
+          "label": "Binotel",
+          "price": 50,
+          "billing_period": "one_time",
+          "selected_by_default": true
+        },
+        {
+          "id": "nova-poshta",
+          "label": "Nova Poshta",
+          "price": 20,
+          "billing_period": "one_time",
+          "selected_by_default": true
+        }
+      ],
+      "included_features": [
+        "Neomezený počet účtů ostatních zaměstnanců",
+        "Péče o zákazníky",
+        "Neomezené nahrávání ceníků",
+        "Všechny dostupné statistiky",
+        "Všechny funkce finanční evidence"
+      ]
+    }
+  },
+  "stats": {
+    "totalClicks": 0,
+    "formSubmissions": 0
+  },
+  "ui": {
+    "nav.home": "Domů",
+    "nav.carService": "Evidence autoservisu",
+    "nav.websites": "Tvorba webových stránek",
+    "nav.pricing": "Ceny",
+    "nav.faq": "Dotazy",
+    "nav.contacts": "Kontakty",
+    "common.home": "Hlavní stránka",
+    "common.breadcrumbs": "Drobečková navigace",
+    "common.tryFree": "Vyzkoušet zdarma",
+    "common.tryDemo": "Požádat o ukázku",
+    "common.privacy": "Zásady ochrany osobních údajů",
+    "common.language": "Jazyk webu",
+    "common.navigation": "Hlavní navigace",
+    "common.mobileNavigation": "Mobilní navigace",
+    "common.openMenu": "Otevřít menu",
+    "common.closeMenu": "Zavřít menu",
+    "common.socials": "Sociální sítě",
+    "common.partner": "TecAlliance — oficiální partner",
+    "common.loading": "Načítání…",
+    "common.loadError": "Stránku se nepodařilo načíst.",
+    "common.previous": "Předchozí snímek",
+    "common.next": "Další snímek",
+    "common.slide": "Snímek {number}",
+    "common.messengers": "Komunikátory: {name}",
+    "faq.title": "FAQ",
+    "faq.functionality": "Funkce",
+    "pricing.title": "Vaše cena za používání VORTEX",
+    "pricing.managers": "Vyberte počet účtů pro manažery",
+    "pricing.branches": "Zadejte počet poboček",
+    "pricing.decrease": "Snížit: {label}",
+    "pricing.increase": "Zvýšit: {label}",
+    "pricing.integration": "Integrace s {name}",
+    "pricing.monthly": "měsíčně",
+    "pricing.oneTime": "jednorázový poplatek",
+    "pricing.trialTitle": "Vyzkoušejte VORTEX na 14 dní zdarma!",
+    "pricing.trialDescription": "Plné využití systému zdarma",
+    "pricing.demoTitle": "Objednejte si ukázku systému ještě dnes!",
+    "pricing.demoDescription": "Videoukázka systému s našimi specialisty",
+    "trial.title": "14 dní zdarma!",
+    "trial.subtitle": "Vyzkoušejte to!",
+    "trial.infoTitle": "Bezplatná verze má všechny funkce placené verze!",
+    "trial.info": "Po zkušební době můžete smazat testovací finanční operace, objednávky a příjmy zboží a ponechat nastavení integrací, importů ceníků a firemních údajů.",
+    "trial.price": "Vypočtená cena: ${total}",
+    "trial.name": "Jak vás máme oslovovat?",
+    "trial.namePlaceholder": "Zadejte své jméno",
+    "trial.phone": "Telefonní číslo",
+    "trial.phonePlaceholder": "+380",
+    "trial.location": "Přidat mou polohu",
+    "trial.locationAdded": "Poloha přidána",
+    "trial.locationUnsupported": "Váš prohlížeč nepodporuje geolokaci.",
+    "trial.locationWaiting": "Čekáme na povolení přístupu k poloze…",
+    "trial.locationSuccess": "Vaše poloha bude přidána k žádosti.",
+    "trial.locationDenied": "Poloha nebyla poskytnuta. Žádost lze odeslat i bez ní.",
+    "trial.nameError": "Zadejte platné jméno (2–80 znaků).",
+    "trial.phoneError": "Zadejte platné telefonní číslo.",
+    "trial.captchaError": "Potvrďte, že nejste robot.",
+    "trial.success": "Děkujeme! Žádost byla úspěšně odeslána.",
+    "trial.error": "Žádost se nepodařilo odeslat. Zkuste to znovu.",
+    "trial.unavailable": "Služba žádostí zatím není nastavena.",
+    "trial.sending": "Odesílání…",
+    "trial.send": "Odeslat",
+    "trial.captchaUnavailable": "reCAPTCHA není nastavena.",
+    "network.title": "Všichni dodavatelé na jednom místě",
+    "network.description": "Vortex sdružuje zásoby všech dodavatelů na jednom místě a usnadňuje spolupráci s nimi. Integrace umožňují automaticky přijímat ceníky, vytvářet objednávky a stahovat dodací listy přes API.",
+    "network.alt": "Dodavatelé připojení k systému Vortex",
+    "sync.title": "Vortex Sync",
+    "sync.first": "Naše technologie Sync umožňuje rychle nastavit online výměnu zásob a objednávek s jinou prodejnou používající Vortex.",
+    "sync.second": "Sami rozhodujete, zda vás ostatní zákazníci uvidí, jaké zásoby jim zpřístupníte a jakou přirážku použijete.",
+    "sync.third": "Zásoby přijaté přes Sync mají zvláštní označení. Jejich objednání automaticky vytvoří objednávku u partnera a upozorní manažery. Stejné upozornění dostanete, když partner objedná u vás.",
+    "sync.fourth": "Zásoby nemusíte aktualizovat ručně — Sync to udělá za vás.",
+    "sync.alt": "Rychlá výměna zboží mezi dvěma zákazníky Vortex Sync",
+    "sync.client": "Zákazník Vortex {number}",
+    "carOverview.link": "Více o evidenci autoservisu",
+    "carOverview.alt": "Rozhraní autoservisu Vortex na notebooku",
+    "carOverview.first": "Jako majitelé autoservisu jsme při vývoji modulu vycházeli z vlastních zkušeností, včetně všech problémů a detailů.",
+    "carOverview.second": "Když jsme začali program dodávat dalším autoservisům na Ukrajině, jejich přístup a představy jsme také zohlednili ve vývoji.",
+    "carOverview.third": "Když se připojíte, pomůžete nám tvořit nejlepší systém evidence pro autoservisy a prodejny autodílů.",
+    "website.alt": "Ukázka šablonového webu prodejny autodílů",
+    "language.ua": "Українська",
+    "language.cz": "Čeština",
+    "language.sk": "Slovenčina",
+    "language.en": "English",
+    "language.pl": "Polski",
+    "supplier.technomir": "Technomir",
+    "supplier.uniq": "Uniq Trade",
+    "supplier.groupauto": "Groupauto Ukraine",
+    "common.copyright": "Copyright © {year} Vortex",
+    "websites.examplesTitle": "Ukázky našich webů",
+    "websites.plansTitle": "Cenové plány",
+    "websites.plansDescription": "Porovnejte plány a zahrnuté funkce a vyberte si nejvhodnější variantu pro své podnikání.",
+    "websites.freeTemplate": "Bezplatná šablona",
+    "websites.paidTemplate": "Placená šablona",
+    "websites.preview": "Ukázka webu: {name}",
+    "websites.plan.free": "Bezplatný",
+    "websites.plan.practical": "Praktický",
+    "websites.plan.maximum": "Maximální",
+    "websites.oneTime": "jednorázová platba",
+    "websites.noExtra": "bez příplatků",
+    "websites.monthly": "+$10 měsíčně za 10 tisíc požadavků",
+    "websites.choose": "Vybrat plán",
+    "websites.selectedPlan": "Vybraný plán webu: {name}",
+    "websites.included": "Zahrnuto v plánu",
+    "websites.notIncluded": "Není zahrnuto v plánu",
+    "websites.services.productSearch": "Vyhledávání zboží podle čísla dílu a popisu",
+    "websites.services.catalogSearch": "Vyhledávání ve vlastním katalogu a výběr podle parametrů",
+    "websites.services.liqpay": "Možnost připojení plateb přes LiqPay",
+    "websites.services.feedback": "Kontaktní formulář",
+    "websites.services.colors": "Nastavení barevného schématu webu",
+    "websites.services.account": "Zákaznický účet",
+    "websites.services.orders": "Historie objednávek",
+    "websites.services.shipments": "Historie expedic",
+    "websites.services.balances": "Odsouhlasení vzájemných účtů",
+    "websites.services.appointments": "Pohodlné objednání do autoservisu a historie návštěv v účtu",
+    "websites.services.slider": "Vylepšený posuvník s mobilním zobrazením, interaktivními prvky a dalšími funkcemi",
+    "websites.services.design": "Vylepšený design hlavní stránky, záhlaví, zákaznického účtu a dalších částí",
+    "websites.services.garage": "Garáž zákazníka: přidávání vozidel z katalogu, filtrování seznamů podle vozidel v garáži a nahrávání jejich fotografií",
+    "websites.services.vehicleCatalog": "Katalog dílů podle vozidla, průběžně doplňovaný naším týmem, s hledáním podle VIN a registrační značky",
+    "websites.services.vehicleCatalogLimited": "Katalog dílů podle vozidla s hledáním podle VIN a registrační značky — pouze 10 značek",
+    "websites.services.customization": "Rozšířené přizpůsobení webu",
+    "websites.services.favorites": "Oblíbené zboží",
+    "websites.services.ratings": "Hodnocení zboží",
+    "websites.services.invoiceHistory": "Vylepšená historie výdejních dokladů s mobilním zobrazením, filtrem podle vozidla zákazníka a stavem zaplacení",
+    "websites.services.searchHistory": "Historie hledání dílů",
+    "websites.services.sitemap": "Vytvoření sitemap.xml",
+    "websites.services.seo": "Pomoc se základním SEO a nastavením analytiky",
+    "websites.services.mscore": "M-score, náš vlastní systém webové analytiky",
+    "websites.services.mscoreLimited": "Webová analytika M-score — pouze celkový počet kliknutí",
+    "websites.services.mscoreFull": "M-score s úplnými statistikami: kdo, kdy a co na webu dělal, žebříčky aktivity zákazníků, skupin katalogu a další údaje",
+    "websites.services.fluids": "Výběr servisních kapalin podle vozidla (plánováno)",
+    "websites.services.catalogGroups": "Naplnění 10 vlastních skupin katalogu",
+    "websites.services.blog": "Tvorba článků na blog",
+    "websites.services.homepage": "Základní naplnění hlavní stránky",
+    "websites.services.header": "Naplnění záhlaví webu",
+    "nav.services": "Naše služby",
+    "nav.dismantling": "Autovrakoviště",
+    "dismantling.eyebrow": "Modul Vortex pro autovrakoviště",
+    "dismantling.title": "Autovrakoviště",
+    "dismantling.tagline": "Od vozidla ke každému náhradnímu dílu",
+    "dismantling.intro": "Spravujte demontáž v jednom systému: evidujte údaje o vozidlech, sledujte jejich ziskovost a přidávejte demontované díly ručně nebo z katalogů Vortex.",
+    "dismantling.contents": "Funkce modulu autovrakoviště",
+    "dismantling.vehicle.label": "Karta vozidla",
+    "dismantling.vehicle.title": "Všechny údaje o vozidle na jednom místě",
+    "dismantling.vehicle.description": "Každé vozidlo má vlastní kartu. Zadejte jeho parametry a pořizovací cenu, abyste měli při demontáži potřebné údaje po ruce.",
+    "dismantling.field.vin": "VIN kód",
+    "dismantling.field.year": "Rok výroby",
+    "dismantling.field.engine": "Kód motoru",
+    "dismantling.field.body": "Typ karoserie",
+    "dismantling.field.fuel": "Druh paliva",
+    "dismantling.field.cost": "Pořizovací cena vozidla",
+    "dismantling.earnings.title": "Ziskovost každého vozidla",
+    "dismantling.earnings.description": "Prohlížejte statistiky výdělku a pořizovací cenu konkrétního vozidla. Vyhodnocujte finanční výsledek každé demontáže zvlášť.",
+    "dismantling.inventory.title": "Díly se známým původem",
+    "dismantling.inventory.description": "Prohlížejte seznam dílů získaných z tohoto vozidla. Vazba mezi vozidlem a demontovanými díly zůstává zachována v evidenci.",
+    "dismantling.statuses.label": "Stavy demontáže",
+    "dismantling.statuses.title": "Vozidla v demontáži a historie prací",
+    "dismantling.statuses.description": "Oddělte probíhající a dokončené demontáže, abyste rychle našli potřebná vozidla a mohli se vracet k jejich historii.",
+    "dismantling.active.label": "Aktivní vozidla",
+    "dismantling.active.title": "Právě v demontáži",
+    "dismantling.active.description": "Pracujte s vozidly, ze kterých stále demontujete díly. Jejich údaje, finanční ukazatele a získané díly jsou na jednom místě.",
+    "dismantling.archived.label": "Neaktivní vozidla",
+    "dismantling.archived.title": "Dříve rozebraná, uložená v historii",
+    "dismantling.archived.description": "Dokončené demontáže zůstávají dostupné k prohlížení. Vraťte se ke kartě vozidla a ověřte jeho výsledek i původ demontovaných dílů.",
+    "dismantling.parts.label": "Demontáž dílů",
+    "dismantling.parts.title": "Demontujte díly. Vortex pomůže s evidencí.",
+    "dismantling.parts.description": "Od vozidla ke konkrétnímu dílu cestou, která vám vyhovuje. Zadejte díl ručně nebo jej najděte v katalozích Vortex pro dané vozidlo.",
+    "dismantling.method.manual.title": "Přidejte ručně",
+    "dismantling.method.manual.description": "Zadejte potřebný díl sami a přidejte jej do evidence demontovaných dílů vozidla. Přímá cesta, když už víte, co demontujete.",
+    "dismantling.method.diagram.title": "Najděte ve schématu",
+    "dismantling.method.diagram.description": "Vyberte vozidlo v katalogu Vortex, otevřete příslušné schéma a najděte díl. Vizuální výběr usnadní orientaci v sestavě.",
+    "dismantling.method.groups.title": "Vyberte ze skupin katalogu",
+    "dismantling.method.groups.description": "Procházejte skupiny dílů pro vybrané vozidlo. Otevřete příslušnou sekci, například části karoserie, a vyberte díl.",
+    "dismantling.workflow.title": "Jak funguje výběr z katalogu",
+    "dismantling.workflow.vehicle": "Přesně vyberte vozidlo v katalogu Vortex.",
+    "dismantling.workflow.catalog": "Otevřete schéma sestavy nebo příslušnou skupinu dílů.",
+    "dismantling.workflow.part": "Vyberte díl, který z tohoto vozidla demontujete.",
+    "dismantling.workflow.example": "Například: konkrétní vozidlo → části karoserie → požadovaný karosářský díl. Pracujete s katalogem vybraného vozidla.",
+    "nav.tecdoc": "Licence TecDoc",
+    "tecdoc.heroTitle": "oficiální prodejce TecDoc na Ukrajině",
+    "tecdoc.heroDescription": "Výběr dílů, identifikace vozidel a technická data pro vaše podnikání. TecDoc Web Catalog 3.0 od Vortex.",
+    "tecdoc.buyLicense": "Koupit licenci TecDoc",
+    "tecdoc.featuresLink": "Funkce TecDoc",
+    "tecdoc.officialReseller": "Oficiální prodejce na Ukrajině",
+    "tecdoc.aboutTitle": "Proč potřebujete TecDoc a proč jej koupit právě u Vortex?",
+    "tecdoc.aboutCatalog": "TecDoc Web je online katalog dílů s informacemi o vozidlech a produktech z celého světa. Zároveň jde o rozsáhlou databázi náhradních dílů pro aftermarket s rozměry, fotografiemi a dalšími specifikacemi dílů přímo od výrobců. Náš katalog poskytuje odborníkům v autoservisech ucelené informace pro identifikaci vozidla a odpovídající výběr náhradních dílů.",
+    "tecdoc.aboutSearch": "Informace o údržbě a praktické funkce zahrnují filtry VIN, filtrování podle značek a strom skupin produktů pro snadnější procházení. V katalogu najdete čísla dílů a jejich použití ve vozidlech, ale také čísla ekvivalentních dílů jiných výrobců a originální čísla dílů.",
+    "tecdoc.whyVortex": "Proč si vybrat nás",
+    "tecdoc.resellerDescription": "Jsme oficiálním prodejcem TecDoc na Ukrajině, což zaručuje spolehlivost a legálnost našich služeb. Díky výhodným podmínkám spolupráce nabízíme nejlepší ceny na trhu.",
+    "tecdoc.expertiseDescription": "Přístup k našim službám je snadný a rychlý: několik kliknutí a můžete využívat výkonný nástroj TecDoc pro své podnikání. Náš tým má 17 let zkušeností v oblasti autodílů a rád se podělí o znalosti a poskytne odborné konzultace.",
+    "tecdoc.dataDescription": "Odvedli jsme rozsáhlou práci s ekvivalentními díly a daty, která pomáhá vašemu podnikání fungovat efektivněji. Na naši odbornost v oblasti autodílů se můžete spolehnout.",
+    "tecdoc.catalogTitle": "Zrychlete prodej dílů s katalogem TecDoc",
+    "tecdoc.catalogDescription": "Využijte naše jedinečné zkušenosti na trhu s autodíly.",
+    "tecdoc.catalogImageAlt": "Ilustrace výběru automobilových dílů v katalogu TecDoc",
+    "tecdoc.rmiTitle": "Zlepšete kvalitu oprav a údržby s TecRMI",
+    "tecdoc.rmiDescription": "Technická data pro opravy, údržbu a diagnostiku splňující požadavky OEM.",
+    "tecdoc.rmiImageAlt": "Ilustrace údržby a diagnostiky vozidla s TecRMI",
+    "tecdoc.rmi.maintenance": "Údržba podle doporučení OEM",
+    "tecdoc.rmi.parts": "Vyhledávání dílů",
+    "tecdoc.rmi.labour": "Pracovní časy",
+    "tecdoc.rmi.instructions": "Pokyny k opravám krok za krokem",
+    "tecdoc.stat.experience": "let zkušeností",
+    "tecdoc.stat.countries": "zemí",
+    "tecdoc.stat.languages": "jazyků",
+    "tecdoc.stat.brands": "značek",
+    "tecdoc.stat.references": "odkazů",
+    "tecdoc.stat.articles": "čísel dílů",
+    "tecdoc.stat.groups": "produktových skupin",
+    "tecdoc.stat.vehicles": "vozidel",
+    "tecdoc.million": "mil.+",
+    "tecdoc.thousand": "tis.",
+    "tecdoc.pricePeriod": "Za licenci / měsíc",
+    "tecdoc.paymentTerms": "Platba je vyžadována na rok dopředu podle podmínek společnosti TecAlliance.",
+    "tecdoc.trialTerms": "Webovou licenci můžete zdarma vyzkoušet po dobu 14 dnů.",
+    "tecdoc.trialBadge": "14 dní bezplatného vyzkoušení",
+    "tecdoc.formDescription": "Zanechte jméno a telefonní číslo — budeme vás kontaktovat ohledně licence TecDoc.",
+    "tecdoc.success": "Děkujeme! Brzy se vám ozveme.",
+    "header.expand": "Rozbalit navigaci webu",
+    "nav.blog": "Blog"
+  },
+  "car_service": {
+    "title": "Evidence autoservisu",
+    "subtitle": "Vortex pomáhá s evidencí nejen prodejnám autodílů, ale také autoservisům.",
+    "blocks": [
+      {
+        "id": "works",
+        "title": "Katalog servisních prací",
+        "image_src": "/imgs/car-service/calendar.png",
+        "image_alt": "Katalog servisních prací",
+        "paragraphs": [
+          "Součástí programu je základní katalog servisních prací s přibližně 15 kategoriemi a 10–20 pracemi v každé. Můžete přidávat vlastní kategorie i práce.",
+          "U každé práce lze zadat kategorii, název, počet normohodin, cenu za normohodinu, měnu a poznámku.",
+          "K pracím lze přidat šablony požadavků na výběr dílů. Například k práci „výměna kabinového filtru“ připojíte šablonu „kabinový filtr“. Při objednání této práce systém nabídne automatické vytvoření požadavku pro prodejce dílů."
+        ]
+      },
+      {
+        "id": "documents",
+        "title": "Dokumenty",
+        "image_src": "/imgs/car-service/company.png",
+        "image_alt": "Dokumenty",
+        "paragraphs": [
+          "Tištěné dokumenty hrají důležitou roli v každém podnikání, včetně autoservisu. Vortex to ví a průběžně vylepšuje svůj systém dokumentů.",
+          "Dnes téměř každou akci ve Vortex doprovází odpovídající dokument s tiskovou sestavou."
+        ],
+        "list_intro": "Příklady servisních dokumentů, na které se zákazníci často ptají:",
+        "documents": [
+          {
+            "label": "Zakázkový list.pdf",
+            "href": null
+          },
+          {
+            "label": "Předávací protokol.pdf",
+            "href": null
+          },
+          {
+            "label": "Protokol o provedených pracích.pdf",
+            "href": null
+          }
+        ],
+        "note": "*Za příplatek může Vortex upravit tiskovou sestavu dokumentu podle vašich potřeb."
+      },
+      {
+        "id": "booking",
+        "title": "Objednání do autoservisu",
+        "image_src": "/imgs/car-service/bookings.png",
+        "image_alt": "Objednání do autoservisu",
+        "paragraphs": [
+          "Při objednání je nutné zadat zákazníka, servisní stání a čas. Práce můžete přidat hned nebo později, pokud zatím nejsou známé. Zadejte vozidlo zákazníka včetně VIN, registrační značky, nájezdu, značky, modelu a specifikace. U každé zakázky i práce se uchovává historie změn, takže vždy víte, kdo, kdy a co změnil."
+        ],
+        "list_intro": "Užitečné funkce servisních zakázek:",
+        "items": [
+          "Připojení souborů k zakázce (.pdf, .xlsx, .png a další).",
+          "Nastavení slevy na práce.",
+          "Částečné dokončení zakázky a vytvoření více protokolů o provedených pracích k jedné zakázce.",
+          "Mechanik může označit práci jako hotovou bez uzavření zakázky, takže je průběh prací přehledný.",
+          "Zadaný nájezd se ukládá do garáže zákazníka. Více v následujících blocích."
+        ]
+      },
+      {
+        "id": "statistics",
+        "title": "Statistiky",
+        "image_src": "/imgs/vx-screenshot-1.png",
+        "image_alt": "Statistiky",
+        "paragraphs": [
+          "Statistiky autoservisu ve Vortex sdružují všechny klíčové ukazatele vašeho podniku v jednom rozsáhlém modulu."
+        ],
+        "list_intro": "Mezi tyto ukazatele patří:",
+        "items": [
+          "Výdělek podle servisního stání",
+          "Výdělek podle mechanika",
+          "Výdělek podle servisního poradce",
+          "Celkový výdělek autoservisu",
+          "Výdaje autoservisu podle kategorií",
+          "Seznam nejoblíbenějších prací",
+          "Práce provedené mechanikem za zvolené období"
+        ]
+      },
+      {
+        "id": "calendar",
+        "title": "Kalendář zakázek",
+        "image_src": "/imgs/car-service/calendar.png",
+        "image_alt": "Kalendář zakázek",
+        "paragraphs": [
+          "Kalendář přehledně zobrazuje práci autoservisu, pomáhá rychle najít volné termíny a usnadňuje evidenci zakázek."
+        ],
+        "list_intro": "Kalendář nabízí dva pohledy:",
+        "items": [
+          "Všechna servisní stání pro vybraný den.",
+          "Vybrané servisní stání na týden."
+        ],
+        "closing_paragraphs": [
+          "Zakázku vytvoříte kliknutím na čas začátku a konce práce. Zakázky můžete také rychle upravit, zrušit nebo dokončit.",
+          "Každý zákazník ve Vortex má košík, který může obsahovat i servisní práce. Nejprve přidejte potřebné práce a poté z košíku vytvořte zakázku v kalendáři."
+        ]
+      },
+      {
+        "id": "mileage",
+        "title": "Historie nájezdu",
+        "image_src": "/imgs/car-service/company.png",
+        "image_alt": "Historie nájezdu",
+        "paragraphs": [
+          "Údaje o vozidle ze servisní zakázky se ukládají do garáže zákazníka. Zadaný nájezd vytvoří záznam v historii, která ukazuje, jaké práce byly při daném nájezdu provedeny, a pomáhá plánovat pravidelnou údržbu.",
+          "Modul historie nájezdu podporuje připomínky podle data, nájezdu nebo obou podmínek. Připomínka podle data odešle zákazníkovi SMS v určený den. Připomínka podle nájezdu upozorní manažera, jakmile nová zakázka zaznamená nájezd nad nastavený limit."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "header_logo": "/imgs/vortex-logo-115.svg",
+    "header_logo_alt": "Vortex",
+    "footer_logo": "/imgs/vortex-logo-115.svg",
+    "footer_logo_alt": "Vortex",
+    "menu": [
+      {
+        "id": "home",
+        "label": "Domů",
+        "target": "/"
+      },
+      {
+        "id": "car-service",
+        "label": "Evidence autoservisu",
+        "target": "/car-service"
+      },
+      {
+        "id": "websites",
+        "label": "Tvorba webových stránek",
+        "target": "/websites"
+      },
+      {
+        "id": "autoshrot",
+        "label": "Autovrakoviště",
+        "target": "/auto-dismantling"
+      },
+      {
+        "id": "tecdoc",
+        "label": "Licence TecDoc",
+        "target": "/tecdoc-license"
+      },
+      {
+        "id": "pricing",
+        "label": "Ceny",
+        "target": "/#pricing"
+      },
+      {
+        "id": "faq",
+        "label": "Dotazy",
+        "target": "/faq"
+      },
+      {
+        "id": "blog",
+        "label": "Blog",
+        "target": "/blog"
+      },
+      {
+        "id": "contacts",
+        "label": "Kontakty",
+        "target": "/contact"
+      }
+    ],
+    "header_menu": [
+      {
+        "id": "home",
+        "label": "Domů",
+        "target": "/"
+      },
+      {
+        "id": "services",
+        "label": "Naše služby",
+        "children": [
+          {
+            "id": "car-service",
+            "label": "Evidence autoservisu",
+            "target": "/car-service"
+          },
+          {
+            "id": "websites",
+            "label": "Tvorba webových stránek",
+            "target": "/websites"
+          },
+          {
+            "id": "autoshrot",
+            "label": "Autovrakoviště",
+            "target": "/auto-dismantling"
+          },
+          {
+            "id": "tecdoc",
+            "label": "Licence TecDoc",
+            "target": "/tecdoc-license"
+          }
+        ]
+      },
+      {
+        "id": "pricing",
+        "label": "Ceny",
+        "target": "/#pricing"
+      },
+      {
+        "id": "faq",
+        "label": "Dotazy",
+        "target": "/faq"
+      },
+      {
+        "id": "blog",
+        "label": "Blog",
+        "target": "/blog"
+      },
+      {
+        "id": "contacts",
+        "label": "Kontakty",
+        "target": "/contact"
+      }
+    ],
+    "footer_menu": [
+      {
+        "id": "car-service",
+        "label": "Evidence autoservisu",
+        "target": "/car-service"
+      },
+      {
+        "id": "websites",
+        "label": "Tvorba webových stránek",
+        "target": "/websites"
+      },
+      {
+        "id": "autoshrot",
+        "label": "Autovrakoviště",
+        "target": "/auto-dismantling"
+      },
+      {
+        "id": "tecdoc",
+        "label": "Licence TecDoc",
+        "target": "/tecdoc-license"
+      },
+      {
+        "id": "pricing",
+        "label": "Ceny",
+        "target": "/#pricing"
+      },
+      {
+        "id": "faq",
+        "label": "Dotazy",
+        "target": "/faq"
+      },
+      {
+        "id": "blog",
+        "label": "Blog",
+        "target": "/blog"
+      },
+      {
+        "id": "contacts",
+        "label": "Kontakty",
+        "target": "/contact"
+      }
+    ],
+    "buttons": {
+      "try_free_text": "Vyzkoušet zdarma",
+      "try_free_target": "#trial-request",
+      "try_demo_text": "Požádat o ukázku",
+      "try_demo_target": "#trial-request"
+    },
+    "socials": [
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/share/1CM9RDu8XB/?mibextid=wwXIfr",
+        "label": "Facebook",
+        "icon": "/icons/sm_black/facebook.svg"
+      },
+      {
+        "network": "youtube",
+        "url": "https://youtube.com/@vortexcrm?si=XBOE-jdaMiI48Js-",
+        "label": "YouTube",
+        "icon": "/icons/sm_black/youtube.svg"
+      },
+      {
+        "network": "telegram",
+        "url": "https://t.me/VortexSupp",
+        "label": "Telegram",
+        "icon": "/icons/sm_black/telegram.svg"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/vortex_crm?hvrq=azBpZXBnbnVtMjk3",
+        "label": "Instagram",
+        "icon": "/icons/sm_black/instagram.svg"
+      }
+    ],
+    "privacy_text": "Zásady ochrany osobních údajů",
+    "privacy_link": "/privacy-policy",
+    "partner_images": [
+      {
+        "image": "/imgs/tecdoc-button.png",
+        "alt": "TecAlliance — oficiální partner",
+        "url": "/tecdoc-license"
+      }
+    ]
+  },
+  "autoshrot": {
+    "hero": {
+      "visible": true,
+      "eyebrow": "Modul Vortex pro autovrakoviště",
+      "title": "Autovrakoviště",
+      "slogan": "Od vozidla ke každému náhradnímu dílu",
+      "intro": "Spravujte demontáž v jednom systému: evidujte údaje o vozidlech, sledujte jejich ziskovost a přidávejte demontované díly ručně nebo z katalogů Vortex.",
+      "cta_text": "Vyzkoušet zdarma",
+      "cta_target": "#trial-request",
+      "image": "/imgs/auto-dismantling/dismantling-car-premium.png",
+      "image_alt": ""
+    },
+    "navigation": {
+      "visible": true,
+      "label": "Funkce modulu autovrakoviště",
+      "items": [
+        {
+          "label": "Karta vozidla",
+          "target": "car"
+        },
+        {
+          "label": "Stavy demontáže",
+          "target": "statuses"
+        },
+        {
+          "label": "Demontáž dílů",
+          "target": "removal"
+        }
+      ]
+    },
+    "car": {
+      "visible": true,
+      "eyebrow": "Karta vozidla",
+      "title": "Všechny údaje o vozidle na jednom místě",
+      "description": "Každé vozidlo má vlastní kartu. Zadejte jeho parametry a pořizovací cenu, abyste měli při demontáži potřebné údaje po ruce.",
+      "image": "/imgs/auto-dismantling/vehicle-record-premium.png",
+      "image_alt": "",
+      "characteristics": [
+        "VIN kód",
+        "Rok výroby",
+        "Kód motoru",
+        "Typ karoserie",
+        "Druh paliva",
+        "Pořizovací cena vozidla"
+      ],
+      "benefits": [
+        {
+          "title": "Ziskovost každého vozidla",
+          "description": "Prohlížejte statistiky výdělku a pořizovací cenu konkrétního vozidla. Vyhodnocujte finanční výsledek každé demontáže zvlášť."
+        },
+        {
+          "title": "Díly se známým původem",
+          "description": "Prohlížejte seznam dílů získaných z tohoto vozidla. Vazba mezi vozidlem a demontovanými díly zůstává zachována v evidenci."
+        }
+      ]
+    },
+    "statuses": {
+      "visible": true,
+      "eyebrow": "Stavy demontáže",
+      "title": "Vozidla v demontáži a historie prací",
+      "description": "Oddělte probíhající a dokončené demontáže, abyste rychle našli potřebná vozidla a mohli se vracet k jejich historii.",
+      "items": [
+        {
+          "name": "Aktivní vozidla",
+          "card_title": "Právě v demontáži",
+          "card_description": "Pracujte s vozidly, ze kterých stále demontujete díly. Jejich údaje, finanční ukazatele a získané díly jsou na jednom místě."
+        },
+        {
+          "name": "Neaktivní vozidla",
+          "card_title": "Dříve rozebraná, uložená v historii",
+          "card_description": "Dokončené demontáže zůstávají dostupné k prohlížení. Vraťte se ke kartě vozidla a ověřte jeho výsledek i původ demontovaných dílů."
+        }
+      ]
+    },
+    "removal": {
+      "visible": true,
+      "eyebrow": "Demontáž dílů",
+      "title": "Demontujte díly. Vortex pomůže s evidencí.",
+      "description": "Od vozidla ke konkrétnímu dílu cestou, která vám vyhovuje. Zadejte díl ručně nebo jej najděte v katalozích Vortex pro dané vozidlo.",
+      "image": "/imgs/auto-dismantling/parts-catalog-premium.png",
+      "image_alt": "",
+      "methods": [
+        {
+          "title": "Přidejte ručně",
+          "description": "Zadejte potřebný díl sami a přidejte jej do evidence demontovaných dílů vozidla. Přímá cesta, když už víte, co demontujete."
+        },
+        {
+          "title": "Najděte ve schématu",
+          "description": "Vyberte vozidlo v katalogu Vortex, otevřete příslušné schéma a najděte díl. Vizuální výběr usnadní orientaci v sestavě."
+        },
+        {
+          "title": "Vyberte ze skupin katalogu",
+          "description": "Procházejte skupiny dílů pro vybrané vozidlo. Otevřete příslušnou sekci, například části karoserie, a vyberte díl."
+        }
+      ]
+    },
+    "workflow": {
+      "visible": true,
+      "title": "Jak funguje výběr z katalogu",
+      "steps": [
+        "Přesně vyberte vozidlo v katalogu Vortex.",
+        "Otevřete schéma sestavy nebo příslušnou skupinu dílů.",
+        "Vyberte díl, který z tohoto vozidla demontujete."
+      ],
+      "note": "Například: konkrétní vozidlo → části karoserie → požadovaný karosářský díl. Pracujete s katalogem vybraného vozidla."
+    },
+    "anchor_aliases": {
+      "dismantling-vehicle": "car",
+      "dismantling-statuses": "statuses",
+      "dismantling-parts": "removal"
+    }
+  },
+  "tecdoc": {
+    "visible": true,
+    "hero": {
+      "eyebrow": "TecDoc Web Catalog 3.0",
+      "title": "Vortex — oficiální prodejce TecDoc na Ukrajině",
+      "subtitle": "Výběr dílů, identifikace vozidel a technická data pro vaše podnikání. TecDoc Web Catalog 3.0 od Vortex.",
+      "image": "",
+      "image_alt": "",
+      "cta_text": "Koupit licenci TecDoc",
+      "cta_target": "#trial-request",
+      "secondary_cta_text": "Funkce TecDoc",
+      "secondary_cta_target": "#tecdoc-features",
+      "details": [
+        "Oficiální prodejce na Ukrajině",
+        "14 dní bezplatného vyzkoušení",
+        "TecDoc + TecRMI"
+      ]
+    },
+    "stats": [
+      {
+        "value": 25,
+        "suffix": "+",
+        "label": "let zkušeností"
+      },
+      {
+        "value": 140,
+        "suffix": "+",
+        "label": "zemí"
+      },
+      {
+        "value": 41,
+        "suffix": "+",
+        "label": "jazyků"
+      },
+      {
+        "value": 900,
+        "suffix": "+",
+        "label": "značek"
+      },
+      {
+        "value": 400,
+        "suffix": "mil.+",
+        "label": "odkazů"
+      },
+      {
+        "value": 8.8,
+        "suffix": "mil.+",
+        "label": "čísel dílů"
+      },
+      {
+        "value": 9600,
+        "suffix": "+",
+        "label": "produktových skupin"
+      },
+      {
+        "value": 160,
+        "suffix": "+ tis.",
+        "label": "vozidel"
+      }
+    ],
+    "sections": [
+      {
+        "id": "tecdoc-about",
+        "title": "Proč potřebujete TecDoc a proč jej koupit právě u Vortex?",
+        "description": "",
+        "items": [],
+        "image": "",
+        "image_alt": "",
+        "button_text": "",
+        "button_target": "",
+        "blocks": [
+          {
+            "id": "catalog",
+            "title": "TecDoc Web",
+            "paragraphs": [
+              "TecDoc Web je online katalog dílů s informacemi o vozidlech a produktech z celého světa. Zároveň jde o rozsáhlou databázi náhradních dílů pro aftermarket s rozměry, fotografiemi a dalšími specifikacemi dílů přímo od výrobců. Náš katalog poskytuje odborníkům v autoservisech ucelené informace pro identifikaci vozidla a odpovídající výběr náhradních dílů.",
+              "Informace o údržbě a praktické funkce zahrnují filtry VIN, filtrování podle značek a strom skupin produktů pro snadnější procházení. V katalogu najdete čísla dílů a jejich použití ve vozidlech, ale také čísla ekvivalentních dílů jiných výrobců a originální čísla dílů."
+            ]
+          },
+          {
+            "id": "vortex",
+            "title": "Proč si vybrat nás",
+            "paragraphs": [
+              "Jsme oficiálním prodejcem TecDoc na Ukrajině, což zaručuje spolehlivost a legálnost našich služeb. Díky výhodným podmínkám spolupráce nabízíme nejlepší ceny na trhu.",
+              "Přístup k našim službám je snadný a rychlý: několik kliknutí a můžete využívat výkonný nástroj TecDoc pro své podnikání. Náš tým má 17 let zkušeností v oblasti autodílů a rád se podělí o znalosti a poskytne odborné konzultace.",
+              "Odvedli jsme rozsáhlou práci s ekvivalentními díly a daty, která pomáhá vašemu podnikání fungovat efektivněji. Na naši odbornost v oblasti autodílů se můžete spolehnout."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tecdoc-features",
+        "eyebrow": "TecDoc",
+        "title": "Zrychlete prodej dílů s katalogem TecDoc",
+        "description": "Využijte naše jedinečné zkušenosti na trhu s autodíly.",
+        "items": [],
+        "image": "/imgs/tecdoc/tecdoc-parts.png",
+        "image_alt": "Ilustrace výběru automobilových dílů v katalogu TecDoc",
+        "button_text": "",
+        "button_target": ""
+      },
+      {
+        "id": "tecdoc-rmi",
+        "eyebrow": "TecRMI",
+        "title": "Zlepšete kvalitu oprav a údržby s TecRMI",
+        "description": "Technická data pro opravy, údržbu a diagnostiku splňující požadavky OEM.",
+        "items": [
+          "Údržba podle doporučení OEM",
+          "Vyhledávání dílů",
+          "Pracovní časy",
+          "Pokyny k opravám krok za krokem"
+        ],
+        "image": "/imgs/tecdoc/tecdoc-screenshot.png",
+        "image_alt": "Ilustrace údržby a diagnostiky vozidla s TecRMI",
+        "button_text": "",
+        "button_target": ""
+      }
+    ],
+    "license": {
+      "visible": true,
+      "eyebrow": "TecDoc Web Catalog 3.0",
+      "price": 25,
+      "currency": "EUR",
+      "billing_type": "monthly",
+      "price_period": "Za licenci / měsíc",
+      "payment_terms": "Platba je vyžadována na rok dopředu podle podmínek společnosti TecAlliance.",
+      "trial_terms": "Webovou licenci můžete zdarma vyzkoušet po dobu 14 dnů.",
+      "trial_badge": "14 dní bezplatného vyzkoušení"
+    },
+    "cta": {
+      "title": "Koupit licenci TecDoc",
+      "text": "Zanechte jméno a telefonní číslo — budeme vás kontaktovat ohledně licence TecDoc.",
+      "button_text": "Odeslat",
+      "button_target": "#trial-request"
+    }
+  },
+  "websites": {
+    "gallery": {
+      "visible": true,
+      "section_title": "Ukázky našich webů",
+      "items": [
+        {
+          "id": "free",
+          "image": "",
+          "title": "Bezplatný",
+          "alt": "Ukázka webu: Bezplatný",
+          "template": "Bezplatná šablona",
+          "url": ""
+        },
+        {
+          "id": "practical",
+          "image": "",
+          "title": "Praktický",
+          "alt": "Ukázka webu: Praktický",
+          "template": "Placená šablona",
+          "url": ""
+        },
+        {
+          "id": "maximum",
+          "image": "",
+          "title": "Maximální",
+          "alt": "Ukázka webu: Maximální",
+          "template": "Placená šablona",
+          "url": ""
+        }
+      ]
+    },
+    "pricing": {
+      "visible": true,
+      "section_title": "Cenové plány",
+      "section_description": "Porovnejte plány a zahrnuté funkce a vyberte si nejvhodnější variantu pro své podnikání.",
+      "tariffs": [
+        {
+          "id": "free",
+          "name": "Bezplatný",
+          "price": 0,
+          "currency": "USD",
+          "billing_type": "free",
+          "extra_payments_note": "bez příplatků",
+          "cta_text": "Vybrat plán"
+        },
+        {
+          "id": "practical",
+          "name": "Praktický",
+          "price": 300,
+          "currency": "USD",
+          "billing_type": "one_time",
+          "extra_payments_note": "+$10 měsíčně za 10 tisíc požadavků",
+          "cta_text": "Vybrat plán"
+        },
+        {
+          "id": "maximum",
+          "name": "Maximální",
+          "price": 500,
+          "currency": "USD",
+          "billing_type": "one_time",
+          "extra_payments_note": "+$10 měsíčně za 10 tisíc požadavků",
+          "cta_text": "Vybrat plán"
+        }
+      ],
+      "services": [
+        {
+          "id": "productSearch",
+          "text": "Vyhledávání zboží podle čísla dílu a popisu",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "catalogSearch",
+          "text": "Vyhledávání ve vlastním katalogu a výběr podle parametrů",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "liqpay",
+          "text": "Možnost připojení plateb přes LiqPay",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "feedback",
+          "text": "Kontaktní formulář",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "colors",
+          "text": "Nastavení barevného schématu webu",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "account",
+          "text": "Zákaznický účet",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "orders",
+          "text": "Historie objednávek",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "shipments",
+          "text": "Historie expedic",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "balances",
+          "text": "Odsouhlasení vzájemných účtů",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "appointments",
+          "text": "Pohodlné objednání do autoservisu a historie návštěv v účtu",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "slider",
+          "text": "Vylepšený posuvník s mobilním zobrazením, interaktivními prvky a dalšími funkcemi",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "design",
+          "text": "Vylepšený design hlavní stránky, záhlaví, zákaznického účtu a dalších částí",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "garage",
+          "text": "Garáž zákazníka: přidávání vozidel z katalogu, filtrování seznamů podle vozidel v garáži a nahrávání jejich fotografií",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "vehicleCatalog",
+          "text": "Katalog dílů podle vozidla, průběžně doplňovaný naším týmem, s hledáním podle VIN a registrační značky",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": "",
+              "text": "Katalog dílů podle vozidla s hledáním podle VIN a registrační značky — pouze 10 značek"
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "customization",
+          "text": "Rozšířené přizpůsobení webu",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "favorites",
+          "text": "Oblíbené zboží",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "ratings",
+          "text": "Hodnocení zboží",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "invoiceHistory",
+          "text": "Vylepšená historie výdejních dokladů s mobilním zobrazením, filtrem podle vozidla zákazníka a stavem zaplacení",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "searchHistory",
+          "text": "Historie hledání dílů",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "sitemap",
+          "text": "Vytvoření sitemap.xml",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": false,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "seo",
+          "text": "Pomoc se základním SEO a nastavením analytiky",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": false,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "mscore",
+          "text": "M-score, náš vlastní systém webové analytiky",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": "",
+              "text": "Webová analytika M-score — pouze celkový počet kliknutí"
+            },
+            "maximum": {
+              "included": true,
+              "note": "",
+              "text": "M-score s úplnými statistikami: kdo, kdy a co na webu dělal, žebříčky aktivity zákazníků, skupin katalogu a další údaje"
+            }
+          }
+        },
+        {
+          "id": "fluids",
+          "text": "Výběr servisních kapalin podle vozidla (plánováno)",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": false,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "catalogGroups",
+          "text": "Naplnění 10 vlastních skupin katalogu",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": false,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "blog",
+          "text": "Tvorba článků na blog",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": false,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "homepage",
+          "text": "Základní naplnění hlavní stránky",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": false,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "header",
+          "text": "Naplnění záhlaví webu",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": false,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        }
+      ]
+    }
+  },
+  "integration_pages": {
+    "visible": true,
+    "label": "API integrace",
+    "eyebrow": "Integrace s Vortex",
+    "connect": "Připojit integraci",
+    "viewFeatures": "Možnosti integrace",
+    "featuresTitle": "Co integrace přináší",
+    "linksTitle": "Nabídky partnera",
+    "back": "Všechny integrace",
+    "relatedTitle": "Další integrace s Vortex",
+    "pages": {
+      "tecdoc": {
+        "title": "TecDoc Inside",
+        "lead": "Oficiální integrace katalogu TecDoc umožňuje vyhledávat vozidla, vybírat kompatibilní díly a prohlížet technické informace přímo ve Vortex.",
+        "sections": [
+          {
+            "title": "Najděte správné vozidlo",
+            "paragraphs": [
+              "Začněte výběr podle VIN, kódu motoru nebo ručním vyhledáním v katalogu. Údaje o značce, modelu a variantě vám pomohou pracovat se správným vozidlem a rychle přejít k dílům, které jsou pro ně určené."
+            ],
+            "items": [
+              "Vyhledání vozidla podle VIN.",
+              "Výběr vozidla podle kódu motoru nebo ručně.",
+              "Vyplnění značky, modelu a varianty z katalogu."
+            ],
+            "image": "/imgs/api-integrations/screenshots/tecdoc-VIN.jpg",
+            "image_alt": "Najděte správné vozidlo"
+          },
+          {
+            "title": "Vybírejte díly podle kategorií",
+            "paragraphs": [
+              "Přejděte do požadované skupiny dílů a upřesněte výsledky podle výrobce a parametrů. Filtry a oblíbené značky usnadňují nalezení potřebných položek mezi mnoha možnostmi v katalogu."
+            ],
+            "items": [
+              "Procházení kategorií a konstrukčních celků.",
+              "Filtrování podle značky a parametrů dílu.",
+              "Ověření, zda díl patří k vybranému vozidlu."
+            ],
+            "image": "/imgs/api-integrations/screenshots/tecdoc-parts-categories.png",
+            "image_alt": "Vybírejte díly podle kategorií"
+          },
+          {
+            "title": "Ověřujte informace a kompatibilitu",
+            "paragraphs": [
+              "Před prodejem si prohlédněte popis dílu, fotografie, technické parametry a referenční čísla. Údaje o alternativách a použití v dalších vozidlech pomáhají porovnat možnosti a vybrat díl podle potřeb zákazníka."
+            ],
+            "items": [
+              "Čísla dílů, originální čísla OEM a alternativy.",
+              "Obrázky, popisy a technické parametry.",
+              "Použití podle modelu, roku a dalších údajů o vozidle."
+            ],
+            "image": "/imgs/api-integrations/screenshots/tecdoc-screenshot-2.jpg",
+            "image_alt": "Ověřujte informace a kompatibilitu"
+          }
+        ],
+        "links": [],
+        "visible": true,
+        "slug": "tecdoc",
+        "path": "/integrations/tecdoc",
+        "logo": "/imgs/api-integrations/tecdoc-int-logo.svg",
+        "logo_alt": "TecDoc Inside",
+        "gallery": [
+          {
+            "image": "/imgs/api-integrations/screenshots/tecdoc-parts.png",
+            "alt": "TecDoc Inside — 1"
+          }
+        ]
+      },
+      "checkbox": {
+        "title": "Checkbox",
+        "lead": "Fiskalizujte prodej dílů, služby autoservisu a vrácení zboží ve Vortex prostřednictvím softwarové pokladny Checkbox bez samostatného pokladního zařízení.",
+        "sections": [
+          {
+            "title": "Pokladní operace ve známém systému",
+            "paragraphs": [
+              "Integrace propojuje práci obsluhy s pokladnou a zpracování prodeje. Ve Vortex můžete provádět každodenní pokladní operace a vystavovat fiskální doklady bez ručního přenosu údajů o prodeji do jiné aplikace."
+            ],
+            "items": [
+              "Otevření a uzavření pokladny.",
+              "Vklady a výběry hotovosti z pokladny.",
+              "Fiskalizace zboží, služeb autoservisu a vrácení."
+            ],
+            "image": "/imgs/api-integrations/screenshots/checkbox_screenshot_paydesk.png",
+            "image_alt": "Pokladní operace ve známém systému"
+          },
+          {
+            "title": "Připravte si účet Checkbox",
+            "paragraphs": [
+              "Nejprve se zaregistrujte do služby Checkbox a nastavte strukturu své firmy. Vytvořte prodejní místo, pokladnu a účty pokladních, kteří budou zpracovávat transakce. Odkaz na registraci v rámci partnerské nabídky najdete níže."
+            ],
+            "items": [
+              "Registrace firmy ve službě Checkbox.",
+              "Nastavení prodejního místa a pokladny.",
+              "Vytvoření účtů pokladních pro běžný provoz."
+            ],
+            "image": "/imgs/api-integrations/screenshots/checkbox_screenshot_shop.png",
+            "image_alt": "Připravte si účet Checkbox"
+          },
+          {
+            "title": "Připojte pokladnu k Vortex",
+            "paragraphs": [
+              "V nastavení integrace Vortex zadejte licenční klíč pokladny a přidejte pokladní pomocí jejich přihlašovacích jmen a hesel Checkbox. Po připojení můžete vystavovat fiskální účtenky a tisknout je na termotiskárně v rámci obvyklého prodejního postupu."
+            ],
+            "items": [
+              "Přidání licenčního klíče pokladny.",
+              "Připojení pokladních pomocí údajů Checkbox.",
+              "Práce s více účty, pokladnami a pokladními."
+            ],
+            "image": "",
+            "image_alt": ""
+          }
+        ],
+        "links": [
+          {
+            "label": "Zaregistrovat se do Checkbox",
+            "href": "https://my.checkbox.ua/auth/registration?registration_code=exzPKMg1NQFd"
+          }
+        ],
+        "visible": true,
+        "slug": "checkbox",
+        "path": "/integrations/checkbox",
+        "logo": "/imgs/api-integrations/checkbox-int-logo.svg",
+        "logo_alt": "Checkbox",
+        "gallery": []
+      },
+      "vchasno": {
+        "title": "Vchasno.Kasa",
+        "lead": "Softwarová pokladna pro fiskalizaci prodeje ve Vortex: elektronické účtenky, pokladny a klíče pokladních v jednom procesu práce s objednávkami a platbami.",
+        "sections": [
+          {
+            "title": "Jak funguje fiskalizace",
+            "paragraphs": [
+              "Pracovník zpracuje prodej nebo platbu ve Vortex. Systém předá službě Vchasno.Kasa zboží či služby, částku, druh platby, pokladnu a pokladního. Služba vystaví fiskální účtenku a odešle údaje finanční správě, zatímco pracovník pokračuje v práci s objednávkou."
+            ],
+            "items": [
+              "Prodej dílů ze skladu nebo objednávky zákazníka.",
+              "Fiskalizace služeb oprav a údržby vozidel.",
+              "Vrácení zboží s odpovídajícím fiskálním dokladem."
+            ],
+            "image": "/imgs/api-integrations/screenshots/vchasno-kasa-flow.svg",
+            "image_alt": "Jak funguje fiskalizace"
+          },
+          {
+            "title": "Co potřebujete k připojení",
+            "paragraphs": [
+              "Připravte si účet Vchasno.Kasa, zaregistrovaná prodejní místa, pokladny a klíče pokladních. Poté přidejte parametry integrace do Vortex. Než tým začne systém používat, ověřte nastavení pomocí testovací fiskalizace."
+            ],
+            "items": [
+              "Zaregistrujte firmu a kvalifikovaný elektronický podpis ve službě.",
+              "Vytvořte nebo importujte prodejní místo a pokladnu.",
+              "Nastavte daňové skupiny a druhy plateb.",
+              "Přidejte klíč pokladního a parametry připojení do Vortex.",
+              "Před spuštěním ověřte testovací fiskalizaci."
+            ],
+            "image": "/imgs/api-integrations/screenshots/vchasno-kasa-settings.svg",
+            "image_alt": "Co potřebujete k připojení"
+          },
+          {
+            "title": "Jeden proces pro obchod i autoservis",
+            "paragraphs": [
+              "Prodej, zákazník, objednávka a fiskalizace zůstávají v jednom pracovním postupu. Tím se omezuje ruční duplikování údajů a usnadňuje práce s více prodejními místy. Partnerské nabídky pro připojení Vchasno.Kasa jsou dostupné prostřednictvím odkazů níže."
+            ],
+            "items": [
+              "Elektronická účtenka pro zákazníka po zaplacení.",
+              "Podpora hotovostních i bezhotovostních plateb.",
+              "Správa více pokladen, prodejních míst a odpovědných pokladních."
+            ],
+            "image": "",
+            "image_alt": ""
+          }
+        ],
+        "links": [
+          {
+            "label": "−50 % na první platbu",
+            "href": "https://service.vchasno.ua/prro-offer?utm_source=vortex"
+          },
+          {
+            "label": "50 UAH/měsíc po dobu 6 měsíců",
+            "href": "https://service.vchasno.ua/prro-offer-50?utm_source=vortex"
+          }
+        ],
+        "visible": true,
+        "slug": "vchasno",
+        "path": "/integrations/vchasno",
+        "logo": "/imgs/api-integrations/vchasno-kasa-logo.svg",
+        "logo_alt": "Vchasno.Kasa",
+        "gallery": []
+      },
+      "nova_poshta": {
+        "title": "Nova Poshta",
+        "lead": "Vytvářejte expresní přepravní listy, prohlížejte zásilky a tiskněte přepravní dokumenty přímo ve Vortex díky API integraci s Nova Poshta.",
+        "sections": [
+          {
+            "title": "Nastavte odesílatele",
+            "paragraphs": [
+              "Přidejte účty odesílatelů a vyberte údaje, které se mají používat jako výchozí. Při vytváření přepravního listu lze zvolit potřebný účet. To se hodí, když tým připravuje zásilky jménem různých odesílatelů."
+            ],
+            "items": [
+              "Připojení více účtů odesílatelů.",
+              "Výběr účtu při přípravě zásilky.",
+              "Nastavení výchozího odesílatele."
+            ],
+            "image": "/imgs/api-integrations/screenshots/novaposhta_screenshot_sender.png",
+            "image_alt": "Nastavte odesílatele"
+          },
+          {
+            "title": "Vytvářejte expresní přepravní listy",
+            "paragraphs": [
+              "Zadejte příjemce, způsob doručení a parametry zásilky v rámci svého běžného postupu. Integrace podporuje doručení na pobočku i na adresu, nastavení převodu peněz a kontroly platby i zásilky složené z více balíků."
+            ],
+            "items": [
+              "Výběr pobočky nebo doručovací adresy.",
+              "Popis zásilky, počet balíků a jejich rozměry.",
+              "Tisk štítků balíků a expresního přepravního listu na A4."
+            ],
+            "image": "/imgs/api-integrations/screenshots/np_step1.png",
+            "image_alt": "Vytvářejte expresní přepravní listy"
+          },
+          {
+            "title": "Sledujte zásilky",
+            "paragraphs": [
+              "Seznam obsahuje přepravní listy vytvořené ve Vortex i externí listy, u kterých jste kontrolovali stav. Databáze poboček se aktualizuje přes API; výběr pobočky v objednávce je dostupný i bez aktivace integrace."
+            ],
+            "items": [
+              "Prohlížení a hromadná aktualizace stavů zásilek.",
+              "Přidání přepravních listů do úkolů pro kurýra.",
+              "Aktuální databáze poboček při zpracování objednávek."
+            ],
+            "image": "",
+            "image_alt": ""
+          }
+        ],
+        "links": [],
+        "visible": true,
+        "slug": "nova_poshta",
+        "path": "/integrations/nova_poshta",
+        "logo": "/imgs/api-integrations/np-int-logo.svg",
+        "logo_alt": "Nova Poshta",
+        "gallery": [
+          {
+            "image": "/imgs/api-integrations/screenshots/np_step_2.png",
+            "alt": "Nova Poshta — 1"
+          },
+          {
+            "image": "/imgs/api-integrations/screenshots/np_step_3.png",
+            "alt": "Nova Poshta — 2"
+          },
+          {
+            "image": "/imgs/api-integrations/screenshots/np_step_4.png",
+            "alt": "Nova Poshta — 3"
+          }
+        ]
+      },
+      "turboSMS": {
+        "title": "TurboSMS",
+        "lead": "Připojte svůj účet TurboSMS k Vortex, abyste mohli posílat zprávy ručně, používat šablony a automaticky informovat zákazníky o důležitých událostech.",
+        "sections": [
+          {
+            "title": "Zprávy a šablony",
+            "paragraphs": [
+              "Pošlete SMS na požadované číslo přímo z Vortex. Pro opakované situace připravte šablony: do textu lze vložit údaje objednávky, například její číslo pomocí {ORDER_ID}. Usnadníte tím komunikaci se zákazníky a omezíte ruční psaní zpráv."
+            ],
+            "items": [
+              "Ruční odesílání SMS s libovolným textem.",
+              "Šablony s doplněním čísla objednávky.",
+              "Rozesílání zpráv více příjemcům."
+            ],
+            "image": "/imgs/api-integrations/screenshots/turbosms_screenshot_blured.jpg",
+            "image_alt": "Zprávy a šablony"
+          },
+          {
+            "title": "Informujte zákazníky automaticky",
+            "paragraphs": [
+              "Nastavte zprávy spouštěné událostmi v pracovním procesu. Zákazník může dostávat SMS o připravené či zrušené objednávce nebo o odeslání zásilky. Zpráva o zrušení pomáhá včas vysvětlit změnu stavu a předejít nedorozuměním."
+            ],
+            "items": [
+              "Oznámení o připravené a odeslané objednávce.",
+              "SMS o zrušení objednávky.",
+              "Připomínky výměny oleje."
+            ],
+            "image": "/imgs/api-integrations/screenshots/turbosms_screenshot_send_message_blured.jpg",
+            "image_alt": "Informujte zákazníky automaticky"
+          },
+          {
+            "title": "Sledujte historii a zůstatek",
+            "paragraphs": [
+              "Prohlížejte historii odeslaných SMS a zůstatek účtu TurboSMS ve Vortex. Kontrola zůstatku pomáhá včas dobít účet, aby oznámení o objednávkách a připomínky zůstaly vašemu týmu k dispozici."
+            ],
+            "items": [
+              "Historie odeslaných zpráv.",
+              "Zobrazení zbývajícího SMS kreditu.",
+              "Upozornění na téměř vyčerpaný zůstatek."
+            ],
+            "image": "",
+            "image_alt": ""
+          }
+        ],
+        "links": [],
+        "visible": true,
+        "slug": "turboSMS",
+        "path": "/integrations/turboSMS",
+        "logo": "/imgs/api-integrations/turbosms-int-logo.svg",
+        "logo_alt": "Turbo SMS",
+        "gallery": []
+      },
+      "bank_API": {
+        "title": "Bankovní API",
+        "lead": "Prohlížejte transakce připojených podnikatelských účtů ve Vortex a vytvářejte finanční operace podle skutečného pohybu peněz.",
+        "sections": [
+          {
+            "title": "Připojte podnikatelský účet",
+            "paragraphs": [
+              "Integrace s bankou pomáhá automatizovat práci s finančními operacemi. Údaje připojeného účtu se zobrazují ve Vortex, aby je pracovník nebo účetní mohli zpracovat v evidenčním systému. Dostupnost připojení závisí na bance a typu účtu."
+            ],
+            "items": [
+              "Připojení účtu pro práci s bankovními transakcemi.",
+              "Přehled skutečných příjmů a výdajů.",
+              "Ověření podpory banky a typu účtu před připojením."
+            ],
+            "image": "/imgs/api-integrations/screenshots/bankapi_screenshot-400h.png",
+            "image_alt": "Připojte podnikatelský účet"
+          },
+          {
+            "title": "Převádějte transakce na finanční operace",
+            "paragraphs": [
+              "Vyberte bankovní transakci a jedním kliknutím z ní vytvořte finanční operaci Vortex. Po zaúčtování zmizí ze seznamu nezpracovaných transakcí, takže snáze zjistíte, které pohyby peněz ještě vyžadují pozornost."
+            ],
+            "items": [
+              "Vytvoření finanční operace z bankovní transakce.",
+              "Méně ručního přepisování částek a platebních údajů.",
+              "Samostatný seznam transakcí čekajících na zpracování."
+            ],
+            "image": "/imgs/api-integrations/screenshots/bankapi_history.png",
+            "image_alt": "Převádějte transakce na finanční operace"
+          },
+          {
+            "title": "Najděte potřebné platby",
+            "paragraphs": [
+              "Pracujte s operacemi v jednom seznamu a upřesněte ho podle potřebných kritérií. Použijte filtry podle účtu a druhu operace nebo obecné vyhledávání, když potřebujete najít konkrétní platbu podle známé částky či jiných údajů."
+            ],
+            "items": [
+              "Filtry podle účtu, příjmů a výdajů.",
+              "Vyhledávání podle částky a příjemce.",
+              "Hledání plateb podle poznámky."
+            ],
+            "image": "",
+            "image_alt": ""
+          }
+        ],
+        "links": [],
+        "visible": true,
+        "slug": "bank_API",
+        "path": "/integrations/bank_API",
+        "logo": "/imgs/api-integrations/banks-api-int-logo.svg",
+        "logo_alt": "Bankovní API",
+        "gallery": []
+      },
+      "binotel": {
+        "title": "Binotel",
+        "lead": "Propojte telefonii Binotel s evidencí zákazníků ve Vortex: sledujte hovory, otevírejte zákaznické karty a prohlížejte historii komunikace.",
+        "sections": [
+          {
+            "title": "Neztrácejte zákaznické dotazy",
+            "paragraphs": [
+              "Prohlížejte zmeškané hovory a ozvěte se zákazníkům, se kterými se nepodařilo spojit. Údaje o hovorech ve Vortex pomáhají týmu sledovat dotazy a plánovat zpětné volání v rámci každodenní práce."
+            ],
+            "items": [
+              "Kontrola zmeškaných hovorů.",
+              "Údaje potřebné ke zpětnému volání zákazníkovi.",
+              "Historie hovorů na kartě zákazníka Vortex."
+            ],
+            "image": "/imgs/api-integrations/screenshots/binotel_call_history.png",
+            "image_alt": "Neztrácejte zákaznické dotazy"
+          },
+          {
+            "title": "Rozpoznejte zákazníka při hovoru",
+            "paragraphs": [
+              "Když zákazník volá ze známého čísla, otevřete jeho kartu ve Vortex jedním kliknutím. Pokud číslo ještě není zaregistrované, vyskakovací okno pomůže rychle vytvořit nového zákazníka bez přerušení pracovního postupu."
+            ],
+            "items": [
+              "Přechod na zákazníka z příchozího hovoru.",
+              "Rychlá registrace zákazníka z nového čísla.",
+              "Přístup k historii předchozí komunikace."
+            ],
+            "image": "/imgs/api-integrations/screenshots/binotel_call.png",
+            "image_alt": "Rozpoznejte zákazníka při hovoru"
+          },
+          {
+            "title": "Vyhodnocujte hovory a kvalitu služeb",
+            "paragraphs": [
+              "Poslouchejte nahrávky hovorů, abyste mohli rozebírat skutečné situace a zlepšovat zákaznický servis. Historie komunikace pomáhá připomenout podrobnosti dohod a příklady rozhovorů lze využít při školení pracovníků."
+            ],
+            "items": [
+              "Poslech nahrávek hovorů.",
+              "Kontrola kvality komunikace se zákazníky.",
+              "Rozbor hovorů při školení týmu."
+            ],
+            "image": "",
+            "image_alt": ""
+          }
+        ],
+        "links": [],
+        "visible": true,
+        "slug": "binotel",
+        "path": "/integrations/binotel",
+        "logo": "/imgs/api-integrations/binotel-int-logo.svg",
+        "logo_alt": "Binotel",
+        "gallery": []
+      }
+    }
+  },
+  "privacy_policy": {
+    "visible": true,
+    "eyebrow": "Vortex / Právní informace",
+    "title": "Zásady ochrany osobních údajů",
+    "lead": "Jak zpracováváme osobní údaje návštěvníků webu a lidí, kteří nás kontaktují ohledně produktů a služeb Vortex.",
+    "updated": "Datum aktualizace:",
+    "contents": "Obsah dokumentu",
+    "sections": [
+      {
+        "id": "scope",
+        "title": "O těchto zásadách a kontaktu s námi",
+        "html": "<p>Tyto zásady se vztahují na veřejný web Vortex, jeho poptávkové formuláře, volbu jazyka a kontaktování týmu prostřednictvím údajů uvedených na webu. Vysvětlují, jaké informace při těchto činnostech získáváme, proč je potřebujeme a jak můžete uplatnit svá práva.</p><p>Správcem osobních údajů získaných prostřednictvím tohoto webu je ФОП Маркович В.Ю., identifikační číslo 3258910312. Výrazy „Vortex“, „my“ a „naše“ v tomto dokumentu označují tohoto podnikatele a tým, který zajišťuje provoz webu a vyřizuje jeho jménem žádosti.</p><p>Kontakt pro otázky týkající se osobních údajů a uplatnění vašich práv: <a href=\"mailto:crm.vtx@gmail.com\">crm.vtx@gmail.com</a>. Korespondenční adresa: Україна, м. Ужгород, вул. Капушанська, 154а.</p><p>Údaje zpracováváme s přihlédnutím k <a href=\"https://zakon.rada.gov.ua/go/2297-17\" target=\"_blank\" rel=\"noopener noreferrer\">zákonu Ukrajiny „O ochraně osobních údajů“</a>. Pokud se na konkrétní zpracování vztahuje obecné nařízení EU o ochraně osobních údajů (GDPR), uplatní se také jeho požadavky.</p><p>Tyto zásady popisují marketingový web. Podmínky zpracování údajů v samotném CRM, ve vaší zákaznické databázi nebo při plnění samostatné smlouvy upravují příslušné smlouvy a oznámení. Samotná návštěva webu nebo přečtení těchto zásad není souhlasem s jakýmkoli použitím osobních údajů.</p>"
+      },
+      {
+        "id": "data",
+        "title": "Jaké údaje získáváme",
+        "html": "<p>Pro prohlížení stránek není nutné vytvořit účet. Pokud odešlete žádost o zkušební verzi, ukázku, vývoj webu nebo licenci TecDoc, formulář předá:</p><ul><li>jméno nebo jiné vámi uvedené oslovení a telefonní číslo;</li><li>produkt, kterého se žádost týká, stránku odeslání a zvolený jazyk;</li><li>vypočtenou částku, pokud ji formulář obsahuje, a vybraný balíček webu, pokud jste jej zvolili;</li><li>souřadnice a údaj o přesnosti polohy, pokud samostatně přidáte geolokaci;</li><li>technický token reCAPTCHA pro ověření pravosti žádosti.</li></ul><p>Při komunikaci e-mailem, telefonicky nebo prostřednictvím messengeru získáváme také informace, které sami sdělíte, a údaje potřebné k odpovědi. Neposílejte prosím hesla, údaje platebních karet, kopie dokladů ani citlivé informace, pokud nejsou nutné pro sjednanou službu.</p><p>Pro doručování webových stránek a ochranu webu server a jeho infrastruktura zpracovávají technické údaje o spojení, včetně IP adresy, času požadavku a údajů hlaviček HTTP. Rozsah a doba uchování technických záznamů závisí na nastavení hostingu. IP adresa se rovněž předává Googlu při serverovém ověření reCAPTCHA.</p><p>Formulář webu nepožaduje údaje bankovní karty a neprovádí platby. Zobrazení ceny nebo vypočtené částky samo o sobě není platební transakcí.</p>"
+      },
+      {
+        "id": "purposes",
+        "title": "Účely a právní základy zpracování",
+        "html": "<p>Jméno, telefon a kontext žádosti potřebujeme k odpovědi, upřesnění vašich potřeb, zajištění ukázky nebo přípravě nabídky. Pokud se žádost týká budoucí smlouvy, základem jsou kroky před jejím uzavřením prováděné na vaši žádost; u objednané služby je základem plnění smlouvy.</p><p>Technické údaje a antispamové ověření slouží k ochraně formulářů, předcházení zneužití a zajištění funkčnosti webu. Základem může být oprávněný zájem na bezpečném provozu služby s ohledem na vaše práva a platné právní požadavky. Pokud zákon u určité technologie vyžaduje předchozí souhlas, oprávněný zájem jej nenahrazuje.</p><p>Nepovinná geolokace vychází z vaší samostatné dobrovolné volby. Pokud jsou údaje nutné ke splnění zákonné povinnosti, zpracování vychází z této povinnosti. Samotné podání žádosti nepovažujeme za neomezené oprávnění zasílat reklamní zprávy.</p><p>Neposkytnutí povinných kontaktních údajů nebrání prohlížení webu, ale znemožňuje odeslání formuláře nebo odpověď na chybějící kontakt. Automatické ověření formuláře a výpočet orientační ceny nejsou automatizovanými rozhodnutími s právními účinky vůči vám.</p>"
+      },
+      {
+        "id": "location",
+        "title": "Dobrovolné poskytnutí geolokace",
+        "html": "<p>Poloha je vyžádána až po stisknutí tlačítka pro její přidání a udělení oprávnění v prohlížeči. Připojí se k žádosti, aby tým při odpovědi mohl zohlednit vaše umístění. Tato funkce nepřetržitě nesleduje váš pohyb.</p><p>Tlačítko nemusíte použít nebo můžete požadavek prohlížeče odmítnout: formulář zůstává dostupný bez souřadnic. Pokud nechcete odeslat již přidanou polohu, před odesláním formuláře stránku znovu načtěte. Oprávnění k budoucímu přístupu lze odvolat v nastavení prohlížeče.</p><p>Odvolání oprávnění v prohlížeči neodstraní již odeslané souřadnice. Pro vymazání údajů z předchozí žádosti napište na <a href=\"mailto:crm.vtx@gmail.com\">crm.vtx@gmail.com</a>.</p>"
+      },
+      {
+        "id": "cookies",
+        "title": "Cookies a místní úložiště prohlížeče",
+        "html": "<p>Pro zapamatování vámi zvoleného jazyka web ukládá hodnotu <code>vortex-language</code> do cookie a místního úložiště prohlížeče (localStorage). Hodnota obsahuje kód jazyka, nikoli jméno nebo telefonní číslo.</p><ul><li><strong>Jazyková cookie:</strong> nastaví se při volbě jazyka na dobu nejvýše 365 dnů; opětovná volba tuto dobu obnoví.</li><li><strong>localStorage:</strong> uchovává volbu jazyka bez automatické lhůty odstranění stanovené webem, dokud data nevymažete nebo je neodstraní prohlížeč.</li><li><strong>reCAPTCHA:</strong> může nastavovat služební cookie <code>_GRECAPTCHA</code> a používat další technologie Googlu k ochraně před automatizovanými požadavky.</li></ul><p>Tyto údaje můžete vymazat nebo omezit jejich ukládání v nastavení prohlížeče. Po vymazání se může volba jazyka resetovat; blokování služeb Googlu může zabránit ověření a odeslání formuláře. V takovém případě lze kontaktovat tým přímo.</p><p>Aktuální verze webu neobsahuje samostatné reklamní pixely ani systémy webové analytiky třetích stran. To nevylučuje technické zpracování službami třetích stran popsanými v těchto zásadách.</p>"
+      },
+      {
+        "id": "recaptcha",
+        "title": "Ochrana formulářů pomocí reCAPTCHA",
+        "html": "<p>Pokud je nakonfigurována služba Google reCAPTCHA, stránka s formulářem načte její skript. Při načítání a ověřování získává Google technické údaje o interakci, včetně IP adresy a informací o prohlížeči; služba může používat cookies. Server webu předává Googlu ověřovací token a IP adresu požadavku.</p><p>Web nezahrnuje pole jména a telefonu do požadavku serverového ověření reCAPTCHA. Po úspěšném ověření se token nezahrnuje do zprávy týmu v Telegramu.</p><p>Podrobnosti o službě: <a href=\"https://developers.google.com/recaptcha/docs/faq\" target=\"_blank\" rel=\"noopener noreferrer\">dokumentace reCAPTCHA</a>, <a href=\"https://policies.google.com/privacy?hl=uk\" target=\"_blank\" rel=\"noopener noreferrer\">zásady ochrany soukromí Googlu</a> a <a href=\"https://policies.google.com/terms?hl=uk\" target=\"_blank\" rel=\"noopener noreferrer\">smluvní podmínky Googlu</a>. Pokud nechcete použít formulář s touto službou, kontaktujte nás přímo.</p>"
+      },
+      {
+        "id": "recipients",
+        "title": "Kdo může údaje obdržet",
+        "html": "<p>Žádosti dostávají zaměstnanci a spolupracující specialisté týmu Vortex, kteří údaje potřebují k odpovědi, poradenství nebo poskytnutí služby. Technický provoz webu vyžaduje účast poskytovatele hostingu a případně dalších dodavatelů, kteří zajišťují jeho fungování.</p><p>Pro zobrazení písma načítají stránky styly a soubory Google Fonts z domén <code>fonts.googleapis.com</code> a <code>fonts.gstatic.com</code>. Toto spojení probíhá při prohlížení webu nezávisle na odeslání formuláře. Google získává technické údaje požadavku, včetně IP adresy, informací o prohlížeči a zdroji požadavku v rozsahu nastavení předávání referreru. Web nezahrnuje jméno a telefon z formuláře do požadavků na načtení písma. Podrobnosti naleznete v <a href=\"https://developers.google.com/fonts/faq/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">informacích Google Fonts o soukromí</a>.</p><p>Žádosti z formulářů jsou týmu doručovány přes Telegram Bot API. Zpráva obsahuje jméno, telefon a podle formuláře také jazyk, stránku, částku, balíček a souřadnice. Zpráva o licenci TecDoc obsahuje jméno a telefon. Přenos probíhá na serveru: nepotřebujete účet Telegram.</p><p>Telegram zpracovává zprávy ve své cloudové infrastruktuře podle <a href=\"https://telegram.org/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">vlastních zásad ochrany soukromí</a>. Zpráva bota není tajným chatem s koncovým šifrováním. Nepředávejte prosím formulářem informace, které nejsou nutné pro kontakt.</p><p>Určité technické údaje získává také Google pro reCAPTCHA, jak je popsáno výše. Údaje mohou být předány příslušným orgánům, pokud to výslovně stanoví zákon a existuje odpovídající právní základ. Kontaktní údaje ze žádostí neprodáváme ani je nezveřejňujeme na webu.</p>"
+      },
+      {
+        "id": "international",
+        "title": "Zpracování mimo Ukrajinu",
+        "html": "<p>Využívání Googlu, Telegramu a infrastruktury jejich poskytovatelů může zahrnovat zpracování mimo Ukrajinu a u uživatelů z Evropského hospodářského prostoru i mimo tento prostor. Samotný web neurčuje umístění všech serverů těchto služeb; informace o jejich zpracování uvádějí zásady příslušných poskytovatelů.</p><p>Na mezinárodní předávání se vztahují právní požadavky na ochranu osobních údajů, zejména článek 29 zákona Ukrajiny „O ochraně osobních údajů“, a pokud se uplatní GDPR, jeho pravidla pro předávání do třetích zemí. Použití webu samo o sobě není samostatným souhlasem s jakýmkoli mezinárodním předáním.</p><p>Informace o příjemcích a právním základu předání údajů konkrétní žádosti můžete získat prostřednictvím našeho kontaktu pro ochranu soukromí.</p>"
+      },
+      {
+        "id": "retention",
+        "title": "Doby uchování a vymazání",
+        "html": "<p>Kontaktní údaje a korespondenci uchováváme po dobu nutnou k vyřízení žádosti a další komunikaci o požadované službě. Pokud vztah pokračuje, mohou dobu určit smlouva, závazné právní požadavky nebo odůvodněná potřeba chránit práva ve sporu. Údaje nemají být uchovávány déle, než vyžaduje příslušný účel.</p><p>Aktuální formulář doručuje žádost do Telegramu; nevytváří návštěvníkovi samostatný účet s historií žádostí. Kopie zpráv mohou zůstat v pracovní korespondenci a infrastruktuře poskytovatelů. Zavření stránky nebo vymazání prohlížeče neodstraní již odeslanou žádost; formulář neprovádí automatické mazání zprávy po pevném počtu dnů.</p><p>Technické záznamy se uchovávají podle nastavení infrastruktury a bezpečnostních potřeb. Dobu uchování údajů u Googlu a Telegramu určují také pravidla těchto služeb. Místní uchování volby jazyka popisuje část o cookies.</p><p>Pro upřesnění doby uchování vlastní žádosti nebo žádost o výmaz nám napište. Pokud je nutné část údajů uchovat ze zákonného důvodu, vysvětlíme v odpovědi tento důvod a příslušnou dobu nebo kritérium jejího určení.</p>"
+      },
+      {
+        "id": "security",
+        "title": "Zabezpečení informací",
+        "html": "<p>K ochraně žádostí používáme ověřování vstupních polí, omezení velikosti požadavků a antispamovou kontrolu. Údaje žádosti se Googlu a Telegramu předávají prostřednictvím HTTPS. Klíče integrací se používají na serveru a nejsou součástí obsahu zprávy žádosti.</p><p>Žádný způsob přenosu nebo ukládání nezaručuje absolutní bezpečnost. Nepřidávejte nadbytečné údaje, před odesláním zkontrolujte adresu webu a informujte nás, pokud zaznamenáte podezřelou aktivitu nebo možné zpřístupnění svých informací.</p>"
+      },
+      {
+        "id": "rights",
+        "title": "Vaše práva",
+        "html": "<p>V rozsahu a za podmínek stanovených použitelnými právními předpisy máte právo:</p><ul><li>znát zdroje, účel a podmínky zpracování svých údajů a informace o správci a příjemcích;</li><li>získat přístup k vlastním osobním údajům;</li><li>požadovat opravu nepřesných údajů a výmaz údajů zpracovávaných nezákonně nebo již nepotřebných;</li><li>vznést námitku proti zpracování, existují-li zákonem stanovené důvody;</li><li>odvolat souhlas, pokud byl základem zpracování, aniž by tím byla dotčena zákonnost dřívějšího zpracování;</li><li>chránit svá práva soudní cestou a podat stížnost ukrajinskému parlamentnímu zmocněnci pro lidská práva.</li></ul><p>Pokud se uplatní GDPR, za podmínek v něm stanovených máte také právo na omezení zpracování, přenositelnost údajů a stížnost příslušnému dozorovému orgánu, zejména v místě obvyklého bydliště, práce nebo údajného porušení. Tato práva nejsou absolutní: například výmaz může být omezen zákonnou povinností uchování.</p><p>Vysvětlení práv a možností podání žádosti naleznete na <a href=\"https://ombudsman.gov.ua/uk/zahist-personalnih-danih-faq\" target=\"_blank\" rel=\"noopener noreferrer\">webu zmocněnce</a>. Oficiální znění GDPR je dostupné na <a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener noreferrer\">EUR-Lex</a>.</p>"
+      },
+      {
+        "id": "requests",
+        "title": "Jak uplatnit svá práva",
+        "html": "<p>Napište na <a href=\"mailto:crm.vtx@gmail.com\">crm.vtx@gmail.com</a> s předmětem „Osobní údaje“. Popište, kterých údajů nebo žádosti se věc týká a jaké opatření požadujete. K zahájení vyhledání žádosti stačí přibližné datum a kontakt, který jste uvedli.</p><p>Abychom vaše údaje nezpřístupnili jiné osobě, můžeme požádat o přiměřené ověření totožnosti a informace vyžadované zákonem. Neposílejte kopii pasu ani jiné nadbytečné dokumenty bez samostatné odůvodněné žádosti.</p><p>Žádosti vyřizujeme ve lhůtách stanovených zákonem pro příslušný druh žádosti. Pokud existuje zákonný důvod k odmítnutí, omezení vyřízení nebo prodloužení lhůty, informujeme vás o něm. Kontaktování nás neomezuje vaše právo obrátit se přímo na dozorový orgán nebo soud.</p>"
+      },
+      {
+        "id": "external",
+        "title": "Externí odkazy a údaje jiných osob",
+        "html": "<p>Web obsahuje odkazy na YouTube, messengery, sociální sítě a další zdroje. Po přechodu jejich provozovatelé zpracovávají údaje podle vlastních pravidel. Zejména odkazy na videa vedou na externí platformu; na sledování na této platformě se vztahují její zásady.</p><p>Posílejte vlastní kontaktní údaje nebo údaje, které smíte zákonně předat pro příslušnou žádost. Web a jeho nabídky jsou určeny především k profesnímu použití; formuláře nejsou určeny ke shromažďování údajů dětí. Pokud se domníváte, že byly údaje dítěte nebo jiné osoby předány bez odpovídajícího důvodu, informujte nás, abychom věc prověřili a přijali nezbytná opatření.</p>"
+      },
+      {
+        "id": "changes",
+        "title": "Změny zásad",
+        "html": "<p>Tento dokument aktualizujeme při změnách funkcí webu, způsobu zpracování nebo právních požadavků. Aktuální znění je zveřejněno na této stránce s datem aktualizace. Pokud nový účel zpracování vyžaduje samostatné oznámení či souhlas, zveřejnění nové verze jejich získání nenahrazuje.</p><p>S otázkami k těmto zásadám pište na <a href=\"mailto:crm.vtx@gmail.com\">crm.vtx@gmail.com</a>.</p>"
+      }
+    ],
+    "updated_at": "2026-11-16"
+  },
+  "blog_copy": {
+    "title": "Blog Vortex",
+    "intro": "Praktické články o evidenci, autodílech a práci s Vortex.",
+    "texts": {
+      "nav.blog": "Blog",
+      "view": "Přečíst článek",
+      "contents": "Obsah článku",
+      "published": "Publikováno",
+      "updated": "Aktualizováno",
+      "pagination": "Stránky blogu",
+      "previous": "Zpět",
+      "next": "Další",
+      "page": "Stránka {page}",
+      "loading": "Načítání článků…",
+      "error": "Blog se nepodařilo načíst. Zkuste to znovu.",
+      "retry": "Zkusit znovu",
+      "empty": "Zatím nejsou žádné články. Vraťte se později.",
+      "missing": "Článek nebo stránka nenalezena",
+      "back": "Všechny články",
+      "demo": "Ukázkové články",
+      "demoNote": "Toto jsou ukázkové materiály pro náhled blogu.",
+      "homeTitle": "Vortex — systém pro prodejny autodílů a autoservisy",
+      "homeDescription": "Zboží, objednávky, finance, řízení autoservisu a integrace v jednom systému Vortex."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Vortex — CRM pro prodejny autodílů a autoservisy",
+      "description": "Spravujte zboží, objednávky, finance a chod autoservisu ve Vortex. Katalogy dílů, API integrace, autovrakoviště a web prodejny v jednom systému.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "faq": {
+      "title": "Otázky a odpovědi o Vortex | Nápověda CRM",
+      "description": "Odpovědi na časté otázky o začátcích s Vortex, funkcích CRM, tarifech a každodenní evidenci v prodejně autodílů a autoservisu.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "contacts": {
+      "title": "Kontaktujte Vortex — konzultace a ukázka CRM",
+      "description": "Kontaktujte tým Vortex ohledně CRM pro autodíly a autoservisy, tvorby webu nebo licence TecDoc. Kontakty na specialisty a formulář poptávky.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "car_service": {
+      "title": "Evidence a řízení autoservisu | Vortex",
+      "description": "Plánujte zakázky a práci mechaniků, veďte historii vozidel, tiskněte dokumenty a sledujte finance autoservisu v systému Vortex.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "websites": {
+      "title": "Web prodejny autodílů propojený s CRM | Vortex",
+      "description": "Pořiďte si web pro prodejnu autodílů nebo autoservis propojený s Vortex. Katalogy, ceny, skladové zásoby, zákaznický účet a cenové plány.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "autoshrot": {
+      "title": "Evidence autovrakoviště a použitých dílů | Vortex",
+      "description": "Evidujte vozidla k demontáži, náklady a demontované díly ve Vortex. Stavy vozidel, sklad použitých dílů a výběr z katalogu.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "tecdoc": {
+      "title": "Licence TecDoc Web Catalog 3.0 | Vortex",
+      "description": "Pořiďte si licenci TecDoc Web Catalog 3.0 přes Vortex. Výběr autodílů, technická data TecRMI, možnosti katalogu a konzultace.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "privacy_policy": {
+      "title": "Zásady ochrany osobních údajů | Vortex",
+      "description": "Jak Vortex zpracovává údaje návštěvníků webu: poptávky, kontakty, dobrovolnou polohu, cookies, zabezpečení a práva na ochranu osobních údajů.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "blog": {
+      "title": "Blog Vortex",
+      "description": "Praktické články o evidenci, autodílech a práci s Vortex.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "integrations": {
+      "tecdoc": {
+        "title": "TecDoc Inside — Integrace s Vortex | Vortex",
+        "description": "Oficiální integrace katalogu TecDoc umožňuje vyhledávat vozidla, vybírat kompatibilní díly a prohlížet technické informace přímo ve Vortex.",
+        "share_image": "/imgs/logo-square.png",
+        "share_image_alt": "Vortex",
+        "indexing": "index"
+      },
+      "checkbox": {
+        "title": "Checkbox — Integrace s Vortex | Vortex",
+        "description": "Fiskalizujte prodej dílů, služby autoservisu a vrácení zboží ve Vortex prostřednictvím softwarové pokladny Checkbox bez samostatného pokladního zařízení.",
+        "share_image": "/imgs/logo-square.png",
+        "share_image_alt": "Vortex",
+        "indexing": "index"
+      },
+      "vchasno": {
+        "title": "Vchasno.Kasa — Integrace s Vortex | Vortex",
+        "description": "Softwarová pokladna pro fiskalizaci prodeje ve Vortex: elektronické účtenky, pokladny a klíče pokladních v jednom procesu práce s objednávkami a platbami.",
+        "share_image": "/imgs/logo-square.png",
+        "share_image_alt": "Vortex",
+        "indexing": "index"
+      },
+      "nova_poshta": {
+        "title": "Nova Poshta — Integrace s Vortex | Vortex",
+        "description": "Vytvářejte expresní přepravní listy, prohlížejte zásilky a tiskněte přepravní dokumenty přímo ve Vortex díky API integraci s Nova Poshta.",
+        "share_image": "/imgs/logo-square.png",
+        "share_image_alt": "Vortex",
+        "indexing": "index"
+      },
+      "turboSMS": {
+        "title": "TurboSMS — Integrace s Vortex | Vortex",
+        "description": "Připojte svůj účet TurboSMS k Vortex, abyste mohli posílat zprávy ručně, používat šablony a automaticky informovat zákazníky o důležitých událostech.",
+        "share_image": "/imgs/logo-square.png",
+        "share_image_alt": "Vortex",
+        "indexing": "index"
+      },
+      "bank_API": {
+        "title": "Bankovní API — Integrace s Vortex | Vortex",
+        "description": "Prohlížejte transakce připojených podnikatelských účtů ve Vortex a vytvářejte finanční operace podle skutečného pohybu peněz.",
+        "share_image": "/imgs/logo-square.png",
+        "share_image_alt": "Vortex",
+        "indexing": "index"
+      },
+      "binotel": {
+        "title": "Binotel — Integrace s Vortex | Vortex",
+        "description": "Propojte telefonii Binotel s evidencí zákazníků ve Vortex: sledujte hovory, otevírejte zákaznické karty a prohlížejte historii komunikace.",
+        "share_image": "/imgs/logo-square.png",
+        "share_image_alt": "Vortex",
+        "indexing": "index"
+      }
+    }
+  }
+}

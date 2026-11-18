@@ -1,10 +1,13 @@
-import { Link, useParams } from 'react-router-dom';
+import ChevronCircle from '../components/default/ChevronCircle';
+import { imageSize } from '../utils/imageSize';
+import { useParams } from 'react-router-dom';
+import Link from '../components/default/LocalizedLink';
 import { useI18n } from '../context/ContentContext';
 import { API_INTEGRATIONS, getIntegrationCopy } from '../data/apiIntegrations';
 import { blogText } from '../blog/copy';
 
 function ChevronRight() {
-  return <img className="chevron-right-icon" src="/icons/chevron-right-double.svg" alt="" width="20" height="20" />;
+  return <img className="chevron-right-icon" src="/icons/double-chevron-right.svg" alt="" width="20" height="20" />;
 }
 
 export default function IntegrationPage() {
@@ -20,7 +23,7 @@ export default function IntegrationPage() {
     return (
       <div className="integration-page integration-missing">
         <h1>{blogText(language, 'missing')}</h1>
-        <Link className="integration-primary-link" to="/#integrations-catalog">{copy.back}<span aria-hidden="true"><ChevronRight /></span></Link>
+        <Link className="integration-primary-link" to="/#integrations-catalog">{copy.back}<ChevronCircle /></Link>
       </div>
     );
   }
@@ -47,7 +50,7 @@ export default function IntegrationPage() {
             <h1 id="integration-heading">{page.title}</h1>
             <p className="integration-lead">{page.lead}</p>
             <div className="integration-hero-actions">
-              <Link className="integration-primary-link" to="/contact">{copy.connect}<span aria-hidden="true"><ChevronRight /></span></Link>
+              <Link className="integration-primary-link" to="/contact">{copy.connect}<ChevronCircle /></Link>
               <a className="integration-secondary-link" href="#integration-features">{copy.viewFeatures}<span aria-hidden="true">↓</span></a>
             </div>
           </div>
@@ -82,7 +85,7 @@ export default function IntegrationPage() {
                   {section.paragraphs.map((paragraph, paragraphIndex) => <p key={`${paragraph}-${paragraphIndex}`}>{paragraph}</p>)}
                   {section.items.length > 0 && <ul>{section.items.map((item, itemIndex) => <li key={`${item}-${itemIndex}`}>{item}</li>)}</ul>}
                 </div>
-                {image && <figure className="integration-detail-illustration"><a href={image} target="_blank" rel="noopener noreferrer" aria-label={section.title}><img src={image} alt={section.title} loading="lazy" /></a></figure>}
+                {image && <figure className="integration-detail-illustration"><a href={image} target="_blank" rel="noopener noreferrer" aria-label={section.title}><img src={image} {...imageSize(image)} alt={section.title} loading="lazy" decoding="async" /></a></figure>}
               </section>
             );
           })}
@@ -92,7 +95,7 @@ export default function IntegrationPage() {
           {galleryImages.map((image, index) => (
             <figure className="integration-detail-illustration" key={image}>
               <a href={image} target="_blank" rel="noopener noreferrer" aria-label={page.title}>
-                <img src={image} alt={`${page.title} — ${index + 1}`} loading="lazy" />
+                <img src={image} {...imageSize(image)} alt={`${page.title} — ${index + 1}`} loading="lazy" decoding="async" />
               </a>
             </figure>
           ))}
@@ -128,7 +131,7 @@ export default function IntegrationPage() {
         </div>
         <div className="integration-bottom-actions">
           <Link className="integration-back-link" to="/#integrations-catalog">{copy.back}</Link>
-          <Link className="integration-primary-link" to="/contact">{copy.connect}<span aria-hidden="true"><ChevronRight /></span></Link>
+          <Link className="integration-primary-link" to="/contact">{copy.connect}<ChevronCircle /></Link>
         </div>
       </section>
     </div>

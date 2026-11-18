@@ -1,8 +1,11 @@
+import StickyHeading from './default/StickyHeading';
+import ChevronCircle from './default/ChevronCircle';
+import { localizedUrl } from '../seo/urls';
 import { useI18n } from '../context/ContentContext';
 import { useInitialContent } from '../context/ContentContext';
 
 function CarServiceOverviewComponent() {
-  const { t } = useI18n();
+  const { t, language } = useI18n();
   const content = useInitialContent()?.homepage.car_service_section ?? null;
 
   return (
@@ -10,7 +13,7 @@ function CarServiceOverviewComponent() {
 
       {content && (
         <div className="car-service-overview-wrapper">
-          <h2>{content.heading}</h2>
+          <StickyHeading className="home-sticky-title">{content.heading}</StickyHeading>
 
           <div className="car-service-overview-banner">
             <p>{content.description}</p>
@@ -25,9 +28,9 @@ function CarServiceOverviewComponent() {
               />
 
               <div className="car-service-cta-card">
-                <a href="/car-service">
+                <a href={localizedUrl('/car-service', language)}>
                   {t('carOverview.link')}
-                  <span aria-hidden="true"><img className="chevron-right-icon" src="/icons/chevron-right-double.svg" alt="" width="20" height="20" /></span>
+                  <ChevronCircle />
                 </a>
               </div>
             </div>

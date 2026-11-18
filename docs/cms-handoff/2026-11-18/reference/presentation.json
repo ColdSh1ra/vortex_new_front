@@ -1,0 +1,628 @@
+{
+  "ownership": "client-code; reference only; not CMS schema",
+  "header": {
+    "duration_ms": 400,
+    "down": "compact",
+    "compact_click": "expand-scale",
+    "up": "expand-slide",
+    "respects_reduced_motion": true
+  },
+  "sticky_headings": {
+    "background_only_when_pinned": true,
+    "shadow": false,
+    "home": [
+      "about_us_block",
+      "integrations_catalog_section",
+      "car_service_section",
+      "website_development_section"
+    ],
+    "privacy": "all section headings; anchors privacy-{id}"
+  },
+  "hero": {
+    "screenshot_layout": "three images in one row behind content, dimmed; intrinsic height",
+    "background_logo": "/bgs/logo2.svg"
+  },
+  "chevron": {
+    "icon": "/icons/double-chevron-right.svg",
+    "background": "HTML div",
+    "circle_color": "#ffe4a0"
+  },
+  "footer": {
+    "background": "dark blue shared with homepage",
+    "bottom_spacing": true,
+    "blog_transition": "light-to-dark gradient with spacing"
+  },
+  "supplier_network": {
+    "hub": {
+      "x": 50,
+      "y": 55
+    },
+    "nodes": [
+      {
+        "name": "Elit",
+        "imageSrc": "/imgs/integrations/Elit.png",
+        "x": 27,
+        "y": 14,
+        "size": "large",
+        "animationDelay": 0
+      },
+      {
+        "name": "supplier.technomir",
+        "imageSrc": "/imgs/integrations/technomir-logo.png",
+        "x": 58,
+        "y": 9,
+        "size": "large",
+        "animationDelay": 420
+      },
+      {
+        "name": "BM Parts",
+        "imageSrc": "/imgs/integrations/bm-logo.png",
+        "x": 90,
+        "y": 30,
+        "size": "large",
+        "animationDelay": 840
+      },
+      {
+        "name": "AutoOriginal",
+        "imageSrc": "/imgs/integrations/autooriginal.png",
+        "x": 90,
+        "y": 63,
+        "size": "large",
+        "animationDelay": 1260
+      },
+      {
+        "name": "S-Line",
+        "imageSrc": "/imgs/integrations/s-line-logo.svg",
+        "x": 77,
+        "y": 89,
+        "size": "large",
+        "animationDelay": 1680
+      },
+      {
+        "name": "Omega",
+        "imageSrc": "/imgs/integrations/omega-logo.jpg",
+        "x": 34,
+        "y": 94,
+        "size": "large",
+        "animationDelay": 2100
+      },
+      {
+        "name": "supplier.uniq",
+        "imageSrc": "/imgs/integrations/uniq_logo.png",
+        "x": 8,
+        "y": 77,
+        "size": "large",
+        "animationDelay": 2520
+      },
+      {
+        "name": "ASG",
+        "imageSrc": "/imgs/integrations/ASG.png",
+        "x": 36,
+        "y": 38,
+        "size": "small",
+        "animationDelay": 180
+      },
+      {
+        "name": "Inter Cars",
+        "imageSrc": "/imgs/integrations/intercars_logo.png",
+        "x": 50,
+        "y": 31,
+        "size": "small",
+        "animationDelay": 600
+      },
+      {
+        "name": "Bastion",
+        "imageSrc": "/imgs/integrations/bastion-logo.png",
+        "x": 64,
+        "y": 38,
+        "size": "small",
+        "animationDelay": 1020
+      },
+      {
+        "name": "4Cars",
+        "imageSrc": "/imgs/integrations/forcars.png",
+        "x": 33,
+        "y": 57,
+        "size": "small",
+        "animationDelay": 1440
+      },
+      {
+        "name": "Twin",
+        "imageSrc": "/imgs/integrations/twin.png",
+        "x": 69,
+        "y": 57,
+        "size": "small",
+        "animationDelay": 1860
+      },
+      {
+        "name": "supplier.groupauto",
+        "imageSrc": "/imgs/integrations/vladislav.png",
+        "x": 62,
+        "y": 70,
+        "size": "small",
+        "animationDelay": 2280
+      },
+      {
+        "name": "Ford.org.ua",
+        "imageSrc": "/imgs/integrations/ford_org_ua.png",
+        "x": 50,
+        "y": 82,
+        "size": "small",
+        "animationDelay": 2700
+      },
+      {
+        "name": "Partline",
+        "imageSrc": "/imgs/integrations/partline-logo.png",
+        "x": 36,
+        "y": 73,
+        "size": "small",
+        "animationDelay": 3120
+      }
+    ]
+  },
+  "sync": {
+    "viewbox": {
+      "width": 1000,
+      "height": 650
+    },
+    "routes": [
+      {
+        "id": "upper-express",
+        "direction": "to-right",
+        "path": "M 250 355 H 285 V 170 H 435 V 205 H 650 V 355 H 750",
+        "points": [
+          {
+            "x": 250,
+            "y": 355
+          },
+          {
+            "x": 285,
+            "y": 355
+          },
+          {
+            "x": 285,
+            "y": 170
+          },
+          {
+            "x": 435,
+            "y": 170
+          },
+          {
+            "x": 435,
+            "y": 205
+          },
+          {
+            "x": 650,
+            "y": 205
+          },
+          {
+            "x": 650,
+            "y": 355
+          },
+          {
+            "x": 750,
+            "y": 355
+          }
+        ]
+      },
+      {
+        "id": "upper-detour",
+        "direction": "to-right",
+        "path": "M 250 355 H 320 V 220 H 500 V 150 H 700 V 355 H 750",
+        "points": [
+          {
+            "x": 250,
+            "y": 355
+          },
+          {
+            "x": 320,
+            "y": 355
+          },
+          {
+            "x": 320,
+            "y": 220
+          },
+          {
+            "x": 500,
+            "y": 220
+          },
+          {
+            "x": 500,
+            "y": 150
+          },
+          {
+            "x": 700,
+            "y": 150
+          },
+          {
+            "x": 700,
+            "y": 355
+          },
+          {
+            "x": 750,
+            "y": 355
+          }
+        ]
+      },
+      {
+        "id": "upper-local",
+        "direction": "to-right",
+        "path": "M 250 355 H 365 V 280 H 570 V 245 H 675 V 355 H 750",
+        "points": [
+          {
+            "x": 250,
+            "y": 355
+          },
+          {
+            "x": 365,
+            "y": 355
+          },
+          {
+            "x": 365,
+            "y": 280
+          },
+          {
+            "x": 570,
+            "y": 280
+          },
+          {
+            "x": 570,
+            "y": 245
+          },
+          {
+            "x": 675,
+            "y": 245
+          },
+          {
+            "x": 675,
+            "y": 355
+          },
+          {
+            "x": 750,
+            "y": 355
+          }
+        ]
+      },
+      {
+        "id": "lower-local",
+        "direction": "to-left",
+        "path": "M 250 355 H 305 V 425 H 460 V 455 H 650 V 355 H 750",
+        "points": [
+          {
+            "x": 250,
+            "y": 355
+          },
+          {
+            "x": 305,
+            "y": 355
+          },
+          {
+            "x": 305,
+            "y": 425
+          },
+          {
+            "x": 460,
+            "y": 425
+          },
+          {
+            "x": 460,
+            "y": 455
+          },
+          {
+            "x": 650,
+            "y": 455
+          },
+          {
+            "x": 650,
+            "y": 355
+          },
+          {
+            "x": 750,
+            "y": 355
+          }
+        ]
+      },
+      {
+        "id": "lower-detour",
+        "direction": "to-left",
+        "path": "M 250 355 H 340 V 485 H 535 V 520 H 705 V 355 H 750",
+        "points": [
+          {
+            "x": 250,
+            "y": 355
+          },
+          {
+            "x": 340,
+            "y": 355
+          },
+          {
+            "x": 340,
+            "y": 485
+          },
+          {
+            "x": 535,
+            "y": 485
+          },
+          {
+            "x": 535,
+            "y": 520
+          },
+          {
+            "x": 705,
+            "y": 520
+          },
+          {
+            "x": 705,
+            "y": 355
+          },
+          {
+            "x": 750,
+            "y": 355
+          }
+        ]
+      },
+      {
+        "id": "lower-express",
+        "direction": "to-left",
+        "path": "M 250 355 H 280 V 550 H 420 V 585 H 670 V 355 H 750",
+        "points": [
+          {
+            "x": 250,
+            "y": 355
+          },
+          {
+            "x": 280,
+            "y": 355
+          },
+          {
+            "x": 280,
+            "y": 550
+          },
+          {
+            "x": 420,
+            "y": 550
+          },
+          {
+            "x": 420,
+            "y": 585
+          },
+          {
+            "x": 670,
+            "y": 585
+          },
+          {
+            "x": 670,
+            "y": 355
+          },
+          {
+            "x": 750,
+            "y": 355
+          }
+        ]
+      },
+      {
+        "id": "upper-outer",
+        "direction": "to-right",
+        "path": "M 250 355 H 268 V 150 H 390 V 185 H 725 V 355 H 750",
+        "points": [
+          {
+            "x": 250,
+            "y": 355
+          },
+          {
+            "x": 268,
+            "y": 355
+          },
+          {
+            "x": 268,
+            "y": 150
+          },
+          {
+            "x": 390,
+            "y": 150
+          },
+          {
+            "x": 390,
+            "y": 185
+          },
+          {
+            "x": 725,
+            "y": 185
+          },
+          {
+            "x": 725,
+            "y": 355
+          },
+          {
+            "x": 750,
+            "y": 355
+          }
+        ]
+      },
+      {
+        "id": "upper-middle",
+        "direction": "to-right",
+        "path": "M 250 355 H 345 V 250 H 470 V 190 H 625 V 355 H 750",
+        "points": [
+          {
+            "x": 250,
+            "y": 355
+          },
+          {
+            "x": 345,
+            "y": 355
+          },
+          {
+            "x": 345,
+            "y": 250
+          },
+          {
+            "x": 470,
+            "y": 250
+          },
+          {
+            "x": 470,
+            "y": 190
+          },
+          {
+            "x": 625,
+            "y": 190
+          },
+          {
+            "x": 625,
+            "y": 355
+          },
+          {
+            "x": 750,
+            "y": 355
+          }
+        ]
+      },
+      {
+        "id": "lower-inner",
+        "direction": "to-left",
+        "path": "M 250 355 H 375 V 395 H 490 V 430 H 620 V 355 H 750",
+        "points": [
+          {
+            "x": 250,
+            "y": 355
+          },
+          {
+            "x": 375,
+            "y": 355
+          },
+          {
+            "x": 375,
+            "y": 395
+          },
+          {
+            "x": 490,
+            "y": 395
+          },
+          {
+            "x": 490,
+            "y": 430
+          },
+          {
+            "x": 620,
+            "y": 430
+          },
+          {
+            "x": 620,
+            "y": 355
+          },
+          {
+            "x": 750,
+            "y": 355
+          }
+        ]
+      },
+      {
+        "id": "lower-outer",
+        "direction": "to-left",
+        "path": "M 250 355 H 260 V 590 H 395 V 620 H 730 V 355 H 750",
+        "points": [
+          {
+            "x": 250,
+            "y": 355
+          },
+          {
+            "x": 260,
+            "y": 355
+          },
+          {
+            "x": 260,
+            "y": 590
+          },
+          {
+            "x": 395,
+            "y": 590
+          },
+          {
+            "x": 395,
+            "y": 620
+          },
+          {
+            "x": 730,
+            "y": 620
+          },
+          {
+            "x": 730,
+            "y": 355
+          },
+          {
+            "x": 750,
+            "y": 355
+          }
+        ]
+      }
+    ],
+    "dots_per_route": 2,
+    "transfer_durations_seconds": [
+      {
+        "id": "upper-express",
+        "duration": 9.23076923076923
+      },
+      {
+        "id": "upper-detour",
+        "duration": 9.769230769230768
+      },
+      {
+        "id": "upper-local",
+        "duration": 10.307692307692308
+      },
+      {
+        "id": "lower-local",
+        "duration": 10.846153846153845
+      },
+      {
+        "id": "lower-detour",
+        "duration": 11.384615384615385
+      },
+      {
+        "id": "lower-express",
+        "duration": 11.923076923076923
+      },
+      {
+        "id": "upper-outer",
+        "duration": 12.46153846153846
+      },
+      {
+        "id": "upper-middle",
+        "duration": 12.999999999999998
+      },
+      {
+        "id": "lower-inner",
+        "duration": 13.538461538461538
+      },
+      {
+        "id": "lower-outer",
+        "duration": 14.076923076923077
+      }
+    ],
+    "direction_colors": {
+      "to-right": "#ffac00",
+      "to-left": "#ffffff"
+    },
+    "clients": [
+      "/imgs/3dicons_premium/3dicons-boy-right-premium.png",
+      "/imgs/3dicons_premium/3dicons-boy-left-premium.png"
+    ],
+    "note": "Dots match their roads. Routes extended to5 each direction; original timing retained. No moving file/cart icons."
+  },
+  "gallery_glob": "/public/imgs/websites/{overview,example-free,example-practical,example-maximum}.{png,jpg,jpeg,webp,avif}",
+  "pricing_navigation": {
+    "current_route_overrides": {
+      "/car-service": "/car-service#pricing",
+      "/websites": "/websites#pricing"
+    },
+    "default": "/#pricing",
+    "future_vortex_plans": "/#vortex-plans"
+  },
+  "cta_resolution": {
+    "current_trial_and_demo": "#trial-request; same form, no distinct submission intent yet",
+    "integration_connect": "/contact",
+    "integration_features": "#integration-features",
+    "integration_back": "/#integrations-catalog"
+  }
+}

@@ -135,7 +135,7 @@
 .website-service-indicator { border: 2px solid #fff; border-radius: 50%; flex: 0 0 20px; height: 20px; position: relative; }
 .is-included > .website-service-indicator::after { background: var(--orange-bg-color); border-radius: 50%; content: ""; inset: 3px; position: absolute; }
 .website-plan-choose { align-items: center; background: var(--orange-bg-color); border: 0; border-radius: 999px; color: var(--grey-dark-text); cursor: pointer; display: flex; font: inherit; font-size: 16px; font-weight: 700; justify-content: center; margin-top: 32px; min-height: 40px; padding: 8px 40px; position: relative; width: 100%; }
-.website-plan-choose > span { align-items: center; background: rgb(255 255 255 / .45); border-radius: 50%; display: flex; height: 28px; justify-content: center; position: absolute; right: 5px; width: 28px; }
+.website-plan-choose > .chevron-circle { --chevron-circle-size: 28px; position: absolute; right: 5px; }
 .website-plan-choose img { height: 20px; width: 20px; }
 .website-plan-choose:hover { background: #ffd16f; }
 

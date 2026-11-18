@@ -1,0 +1,2597 @@
+{
+  "homepage": {
+    "title": "CRM VORTEX —\nniezawodny i sprawdzony system zarządzania\ndla sklepów motoryzacyjnych i warsztatów",
+    "subtitle": "CRM Vortex zapewnia pełną kontrolę nad sklepem motoryzacyjnym i warsztatem: od ewidencji towarów i zamówień po finanse i wydajność pracowników. Jeden system łączy 95% operacji w jednym interfejsie, ograniczając straty, usprawniając pracę zespołu i zwiększając zysk.",
+    "about_us_block": {
+      "about_us_title": "O nas",
+      "about_us_subtitle": "Vortex oferuje narzędzia niedostępne w innych CRM: elastyczne zarządzanie magazynem, osobne interfejsy dla menedżerów i pakowaczy, rozbudowaną macierz statusów i automatyczną fiskalizację. Zwiększ dokładność procesów, ogranicz utracone zamówienia i skup się na rozwoju firmy.",
+      "about_us_blocks": [
+        {
+          "about_us_title": "Zarządzanie sklepem motoryzacyjnym i warsztatem w jednym miejscu",
+          "about_us_description": "Rozwiązanie stworzone dla Twojej branży, skupione na magazynie, zamówieniach, klientach i ewidencji usług, bez zbędnych funkcji.",
+          "about_us_image_path": "/imgs/3dicons_premium/monitor.png"
+        },
+        {
+          "about_us_title": "Prosta automatyzacja",
+          "about_us_description": "Zastąp Excel nowoczesnym systemem, który upraszcza ewidencję, przyspiesza obsługę zamówień i pomaga unikać błędów.",
+          "about_us_image_path": "/imgs/3dicons_premium/folder.png"
+        },
+        {
+          "about_us_title": "Integracje z dostawcami",
+          "about_us_description": "Połącz się z głównymi dostawcami i katalogami części. Ceny i stany magazynowe aktualizują się automatycznie, bez pracy ręcznej.",
+          "about_us_image_path": "/imgs/3dicons_premium/like.png"
+        },
+        {
+          "about_us_title": "Strona internetowa w prezencie",
+          "about_us_description": "Stworzymy nowoczesną stronę dla Twojego sklepu. Wybierz bezpłatny szablon lub rozwiązanie dostosowane do Twoich potrzeb.",
+          "about_us_image_path": "/imgs/3dicons_premium/gift.png"
+        },
+        {
+          "about_us_title": "Wymiana informacji z innymi klientami Vortex",
+          "about_us_description": "Kontaktuj się z innymi sklepami korzystającymi z Vortex i wymieniaj informacje o dostępności części.",
+          "about_us_image_path": "/imgs/3dicons_premium/message.png"
+        },
+        {
+          "about_us_title": "Wzrost zysku",
+          "about_us_description": "Kontrola każdego etapu od zapytania do sprzedaży. Mniejsze straty, lepsza obsługa, więcej zamówień.",
+          "about_us_image_path": "/imgs/3dicons_premium/wallet.png"
+        }
+      ],
+      "visible": true
+    },
+    "hero_page_slider_section": {
+      "section_title": "Tak będzie wyglądał Twój system",
+      "slide_image_paths": [
+        "/imgs/slider_images/slide_1.png",
+        "/imgs/slider_images/slide_2.png",
+        "/imgs/slider_images/slide_3.png"
+      ],
+      "visible": true
+    },
+    "why_vortex_section": {
+      "section_title": "Co potrafi Vortex?",
+      "section_description": "Vortex oferuje szerokie możliwości, dopracowane w najdrobniejszych szczegółach przez zespół specjalistów z branży.",
+      "cards": [
+        {
+          "title": "Kontrahenci",
+          "description": "Historia sprzedaży, prac warsztatowych, przebiegu pojazdów i dokumentów. Rozbudowane uzgadnianie rozrachunków, indywidualne marże i warunki kredytowe.",
+          "image_src": ""
+        },
+        {
+          "title": "Magazyn",
+          "description": "Automatyczne zakupy (MIN-MAX), adresowe składowanie, kontrola kompletacji towarów i wiele więcej.",
+          "image_src": ""
+        },
+        {
+          "title": "Finanse",
+          "description": "Kontrola wszystkich przychodów i wydatków: płatności dostawcom, wynagrodzeń, kas menedżerów i innych operacji finansowych, w wielu walutach.",
+          "image_src": ""
+        },
+        {
+          "title": "Fiskalizacja",
+          "description": "Dzięki integracji z Checkbox możesz fiskalizować sprzedaż bez instalowania kasy fiskalnej.",
+          "image_src": ""
+        }
+      ],
+      "visible": true
+    },
+    "vortex_audience_section": {
+      "section_title": "Dla kogo jest Vortex?",
+      "cards": [
+        {
+          "title": "Sklepy motoryzacyjne",
+          "description": "do wygodnego zarządzania towarami i zamówieniami",
+          "cta_text": "Wypróbuj bezpłatnie",
+          "image_src": "/imgs/3d_clay/3dicons-bag-dynamic-clay.png"
+        },
+        {
+          "title": "Warsztaty i serwisy samochodowe",
+          "description": "do zarządzania pracami, zapasami i relacjami z klientami",
+          "cta_text": "Wypróbuj bezpłatnie",
+          "image_src": "/imgs/3d_clay/3dicons-tool-dynamic-clay.png"
+        },
+        {
+          "title": "Hurtownie",
+          "description": "do ewidencji magazynowej i sprawnej logistyki",
+          "cta_text": "Wypróbuj bezpłatnie",
+          "image_src": "/imgs/3d_clay/3dicons-location-dynamic-clay.png"
+        },
+        {
+          "title": "Sklepy internetowe",
+          "description": "do integracji sprzedaży online i szybkiej obsługi zamówień",
+          "cta_text": "Wypróbuj bezpłatnie",
+          "image_src": "/imgs/3d_clay/3dicons-computer-dynamic-clay.png"
+        }
+      ],
+      "visible": true
+    },
+    "client_testimonials_section": {
+      "section_title": "Co mówią nasi klienci",
+      "pros_title": "Lorem ipsum Vortex:",
+      "cons_title": "Dolor sit amet Vortex:",
+      "reviews": [
+        {
+          "company_name": "Lorem Company",
+          "company_type": "Lorem ipsum dolor",
+          "image_src": "",
+          "pros": [
+            "Lorem ipsum",
+            "Dolor sit amet",
+            "Consectetur adipiscing"
+          ],
+          "cons": [
+            "Tempor incididunt",
+            "Labore et dolore"
+          ],
+          "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+          "link_text": "Lorem ipsum",
+          "link_href": "#"
+        },
+        {
+          "company_name": "Ipsum Group",
+          "company_type": "Consectetur adipiscing",
+          "image_src": "",
+          "pros": [
+            "Aenean commodo",
+            "Ligula eget dolor",
+            "Cum sociis natoque"
+          ],
+          "cons": [
+            "Donec quam felis",
+            "Ultricies nec"
+          ],
+          "quote": "Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.",
+          "link_text": "Lorem ipsum",
+          "link_href": "#"
+        },
+        {
+          "company_name": "Dolor Service",
+          "company_type": "Eiusmod tempor",
+          "image_src": "",
+          "pros": [
+            "Integer tincidunt",
+            "Cras dapibus",
+            "Vivamus elementum"
+          ],
+          "cons": [
+            "Aenean vulputate",
+            "Eleifend tellus"
+          ],
+          "quote": "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.",
+          "link_text": "Lorem ipsum",
+          "link_href": "#"
+        },
+        {
+          "company_name": "Amet Market",
+          "company_type": "Magna aliqua",
+          "image_src": "",
+          "pros": [
+            "Phasellus viverra",
+            "Nulla ut metus",
+            "Varius laoreet"
+          ],
+          "cons": [
+            "Quisque rutrum",
+            "Aenean imperdiet"
+          ],
+          "quote": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi nam eget dui.",
+          "link_text": "Lorem ipsum",
+          "link_href": "#"
+        }
+      ],
+      "visible": true
+    },
+    "integrations_catalog_section": {
+      "section_title": "Integracje API Vortex",
+      "section_description": "Dobieraj części, wystawiaj paragony fiskalne, przygotowuj przesyłki, rozliczaj transakcje bankowe i kontaktuj się z klientami w jednym systemie. Połącz potrzebne usługi z Vortex przez API bez ponownego wprowadzania danych i przełączania się między aplikacjami.",
+      "cards": [
+        {
+          "title": "TecDoc Inside",
+          "image_src": "/imgs/api-integrations/tecdoc-int-logo.svg",
+          "features": [
+            "Wyszukiwanie pojazdu po VIN",
+            "Dobór części do pojazdu, filtrowanie według ulubionych marek i zespołów konstrukcyjnych",
+            "Sprawdzanie zastosowania części w pojazdach",
+            "Wyszukiwanie informacji o częściach",
+            "Dobór części w katalogu największej bazy danych na świecie"
+          ],
+          "link_text": "Dowiedz się więcej",
+          "link_href": "/integrations/tecdoc"
+        },
+        {
+          "title": "Checkbox",
+          "image_src": "/imgs/api-integrations/checkbox-int-logo.svg",
+          "features": [
+            "Kasa online bezpośrednio w Vortex",
+            "Tworzenie i druk paragonów fiskalnych na drukarkach termicznych",
+            "Wystawianie i tworzenie paragonów fiskalnych",
+            "Bez kosztów zakupu sprzętu",
+            "Wygodne zarządzanie połączeniem",
+            "Konfiguracja wielu kont Checkbox oraz wielu kas i kasjerów w ramach jednego konta"
+          ],
+          "link_text": "Dowiedz się więcej",
+          "link_href": "/integrations/checkbox"
+        },
+        {
+          "title": "Vchasno.Kasa",
+          "image_src": "/imgs/api-integrations/vchasno-kasa-logo.svg",
+          "features": [
+            "Fiskalizacja sprzedaży części i usług warsztatowych w Vortex",
+            "Elektroniczne paragony i przesyłanie danych do ukraińskiej administracji podatkowej",
+            "Łączenie punktów sprzedaży, kas i kluczy kasjerów",
+            "Płatności gotówkowe i bezgotówkowe oraz zwroty",
+            "Jeden proces obsługi zamówienia, płatności i paragonu"
+          ],
+          "link_text": "Dowiedz się więcej",
+          "link_href": "/integrations/vchasno",
+          "partner_links": [
+            {
+              "label": "−50% na pierwszą płatność",
+              "href": "https://service.vchasno.ua/prro-offer?utm_source=vortex"
+            },
+            {
+              "label": "50 UAH miesięcznie przez 6 miesięcy",
+              "href": "https://service.vchasno.ua/prro-offer-50?utm_source=vortex"
+            }
+          ]
+        },
+        {
+          "title": "Nova Poshta",
+          "image_src": "/imgs/api-integrations/np-int-logo.svg",
+          "features": [
+            "Ustawienie domyślnego nadawcy",
+            "Tworzenie ekspresowych listów przewozowych do oddziału lub na adres, z kontrolą płatności lub bez, dla jednej lub wielu paczek i z wieloma dodatkowymi opcjami",
+            "Druk etykiet paczek i pełnych ekspresowych listów przewozowych na A4",
+            "Aktualizacja bazy oddziałów przez API"
+          ],
+          "link_text": "Dowiedz się więcej",
+          "link_href": "/integrations/nova_poshta"
+        },
+        {
+          "title": "Turbo SMS",
+          "image_src": "/imgs/api-integrations/turbosms-int-logo.svg",
+          "features": [
+            "Automatyczne wysyłanie SMS przy różnych zdarzeniach",
+            "Ręczne wysyłanie SMS z własną treścią lub szablonem",
+            "Wysyłka SMS do wielu odbiorców",
+            "Historia wysłanych SMS",
+            "Monitorowanie salda i powiadomienia o niskim saldzie SMS"
+          ],
+          "link_text": "Dowiedz się więcej",
+          "link_href": "/integrations/turboSMS"
+        },
+        {
+          "title": "API banków",
+          "image_src": "/imgs/api-integrations/banks-api-int-logo.svg",
+          "features": [
+            "Połączenie z Twoim rachunkiem bankowym",
+            "Podgląd ostatnich transakcji",
+            "Tworzenie transakcji finansowej w Vortex z rzeczywistej transakcji bankowej jednym kliknięciem!",
+            "Wszystkie transakcje na jednej liście z filtrami według rachunku i typu operacji oraz wyszukiwaniem po kwocie, odbiorcy, notatce i innych danych"
+          ],
+          "link_text": "Dowiedz się więcej",
+          "link_href": "/integrations/bank_API"
+        },
+        {
+          "title": "Binotel",
+          "image_src": "/imgs/api-integrations/binotel-int-logo.svg",
+          "features": [
+            "Kontrola nieodebranych połączeń",
+            "Historia połączeń klienta w Vortex",
+            "Szybkie tworzenie klienta przy połączeniu z niezarejestrowanego numeru",
+            "Odsłuchiwanie rozmów i kontrola jakości",
+            "Przejście do profilu klienta w Vortex przy połączeniu z zarejestrowanego numeru"
+          ],
+          "link_text": "Dowiedz się więcej",
+          "link_href": "/integrations/binotel"
+        }
+      ],
+      "visible": true
+    },
+    "car_service_section": {
+      "heading": "Zarządzanie warsztatem",
+      "description": "Vortex pomaga w zarządzaniu nie tylko sklepom motoryzacyjnym, ale również serwisom samochodowym.",
+      "car_service_features": [
+        "Zarządzanie katalogiem prac warsztatowych",
+        "Zarządzanie stanowiskami i mechanikami",
+        "Umawianie klientów na wybrany termin",
+        "Wygodny graficzny harmonogram warsztatu",
+        "Zarządzanie garażem klienta",
+        "Historia przebiegu",
+        "Tworzenie przypomnień",
+        "Druk dokumentów: protokołów, faktur, zleceń serwisowych i diagnostyki",
+        "Obliczanie wynagrodzeń mechaników i doradców serwisowych",
+        "Przejrzyste i szczegółowe statystyki"
+      ],
+      "visible": true,
+      "paragraphs": [
+        "Jako właściciele serwisu stworzyliśmy ten moduł na podstawie własnych doświadczeń, uwzględniając wszystkie wyzwania i szczegóły.",
+        "Gdy zaczęliśmy dostarczać program innym warsztatom w Ukrainie, uwzględniliśmy w rozwoju produktu również ich podejście i wizję.",
+        "Dołączając do nas, pomożesz tworzyć najlepszy system zarządzania dla warsztatów i sklepów motoryzacyjnych."
+      ],
+      "link_text": "Więcej o zarządzaniu warsztatem",
+      "link_target": "/car-service",
+      "image": "/imgs/laptop-screenshot.png",
+      "image_alt": "Interfejs warsztatu Vortex na laptopie"
+    },
+    "website_development_section": {
+      "heading": "Tworzenie stron internetowych",
+      "gift_message": "Korzystaj z VORTEX i otrzymaj bezpłatną stronę dla swojego sklepu motoryzacyjnego lub warsztatu!",
+      "description_paragraphs": [
+        "Nasz szablon strony spełnia potrzeby ponad 80% naszych klientów.",
+        "Strona jest szybka, intuicyjna i w pełni zintegrowana z systemem zarządzania.",
+        "Katalogi, stany magazynowe, ceny, opisy i zdjęcia z CRM są automatycznie publikowane na stronie.",
+        "Samodzielnie zmienisz logo, kolory, menu, teksty i inne elementy.",
+        "Oferujemy również optymalizację SEO, konfigurację Google Ads i inne narzędzia promocji strony."
+      ],
+      "website_image_src": "/imgs/websites/site_2.png",
+      "benefit_groups": [
+        {
+          "items": [
+            "Responsywna",
+            "Skuteczna",
+            "Szybka",
+            "Zoptymalizowana",
+            "Przejrzysta",
+            "Funkcjonalna"
+          ],
+          "image_src": "/imgs/3dicons_premium/3d-rocket-premium.png"
+        },
+        {
+          "items": [
+            "Katalog produktów",
+            "Wybrane produkty na stronie głównej",
+            "Optymalizacja SEO*",
+            "Dobór części przez TecDoc*",
+            "LiqPay*"
+          ],
+          "image_src": "/imgs/3dicons_premium/3d-fire.png",
+          "note": "*usługi płatne"
+        }
+      ],
+      "upgrade_message": "Możesz rozbudować stronę o przydatne funkcje, wybierając pakiet „Praktyczny” lub „Maksymalny”.",
+      "cta_text": "Więcej o stronie",
+      "visible": true,
+      "website_image_alt": "Przykładowa strona sklepu motoryzacyjnego",
+      "cta_target": "/websites"
+    },
+    "vortex_pricing_section": {
+      "visible": false,
+      "section_title": "Pakiety Vortex",
+      "section_description": "",
+      "plans": [],
+      "billing_labels": {
+        "monthly": "miesięcznie",
+        "yearly": "rocznie",
+        "one_time": "płatność jednorazowa"
+      }
+    },
+    "hero": {
+      "cta_text": "Wypróbuj bezpłatnie",
+      "cta_target": "#trial-request",
+      "image": "/bgs/logo2.svg",
+      "image_alt": "Vortex",
+      "screenshots": [
+        {
+          "image": "/imgs/vx-screenshot-1.png",
+          "alt": ""
+        },
+        {
+          "image": "/imgs/vx-screenshot-2.png",
+          "alt": ""
+        },
+        {
+          "image": "/imgs/vx-screenshot-3.png",
+          "alt": ""
+        }
+      ]
+    },
+    "suppliers_section": {
+      "visible": true,
+      "title": "Wszyscy dostawcy w jednym miejscu",
+      "description": "Vortex gromadzi stany magazynowe wszystkich dostawców w jednym miejscu i upraszcza współpracę. Integracje pozwalają automatycznie odbierać cenniki, składać zamówienia i pobierać dokumenty przez API.",
+      "image": "",
+      "image_alt": "Dostawcy połączeni z systemem Vortex",
+      "suppliers": [
+        {
+          "id": "supplier-1",
+          "name": "Elit",
+          "logo": "/imgs/integrations/Elit.png",
+          "logo_alt": "Elit"
+        },
+        {
+          "id": "supplier-2",
+          "name": "Technomir",
+          "logo": "/imgs/integrations/technomir-logo.png",
+          "logo_alt": "Technomir"
+        },
+        {
+          "id": "supplier-3",
+          "name": "BM Parts",
+          "logo": "/imgs/integrations/bm-logo.png",
+          "logo_alt": "BM Parts"
+        },
+        {
+          "id": "supplier-4",
+          "name": "AutoOriginal",
+          "logo": "/imgs/integrations/autooriginal.png",
+          "logo_alt": "AutoOriginal"
+        },
+        {
+          "id": "supplier-5",
+          "name": "S-Line",
+          "logo": "/imgs/integrations/s-line-logo.svg",
+          "logo_alt": "S-Line"
+        },
+        {
+          "id": "supplier-6",
+          "name": "Omega",
+          "logo": "/imgs/integrations/omega-logo.jpg",
+          "logo_alt": "Omega"
+        },
+        {
+          "id": "supplier-7",
+          "name": "Uniq Trade",
+          "logo": "/imgs/integrations/uniq_logo.png",
+          "logo_alt": "Uniq Trade"
+        },
+        {
+          "id": "supplier-8",
+          "name": "ASG",
+          "logo": "/imgs/integrations/ASG.png",
+          "logo_alt": "ASG"
+        },
+        {
+          "id": "supplier-9",
+          "name": "Inter Cars",
+          "logo": "/imgs/integrations/intercars_logo.png",
+          "logo_alt": "Inter Cars"
+        },
+        {
+          "id": "supplier-10",
+          "name": "Bastion",
+          "logo": "/imgs/integrations/bastion-logo.png",
+          "logo_alt": "Bastion"
+        },
+        {
+          "id": "supplier-11",
+          "name": "4Cars",
+          "logo": "/imgs/integrations/forcars.png",
+          "logo_alt": "4Cars"
+        },
+        {
+          "id": "supplier-12",
+          "name": "Twin",
+          "logo": "/imgs/integrations/twin.png",
+          "logo_alt": "Twin"
+        },
+        {
+          "id": "supplier-13",
+          "name": "Groupauto Ukraine",
+          "logo": "/imgs/integrations/vladislav.png",
+          "logo_alt": "Groupauto Ukraine"
+        },
+        {
+          "id": "supplier-14",
+          "name": "Ford.org.ua",
+          "logo": "/imgs/integrations/ford_org_ua.png",
+          "logo_alt": "Ford.org.ua"
+        },
+        {
+          "id": "supplier-15",
+          "name": "Partline",
+          "logo": "/imgs/integrations/partline-logo.png",
+          "logo_alt": "Partline"
+        }
+      ]
+    },
+    "sync_section": {
+      "visible": true,
+      "title": "Vortex Sync",
+      "paragraphs": [
+        "Nasza technologia Sync pozwala szybko skonfigurować wymianę stanów magazynowych i zamówień online z innym sklepem korzystającym z Vortex.",
+        "Samodzielnie decydujesz o widoczności dla innych klientów, udostępnianych stanach i stosowanej marży.",
+        "Stany pobrane przez Sync mają specjalną etykietę. Zamówienie automatycznie tworzy zamówienie u partnera i powiadamia menedżerów. Otrzymasz takie samo powiadomienie, gdy partner zamówi u Ciebie.",
+        "Nie musisz ręcznie aktualizować stanów — Sync zrobi to za Ciebie."
+      ],
+      "client_label": "Klient Vortex {number}",
+      "image": "",
+      "image_alt": "Szybka wymiana towarów między dwoma klientami Vortex Sync"
+    }
+  },
+  "FAQ": [
+    {
+      "topic": "Jak długo działa wersja demo?",
+      "answer": "<p>Wersja demo jest bezpłatna przez 14 dni i ma te same funkcje co wersja płatna.</p>"
+    },
+    {
+      "topic": "Czy dane wprowadzone podczas okresu próbnego zostaną zachowane?",
+      "answer": "<p>Zalecamy przetestowanie wszystkich funkcji bez obaw o błędy. Po zakończeniu testów możemy usunąć lub zachować dowolne dane zgodnie z Twoim wyborem.</p>"
+    },
+    {
+      "topic": "Jak chronione są moje dane przed utratą i udostępnieniem osobom trzecim?",
+      "answer": "<p>Nasze serwery znajdują się w niezawodnych centrach danych w Niemczech i Finlandii. Pliki ze stanami magazynowymi, kontrahentami i ich saldami możesz pobierać samodzielnie lub ustawić automatyczne wysyłanie e-mailem. Możemy również zawrzeć obustronną umowę o poufności.</p>"
+    },
+    {
+      "topic": "Czy aktualizacje są bezpłatne?",
+      "answer": "<p>Tak, aktualizacje są bezpłatne.</p>"
+    },
+    {
+      "topic": "Potrzebuję dodatkowych funkcji. Co możecie zaproponować?",
+      "answer": "<p>Jeśli program nie spełnia określonej potrzeby, możemy opracować dodatkowe funkcje po uzgodnieniu kosztów i terminów.</p>"
+    },
+    {
+      "topic": "Jak rozpocząć pracę?",
+      "answer": "<ol><li>Wgraj stany magazynowe przez importer cenników i wybierz „-1” w polu magazynu. Plik musi zawierać cztery kolumny: numer części, markę, ilość i cenę zakupu.</li><li>Importuj klientów przez Klienci → Lista → Importuj w prawym górnym rogu.</li><li>Ustaw automatyczne pobieranie cenników dostawców przez Administracja → Usługi zewnętrzne i synchronizacja.</li><li>Utwórz użytkowników przez Administracja → Użytkownicy → Lista → Dodaj w prawym górnym rogu.</li></ol>"
+    }
+  ],
+  "videos": [
+    {
+      "topic": "Jak wgrać cennik?",
+      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=g95YUJmOvXM\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Wgrywanie cennika</strong><span>Instrukcja konfiguracji</span><i aria-hidden=\"true\">▶</i></a></div>"
+    },
+    {
+      "topic": "Jak złożyć zamówienie u dostawcy?",
+      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+від+постачальника\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Zamówienie u dostawcy</strong><span>Instrukcja wideo krok po kroku</span><i aria-hidden=\"true\">▶</i></a></div>"
+    },
+    {
+      "topic": "Jak złożyć zamówienie z magazynu?",
+      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+замовлення+зі+складу\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Zamówienie z magazynu</strong><span>Instrukcja wideo krok po kroku</span><i aria-hidden=\"true\">▶</i></a></div>"
+    },
+    {
+      "topic": "Jak zarejestrować przyjęcie towaru?",
+      "answer": "<div class=\"faq-video-grid\"><a class=\"faq-video-link\" href=\"https://www.youtube.com/watch?v=JkVtG0KNoVw\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Zamawianie i przyjęcie towaru</strong><span>Instrukcja konfiguracji</span><i aria-hidden=\"true\">▶</i></a><a class=\"faq-video-link\" href=\"https://www.youtube.com/results?search_query=Vortex+великий+прийом+товару\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"faq-video-brand\">VORTEX</span><strong>Duże przyjęcie towaru</strong><span>Instrukcja konfiguracji</span><i aria-hidden=\"true\">▶</i></a></div>"
+    }
+  ],
+  "contacts": {
+    "title": "Kontakt",
+    "subtitle": "Masz pytania?\nZawsze chętnie pomożemy, jesteśmy dla Ciebie.",
+    "workers": [
+      {
+        "contact_topic": "Wersja próbna i konsultacje",
+        "full_name": "Kristina Vasylyniak",
+        "role": "Wsparcie techniczne",
+        "phone": "+38 (097) 866-36-90",
+        "photo_path": "/imgs/contacts/worker-1.svg",
+        "messenger_links": {
+          "telegram": "https://t.me/vortex_support",
+          "viber": "viber://chat?number=%2B380978663690",
+          "whatsapp": "https://wa.me/380978663690",
+          "email": "mailto:support@crm-vortex.com"
+        }
+      },
+      {
+        "contact_topic": "Integracje, pytania techniczne i rozwój",
+        "full_name": "Oleksandr Vasyliev",
+        "role": "Programista",
+        "phone": "+38 (095) 677-50-02",
+        "photo_path": "/imgs/contacts/worker-2.svg",
+        "messenger_links": {
+          "telegram": "https://t.me/vortex_development",
+          "viber": "viber://chat?number=%2B380956775002",
+          "whatsapp": "https://wa.me/380956775002",
+          "email": "mailto:development@crm-vortex.com"
+        }
+      },
+      {
+        "contact_topic": "Współpraca i propozycje biznesowe",
+        "full_name": "Volodymyr Markovych",
+        "role": "Założyciel",
+        "phone": "+38 (066) 728-23-02",
+        "photo_path": "/imgs/contacts/worker-3.svg",
+        "messenger_links": {
+          "telegram": "https://t.me/vortex_business",
+          "viber": "viber://chat?number=%2B380667282302",
+          "email": "mailto:business@crm-vortex.com"
+        }
+      },
+      {
+        "contact_topic": "Współpraca i propozycje biznesowe",
+        "full_name": "Artem Kryvorutchenko",
+        "role": "Założyciel",
+        "phone": "+38 (050) 957-66-74",
+        "photo_path": "/imgs/contacts/worker-4.svg",
+        "messenger_links": {
+          "viber": "viber://chat?number=%2B380509576674",
+          "email": "mailto:partnership@crm-vortex.com"
+        }
+      }
+    ]
+  },
+  "settings": {
+    "pricing_calculator": {
+      "currency": "$",
+      "base_monthly_price": 50,
+      "increment": 20,
+      "default_manager_count": 3,
+      "default_store_count": 1,
+      "integrations": [
+        {
+          "id": "tecdoc",
+          "label": "TecDoc",
+          "price": 25,
+          "billing_period": "monthly",
+          "selected_by_default": false
+        },
+        {
+          "id": "binotel",
+          "label": "Binotel",
+          "price": 50,
+          "billing_period": "one_time",
+          "selected_by_default": true
+        },
+        {
+          "id": "nova-poshta",
+          "label": "Nova Poshta",
+          "price": 20,
+          "billing_period": "one_time",
+          "selected_by_default": true
+        }
+      ],
+      "included_features": [
+        "Dowolna liczba kont pozostałych pracowników",
+        "Opieka nad klientem",
+        "Nieograniczone wgrywanie cenników",
+        "Wszystkie dostępne statystyki",
+        "Pełna funkcjonalność ewidencji finansowej"
+      ]
+    }
+  },
+  "stats": {
+    "totalClicks": 0,
+    "formSubmissions": 0
+  },
+  "ui": {
+    "nav.home": "Strona główna",
+    "nav.carService": "Zarządzanie warsztatem",
+    "nav.websites": "Tworzenie stron internetowych",
+    "nav.pricing": "Ceny",
+    "nav.faq": "Pytania",
+    "nav.contacts": "Kontakt",
+    "common.home": "Strona główna",
+    "common.breadcrumbs": "Ścieżka nawigacji",
+    "common.tryFree": "Wypróbuj bezpłatnie",
+    "common.tryDemo": "Zamów prezentację",
+    "common.privacy": "Polityka prywatności",
+    "common.language": "Język strony",
+    "common.navigation": "Nawigacja główna",
+    "common.mobileNavigation": "Nawigacja mobilna",
+    "common.openMenu": "Otwórz menu",
+    "common.closeMenu": "Zamknij menu",
+    "common.socials": "Media społecznościowe",
+    "common.partner": "TecAlliance — oficjalny partner",
+    "common.loading": "Ładowanie…",
+    "common.loadError": "Nie udało się załadować strony.",
+    "common.previous": "Poprzedni slajd",
+    "common.next": "Następny slajd",
+    "common.slide": "Slajd {number}",
+    "common.messengers": "Komunikatory: {name}",
+    "faq.title": "FAQ",
+    "faq.functionality": "Funkcje",
+    "pricing.title": "Twój koszt korzystania z VORTEX",
+    "pricing.managers": "Wybierz liczbę kont menedżerów",
+    "pricing.branches": "Podaj liczbę oddziałów",
+    "pricing.decrease": "Zmniejsz: {label}",
+    "pricing.increase": "Zwiększ: {label}",
+    "pricing.integration": "Integracja z {name}",
+    "pricing.monthly": "miesięcznie",
+    "pricing.oneTime": "opłata jednorazowa",
+    "pricing.trialTitle": "Wypróbuj VORTEX bezpłatnie przez 14 dni!",
+    "pricing.trialDescription": "Pełny dostęp do systemu bez opłat",
+    "pricing.demoTitle": "Zamów prezentację systemu już teraz!",
+    "pricing.demoDescription": "Prezentacja wideo systemu z naszymi specjalistami",
+    "trial.title": "14 dni bezpłatnie!",
+    "trial.subtitle": "Warto spróbować!",
+    "trial.infoTitle": "Wersja bezpłatna ma wszystkie funkcje wersji płatnej!",
+    "trial.info": "Po okresie próbnym możesz usunąć testowe operacje finansowe, zamówienia i przyjęcia towarów, zachowując ustawienia integracji, importów cenników i dane firmowe.",
+    "trial.price": "Obliczony koszt: ${total}",
+    "trial.name": "Jak się do Ciebie zwracać?",
+    "trial.namePlaceholder": "Wpisz swoje imię",
+    "trial.phone": "Numer telefonu",
+    "trial.phonePlaceholder": "+380",
+    "trial.location": "Dodaj moją lokalizację",
+    "trial.locationAdded": "Lokalizacja dodana",
+    "trial.locationUnsupported": "Twoja przeglądarka nie obsługuje geolokalizacji.",
+    "trial.locationWaiting": "Oczekiwanie na zgodę na dostęp do lokalizacji…",
+    "trial.locationSuccess": "Lokalizacja zostanie dołączona do zgłoszenia.",
+    "trial.locationDenied": "Nie udostępniono lokalizacji. Możesz wysłać zgłoszenie bez niej.",
+    "trial.nameError": "Wpisz poprawne imię (2–80 znaków).",
+    "trial.phoneError": "Wpisz poprawny numer telefonu.",
+    "trial.captchaError": "Potwierdź, że nie jesteś robotem.",
+    "trial.success": "Dziękujemy! Zgłoszenie zostało wysłane.",
+    "trial.error": "Nie udało się wysłać zgłoszenia. Spróbuj ponownie.",
+    "trial.unavailable": "Usługa zgłoszeń nie jest jeszcze skonfigurowana.",
+    "trial.sending": "Wysyłanie…",
+    "trial.send": "Wyślij",
+    "trial.captchaUnavailable": "reCAPTCHA nie jest skonfigurowana.",
+    "network.title": "Wszyscy dostawcy w jednym miejscu",
+    "network.description": "Vortex gromadzi stany magazynowe wszystkich dostawców w jednym miejscu i upraszcza współpracę. Integracje pozwalają automatycznie odbierać cenniki, składać zamówienia i pobierać dokumenty przez API.",
+    "network.alt": "Dostawcy połączeni z systemem Vortex",
+    "sync.title": "Vortex Sync",
+    "sync.first": "Nasza technologia Sync pozwala szybko skonfigurować wymianę stanów magazynowych i zamówień online z innym sklepem korzystającym z Vortex.",
+    "sync.second": "Samodzielnie decydujesz o widoczności dla innych klientów, udostępnianych stanach i stosowanej marży.",
+    "sync.third": "Stany pobrane przez Sync mają specjalną etykietę. Zamówienie automatycznie tworzy zamówienie u partnera i powiadamia menedżerów. Otrzymasz takie samo powiadomienie, gdy partner zamówi u Ciebie.",
+    "sync.fourth": "Nie musisz ręcznie aktualizować stanów — Sync zrobi to za Ciebie.",
+    "sync.alt": "Szybka wymiana towarów między dwoma klientami Vortex Sync",
+    "sync.client": "Klient Vortex {number}",
+    "carOverview.link": "Więcej o zarządzaniu warsztatem",
+    "carOverview.alt": "Interfejs warsztatu Vortex na laptopie",
+    "carOverview.first": "Jako właściciele serwisu stworzyliśmy ten moduł na podstawie własnych doświadczeń, uwzględniając wszystkie wyzwania i szczegóły.",
+    "carOverview.second": "Gdy zaczęliśmy dostarczać program innym warsztatom w Ukrainie, uwzględniliśmy w rozwoju produktu również ich podejście i wizję.",
+    "carOverview.third": "Dołączając do nas, pomożesz tworzyć najlepszy system zarządzania dla warsztatów i sklepów motoryzacyjnych.",
+    "website.alt": "Przykładowa strona sklepu motoryzacyjnego",
+    "language.ua": "Українська",
+    "language.cz": "Čeština",
+    "language.sk": "Slovenčina",
+    "language.en": "English",
+    "language.pl": "Polski",
+    "supplier.technomir": "Technomir",
+    "supplier.uniq": "Uniq Trade",
+    "supplier.groupauto": "Groupauto Ukraine",
+    "common.copyright": "Copyright © {year} Vortex",
+    "websites.examplesTitle": "Przykłady naszych stron",
+    "websites.plansTitle": "Plany cenowe",
+    "websites.plansDescription": "Porównaj plany i dostępne funkcje, aby wybrać najlepszą opcję dla swojej firmy.",
+    "websites.freeTemplate": "Bezpłatny szablon",
+    "websites.paidTemplate": "Płatny szablon",
+    "websites.preview": "Podgląd strony: {name}",
+    "websites.plan.free": "Bezpłatny",
+    "websites.plan.practical": "Praktyczny",
+    "websites.plan.maximum": "Maksymalny",
+    "websites.oneTime": "opłata jednorazowa",
+    "websites.noExtra": "bez dopłat",
+    "websites.monthly": "+$10 miesięcznie za 10 tys. zapytań",
+    "websites.choose": "Wybierz pakiet",
+    "websites.selectedPlan": "Wybrany pakiet strony: {name}",
+    "websites.included": "W pakiecie",
+    "websites.notIncluded": "Poza pakietem",
+    "websites.services.productSearch": "Wyszukiwanie produktów według numeru części i opisu",
+    "websites.services.catalogSearch": "Wyszukiwanie we własnym katalogu i dobór według parametrów",
+    "websites.services.liqpay": "Możliwość podłączenia płatności przez LiqPay",
+    "websites.services.feedback": "Formularz kontaktowy",
+    "websites.services.colors": "Konfiguracja kolorystyki strony",
+    "websites.services.account": "Konto klienta",
+    "websites.services.orders": "Historia zamówień",
+    "websites.services.shipments": "Historia wysyłek",
+    "websites.services.balances": "Uzgadnianie rozrachunków",
+    "websites.services.appointments": "Wygodne rezerwacje w warsztacie i historia wizyt na koncie",
+    "websites.services.slider": "Ulepszony slider z układem mobilnym, interaktywnymi elementami i dodatkowymi funkcjami",
+    "websites.services.design": "Ulepszony wygląd strony głównej, nagłówka, konta klienta i innych elementów",
+    "websites.services.garage": "Garaż klienta: dodawanie pojazdów z katalogu, filtrowanie list według pojazdów z garażu i przesyłanie ich zdjęć",
+    "websites.services.vehicleCatalog": "Katalog doboru części do pojazdu, stale rozwijany przez nasz zespół, z wyszukiwaniem po VIN i numerze rejestracyjnym",
+    "websites.services.vehicleCatalogLimited": "Katalog doboru części z wyszukiwaniem po VIN i numerze rejestracyjnym — tylko 10 marek",
+    "websites.services.customization": "Rozbudowana personalizacja strony",
+    "websites.services.favorites": "Ulubione produkty",
+    "websites.services.ratings": "Oceny produktów",
+    "websites.services.invoiceHistory": "Ulepszona historia dokumentów wydania z układem mobilnym, filtrem według pojazdu klienta i statusem opłacenia",
+    "websites.services.searchHistory": "Historia wyszukiwania części",
+    "websites.services.sitemap": "Tworzenie sitemap.xml",
+    "websites.services.seo": "Pomoc w podstawowym SEO i konfiguracji analityki",
+    "websites.services.mscore": "M-score, nasz autorski system analityki strony",
+    "websites.services.mscoreLimited": "Analityka M-score — tylko łączna liczba kliknięć na stronie",
+    "websites.services.mscoreFull": "Pełne statystyki M-score: kto, kiedy i co robił na stronie, rankingi aktywności klientów i grup katalogu oraz wiele więcej",
+    "websites.services.fluids": "Dobór płynów eksploatacyjnych do pojazdu (planowane)",
+    "websites.services.catalogGroups": "Uzupełnienie 10 własnych grup katalogu",
+    "websites.services.blog": "Tworzenie artykułów na blog",
+    "websites.services.homepage": "Podstawowa treść strony głównej",
+    "websites.services.header": "Uzupełnienie nagłówka strony",
+    "nav.services": "Nasze usługi",
+    "nav.dismantling": "Demontaż pojazdów",
+    "dismantling.eyebrow": "Moduł Vortex dla stacji demontażu",
+    "dismantling.title": "Demontaż pojazdów",
+    "dismantling.tagline": "Od samochodu do każdej części",
+    "dismantling.intro": "Zarządzaj demontażem w jednym systemie: zapisuj dane pojazdów, śledź ich rentowność i dodawaj wymontowane części ręcznie lub z katalogów Vortex.",
+    "dismantling.contents": "Funkcje modułu demontażu pojazdów",
+    "dismantling.vehicle.label": "Karta pojazdu",
+    "dismantling.vehicle.title": "Wszystkie dane pojazdu w jednym miejscu",
+    "dismantling.vehicle.description": "Każdy pojazd ma własną kartę. Wprowadź jego parametry i koszt zakupu, aby podczas demontażu mieć potrzebne informacje pod ręką.",
+    "dismantling.field.vin": "Numer VIN",
+    "dismantling.field.year": "Rok produkcji",
+    "dismantling.field.engine": "Kod silnika",
+    "dismantling.field.body": "Typ nadwozia",
+    "dismantling.field.fuel": "Rodzaj paliwa",
+    "dismantling.field.cost": "Koszt zakupu pojazdu",
+    "dismantling.earnings.title": "Rentowność każdego pojazdu",
+    "dismantling.earnings.description": "Przeglądaj statystyki zarobków i koszt zakupu konkretnego pojazdu. Oceniaj wynik finansowy każdego demontażu oddzielnie.",
+    "dismantling.inventory.title": "Części o znanym pochodzeniu",
+    "dismantling.inventory.description": "Zobacz listę części uzyskanych z tego pojazdu. Powiązanie samochodu z wymontowanymi częściami pozostaje w ewidencji.",
+    "dismantling.statuses.label": "Statusy demontażu",
+    "dismantling.statuses.title": "Pojazdy w demontażu i historia prac",
+    "dismantling.statuses.description": "Oddziel bieżące i zakończone demontaże, aby szybko znajdować potrzebne pojazdy i wracać do ich historii.",
+    "dismantling.active.label": "Aktywne pojazdy",
+    "dismantling.active.title": "Obecnie w demontażu",
+    "dismantling.active.description": "Pracuj z pojazdami, z których nadal wymontowujesz części. Dane, wyniki finansowe i lista uzyskanych części są zebrane razem.",
+    "dismantling.archived.label": "Nieaktywne pojazdy",
+    "dismantling.archived.title": "Zdemontowane wcześniej, zapisane w historii",
+    "dismantling.archived.description": "Zakończone demontaże pozostają dostępne do wglądu. Wróć do karty pojazdu, aby sprawdzić wynik i pochodzenie wymontowanych części.",
+    "dismantling.parts.label": "Wymontowywanie części",
+    "dismantling.parts.title": "Wymontuj części. Vortex pomoże w ewidencji.",
+    "dismantling.parts.description": "Od pojazdu do konkretnej części — wygodną dla Ciebie drogą. Wpisz część ręcznie lub znajdź ją w katalogach Vortex dla tego samochodu.",
+    "dismantling.method.manual.title": "Dodaj ręcznie",
+    "dismantling.method.manual.description": "Samodzielnie wpisz potrzebną część i dodaj ją do ewidencji części z pojazdu. Bezpośrednia droga, gdy już wiesz, co wymontowujesz.",
+    "dismantling.method.diagram.title": "Znajdź na schemacie",
+    "dismantling.method.diagram.description": "Wybierz pojazd w katalogu Vortex, otwórz odpowiedni schemat i znajdź część. Wybór wizualny ułatwia orientację w zespole.",
+    "dismantling.method.groups.title": "Wybierz z grup katalogu",
+    "dismantling.method.groups.description": "Przeglądaj grupy części dla wybranego pojazdu. Otwórz odpowiednią sekcję, na przykład elementy nadwozia, i wybierz część.",
+    "dismantling.workflow.title": "Jak działa wybór z katalogu",
+    "dismantling.workflow.vehicle": "Dokładnie wybierz pojazd w katalogu Vortex.",
+    "dismantling.workflow.catalog": "Otwórz schemat zespołu lub odpowiednią grupę części.",
+    "dismantling.workflow.part": "Wybierz część wymontowywaną z tego pojazdu.",
+    "dismantling.workflow.example": "Na przykład: konkretny pojazd → elementy nadwozia → potrzebna część nadwozia. Korzystasz z katalogu wybranego samochodu.",
+    "nav.tecdoc": "Licencja TecDoc",
+    "tecdoc.heroTitle": "oficjalny sprzedawca TecDoc w Ukrainie",
+    "tecdoc.heroDescription": "Dobór części, identyfikacja pojazdu i dane techniczne dla Twojej firmy. TecDoc Web Catalog 3.0 od Vortex.",
+    "tecdoc.buyLicense": "Kup licencję TecDoc",
+    "tecdoc.featuresLink": "Funkcje TecDoc",
+    "tecdoc.officialReseller": "Oficjalny sprzedawca w Ukrainie",
+    "tecdoc.aboutTitle": "Dlaczego potrzebujesz TecDoc i dlaczego warto kupić go w Vortex?",
+    "tecdoc.aboutCatalog": "TecDoc Web to internetowy katalog części zawierający informacje o pojazdach i produktach z całego świata. Jest to również duża baza części zamiennych na rynek wtórny, z wymiarami, zdjęciami i dodatkowymi specyfikacjami części bezpośrednio od producentów. Nasz katalog zapewnia specjalistom warsztatowym kompleksowe informacje do identyfikacji pojazdu oraz odpowiedni dobór części zamiennych.",
+    "tecdoc.aboutSearch": "Informacje o obsłudze technicznej i wygodne funkcje obejmują filtry VIN, filtrowanie według marek oraz drzewo grup produktów ułatwiające przeglądanie. W katalogu można znaleźć numery części i ich zastosowanie w pojazdach, a także numery zamienników innych producentów i oryginalne numery części.",
+    "tecdoc.whyVortex": "Dlaczego warto wybrać nas",
+    "tecdoc.resellerDescription": "Jesteśmy oficjalnym sprzedawcą TecDoc w Ukrainie, co zapewnia niezawodność i legalność naszych usług. Korzystne warunki współpracy pozwalają nam oferować najlepsze ceny na rynku.",
+    "tecdoc.expertiseDescription": "Dostęp do naszych usług jest szybki i łatwy: wystarczy kilka kliknięć, aby korzystać z możliwości TecDoc w swojej firmie. Nasz zespół ma 17 lat doświadczenia w branży części samochodowych i chętnie dzieli się wiedzą oraz udziela fachowych konsultacji.",
+    "tecdoc.dataDescription": "Wykonaliśmy ogrom pracy z zamiennikami i danymi, dzięki czemu Twoja firma może działać sprawniej. Możesz polegać na naszej wiedzy w dziedzinie części samochodowych.",
+    "tecdoc.catalogTitle": "Przyspiesz sprzedaż części z katalogiem TecDoc",
+    "tecdoc.catalogDescription": "Skorzystaj z naszego wyjątkowego doświadczenia na rynku części samochodowych.",
+    "tecdoc.catalogImageAlt": "Ilustracja doboru części samochodowych w katalogu TecDoc",
+    "tecdoc.rmiTitle": "Popraw jakość napraw i obsługi technicznej z TecRMI",
+    "tecdoc.rmiDescription": "Dane techniczne dotyczące napraw, obsługi i diagnostyki zgodne z wymaganiami OEM.",
+    "tecdoc.rmiImageAlt": "Ilustracja obsługi technicznej i diagnostyki pojazdu z TecRMI",
+    "tecdoc.rmi.maintenance": "Obsługa zgodna z zaleceniami OEM",
+    "tecdoc.rmi.parts": "Wyszukiwanie części",
+    "tecdoc.rmi.labour": "Czasy napraw",
+    "tecdoc.rmi.instructions": "Instrukcje napraw krok po kroku",
+    "tecdoc.stat.experience": "lat doświadczenia",
+    "tecdoc.stat.countries": "krajów",
+    "tecdoc.stat.languages": "języków",
+    "tecdoc.stat.brands": "marek",
+    "tecdoc.stat.references": "powiązań",
+    "tecdoc.stat.articles": "numerów części",
+    "tecdoc.stat.groups": "grup produktów",
+    "tecdoc.stat.vehicles": "pojazdów",
+    "tecdoc.million": "mln+",
+    "tecdoc.thousand": "tys.",
+    "tecdoc.pricePeriod": "Za licencję / miesiąc",
+    "tecdoc.paymentTerms": "Płatność jest wymagana za rok z góry, zgodnie z warunkami TecAlliance.",
+    "tecdoc.trialTerms": "Możesz bezpłatnie testować licencję web przez 14 dni.",
+    "tecdoc.trialBadge": "14 dni bezpłatnego testowania",
+    "tecdoc.formDescription": "Zostaw imię i numer telefonu — skontaktujemy się w sprawie licencji TecDoc.",
+    "tecdoc.success": "Dziękujemy! Wkrótce się z Tobą skontaktujemy.",
+    "header.expand": "Rozwiń nawigację witryny",
+    "nav.blog": "Blog"
+  },
+  "car_service": {
+    "title": "Zarządzanie warsztatem",
+    "subtitle": "Vortex pomaga w zarządzaniu nie tylko sklepom motoryzacyjnym, ale również serwisom samochodowym.",
+    "blocks": [
+      {
+        "id": "works",
+        "title": "Katalog prac warsztatowych",
+        "image_src": "/imgs/car-service/calendar.png",
+        "image_alt": "Katalog prac warsztatowych",
+        "paragraphs": [
+          "Program zawiera podstawowy katalog prac warsztatowych z około 15 kategoriami i 10–20 pracami w każdej. Możesz dodawać własne kategorie i prace.",
+          "Każda praca ma pola: kategoria, nazwa, liczba roboczogodzin, stawka godzinowa, waluta i notatka.",
+          "Do prac możesz dodawać szablony zapytań o części. Na przykład do „wymiany filtra kabinowego” dodaj szablon „filtr kabinowy”. Podczas rezerwacji system zaproponuje automatyczne utworzenie zapytania dla sprzedawcy części."
+        ]
+      },
+      {
+        "id": "documents",
+        "title": "Dokumenty",
+        "image_src": "/imgs/car-service/company.png",
+        "image_alt": "Dokumenty",
+        "paragraphs": [
+          "Dokumenty drukowane odgrywają ważną rolę w każdej firmie, również w warsztacie. Vortex wie o tym i stale udoskonala swój system dokumentów.",
+          "Dziś praktycznie każdej czynności w Vortex towarzyszy odpowiedni dokument z wersją do druku."
+        ],
+        "list_intro": "Przykłady dokumentów warsztatowych, o które często pytają klienci:",
+        "documents": [
+          {
+            "label": "Zlecenie serwisowe.pdf",
+            "href": null
+          },
+          {
+            "label": "Protokół przyjęcia i przekazania.pdf",
+            "href": null
+          },
+          {
+            "label": "Protokół wykonanych prac.pdf",
+            "href": null
+          }
+        ],
+        "note": "*Za dodatkową opłatą Vortex może dostosować układ wydruku dokumentu do Twoich potrzeb."
+      },
+      {
+        "id": "booking",
+        "title": "Rezerwacje w warsztacie",
+        "image_src": "/imgs/car-service/bookings.png",
+        "image_alt": "Rezerwacje w warsztacie",
+        "paragraphs": [
+          "Rezerwacja wymaga wskazania klienta, stanowiska i terminu. Prace możesz dodać od razu lub później, jeśli zakres nie jest jeszcze znany. Zapisz pojazd klienta: VIN, numer rejestracyjny, przebieg, markę, model i specyfikację. Historia zmian rezerwacji i każdej pracy pozwala sprawdzić, kto, kiedy i co zmienił."
+        ],
+        "list_intro": "Przydatne funkcje rezerwacji warsztatowych:",
+        "items": [
+          "Dołączanie plików do rezerwacji (.pdf, .xlsx, .png i innych).",
+          "Przyznawanie rabatów na prace.",
+          "Częściowe zamykanie rezerwacji i tworzenie wielu protokołów wykonanych prac dla jednej rezerwacji.",
+          "Mechanik może oznaczać prace jako wykonane bez zamykania rezerwacji, co ułatwia kontrolę postępu.",
+          "Wprowadzony przebieg jest zapisywany w garażu klienta. Więcej w kolejnych sekcjach."
+        ]
+      },
+      {
+        "id": "statistics",
+        "title": "Statystyki",
+        "image_src": "/imgs/vx-screenshot-1.png",
+        "image_alt": "Statystyki",
+        "paragraphs": [
+          "Statystyki warsztatu w Vortex skupiają wszystkie najważniejsze parametry firmy w jednym rozbudowanym module."
+        ],
+        "list_intro": "Parametry te obejmują:",
+        "items": [
+          "Zarobki według stanowiska",
+          "Zarobki według mechanika",
+          "Zarobki według doradcy serwisowego",
+          "Łączne zarobki warsztatu",
+          "Wydatki warsztatu według kategorii",
+          "Lista najpopularniejszych prac",
+          "Prace wykonane przez mechanika w danym okresie"
+        ]
+      },
+      {
+        "id": "calendar",
+        "title": "Kalendarz rezerwacji",
+        "image_src": "/imgs/car-service/calendar.png",
+        "image_alt": "Kalendarz rezerwacji",
+        "paragraphs": [
+          "Kalendarz przejrzyście pokazuje pracę warsztatu, pomaga szybko znaleźć wolne terminy i ułatwia zarządzanie rezerwacjami."
+        ],
+        "list_intro": "Kalendarz ma dwa widoki:",
+        "items": [
+          "Wszystkie stanowiska w wybranym dniu.",
+          "Wybrane stanowisko na cały tydzień."
+        ],
+        "closing_paragraphs": [
+          "Utwórz rezerwację, klikając godzinę rozpoczęcia i zakończenia prac. Możesz też szybko edytować, anulować lub zamykać rezerwacje.",
+          "Każdy klient Vortex ma koszyk, który może zawierać również prace warsztatowe. Najpierw dodaj potrzebne prace, a następnie utwórz rezerwację w kalendarzu na podstawie koszyka."
+        ]
+      },
+      {
+        "id": "mileage",
+        "title": "Historia przebiegu",
+        "image_src": "/imgs/car-service/company.png",
+        "image_alt": "Historia przebiegu",
+        "paragraphs": [
+          "Dane pojazdu z rezerwacji są zapisywane w garażu klienta. Wpisanie przebiegu tworzy wpis w historii, pokazujący wykonane prace i przebieg w momencie ich realizacji, co ułatwia planowanie przeglądów.",
+          "Moduł historii przebiegu obsługuje przypomnienia według daty, przebiegu lub obu warunków. Przypomnienie daty wysyła klientowi SMS w wybranym dniu. Przypomnienie przebiegu powiadamia menedżera, gdy nowa rezerwacja zawiera przebieg większy od ustalonego progu."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "header_logo": "/imgs/vortex-logo-115.svg",
+    "header_logo_alt": "Vortex",
+    "footer_logo": "/imgs/vortex-logo-115.svg",
+    "footer_logo_alt": "Vortex",
+    "menu": [
+      {
+        "id": "home",
+        "label": "Strona główna",
+        "target": "/"
+      },
+      {
+        "id": "car-service",
+        "label": "Zarządzanie warsztatem",
+        "target": "/car-service"
+      },
+      {
+        "id": "websites",
+        "label": "Tworzenie stron internetowych",
+        "target": "/websites"
+      },
+      {
+        "id": "autoshrot",
+        "label": "Demontaż pojazdów",
+        "target": "/auto-dismantling"
+      },
+      {
+        "id": "tecdoc",
+        "label": "Licencja TecDoc",
+        "target": "/tecdoc-license"
+      },
+      {
+        "id": "pricing",
+        "label": "Ceny",
+        "target": "/#pricing"
+      },
+      {
+        "id": "faq",
+        "label": "Pytania",
+        "target": "/faq"
+      },
+      {
+        "id": "blog",
+        "label": "Blog",
+        "target": "/blog"
+      },
+      {
+        "id": "contacts",
+        "label": "Kontakt",
+        "target": "/contact"
+      }
+    ],
+    "header_menu": [
+      {
+        "id": "home",
+        "label": "Strona główna",
+        "target": "/"
+      },
+      {
+        "id": "services",
+        "label": "Nasze usługi",
+        "children": [
+          {
+            "id": "car-service",
+            "label": "Zarządzanie warsztatem",
+            "target": "/car-service"
+          },
+          {
+            "id": "websites",
+            "label": "Tworzenie stron internetowych",
+            "target": "/websites"
+          },
+          {
+            "id": "autoshrot",
+            "label": "Demontaż pojazdów",
+            "target": "/auto-dismantling"
+          },
+          {
+            "id": "tecdoc",
+            "label": "Licencja TecDoc",
+            "target": "/tecdoc-license"
+          }
+        ]
+      },
+      {
+        "id": "pricing",
+        "label": "Ceny",
+        "target": "/#pricing"
+      },
+      {
+        "id": "faq",
+        "label": "Pytania",
+        "target": "/faq"
+      },
+      {
+        "id": "blog",
+        "label": "Blog",
+        "target": "/blog"
+      },
+      {
+        "id": "contacts",
+        "label": "Kontakt",
+        "target": "/contact"
+      }
+    ],
+    "footer_menu": [
+      {
+        "id": "car-service",
+        "label": "Zarządzanie warsztatem",
+        "target": "/car-service"
+      },
+      {
+        "id": "websites",
+        "label": "Tworzenie stron internetowych",
+        "target": "/websites"
+      },
+      {
+        "id": "autoshrot",
+        "label": "Demontaż pojazdów",
+        "target": "/auto-dismantling"
+      },
+      {
+        "id": "tecdoc",
+        "label": "Licencja TecDoc",
+        "target": "/tecdoc-license"
+      },
+      {
+        "id": "pricing",
+        "label": "Ceny",
+        "target": "/#pricing"
+      },
+      {
+        "id": "faq",
+        "label": "Pytania",
+        "target": "/faq"
+      },
+      {
+        "id": "blog",
+        "label": "Blog",
+        "target": "/blog"
+      },
+      {
+        "id": "contacts",
+        "label": "Kontakt",
+        "target": "/contact"
+      }
+    ],
+    "buttons": {
+      "try_free_text": "Wypróbuj bezpłatnie",
+      "try_free_target": "#trial-request",
+      "try_demo_text": "Zamów prezentację",
+      "try_demo_target": "#trial-request"
+    },
+    "socials": [
+      {
+        "network": "facebook",
+        "url": "https://www.facebook.com/share/1CM9RDu8XB/?mibextid=wwXIfr",
+        "label": "Facebook",
+        "icon": "/icons/sm_black/facebook.svg"
+      },
+      {
+        "network": "youtube",
+        "url": "https://youtube.com/@vortexcrm?si=XBOE-jdaMiI48Js-",
+        "label": "YouTube",
+        "icon": "/icons/sm_black/youtube.svg"
+      },
+      {
+        "network": "telegram",
+        "url": "https://t.me/VortexSupp",
+        "label": "Telegram",
+        "icon": "/icons/sm_black/telegram.svg"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/vortex_crm?hvrq=azBpZXBnbnVtMjk3",
+        "label": "Instagram",
+        "icon": "/icons/sm_black/instagram.svg"
+      }
+    ],
+    "privacy_text": "Polityka prywatności",
+    "privacy_link": "/privacy-policy",
+    "partner_images": [
+      {
+        "image": "/imgs/tecdoc-button.png",
+        "alt": "TecAlliance — oficjalny partner",
+        "url": "/tecdoc-license"
+      }
+    ]
+  },
+  "autoshrot": {
+    "hero": {
+      "visible": true,
+      "eyebrow": "Moduł Vortex dla stacji demontażu",
+      "title": "Demontaż pojazdów",
+      "slogan": "Od samochodu do każdej części",
+      "intro": "Zarządzaj demontażem w jednym systemie: zapisuj dane pojazdów, śledź ich rentowność i dodawaj wymontowane części ręcznie lub z katalogów Vortex.",
+      "cta_text": "Wypróbuj bezpłatnie",
+      "cta_target": "#trial-request",
+      "image": "/imgs/auto-dismantling/dismantling-car-premium.png",
+      "image_alt": ""
+    },
+    "navigation": {
+      "visible": true,
+      "label": "Funkcje modułu demontażu pojazdów",
+      "items": [
+        {
+          "label": "Karta pojazdu",
+          "target": "car"
+        },
+        {
+          "label": "Statusy demontażu",
+          "target": "statuses"
+        },
+        {
+          "label": "Wymontowywanie części",
+          "target": "removal"
+        }
+      ]
+    },
+    "car": {
+      "visible": true,
+      "eyebrow": "Karta pojazdu",
+      "title": "Wszystkie dane pojazdu w jednym miejscu",
+      "description": "Każdy pojazd ma własną kartę. Wprowadź jego parametry i koszt zakupu, aby podczas demontażu mieć potrzebne informacje pod ręką.",
+      "image": "/imgs/auto-dismantling/vehicle-record-premium.png",
+      "image_alt": "",
+      "characteristics": [
+        "Numer VIN",
+        "Rok produkcji",
+        "Kod silnika",
+        "Typ nadwozia",
+        "Rodzaj paliwa",
+        "Koszt zakupu pojazdu"
+      ],
+      "benefits": [
+        {
+          "title": "Rentowność każdego pojazdu",
+          "description": "Przeglądaj statystyki zarobków i koszt zakupu konkretnego pojazdu. Oceniaj wynik finansowy każdego demontażu oddzielnie."
+        },
+        {
+          "title": "Części o znanym pochodzeniu",
+          "description": "Zobacz listę części uzyskanych z tego pojazdu. Powiązanie samochodu z wymontowanymi częściami pozostaje w ewidencji."
+        }
+      ]
+    },
+    "statuses": {
+      "visible": true,
+      "eyebrow": "Statusy demontażu",
+      "title": "Pojazdy w demontażu i historia prac",
+      "description": "Oddziel bieżące i zakończone demontaże, aby szybko znajdować potrzebne pojazdy i wracać do ich historii.",
+      "items": [
+        {
+          "name": "Aktywne pojazdy",
+          "card_title": "Obecnie w demontażu",
+          "card_description": "Pracuj z pojazdami, z których nadal wymontowujesz części. Dane, wyniki finansowe i lista uzyskanych części są zebrane razem."
+        },
+        {
+          "name": "Nieaktywne pojazdy",
+          "card_title": "Zdemontowane wcześniej, zapisane w historii",
+          "card_description": "Zakończone demontaże pozostają dostępne do wglądu. Wróć do karty pojazdu, aby sprawdzić wynik i pochodzenie wymontowanych części."
+        }
+      ]
+    },
+    "removal": {
+      "visible": true,
+      "eyebrow": "Wymontowywanie części",
+      "title": "Wymontuj części. Vortex pomoże w ewidencji.",
+      "description": "Od pojazdu do konkretnej części — wygodną dla Ciebie drogą. Wpisz część ręcznie lub znajdź ją w katalogach Vortex dla tego samochodu.",
+      "image": "/imgs/auto-dismantling/parts-catalog-premium.png",
+      "image_alt": "",
+      "methods": [
+        {
+          "title": "Dodaj ręcznie",
+          "description": "Samodzielnie wpisz potrzebną część i dodaj ją do ewidencji części z pojazdu. Bezpośrednia droga, gdy już wiesz, co wymontowujesz."
+        },
+        {
+          "title": "Znajdź na schemacie",
+          "description": "Wybierz pojazd w katalogu Vortex, otwórz odpowiedni schemat i znajdź część. Wybór wizualny ułatwia orientację w zespole."
+        },
+        {
+          "title": "Wybierz z grup katalogu",
+          "description": "Przeglądaj grupy części dla wybranego pojazdu. Otwórz odpowiednią sekcję, na przykład elementy nadwozia, i wybierz część."
+        }
+      ]
+    },
+    "workflow": {
+      "visible": true,
+      "title": "Jak działa wybór z katalogu",
+      "steps": [
+        "Dokładnie wybierz pojazd w katalogu Vortex.",
+        "Otwórz schemat zespołu lub odpowiednią grupę części.",
+        "Wybierz część wymontowywaną z tego pojazdu."
+      ],
+      "note": "Na przykład: konkretny pojazd → elementy nadwozia → potrzebna część nadwozia. Korzystasz z katalogu wybranego samochodu."
+    },
+    "anchor_aliases": {
+      "dismantling-vehicle": "car",
+      "dismantling-statuses": "statuses",
+      "dismantling-parts": "removal"
+    }
+  },
+  "tecdoc": {
+    "visible": true,
+    "hero": {
+      "eyebrow": "TecDoc Web Catalog 3.0",
+      "title": "Vortex — oficjalny sprzedawca TecDoc w Ukrainie",
+      "subtitle": "Dobór części, identyfikacja pojazdu i dane techniczne dla Twojej firmy. TecDoc Web Catalog 3.0 od Vortex.",
+      "image": "",
+      "image_alt": "",
+      "cta_text": "Kup licencję TecDoc",
+      "cta_target": "#trial-request",
+      "secondary_cta_text": "Funkcje TecDoc",
+      "secondary_cta_target": "#tecdoc-features",
+      "details": [
+        "Oficjalny sprzedawca w Ukrainie",
+        "14 dni bezpłatnego testowania",
+        "TecDoc + TecRMI"
+      ]
+    },
+    "stats": [
+      {
+        "value": 25,
+        "suffix": "+",
+        "label": "lat doświadczenia"
+      },
+      {
+        "value": 140,
+        "suffix": "+",
+        "label": "krajów"
+      },
+      {
+        "value": 41,
+        "suffix": "+",
+        "label": "języków"
+      },
+      {
+        "value": 900,
+        "suffix": "+",
+        "label": "marek"
+      },
+      {
+        "value": 400,
+        "suffix": "mln+",
+        "label": "powiązań"
+      },
+      {
+        "value": 8.8,
+        "suffix": "mln+",
+        "label": "numerów części"
+      },
+      {
+        "value": 9600,
+        "suffix": "+",
+        "label": "grup produktów"
+      },
+      {
+        "value": 160,
+        "suffix": "+ tys.",
+        "label": "pojazdów"
+      }
+    ],
+    "sections": [
+      {
+        "id": "tecdoc-about",
+        "title": "Dlaczego potrzebujesz TecDoc i dlaczego warto kupić go w Vortex?",
+        "description": "",
+        "items": [],
+        "image": "",
+        "image_alt": "",
+        "button_text": "",
+        "button_target": "",
+        "blocks": [
+          {
+            "id": "catalog",
+            "title": "TecDoc Web",
+            "paragraphs": [
+              "TecDoc Web to internetowy katalog części zawierający informacje o pojazdach i produktach z całego świata. Jest to również duża baza części zamiennych na rynek wtórny, z wymiarami, zdjęciami i dodatkowymi specyfikacjami części bezpośrednio od producentów. Nasz katalog zapewnia specjalistom warsztatowym kompleksowe informacje do identyfikacji pojazdu oraz odpowiedni dobór części zamiennych.",
+              "Informacje o obsłudze technicznej i wygodne funkcje obejmują filtry VIN, filtrowanie według marek oraz drzewo grup produktów ułatwiające przeglądanie. W katalogu można znaleźć numery części i ich zastosowanie w pojazdach, a także numery zamienników innych producentów i oryginalne numery części."
+            ]
+          },
+          {
+            "id": "vortex",
+            "title": "Dlaczego warto wybrać nas",
+            "paragraphs": [
+              "Jesteśmy oficjalnym sprzedawcą TecDoc w Ukrainie, co zapewnia niezawodność i legalność naszych usług. Korzystne warunki współpracy pozwalają nam oferować najlepsze ceny na rynku.",
+              "Dostęp do naszych usług jest szybki i łatwy: wystarczy kilka kliknięć, aby korzystać z możliwości TecDoc w swojej firmie. Nasz zespół ma 17 lat doświadczenia w branży części samochodowych i chętnie dzieli się wiedzą oraz udziela fachowych konsultacji.",
+              "Wykonaliśmy ogrom pracy z zamiennikami i danymi, dzięki czemu Twoja firma może działać sprawniej. Możesz polegać na naszej wiedzy w dziedzinie części samochodowych."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tecdoc-features",
+        "eyebrow": "TecDoc",
+        "title": "Przyspiesz sprzedaż części z katalogiem TecDoc",
+        "description": "Skorzystaj z naszego wyjątkowego doświadczenia na rynku części samochodowych.",
+        "items": [],
+        "image": "/imgs/tecdoc/tecdoc-parts.png",
+        "image_alt": "Ilustracja doboru części samochodowych w katalogu TecDoc",
+        "button_text": "",
+        "button_target": ""
+      },
+      {
+        "id": "tecdoc-rmi",
+        "eyebrow": "TecRMI",
+        "title": "Popraw jakość napraw i obsługi technicznej z TecRMI",
+        "description": "Dane techniczne dotyczące napraw, obsługi i diagnostyki zgodne z wymaganiami OEM.",
+        "items": [
+          "Obsługa zgodna z zaleceniami OEM",
+          "Wyszukiwanie części",
+          "Czasy napraw",
+          "Instrukcje napraw krok po kroku"
+        ],
+        "image": "/imgs/tecdoc/tecdoc-screenshot.png",
+        "image_alt": "Ilustracja obsługi technicznej i diagnostyki pojazdu z TecRMI",
+        "button_text": "",
+        "button_target": ""
+      }
+    ],
+    "license": {
+      "visible": true,
+      "eyebrow": "TecDoc Web Catalog 3.0",
+      "price": 25,
+      "currency": "EUR",
+      "billing_type": "monthly",
+      "price_period": "Za licencję / miesiąc",
+      "payment_terms": "Płatność jest wymagana za rok z góry, zgodnie z warunkami TecAlliance.",
+      "trial_terms": "Możesz bezpłatnie testować licencję web przez 14 dni.",
+      "trial_badge": "14 dni bezpłatnego testowania"
+    },
+    "cta": {
+      "title": "Kup licencję TecDoc",
+      "text": "Zostaw imię i numer telefonu — skontaktujemy się w sprawie licencji TecDoc.",
+      "button_text": "Wyślij",
+      "button_target": "#trial-request"
+    }
+  },
+  "websites": {
+    "gallery": {
+      "visible": true,
+      "section_title": "Przykłady naszych stron",
+      "items": [
+        {
+          "id": "free",
+          "image": "",
+          "title": "Bezpłatny",
+          "alt": "Podgląd strony: Bezpłatny",
+          "template": "Bezpłatny szablon",
+          "url": ""
+        },
+        {
+          "id": "practical",
+          "image": "",
+          "title": "Praktyczny",
+          "alt": "Podgląd strony: Praktyczny",
+          "template": "Płatny szablon",
+          "url": ""
+        },
+        {
+          "id": "maximum",
+          "image": "",
+          "title": "Maksymalny",
+          "alt": "Podgląd strony: Maksymalny",
+          "template": "Płatny szablon",
+          "url": ""
+        }
+      ]
+    },
+    "pricing": {
+      "visible": true,
+      "section_title": "Plany cenowe",
+      "section_description": "Porównaj plany i dostępne funkcje, aby wybrać najlepszą opcję dla swojej firmy.",
+      "tariffs": [
+        {
+          "id": "free",
+          "name": "Bezpłatny",
+          "price": 0,
+          "currency": "USD",
+          "billing_type": "free",
+          "extra_payments_note": "bez dopłat",
+          "cta_text": "Wybierz pakiet"
+        },
+        {
+          "id": "practical",
+          "name": "Praktyczny",
+          "price": 300,
+          "currency": "USD",
+          "billing_type": "one_time",
+          "extra_payments_note": "+$10 miesięcznie za 10 tys. zapytań",
+          "cta_text": "Wybierz pakiet"
+        },
+        {
+          "id": "maximum",
+          "name": "Maksymalny",
+          "price": 500,
+          "currency": "USD",
+          "billing_type": "one_time",
+          "extra_payments_note": "+$10 miesięcznie za 10 tys. zapytań",
+          "cta_text": "Wybierz pakiet"
+        }
+      ],
+      "services": [
+        {
+          "id": "productSearch",
+          "text": "Wyszukiwanie produktów według numeru części i opisu",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "catalogSearch",
+          "text": "Wyszukiwanie we własnym katalogu i dobór według parametrów",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "liqpay",
+          "text": "Możliwość podłączenia płatności przez LiqPay",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "feedback",
+          "text": "Formularz kontaktowy",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "colors",
+          "text": "Konfiguracja kolorystyki strony",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "account",
+          "text": "Konto klienta",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "orders",
+          "text": "Historia zamówień",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "shipments",
+          "text": "Historia wysyłek",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "balances",
+          "text": "Uzgadnianie rozrachunków",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "appointments",
+          "text": "Wygodne rezerwacje w warsztacie i historia wizyt na koncie",
+          "plans": {
+            "free": {
+              "included": true,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "slider",
+          "text": "Ulepszony slider z układem mobilnym, interaktywnymi elementami i dodatkowymi funkcjami",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "design",
+          "text": "Ulepszony wygląd strony głównej, nagłówka, konta klienta i innych elementów",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "garage",
+          "text": "Garaż klienta: dodawanie pojazdów z katalogu, filtrowanie list według pojazdów z garażu i przesyłanie ich zdjęć",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "vehicleCatalog",
+          "text": "Katalog doboru części do pojazdu, stale rozwijany przez nasz zespół, z wyszukiwaniem po VIN i numerze rejestracyjnym",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": "",
+              "text": "Katalog doboru części z wyszukiwaniem po VIN i numerze rejestracyjnym — tylko 10 marek"
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "customization",
+          "text": "Rozbudowana personalizacja strony",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "favorites",
+          "text": "Ulubione produkty",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "ratings",
+          "text": "Oceny produktów",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "invoiceHistory",
+          "text": "Ulepszona historia dokumentów wydania z układem mobilnym, filtrem według pojazdu klienta i statusem opłacenia",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "searchHistory",
+          "text": "Historia wyszukiwania części",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "sitemap",
+          "text": "Tworzenie sitemap.xml",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": false,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "seo",
+          "text": "Pomoc w podstawowym SEO i konfiguracji analityki",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": false,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "mscore",
+          "text": "M-score, nasz autorski system analityki strony",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": true,
+              "note": "",
+              "text": "Analityka M-score — tylko łączna liczba kliknięć na stronie"
+            },
+            "maximum": {
+              "included": true,
+              "note": "",
+              "text": "Pełne statystyki M-score: kto, kiedy i co robił na stronie, rankingi aktywności klientów i grup katalogu oraz wiele więcej"
+            }
+          }
+        },
+        {
+          "id": "fluids",
+          "text": "Dobór płynów eksploatacyjnych do pojazdu (planowane)",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": false,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "catalogGroups",
+          "text": "Uzupełnienie 10 własnych grup katalogu",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": false,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "blog",
+          "text": "Tworzenie artykułów na blog",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": false,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "homepage",
+          "text": "Podstawowa treść strony głównej",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": false,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        },
+        {
+          "id": "header",
+          "text": "Uzupełnienie nagłówka strony",
+          "plans": {
+            "free": {
+              "included": false,
+              "note": ""
+            },
+            "practical": {
+              "included": false,
+              "note": ""
+            },
+            "maximum": {
+              "included": true,
+              "note": ""
+            }
+          }
+        }
+      ]
+    }
+  },
+  "integration_pages": {
+    "visible": true,
+    "label": "Integracje API",
+    "eyebrow": "Integracja z Vortex",
+    "connect": "Podłącz integrację",
+    "viewFeatures": "Możliwości integracji",
+    "featuresTitle": "Co daje integracja",
+    "linksTitle": "Oferty partnera",
+    "back": "Wszystkie integracje",
+    "relatedTitle": "Inne integracje z Vortex",
+    "pages": {
+      "tecdoc": {
+        "title": "TecDoc Inside",
+        "lead": "Oficjalna integracja z katalogiem TecDoc pozwala znajdować pojazdy, dobierać pasujące części i przeglądać informacje techniczne bezpośrednio w Vortex.",
+        "sections": [
+          {
+            "title": "Znajdź właściwy pojazd",
+            "paragraphs": [
+              "Rozpocznij dobór od numeru VIN, kodu silnika lub ręcznego wyszukiwania w katalogu. Dane marki, modelu i wersji pomagają pracować z właściwym pojazdem i szybciej przejść do przeznaczonych do niego części."
+            ],
+            "items": [
+              "Wyszukiwanie pojazdu po numerze VIN.",
+              "Wybór pojazdu po kodzie silnika lub ręcznie.",
+              "Uzupełnianie marki, modelu i wersji z katalogu."
+            ],
+            "image": "/imgs/api-integrations/screenshots/tecdoc-VIN.jpg",
+            "image_alt": "Znajdź właściwy pojazd"
+          },
+          {
+            "title": "Dobieraj części według kategorii",
+            "paragraphs": [
+              "Przejdź do odpowiedniej grupy części i zawęź wyniki według producenta oraz parametrów. Filtry i ulubione marki ułatwiają odnalezienie potrzebnych pozycji wśród wielu propozycji dostępnych w katalogu."
+            ],
+            "items": [
+              "Nawigacja według kategorii i zespołów pojazdu.",
+              "Filtrowanie według marki i parametrów części.",
+              "Sprawdzanie, czy część pasuje do wybranego pojazdu."
+            ],
+            "image": "/imgs/api-integrations/screenshots/tecdoc-parts-categories.png",
+            "image_alt": "Dobieraj części według kategorii"
+          },
+          {
+            "title": "Sprawdzaj dane i zgodność",
+            "paragraphs": [
+              "Przed sprzedażą przejrzyj opis części, zdjęcia, parametry techniczne i numery referencyjne. Informacje o zamiennikach oraz zastosowaniu w innych pojazdach pomagają porównać możliwości i wybrać część zgodnie z potrzebami klienta."
+            ],
+            "items": [
+              "Numery części, oryginalne numery OEM i zamienniki.",
+              "Zdjęcia, opisy oraz parametry techniczne.",
+              "Zastosowanie według modelu, rocznika i innych danych pojazdu."
+            ],
+            "image": "/imgs/api-integrations/screenshots/tecdoc-screenshot-2.jpg",
+            "image_alt": "Sprawdzaj dane i zgodność"
+          }
+        ],
+        "links": [],
+        "visible": true,
+        "slug": "tecdoc",
+        "path": "/integrations/tecdoc",
+        "logo": "/imgs/api-integrations/tecdoc-int-logo.svg",
+        "logo_alt": "TecDoc Inside",
+        "gallery": [
+          {
+            "image": "/imgs/api-integrations/screenshots/tecdoc-parts.png",
+            "alt": "TecDoc Inside — 1"
+          }
+        ]
+      },
+      "checkbox": {
+        "title": "Checkbox",
+        "lead": "Fiskalizuj sprzedaż części, usługi warsztatu i zwroty w Vortex przez programową kasę Checkbox — bez osobnego urządzenia kasowego.",
+        "sections": [
+          {
+            "title": "Operacje kasowe w znanym systemie",
+            "paragraphs": [
+              "Integracja łączy obsługę kasy przez pracownika z procesem sprzedaży. W Vortex możesz wykonywać codzienne operacje kasowe i wystawiać dokumenty fiskalne bez ręcznego przenoszenia danych sprzedaży do innego programu."
+            ],
+            "items": [
+              "Otwieranie i zamykanie kasy.",
+              "Wpłaty i wypłaty gotówki z kasy.",
+              "Fiskalizacja towarów, usług warsztatu i zwrotów."
+            ],
+            "image": "/imgs/api-integrations/screenshots/checkbox_screenshot_paydesk.png",
+            "image_alt": "Operacje kasowe w znanym systemie"
+          },
+          {
+            "title": "Przygotuj konto Checkbox",
+            "paragraphs": [
+              "Najpierw zarejestruj się w Checkbox i skonfiguruj strukturę swojej firmy. Utwórz punkt sprzedaży, kasę i konta kasjerów, którzy będą obsługiwać transakcje. Link do rejestracji w ramach oferty partnera znajdziesz poniżej."
+            ],
+            "items": [
+              "Rejestracja firmy w Checkbox.",
+              "Konfiguracja punktu sprzedaży i kasy.",
+              "Tworzenie kont kasjerów do codziennej pracy."
+            ],
+            "image": "/imgs/api-integrations/screenshots/checkbox_screenshot_shop.png",
+            "image_alt": "Przygotuj konto Checkbox"
+          },
+          {
+            "title": "Podłącz kasę do Vortex",
+            "paragraphs": [
+              "W ustawieniach integracji Vortex wpisz klucz licencyjny kasy i dodaj kasjerów, podając ich loginy oraz hasła do Checkbox. Po podłączeniu możesz wystawiać paragony fiskalne i drukować je na drukarce termicznej w ramach zwykłego procesu sprzedaży."
+            ],
+            "items": [
+              "Dodanie klucza licencyjnego kasy.",
+              "Podłączenie kasjerów przy użyciu danych Checkbox.",
+              "Obsługa wielu kont, kas i kasjerów."
+            ],
+            "image": "",
+            "image_alt": ""
+          }
+        ],
+        "links": [
+          {
+            "label": "Zarejestruj się w Checkbox",
+            "href": "https://my.checkbox.ua/auth/registration?registration_code=exzPKMg1NQFd"
+          }
+        ],
+        "visible": true,
+        "slug": "checkbox",
+        "path": "/integrations/checkbox",
+        "logo": "/imgs/api-integrations/checkbox-int-logo.svg",
+        "logo_alt": "Checkbox",
+        "gallery": []
+      },
+      "vchasno": {
+        "title": "Vchasno.Kasa",
+        "lead": "Programowa kasa do fiskalizacji sprzedaży w Vortex: elektroniczne paragony, kasy i klucze kasjerów we wspólnym procesie obsługi zamówień oraz płatności.",
+        "sections": [
+          {
+            "title": "Jak działa fiskalizacja",
+            "paragraphs": [
+              "Pracownik rejestruje sprzedaż lub płatność w Vortex. System przekazuje do Vchasno.Kasa towary lub usługi, kwotę, rodzaj płatności, kasę i kasjera. Usługa wystawia paragon fiskalny i przesyła dane do urzędu skarbowego, a pracownik kontynuuje obsługę zamówienia."
+            ],
+            "items": [
+              "Sprzedaż części z magazynu lub zamówienia klienta.",
+              "Fiskalizacja usług naprawy i serwisu pojazdów.",
+              "Zwroty towarów z odpowiednim dokumentem fiskalnym."
+            ],
+            "image": "/imgs/api-integrations/screenshots/vchasno-kasa-flow.svg",
+            "image_alt": "Jak działa fiskalizacja"
+          },
+          {
+            "title": "Co jest potrzebne do podłączenia",
+            "paragraphs": [
+              "Przygotuj konto Vchasno.Kasa, zarejestrowane punkty sprzedaży, kasy i klucze kasjerów. Następnie dodaj parametry integracji w Vortex. Zanim zespół rozpocznie pracę, sprawdź konfigurację za pomocą testowej fiskalizacji."
+            ],
+            "items": [
+              "Zarejestruj firmę i kwalifikowany podpis elektroniczny w usłudze.",
+              "Utwórz lub zaimportuj punkt sprzedaży i kasę.",
+              "Skonfiguruj grupy podatkowe i rodzaje płatności.",
+              "Dodaj klucz kasjera i parametry połączenia w Vortex.",
+              "Przeprowadź testową fiskalizację przed uruchomieniem."
+            ],
+            "image": "/imgs/api-integrations/screenshots/vchasno-kasa-settings.svg",
+            "image_alt": "Co jest potrzebne do podłączenia"
+          },
+          {
+            "title": "Wspólny proces dla sklepu i warsztatu",
+            "paragraphs": [
+              "Sprzedaż, klient, zamówienie i fiskalizacja pozostają w jednym procesie pracy. Ogranicza to ręczne powielanie danych i ułatwia obsługę wielu punktów sprzedaży. Oferty partnera dotyczące podłączenia Vchasno.Kasa są dostępne pod poniższymi linkami."
+            ],
+            "items": [
+              "Elektroniczny paragon dla klienta po płatności.",
+              "Obsługa płatności gotówkowych i bezgotówkowych.",
+              "Kontrola wielu kas, punktów sprzedaży i odpowiedzialnych kasjerów."
+            ],
+            "image": "",
+            "image_alt": ""
+          }
+        ],
+        "links": [
+          {
+            "label": "−50% na pierwszą płatność",
+            "href": "https://service.vchasno.ua/prro-offer?utm_source=vortex"
+          },
+          {
+            "label": "50 UAH/mies. przez 6 miesięcy",
+            "href": "https://service.vchasno.ua/prro-offer-50?utm_source=vortex"
+          }
+        ],
+        "visible": true,
+        "slug": "vchasno",
+        "path": "/integrations/vchasno",
+        "logo": "/imgs/api-integrations/vchasno-kasa-logo.svg",
+        "logo_alt": "Vchasno.Kasa",
+        "gallery": []
+      },
+      "nova_poshta": {
+        "title": "Nova Poshta",
+        "lead": "Twórz ekspresowe listy przewozowe, przeglądaj przesyłki i drukuj dokumenty bezpośrednio w Vortex dzięki integracji API z Nova Poshta.",
+        "sections": [
+          {
+            "title": "Skonfiguruj nadawców",
+            "paragraphs": [
+              "Dodaj konta nadawców i wybierz dane używane domyślnie. Podczas tworzenia listu przewozowego możesz wskazać odpowiednie konto. To wygodne rozwiązanie, gdy zespół przygotowuje przesyłki w imieniu różnych nadawców."
+            ],
+            "items": [
+              "Podłączenie wielu kont nadawców.",
+              "Wybór konta podczas przygotowywania przesyłki.",
+              "Ustawienie domyślnego nadawcy."
+            ],
+            "image": "/imgs/api-integrations/screenshots/novaposhta_screenshot_sender.png",
+            "image_alt": "Skonfiguruj nadawców"
+          },
+          {
+            "title": "Wystawiaj ekspresowe listy przewozowe",
+            "paragraphs": [
+              "Wpisz odbiorcę, sposób dostawy i parametry paczki w ramach zwykłego procesu pracy. Integracja obsługuje dostawę do oddziału lub pod adres, ustawienia przekazu pieniężnego i kontroli płatności, a także przesyłki wielopaczkowe."
+            ],
+            "items": [
+              "Wybór oddziału lub adresu dostawy.",
+              "Opis przesyłki, liczba paczek i ich wymiary.",
+              "Drukowanie etykiet paczek i listu przewozowego na A4."
+            ],
+            "image": "/imgs/api-integrations/screenshots/np_step1.png",
+            "image_alt": "Wystawiaj ekspresowe listy przewozowe"
+          },
+          {
+            "title": "Śledź przesyłki",
+            "paragraphs": [
+              "Lista obejmuje listy przewozowe utworzone w Vortex oraz dokumenty zewnętrzne, których status sprawdzano. Baza oddziałów aktualizuje się przez API; wybór oddziału w zamówieniu jest dostępny nawet bez aktywacji integracji."
+            ],
+            "items": [
+              "Przeglądanie i zbiorcza aktualizacja statusów przesyłek.",
+              "Dodawanie listów przewozowych do zadań kuriera.",
+              "Aktualna baza oddziałów przy obsłudze zamówień."
+            ],
+            "image": "",
+            "image_alt": ""
+          }
+        ],
+        "links": [],
+        "visible": true,
+        "slug": "nova_poshta",
+        "path": "/integrations/nova_poshta",
+        "logo": "/imgs/api-integrations/np-int-logo.svg",
+        "logo_alt": "Nova Poshta",
+        "gallery": [
+          {
+            "image": "/imgs/api-integrations/screenshots/np_step_2.png",
+            "alt": "Nova Poshta — 1"
+          },
+          {
+            "image": "/imgs/api-integrations/screenshots/np_step_3.png",
+            "alt": "Nova Poshta — 2"
+          },
+          {
+            "image": "/imgs/api-integrations/screenshots/np_step_4.png",
+            "alt": "Nova Poshta — 3"
+          }
+        ]
+      },
+      "turboSMS": {
+        "title": "TurboSMS",
+        "lead": "Podłącz konto TurboSMS do Vortex, aby ręcznie wysyłać wiadomości, korzystać z szablonów i automatycznie informować klientów o ważnych zdarzeniach.",
+        "sections": [
+          {
+            "title": "Wiadomości i szablony",
+            "paragraphs": [
+              "Wyślij SMS na wybrany numer bezpośrednio z Vortex. Przygotuj szablony dla powtarzalnych sytuacji: do treści można wstawiać dane zamówienia, na przykład jego numer za pomocą {ORDER_ID}. Ułatwia to kontakt z klientami i ogranicza ręczne wpisywanie wiadomości."
+            ],
+            "items": [
+              "Ręczne wysyłanie SMS z dowolną treścią.",
+              "Szablony z wstawianiem numeru zamówienia.",
+              "Wysyłanie wiadomości do wielu odbiorców."
+            ],
+            "image": "/imgs/api-integrations/screenshots/turbosms_screenshot_blured.jpg",
+            "image_alt": "Wiadomości i szablony"
+          },
+          {
+            "title": "Informuj klienta automatycznie",
+            "paragraphs": [
+              "Skonfiguruj wiadomości wyzwalane zdarzeniami w procesie pracy. Klient może otrzymywać SMS o gotowym lub anulowanym zamówieniu, a także o wysłaniu paczki. Wiadomość o anulowaniu pomaga szybko wyjaśnić zmianę statusu i uniknąć nieporozumień."
+            ],
+            "items": [
+              "Powiadomienia o gotowym i wysłanym zamówieniu.",
+              "SMS o anulowaniu zamówienia.",
+              "Przypomnienia o wymianie oleju."
+            ],
+            "image": "/imgs/api-integrations/screenshots/turbosms_screenshot_send_message_blured.jpg",
+            "image_alt": "Informuj klienta automatycznie"
+          },
+          {
+            "title": "Kontroluj historię i saldo",
+            "paragraphs": [
+              "Przeglądaj historię wysłanych SMS oraz saldo konta TurboSMS w Vortex. Kontrola salda pomaga odpowiednio wcześnie doładować konto, aby powiadomienia o zamówieniach i przypomnienia były nadal dostępne dla zespołu."
+            ],
+            "items": [
+              "Historia wysłanych wiadomości.",
+              "Podgląd pozostałego salda SMS.",
+              "Powiadomienia o niemal wyczerpanym saldzie."
+            ],
+            "image": "",
+            "image_alt": ""
+          }
+        ],
+        "links": [],
+        "visible": true,
+        "slug": "turboSMS",
+        "path": "/integrations/turboSMS",
+        "logo": "/imgs/api-integrations/turbosms-int-logo.svg",
+        "logo_alt": "Turbo SMS",
+        "gallery": []
+      },
+      "bank_API": {
+        "title": "API banków",
+        "lead": "Przeglądaj transakcje podłączonych rachunków firmowych w Vortex i twórz operacje finansowe na podstawie rzeczywistych przepływów pieniężnych.",
+        "sections": [
+          {
+            "title": "Podłącz rachunek firmowy",
+            "paragraphs": [
+              "Integracja z bankiem pomaga zautomatyzować pracę z operacjami finansowymi. Dane podłączonego rachunku pojawiają się w Vortex, aby pracownik lub księgowy mogli obsługiwać je w systemie ewidencji. Dostępność połączenia zależy od banku i rodzaju rachunku."
+            ],
+            "items": [
+              "Podłączenie rachunku do obsługi transakcji bankowych.",
+              "Podgląd rzeczywistych wpływów i wydatków.",
+              "Potwierdzenie obsługi banku i rodzaju rachunku przed podłączeniem."
+            ],
+            "image": "/imgs/api-integrations/screenshots/bankapi_screenshot-400h.png",
+            "image_alt": "Podłącz rachunek firmowy"
+          },
+          {
+            "title": "Zamieniaj transakcje w operacje finansowe",
+            "paragraphs": [
+              "Wybierz transakcję bankową i utwórz na jej podstawie operację finansową Vortex jednym kliknięciem. Po zaksięgowaniu znika ona z listy nieprzetworzonych transakcji, dzięki czemu łatwiej ustalić, które przepływy nadal wymagają uwagi."
+            ],
+            "items": [
+              "Tworzenie operacji finansowej z transakcji bankowej.",
+              "Mniej ręcznego przepisywania kwot i danych płatności.",
+              "Osobna lista transakcji oczekujących na przetworzenie."
+            ],
+            "image": "/imgs/api-integrations/screenshots/bankapi_history.png",
+            "image_alt": "Zamieniaj transakcje w operacje finansowe"
+          },
+          {
+            "title": "Znajduj potrzebne płatności",
+            "paragraphs": [
+              "Pracuj z operacjami na jednej liście i zawężaj ją według potrzebnych kryteriów. Używaj filtrów rachunku i rodzaju operacji lub wyszukiwania ogólnego, aby odnaleźć konkretną płatność po znanej kwocie bądź innych danych."
+            ],
+            "items": [
+              "Filtry rachunku, wpływów i wydatków.",
+              "Wyszukiwanie po kwocie i odbiorcy.",
+              "Wyszukiwanie płatności po opisie."
+            ],
+            "image": "",
+            "image_alt": ""
+          }
+        ],
+        "links": [],
+        "visible": true,
+        "slug": "bank_API",
+        "path": "/integrations/bank_API",
+        "logo": "/imgs/api-integrations/banks-api-int-logo.svg",
+        "logo_alt": "API banków",
+        "gallery": []
+      },
+      "binotel": {
+        "title": "Binotel",
+        "lead": "Połącz telefonię Binotel z ewidencją klientów w Vortex: kontroluj połączenia, otwieraj karty klientów i przeglądaj historię kontaktów.",
+        "sections": [
+          {
+            "title": "Nie trać zapytań klientów",
+            "paragraphs": [
+              "Przeglądaj nieodebrane połączenia, aby oddzwaniać do klientów, z którymi nie udało się porozmawiać. Informacje o połączeniach w Vortex pomagają zespołowi kontrolować zapytania i planować kontakt zwrotny w codziennej pracy."
+            ],
+            "items": [
+              "Kontrola nieodebranych połączeń.",
+              "Dane potrzebne do oddzwonienia do klienta.",
+              "Historia połączeń w karcie klienta Vortex."
+            ],
+            "image": "/imgs/api-integrations/screenshots/binotel_call_history.png",
+            "image_alt": "Nie trać zapytań klientów"
+          },
+          {
+            "title": "Rozpoznawaj klienta podczas połączenia",
+            "paragraphs": [
+              "Gdy klient dzwoni ze znanego numeru, otwórz jego kartę w Vortex jednym kliknięciem. Jeśli numer nie jest jeszcze zarejestrowany, wyskakujące okno pomoże szybko utworzyć nowego klienta bez przerywania procesu pracy."
+            ],
+            "items": [
+              "Przejście do klienta z połączenia przychodzącego.",
+              "Szybka rejestracja klienta z nowego numeru.",
+              "Dostęp do historii wcześniejszych kontaktów."
+            ],
+            "image": "/imgs/api-integrations/screenshots/binotel_call.png",
+            "image_alt": "Rozpoznawaj klienta podczas połączenia"
+          },
+          {
+            "title": "Analizuj rozmowy i jakość obsługi",
+            "paragraphs": [
+              "Odsłuchuj nagrania połączeń, aby analizować rzeczywiste sytuacje i poprawiać jakość obsługi. Historia kontaktów pomaga odtworzyć szczegóły ustaleń, a przykłady rozmów można wykorzystywać podczas szkolenia pracowników."
+            ],
+            "items": [
+              "Odsłuchiwanie nagrań rozmów.",
+              "Kontrola jakości komunikacji z klientami.",
+              "Analiza połączeń podczas szkolenia zespołu."
+            ],
+            "image": "",
+            "image_alt": ""
+          }
+        ],
+        "links": [],
+        "visible": true,
+        "slug": "binotel",
+        "path": "/integrations/binotel",
+        "logo": "/imgs/api-integrations/binotel-int-logo.svg",
+        "logo_alt": "Binotel",
+        "gallery": []
+      }
+    }
+  },
+  "privacy_policy": {
+    "visible": true,
+    "eyebrow": "Vortex / Informacje prawne",
+    "title": "Polityka prywatności",
+    "lead": "Jak przetwarzamy dane osobowe odwiedzających stronę i osób kontaktujących się w sprawie produktów i usług Vortex.",
+    "updated": "Data aktualizacji:",
+    "contents": "Spis treści dokumentu",
+    "sections": [
+      {
+        "id": "scope",
+        "title": "O tej polityce i kontakcie z nami",
+        "html": "<p>Ta polityka dotyczy publicznej strony Vortex, jej formularzy zapytań, wyboru języka i kontaktowania się z zespołem poprzez dane podane na stronie. Wyjaśnia, jakie informacje otrzymujemy podczas tych działań, dlaczego ich potrzebujemy oraz jak można korzystać z praw dotyczących tych danych.</p><p>Administratorem danych osobowych otrzymanych przez tę stronę jest ФОП Маркович В.Ю., numer identyfikacyjny 3258910312. W tym dokumencie określenia „Vortex”, „my” i „nasze” oznaczają tego przedsiębiorcę oraz zespół obsługujący stronę i rozpatrujący zapytania w jego imieniu.</p><p>Kontakt w sprawach danych osobowych i realizacji praw: <a href=\"mailto:crm.vtx@gmail.com\">crm.vtx@gmail.com</a>. Adres do korespondencji: Україна, м. Ужгород, вул. Капушанська, 154а.</p><p>Dane przetwarzamy z uwzględnieniem <a href=\"https://zakon.rada.gov.ua/go/2297-17\" target=\"_blank\" rel=\"noopener noreferrer\">ustawy Ukrainy „O ochronie danych osobowych”</a>. Jeżeli do konkretnego przetwarzania ma zastosowanie ogólne rozporządzenie UE o ochronie danych (RODO/GDPR), obowiązują również jego wymagania.</p><p>Ta polityka opisuje stronę marketingową. Zasady przetwarzania danych w samym CRM, w bazie klientów użytkownika lub podczas realizacji odrębnej umowy określają odpowiednie umowy i informacje. Samo odwiedzenie strony lub przeczytanie tej polityki nie oznacza zgody na dowolne wykorzystanie danych osobowych.</p>"
+      },
+      {
+        "id": "data",
+        "title": "Jakie dane otrzymujemy",
+        "html": "<p>Do przeglądania stron nie trzeba zakładać konta. Jeśli wysyłasz zgłoszenie dotyczące testowania, prezentacji, stworzenia strony lub licencji TecDoc, formularz przekazuje:</p><ul><li>imię lub inną podaną przez Ciebie formę zwracania się oraz numer telefonu;</li><li>produkt, którego dotyczy zapytanie, stronę wysłania i wybrany język;</li><li>obliczoną kwotę, jeśli przewiduje ją formularz, oraz wybrany pakiet strony, jeśli go wskazano;</li><li>współrzędne i dokładność położenia, jeśli osobno dodasz geolokalizację;</li><li>techniczny token reCAPTCHA do sprawdzenia autentyczności zgłoszenia.</li></ul><p>Podczas kontaktu e-mailem, telefonicznie lub przez komunikator otrzymujemy również informacje przekazane dobrowolnie oraz dane niezbędne do odpowiedzi. Nie przesyłaj haseł, danych kart płatniczych, kopii dokumentów ani informacji wrażliwych, jeżeli nie są potrzebne do uzgodnionej usługi.</p><p>W celu dostarczania stron i ochrony serwisu serwer oraz jego infrastruktura przetwarzają techniczne informacje o połączeniu, w tym adres IP, czas żądania i dane nagłówków HTTP. Zakres i okres przechowywania logów technicznych zależą od konfiguracji hostingu. Adres IP jest też przekazywany Google podczas serwerowej weryfikacji reCAPTCHA.</p><p>Formularz strony nie żąda danych karty bankowej i nie realizuje płatności. Wyświetlenie ceny lub obliczonej kwoty samo w sobie nie jest transakcją płatniczą.</p>"
+      },
+      {
+        "id": "purposes",
+        "title": "Cele i podstawy prawne przetwarzania",
+        "html": "<p>Imię, telefon i kontekst zgłoszenia są potrzebne do odpowiedzi, doprecyzowania potrzeb, zorganizowania prezentacji lub przygotowania oferty. Jeżeli zapytanie dotyczy przyszłej umowy, podstawą jest podjęcie działań na Twoje żądanie przed jej zawarciem; w przypadku zamówionej usługi — wykonanie umowy.</p><p>Dane techniczne i weryfikacja antyspamowa służą ochronie formularzy, zapobieganiu nadużyciom oraz zapewnianiu działania strony. Podstawą może być prawnie uzasadniony interes polegający na bezpiecznym działaniu usługi, z uwzględnieniem Twoich praw i obowiązujących wymagań prawnych. Jeżeli prawo wymaga uprzedniej zgody na daną technologię, uzasadniony interes jej nie zastępuje.</p><p>Opcjonalna geolokalizacja opiera się na Twoim odrębnym, dobrowolnym wyborze. Gdy dane są konieczne do wykonania obowiązku ustawowego, przetwarzanie opiera się na tym obowiązku. Samego wysłania zgłoszenia nie traktujemy jako nieograniczonego zezwolenia na wysyłanie reklam.</p><p>Niepodanie obowiązkowych danych kontaktowych nie uniemożliwia przeglądania strony, ale uniemożliwia wysłanie formularza lub odpowiedź na brakujący kontakt. Automatyczna weryfikacja formularza i wyliczenie orientacyjnej ceny nie są zautomatyzowanymi decyzjami wywołującymi wobec Ciebie skutki prawne.</p>"
+      },
+      {
+        "id": "location",
+        "title": "Dobrowolne udostępnienie geolokalizacji",
+        "html": "<p>Strona prosi o położenie dopiero po naciśnięciu przycisku dodawania lokalizacji i udzieleniu zgody w przeglądarce. Lokalizacja jest dołączana do zgłoszenia, aby zespół mógł ją uwzględnić podczas odpowiedzi. Ta funkcja nie śledzi stale Twojego przemieszczania się.</p><p>Możesz nie używać przycisku lub odrzucić żądanie przeglądarki: formularz pozostaje dostępny bez współrzędnych. Jeśli nie chcesz wysłać już dodanej lokalizacji, odśwież stronę przed wysłaniem formularza. Uprawnienie do przyszłego dostępu można cofnąć w ustawieniach przeglądarki.</p><p>Cofnięcie uprawnienia w przeglądarce nie usuwa współrzędnych, które zostały już wysłane. Aby usunąć dane z poprzedniego zgłoszenia, napisz na <a href=\"mailto:crm.vtx@gmail.com\">crm.vtx@gmail.com</a>.</p>"
+      },
+      {
+        "id": "cookies",
+        "title": "Cookies i pamięć lokalna przeglądarki",
+        "html": "<p>Aby zapamiętać wybrany język, strona zapisuje wartość <code>vortex-language</code> w pliku cookie oraz pamięci lokalnej przeglądarki (localStorage). Wartość zawiera kod języka, a nie imię lub numer telefonu.</p><ul><li><strong>Cookie języka:</strong> jest ustawiany przy wyborze języka na okres do 365 dni; ponowny wybór odnawia ten okres.</li><li><strong>localStorage:</strong> przechowuje wybór języka bez automatycznego terminu usunięcia określonego przez stronę, dopóki nie wyczyścisz danych lub nie usunie ich przeglądarka.</li><li><strong>reCAPTCHA:</strong> może ustawiać techniczny plik cookie <code>_GRECAPTCHA</code> i wykorzystywać inne technologie Google do ochrony przed automatycznymi żądaniami.</li></ul><p>Możesz usunąć te dane lub ograniczyć ich zapisywanie w ustawieniach przeglądarki. Po wyczyszczeniu wybór języka może zostać zresetowany; blokowanie usług Google może uniemożliwić weryfikację i wysłanie formularza. W takim przypadku można skontaktować się z zespołem bezpośrednio.</p><p>W obecnej wersji strony nie są podłączone odrębne piksele reklamowe ani zewnętrzne systemy analityki internetowej. Nie wyklucza to technicznego przetwarzania przez usługi zewnętrzne opisane w tej polityce.</p>"
+      },
+      {
+        "id": "recaptcha",
+        "title": "Ochrona formularzy za pomocą reCAPTCHA",
+        "html": "<p>Jeżeli skonfigurowano Google reCAPTCHA, strona z formularzem ładuje jej skrypt. Podczas ładowania i weryfikacji Google otrzymuje techniczne dane o interakcji, w tym adres IP i informacje o przeglądarce; usługa może używać cookies. Serwer strony przesyła Google token weryfikacji oraz adres IP żądania.</p><p>Strona nie dołącza pól imienia i telefonu do żądania serwerowej weryfikacji reCAPTCHA. Po pomyślnej weryfikacji token nie jest dołączany do wiadomości zespołu w Telegramie.</p><p>Więcej o usłudze: <a href=\"https://developers.google.com/recaptcha/docs/faq\" target=\"_blank\" rel=\"noopener noreferrer\">dokumentacja reCAPTCHA</a>, <a href=\"https://policies.google.com/privacy?hl=uk\" target=\"_blank\" rel=\"noopener noreferrer\">Polityka prywatności Google</a> i <a href=\"https://policies.google.com/terms?hl=uk\" target=\"_blank\" rel=\"noopener noreferrer\">Warunki korzystania z Google</a>. Jeśli nie chcesz używać formularza z tą usługą, skontaktuj się z nami bezpośrednio.</p>"
+      },
+      {
+        "id": "recipients",
+        "title": "Kto może otrzymywać dane",
+        "html": "<p>Zgłoszenia otrzymują pracownicy i współpracujący specjaliści zespołu Vortex, którzy potrzebują informacji do odpowiedzi, konsultacji lub świadczenia usługi. Techniczna obsługa strony wymaga udziału dostawcy hostingu oraz, w razie potrzeby, innych wykonawców zapewniających jej działanie.</p><p>Aby wyświetlać krój pisma, strony pobierają style i pliki Google Fonts z domen <code>fonts.googleapis.com</code> i <code>fonts.gstatic.com</code>. Połączenie następuje podczas przeglądania strony niezależnie od wysłania formularza. Google otrzymuje dane techniczne żądania, w tym adres IP, informacje o przeglądarce i źródle żądania w zakresie ustawień przekazywania referrera. Strona nie dołącza imienia i telefonu z formularza do żądań pobrania fontu. Więcej informacji zawierają <a href=\"https://developers.google.com/fonts/faq/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">wyjaśnienia Google Fonts dotyczące prywatności</a>.</p><p>Zgłoszenia z formularzy są dostarczane zespołowi przez Telegram Bot API. Wiadomość zawiera imię, telefon i, zależnie od formularza, język, stronę, kwotę, pakiet oraz współrzędne. Wiadomość dotycząca TecDoc zawiera imię i telefon. Przekazanie odbywa się na serwerze: nie musisz mieć konta w Telegramie.</p><p>Telegram przetwarza wiadomości w swojej infrastrukturze chmurowej zgodnie z <a href=\"https://telegram.org/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">własną polityką prywatności</a>. Wiadomość bota nie jest tajnym czatem z szyfrowaniem typu end-to-end. Nie przekazuj przez formularz informacji, które nie są potrzebne do kontaktu.</p><p>Niektóre dane techniczne otrzymuje również Google na potrzeby reCAPTCHA, jak opisano wyżej. Dane mogą także zostać przekazane właściwym organom, jeżeli jest to wyraźnie przewidziane prawem i istnieje odpowiednia podstawa prawna. Nie sprzedajemy danych kontaktowych ze zgłoszeń ani nie publikujemy ich na stronie.</p>"
+      },
+      {
+        "id": "international",
+        "title": "Przetwarzanie danych poza Ukrainą",
+        "html": "<p>Korzystanie z Google, Telegramu i infrastruktury ich dostawców może wiązać się z przetwarzaniem danych poza Ukrainą, a w przypadku użytkowników z Europejskiego Obszaru Gospodarczego — również poza EOG. Sama strona nie określa lokalizacji wszystkich serwerów tych usług; informacje o ich przetwarzaniu znajdują się w politykach odpowiednich dostawców.</p><p>Przekazywanie danych za granicę podlega przepisom o ochronie danych osobowych, w tym art. 29 ustawy Ukrainy „O ochronie danych osobowych”, a gdy zastosowanie ma RODO — jego zasadom przekazywania danych do państw trzecich. Samo korzystanie ze strony nie oznacza odrębnej zgody na dowolne przekazywanie danych za granicę.</p><p>Informacje o odbiorcach i podstawie prawnej przekazania danych konkretnego zgłoszenia można uzyskać, korzystając z naszego kontaktu w sprawach prywatności.</p>"
+      },
+      {
+        "id": "retention",
+        "title": "Okresy przechowywania i usuwanie",
+        "html": "<p>Dane kontaktowe i korespondencję przechowujemy przez czas potrzebny do obsługi zgłoszenia oraz dalszej komunikacji dotyczącej wskazanej usługi. Jeśli relacja jest kontynuowana, okresy mogą wynikać z umowy, obowiązkowych wymogów prawa lub uzasadnionej potrzeby ochrony praw w sporze. Danych nie należy przechowywać dłużej, niż wymaga odpowiedni cel.</p><p>Obecny formularz dostarcza zgłoszenie do Telegramu; nie tworzy dla odwiedzającego osobnego konta z historią zgłoszeń. Kopie wiadomości mogą pozostać w korespondencji służbowej i infrastrukturze dostawców. Zamknięcie strony lub wyczyszczenie przeglądarki nie usuwa już wysłanego zgłoszenia; formularz nie usuwa automatycznie wiadomości po ustalonej liczbie dni.</p><p>Logi techniczne są przechowywane zgodnie z ustawieniami infrastruktury i potrzebami bezpieczeństwa. Okresy przechowywania danych w Google i Telegramie określają również zasady tych usług. Okresy lokalnego przechowywania wyboru języka opisano w części dotyczącej cookies.</p><p>Aby ustalić okres dotyczący własnego zgłoszenia lub poprosić o usunięcie danych, napisz do nas. Jeżeli część danych trzeba zachować na zgodnej z prawem podstawie, w odpowiedzi wyjaśnimy tę podstawę oraz odpowiedni okres lub kryterium jego ustalenia.</p>"
+      },
+      {
+        "id": "security",
+        "title": "Bezpieczeństwo informacji",
+        "html": "<p>W celu ochrony zgłoszeń stosujemy weryfikację pól wejściowych, ograniczenia wielkości żądań i kontrolę antyspamową. Dane zgłoszenia są przekazywane Google i Telegramowi przez HTTPS. Klucze integracji są używane na serwerze i nie są dołączane do treści wiadomości zgłoszenia.</p><p>Żadna metoda przekazywania lub przechowywania danych nie zapewnia całkowitego bezpieczeństwa. Nie dodawaj nadmiernych danych, sprawdzaj adres strony przed wysłaniem i informuj nas o podejrzanej aktywności lub możliwym ujawnieniu swoich informacji.</p>"
+      },
+      {
+        "id": "rights",
+        "title": "Twoje prawa",
+        "html": "<p>W zakresie i na warunkach określonych przez właściwe przepisy masz prawo:</p><ul><li>poznać źródła, cel i warunki przetwarzania swoich danych oraz informacje o administratorze i odbiorcach;</li><li>uzyskać dostęp do swoich danych osobowych;</li><li>żądać sprostowania nieprawidłowych danych i usunięcia danych przetwarzanych niezgodnie z prawem lub już niepotrzebnych;</li><li>wnieść sprzeciw wobec przetwarzania, jeżeli istnieją podstawy przewidziane prawem;</li><li>cofnąć zgodę, jeśli stanowiła podstawę przetwarzania, bez wpływu na zgodność z prawem wcześniejszego przetwarzania;</li><li>chronić swoje prawa przed sądem i wnieść skargę do Pełnomocnika Rady Najwyższej Ukrainy ds. Praw Człowieka.</li></ul><p>Gdy zastosowanie ma RODO, na określonych w nim warunkach przysługują także ograniczenie przetwarzania, przenoszenie danych i skarga do właściwego organu nadzorczego, w szczególności w miejscu zwykłego pobytu, pracy lub domniemanego naruszenia. Prawa te nie są bezwzględne: przykładowo usunięcie może być ograniczone ustawowym obowiązkiem przechowywania.</p><p>Wyjaśnienia dotyczące praw i sposobu składania wniosków znajdują się na <a href=\"https://ombudsman.gov.ua/uk/zahist-personalnih-danih-faq\" target=\"_blank\" rel=\"noopener noreferrer\">stronie Pełnomocnika</a>. Oficjalny tekst RODO jest dostępny w <a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener noreferrer\">EUR-Lex</a>.</p>"
+      },
+      {
+        "id": "requests",
+        "title": "Jak skorzystać ze swoich praw",
+        "html": "<p>Wyślij wiadomość na <a href=\"mailto:crm.vtx@gmail.com\">crm.vtx@gmail.com</a> z tematem „Dane osobowe”. Opisz, jakich danych lub zgłoszenia dotyczy sprawa i o jakie działanie prosisz. Aby rozpocząć wyszukiwanie zgłoszenia, wystarczy przybliżona data i podany wcześniej kontakt.</p><p>Aby nie ujawnić Twoich danych osobie trzeciej, możemy poprosić o proporcjonalne potwierdzenie tożsamości i informacje wymagane prawem. Nie przesyłaj kopii paszportu ani innych nadmiernych dokumentów bez odrębnej, uzasadnionej prośby.</p><p>Wnioski rozpatrujemy w ustawowych terminach dla odpowiedniego rodzaju żądania. Jeśli istnieje zgodna z prawem podstawa odmowy, ograniczenia realizacji lub przedłużenia terminu, poinformujemy o niej. Kontakt z nami nie ogranicza prawa do bezpośredniego zwrócenia się do organu nadzorczego lub sądu.</p>"
+      },
+      {
+        "id": "external",
+        "title": "Linki zewnętrzne i dane innych osób",
+        "html": "<p>Na stronie znajdują się linki do YouTube, komunikatorów, mediów społecznościowych i innych zasobów. Po przejściu ich operatorzy przetwarzają dane według własnych zasad. W szczególności linki do filmów prowadzą do zewnętrznej platformy; jej polityka ma zastosowanie do oglądania na tej platformie.</p><p>Przesyłaj własne dane kontaktowe lub dane, które masz prawo przekazać w związku z danym zgłoszeniem. Strona i jej oferty są przeznaczone przede wszystkim do użytku zawodowego; formularze nie służą do zbierania danych dzieci. Jeżeli uważasz, że dane dziecka lub innej osoby przekazano bez odpowiedniej podstawy, poinformuj nas, abyśmy mogli sprawdzić sytuację i podjąć niezbędne działania.</p>"
+      },
+      {
+        "id": "changes",
+        "title": "Zmiany polityki",
+        "html": "<p>Aktualizujemy ten dokument, gdy zmieniają się funkcje strony, sposób przetwarzania lub wymagania prawne. Aktualna wersja jest publikowana na tej stronie z datą aktualizacji. Jeśli nowy cel przetwarzania wymaga odrębnej informacji lub zgody, publikacja nowej wersji nie zastępuje ich uzyskania.</p><p>W sprawach dotyczących tej polityki napisz na <a href=\"mailto:crm.vtx@gmail.com\">crm.vtx@gmail.com</a>.</p>"
+      }
+    ],
+    "updated_at": "2026-11-16"
+  },
+  "blog_copy": {
+    "title": "Blog Vortex",
+    "intro": "Praktyczne artykuły o ewidencji, częściach samochodowych i pracy z Vortex.",
+    "texts": {
+      "nav.blog": "Blog",
+      "view": "Przeczytaj",
+      "contents": "Spis treści",
+      "published": "Opublikowano",
+      "updated": "Zaktualizowano",
+      "pagination": "Strony bloga",
+      "previous": "Wstecz",
+      "next": "Dalej",
+      "page": "Strona {page}",
+      "loading": "Ładowanie artykułów…",
+      "error": "Nie udało się załadować bloga. Spróbuj ponownie.",
+      "retry": "Spróbuj ponownie",
+      "empty": "Nie ma jeszcze artykułów. Zajrzyj później.",
+      "missing": "Nie znaleziono artykułu lub strony",
+      "back": "Wszystkie artykuły",
+      "demo": "Artykuły demonstracyjne",
+      "demoNote": "To przykładowe materiały do podglądu bloga.",
+      "homeTitle": "Vortex — system zarządzania sklepem z częściami i warsztatem",
+      "homeDescription": "Towary, zamówienia, finanse, obsługa warsztatu i integracje w jednym systemie Vortex."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Vortex — CRM dla sklepów z częściami i warsztatów",
+      "description": "Zarządzaj towarem, zamówieniami, finansami i pracą warsztatu w Vortex. Katalogi części, integracje API, demontaż aut i strona sklepu w jednym systemie.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "faq": {
+      "title": "Pytania i odpowiedzi o Vortex | Pomoc CRM",
+      "description": "Odpowiedzi na pytania o rozpoczęcie pracy z Vortex, funkcje CRM, cennik i codzienną ewidencję w sklepie z częściami oraz warsztacie.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "contacts": {
+      "title": "Kontakt z Vortex — konsultacja i prezentacja CRM",
+      "description": "Skontaktuj się z zespołem Vortex w sprawie CRM dla części i warsztatów, strony internetowej lub licencji TecDoc. Kontakty do specjalistów i formularz zgłoszenia.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "car_service": {
+      "title": "Ewidencja i zarządzanie warsztatem | Vortex",
+      "description": "Planuj wizyty i pracę mechaników, prowadź historię pojazdów, drukuj dokumenty i kontroluj finanse warsztatu w systemie Vortex.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "websites": {
+      "title": "Strona sklepu z częściami połączona z CRM | Vortex",
+      "description": "Zamów stronę sklepu z częściami lub warsztatu zintegrowaną z Vortex. Katalogi, ceny, stany magazynowe, konto klienta i pakiety stron.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "autoshrot": {
+      "title": "Ewidencja demontażu aut i używanych części | Vortex",
+      "description": "Ewidencjonuj pojazdy do demontażu, koszty i wymontowane części w Vortex. Statusy aut, magazyn części i dobór z katalogu.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "tecdoc": {
+      "title": "Licencja TecDoc Web Catalog 3.0 | Vortex",
+      "description": "Kup licencję TecDoc Web Catalog 3.0 przez Vortex. Dobór części, dane techniczne TecRMI, możliwości katalogu i konsultacja.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "privacy_policy": {
+      "title": "Polityka prywatności | Vortex",
+      "description": "Jak Vortex przetwarza dane odwiedzających: zgłoszenia, kontakty, dobrowolną lokalizację, cookies, zabezpieczenia i prawa dotyczące danych osobowych.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "blog": {
+      "title": "Blog Vortex",
+      "description": "Praktyczne artykuły o ewidencji, częściach samochodowych i pracy z Vortex.",
+      "share_image": "/imgs/logo-square.png",
+      "share_image_alt": "Vortex",
+      "indexing": "index"
+    },
+    "integrations": {
+      "tecdoc": {
+        "title": "TecDoc Inside — Integracja z Vortex | Vortex",
+        "description": "Oficjalna integracja z katalogiem TecDoc pozwala znajdować pojazdy, dobierać pasujące części i przeglądać informacje techniczne bezpośrednio w Vortex.",
+        "share_image": "/imgs/logo-square.png",
+        "share_image_alt": "Vortex",
+        "indexing": "index"
+      },
+      "checkbox": {
+        "title": "Checkbox — Integracja z Vortex | Vortex",
+        "description": "Fiskalizuj sprzedaż części, usługi warsztatu i zwroty w Vortex przez programową kasę Checkbox — bez osobnego urządzenia kasowego.",
+        "share_image": "/imgs/logo-square.png",
+        "share_image_alt": "Vortex",
+        "indexing": "index"
+      },
+      "vchasno": {
+        "title": "Vchasno.Kasa — Integracja z Vortex | Vortex",
+        "description": "Programowa kasa do fiskalizacji sprzedaży w Vortex: elektroniczne paragony, kasy i klucze kasjerów we wspólnym procesie obsługi zamówień oraz płatności.",
+        "share_image": "/imgs/logo-square.png",
+        "share_image_alt": "Vortex",
+        "indexing": "index"
+      },
+      "nova_poshta": {
+        "title": "Nova Poshta — Integracja z Vortex | Vortex",
+        "description": "Twórz ekspresowe listy przewozowe, przeglądaj przesyłki i drukuj dokumenty bezpośrednio w Vortex dzięki integracji API z Nova Poshta.",
+        "share_image": "/imgs/logo-square.png",
+        "share_image_alt": "Vortex",
+        "indexing": "index"
+      },
+      "turboSMS": {
+        "title": "TurboSMS — Integracja z Vortex | Vortex",
+        "description": "Podłącz konto TurboSMS do Vortex, aby ręcznie wysyłać wiadomości, korzystać z szablonów i automatycznie informować klientów o ważnych zdarzeniach.",
+        "share_image": "/imgs/logo-square.png",
+        "share_image_alt": "Vortex",
+        "indexing": "index"
+      },
+      "bank_API": {
+        "title": "API banków — Integracja z Vortex | Vortex",
+        "description": "Przeglądaj transakcje podłączonych rachunków firmowych w Vortex i twórz operacje finansowe na podstawie rzeczywistych przepływów pieniężnych.",
+        "share_image": "/imgs/logo-square.png",
+        "share_image_alt": "Vortex",
+        "indexing": "index"
+      },
+      "binotel": {
+        "title": "Binotel — Integracja z Vortex | Vortex",
+        "description": "Połącz telefonię Binotel z ewidencją klientów w Vortex: kontroluj połączenia, otwieraj karty klientów i przeglądaj historię kontaktów.",
+        "share_image": "/imgs/logo-square.png",
+        "share_image_alt": "Vortex",
+        "indexing": "index"
+      }
+    }
+  }
+}

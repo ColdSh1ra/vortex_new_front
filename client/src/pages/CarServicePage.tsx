@@ -1,5 +1,6 @@
+import { imageSize } from '../utils/imageSize';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../components/default/LocalizedLink';
 import PricingCalculatorComponent from '../components/PricingCalculatorComponent';
 import TrialRequestComponent from '../components/TrialRequestComponent';
 import { useI18n } from '../context/ContentContext';
@@ -56,7 +57,9 @@ function CarServicePage() {
                   className="car-service-image"
                   src={block.image_src}
                   alt={block.image_alt}
-                  width="640"
+                  {...imageSize(block.image_src)}
+                  decoding="async"
+                  fetchPriority={index === 0 ? 'high' : 'auto'}
                   loading={index === 0 ? 'eager' : 'lazy'}
                 />
               </section>

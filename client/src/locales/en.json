@@ -126,5 +126,6 @@
   "tecdoc.trialTerms": "You can try the web license free for 14 days.",
   "tecdoc.trialBadge": "14-day free trial",
   "tecdoc.formDescription": "Leave your name and phone number and we will contact you about a TecDoc license.",
-  "tecdoc.success": "Thank you! We will contact you shortly."
+  "tecdoc.success": "Thank you! We will contact you shortly.",
+  "header.expand": "Expand site navigation"
 }

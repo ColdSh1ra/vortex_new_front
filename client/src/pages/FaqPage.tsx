@@ -1,57 +1,12 @@
-import { Link } from 'react-router-dom';
+import Link from '../components/default/LocalizedLink';
 import FaqDataContainer from '../components/FaqDataContainer';
 import { useI18n } from '../context/ContentContext';
-import { sanitizeJsonLd } from '../utils/sanitizeHtml';
-
-const SITE_URL = 'https://crm-vortex.com';
-
-function htmlToPlainText(html: string) {
-  return html
-    .replace(/<br\s*\/?>/gi, ' ')
-    .replace(/<\/li>/gi, '. ')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
 
 function FaqPage() {
   const { content, t } = useI18n();
 
   const faqItems = content?.FAQ ?? [];
   const videoItems = content?.videos ?? [];
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    url: `${SITE_URL}/faq`,
-    mainEntity: faqItems.map((item) => ({
-      '@type': 'Question',
-      name: item.topic,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: htmlToPlainText(item.answer),
-      },
-    })),
-  };
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: t('common.home'),
-        item: `${SITE_URL}/`,
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: t('nav.faq'),
-        item: `${SITE_URL}/faq`,
-      },
-    ],
-  };
 
   return (
     <div className="faq-page">
@@ -95,14 +50,6 @@ function FaqPage() {
 
       <div className="faq-bottom-transition" aria-hidden="true" />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: sanitizeJsonLd(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: sanitizeJsonLd(breadcrumbSchema) }}
-      />
     </div>
   );
 }

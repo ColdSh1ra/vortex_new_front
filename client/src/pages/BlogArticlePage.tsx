@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from '../components/default/LocalizedLink';
 import { useI18n } from '../context/ContentContext';
 import { useBlog } from '../blog/BlogContext';
 import { blogText } from '../blog/copy';

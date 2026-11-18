@@ -1,0 +1,1348 @@
+{
+  "data": {
+    "/bgs/logo2.svg": {
+      "width": 481,
+      "height": 477,
+      "mime": "image/svg+xml",
+      "size": 2943,
+      "alt": {
+        "ua": "Vortex",
+        "cz": "Vortex",
+        "sk": "Vortex",
+        "en": "Vortex",
+        "pl": "Vortex"
+      },
+      "variants": []
+    },
+    "/icons/double-chevron-right.svg": {
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 254,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/icons/paperclip.svg": {
+      "width": 24,
+      "height": 24,
+      "mime": "image/svg+xml",
+      "size": 300,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/icons/slider_scroll_right.svg": {
+      "width": 24,
+      "height": 24,
+      "mime": "image/svg+xml",
+      "size": 214,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/icons/sm_black/facebook.svg": {
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 527,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/icons/sm_black/instagram.svg": {
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 3229,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/icons/sm_black/material-symbols_mail-rounded.svg": {
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 1192,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/icons/sm_black/minus.svg": {
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 215,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/icons/sm_black/phone.svg": {
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 1536,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/icons/sm_black/plus.svg": {
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 244,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/icons/sm_black/telegram.svg": {
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 491,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/icons/sm_black/viber.svg": {
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 4483,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/icons/sm_black/whatsapp.svg": {
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 1302,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/icons/sm_black/youtube.svg": {
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 980,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/3d_clay/3dicons-bag-dynamic-clay.png": {
+      "width": 274,
+      "height": 274,
+      "mime": "image/png",
+      "size": 29389,
+      "alt": {
+        "ua": "Магазини автозапчастин",
+        "cz": "Prodejny autodílů",
+        "sk": "Predajne autodielov",
+        "en": "Auto parts stores",
+        "pl": "Sklepy motoryzacyjne"
+      },
+      "variants": []
+    },
+    "/imgs/3d_clay/3dicons-computer-dynamic-clay.png": {
+      "width": 258,
+      "height": 274,
+      "mime": "image/png",
+      "size": 19790,
+      "alt": {
+        "ua": "Інтернет-магазини",
+        "cz": "Internetové obchody",
+        "sk": "Internetové obchody",
+        "en": "Online stores",
+        "pl": "Sklepy internetowe"
+      },
+      "variants": []
+    },
+    "/imgs/3d_clay/3dicons-location-dynamic-clay.png": {
+      "width": 274,
+      "height": 274,
+      "mime": "image/png",
+      "size": 18120,
+      "alt": {
+        "ua": "Оптові компанії",
+        "cz": "Velkoobchodní společnosti",
+        "sk": "Veľkoobchodné spoločnosti",
+        "en": "Wholesale businesses",
+        "pl": "Hurtownie"
+      },
+      "variants": []
+    },
+    "/imgs/3d_clay/3dicons-tool-dynamic-clay.png": {
+      "width": 274,
+      "height": 274,
+      "mime": "image/png",
+      "size": 29840,
+      "alt": {
+        "ua": "СТО та автосервіси",
+        "cz": "Autoservisy a opravny",
+        "sk": "Autoservisy a opravovne",
+        "en": "Garages and auto workshops",
+        "pl": "Warsztaty i serwisy samochodowe"
+      },
+      "variants": []
+    },
+    "/imgs/3dicons_premium/3d-document-premium.png": {
+      "width": 342,
+      "height": 301,
+      "mime": "image/png",
+      "size": 44988,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/3dicons_premium/3d-fire.png": {
+      "width": 205,
+      "height": 239,
+      "mime": "image/png",
+      "size": 38874,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/3dicons_premium/3d-gift-large.png": {
+      "width": 171,
+      "height": 171,
+      "mime": "image/png",
+      "size": 36369,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/3dicons_premium/3d-rocket-premium.png": {
+      "width": 243,
+      "height": 260,
+      "mime": "image/png",
+      "size": 42696,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/3dicons_premium/3dicons-boy-left-premium.png": {
+      "width": 148,
+      "height": 148,
+      "mime": "image/png",
+      "size": 10806,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/3dicons_premium/3dicons-boy-right-premium.png": {
+      "width": 148,
+      "height": 148,
+      "mime": "image/png",
+      "size": 10769,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/3dicons_premium/folder.png": {
+      "width": 500,
+      "height": 500,
+      "mime": "image/png",
+      "size": 125484,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/3dicons_premium/gift.png": {
+      "width": 500,
+      "height": 500,
+      "mime": "image/png",
+      "size": 144074,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/3dicons_premium/like.png": {
+      "width": 500,
+      "height": 500,
+      "mime": "image/png",
+      "size": 136066,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/3dicons_premium/message.png": {
+      "width": 500,
+      "height": 500,
+      "mime": "image/png",
+      "size": 111446,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/3dicons_premium/monitor.png": {
+      "width": 500,
+      "height": 500,
+      "mime": "image/png",
+      "size": 87694,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/3dicons_premium/wallet.png": {
+      "width": 500,
+      "height": 500,
+      "mime": "image/png",
+      "size": 148585,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/banks-api-int-logo.svg": {
+      "width": 137,
+      "height": 46,
+      "mime": "image/svg+xml",
+      "size": 46776,
+      "alt": {
+        "ua": "API банків",
+        "cz": "Bankovní API",
+        "sk": "Bankové API",
+        "en": "Bank APIs",
+        "pl": "API banków"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/binotel-int-logo.svg": {
+      "width": 187,
+      "height": 48,
+      "mime": "image/svg+xml",
+      "size": 34033,
+      "alt": {
+        "ua": "Binotel",
+        "cz": "Binotel",
+        "sk": "Binotel",
+        "en": "Binotel",
+        "pl": "Binotel"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/checkbox-int-logo.svg": {
+      "width": 168,
+      "height": 46,
+      "mime": "image/svg+xml",
+      "size": 5165,
+      "alt": {
+        "ua": "Checkbox",
+        "cz": "Checkbox",
+        "sk": "Checkbox",
+        "en": "Checkbox",
+        "pl": "Checkbox"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/np-int-logo.svg": {
+      "width": 139,
+      "height": 46,
+      "mime": "image/svg+xml",
+      "size": 3437,
+      "alt": {
+        "ua": "Нова Пошта",
+        "cz": "Nova Poshta",
+        "sk": "Nova Poshta",
+        "en": "Nova Poshta",
+        "pl": "Nova Poshta"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/bankapi_history.png": {
+      "width": 631,
+      "height": 875,
+      "mime": "image/png",
+      "size": 89738,
+      "alt": {
+        "ua": "Перетворюйте транзакції на операції",
+        "cz": "Převádějte transakce na finanční operace",
+        "sk": "Prevádzajte transakcie na finančné operácie",
+        "en": "Turn transactions into financial entries",
+        "pl": "Zamieniaj transakcje w operacje finansowe"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/bankapi_screenshot-400h.png": {
+      "width": 749,
+      "height": 400,
+      "mime": "image/png",
+      "size": 53460,
+      "alt": {
+        "ua": "Підключіть бізнес-рахунок",
+        "cz": "Připojte podnikatelský účet",
+        "sk": "Pripojte podnikateľský účet",
+        "en": "Connect a business account",
+        "pl": "Podłącz rachunek firmowy"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/binotel_call_history.png": {
+      "width": 901,
+      "height": 877,
+      "mime": "image/png",
+      "size": 90618,
+      "alt": {
+        "ua": "Не втрачайте звернення",
+        "cz": "Neztrácejte zákaznické dotazy",
+        "sk": "Nestrácajte zákaznícke dopyty",
+        "en": "Keep track of enquiries",
+        "pl": "Nie trać zapytań klientów"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/binotel_call.png": {
+      "width": 1347,
+      "height": 550,
+      "mime": "image/png",
+      "size": 127865,
+      "alt": {
+        "ua": "Впізнавайте клієнта під час дзвінка",
+        "cz": "Rozpoznejte zákazníka při hovoru",
+        "sk": "Rozpoznajte zákazníka pri hovore",
+        "en": "Recognise customers when they call",
+        "pl": "Rozpoznawaj klienta podczas połączenia"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/checkbox_screenshot_paydesk.png": {
+      "width": 597,
+      "height": 749,
+      "mime": "image/png",
+      "size": 69378,
+      "alt": {
+        "ua": "Касові операції у звичній системі",
+        "cz": "Pokladní operace ve známém systému",
+        "sk": "Pokladničné operácie v známom systéme",
+        "en": "Cash register operations in your usual system",
+        "pl": "Operacje kasowe w znanym systemie"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/checkbox_screenshot_shop.png": {
+      "width": 542,
+      "height": 345,
+      "mime": "image/png",
+      "size": 21361,
+      "alt": {
+        "ua": "Підготуйте обліковий запис Checkbox",
+        "cz": "Připravte si účet Checkbox",
+        "sk": "Pripravte si účet Checkbox",
+        "en": "Prepare your Checkbox account",
+        "pl": "Przygotuj konto Checkbox"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/novaposhta_screenshot_sender.png": {
+      "width": 613,
+      "height": 647,
+      "mime": "image/png",
+      "size": 56998,
+      "alt": {
+        "ua": "Налаштуйте відправників",
+        "cz": "Nastavte odesílatele",
+        "sk": "Nastavte odosielateľov",
+        "en": "Set up senders",
+        "pl": "Skonfiguruj nadawców"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/np_step_2.png": {
+      "width": 512,
+      "height": 852,
+      "mime": "image/png",
+      "size": 47970,
+      "alt": {
+        "ua": "Нова Пошта — 1",
+        "cz": "Nova Poshta — 1",
+        "sk": "Nova Poshta — 1",
+        "en": "Nova Poshta — 1",
+        "pl": "Nova Poshta — 1"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/np_step_3.png": {
+      "width": 513,
+      "height": 886,
+      "mime": "image/png",
+      "size": 56896,
+      "alt": {
+        "ua": "Нова Пошта — 2",
+        "cz": "Nova Poshta — 2",
+        "sk": "Nova Poshta — 2",
+        "en": "Nova Poshta — 2",
+        "pl": "Nova Poshta — 2"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/np_step_4.png": {
+      "width": 512,
+      "height": 331,
+      "mime": "image/png",
+      "size": 29390,
+      "alt": {
+        "ua": "Нова Пошта — 3",
+        "cz": "Nova Poshta — 3",
+        "sk": "Nova Poshta — 3",
+        "en": "Nova Poshta — 3",
+        "pl": "Nova Poshta — 3"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/np_step1.png": {
+      "width": 514,
+      "height": 613,
+      "mime": "image/png",
+      "size": 40489,
+      "alt": {
+        "ua": "Оформлюйте експрес-накладні",
+        "cz": "Vytvářejte expresní přepravní listy",
+        "sk": "Vytvárajte expresné prepravné listy",
+        "en": "Create express waybills",
+        "pl": "Wystawiaj ekspresowe listy przewozowe"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/tecdoc-parts-categories.png": {
+      "width": 1432,
+      "height": 801,
+      "mime": "image/png",
+      "size": 165192,
+      "alt": {
+        "ua": "Підбирайте запчастини за категоріями",
+        "cz": "Vybírejte díly podle kategorií",
+        "sk": "Vyberajte diely podľa kategórií",
+        "en": "Select parts by category",
+        "pl": "Dobieraj części według kategorii"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/tecdoc-parts.png": {
+      "width": 1708,
+      "height": 891,
+      "mime": "image/png",
+      "size": 302739,
+      "alt": {
+        "ua": "TecDoc Inside — 1",
+        "cz": "TecDoc Inside — 1",
+        "sk": "TecDoc Inside — 1",
+        "en": "TecDoc Inside — 1",
+        "pl": "TecDoc Inside — 1"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/tecdoc-screenshot-2.jpg": {
+      "width": 1280,
+      "height": 425,
+      "mime": "image/jpeg",
+      "size": 60351,
+      "alt": {
+        "ua": "Перевіряйте інформацію та сумісність",
+        "cz": "Ověřujte informace a kompatibilitu",
+        "sk": "Overujte informácie a kompatibilitu",
+        "en": "Check information and compatibility",
+        "pl": "Sprawdzaj dane i zgodność"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/tecdoc-VIN.jpg": {
+      "width": 1280,
+      "height": 781,
+      "mime": "image/jpeg",
+      "size": 50744,
+      "alt": {
+        "ua": "Знайдіть потрібний автомобіль",
+        "cz": "Najděte správné vozidlo",
+        "sk": "Nájdite správne vozidlo",
+        "en": "Find the right vehicle",
+        "pl": "Znajdź właściwy pojazd"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/turbosms_screenshot_blured.jpg": {
+      "width": 962,
+      "height": 712,
+      "mime": "image/jpeg",
+      "size": 60245,
+      "alt": {
+        "ua": "Повідомлення й шаблони",
+        "cz": "Zprávy a šablony",
+        "sk": "Správy a šablóny",
+        "en": "Messages and templates",
+        "pl": "Wiadomości i szablony"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/turbosms_screenshot_send_message_blured.jpg": {
+      "width": 1002,
+      "height": 490,
+      "mime": "image/jpeg",
+      "size": 45291,
+      "alt": {
+        "ua": "Інформуйте клієнта автоматично",
+        "cz": "Informujte zákazníky automaticky",
+        "sk": "Informujte zákazníkov automaticky",
+        "en": "Notify customers automatically",
+        "pl": "Informuj klienta automatycznie"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/vchasno-kasa-flow.svg": {
+      "width": 920,
+      "height": 560,
+      "mime": "image/svg+xml",
+      "size": 3705,
+      "alt": {
+        "ua": "Як працює фіскалізація",
+        "cz": "Jak funguje fiskalizace",
+        "sk": "Ako funguje fiskalizácia",
+        "en": "How fiscalisation works",
+        "pl": "Jak działa fiskalizacja"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/screenshots/vchasno-kasa-settings.svg": {
+      "width": 920,
+      "height": 560,
+      "mime": "image/svg+xml",
+      "size": 3455,
+      "alt": {
+        "ua": "Що потрібно для підключення",
+        "cz": "Co potřebujete k připojení",
+        "sk": "Čo potrebujete na pripojenie",
+        "en": "What you need to connect",
+        "pl": "Co jest potrzebne do podłączenia"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/tecdoc-int-logo.svg": {
+      "width": 160,
+      "height": 46,
+      "mime": "image/svg+xml",
+      "size": 18172,
+      "alt": {
+        "ua": "TecDoc Inside",
+        "cz": "TecDoc Inside",
+        "sk": "TecDoc Inside",
+        "en": "TecDoc Inside",
+        "pl": "TecDoc Inside"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/turbosms-int-logo.svg": {
+      "width": 187,
+      "height": 46,
+      "mime": "image/svg+xml",
+      "size": 18709,
+      "alt": {
+        "ua": "Turbo SMS",
+        "cz": "Turbo SMS",
+        "sk": "Turbo SMS",
+        "en": "Turbo SMS",
+        "pl": "Turbo SMS"
+      },
+      "variants": []
+    },
+    "/imgs/api-integrations/vchasno-kasa-logo.svg": {
+      "width": 191,
+      "height": 40,
+      "mime": "image/svg+xml",
+      "size": 4733,
+      "alt": {
+        "ua": "Вчасно.Каса",
+        "cz": "Vchasno.Kasa",
+        "sk": "Vchasno.Kasa",
+        "en": "Vchasno.Kasa",
+        "pl": "Vchasno.Kasa"
+      },
+      "variants": []
+    },
+    "/imgs/auto-dismantling/dismantling-car-premium.png": {
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/png",
+      "size": 1654062,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/auto-dismantling/parts-catalog-premium.png": {
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/png",
+      "size": 1715770,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/auto-dismantling/vehicle-record-premium.png": {
+      "width": 1199,
+      "height": 1312,
+      "mime": "image/png",
+      "size": 1161445,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/car-service/bookings.png": {
+      "width": 705,
+      "height": 392,
+      "mime": "image/png",
+      "size": 66504,
+      "alt": {
+        "ua": "Запис на СТО",
+        "cz": "Objednání do autoservisu",
+        "sk": "Objednanie do autoservisu",
+        "en": "Workshop bookings",
+        "pl": "Rezerwacje w warsztacie"
+      },
+      "variants": []
+    },
+    "/imgs/car-service/calendar.png": {
+      "width": 705,
+      "height": 334,
+      "mime": "image/png",
+      "size": 74466,
+      "alt": {
+        "ua": "Довідник робіт СТО",
+        "cz": "Katalog servisních prací",
+        "sk": "Katalóg servisných prác",
+        "en": "Workshop job catalog",
+        "pl": "Katalog prac warsztatowych"
+      },
+      "variants": []
+    },
+    "/imgs/car-service/company.png": {
+      "width": 705,
+      "height": 378,
+      "mime": "image/png",
+      "size": 73174,
+      "alt": {
+        "ua": "Документи",
+        "cz": "Dokumenty",
+        "sk": "Dokumenty",
+        "en": "Documents",
+        "pl": "Dokumenty"
+      },
+      "variants": []
+    },
+    "/imgs/contacts/worker-1.svg": {
+      "width": 256,
+      "height": 256,
+      "mime": "image/svg+xml",
+      "size": 612,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/contacts/worker-2.svg": {
+      "width": 256,
+      "height": 256,
+      "mime": "image/svg+xml",
+      "size": 608,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/contacts/worker-3.svg": {
+      "width": 256,
+      "height": 256,
+      "mime": "image/svg+xml",
+      "size": 612,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/contacts/worker-4.svg": {
+      "width": 256,
+      "height": 256,
+      "mime": "image/svg+xml",
+      "size": 611,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/integrations/ASG.png": {
+      "width": 233,
+      "height": 67,
+      "mime": "image/png",
+      "size": 2304,
+      "alt": {
+        "ua": "ASG",
+        "cz": "ASG",
+        "sk": "ASG",
+        "en": "ASG",
+        "pl": "ASG"
+      },
+      "variants": []
+    },
+    "/imgs/integrations/autooriginal.png": {
+      "width": 129,
+      "height": 83,
+      "mime": "image/png",
+      "size": 1860,
+      "alt": {
+        "ua": "AutoOriginal",
+        "cz": "AutoOriginal",
+        "sk": "AutoOriginal",
+        "en": "AutoOriginal",
+        "pl": "AutoOriginal"
+      },
+      "variants": []
+    },
+    "/imgs/integrations/bastion-logo.png": {
+      "width": 77,
+      "height": 108,
+      "mime": "image/png",
+      "size": 1097,
+      "alt": {
+        "ua": "Bastion",
+        "cz": "Bastion",
+        "sk": "Bastion",
+        "en": "Bastion",
+        "pl": "Bastion"
+      },
+      "variants": []
+    },
+    "/imgs/integrations/bm-logo.png": {
+      "width": 127,
+      "height": 124,
+      "mime": "image/png",
+      "size": 1287,
+      "alt": {
+        "ua": "BM Parts",
+        "cz": "BM Parts",
+        "sk": "BM Parts",
+        "en": "BM Parts",
+        "pl": "BM Parts"
+      },
+      "variants": []
+    },
+    "/imgs/integrations/Elit.png": {
+      "width": 117,
+      "height": 32,
+      "mime": "image/png",
+      "size": 486,
+      "alt": {
+        "ua": "Elit",
+        "cz": "Elit",
+        "sk": "Elit",
+        "en": "Elit",
+        "pl": "Elit"
+      },
+      "variants": []
+    },
+    "/imgs/integrations/forcars.png": {
+      "width": 301,
+      "height": 106,
+      "mime": "image/png",
+      "size": 5366,
+      "alt": {
+        "ua": "4Cars",
+        "cz": "4Cars",
+        "sk": "4Cars",
+        "en": "4Cars",
+        "pl": "4Cars"
+      },
+      "variants": []
+    },
+    "/imgs/integrations/ford_org_ua.png": {
+      "width": 518,
+      "height": 196,
+      "mime": "image/png",
+      "size": 6559,
+      "alt": {
+        "ua": "Ford.org.ua",
+        "cz": "Ford.org.ua",
+        "sk": "Ford.org.ua",
+        "en": "Ford.org.ua",
+        "pl": "Ford.org.ua"
+      },
+      "variants": []
+    },
+    "/imgs/integrations/intercars_logo.png": {
+      "width": 256,
+      "height": 256,
+      "mime": "image/png",
+      "size": 2347,
+      "alt": {
+        "ua": "Inter Cars",
+        "cz": "Inter Cars",
+        "sk": "Inter Cars",
+        "en": "Inter Cars",
+        "pl": "Inter Cars"
+      },
+      "variants": []
+    },
+    "/imgs/integrations/omega-logo.jpg": {
+      "width": 625,
+      "height": 384,
+      "mime": "image/jpeg",
+      "size": 14952,
+      "alt": {
+        "ua": "Omega",
+        "cz": "Omega",
+        "sk": "Omega",
+        "en": "Omega",
+        "pl": "Omega"
+      },
+      "variants": []
+    },
+    "/imgs/integrations/partline-logo.png": {
+      "width": 100,
+      "height": 100,
+      "mime": "image/png",
+      "size": 349,
+      "alt": {
+        "ua": "Partline",
+        "cz": "Partline",
+        "sk": "Partline",
+        "en": "Partline",
+        "pl": "Partline"
+      },
+      "variants": []
+    },
+    "/imgs/integrations/s-line-logo.svg": {
+      "width": 31,
+      "height": 50,
+      "mime": "image/svg+xml",
+      "size": 6168,
+      "alt": {
+        "ua": "S-Line",
+        "cz": "S-Line",
+        "sk": "S-Line",
+        "en": "S-Line",
+        "pl": "S-Line"
+      },
+      "variants": []
+    },
+    "/imgs/integrations/technomir-logo.png": {
+      "width": 180,
+      "height": 207,
+      "mime": "image/png",
+      "size": 1296,
+      "alt": {
+        "ua": "Техномир",
+        "cz": "Technomir",
+        "sk": "Technomir",
+        "en": "Technomir",
+        "pl": "Technomir"
+      },
+      "variants": []
+    },
+    "/imgs/integrations/twin.png": {
+      "width": 188,
+      "height": 82,
+      "mime": "image/png",
+      "size": 928,
+      "alt": {
+        "ua": "Twin",
+        "cz": "Twin",
+        "sk": "Twin",
+        "en": "Twin",
+        "pl": "Twin"
+      },
+      "variants": []
+    },
+    "/imgs/integrations/uniq_logo.png": {
+      "width": 880,
+      "height": 492,
+      "mime": "image/png",
+      "size": 15652,
+      "alt": {
+        "ua": "Юнік Трейд",
+        "cz": "Uniq Trade",
+        "sk": "Uniq Trade",
+        "en": "Uniq Trade",
+        "pl": "Uniq Trade"
+      },
+      "variants": []
+    },
+    "/imgs/integrations/vladislav.png": {
+      "width": 300,
+      "height": 61,
+      "mime": "image/png",
+      "size": 3002,
+      "alt": {
+        "ua": "Groupauto Україна",
+        "cz": "Groupauto Ukraine",
+        "sk": "Groupauto Ukraine",
+        "en": "Groupauto Ukraine",
+        "pl": "Groupauto Ukraine"
+      },
+      "variants": []
+    },
+    "/imgs/laptop-screenshot.png": {
+      "width": 528,
+      "height": 333,
+      "mime": "image/png",
+      "size": 33943,
+      "alt": {
+        "ua": "Інтерфейс обліку СТО Vortex на ноутбуці",
+        "cz": "Rozhraní autoservisu Vortex na notebooku",
+        "sk": "Rozhranie autoservisu Vortex na notebooku",
+        "en": "Vortex workshop interface on a laptop",
+        "pl": "Interfejs warsztatu Vortex na laptopie"
+      },
+      "variants": []
+    },
+    "/imgs/logo-square.png": {
+      "width": 96,
+      "height": 96,
+      "mime": "image/png",
+      "size": 4295,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/slider_images/slide_1.png": {
+      "width": 1624,
+      "height": 907,
+      "mime": "image/png",
+      "size": 84170,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/slider_images/slide_2.png": {
+      "width": 1627,
+      "height": 865,
+      "mime": "image/png",
+      "size": 160409,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/slider_images/slide_3.png": {
+      "width": 1626,
+      "height": 795,
+      "mime": "image/png",
+      "size": 192027,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/sm-dark-blue-logo.svg": {
+      "width": 20,
+      "height": 20,
+      "mime": "image/svg+xml",
+      "size": 2836,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/tecdoc-button.png": {
+      "width": 600,
+      "height": 169,
+      "mime": "image/png",
+      "size": 13804,
+      "alt": {
+        "ua": "TecAlliance — офіційний партнер",
+        "cz": "TecAlliance — oficiální partner",
+        "sk": "TecAlliance — oficiálny partner",
+        "en": "TecAlliance — official partner",
+        "pl": "TecAlliance — oficjalny partner"
+      },
+      "variants": []
+    },
+    "/imgs/tecdoc/tecdoc-parts.png": {
+      "width": 701,
+      "height": 414,
+      "mime": "image/png",
+      "size": 52056,
+      "alt": {
+        "ua": "Ілюстрація підбору автомобільних запчастин у каталозі TecDoc",
+        "cz": "Ilustrace výběru automobilových dílů v katalogu TecDoc",
+        "sk": "Ilustrácia výberu automobilových dielov v katalógu TecDoc",
+        "en": "Illustration of automotive parts selection in the TecDoc catalog",
+        "pl": "Ilustracja doboru części samochodowych w katalogu TecDoc"
+      },
+      "variants": []
+    },
+    "/imgs/tecdoc/tecdoc-screenshot.png": {
+      "width": 760,
+      "height": 444,
+      "mime": "image/png",
+      "size": 21145,
+      "alt": {
+        "ua": "Ілюстрація технічного обслуговування та діагностики автомобіля з TecRMI",
+        "cz": "Ilustrace údržby a diagnostiky vozidla s TecRMI",
+        "sk": "Ilustrácia údržby a diagnostiky vozidla s TecRMI",
+        "en": "Illustration of vehicle maintenance and diagnostics with TecRMI",
+        "pl": "Ilustracja obsługi technicznej i diagnostyki pojazdu z TecRMI"
+      },
+      "variants": []
+    },
+    "/imgs/vortex_logo_large.svg": {
+      "width": 481,
+      "height": 477,
+      "mime": "image/svg+xml",
+      "size": 2830,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/vortex-logo-115.svg": {
+      "width": 115,
+      "height": 30,
+      "mime": "image/svg+xml",
+      "size": 5060,
+      "alt": {
+        "ua": "Vortex",
+        "cz": "Vortex",
+        "sk": "Vortex",
+        "en": "Vortex",
+        "pl": "Vortex"
+      },
+      "variants": []
+    },
+    "/imgs/vx-screenshot-1.png": {
+      "width": 1906,
+      "height": 906,
+      "mime": "image/png",
+      "size": 214863,
+      "alt": {
+        "ua": "Статистика",
+        "cz": "Statistiky",
+        "sk": "Štatistiky",
+        "en": "Statistics",
+        "pl": "Statystyki"
+      },
+      "variants": []
+    },
+    "/imgs/vx-screenshot-2.png": {
+      "width": 1625,
+      "height": 842,
+      "mime": "image/png",
+      "size": 133688,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/vx-screenshot-3.png": {
+      "width": 1624,
+      "height": 840,
+      "mime": "image/png",
+      "size": 187307,
+      "alt": {
+        "ua": "",
+        "cz": "",
+        "sk": "",
+        "en": "",
+        "pl": ""
+      },
+      "variants": []
+    },
+    "/imgs/websites/site_2.png": {
+      "width": 261,
+      "height": 432,
+      "mime": "image/png",
+      "size": 59519,
+      "alt": {
+        "ua": "Приклад шаблонного сайту магазину автозапчастин",
+        "cz": "Ukázka šablonového webu prodejny autodílů",
+        "sk": "Ukážka šablónového webu predajne autodielov",
+        "en": "Example auto parts store website",
+        "pl": "Przykładowa strona sklepu motoryzacyjnego"
+      },
+      "variants": []
+    }
+  }
+}

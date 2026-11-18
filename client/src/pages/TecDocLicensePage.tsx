@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import ChevronCircle from '../components/default/ChevronCircle';
+import Link from '../components/default/LocalizedLink';
 import TrialRequestComponent from '../components/TrialRequestComponent';
 import { useI18n } from '../context/ContentContext';
 
@@ -32,7 +33,7 @@ function TecDocLicensePage() {
           <h1 id="tecdoc-heading"><span>Vortex —</span>{t('tecdoc.heroTitle')}</h1>
           <p className="tecdoc-hero-description">{t('tecdoc.heroDescription')}</p>
           <div className="tecdoc-hero-actions">
-            <a className="tecdoc-primary-link" href="#trial-request">{t('tecdoc.buyLicense')}<span aria-hidden="true"><img className="chevron-right-icon" src="/icons/chevron-right-double.svg" alt="" width="20" height="20" /></span></a>
+            <a className="tecdoc-primary-link" href="#trial-request">{t('tecdoc.buyLicense')}<ChevronCircle /></a>
             <a className="tecdoc-secondary-link" href="#tecdoc-features">{t('tecdoc.featuresLink')}<span aria-hidden="true">↓</span></a>
           </div>
           <div className="tecdoc-hero-details">

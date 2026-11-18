@@ -1,0 +1,746 @@
+{
+  "schema_status": "Proposed CMS import snapshot, not a claim that production API already implements it.",
+  "snapshot_date": "2026-11-18",
+  "languages": [
+    "ua",
+    "cz",
+    "sk",
+    "en",
+    "pl"
+  ],
+  "language_codes": {
+    "ua": "uk",
+    "cz": "cs",
+    "sk": "sk",
+    "en": "en",
+    "pl": "pl"
+  },
+  "counts": {
+    "ua": {
+      "interface_keys": 217,
+      "integration_cards": 7,
+      "integration_pages": 7,
+      "privacy_sections": 14,
+      "website_plans": 3,
+      "website_services": 27,
+      "vortex_plans": 0,
+      "suppliers": 15,
+      "faq": 6
+    },
+    "cz": {
+      "interface_keys": 217,
+      "integration_cards": 7,
+      "integration_pages": 7,
+      "privacy_sections": 14,
+      "website_plans": 3,
+      "website_services": 27,
+      "vortex_plans": 0,
+      "suppliers": 15,
+      "faq": 6
+    },
+    "sk": {
+      "interface_keys": 217,
+      "integration_cards": 7,
+      "integration_pages": 7,
+      "privacy_sections": 14,
+      "website_plans": 3,
+      "website_services": 27,
+      "vortex_plans": 0,
+      "suppliers": 15,
+      "faq": 6
+    },
+    "en": {
+      "interface_keys": 217,
+      "integration_cards": 7,
+      "integration_pages": 7,
+      "privacy_sections": 14,
+      "website_plans": 3,
+      "website_services": 27,
+      "vortex_plans": 0,
+      "suppliers": 15,
+      "faq": 6
+    },
+    "pl": {
+      "interface_keys": 217,
+      "integration_cards": 7,
+      "integration_pages": 7,
+      "privacy_sections": 14,
+      "website_plans": 3,
+      "website_services": 27,
+      "vortex_plans": 0,
+      "suppliers": 15,
+      "faq": 6
+    }
+  },
+  "source_manifest": [
+    {
+      "path": "client/src/blog/copy.ts",
+      "snapshot_path": "raw-source/client/src/blog/copy.ts",
+      "size": 5028,
+      "sha256": "a8c271122cc8f6b566408cf26524e4783eb7e758bdbc549c08983c1043257c7d"
+    },
+    {
+      "path": "client/src/blog/demo.ts",
+      "snapshot_path": "raw-source/client/src/blog/demo.ts",
+      "size": 5972,
+      "sha256": "c4441de6b90422d1fcda82b39a0bf4c2c3d6b266fff3e5c20589dd11d18bbf4e"
+    },
+    {
+      "path": "client/src/blog/loadBlogRoute.ts",
+      "snapshot_path": "raw-source/client/src/blog/loadBlogRoute.ts",
+      "size": 2792,
+      "sha256": "1805789d17fac300aad3086cf8a6d6c4139b4bd95c5cecc2e92c870930d65bce"
+    },
+    {
+      "path": "client/src/blog/types.ts",
+      "snapshot_path": "raw-source/client/src/blog/types.ts",
+      "size": 1651,
+      "sha256": "4fccbb4624906dd0ae95654167e7108aa21efbbd46ade7f6edb8533ff44559a1"
+    },
+    {
+      "path": "client/src/blog/urls.ts",
+      "snapshot_path": "raw-source/client/src/blog/urls.ts",
+      "size": 913,
+      "sha256": "713909fcd6d5e8770104b14ddb9856bb46b6a049b6ad59f326a1bf32d7a2421d"
+    },
+    {
+      "path": "client/src/components/CarServiceOverviewComponent.tsx",
+      "snapshot_path": "raw-source/client/src/components/CarServiceOverviewComponent.tsx",
+      "size": 2173,
+      "sha256": "991d1f1f04a1e573a83f307a1308b47b553b6a88e8aa91ecbfb3add0b40f9fe1"
+    },
+    {
+      "path": "client/src/components/HeroPageSliderSection.tsx",
+      "snapshot_path": "raw-source/client/src/components/HeroPageSliderSection.tsx",
+      "size": 5142,
+      "sha256": "426ccb0121548780a59acd8131d75af435e7db8617c00a9734107f459e036031"
+    },
+    {
+      "path": "client/src/components/MainPageHeroContent.tsx",
+      "snapshot_path": "raw-source/client/src/components/MainPageHeroContent.tsx",
+      "size": 3727,
+      "sha256": "1af73ba39eaa10d3308424b6f9bf43f0efd1cde6c730766911ee358fc0f8a8ca"
+    },
+    {
+      "path": "client/src/components/VortexPlansComponent.tsx",
+      "snapshot_path": "raw-source/client/src/components/VortexPlansComponent.tsx",
+      "size": 3527,
+      "sha256": "6bccca76f4b4820520de2b22f1078322090b6b38fcd4872c4b87917ddbc2c99f"
+    },
+    {
+      "path": "client/src/components/WebsiteDevelopmentComponent.tsx",
+      "snapshot_path": "raw-source/client/src/components/WebsiteDevelopmentComponent.tsx",
+      "size": 3057,
+      "sha256": "5bcbd8cef321f40b2f7dca7e7e594338a5c8411ce6b5acfa511288507cecc6ed"
+    },
+    {
+      "path": "client/src/components/default/ChevronCircle.tsx",
+      "snapshot_path": "raw-source/client/src/components/default/ChevronCircle.tsx",
+      "size": 441,
+      "sha256": "3959f70fe77c99069d2c0435f0b6759871c6c1312343999bba53e49ff80d3da6"
+    },
+    {
+      "path": "client/src/components/default/StickyHeading.tsx",
+      "snapshot_path": "raw-source/client/src/components/default/StickyHeading.tsx",
+      "size": 491,
+      "sha256": "e9bbd9ec2713d4ccba781e04f06f231d6a8e005dd25b8a968ccd79c703992c3e"
+    },
+    {
+      "path": "client/src/components/integrations/IntegrationsNetworkComponent.tsx",
+      "snapshot_path": "raw-source/client/src/components/integrations/IntegrationsNetworkComponent.tsx",
+      "size": 1733,
+      "sha256": "818f5e1359be662fa0f6c8f8062699f51d982fa7e05c2333e2bf8c6871a3cb9e"
+    },
+    {
+      "path": "client/src/components/integrations/VortexSyncComponent.tsx",
+      "snapshot_path": "raw-source/client/src/components/integrations/VortexSyncComponent.tsx",
+      "size": 5446,
+      "sha256": "2259d3c1937207abad9243fb1b635329cce083b0925b0c96bb4686a091809a9f"
+    },
+    {
+      "path": "client/src/components/integrations/integrationData.ts",
+      "snapshot_path": "raw-source/client/src/components/integrations/integrationData.ts",
+      "size": 2555,
+      "sha256": "cc1f92667158e5a7b3df247a1774f69a9606e5e956537fb0e139b357ffdca228"
+    },
+    {
+      "path": "client/src/components/integrations/syncRoutes.ts",
+      "snapshot_path": "raw-source/client/src/components/integrations/syncRoutes.ts",
+      "size": 3255,
+      "sha256": "99cc29c1559a725227a1ff591a137437468fff6f255006d88e63a297242b2d4b"
+    },
+    {
+      "path": "client/src/components/layout/FooterMain.tsx",
+      "snapshot_path": "raw-source/client/src/components/layout/FooterMain.tsx",
+      "size": 2967,
+      "sha256": "fe9a2695b9c6929becfcc7168118d6abaef44d0bc8c848ed267b4e01a12a35c8"
+    },
+    {
+      "path": "client/src/components/layout/HeaderMain.tsx",
+      "snapshot_path": "raw-source/client/src/components/layout/HeaderMain.tsx",
+      "size": 11433,
+      "sha256": "b01ec14ae93bf64ee87daa28529ec35c2e0a53274ee18324f14aa33974254171"
+    },
+    {
+      "path": "client/src/components/layout/ServicesDropdown.tsx",
+      "snapshot_path": "raw-source/client/src/components/layout/ServicesDropdown.tsx",
+      "size": 3217,
+      "sha256": "174de5d73ec196b24ca1be1a97f677cf8b901971953929602b549b67b09b3134"
+    },
+    {
+      "path": "client/src/context/ContentContext.tsx",
+      "snapshot_path": "raw-source/client/src/context/ContentContext.tsx",
+      "size": 2787,
+      "sha256": "e47a97482cc9990f66424fcc16f1909cd1c3e9a94336ba507afb540a701818e9"
+    },
+    {
+      "path": "client/src/data/apiIntegrations.ts",
+      "snapshot_path": "raw-source/client/src/data/apiIntegrations.ts",
+      "size": 2684,
+      "sha256": "6ea82244a9f909db692cdc54cba13275c4cccfe79381d29b34360973c796a45c"
+    },
+    {
+      "path": "client/src/data/socialLinks.ts",
+      "snapshot_path": "raw-source/client/src/data/socialLinks.ts",
+      "size": 522,
+      "sha256": "fb31f5f378c5bfadc1ceeceff3624329b0d3c9ce9ca931b7699dc68c387af3ca"
+    },
+    {
+      "path": "client/src/data/websitePlans.ts",
+      "snapshot_path": "raw-source/client/src/data/websitePlans.ts",
+      "size": 1851,
+      "sha256": "33f175abe3b03208e5329311b7d8765c6bc0e858c20299cd56b57af692f4ead1"
+    },
+    {
+      "path": "client/src/locales/cz.json",
+      "snapshot_path": "raw-source/client/src/locales/cz.json",
+      "size": 11209,
+      "sha256": "472904912aa47eeecb97be2438c6f67feb2e098109141555782cde7a893019e7"
+    },
+    {
+      "path": "client/src/locales/en.json",
+      "snapshot_path": "raw-source/client/src/locales/en.json",
+      "size": 10732,
+      "sha256": "4fba5ec94a422c206bdd0e1b5dc5b0e37d6fd532008627ef1d10e33f4a73ff8f"
+    },
+    {
+      "path": "client/src/locales/integrations/cz.json",
+      "snapshot_path": "raw-source/client/src/locales/integrations/cz.json",
+      "size": 15205,
+      "sha256": "3978ba7276baaca17b1cd3d1c1bac9b39fdbf8928af10054bc8f413013459e10"
+    },
+    {
+      "path": "client/src/locales/integrations/en.json",
+      "snapshot_path": "raw-source/client/src/locales/integrations/en.json",
+      "size": 14491,
+      "sha256": "b171dc5aab429ff560815ec3baa6db31282c9fb793f59b11f7709e0dd78de5e4"
+    },
+    {
+      "path": "client/src/locales/integrations/pl.json",
+      "snapshot_path": "raw-source/client/src/locales/integrations/pl.json",
+      "size": 15038,
+      "sha256": "0e54df5a99e4a4fedfbe31451d66686074f74ed2d99890146050e20fd9435d0a"
+    },
+    {
+      "path": "client/src/locales/integrations/sk.json",
+      "snapshot_path": "raw-source/client/src/locales/integrations/sk.json",
+      "size": 15323,
+      "sha256": "29caa1bf29e7493920d35ad869faa1ffaff4154d9772a515c373f878100f1000"
+    },
+    {
+      "path": "client/src/locales/integrations/ua.json",
+      "snapshot_path": "raw-source/client/src/locales/integrations/ua.json",
+      "size": 22256,
+      "sha256": "22e419d75ef4d21a57a36a3290e84cb0ad67d135e20d7a2cadfcfd2ccb79a562"
+    },
+    {
+      "path": "client/src/locales/pl.json",
+      "snapshot_path": "raw-source/client/src/locales/pl.json",
+      "size": 11152,
+      "sha256": "55597ea9e39e10aea568511ee3e0e038cbeb290f24591bce7628e710db310d60"
+    },
+    {
+      "path": "client/src/locales/privacy/cz.json",
+      "snapshot_path": "raw-source/client/src/locales/privacy/cz.json",
+      "size": 17065,
+      "sha256": "0a8b13db8ce890d6df4e471a3d5bdbfd906b8551399db85fa09750350c976c7a"
+    },
+    {
+      "path": "client/src/locales/privacy/en.json",
+      "snapshot_path": "raw-source/client/src/locales/privacy/en.json",
+      "size": 16398,
+      "sha256": "0deefc18e1b0dfc8eddaefe5be7e65b2dc0434393152b09b3379c7a2a27a21fe"
+    },
+    {
+      "path": "client/src/locales/privacy/pl.json",
+      "snapshot_path": "raw-source/client/src/locales/privacy/pl.json",
+      "size": 17457,
+      "sha256": "17f2e88dcd9a83ad45fc06ddc64c230efcc27ffc0a26f1629df7c6a9901910c7"
+    },
+    {
+      "path": "client/src/locales/privacy/sk.json",
+      "snapshot_path": "raw-source/client/src/locales/privacy/sk.json",
+      "size": 16971,
+      "sha256": "b0dffd17fd7abf34e0a6ee61581876206e0659b661a5e86292eca4e5319dfe08"
+    },
+    {
+      "path": "client/src/locales/privacy/ua.json",
+      "snapshot_path": "raw-source/client/src/locales/privacy/ua.json",
+      "size": 26920,
+      "sha256": "91423b511ba447188f4a2a417fc4dd8c7cb61a73ae82ff8887c44d1fa4869ccb"
+    },
+    {
+      "path": "client/src/locales/sk.json",
+      "snapshot_path": "raw-source/client/src/locales/sk.json",
+      "size": 11230,
+      "sha256": "8f5dfab8a7effc6658197354a8b7af03ff8f70a00f84077d065c6a04dcbd0026"
+    },
+    {
+      "path": "client/src/locales/ua.json",
+      "snapshot_path": "raw-source/client/src/locales/ua.json",
+      "size": 17144,
+      "sha256": "6af40273b4c3a2020a851deaae316d36963e357f54ea0390b455571029edfeee"
+    },
+    {
+      "path": "client/src/pages/AutoDismantlingPage.tsx",
+      "snapshot_path": "raw-source/client/src/pages/AutoDismantlingPage.tsx",
+      "size": 5807,
+      "sha256": "ca698a5b522c538c8fdd42973a133785fac0c292472e30c3cd8093bd3c367db0"
+    },
+    {
+      "path": "client/src/pages/BlogArticlePage.tsx",
+      "snapshot_path": "raw-source/client/src/pages/BlogArticlePage.tsx",
+      "size": 9661,
+      "sha256": "fef7f8cd7afe4de240e061c934d387a34f7cf9c5550ad2099af37ed659e4b5a7"
+    },
+    {
+      "path": "client/src/pages/IntegrationPage.tsx",
+      "snapshot_path": "raw-source/client/src/pages/IntegrationPage.tsx",
+      "size": 7369,
+      "sha256": "09dfc3c99c924f8052ba0632f3e4e1fe930651818ddad6fac1a2ba7ba779675a"
+    },
+    {
+      "path": "client/src/pages/PrivacyPolicyPage.tsx",
+      "snapshot_path": "raw-source/client/src/pages/PrivacyPolicyPage.tsx",
+      "size": 2903,
+      "sha256": "e0d3b1576d430c6754fcecb67fae509e9ee7fd0e930af1ad82ac4fb5e7eb764f"
+    },
+    {
+      "path": "client/src/pages/TecDocLicensePage.tsx",
+      "snapshot_path": "raw-source/client/src/pages/TecDocLicensePage.tsx",
+      "size": 4594,
+      "sha256": "f0a8c14e54a5b4ea3bcc031b30e9fad42a0f217f2dcba7d723c572f4535deb5f"
+    },
+    {
+      "path": "client/src/pages/WebsiteDevelopmentPage.tsx",
+      "snapshot_path": "raw-source/client/src/pages/WebsiteDevelopmentPage.tsx",
+      "size": 8045,
+      "sha256": "2c1c8f91a5d4b3d2f7fba7e6e49030389ff780acab3aa546248da735609cf1a2"
+    },
+    {
+      "path": "client/src/seo/copy.ts",
+      "snapshot_path": "raw-source/client/src/seo/copy.ts",
+      "size": 11507,
+      "sha256": "ab55ac666047c33f68592cf92f415a6b3edd198129066be83f9fe4b8691e63a7"
+    },
+    {
+      "path": "client/src/seo/metadata.ts",
+      "snapshot_path": "raw-source/client/src/seo/metadata.ts",
+      "size": 14814,
+      "sha256": "eec06da3521d09b6f4d623ed62c937e2af00abbdc226c0d3894867bdf2275d48"
+    },
+    {
+      "path": "client/src/seo/urls.ts",
+      "snapshot_path": "raw-source/client/src/seo/urls.ts",
+      "size": 1587,
+      "sha256": "211ecfdff097149f71f29f1a9c86ab59a909c9e7518023c2f8b190b5766744c4"
+    },
+    {
+      "path": "client/src/styles/auto-dismantling.css",
+      "snapshot_path": "raw-source/client/src/styles/auto-dismantling.css",
+      "size": 9810,
+      "sha256": "8c96fc4ce770162d861d84740d457b22d13d645f385f214eeee749af4cf2d2db"
+    },
+    {
+      "path": "client/src/styles/base.css",
+      "snapshot_path": "raw-source/client/src/styles/base.css",
+      "size": 17529,
+      "sha256": "9732aed6a3bb727f53e32f91a483711bb1645f86d6ba1aef98294d91ee523bb3"
+    },
+    {
+      "path": "client/src/styles/blog.css",
+      "snapshot_path": "raw-source/client/src/styles/blog.css",
+      "size": 6274,
+      "sha256": "b36600ae8a13357bd12174b73d00fbdbfacb85e1130f2d1a69bb31ff9b182a79"
+    },
+    {
+      "path": "client/src/styles/integrations.css",
+      "snapshot_path": "raw-source/client/src/styles/integrations.css",
+      "size": 9377,
+      "sha256": "a8e9c5ab0d22322a288e132f48258008c97477cec5fedd3c0bc2eb12074f5c47"
+    },
+    {
+      "path": "client/src/styles/main.css",
+      "snapshot_path": "raw-source/client/src/styles/main.css",
+      "size": 52516,
+      "sha256": "0ae32ceec4e5fbe8aa5ad729e8d5578052f7e7584bcf6cc8949e53ab95b0e6e8"
+    },
+    {
+      "path": "client/src/styles/privacy.css",
+      "snapshot_path": "raw-source/client/src/styles/privacy.css",
+      "size": 5232,
+      "sha256": "0ae7a578f328a22e89a8edd44ed0009f9edd17fa01d48c1702b721617df60a33"
+    },
+    {
+      "path": "client/src/styles/tecdoc.css",
+      "snapshot_path": "raw-source/client/src/styles/tecdoc.css",
+      "size": 7868,
+      "sha256": "0d8b55caf457d3aa957c45b95eaae13f74cbac462190c12d05a051ab7881a532"
+    },
+    {
+      "path": "client/src/styles/vortex-plans.css",
+      "snapshot_path": "raw-source/client/src/styles/vortex-plans.css",
+      "size": 2481,
+      "sha256": "11086e07ce740e76cac0d29bbc51a942f3ad6a3a26daabdf25c3987bc684e783"
+    },
+    {
+      "path": "client/src/styles/websites.css",
+      "snapshot_path": "raw-source/client/src/styles/websites.css",
+      "size": 9662,
+      "sha256": "5914873e3ba4a8b2629a1ece5487a071e3eb045faa9bd1671d49f07dd530720e"
+    },
+    {
+      "path": "client/src/types/content.ts",
+      "snapshot_path": "raw-source/client/src/types/content.ts",
+      "size": 4603,
+      "sha256": "249cd6c80a87714438d8c482fdab2df47cd45b37d5250bba67c836377dd0e083"
+    },
+    {
+      "path": "client/src/utils/useStickyHeading.ts",
+      "snapshot_path": "raw-source/client/src/utils/useStickyHeading.ts",
+      "size": 2513,
+      "sha256": "9a6fda5a116cedfc1dd59d49515979fd8da84804abf9ba5544619b5bf40367b0"
+    },
+    {
+      "path": "docs/SEO.md",
+      "snapshot_path": "raw-source/docs/SEO.md",
+      "size": 10611,
+      "sha256": "628b4ed93e62677a6156b3ac2d3e99e1630bdbc7d8ae33c93eb0ed3d6eb0d074"
+    },
+    {
+      "path": "docs/blog-api-sashko.md",
+      "snapshot_path": "raw-source/docs/blog-api-sashko.md",
+      "size": 22178,
+      "sha256": "3a91bd63d2d534ae07cd933a42de8785fc95bc86c4fa2ff3cc1175b810a40fe5"
+    },
+    {
+      "path": "docs/vortex-plans.md",
+      "snapshot_path": "raw-source/docs/vortex-plans.md",
+      "size": 4183,
+      "sha256": "17965230e4c540e663fda6816b91b1e503f27b0801be198a75cc886967595f4f"
+    },
+    {
+      "path": "scripts/cms-export-sections.cjs",
+      "snapshot_path": "raw-source/scripts/cms-export-sections.cjs",
+      "size": 13599,
+      "sha256": "dfa70491b25568112013d5b77fda63f5031b7ec5f41a690e3d8697d57a5cce42"
+    },
+    {
+      "path": "scripts/export-cms-content.cjs",
+      "snapshot_path": "raw-source/scripts/export-cms-content.cjs",
+      "size": 25018,
+      "sha256": "1698e4ceedefa30f016b56e837c8221e1abc0d089b2e3bb66bfbc1010fd229e8"
+    },
+    {
+      "path": "server/data/vortex.json",
+      "snapshot_path": "raw-source/server/data/vortex.json",
+      "size": 185386,
+      "sha256": "1bbc49e148f22728385917e828cc80815934ef2886693a37f8c18b20fcfe8fa8"
+    },
+    {
+      "path": "shared/site.json",
+      "snapshot_path": "raw-source/shared/site.json",
+      "size": 457,
+      "sha256": "d33dc8674a822c82f25f18ff6556812e16365a77c1262f99ea25491fc72ff8d4"
+    }
+  ],
+  "current_ui_overrides": {
+    "ua": [],
+    "cz": [],
+    "sk": [],
+    "en": [],
+    "pl": []
+  },
+  "proposed_extensions": [
+    "integration_pages",
+    "privacy_policy",
+    "seo.privacy_policy",
+    "seo.integrations[slug]",
+    "homepage.vortex_pricing_section and billing_labels",
+    "layout.header_menu, layout.footer_menu, layout.socials[].icon",
+    "autoshrot.navigation.label, car/statuses/removal.eyebrow, anchor_aliases",
+    "tecdoc.license, hero.secondary_cta_text/target, hero.details, sections[].eyebrow/blocks",
+    "websites.gallery.section_title, websites.pricing.section_description, services[].plans[id].text"
+  ],
+  "section_mapping_notes": {
+    "ua": [
+      "autoshrot: navigation targets normalized to CMS IDs car/statuses/removal. Current DOM IDs are dismantling-vehicle/dismantling-statuses/dismantling-parts; preserve them as aliases when migrating. The current hero and nested workflow do not have the proposed hero/workflow IDs yet.",
+      "autoshrot extensions: navigation.label preserves the accessible navigation title; car/statuses/removal.eyebrow preserve the current section labels; anchor_aliases documents old-to-new fragment IDs. Section numbering remains presentation. Current images are decorative (image_alt=\"\").",
+      "tecdoc extensions: hero.secondary_cta_text/secondary_cta_target and hero.details preserve the current second action and three badges; sections[].eyebrow and sections[].blocks[] {id,title,paragraphs} preserve original paragraphs and nested about articles. Only #tecdoc-features is currently a section anchor; tecdoc-about/tecdoc-rmi are proposed IDs.",
+      "tecdoc.license is a required proposed CMS extension for the visible 25 EUR/month price, annual upfront-payment terms, trial badge and trial terms. These are license pricing, not CRM subscription packages. Hero has no image in the current page. Numeric statistics preserve their + and translated million/thousand suffixes.",
+      "tecdoc.cta describes the current TecDoc request form. button_target is the local form anchor, not a purchase endpoint; submission retains requested_product=tecdoc. Shared form labels, validation and success copy remain in the exported UI dictionary.",
+      "websites.gallery.items.free: no existing example-free.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites.gallery.items.practical: no existing example-practical.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites.gallery.items.maximum: no existing example-maximum.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites overview: homepage.website_development_section.website_image_src=\"/imgs/websites/site_2.png\" is preserved in the base export and must become the runtime source. Current /websites resolves a separate glob image \"overview\"=\"\", so it can render a placeholder even when the configured CMS/homepage source exists.",
+      "websites image files not matched by the current overview/example glob: site_2.png. No file was assigned to an example by assumption.",
+      "websites extensions: gallery.section_title and pricing.section_description retain the current headings/introduction. Three gallery entries retain plan IDs/names/template labels; they currently have no external URLs or invented preview images.",
+      "websites.pricing.services[].plans[tariffId].text is a proposed optional full-label override for plan-specific wording (vehicleCatalogLimited, mscoreLimited, mscoreFull). Render this override instead of services[].text when present. note remains a separate optional annotation and is currently empty. included is an explicit exported boolean; CMS must not infer it from service order.",
+      "websites paid plans are currently displayed as one-time setup prices (practical=300 USD, maximum=500 USD) plus the exact localized extra_payments_note=\"+$10 на місяць за 10 тис. запитів\". Preserve both; do not change setup billing_type to monthly or infer a further unlisted price. The UI currently selects a plan ID and scrolls to #trial-request; the form sends that ID as website_package.",
+      "Website setup tariffs are independent of the unpublished homepage.vortex_pricing_section CRM packages. Do not use website tariffs or the existing calculator to fabricate those future package prices."
+    ],
+    "cz": [
+      "autoshrot: navigation targets normalized to CMS IDs car/statuses/removal. Current DOM IDs are dismantling-vehicle/dismantling-statuses/dismantling-parts; preserve them as aliases when migrating. The current hero and nested workflow do not have the proposed hero/workflow IDs yet.",
+      "autoshrot extensions: navigation.label preserves the accessible navigation title; car/statuses/removal.eyebrow preserve the current section labels; anchor_aliases documents old-to-new fragment IDs. Section numbering remains presentation. Current images are decorative (image_alt=\"\").",
+      "tecdoc extensions: hero.secondary_cta_text/secondary_cta_target and hero.details preserve the current second action and three badges; sections[].eyebrow and sections[].blocks[] {id,title,paragraphs} preserve original paragraphs and nested about articles. Only #tecdoc-features is currently a section anchor; tecdoc-about/tecdoc-rmi are proposed IDs.",
+      "tecdoc.license is a required proposed CMS extension for the visible 25 EUR/month price, annual upfront-payment terms, trial badge and trial terms. These are license pricing, not CRM subscription packages. Hero has no image in the current page. Numeric statistics preserve their + and translated million/thousand suffixes.",
+      "tecdoc.cta describes the current TecDoc request form. button_target is the local form anchor, not a purchase endpoint; submission retains requested_product=tecdoc. Shared form labels, validation and success copy remain in the exported UI dictionary.",
+      "websites.gallery.items.free: no existing example-free.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites.gallery.items.practical: no existing example-practical.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites.gallery.items.maximum: no existing example-maximum.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites overview: homepage.website_development_section.website_image_src=\"/imgs/websites/site_2.png\" is preserved in the base export and must become the runtime source. Current /websites resolves a separate glob image \"overview\"=\"\", so it can render a placeholder even when the configured CMS/homepage source exists.",
+      "websites image files not matched by the current overview/example glob: site_2.png. No file was assigned to an example by assumption.",
+      "websites extensions: gallery.section_title and pricing.section_description retain the current headings/introduction. Three gallery entries retain plan IDs/names/template labels; they currently have no external URLs or invented preview images.",
+      "websites.pricing.services[].plans[tariffId].text is a proposed optional full-label override for plan-specific wording (vehicleCatalogLimited, mscoreLimited, mscoreFull). Render this override instead of services[].text when present. note remains a separate optional annotation and is currently empty. included is an explicit exported boolean; CMS must not infer it from service order.",
+      "websites paid plans are currently displayed as one-time setup prices (practical=300 USD, maximum=500 USD) plus the exact localized extra_payments_note=\"+$10 měsíčně za 10 tisíc požadavků\". Preserve both; do not change setup billing_type to monthly or infer a further unlisted price. The UI currently selects a plan ID and scrolls to #trial-request; the form sends that ID as website_package.",
+      "Website setup tariffs are independent of the unpublished homepage.vortex_pricing_section CRM packages. Do not use website tariffs or the existing calculator to fabricate those future package prices."
+    ],
+    "sk": [
+      "autoshrot: navigation targets normalized to CMS IDs car/statuses/removal. Current DOM IDs are dismantling-vehicle/dismantling-statuses/dismantling-parts; preserve them as aliases when migrating. The current hero and nested workflow do not have the proposed hero/workflow IDs yet.",
+      "autoshrot extensions: navigation.label preserves the accessible navigation title; car/statuses/removal.eyebrow preserve the current section labels; anchor_aliases documents old-to-new fragment IDs. Section numbering remains presentation. Current images are decorative (image_alt=\"\").",
+      "tecdoc extensions: hero.secondary_cta_text/secondary_cta_target and hero.details preserve the current second action and three badges; sections[].eyebrow and sections[].blocks[] {id,title,paragraphs} preserve original paragraphs and nested about articles. Only #tecdoc-features is currently a section anchor; tecdoc-about/tecdoc-rmi are proposed IDs.",
+      "tecdoc.license is a required proposed CMS extension for the visible 25 EUR/month price, annual upfront-payment terms, trial badge and trial terms. These are license pricing, not CRM subscription packages. Hero has no image in the current page. Numeric statistics preserve their + and translated million/thousand suffixes.",
+      "tecdoc.cta describes the current TecDoc request form. button_target is the local form anchor, not a purchase endpoint; submission retains requested_product=tecdoc. Shared form labels, validation and success copy remain in the exported UI dictionary.",
+      "websites.gallery.items.free: no existing example-free.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites.gallery.items.practical: no existing example-practical.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites.gallery.items.maximum: no existing example-maximum.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites overview: homepage.website_development_section.website_image_src=\"/imgs/websites/site_2.png\" is preserved in the base export and must become the runtime source. Current /websites resolves a separate glob image \"overview\"=\"\", so it can render a placeholder even when the configured CMS/homepage source exists.",
+      "websites image files not matched by the current overview/example glob: site_2.png. No file was assigned to an example by assumption.",
+      "websites extensions: gallery.section_title and pricing.section_description retain the current headings/introduction. Three gallery entries retain plan IDs/names/template labels; they currently have no external URLs or invented preview images.",
+      "websites.pricing.services[].plans[tariffId].text is a proposed optional full-label override for plan-specific wording (vehicleCatalogLimited, mscoreLimited, mscoreFull). Render this override instead of services[].text when present. note remains a separate optional annotation and is currently empty. included is an explicit exported boolean; CMS must not infer it from service order.",
+      "websites paid plans are currently displayed as one-time setup prices (practical=300 USD, maximum=500 USD) plus the exact localized extra_payments_note=\"+$10 mesačne za 10 tisíc požiadaviek\". Preserve both; do not change setup billing_type to monthly or infer a further unlisted price. The UI currently selects a plan ID and scrolls to #trial-request; the form sends that ID as website_package.",
+      "Website setup tariffs are independent of the unpublished homepage.vortex_pricing_section CRM packages. Do not use website tariffs or the existing calculator to fabricate those future package prices."
+    ],
+    "en": [
+      "autoshrot: navigation targets normalized to CMS IDs car/statuses/removal. Current DOM IDs are dismantling-vehicle/dismantling-statuses/dismantling-parts; preserve them as aliases when migrating. The current hero and nested workflow do not have the proposed hero/workflow IDs yet.",
+      "autoshrot extensions: navigation.label preserves the accessible navigation title; car/statuses/removal.eyebrow preserve the current section labels; anchor_aliases documents old-to-new fragment IDs. Section numbering remains presentation. Current images are decorative (image_alt=\"\").",
+      "tecdoc extensions: hero.secondary_cta_text/secondary_cta_target and hero.details preserve the current second action and three badges; sections[].eyebrow and sections[].blocks[] {id,title,paragraphs} preserve original paragraphs and nested about articles. Only #tecdoc-features is currently a section anchor; tecdoc-about/tecdoc-rmi are proposed IDs.",
+      "tecdoc.license is a required proposed CMS extension for the visible 25 EUR/month price, annual upfront-payment terms, trial badge and trial terms. These are license pricing, not CRM subscription packages. Hero has no image in the current page. Numeric statistics preserve their + and translated million/thousand suffixes.",
+      "tecdoc.cta describes the current TecDoc request form. button_target is the local form anchor, not a purchase endpoint; submission retains requested_product=tecdoc. Shared form labels, validation and success copy remain in the exported UI dictionary.",
+      "websites.gallery.items.free: no existing example-free.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites.gallery.items.practical: no existing example-practical.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites.gallery.items.maximum: no existing example-maximum.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites overview: homepage.website_development_section.website_image_src=\"/imgs/websites/site_2.png\" is preserved in the base export and must become the runtime source. Current /websites resolves a separate glob image \"overview\"=\"\", so it can render a placeholder even when the configured CMS/homepage source exists.",
+      "websites image files not matched by the current overview/example glob: site_2.png. No file was assigned to an example by assumption.",
+      "websites extensions: gallery.section_title and pricing.section_description retain the current headings/introduction. Three gallery entries retain plan IDs/names/template labels; they currently have no external URLs or invented preview images.",
+      "websites.pricing.services[].plans[tariffId].text is a proposed optional full-label override for plan-specific wording (vehicleCatalogLimited, mscoreLimited, mscoreFull). Render this override instead of services[].text when present. note remains a separate optional annotation and is currently empty. included is an explicit exported boolean; CMS must not infer it from service order.",
+      "websites paid plans are currently displayed as one-time setup prices (practical=300 USD, maximum=500 USD) plus the exact localized extra_payments_note=\"+$10 per month for 10,000 requests\". Preserve both; do not change setup billing_type to monthly or infer a further unlisted price. The UI currently selects a plan ID and scrolls to #trial-request; the form sends that ID as website_package.",
+      "Website setup tariffs are independent of the unpublished homepage.vortex_pricing_section CRM packages. Do not use website tariffs or the existing calculator to fabricate those future package prices."
+    ],
+    "pl": [
+      "autoshrot: navigation targets normalized to CMS IDs car/statuses/removal. Current DOM IDs are dismantling-vehicle/dismantling-statuses/dismantling-parts; preserve them as aliases when migrating. The current hero and nested workflow do not have the proposed hero/workflow IDs yet.",
+      "autoshrot extensions: navigation.label preserves the accessible navigation title; car/statuses/removal.eyebrow preserve the current section labels; anchor_aliases documents old-to-new fragment IDs. Section numbering remains presentation. Current images are decorative (image_alt=\"\").",
+      "tecdoc extensions: hero.secondary_cta_text/secondary_cta_target and hero.details preserve the current second action and three badges; sections[].eyebrow and sections[].blocks[] {id,title,paragraphs} preserve original paragraphs and nested about articles. Only #tecdoc-features is currently a section anchor; tecdoc-about/tecdoc-rmi are proposed IDs.",
+      "tecdoc.license is a required proposed CMS extension for the visible 25 EUR/month price, annual upfront-payment terms, trial badge and trial terms. These are license pricing, not CRM subscription packages. Hero has no image in the current page. Numeric statistics preserve their + and translated million/thousand suffixes.",
+      "tecdoc.cta describes the current TecDoc request form. button_target is the local form anchor, not a purchase endpoint; submission retains requested_product=tecdoc. Shared form labels, validation and success copy remain in the exported UI dictionary.",
+      "websites.gallery.items.free: no existing example-free.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites.gallery.items.practical: no existing example-practical.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites.gallery.items.maximum: no existing example-maximum.{png,jpg,jpeg,webp,avif} matched by the current glob. Export image=\"\" preserves the present placeholder; upload/select a real example in CMS before replacing it.",
+      "websites overview: homepage.website_development_section.website_image_src=\"/imgs/websites/site_2.png\" is preserved in the base export and must become the runtime source. Current /websites resolves a separate glob image \"overview\"=\"\", so it can render a placeholder even when the configured CMS/homepage source exists.",
+      "websites image files not matched by the current overview/example glob: site_2.png. No file was assigned to an example by assumption.",
+      "websites extensions: gallery.section_title and pricing.section_description retain the current headings/introduction. Three gallery entries retain plan IDs/names/template labels; they currently have no external URLs or invented preview images.",
+      "websites.pricing.services[].plans[tariffId].text is a proposed optional full-label override for plan-specific wording (vehicleCatalogLimited, mscoreLimited, mscoreFull). Render this override instead of services[].text when present. note remains a separate optional annotation and is currently empty. included is an explicit exported boolean; CMS must not infer it from service order.",
+      "websites paid plans are currently displayed as one-time setup prices (practical=300 USD, maximum=500 USD) plus the exact localized extra_payments_note=\"+$10 miesięcznie za 10 tys. zapytań\". Preserve both; do not change setup billing_type to monthly or infer a further unlisted price. The UI currently selects a plan ID and scrolls to #trial-request; the form sends that ID as website_package.",
+      "Website setup tariffs are independent of the unpublished homepage.vortex_pricing_section CRM packages. Do not use website tariffs or the existing calculator to fabricate those future package prices."
+    ]
+  },
+  "media": {
+    "files": 96,
+    "total_bytes": 8539279,
+    "missing": []
+  },
+  "placeholders": [
+    {
+      "path": "content/ua/homepage/client_testimonials_section/pros_title",
+      "value": "Lorem ipsum Vortex:"
+    },
+    {
+      "path": "content/ua/homepage/client_testimonials_section/reviews/0/company_type",
+      "value": "Lorem ipsum dolor"
+    },
+    {
+      "path": "content/ua/homepage/client_testimonials_section/reviews/0/pros/0",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/ua/homepage/client_testimonials_section/reviews/0/quote",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor."
+    },
+    {
+      "path": "content/ua/homepage/client_testimonials_section/reviews/0/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/ua/homepage/client_testimonials_section/reviews/1/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/ua/homepage/client_testimonials_section/reviews/2/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/ua/homepage/client_testimonials_section/reviews/3/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/cz/homepage/client_testimonials_section/pros_title",
+      "value": "Lorem ipsum Vortex:"
+    },
+    {
+      "path": "content/cz/homepage/client_testimonials_section/reviews/0/company_type",
+      "value": "Lorem ipsum dolor"
+    },
+    {
+      "path": "content/cz/homepage/client_testimonials_section/reviews/0/pros/0",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/cz/homepage/client_testimonials_section/reviews/0/quote",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor."
+    },
+    {
+      "path": "content/cz/homepage/client_testimonials_section/reviews/0/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/cz/homepage/client_testimonials_section/reviews/1/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/cz/homepage/client_testimonials_section/reviews/2/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/cz/homepage/client_testimonials_section/reviews/3/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/sk/homepage/client_testimonials_section/pros_title",
+      "value": "Lorem ipsum Vortex:"
+    },
+    {
+      "path": "content/sk/homepage/client_testimonials_section/reviews/0/company_type",
+      "value": "Lorem ipsum dolor"
+    },
+    {
+      "path": "content/sk/homepage/client_testimonials_section/reviews/0/pros/0",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/sk/homepage/client_testimonials_section/reviews/0/quote",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor."
+    },
+    {
+      "path": "content/sk/homepage/client_testimonials_section/reviews/0/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/sk/homepage/client_testimonials_section/reviews/1/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/sk/homepage/client_testimonials_section/reviews/2/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/sk/homepage/client_testimonials_section/reviews/3/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/en/homepage/client_testimonials_section/pros_title",
+      "value": "Lorem ipsum Vortex:"
+    },
+    {
+      "path": "content/en/homepage/client_testimonials_section/reviews/0/company_type",
+      "value": "Lorem ipsum dolor"
+    },
+    {
+      "path": "content/en/homepage/client_testimonials_section/reviews/0/pros/0",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/en/homepage/client_testimonials_section/reviews/0/quote",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor."
+    },
+    {
+      "path": "content/en/homepage/client_testimonials_section/reviews/0/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/en/homepage/client_testimonials_section/reviews/1/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/en/homepage/client_testimonials_section/reviews/2/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/en/homepage/client_testimonials_section/reviews/3/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/pl/homepage/client_testimonials_section/pros_title",
+      "value": "Lorem ipsum Vortex:"
+    },
+    {
+      "path": "content/pl/homepage/client_testimonials_section/reviews/0/company_type",
+      "value": "Lorem ipsum dolor"
+    },
+    {
+      "path": "content/pl/homepage/client_testimonials_section/reviews/0/pros/0",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/pl/homepage/client_testimonials_section/reviews/0/quote",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor."
+    },
+    {
+      "path": "content/pl/homepage/client_testimonials_section/reviews/0/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/pl/homepage/client_testimonials_section/reviews/1/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/pl/homepage/client_testimonials_section/reviews/2/link_text",
+      "value": "Lorem ipsum"
+    },
+    {
+      "path": "content/pl/homepage/client_testimonials_section/reviews/3/link_text",
+      "value": "Lorem ipsum"
+    }
+  ],
+  "limitations": [
+    "No real CMS endpoint, authenticated preview token or staging response was provided or verified. No content was published.",
+    "New structured fields are proposed extensions. The current site still reads local source files and code, and does not consume all fields in this export.",
+    "homepage.vortex_pricing_section remains visible=false and plans=[] in all5 locales. No commercial packages or prices invented.",
+    "Website prices0/300/500 USD and TecDoc25 EUR/month are existing code values, not newly approved commercial offers. Retain current annual advance-payment and extra request charges.",
+    "Subpage website image glob has no matching files. Three gallery images and overview are empty placeholders; homepage site_2.png is a real, used image.",
+    "Demo blog20 summaries and one5locale base article are reference/demo-blog.json only, excluded from content.json. Do not import as real published posts.",
+    "seo.blog describes intended live defaults; actual demo pages remain noindex,follow. Current SEO otherwise uses code and current default96x96 logo.",
+    "Presentation, CSS, animations, conditional sticky backgrounds and responsive header transitions remain client code, not arbitrary CMS HTML.",
+    "Public media URLs are preserved. Move them to absolute CMS URLs consistently on import if hosting changes. No webp/thumb variants have been generated.",
+    "Media alt strings preserve supplied/rendered copy; empty alts can be intentional decorative images. Sources list includes code-only assets as well as publishable content."
+  ]
+}

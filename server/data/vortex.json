@@ -336,6 +336,12 @@
         ],
         "upgrade_message": "Також у Вас є можливість покращити веб-сайт, додавши додаткові корисні функції, обравши пакет “Практичний” або ж “Максимальний”",
         "cta_text": "Детальніше Про Сайт"
+      },
+      "vortex_pricing_section": {
+        "visible": false,
+        "section_title": "Пакети Vortex",
+        "section_description": "",
+        "plans": []
       }
     },
     "FAQ": [
@@ -1014,6 +1020,12 @@
         ],
         "upgrade_message": "Svůj web můžete rozšířit o další užitečné funkce výběrem balíčku „Praktický“ nebo „Maximální“.",
         "cta_text": "Více o webu"
+      },
+      "vortex_pricing_section": {
+        "visible": false,
+        "section_title": "Balíčky Vortex",
+        "section_description": "",
+        "plans": []
       }
     },
     "FAQ": [
@@ -1692,6 +1704,12 @@
         ],
         "upgrade_message": "Svoj web môžete rozšíriť o ďalšie užitočné funkcie výberom balíka „Praktický“ alebo „Maximálny“.",
         "cta_text": "Viac o webe"
+      },
+      "vortex_pricing_section": {
+        "visible": false,
+        "section_title": "Balíky Vortex",
+        "section_description": "",
+        "plans": []
       }
     },
     "FAQ": [
@@ -2370,6 +2388,12 @@
         ],
         "upgrade_message": "You can also add useful features to your website by choosing the “Practical” or “Maximum” package.",
         "cta_text": "More about the website"
+      },
+      "vortex_pricing_section": {
+        "visible": false,
+        "section_title": "Vortex plans",
+        "section_description": "",
+        "plans": []
       }
     },
     "FAQ": [
@@ -3048,6 +3072,12 @@
         ],
         "upgrade_message": "Możesz rozbudować stronę o przydatne funkcje, wybierając pakiet „Praktyczny” lub „Maksymalny”.",
         "cta_text": "Więcej o stronie"
+      },
+      "vortex_pricing_section": {
+        "visible": false,
+        "section_title": "Pakiety Vortex",
+        "section_description": "",
+        "plans": []
       }
     },
     "FAQ": [

@@ -1,5 +1,6 @@
 .blog-route { background: #fff; color: var(--grey-dark-text); display: flow-root; }
 .blog-page { padding: 42px var(--content-gutter) 80px; }
+.blog-bottom-transition { background: linear-gradient(180deg, #fff 0%, #f5f6f8 20%, #9ba0a8 55%, var(--blue-color-5) 100%); height: clamp(140px, 14vw, 220px); }
 .blog-page h1, .blog-page h2, .blog-page p, .blog-breadcrumbs li { overflow-wrap: anywhere; }
 .blog-breadcrumbs { border-bottom: 1px solid var(--grey-color-100); padding-bottom: 20px; }
 .blog-breadcrumbs ol { align-items: center; display: flex; flex-wrap: wrap; font-size: 14px; gap: 8px; list-style: none; margin: 0; padding: 0; }
@@ -24,7 +25,7 @@
 .blog-card h2 a:hover { text-decoration: underline; }
 .blog-card-copy > p { color: var(--blue-color-2); font-size: 16px; line-height: 1.5; margin: 0 0 24px; }
 .blog-card-view { align-items: center; color: var(--grey-dark-text); display: flex; font-size: 16px; font-weight: 600; gap: 16px; justify-content: space-between; margin-top: auto; min-height: 40px; text-decoration: none; }
-.blog-card-view > span { align-items: center; background: var(--orange-bg-color); border-radius: 50%; display: flex; height: 32px; justify-content: center; width: 32px; }
+.blog-card-action-icon { align-items: center; background: var(--orange-bg-color); border-radius: 50%; display: flex; flex: 0 0 40px; height: 40px; justify-content: center; width: 40px; }
 .blog-page a:focus-visible, .blog-page button:focus-visible { outline: 2px solid var(--blue-color-2); outline-offset: 4px; }
 .blog-pagination { align-items: center; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 48px; }
 .blog-pagination a { align-items: center; border: 1px solid var(--grey-color-100); border-radius: 10px; color: var(--grey-dark-text); display: inline-flex; gap: 8px; justify-content: center; min-height: 44px; min-width: 44px; padding: 10px 14px; text-decoration: none; }

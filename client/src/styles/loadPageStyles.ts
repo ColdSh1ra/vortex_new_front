@@ -9,6 +9,8 @@ let tecdocStylesPromise: Promise<unknown> | null = null;
 let blogStylesPromise: Promise<unknown> | null = null;
 let integrationStylesPromise: Promise<unknown> | null = null;
 let privacyStylesPromise: Promise<unknown> | null = null;
+let pricingStylesPromise: Promise<unknown> | null = null;
+let vortexPlansStylesPromise: Promise<unknown> | null = null;
 
 function isFaqPath(pathname: string) {
   return pathname === '/faq' || pathname.startsWith('/faq/');
@@ -47,10 +49,10 @@ export function loadPageStyles(pathname: string) {
     return Promise.all([websitesStylesPromise, trialRequestStylesPromise]);
   }
   if (pathname === '/car-service' || pathname.startsWith('/car-service/')) {
-    mainStylesPromise ??= import('./main.css');
+    pricingStylesPromise ??= import('./pricing-calculator.css');
     trialRequestStylesPromise ??= import('./trial-request.css');
     carServiceStylesPromise ??= import('./car-service.css');
-    return Promise.all([mainStylesPromise, trialRequestStylesPromise, carServiceStylesPromise]);
+    return Promise.all([pricingStylesPromise, trialRequestStylesPromise, carServiceStylesPromise]);
   }
   if (isFaqPath(pathname)) {
     faqStylesPromise ??= import('./faq.css');
@@ -64,6 +66,8 @@ export function loadPageStyles(pathname: string) {
   }
 
   mainStylesPromise ??= import('./main.css');
+  vortexPlansStylesPromise ??= import('./vortex-plans.css');
+  pricingStylesPromise ??= import('./pricing-calculator.css');
   trialRequestStylesPromise ??= import('./trial-request.css');
-  return Promise.all([mainStylesPromise, trialRequestStylesPromise]);
+  return Promise.all([mainStylesPromise, vortexPlansStylesPromise, pricingStylesPromise, trialRequestStylesPromise]);
 }

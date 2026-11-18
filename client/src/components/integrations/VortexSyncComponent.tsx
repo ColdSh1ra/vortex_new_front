@@ -4,24 +4,17 @@ import { useI18n } from '../../context/ContentContext';
 import { SYNC_ROUTES, SYNC_VIEWBOX } from './syncRoutes';
 import type { SyncPoint } from './syncRoutes';
 
-const ITEM_IMAGES = [
-  '/imgs/3dicons_premium/3d-shopping-bag-premium.svg',
-  '/imgs/3dicons_premium/gift.png',
-  '/imgs/3dicons_premium/3d-document-premium.png',
-];
-
-// Separate outbound and return roads avoid head-on traffic. Two spaced parcels
+// Separate outbound and return roads avoid head-on traffic. Two spaced dots
 // share each road; negative delays make both directions busy from the first frame.
 const TRANSFERS = SYNC_ROUTES.flatMap((route, routeIndex) => {
-  const reverse = routeIndex >= 3;
+  const reverse = route.direction === 'to-left';
   const points = reverse ? [...route.points].reverse() : route.points;
   const duration = (12 + routeIndex * .7) / 1.3;
   return [0, 1].map((itemIndex) => ({
     id: `${route.id}-${itemIndex}`,
     routeId: route.id,
-    direction: reverse ? 'to-left' : 'to-right',
+    direction: route.direction,
     points,
-    image: ITEM_IMAGES[(routeIndex + itemIndex) % ITEM_IMAGES.length],
     duration,
     delay: -((routeIndex * 1.75 + itemIndex * duration / 2 + 1.3) % duration),
     restingDistance: `${30 + (routeIndex % 3) * 16}%`,
@@ -102,6 +95,14 @@ function VortexSyncComponent() {
           <div className="vortex-sync-exchange" aria-hidden="true">
             <strong>{t('sync.title')}</strong>
             <svg className="vortex-sync-trails" viewBox={`0 0 ${size.width || 1} ${size.height || 1}`} preserveAspectRatio="none" fill="none">
+              {SYNC_ROUTES.map((route) => (
+                <path
+                  key={route.id}
+                  className={`vortex-sync-road vortex-sync-road-${route.direction}`}
+                  d={pixelPath(route.points, size.width, size.height)}
+                  vectorEffect="non-scaling-stroke"
+                />
+              ))}
               {transfers.map((transfer) => (
                 <path
                   key={transfer.id}
@@ -116,13 +117,11 @@ function VortexSyncComponent() {
             {transfers.map((transfer) => (
               <div
                 key={transfer.id}
-                className={`vortex-sync-parcel vortex-sync-parcel-${transfer.direction}`}
+                className={`vortex-sync-dot vortex-sync-dot-${transfer.direction}`}
                 data-route={transfer.routeId}
                 data-reduced-visible={transfer.reducedVisible}
                 style={transferStyle(transfer)}
-              >
-                <img src={transfer.image} alt="" width="39" height="39" loading="lazy" draggable="false" />
-              </div>
+              />
             ))}
           </div>
 

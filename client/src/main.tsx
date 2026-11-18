@@ -3,6 +3,7 @@ import { createRoot, hydrateRoot } from 'react-dom/client';
 import App from './App';
 import './styles/base.css';
 import { loadPageStyles } from './styles/loadPageStyles';
+import { languageFromSearch } from './seo/urls';
 
 async function startApplication() {
   await loadPageStyles(window.location.pathname);
@@ -10,7 +11,7 @@ async function startApplication() {
   const rootElement = document.getElementById('root')!;
   const application = (
     <React.StrictMode>
-      <App initialContent={window.__VORTEX_CONTENT__ ?? null} initialLanguage={window.__VORTEX_LANGUAGE__ ?? 'ua'} />
+      <App initialContent={window.__VORTEX_CONTENT__ ?? null} initialLanguage={languageFromSearch(window.location.search)} />
     </React.StrictMode>
   );
 

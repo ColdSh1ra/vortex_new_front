@@ -1,0 +1,79 @@
+{
+  "eyebrow": "Vortex / Právne informácie",
+  "title": "Zásady ochrany osobných údajov",
+  "lead": "Ako spracúvame osobné údaje návštevníkov webu a ľudí, ktorí nás kontaktujú ohľadom produktov a služieb Vortex.",
+  "updated": "Dátum aktualizácie:",
+  "contents": "Obsah dokumentu",
+  "sections": [
+    {
+      "id": "scope",
+      "title": "O týchto zásadách a kontakte s nami",
+      "html": "<p>Tieto zásady sa vzťahujú na verejný web Vortex, jeho dopytové formuláre, výber jazyka a kontaktovanie tímu prostredníctvom údajov uvedených na webe. Vysvetľujú, aké informácie pri týchto činnostiach získavame, prečo ich potrebujeme a ako môžete uplatniť svoje práva.</p><p>Prevádzkovateľom osobných údajov získaných prostredníctvom tohto webu je ФОП Маркович В.Ю., identifikačné číslo 3258910312. Výrazy „Vortex“, „my“ a „naše“ v tomto dokumente označujú tohto podnikateľa a tím, ktorý zabezpečuje prevádzku webu a vybavuje žiadosti v jeho mene.</p><p>Kontakt pre otázky týkajúce sa osobných údajov a uplatnenie vašich práv: <a href=\"mailto:crm.vtx@gmail.com\">crm.vtx@gmail.com</a>. Korešpondenčná adresa: Україна, м. Ужгород, вул. Капушанська, 154а.</p><p>Údaje spracúvame s prihliadnutím na <a href=\"https://zakon.rada.gov.ua/go/2297-17\" target=\"_blank\" rel=\"noopener noreferrer\">zákon Ukrajiny „O ochrane osobných údajov“</a>. Ak sa na konkrétne spracúvanie vzťahuje všeobecné nariadenie EÚ o ochrane údajov (GDPR), uplatnia sa aj jeho požiadavky.</p><p>Tieto zásady opisujú marketingový web. Podmienky spracúvania údajov v samotnom CRM, vo vašej zákazníckej databáze alebo pri plnení samostatnej zmluvy upravujú príslušné zmluvy a oznámenia. Samotná návšteva webu alebo prečítanie týchto zásad nie je súhlasom s akýmkoľvek použitím osobných údajov.</p>"
+    },
+    {
+      "id": "data",
+      "title": "Aké údaje získavame",
+      "html": "<p>Na prezeranie stránok nie je potrebné vytvoriť účet. Ak odošlete žiadosť o skúšobnú verziu, ukážku, vývoj webu alebo licenciu TecDoc, formulár odovzdá:</p><ul><li>meno alebo iné vami uvedené oslovenie a telefónne číslo;</li><li>produkt, ktorého sa žiadosť týka, stránku odoslania a zvolený jazyk;</li><li>vypočítanú sumu, ak ju formulár obsahuje, a vybraný balík webu, ak ste si ho zvolili;</li><li>súradnice a údaj o presnosti polohy, ak samostatne pridáte geolokáciu;</li><li>technický token reCAPTCHA na overenie pravosti žiadosti.</li></ul><p>Pri komunikácii e-mailom, telefonicky alebo prostredníctvom messengera získavame aj informácie, ktoré sami oznámite, a údaje potrebné na odpoveď. Neposielajte prosím heslá, údaje platobných kariet, kópie dokladov ani citlivé informácie, ak nie sú potrebné na dohodnutú službu.</p><p>Na doručovanie webových stránok a ochranu webu server a jeho infraštruktúra spracúvajú technické údaje o spojení vrátane IP adresy, času požiadavky a údajov hlavičiek HTTP. Rozsah a lehoty uchovávania technických záznamov závisia od nastavenia hostingu. IP adresa sa tiež odovzdáva Googlu pri serverovom overení reCAPTCHA.</p><p>Formulár webu nepožaduje údaje bankovej karty a nevykonáva platby. Zobrazenie ceny alebo vypočítanej sumy samo osebe nie je platobnou transakciou.</p>"
+    },
+    {
+      "id": "purposes",
+      "title": "Účely a právne základy spracúvania",
+      "html": "<p>Meno, telefón a kontext žiadosti potrebujeme na odpoveď, spresnenie vašich potrieb, zabezpečenie ukážky alebo prípravu ponuky. Ak sa žiadosť týka budúcej zmluvy, základom sú kroky pred jej uzavretím vykonané na vašu žiadosť; pri objednanej službe je základom plnenie zmluvy.</p><p>Technické údaje a antispamové overenie slúžia na ochranu formulárov, predchádzanie zneužitiu a zabezpečenie funkčnosti webu. Základom môže byť oprávnený záujem na bezpečnej prevádzke služby s ohľadom na vaše práva a platné právne požiadavky. Ak zákon pri určitej technológii vyžaduje predchádzajúci súhlas, oprávnený záujem ho nenahrádza.</p><p>Nepovinná geolokácia vychádza z vašej samostatnej dobrovoľnej voľby. Ak sú údaje potrebné na splnenie zákonnej povinnosti, spracúvanie sa zakladá na tejto povinnosti. Samotné podanie žiadosti nepovažujeme za neobmedzené oprávnenie posielať reklamné správy.</p><p>Neposkytnutie povinných kontaktných údajov nebráni prezeraniu webu, ale znemožňuje odoslanie formulára alebo odpoveď na chýbajúci kontakt. Automatické overenie formulára a výpočet orientačnej ceny nie sú automatizovanými rozhodnutiami s právnymi účinkami voči vám.</p>"
+    },
+    {
+      "id": "location",
+      "title": "Dobrovoľné poskytnutie geolokácie",
+      "html": "<p>Poloha sa vyžiada až po stlačení tlačidla na jej pridanie a udelení oprávnenia v prehliadači. Pripojí sa k žiadosti, aby tím pri odpovedi mohol zohľadniť vaše umiestnenie. Táto funkcia nepretržite nesleduje váš pohyb.</p><p>Tlačidlo nemusíte použiť alebo môžete požiadavku prehliadača odmietnuť: formulár zostáva dostupný bez súradníc. Ak nechcete odoslať už pridanú polohu, pred odoslaním formulára stránku znovu načítajte. Oprávnenie na budúci prístup možno odvolať v nastaveniach prehliadača.</p><p>Odvolanie oprávnenia v prehliadači nevymaže už odoslané súradnice. Ak chcete vymazať údaje z predchádzajúcej žiadosti, napíšte na <a href=\"mailto:crm.vtx@gmail.com\">crm.vtx@gmail.com</a>.</p>"
+    },
+    {
+      "id": "cookies",
+      "title": "Cookies a miestne úložisko prehliadača",
+      "html": "<p>Na zapamätanie vami zvoleného jazyka web ukladá hodnotu <code>vortex-language</code> do cookie a miestneho úložiska prehliadača (localStorage). Hodnota obsahuje kód jazyka, nie meno ani telefónne číslo.</p><ul><li><strong>Jazyková cookie:</strong> nastaví sa pri výbere jazyka na dobu najviac 365 dní; opätovný výber túto dobu obnoví.</li><li><strong>localStorage:</strong> uchováva výber jazyka bez automatickej lehoty vymazania stanovenej webom, kým údaje nevymažete alebo ich neodstráni prehliadač.</li><li><strong>reCAPTCHA:</strong> môže nastavovať služobnú cookie <code>_GRECAPTCHA</code> a používať ďalšie technológie Googlu na ochranu pred automatizovanými požiadavkami.</li></ul><p>Tieto údaje môžete vymazať alebo obmedziť ich ukladanie v nastaveniach prehliadača. Po vymazaní sa môže výber jazyka obnoviť na predvolený; blokovanie služieb Googlu môže zabrániť overeniu a odoslaniu formulára. V takom prípade môžete tím kontaktovať priamo.</p><p>Aktuálna verzia webu neobsahuje samostatné reklamné pixely ani systémy webovej analytiky tretích strán. To nevylučuje technické spracúvanie službami tretích strán opísanými v týchto zásadách.</p>"
+    },
+    {
+      "id": "recaptcha",
+      "title": "Ochrana formulárov pomocou reCAPTCHA",
+      "html": "<p>Ak je nakonfigurovaná služba Google reCAPTCHA, stránka s formulárom načíta jej skript. Pri načítavaní a overovaní získava Google technické údaje o interakcii vrátane IP adresy a informácií o prehliadači; služba môže používať cookies. Server webu odovzdáva Googlu overovací token a IP adresu požiadavky.</p><p>Web nezahŕňa polia mena a telefónu do požiadavky serverového overenia reCAPTCHA. Po úspešnom overení sa token nezahŕňa do správy tímu v Telegrame.</p><p>Podrobnosti o službe: <a href=\"https://developers.google.com/recaptcha/docs/faq\" target=\"_blank\" rel=\"noopener noreferrer\">dokumentácia reCAPTCHA</a>, <a href=\"https://policies.google.com/privacy?hl=uk\" target=\"_blank\" rel=\"noopener noreferrer\">zásady ochrany súkromia Googlu</a> a <a href=\"https://policies.google.com/terms?hl=uk\" target=\"_blank\" rel=\"noopener noreferrer\">zmluvné podmienky Googlu</a>. Ak nechcete použiť formulár s touto službou, kontaktujte nás priamo.</p>"
+    },
+    {
+      "id": "recipients",
+      "title": "Kto môže údaje dostať",
+      "html": "<p>Žiadosti dostávajú zamestnanci a spolupracujúci špecialisti tímu Vortex, ktorí údaje potrebujú na odpoveď, poradenstvo alebo poskytnutie služby. Technická prevádzka webu si vyžaduje účasť poskytovateľa hostingu a prípadne ďalších dodávateľov, ktorí zabezpečujú jeho fungovanie.</p><p>Na zobrazenie písma načítavajú stránky štýly a súbory Google Fonts z domén <code>fonts.googleapis.com</code> a <code>fonts.gstatic.com</code>. Toto spojenie prebieha pri prezeraní webu nezávisle od odoslania formulára. Google získava technické údaje požiadavky vrátane IP adresy, informácií o prehliadači a zdroji požiadavky v rozsahu nastavení odovzdávania referrera. Web nezahŕňa meno a telefón z formulára do požiadaviek na načítanie písma. Podrobnosti nájdete v <a href=\"https://developers.google.com/fonts/faq/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">informáciách Google Fonts o súkromí</a>.</p><p>Žiadosti z formulárov sa tímu doručujú cez Telegram Bot API. Správa obsahuje meno, telefón a podľa formulára aj jazyk, stránku, sumu, balík a súradnice. Správa o licencii TecDoc obsahuje meno a telefón. Prenos prebieha na serveri: nepotrebujete účet Telegram.</p><p>Telegram spracúva správy vo svojej cloudovej infraštruktúre podľa <a href=\"https://telegram.org/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">vlastných zásad ochrany súkromia</a>. Správa bota nie je tajným chatom s koncovým šifrovaním. Neposielajte prosím formulárom informácie, ktoré nie sú potrebné na kontakt.</p><p>Určité technické údaje dostáva aj Google pre reCAPTCHA, ako je opísané vyššie. Údaje môžu byť odovzdané príslušným orgánom, ak to výslovne stanovuje zákon a existuje zodpovedajúci právny základ. Kontaktné údaje zo žiadostí nepredávame ani ich nezverejňujeme na webe.</p>"
+    },
+    {
+      "id": "international",
+      "title": "Spracúvanie mimo Ukrajiny",
+      "html": "<p>Využívanie Googlu, Telegramu a infraštruktúry ich poskytovateľov môže zahŕňať spracúvanie mimo Ukrajiny a pri používateľoch z Európskeho hospodárskeho priestoru aj mimo tohto priestoru. Samotný web neurčuje umiestnenie všetkých serverov týchto služieb; informácie o ich spracúvaní uvádzajú zásady príslušných poskytovateľov.</p><p>Na medzinárodné prenosy sa vzťahujú právne požiadavky na ochranu osobných údajov, najmä článok 29 zákona Ukrajiny „O ochrane osobných údajov“, a ak sa uplatňuje GDPR, jeho pravidlá pre prenosy do tretích krajín. Použitie webu samo osebe nie je samostatným súhlasom s akýmkoľvek medzinárodným prenosom.</p><p>Informácie o príjemcoch a právnom základe prenosu údajov konkrétnej žiadosti môžete získať prostredníctvom nášho kontaktu pre ochranu súkromia.</p>"
+    },
+    {
+      "id": "retention",
+      "title": "Lehoty uchovávania a vymazanie",
+      "html": "<p>Kontaktné údaje a korešpondenciu uchovávame tak dlho, ako je potrebné na vybavenie žiadosti a ďalšiu komunikáciu o požadovanej službe. Ak vzťah pokračuje, lehoty môžu určiť zmluva, záväzné právne požiadavky alebo odôvodnená potreba chrániť práva v spore. Údaje sa nemajú uchovávať dlhšie, než vyžaduje príslušný účel.</p><p>Aktuálny formulár doručuje žiadosť do Telegramu; nevytvára návštevníkovi samostatný účet s históriou žiadostí. Kópie správ môžu zostať v pracovnej korešpondencii a infraštruktúre poskytovateľov. Zatvorenie stránky alebo vymazanie údajov prehliadača neodstráni už odoslanú žiadosť; formulár nevykonáva automatické vymazanie správy po pevnom počte dní.</p><p>Technické záznamy sa uchovávajú podľa nastavenia infraštruktúry a bezpečnostných potrieb. Lehoty uchovávania údajov v Googli a Telegrame určujú aj pravidlá týchto služieb. Miestne uchovanie výberu jazyka opisuje časť o cookies.</p><p>Ak chcete spresniť lehotu uchovávania svojej žiadosti alebo požiadať o vymazanie, napíšte nám. Ak je potrebné časť údajov uchovať zo zákonného dôvodu, v odpovedi vysvetlíme tento dôvod a príslušnú lehotu alebo kritérium jej určenia.</p>"
+    },
+    {
+      "id": "security",
+      "title": "Zabezpečenie informácií",
+      "html": "<p>Na ochranu žiadostí používame overovanie vstupných polí, obmedzenia veľkosti požiadaviek a antispamovú kontrolu. Údaje žiadosti sa Googlu a Telegramu odovzdávajú prostredníctvom HTTPS. Kľúče integrácií sa používajú na serveri a nie sú súčasťou obsahu správy žiadosti.</p><p>Žiadny spôsob prenosu ani ukladania nezaručuje absolútnu bezpečnosť. Nepridávajte nadbytočné údaje, pred odoslaním skontrolujte adresu webu a informujte nás, ak zaznamenáte podozrivú aktivitu alebo možné sprístupnenie svojich informácií.</p>"
+    },
+    {
+      "id": "rights",
+      "title": "Vaše práva",
+      "html": "<p>V rozsahu a za podmienok stanovených uplatniteľnými právnymi predpismi máte právo:</p><ul><li>poznať zdroje, účel a podmienky spracúvania svojich údajov a informácie o prevádzkovateľovi a príjemcoch;</li><li>získať prístup k vlastným osobným údajom;</li><li>požadovať opravu nepresných údajov a vymazanie údajov spracúvaných nezákonne alebo už nepotrebných;</li><li>namietať proti spracúvaniu, ak existujú zákonom stanovené dôvody;</li><li>odvolať súhlas, ak bol základom spracúvania, bez vplyvu na zákonnosť predchádzajúceho spracúvania;</li><li>chrániť svoje práva súdnou cestou a podať sťažnosť ukrajinskému parlamentnému splnomocnencovi pre ľudské práva.</li></ul><p>Ak sa uplatňuje GDPR, za podmienok v ňom stanovených máte tiež právo na obmedzenie spracúvania, prenosnosť údajov a sťažnosť príslušnému dozornému orgánu, najmä v mieste obvyklého bydliska, práce alebo údajného porušenia. Tieto práva nie sú absolútne: napríklad vymazanie môže byť obmedzené zákonnou povinnosťou uchovávania.</p><p>Vysvetlenie práv a spôsobov podania žiadosti nájdete na <a href=\"https://ombudsman.gov.ua/uk/zahist-personalnih-danih-faq\" target=\"_blank\" rel=\"noopener noreferrer\">webe splnomocnenca</a>. Oficiálne znenie GDPR je dostupné na <a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener noreferrer\">EUR-Lex</a>.</p>"
+    },
+    {
+      "id": "requests",
+      "title": "Ako uplatniť svoje práva",
+      "html": "<p>Napíšte na <a href=\"mailto:crm.vtx@gmail.com\">crm.vtx@gmail.com</a> s predmetom „Osobné údaje“. Opíšte, ktorých údajov alebo žiadosti sa vec týka a aký krok požadujete. Na začatie vyhľadania žiadosti stačí približný dátum a kontakt, ktorý ste uviedli.</p><p>Aby sme vaše údaje nesprístupnili inej osobe, môžeme požiadať o primerané overenie totožnosti a informácie vyžadované zákonom. Neposielajte kópiu pasu ani iné nadbytočné dokumenty bez samostatnej odôvodnenej žiadosti.</p><p>Žiadosti vybavujeme v lehotách stanovených zákonom pre príslušný druh žiadosti. Ak existuje zákonný dôvod na odmietnutie, obmedzenie vybavenia alebo predĺženie lehoty, informujeme vás o ňom. Kontaktovanie nás neobmedzuje vaše právo obrátiť sa priamo na dozorný orgán alebo súd.</p>"
+    },
+    {
+      "id": "external",
+      "title": "Externé odkazy a údaje iných osôb",
+      "html": "<p>Web obsahuje odkazy na YouTube, messengery, sociálne siete a ďalšie zdroje. Po prechode ich prevádzkovatelia spracúvajú údaje podľa vlastných pravidiel. Najmä odkazy na videá vedú na externú platformu; na sledovanie na tejto platforme sa vzťahujú jej zásady.</p><p>Posielajte vlastné kontaktné údaje alebo údaje, ktoré máte zákonné právo odovzdať pre príslušnú žiadosť. Web a jeho ponuky sú určené predovšetkým na profesionálne použitie; formuláre nie sú určené na zhromažďovanie údajov detí. Ak sa domnievate, že údaje dieťaťa alebo inej osoby boli odovzdané bez zodpovedajúceho dôvodu, informujte nás, aby sme vec preverili a prijali nevyhnutné opatrenia.</p>"
+    },
+    {
+      "id": "changes",
+      "title": "Zmeny zásad",
+      "html": "<p>Tento dokument aktualizujeme pri zmenách funkcií webu, spôsobu spracúvania alebo právnych požiadaviek. Aktuálne znenie je zverejnené na tejto stránke s dátumom aktualizácie. Ak nový účel spracúvania vyžaduje samostatné oznámenie alebo súhlas, zverejnenie novej verzie ich získanie nenahrádza.</p><p>S otázkami k týmto zásadám píšte na <a href=\"mailto:crm.vtx@gmail.com\">crm.vtx@gmail.com</a>.</p>"
+    }
+  ]
+}

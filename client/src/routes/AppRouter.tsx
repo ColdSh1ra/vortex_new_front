@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import { Link, Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import Link from '../components/default/LocalizedLink';
 import HeaderMain from '../components/layout/HeaderMain';
 import FooterMain from '../components/layout/FooterMain';
 import ContactPage from '../pages/ContactPage';
@@ -16,12 +17,11 @@ import { loadPageStyles } from '../styles/loadPageStyles';
 import BlogPage from '../pages/BlogPage';
 import BlogArticlePage from '../pages/BlogArticlePage';
 import SeoHead from '../seo/SeoHead';
-import { blogLanguage } from '../blog/urls';
 import { blogText } from '../blog/copy';
 
 function AppRouter() {
   const location = useLocation();
-  const { content, failed, t, language, setLanguage } = useI18n();
+  const { content, failed, t, language } = useI18n();
   const isBlog = location.pathname === '/blog' || location.pathname.startsWith('/blog/');
   const hasContent = !!content;
   const isFaqPage = location.pathname === '/faq' || location.pathname.startsWith('/faq/');
@@ -40,13 +40,6 @@ function AppRouter() {
             : isTecDocPage ? ' tecdoc-route'
               : isIntegrationPage ? ' integration-route'
                 : isPrivacyPage ? ' privacy-route' : '';
-
-  useEffect(() => {
-    if (isBlog) {
-      const next = blogLanguage(location.search);
-      if (language !== next) setLanguage(next);
-    }
-  }, [location.pathname, location.search]);
 
   useEffect(() => {
     let active = true;
@@ -86,6 +79,7 @@ function AppRouter() {
             <Route path="*" element={<div className="blog-page blog-status"><h1>{blogText(language, 'missing')}</h1><Link to="/">{t('common.home')}</Link></div>} />
           </Routes>
         )}
+        {isBlog && <div className="blog-bottom-transition" aria-hidden="true" />}
       </main>
       <FooterMain />
     </div>

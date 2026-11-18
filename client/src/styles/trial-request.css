@@ -237,20 +237,9 @@
   opacity: .55;
 }
 
-.trial-request-submit span{
-  align-items: center;
-  background-color: #ffe4a0;
-  border-radius: 50%;
-  display: flex;
-  height: 32px;
-  justify-content: center;
-  width: 32px;
-}
 
-.trial-request-submit span img{
-  height: 20px;
-  width: 20px;
-}
+
+
 
 .trial-request-status{
   color: var(--main-text-color);

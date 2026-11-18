@@ -1,8 +1,10 @@
+import { imageSize } from '../utils/imageSize';
+import { localizedUrl } from '../seo/urls';
 import { useState } from 'react';
 import { useInitialContent, useI18n } from '../context/ContentContext';
 
 function ClientTestimonialsComponent() {
-  const { t } = useI18n();
+  const { t, language } = useI18n();
   const content = useInitialContent()?.homepage.client_testimonials_section ?? null;
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -53,7 +55,7 @@ function ClientTestimonialsComponent() {
                 <article className="testimonial-card" key={`${review.company_name}-${index}`}>
                   <header>
                     <div className="testimonial-logo-frame">
-                      {review.image_src && <img src={review.image_src} alt="" />}
+                      {review.image_src && <img src={review.image_src} {...imageSize(review.image_src)} loading="lazy" decoding="async" alt="" />}
                     </div>
                     <div>
                       <h3>{review.company_name}</h3>
@@ -78,7 +80,7 @@ function ClientTestimonialsComponent() {
                     </blockquote>
                   )}
 
-                  {review.link_text && <a href={review.link_href}>{review.link_text}</a>}
+                  {review.link_text && <a href={localizedUrl(review.link_href, language)}>{review.link_text}</a>}
                 </article>
               ))}
             </div>

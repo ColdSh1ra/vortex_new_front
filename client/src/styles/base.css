@@ -18,6 +18,7 @@
   --gap-40: 40px;
   --mobile-padding: 20px;
   --border-radius: 20px;
+  --site-header-clearance: 90px;
 }
 
 * {
@@ -35,7 +36,7 @@ html {
 body {
   background-color: var(--blue-color-5);
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: clip;
   position: relative;
 }
 
@@ -100,22 +101,91 @@ p.paragraph {
 }
 
 .header {
+  color: #fff;
+  margin: 14px var(--desktop-padding) 0;
+  position: sticky;
+  top: 14px;
+  z-index: 100;
+}
+
+.header-full {
   background: var(--blue-color-3);
   border-radius: 30px;
-  color: #fff;
-  gap: var(--gap-8);
-  height: 64px;
-  margin: 14px var(--desktop-padding) 0;
+  min-height: 64px;
+  opacity: 1;
   padding: 12px 24px;
   position: relative;
-  z-index: 100;
+  transform: scale(1);
+  transform-origin: center top;
+  transition: opacity 400ms ease, transform 400ms cubic-bezier(.2, .7, .2, 1), visibility 0s;
+  visibility: visible;
+  z-index: 2;
+}
+
+.header-is-compact .header-full {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(.92);
+  transition: opacity 400ms ease, transform 400ms cubic-bezier(.2, .7, .2, 1), visibility 0s 400ms;
+  visibility: hidden;
+}
+
+.header-compact-trigger {
+  align-items: center;
+  background: var(--blue-color-3);
+  border: 1px solid rgb(255 255 255 / .16);
+  border-radius: 999px;
+  color: var(--orange-bg-color);
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+  height: 44px;
+  justify-content: space-between;
+  left: 50%;
+  opacity: 0;
+  padding: 8px 16px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%) scale(.78);
+  transform-origin: center top;
+  transition: opacity 400ms ease, transform 400ms cubic-bezier(.2, .7, .2, 1), visibility 0s 400ms;
+  visibility: hidden;
+  width: 172px;
+  z-index: 3;
+}
+
+.header-compact-trigger img { display: block; height: 24px; width: 92px; }
+.header-compact-trigger:focus-visible { outline: 2px solid var(--orange-bg-color); outline-offset: 4px; }
+.header-compact-trigger:hover { background: var(--blue-color-4); }
+.header-is-compact .header-compact-trigger {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) scale(1);
+  transition: opacity 400ms ease, transform 400ms cubic-bezier(.2, .7, .2, 1), visibility 0s;
+  visibility: visible;
+}
+
+.header-reveal-from-up:not(.header-is-compact) .header-full {
+  animation: header-slide-in 400ms cubic-bezier(.2, .7, .2, 1) both;
+}
+
+@keyframes header-slide-in {
+  from { opacity: 0; transform: translateY(calc(-100% - 20px)); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-menu-panel { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .header-full, .header-compact-trigger { animation: none !important; transition: none !important; }
 }
 
 .desktop-header-content {
   align-items: center;
   display: flex;
   gap: var(--gap-8);
-  height: 100%;
+  min-height: 40px;
   justify-content: space-between;
   width: 100%;
 }
@@ -210,6 +280,29 @@ p.paragraph {
   width: 20px;
 }
 
+.sticky-heading-sentinel {
+  display: block;
+  flex: 0 0 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  visibility: hidden;
+  width: 0;
+}
+
+.chevron-circle {
+  align-items: center;
+  background: #ffe4a0;
+  border-radius: 50%;
+  display: inline-flex;
+  flex: 0 0 var(--chevron-circle-size, 32px);
+  height: var(--chevron-circle-size, 32px);
+  justify-content: center;
+  padding: 0;
+  width: var(--chevron-circle-size, 32px);
+}
+
 .button {
   align-items: center;
   border: 2px solid transparent;
@@ -231,19 +324,20 @@ p.paragraph {
 }
 
 .button .button-icon-container {
+  --chevron-circle-size: 28px;
   border-radius: 50%;
   height: 28px;
   width: 28px;
 }
 
 .button .button-icon-container img {
-  height: 100%;
+  height: 20px;
   object-fit: contain;
-  width: 100%;
+  width: 20px;
 }
 
 .button.button-filled.no-icon { padding: 10px 16px; }
-.button.button-filled.with-icon { padding: 10px 6px 10px 16px; }
+.button.button-filled.with-icon { height: auto; min-height: 44px; padding: 6px 6px 6px 16px; }
 .button.button-filled.white { background-color: #fff; border: 1px solid var(--orange-bg-color); }
 .button.button-filled.white:hover { background-color: var(--orange-bg-color); }
 .button.button-filled.white:focus { background-color: #fff; border: 2px solid var(--orange-bg-color); }
@@ -337,6 +431,7 @@ div.p-absolute-element {
 @media (max-width: 768px) {
   :root {
     --content-gutter: var(--mobile-padding);
+    --site-header-clearance: 76px;
   }
 
   body.mobile-menu-open {
@@ -350,20 +445,14 @@ div.p-absolute-element {
 
   .header {
     --mobile-header-height: 44px;
-    background: transparent;
-    display: block;
-    height: auto;
     margin: 16px var(--mobile-padding) 0;
-    padding: 0;
-    position: sticky;
     top: 16px;
-    transition: transform 220ms ease;
-    z-index: 100;
   }
 
-  .header.header-is-hidden:not(.mobile-menu-active) {
-    pointer-events: none;
-    transform: translateY(calc(-100% - 32px));
+  .header-full {
+    background: transparent;
+    min-height: var(--mobile-header-height);
+    padding: 0;
   }
 
   .desktop-header-content { display: none; }
@@ -427,7 +516,7 @@ div.p-absolute-element {
   .mobile-menu-toggle.is-open span::before { transform: rotate(45deg); }
   .mobile-menu-toggle.is-open span::after { transform: rotate(-45deg); }
   .mobile-menu-panel { display: none; }
-  .header.mobile-menu-active { transform: none; }
+  .header.mobile-menu-active .header-full { animation: none; transform: none; }
 
   .mobile-menu-active .mobile-menu-panel {
     align-items: center;
@@ -534,6 +623,10 @@ div.p-absolute-element {
   z-index: 3;
 }
 
+.language-switcher-menu[hidden] {
+  display: none;
+}
+
 .language-switcher-option {
   align-items: center;
   background: transparent;
@@ -548,6 +641,7 @@ div.p-absolute-element {
   min-height: 42px;
   padding: 10px;
   text-align: left;
+  text-decoration: none;
   width: 100%;
 }
 
@@ -580,7 +674,7 @@ div.p-absolute-element {
 #trial-request, #pricing, #website-development { scroll-margin-top: 80px; }
 
 @media (min-width: 769px) and (max-width: 1250px) {
-  .header { height: auto; min-height: 64px; padding: 12px 18px; }
+  .header-full { min-height: 64px; padding: 12px 18px; }
   .desktop-header-content { flex-wrap: wrap; justify-content: center; gap: 16px; }
   .desktop-header-content nav { order: 1; flex-basis: 100%; }
   .header .nav-list { justify-content: center; flex-wrap: wrap; }
