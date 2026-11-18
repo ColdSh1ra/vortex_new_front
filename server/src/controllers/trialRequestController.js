@@ -1,5 +1,6 @@
 const { verifyRecaptcha } = require('../services/recaptchaService');
 const { sendTelegramNotification } = require('../services/telegramService');
+const cms = require('../services/cmsService');
 
 const ALLOWED_FIELDS = new Set([
   'requested_product',
@@ -17,7 +18,7 @@ const NAME_LETTER_PATTERN = /\p{L}/u;
 const PHONE_PATTERN = /^[+()\d\s-]{7,30}$/;
 const ALLOWED_PRODUCTS = new Set(['vortex', 'tecdoc']);
 const ALLOWED_SOURCES = new Set(['home', 'contact', 'car-service', 'websites', 'auto-dismantling', 'tecdoc-license']);
-const WEBSITE_PACKAGES = new Set(['free', 'practical', 'maximum']);
+const PACKAGE_ID = /^[a-zA-Z0-9][a-zA-Z0-9_-]{0,99}$/;
 const ALLOWED_LANGUAGES = new Set(['ua', 'cz', 'sk', 'en', 'pl']);
 
 function normalizeAndValidateTrialRequest(body) {
@@ -41,7 +42,7 @@ function normalizeAndValidateTrialRequest(body) {
   }
 
   if (body.website_package !== undefined && (
-    sourcePage !== 'websites' || !WEBSITE_PACKAGES.has(body.website_package)
+    sourcePage !== 'websites' || typeof body.website_package !== 'string' || !PACKAGE_ID.test(body.website_package)
   )) {
     return { valid: false };
   }
@@ -144,6 +145,12 @@ async function submitTrialRequest(req, res) {
   }
 
   try {
+    if (validation.data.website_package) {
+      const snapshot = await cms.snapshot();
+      const tariff = resolveWebsiteTariff(validation.data, snapshot.content);
+      if (!tariff) return res.status(400).json({ message: 'Обраний пакет сайту недоступний.' });
+      Object.assign(validation.data, tariff, snapshot.revision === undefined ? {} : { content_revision: snapshot.revision });
+    }
     const recaptchaIsValid = await verifyRecaptcha(
       validation.data.recaptcha_token,
       req.ip,
@@ -160,6 +167,7 @@ async function submitTrialRequest(req, res) {
     if (
       error.code === 'RECAPTCHA_NOT_CONFIGURED'
       || error.code === 'TELEGRAM_NOT_CONFIGURED'
+      || error.code?.startsWith('CONTENT_')
     ) {
       return res.status(503).json({ message: 'Сервіс заявок ще не налаштовано.' });
     }
@@ -169,7 +177,24 @@ async function submitTrialRequest(req, res) {
   }
 }
 
+function resolveWebsiteTariff(data, catalog) {
+  const content = catalog[data.language];
+  const pricing = content?.websites?.pricing;
+  let tariff;
+  if (pricing !== undefined) {
+    if (pricing.visible === false) return null;
+    tariff = pricing.tariffs?.find(item => item.id === data.website_package && item.visible !== false);
+  } else if (!cms.configured()) {
+    const legacyPrices = { free: 0, practical: 300, maximum: 500 };
+    if (Object.hasOwn(legacyPrices, data.website_package)) tariff = { id: data.website_package, name: data.website_package, price: legacyPrices[data.website_package], currency: 'USD', billing_type: data.website_package === 'free' ? 'free' : 'one_time' };
+  }
+  if (!tariff || !Number.isFinite(tariff.price) || tariff.price < 0 || !/^[A-Z]{3}$/.test(tariff.currency)
+    || !['free', 'monthly', 'one_time'].includes(tariff.billing_type)) return null;
+  return { total_sum: tariff.price, total_currency: tariff.currency, billing_type: tariff.billing_type, website_package_name: tariff.name };
+}
+
 module.exports = {
   normalizeAndValidateTrialRequest,
   submitTrialRequest,
+  resolveWebsiteTariff,
 };

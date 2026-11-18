@@ -1,3 +1,4 @@
+import StickyHeading from './default/StickyHeading';
 import { useI18n } from '../context/ContentContext';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useInitialContent } from '../context/ContentContext';
@@ -101,9 +102,9 @@ function HeroPageSliderSection() {
         <section className={'section-container hero-page-slider-section'}>
             {content && (
                 <div className={'slider-wrapper'}>
-                    <h2 className={'section-title'}>
+                    <StickyHeading className={'section-title'}>
                         {content.section_title}
-                    </h2>
+                    </StickyHeading>
 
                     <div className={'carousel-buttons'}>
                         <button type="button" onClick={goToPreviousSlide} aria-label={t('common.previous')}>

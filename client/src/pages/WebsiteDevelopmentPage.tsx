@@ -1,3 +1,4 @@
+import { CmsWebsitePage } from './cms/CmsPages';
 import ChevronCircle from '../components/default/ChevronCircle';
 import { useEffect, useRef, useState } from 'react';
 import Link from '../components/default/LocalizedLink';
@@ -18,7 +19,7 @@ function WebsitePreview({ name, label, className = '' }: { name: string; label: 
   );
 }
 
-function WebsiteDevelopmentPage() {
+function LegacyWebsiteDevelopmentPage() {
   const { content, t } = useI18n();
   const overview = content?.homepage.website_development_section;
   const [selectedPackage, setSelectedPackage] = useState<WebsitePackage | undefined>();
@@ -165,4 +166,4 @@ function WebsiteDevelopmentPage() {
   );
 }
 
-export default WebsiteDevelopmentPage;
+export default function WebsiteDevelopmentPage() { const {content}=useI18n(); return content?.websites ? <CmsWebsitePage data={content.websites}/> : <LegacyWebsiteDevelopmentPage/>; }

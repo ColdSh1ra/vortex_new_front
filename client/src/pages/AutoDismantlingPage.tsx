@@ -1,3 +1,4 @@
+import { CmsAutoDismantlingPage } from './cms/CmsPages';
 import ChevronCircle from '../components/default/ChevronCircle';
 import Link from '../components/default/LocalizedLink';
 import TrialRequestComponent from '../components/TrialRequestComponent';
@@ -7,7 +8,7 @@ const vehicleFields = ['vin', 'year', 'engine', 'body', 'fuel', 'cost'];
 const sections = ['vehicle', 'statuses', 'parts'];
 const methods = ['manual', 'diagram', 'groups'];
 
-function AutoDismantlingPage() {
+function LegacyAutoDismantlingPage() {
   const { t } = useI18n();
 
   return (
@@ -124,4 +125,4 @@ function AutoDismantlingPage() {
   );
 }
 
-export default AutoDismantlingPage;
+export default function AutoDismantlingPage() { const {content}=useI18n(); return content?.autoshrot ? <CmsAutoDismantlingPage data={content.autoshrot}/> : <LegacyAutoDismantlingPage/>; }

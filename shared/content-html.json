@@ -1,0 +1,4 @@
+{
+  "tags": ["p", "br", "strong", "b", "em", "i", "u", "s", "a", "ul", "ol", "li", "h3", "h4", "blockquote", "span", "div", "code"],
+  "attributes": ["href", "target", "rel", "class"]
+}

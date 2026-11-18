@@ -1,3 +1,4 @@
+import StickyHeading from './default/StickyHeading';
 import { useI18n } from '../context/ContentContext';
 import { useState } from 'react';
 import { useInitialContent } from '../context/ContentContext';
@@ -25,7 +26,7 @@ function WhyVortexComponent() {
       {content && (
         <div className="why-vortex-wrapper">
           <header className="why-vortex-header">
-            <h2>{content.section_title}</h2>
+            <StickyHeading>{content.section_title}</StickyHeading>
             <p>{content.section_description}</p>
           </header>
 
@@ -55,7 +56,7 @@ function WhyVortexComponent() {
             >
               {content.cards.map((card, index) => (
                 <article className="why-vortex-card" key={`${card.title}-${index}`}>
-                  <img className="why-vortex-mark" src="/bgs/logo2.svg" alt="" />
+                  {card.image_src && <img className="why-vortex-mark" src={card.image_src} alt="" loading="lazy" />}
                   <span className="why-vortex-number">{index + 1}/</span>
                   <h3>{card.title}</h3>
                   <p>{card.description}</p>

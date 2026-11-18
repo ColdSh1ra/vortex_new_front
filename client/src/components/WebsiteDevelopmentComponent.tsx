@@ -23,12 +23,12 @@ function WebsiteDevelopmentComponent() {
 
           <div className="website-development-showcase">
             <div className="website-development-preview-card">
-              <img
+              {content.website_image_src && <img
                 src={content.website_image_src}
                 {...imageSize(content.website_image_src)}
                 loading="lazy" decoding="async"
-                alt={t('website.alt')}
-              />
+                alt={content.website_image_alt ?? t('website.alt')}
+              />}
             </div>
 
             <div className="website-development-details">
@@ -50,7 +50,7 @@ function WebsiteDevelopmentComponent() {
                       ))}
                     </ul>
                     {group.note && <small>{group.note}</small>}
-                    <img className="website-development-benefit-image" src={group.image_src} {...imageSize(group.image_src)} loading="lazy" decoding="async" alt="" aria-hidden="true" />
+                    {group.image_src && <img className="website-development-benefit-image" src={group.image_src} {...imageSize(group.image_src)} loading="lazy" decoding="async" alt="" aria-hidden="true" />}
                   </article>
                 ))}
               </div>
@@ -63,7 +63,7 @@ function WebsiteDevelopmentComponent() {
           </div>
 
           <div className="website-development-cta">
-            <a href={localizedUrl('/websites', language)}>
+            <a href={localizedUrl(content.cta_target ?? '/websites', language)}>
               {content.cta_text}
               <ChevronCircle />
             </a>

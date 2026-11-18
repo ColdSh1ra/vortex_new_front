@@ -1,4 +1,6 @@
+import type { CmsSupplementaryContent } from './cmsContent';
 export type AboutUsContent = {
+  visible?: boolean;
   about_us_title: string;
   about_us_subtitle: string;
   about_us_blocks: AboutUsBlock[];
@@ -11,6 +13,7 @@ export type AboutUsBlock = {
 };
 
 export type HeroPageSliderSection = {
+  visible?: boolean;
   section_title: string;
   slide_image_paths: string[];
 }
@@ -22,6 +25,7 @@ export type WhyVortexCard = {
 };
 
 export type WhyVortexSection = {
+  visible?: boolean;
   section_title: string;
   section_description: string;
   cards: WhyVortexCard[];
@@ -31,10 +35,12 @@ export type VortexAudienceCard = {
   title: string;
   description: string;
   cta_text: string;
+  cta_target?: string;
   image_src: string;
 };
 
 export type VortexAudienceSection = {
+  visible?: boolean;
   section_title: string;
   cards: VortexAudienceCard[];
 };
@@ -51,6 +57,7 @@ export type ClientTestimonial = {
 };
 
 export type ClientTestimonialsSection = {
+  visible?: boolean;
   section_title: string;
   pros_title: string;
   cons_title: string;
@@ -67,15 +74,18 @@ export type IntegrationCatalogCard = {
 };
 
 export type IntegrationsCatalogSection = {
+  visible?: boolean;
   section_title: string;
   section_description: string;
   cards: IntegrationCatalogCard[];
 };
 
 export type CarServiceSection = {
+  visible?: boolean;
   heading: string;
   description: string;
   car_service_features: string[];
+  paragraphs?: string[]; link_text?: string; link_target?: string; image?: string; image_alt?: string;
 };
 
 export type WebsiteDevelopmentBenefitGroup = {
@@ -85,10 +95,13 @@ export type WebsiteDevelopmentBenefitGroup = {
 };
 
 export type WebsiteDevelopmentSection = {
+  visible?: boolean;
   heading: string;
   gift_message: string;
   description_paragraphs: string[];
   website_image_src: string;
+  website_image_alt?: string;
+  cta_target?: string;
   benefit_groups: WebsiteDevelopmentBenefitGroup[];
   upgrade_message: string;
   cta_text: string;
@@ -103,6 +116,7 @@ export type PricingIntegrationSetting = {
 };
 
 export type PricingCalculatorSettings = {
+  visible?: boolean;
   currency: string;
   base_monthly_price: number;
   increment: number;
@@ -126,6 +140,7 @@ export type VortexPricingPlan = {
 };
 
 export type VortexPricingSection = {
+  billing_labels?: {monthly: string; yearly: string; one_time: string};
   visible: boolean;
   section_title: string;
   section_description: string;
@@ -135,6 +150,9 @@ export type VortexPricingSection = {
 export type HomepageContent = {
   title: string;
   subtitle: string;
+  hero?: {cta_text: string; cta_target: string; image: string; image_alt: string; screenshots: {image: string; alt: string}[]};
+  suppliers_section?: {visible: boolean; title: string; description: string; image: string; image_alt: string; suppliers: {id: string; name: string; logo: string; logo_alt: string}[]};
+  sync_section?: {visible: boolean; title: string; paragraphs: string[]; client_label: string; image: string; image_alt: string};
   about_us_block: AboutUsContent;
   hero_page_slider_section: HeroPageSliderSection;
   why_vortex_section: WhyVortexSection;
@@ -166,12 +184,13 @@ export type ContactWorker = {
 };
 
 export type ContactsContent = {
+  visible?: boolean;
   title: string;
   subtitle: string;
   workers: ContactWorker[];
 };
 
-export type VortexContent = {
+export type VortexContent = CmsSupplementaryContent & {
   ui: Record<string, string>;
   car_service: CarServicePageContent;
   homepage: HomepageContent;
@@ -188,6 +207,7 @@ export type VortexContent = {
 };
 
 export type CarServicePageContent = {
+  visible?: boolean;
   title: string;
   subtitle: string;
   blocks: {

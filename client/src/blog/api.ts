@@ -61,3 +61,24 @@ export async function requestBlog(path: string, baseUrl: string, signal?: AbortS
   }
   return response.json();
 }
+
+/** Drafts may be incomplete; public articles still use the strict parser above. */
+export function parseBlogPreviewArticle(value: unknown): BlogArticle {
+  if (!record(value) || typeof value.id !== 'string' || !record(value.translations)) throw new BlogApiError(502, 'BLOG_INVALID_RESPONSE');
+  const draftText=(item:unknown,max=20000)=>typeof item==='string'&&item.length<=max?item:'';
+  const cover=record(value.cover)?value.cover:{};
+  const alt=record(cover.alt)?cover.alt:{};
+  const author=record(value.author)?value.author:{};
+  const translations=value.translations;
+  return {
+    id:value.id,slug:draftText(value.slug,160),publishedAt:draftText(value.publishedAt,40),updatedAt:draftText(value.updatedAt,40),
+    author:{name:draftText(author.name,160),type:author.type==='Person'?'Person':'Organization'},
+    cover:{url:cover.url===''||imageUrl(cover.url)?String(cover.url):'',width:integer(cover.width)?cover.width:1,height:integer(cover.height)?cover.height:1,alt:Object.fromEntries(LANGUAGES.map(language=>[language,draftText(alt[language],500)])) as BlogArticle['cover']['alt']},
+    translations:Object.fromEntries(LANGUAGES.map(language=>{
+      const item=record(translations[language])?translations[language]:{};
+      const seo=record(item.seo)?item.seo:{};
+      const sections=Array.isArray(item.sections)?item.sections.slice(0,100):[];
+      return [language,{title:draftText(item.title,300),excerpt:draftText(item.excerpt,1500),seo:{title:draftText(seo.title,300),description:draftText(seo.description,1500)},sections:sections.filter(record).map((section,index)=>({id:typeof section.id==='string'&&BLOG_SLUG.test(section.id)?section.id:`draft-section-${index}`,heading:draftText(section.heading,300),paragraphs:Array.isArray(section.paragraphs)?section.paragraphs.map(p=>draftText(p)):[]}))}];
+    })) as BlogArticle['translations'],
+  };
+}

@@ -1,12 +1,8 @@
+import { useId } from 'react';
 import type { HTMLAttributes } from 'react';
-import { useStickyHeading } from '../../utils/useStickyHeading';
 
-export default function StickyHeading({ children, ...props }: HTMLAttributes<HTMLHeadingElement>) {
-  const { headingRef, sentinelRef, stuck } = useStickyHeading();
-  return (
-    <>
-      <span className="sticky-heading-sentinel" ref={sentinelRef} aria-hidden="true" />
-      <h2 {...props} ref={headingRef} data-stuck={stuck ? 'true' : undefined}>{children}</h2>
-    </>
-  );
+/** A normal section heading whose text can be shown in the compact navigation. */
+export default function StickyHeading({ children, id, ...props }: HTMLAttributes<HTMLHeadingElement>) {
+  const generatedId = useId();
+  return <h2 {...props} id={id ?? `section-heading-${generatedId.replace(/[^a-zA-Z0-9_-]/g, '')}`} data-header-heading>{children}</h2>;
 }

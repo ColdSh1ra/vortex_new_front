@@ -14,6 +14,10 @@ function buildTelegramMessage({
   source_page = 'home',
   language = 'ua',
   website_package,
+  website_package_name,
+  total_currency,
+  billing_type,
+  content_revision,
 }) {
   if (requested_product === 'tecdoc') {
     return `Нова заявка на ліцензію TecDoc\nІм'я: ${name}, Номер телефону: ${phone}`;
@@ -31,12 +35,14 @@ function buildTelegramMessage({
     `Мова: ${language}`,
     `Ім'я: <b>${name}</b>`,
     `Номер телефону: <b>${phone}</b>`,
-    `Розрахована сума: $${formatMoney(total_sum)}`,
+    `Розрахована сума: ${total_currency ? `${total_currency} ` : '$'}${formatMoney(total_sum)}`,
   ];
 
   if (website_package) {
     const packageName = { free: 'Безкоштовний', practical: 'Практичний', maximum: 'Максимальний' }[website_package];
-    messageLines.push(`Пакет сайту: ${packageName}`);
+    messageLines.push(`Пакет сайту: ${website_package_name || packageName || website_package}`);
+    if (billing_type) messageLines.push(`Тип оплати: ${billing_type}`);
+    if (content_revision !== undefined) messageLines.push(`Ревізія контенту: ${content_revision}`);
   }
 
   if (location) {

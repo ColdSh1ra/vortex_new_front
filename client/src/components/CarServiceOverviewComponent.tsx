@@ -24,12 +24,13 @@ function CarServiceOverviewComponent() {
               <div
                 className="car-service-laptop-card"
                 role="img"
-                aria-label={t('carOverview.alt')}
+                aria-label={content.image_alt ?? t('carOverview.alt')}
+                style={content.image !== undefined ? {backgroundImage: content.image ? `url(${JSON.stringify(content.image)})` : 'none'} : undefined}
               />
 
               <div className="car-service-cta-card">
-                <a href={localizedUrl('/car-service', language)}>
-                  {t('carOverview.link')}
+                <a href={localizedUrl(content.link_target ?? '/car-service', language)}>
+                  {content.link_text ?? t('carOverview.link')}
                   <ChevronCircle />
                 </a>
               </div>
@@ -37,7 +38,7 @@ function CarServiceOverviewComponent() {
 
             <div className="car-service-overview-content-column">
               <div className="car-service-overview-copy">
-                {['first', 'second', 'third'].map((key) => <p key={key}>{t(`carOverview.${key}`)}</p>)}
+                {(content.paragraphs ?? ['first','second','third'].map(key=>t(`carOverview.${key}`))).map((p,index)=><p key={index}>{p}</p>)}
               </div>
 
               <div className="car-service-features-card">

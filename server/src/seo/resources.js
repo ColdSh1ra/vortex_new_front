@@ -31,13 +31,14 @@ async function manifest() {
 }
 
 async function primaryImage(pathname, content, blog) {
-  if (pathname === '/') return '/imgs/vx-screenshot-2.png';
-  if (pathname === '/auto-dismantling') return '/imgs/auto-dismantling/dismantling-car-premium.png';
+  if (pathname === '/') return content?.homepage.hero?.screenshots?.[1]?.image ?? '/imgs/vx-screenshot-2.png';
+  if (pathname === '/auto-dismantling') return content?.autoshrot?.hero?.image ?? '/imgs/auto-dismantling/dismantling-car-premium.png';
   if (pathname === '/car-service') return content?.car_service.blocks[0]?.image_src;
   if (pathname === '/contact') return content?.contacts.workers[0]?.photo_path;
-  if (pathname.startsWith('/integrations/')) return content?.homepage.integrations_catalog_section.cards.find(card => card.link_href === pathname)?.image_src;
+  if (pathname.startsWith('/integrations/')) return content?.integration_pages?.pages?.[pathname.split('/').pop()]?.logo ?? content?.homepage.integrations_catalog_section.cards.find(card => card.link_href === pathname)?.image_src;
   if (pathname.startsWith('/blog')) return blog?.article?.cover.url || blog?.list?.data[0]?.cover.url;
   if (pathname === '/websites') {
+    if (content?.websites !== undefined) return content.homepage.website_development_section.website_image_src;
     const files = await fs.readdir(path.join(publicRoot, 'imgs/websites')).catch(() => []);
     const overview = files.find(file => /^overview\.(png|jpe?g|webp|avif)$/.test(file));
     if (overview) return `/imgs/websites/${overview}`;

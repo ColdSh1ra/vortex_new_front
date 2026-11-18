@@ -5,10 +5,10 @@ import { useBlog } from '../blog/BlogContext';
 import { buildPageSeo, seoElements } from './metadata';
 export default function SeoHead() {
   const location = useLocation();
-  const { language, catalog } = useI18n();
+  const { language, catalog, preview } = useI18n();
   const { resource } = useBlog();
   useEffect(() => {
-    const seo = buildPageSeo(location.pathname + location.search, language, resource, catalog);
+    const seo = buildPageSeo(location.pathname + location.search, language, resource, catalog, preview);
     document.head.querySelectorAll('[data-vortex-seo], title').forEach(node => node.remove());
     for (const item of seoElements(seo)) {
       const node = document.createElement(item.tag);
@@ -17,6 +17,6 @@ export default function SeoHead() {
       if (item.text) node.textContent = item.text;
       document.head.appendChild(node);
     }
-  }, [location.pathname, location.search, language, resource, catalog]);
+  }, [location.pathname, location.search, language, resource, catalog, preview]);
   return null;
 }

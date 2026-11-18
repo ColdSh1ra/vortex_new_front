@@ -9,6 +9,9 @@ const contentService = require('./services/contentService');
 const blogRoutes = require('./routes/blogRoutes');
 const sitemapRoutes = require('./routes/sitemapRoutes');
 const blogService = require('./services/blogService');
+const cmsService = require('./services/cmsService');
+const { cmsPreview, privacyHeaders, previewError } = require('./middleware/cmsPreview');
+const { localizedUrl } = require('./seo/site');
 const { CLIENT_ORIGINS } = require('./config/constants');
 
 const app = express();
@@ -20,6 +23,7 @@ const discoveryRoutes = require('./routes/discoveryRoutes');
 const { gzipSync, brotliCompressSync, constants } = require('node:zlib');
 
 app.disable('x-powered-by');
+app.disable('etag'); // CMS revisions are explicit; private preview responses must not acquire automatic ETags.
 app.use((req, res, next) => {
   res.set({
     'X-Content-Type-Options': 'nosniff',
@@ -41,8 +45,10 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'X-Requested-With'],
 }));
 app.use(express.json({ limit: '12kb', strict: true }));
+// Exchange CMS query tokens before canonical normalization can remove them.
+app.use(cmsPreview);
 
-app.use('/api', (req, res, next) => { res.set('X-Robots-Tag', 'noindex, nofollow'); next(); });
+app.use('/api', (req, res, next) => { res.set('X-Robots-Tag', req.cmsPreview ? 'noindex, nofollow, noarchive' : 'noindex, nofollow'); next(); });
 app.use('/api', contentRoutes);
 app.use('/api', trialRequestRoutes);
 app.use('/api/blog', blogRoutes);
@@ -74,17 +80,35 @@ app.use(async (req, res, next) => {
 
   try {
     const template = await fs.readFile(path.join(clientDistPath, 'index.html'), 'utf8');
-    const content = await contentService.fetchContent();
+    const snapshot = await contentService.snapshot({ previewToken: req.cmsPreview?.token });
+    const content = snapshot.content;
     const { render, loadBlogRoute } = await import(pathToFileURL(ssrEntryPath).href);
     const requestUrl = new URL(req.originalUrl, 'http://localhost');
     const isBlog = requestUrl.pathname === '/blog' || requestUrl.pathname.startsWith('/blog/');
     const language = languageFromSearch(requestUrl.search);
     const languageTag = languageCodes[language];
-    const initialBlog = await loadBlogRoute(req.originalUrl, {
+    const previewMatch = requestUrl.pathname.match(/^\/blog\/preview\/([a-zA-Z0-9_-]{1,100})$/);
+    let previewArticle;
+    if (previewMatch) {
+      if (!req.cmsPreview) return previewError(res);
+      try { previewArticle = (await blogService.request(`preview/${encodeURIComponent(previewMatch[1])}`, { previewToken: req.cmsPreview.token })).data; }
+      catch (error) { if (error.status === 403) return previewError(res); if (error.status === 404) previewArticle = null; else throw error; }
+    }
+    let initialBlog = await loadBlogRoute(req.originalUrl, {
       apiBaseUrl: isBlog && blogService.configured() ? blogService.apiBaseUrl() : undefined,
-      demoEnabled: process.env.BLOG_DEMO_MODE !== 'false',
+      demoEnabled: !cmsService.configured() && process.env.BLOG_DEMO_MODE !== 'false',
+      checkRedirects: false,
+      ...(previewMatch ? { previewArticle } : {}),
     });
-    const { appHtml, headHtml, statusCode, robots } = render(req.originalUrl, content, language, initialBlog);
+    const oldSlug = !previewMatch && requestUrl.pathname.match(/^\/blog\/([a-z0-9]+(?:-[a-z0-9]+)*)$/)?.[1];
+    if (oldSlug && initialBlog?.status === 'not-found') {
+      try {
+        const redirect = await blogService.redirectForSlug(oldSlug);
+        if (redirect) return res.redirect(301, localizedUrl(`/blog/${redirect.to}`, language).replace(/^https?:\/\/[^/]+/, ''));
+      } catch { initialBlog = { key: initialBlog.key, status: 'error', mode: 'live' }; }
+    }
+    const { appHtml, headHtml: originalHead, statusCode, robots } = render(req.originalUrl, content, language, initialBlog, !!req.cmsPreview);
+    const headHtml = req.cmsPreview ? originalHead.replace(/<meta\b[^>]*name="robots"[^>]*>/g, '<meta name="robots" content="noindex,nofollow,noarchive">') : originalHead;
     const serializedContent = JSON.stringify(content).replace(/</g, '\\u003c');
     const resources = await routeResources(req.originalUrl, content, initialBlog, template);
     const html = template
@@ -96,12 +120,15 @@ app.use(async (req, res, next) => {
       .replace('<!--seo-head-->', headHtml)
       .replace(
         '<!--initial-content-->',
-        `<script>window.__VORTEX_CONTENT__=${serializedContent};window.__VORTEX_LANGUAGE__="${language}";window.__VORTEX_BLOG__=${JSON.stringify(initialBlog).replace(/</g, '\\u003c')}</script>`,
+        `<script>window.__VORTEX_CONTENT__=${serializedContent};window.__VORTEX_LANGUAGE__="${language}";window.__VORTEX_PREVIEW__=${!!req.cmsPreview};window.__VORTEX_BLOG__=${JSON.stringify(initialBlog).replace(/</g, '\\u003c')}</script>`,
       );
 
     if (robots.startsWith('noindex')) res.set('X-Robots-Tag', 'noindex, follow');
     if (statusCode === 503) res.set('Retry-After', '60');
     res.status(statusCode).set({ 'Content-Type': 'text/html; charset=utf-8', 'Content-Language': languageTag, 'Cache-Control': 'public, max-age=0, must-revalidate' });
+    if (req.cmsPreview) privacyHeaders(res);
+    else if (snapshot.revision !== undefined) res.set('X-Content-Revision', String(snapshot.revision));
+    if (snapshot.stale) res.set('Warning', '110 - "Response is stale"');
     res.vary('Accept-Encoding');
     // Compress server-rendered HTML including the hydration payload.
     if (req.acceptsEncodings('br', 'gzip', 'identity') === 'br') {
@@ -110,6 +137,7 @@ app.use(async (req, res, next) => {
       res.set('Content-Encoding', 'gzip').send(gzipSync(html));
     } else res.send(html);
   } catch (error) {
+    if (req.cmsPreview && error.status === 403) return previewError(res);
     next(error);
   }
 });

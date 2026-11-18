@@ -13,9 +13,11 @@ function ChevronRight() {
 export default function IntegrationPage() {
   const { slug } = useParams<{ slug: string }>();
   const { content, language, t } = useI18n();
-  const copy = getIntegrationCopy(language);
-  const integration = API_INTEGRATIONS.find((item) => item.slug === slug);
-  const page = integration ? copy.pages[integration.slug] : undefined;
+  const cms = content?.integration_pages;
+  const copy = cms ?? getIntegrationCopy(language);
+  const cmsPage = cms?.pages[slug ?? ''];
+  const integration = cms ? cms.visible && cmsPage?.visible ? {slug: cmsPage.slug, imageSrc: cmsPage.logo, images: [] as string[], sectionImageIndexes: [] as (number|null)[]} : undefined : API_INTEGRATIONS.find((item) => item.slug === slug);
+  const page = cms ? cmsPage : integration ? copy.pages[integration.slug] : undefined;
   const cards = content?.homepage.integrations_catalog_section.cards ?? [];
   const card = integration ? cards.find((item) => item.link_href === `/integrations/${integration.slug}`) : undefined;
 
@@ -29,7 +31,8 @@ export default function IntegrationPage() {
   }
 
   const sectionImageIndexes = page.sections.map((_, index) => integration.sectionImageIndexes ? integration.sectionImageIndexes[index] : index);
-  const galleryImages = integration.images.filter((_, index) => !sectionImageIndexes.includes(index));
+  const galleryImages = cmsPage ? cmsPage.gallery : integration.images.filter((_, index) => !sectionImageIndexes.includes(index)).map((image,index)=>({id:String(index),image,alt:page.title}));
+  const related = cms ? Object.values(cms.pages).filter(item=>item.visible).map(item=>({slug:item.slug,imageSrc:item.logo})) : API_INTEGRATIONS;
 
   return (
     <div className="integration-page">
@@ -55,7 +58,7 @@ export default function IntegrationPage() {
             </div>
           </div>
           <div className="integration-hero-logo">
-            <img src={integration.imageSrc} alt={card?.title ?? page.title} width="320" height="160" fetchPriority="high" />
+            {integration.imageSrc && <img src={integration.imageSrc} alt={cmsPage?.logo_alt ?? card?.title ?? page.title} width="320" height="160" fetchPriority="high" />}
           </div>
         </section>
 
@@ -77,25 +80,27 @@ export default function IntegrationPage() {
         <div className="integration-detail-sections">
           {page.sections.map((section, index) => {
             const imageIndex = sectionImageIndexes[index];
-            const image = imageIndex == null ? undefined : integration.images[imageIndex];
+            const cmsSection = cmsPage?.sections[index];
+            const image = cmsSection ? cmsSection.image : imageIndex == null ? undefined : integration.images[imageIndex];
+            const sectionId = cmsSection?.id ?? String(index);
             return (
-              <section className={`integration-detail-section${image ? ' has-illustration' : ''}`} aria-labelledby={`integration-detail-${index}`} key={`${section.title}-${index}`}>
-                <h2 id={`integration-detail-${index}`}>{section.title}</h2>
+              <section className={`integration-detail-section${image ? ' has-illustration' : ''}`} aria-labelledby={`integration-detail-${sectionId}`} key={sectionId}>
+                <h2 id={`integration-detail-${sectionId}`}>{section.title}</h2>
                 <div className="integration-detail-copy">
                   {section.paragraphs.map((paragraph, paragraphIndex) => <p key={`${paragraph}-${paragraphIndex}`}>{paragraph}</p>)}
                   {section.items.length > 0 && <ul>{section.items.map((item, itemIndex) => <li key={`${item}-${itemIndex}`}>{item}</li>)}</ul>}
                 </div>
-                {image && <figure className="integration-detail-illustration"><a href={image} target="_blank" rel="noopener noreferrer" aria-label={section.title}><img src={image} {...imageSize(image)} alt={section.title} loading="lazy" decoding="async" /></a></figure>}
+                {image && <figure className="integration-detail-illustration"><a href={image} target="_blank" rel="noopener noreferrer" aria-label={section.title}><img src={image} {...imageSize(image)} alt={cmsSection?.image_alt ?? section.title} loading="lazy" decoding="async" /></a></figure>}
               </section>
             );
           })}
         </div>
 
         {galleryImages.length > 0 && <div className="integration-screenshot-gallery">
-          {galleryImages.map((image, index) => (
-            <figure className="integration-detail-illustration" key={image}>
-              <a href={image} target="_blank" rel="noopener noreferrer" aria-label={page.title}>
-                <img src={image} {...imageSize(image)} alt={`${page.title} — ${index + 1}`} loading="lazy" decoding="async" />
+          {galleryImages.filter(image=>image.image).map((image) => (
+            <figure className="integration-detail-illustration" key={image.id ?? image.image}>
+              <a href={image.image} target="_blank" rel="noopener noreferrer" aria-label={page.title}>
+                <img src={image.image} {...imageSize(image.image)} alt={image.alt} loading="lazy" decoding="async" />
               </a>
             </figure>
           ))}
@@ -118,7 +123,7 @@ export default function IntegrationPage() {
       <section className="integration-related" aria-labelledby="integration-related-heading">
         <h2 id="integration-related-heading">{copy.relatedTitle}</h2>
         <div className="integration-related-grid">
-          {API_INTEGRATIONS.filter((item) => item.slug !== integration.slug).map((item) => {
+          {related.filter((item) => item.slug !== integration.slug).map((item) => {
             const relatedCard = cards.find((entry) => entry.link_href === `/integrations/${item.slug}`);
             const title = relatedCard?.title ?? copy.pages[item.slug]?.title ?? item.slug;
             return (

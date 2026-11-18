@@ -3,14 +3,18 @@ import { useLocation } from 'react-router-dom';
 import Link from '../default/LocalizedLink';
 import { useI18n } from '../../context/ContentContext';
 
-function ServicesDropdown({ onNavigate }: { onNavigate?: () => void }) {
+function ServicesDropdown({ onNavigate, label, items }: {
+  onNavigate?: () => void;
+  label?: string;
+  items?: { name: string; path: string }[];
+}) {
   const { t } = useI18n();
   const { pathname } = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLLIElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const panelId = useId();
-  const services = [
+  const services = items ?? [
     { name: t('nav.carService'), path: '/car-service' },
     { name: t('nav.websites'), path: '/websites' },
     { name: t('nav.dismantling'), path: '/auto-dismantling' },
@@ -60,7 +64,7 @@ function ServicesDropdown({ onNavigate }: { onNavigate?: () => void }) {
         aria-controls={panelId}
         onClick={() => setIsOpen((open) => !open)}
       >
-        {t('nav.services')}
+        {label ?? t('nav.services')}
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
           <path d="m4 6 4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>

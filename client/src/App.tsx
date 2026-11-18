@@ -9,12 +9,13 @@ type AppProps = {
   initialContent?: ContentCatalog | null;
   initialLanguage?: Language;
   initialBlog?: BlogResource | null;
+  initialPreview?: boolean;
 };
 
-function App({ initialContent = null, initialLanguage = 'ua', initialBlog = null }: AppProps) {
+function App({ initialContent = null, initialLanguage = 'ua', initialBlog = null, initialPreview = false }: AppProps) {
   return (
     <BrowserRouter>
-      <ContentProvider content={initialContent} initialLanguage={initialLanguage}>
+      <ContentProvider content={initialContent} initialLanguage={initialLanguage} preview={initialPreview}>
         <BlogProvider initialData={initialBlog}><AppRouter /></BlogProvider>
       </ContentProvider>
     </BrowserRouter>

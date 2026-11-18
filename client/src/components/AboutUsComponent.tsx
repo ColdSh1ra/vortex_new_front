@@ -36,12 +36,12 @@ function AboutUs() {
                                 </div>
                                 <div className={'display-flex align-content-center au-image-outer-wrapper'}>
                                     <div className="radial-bg-container" aria-hidden="true" />
-                                    <img src={block.about_us_image_path}
+                                    {block.about_us_image_path && <img src={block.about_us_image_path}
                                          className={' image'}
                                          width="160"
                                          height="160"
                                          alt=""
-                                         loading="lazy" />
+                                         loading="lazy" />}
                                 </div>
                             </div>
                         </div>

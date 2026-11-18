@@ -1,11 +1,15 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import type { ReactNode } from 'react';
-import { useLocation } from 'react-router-dom';
+import {useI18n} from '../context/ContentContext';
+import {blogUrl} from './urls';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { blogRoute } from './types';
 import type { BlogResource } from './types';
 const Context = createContext<{ resource: BlogResource | null; loading: boolean; retry: () => void } | null>(null);
 export function BlogProvider({ children, initialData = null }: { children: ReactNode; initialData?: BlogResource | null }) {
   const location = useLocation();
+  const navigate=useNavigate();
+  const {language}=useI18n();
   const route = blogRoute(location.pathname + location.search);
   const key = route?.key;
   const [resource, setResource] = useState(initialData);
@@ -17,7 +21,7 @@ export function BlogProvider({ children, initialData = null }: { children: React
     void import('./loadBlogRoute').then(({ loadBlogRoute }) => loadBlogRoute(location.pathname + location.search, {
       apiBaseUrl: import.meta.env.VITE_API_BASE_URL || '/api',
       demoEnabled: import.meta.env.VITE_BLOG_DEMO_MODE !== 'false', signal: controller.signal,
-    })).then(result => { if (active) setResource(result); }).catch(() => {
+    })).then(result => { if (active) {if(result?.redirect)navigate(blogUrl(language,result.redirect)+location.hash,{replace:true}); else setResource(result);} }).catch(() => {
       if (active) setResource({ key, status: 'error', mode: 'live' });
     });
     return () => { active = false; controller.abort(); };

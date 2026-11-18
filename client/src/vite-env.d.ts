@@ -5,6 +5,7 @@ import type { BlogResource } from './blog/types';
 
 declare global {
   interface Window {
+    __VORTEX_PREVIEW__?: boolean;
     __VORTEX_CONTENT__?: ContentCatalog;
     __VORTEX_LANGUAGE__?: Language;
     __VORTEX_BLOG__?: BlogResource | null;

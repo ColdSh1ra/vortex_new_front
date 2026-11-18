@@ -38,13 +38,13 @@ function ContactWorkerCard({ worker }: { worker: ContactWorker }) {
     <article className="contact-worker-card">
       <div className="contact-worker-profile">
         <h2 className="contact-worker-topic">{worker.contact_topic}</h2>
-        <img
+        {worker.photo_path && <img
           className="contact-worker-photo"
           src={worker.photo_path}
           {...imageSize(worker.photo_path)}
           decoding="async"
           alt={worker.full_name}
-        />
+        />}
         <div className="contact-worker-identity">
           <p className="contact-worker-name">{worker.full_name}</p>
           <p className="contact-worker-role">{worker.role}</p>

@@ -53,7 +53,7 @@ function CarServicePage() {
                     {block.note && <small>{block.note}</small>}
                   </div>
                 </div>
-                <img
+                {block.image_src && <img
                   className="car-service-image"
                   src={block.image_src}
                   alt={block.image_alt}
@@ -61,14 +61,14 @@ function CarServicePage() {
                   decoding="async"
                   fetchPriority={index === 0 ? 'high' : 'auto'}
                   loading={index === 0 ? 'eager' : 'lazy'}
-                />
+                />}
               </section>
             ))}
           </div>
         </>}
       </div>
       <div className="car-service-bottom-transition" aria-hidden="true" />
-      <PricingCalculatorComponent onTotalChange={setTotalSum} />
+      {content?.settings.pricing_calculator.visible !== false && <PricingCalculatorComponent onTotalChange={setTotalSum} />}
       <TrialRequestComponent totalSum={totalSum} requestedProduct="vortex" />
     </div>
   );

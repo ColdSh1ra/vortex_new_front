@@ -1,4 +1,5 @@
 import Link from '../components/default/LocalizedLink';
+import {useLocation} from 'react-router-dom';
 import { useI18n } from '../context/ContentContext';
 import { useBlog } from '../blog/BlogContext';
 import { blogText } from '../blog/copy';
@@ -43,26 +44,28 @@ export const DEMO_BLOG_ARTICLE: BlogArticle = {
 };
 
 export default function BlogArticlePage() {
-  const { language, t } = useI18n();
+  const { language, t, content } = useI18n();
+  const text=(key:string,values:Record<string,string|number>={})=>blogText(language,key,values,content);
   const { resource, loading } = useBlog();
+  const location=useLocation();
   if (loading || !resource || resource.status !== 'ready' || !resource.article) return <BlogStatus />;
   const article = resource.article;
   const copy = article.translations[language];
   return <div className="blog-page blog-article-page">
     <nav className="blog-breadcrumbs" aria-label={t('common.breadcrumbs')}><ol>
       <li><Link to="/">{t('common.home')}</Link></li><li aria-hidden="true">/</li>
-      <li><Link to={blogUrl(language)}>{blogText(language, 'nav.blog')}</Link></li><li aria-hidden="true">/</li><li aria-current="page">{copy.title}</li>
+      <li><Link to={blogUrl(language)}>{text('nav.blog')}</Link></li><li aria-hidden="true">/</li><li aria-current="page">{copy.title}</li>
     </ol></nav>
-    {resource.mode === 'demo' && <p className="blog-demo-note">{blogText(language, 'demo')} — {blogText(language, 'demoNote')}</p>}
+    {resource.mode === 'demo' && <p className="blog-demo-note">{text('demo')} — {text('demoNote')}</p>}
     <article>
-      <header className="blog-article-heading"><p className="blog-eyebrow">Vortex / {blogText(language, 'nav.blog')}</p><h1>{copy.title}</h1><p>{copy.excerpt}</p>
-        <div className="blog-article-meta"><span>{article.author.name}</span><span>{blogText(language, 'published')}: <time dateTime={article.publishedAt}>{formatBlogDate(article.publishedAt, language)}</time></span>
-          {article.updatedAt !== article.publishedAt && <span>{blogText(language, 'updated')}: <time dateTime={article.updatedAt}>{formatBlogDate(article.updatedAt, language)}</time></span>}
+      <header className="blog-article-heading"><p className="blog-eyebrow">Vortex / {text('nav.blog')}</p><h1>{copy.title}</h1><p>{copy.excerpt}</p>
+        <div className="blog-article-meta"><span>{article.author.name}</span><span>{text('published')}: <time dateTime={article.publishedAt}>{formatBlogDate(article.publishedAt, language)}</time></span>
+          {article.updatedAt !== article.publishedAt && <span>{text('updated')}: <time dateTime={article.updatedAt}>{formatBlogDate(article.updatedAt, language)}</time></span>}
         </div>
       </header>
-      <nav className="blog-toc" aria-labelledby="blog-toc-heading"><h2 id="blog-toc-heading">{blogText(language, 'contents')}</h2><ol>{copy.sections.map(section => <li key={section.id}><Link to={`${blogUrl(language, article.slug)}#${section.id}`}>{section.heading}<span aria-hidden="true">↓</span></Link></li>)}</ol></nav>
+      <nav className="blog-toc" aria-labelledby="blog-toc-heading"><h2 id="blog-toc-heading">{text('contents')}</h2><ol>{copy.sections.map(section => <li key={section.id}><Link to={`${resource.mode==='preview' ? location.pathname+location.search : blogUrl(language,article.slug)}#${section.id}`}>{section.heading}<span aria-hidden="true">↓</span></Link></li>)}</ol></nav>
       <div className="blog-article-body">{copy.sections.map(section => <section id={section.id} key={section.id} aria-labelledby={`${section.id}-heading`}><h2 id={`${section.id}-heading`}>{section.heading}</h2>{section.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}</section>)}</div>
     </article>
-    <Link className="blog-back" to={blogUrl(language)}>← {blogText(language, 'back')}</Link>
+    <Link className="blog-back" to={blogUrl(language)}>← {text('back')}</Link>
   </div>;
 }

@@ -1,3 +1,4 @@
+import StickyHeading from './default/StickyHeading';
 import ChevronCircle from './default/ChevronCircle';
 import {useInitialContent} from '../context/ContentContext';
 
@@ -8,7 +9,7 @@ function VortexAudienceComponent() {
         <section className="section-container vortex-audience-section">
             {content && (
                 <div className="vortex-audience-wrapper">
-                    <h2>{content.section_title}</h2>
+                    <StickyHeading>{content.section_title}</StickyHeading>
                     <div className="audience-grid">
                         {content.cards.map((card, index) => (
                             <article className="audience-card" key={`${card.title}-${index}`}>
@@ -16,7 +17,7 @@ function VortexAudienceComponent() {
                                     <span>{index + 1}/</span>
                                     <h3>{card.title}</h3>
                                     <p>{card.description}</p>
-                                    <a href="#trial-request" className="audience-cta">
+                                    <a href={card.cta_target ?? "#trial-request"} className="audience-cta">
                                         {card.cta_text}
                                         <ChevronCircle />
                                     </a>

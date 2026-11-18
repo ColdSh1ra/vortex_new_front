@@ -12,7 +12,7 @@ export const WEBSITE_PLANS = [
   { id: 'maximum', price: 500 },
 ] as const;
 
-export type WebsitePackage = typeof WEBSITE_PLANS[number]['id'];
+export type WebsitePackage = string;
 export type WebsiteService = typeof WEBSITE_SERVICES[number];
 
 export function isWebsiteServiceIncluded(plan: WebsitePackage, service: WebsiteService) {

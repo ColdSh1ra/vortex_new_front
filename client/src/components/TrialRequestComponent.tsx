@@ -1,3 +1,5 @@
+import StickyHeading from './default/StickyHeading';
+import {formatCmsPrice} from '../utils/cmsContent';
 import ChevronCircle from './default/ChevronCircle';
 import { useLocation } from 'react-router-dom';
 import { useI18n } from '../context/ContentContext';
@@ -31,7 +33,9 @@ function TrialRequestComponent({
   showCalculatedPrice = true,
   websitePackage,
 }: TrialRequestComponentProps) {
-  const { t, language } = useI18n();
+  const { t, language, content } = useI18n();
+  const license=content?.tecdoc?.license;
+  const cta=content?.tecdoc?.cta;
   const isTecDoc = requestedProduct === 'tecdoc';
   const pageLocation = useLocation();
   const sourcePage = pageLocation.pathname.startsWith('/car-service') ? 'car-service'
@@ -162,27 +166,27 @@ function TrialRequestComponent({
   return (
     <section className="section-container trial-request-section" id="trial-request">
       <div className="trial-request-wrapper">
-        {isTecDoc ? <aside className="tecdoc-license-price">
-          <p className="tecdoc-eyebrow">TecDoc Web Catalog 3.0</p>
-          <p className="tecdoc-license-price-value">25€</p>
-          <p className="tecdoc-license-price-period">{t('tecdoc.pricePeriod')}</p>
-          <p className="tecdoc-license-price-terms">{t('tecdoc.paymentTerms')}</p>
-          <p className="tecdoc-license-price-trial">{t('tecdoc.trialTerms')}</p>
-        </aside> : <div className="trial-request-visual" aria-hidden="true">
+        {isTecDoc ? (license?.visible !== false && <aside className="tecdoc-license-price">
+          <p className="tecdoc-eyebrow">{license?.eyebrow ?? "TecDoc Web Catalog 3.0"}</p>
+          <p className="tecdoc-license-price-value">{license ? formatCmsPrice(license.price, license.currency, language) : '25€'}</p>
+          <p className="tecdoc-license-price-period">{license?.price_period ?? t('tecdoc.pricePeriod')}</p>
+          <p className="tecdoc-license-price-terms">{license?.payment_terms ?? t('tecdoc.paymentTerms')}</p>
+          <p className="tecdoc-license-price-trial">{license?.trial_terms ?? t('tecdoc.trialTerms')}</p>
+        </aside>) : <div className="trial-request-visual" aria-hidden="true">
           <img className={'logo-spin-animation'} src="/imgs/vortex_logo_large.svg" alt="" loading="lazy" decoding="async" />
         </div>}
 
         <div className="trial-request-content">
           <header>
-            <h2>{t(isTecDoc ? 'tecdoc.buyLicense' : 'trial.title')}</h2>
-            <p>{t(isTecDoc ? 'tecdoc.formDescription' : 'trial.subtitle')}</p>
+            <StickyHeading>{isTecDoc ? cta?.title ?? t('tecdoc.buyLicense') : t('trial.title')}</StickyHeading>
+            <p>{isTecDoc ? cta?.text ?? t('tecdoc.formDescription') : t('trial.subtitle')}</p>
           </header>
 
           <div className="trial-request-info">
-            <h3>{t(isTecDoc ? 'tecdoc.trialBadge' : 'trial.infoTitle')}</h3>
+            <h3>{isTecDoc ? license?.trial_badge ?? t('tecdoc.trialBadge') : t('trial.infoTitle')}</h3>
             <p>{t(isTecDoc ? 'tecdoc.trialTerms' : 'trial.info')}</p>
             {showCalculatedPrice && !isTecDoc && <strong>{t('trial.price', { total: safeTotal })}</strong>}
-            {websitePackage && <strong aria-live="polite">{t('websites.selectedPlan', { name: t(`websites.plan.${websitePackage}`) })}</strong>}
+            {websitePackage && <strong aria-live="polite">{t('websites.selectedPlan', { name: content?.websites ? content.websites.pricing.tariffs.find(tariff=>tariff.id===websitePackage)?.name ?? '' : t(`websites.plan.${websitePackage}`) })}</strong>}
           </div>
 
           <form onSubmit={handleSubmit} aria-label={t(isTecDoc ? 'tecdoc.buyLicense' : 'trial.title')} noValidate>

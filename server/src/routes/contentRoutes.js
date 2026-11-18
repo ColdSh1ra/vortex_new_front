@@ -1,9 +1,8 @@
 const express = require('express');
-const contentController = require('../controllers/contentController');
-
+const controller = require('../controllers/contentController');
 const router = express.Router();
-
-router.get('/content', contentController.getContent);
-router.post('/content', contentController.postContent);
-
+router.get('/content', controller.getContent);
+router.get('/content/media', controller.getMedia);
+router.post('/content/preview/end', controller.endPreview);
+router.all(['/content', '/content/media'], (req, res) => res.status(405).set('Allow', 'GET, HEAD').json({ code: 'METHOD_NOT_ALLOWED' }));
 module.exports = router;

@@ -1,14 +1,25 @@
-import { BlogApiError, parseBlogArticle, parseBlogList, requestBlog } from './api';
+import { BlogApiError, parseBlogArticle, parseBlogPreviewArticle, parseBlogList, requestBlog } from './api';
 import { BLOG_PAGE_SIZE, BLOG_SLUG, blogRoute } from './types';
 import type { BlogArticle, BlogResource } from './types';
 import { demoList, demoSummaries } from './demo';
 import { DEMO_BLOG_ARTICLE } from '../pages/BlogArticlePage';
 import { LANGUAGES } from '../types/content';
 
-export async function loadBlogRoute(url: string, options: { apiBaseUrl?: string; demoEnabled: boolean; signal?: AbortSignal }): Promise<BlogResource | null> {
+export async function loadBlogRoute(url: string, options: { apiBaseUrl?: string; demoEnabled: boolean; signal?: AbortSignal; previewArticle?: unknown; previewForbidden?: boolean; checkRedirects?: boolean }): Promise<BlogResource | null> {
   const route = blogRoute(url);
   if (!route) return null;
-  const missing: BlogResource = { key: route.key, status: 'not-found', mode: 'live' };
+  const missing: BlogResource = { key: route.key, status: 'not-found', mode: route.previewId ? 'preview' : 'live' };
+  if(route.previewId){
+    if(options.previewForbidden)return {...missing,status:'error'};
+    if(options.previewArticle===null)return missing;
+    try {
+      const body=options.previewArticle !== undefined ? {data:options.previewArticle} : await requestBlog('preview/'+encodeURIComponent(route.previewId),options.apiBaseUrl ?? '/api',options.signal) as {data:unknown};
+      return {key:route.key,status:'ready',mode:'preview',article:parseBlogPreviewArticle(body.data)};
+    } catch(error) {
+      if(options.signal?.aborted)throw error;
+      return {...missing,status:error instanceof BlogApiError&&error.status===404?'not-found':'error'};
+    }
+  }
   if (route.page === 0 || (route.slug !== null && !BLOG_SLUG.test(route.slug))) return missing;
   try {
     if (!options.apiBaseUrl) throw new BlogApiError(503, 'BLOG_API_NOT_CONFIGURED');
@@ -24,7 +35,19 @@ export async function loadBlogRoute(url: string, options: { apiBaseUrl?: string;
     return { key: route.key, status: 'ready', mode: 'live', list };
   } catch (error) {
     if (options.signal?.aborted) throw error;
-    if (error instanceof BlogApiError && error.status === 404) return missing;
+    if (error instanceof BlogApiError && error.status === 404) {
+      if(route.slug && options.checkRedirects !== false && options.apiBaseUrl) {
+        try {
+          const body=await requestBlog('redirects/'+encodeURIComponent(route.slug),options.apiBaseUrl,options.signal) as {data?:{from?:unknown;to?:unknown}};
+          if(body?.data?.from !== route.slug || typeof body.data.to!=='string' || !BLOG_SLUG.test(body.data.to) || body.data.to===route.slug)throw new BlogApiError(502,'BLOG_INVALID_RESPONSE');
+          return {...missing,redirect:body.data.to};
+        } catch(redirectError) {
+          if(options.signal?.aborted)throw redirectError;
+          if(!(redirectError instanceof BlogApiError && redirectError.status===404))return {...missing,status:'error'};
+        }
+      }
+      return missing;
+    }
     if (!(options.demoEnabled && error instanceof BlogApiError && error.code === 'BLOG_API_NOT_CONFIGURED')) return { key: route.key, status: 'error', mode: 'live' };
     if (route.slug !== null) {
       const summary = demoSummaries().find(item => item.slug === route.slug);

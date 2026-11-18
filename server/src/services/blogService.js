@@ -1,22 +1,35 @@
 const PAGE_SIZE = 16;
 const SITEMAP_SIZE = 1000;
 const LANGUAGES = ['ua', 'cz', 'sk', 'en', 'pl'];
-const configured = () => Boolean(process.env.BLOG_API_BASE_URL);
+const configured = () => Boolean(process.env.BLOG_API_BASE_URL || process.env.CMS_API_BASE_URL);
 class BlogServiceError extends Error {
   constructor(status, code) { super(code); this.status = status; this.code = code; }
 }
 function apiBaseUrl() {
   if (!configured()) throw new BlogServiceError(503, 'BLOG_API_NOT_CONFIGURED');
-  const url = new URL(process.env.BLOG_API_BASE_URL);
+  const url = new URL(process.env.BLOG_API_BASE_URL || process.env.CMS_API_BASE_URL);
   if (!['https:', 'http:'].includes(url.protocol)) throw new BlogServiceError(503, 'BLOG_API_CONFIGURATION_ERROR');
   return url.href.replace(/\/$/, '');
 }
-async function request(path) {
+async function request(path, { previewToken } = {}) {
   let response;
-  try { response = await fetch(`${apiBaseUrl()}/blog/${path}`, { headers: { Accept: 'application/json' }, signal: AbortSignal.timeout(8000) }); }
+  if (previewToken !== undefined && !/^[a-f0-9]{48}$/i.test(previewToken)) throw new BlogServiceError(403, 'PREVIEW_FORBIDDEN');
+  const url = new URL(`${apiBaseUrl()}/blog/${path}`);
+  if (previewToken) url.searchParams.set('token', previewToken);
+  try { response = await fetch(url.href, { headers: { Accept: 'application/json' }, redirect: 'error', signal: AbortSignal.timeout(8000) }); }
   catch (error) { if (error instanceof BlogServiceError) throw error; throw new BlogServiceError(503, 'BLOG_API_UNAVAILABLE'); }
-  if (!response.ok) throw new BlogServiceError(response.status === 404 ? 404 : 503, response.status === 404 ? 'BLOG_NOT_FOUND' : 'BLOG_API_UNAVAILABLE');
+  if (!response.ok) throw new BlogServiceError(response.status === 403 && previewToken ? 403 : response.status === 404 ? 404 : 503, response.status === 403 && previewToken ? 'PREVIEW_FORBIDDEN' : response.status === 404 ? 'BLOG_NOT_FOUND' : 'BLOG_API_UNAVAILABLE');
   try { return await response.json(); } catch { throw new BlogServiceError(502, 'BLOG_INVALID_RESPONSE'); }
+}
+async function redirectForSlug(slug) {
+  if (!configured()) return null;
+  try {
+    const result = await request(`redirects/${encodeURIComponent(slug)}`);
+    const target = result?.data;
+    if (!target || target.from !== slug || typeof target.to !== 'string' || target.to.length > 160
+      || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(target.to) || target.to === slug) throw new BlogServiceError(502, 'BLOG_INVALID_RESPONSE');
+    return target;
+  } catch (error) { if (error.status === 404) return null; throw error; }
 }
 async function sitemapPage(page = 1) {
   if (!configured()) return null;
@@ -33,4 +46,4 @@ async function sitemapPage(page = 1) {
   }
   return result;
 }
-module.exports = { request, apiBaseUrl, configured, sitemapPage, PAGE_SIZE, SITEMAP_SIZE, BlogServiceError };
+module.exports = { request, apiBaseUrl, configured, sitemapPage, redirectForSlug, PAGE_SIZE, SITEMAP_SIZE, BlogServiceError };

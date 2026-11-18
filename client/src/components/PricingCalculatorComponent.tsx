@@ -1,3 +1,4 @@
+import StickyHeading from './default/StickyHeading';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useI18n } from '../context/ContentContext';
 import SelectComponent from './default/SelectComponent';
@@ -108,7 +109,7 @@ function PricingCalculatorComponent({ onTotalChange }: PricingCalculatorComponen
 
       {settings && (
         <div className="pricing-calculator-wrapper">
-          <h2 className="pricing-calculator-title">{t('nav.pricing')}</h2>
+          <StickyHeading className="pricing-calculator-title">{t('nav.pricing')}</StickyHeading>
 
           <div className="pricing-calculator-grid">
             <div className="pricing-calculator-options">

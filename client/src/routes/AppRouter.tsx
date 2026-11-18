@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Link from '../components/default/LocalizedLink';
 import HeaderMain from '../components/layout/HeaderMain';
+import CmsPreviewNotice from '../components/layout/CmsPreviewNotice';
 import FooterMain from '../components/layout/FooterMain';
 import ContactPage from '../pages/ContactPage';
 import FaqPage from '../pages/FaqPage';
@@ -75,6 +76,7 @@ function AppRouter() {
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/preview/:id" element={<BlogArticlePage />} />
             <Route path="/blog/:slug" element={<BlogArticlePage />} />
             <Route path="*" element={<div className="blog-page blog-status"><h1>{blogText(language, 'missing')}</h1><Link to="/">{t('common.home')}</Link></div>} />
           </Routes>
@@ -82,6 +84,7 @@ function AppRouter() {
         {isBlog && <div className="blog-bottom-transition" aria-hidden="true" />}
       </main>
       <FooterMain />
+      <CmsPreviewNotice />
     </div>
   );
 }

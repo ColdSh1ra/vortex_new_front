@@ -1,3 +1,4 @@
+import StickyHeading from '../default/StickyHeading';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
 import { useI18n } from '../../context/ContentContext';
@@ -32,7 +33,8 @@ function pixelPath(points: readonly SyncPoint[], width: number, height: number) 
 }
 
 function VortexSyncComponent() {
-  const { t } = useI18n();
+  const { t, content } = useI18n();
+  const section=content?.homepage.sync_section;
   const visualRef = useRef<HTMLDivElement>(null);
   const [size, setSize] = useState({ width: 0, height: 0 });
   const [active, setActive] = useState(false);
@@ -73,9 +75,9 @@ function VortexSyncComponent() {
     <section className="section-container vortex-sync-section">
       <div className="vortex-sync-grid">
         <article className="vortex-sync-copy">
-          <h2>{t('sync.title')}</h2>
+          <StickyHeading>{section?.title ?? t('sync.title')}</StickyHeading>
           <div className="vortex-sync-description">
-            {['first', 'second', 'third', 'fourth'].map((key) => <p key={key}>{t(`sync.${key}`)}</p>)}
+            {(section?.paragraphs ?? ['first','second','third','fourth'].map(key=>t(`sync.${key}`))).map((p,index)=><p key={index}>{p}</p>)}
           </div>
         </article>
 
@@ -83,17 +85,18 @@ function VortexSyncComponent() {
           className="vortex-sync-visual"
           ref={visualRef}
           role="img"
-          aria-label={t('sync.alt')}
+          aria-label={section?.image_alt ?? t('sync.alt')}
           data-active={active}
           data-ready={size.width > 0 && size.height > 0}
         >
+          {section?.image ? <img src={section.image} alt={section.image_alt} style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"contain",padding:24}}/> : <>
           <div className="vortex-sync-client vortex-sync-client-left">
             <img src="/imgs/3dicons_premium/3dicons-boy-right-premium.png" alt="" width="148" height="148" />
-            <span>{t('sync.client', { number: 1 })}</span>
+            <span>{section ? section.client_label.replace('{number}','1') : t('sync.client', {number:1})}</span>
           </div>
 
           <div className="vortex-sync-exchange" aria-hidden="true">
-            <strong>{t('sync.title')}</strong>
+            <strong>{section?.title ?? t('sync.title')}</strong>
             <svg className="vortex-sync-trails" viewBox={`0 0 ${size.width || 1} ${size.height || 1}`} preserveAspectRatio="none" fill="none">
               {SYNC_ROUTES.map((route) => (
                 <path
@@ -127,8 +130,8 @@ function VortexSyncComponent() {
 
           <div className="vortex-sync-client vortex-sync-client-right">
             <img src="/imgs/3dicons_premium/3dicons-boy-left-premium.png" alt="" width="148" height="148" />
-            <span>{t('sync.client', { number: 2 })}</span>
-          </div>
+            <span>{section ? section.client_label.replace('{number}','2') : t('sync.client', {number:2})}</span>
+          </div></>}
         </div>
       </div>
     </section>

@@ -1,3 +1,4 @@
+import {isCmsTargetVisible,visibleCmsMenu} from '../../utils/cmsContent';
 import { useI18n } from '../../context/ContentContext';
 import Link from '../default/LocalizedLink';
 import CircleButtonLink from "../default/CircleButtonLink";
@@ -14,8 +15,10 @@ function getFooterMenuLinks(t: (key: string) => string, blogPath: string) { retu
     { name: t("nav.contacts"), path: "/contact" },
 ]; }
 function FooterMain() {
-    const { t, language } = useI18n();
-    const footerMenuLinks = getFooterMenuLinks(t, blogUrl(language));
+    const { t, language, content } = useI18n();
+    const layout=content?.layout;
+    const socials=layout ? layout.socials.map(item=>({name:item.label,url:item.url,imageSrc:item.icon})) : SOCIAL_LINKS;
+    const footerMenuLinks = layout ? visibleCmsMenu(content, layout.footer_menu).map(item=>({name:item.label,path:item.target!})) : getFooterMenuLinks(t, blogUrl(language)).filter(item=>isCmsTargetVisible(content,item.path));
     const currentYear = new Date().getFullYear();
 
     return (
@@ -30,7 +33,7 @@ function FooterMain() {
 
                 <div className="footer-logo-container">
                     <Link to={'/'}>
-                        <img src="/imgs/vortex-logo-115.svg" alt="Vortex" />
+                        {(layout ? layout.footer_logo : true) && <img src={layout ? layout.footer_logo : "/imgs/vortex-logo-115.svg"} alt={layout ? layout.footer_logo_alt : "Vortex"} />}
                     </Link>
                 </div>
                 <div className={'footer-menu-points display-flex flex-column gap-40'}>
@@ -45,7 +48,7 @@ function FooterMain() {
                         {t('common.copyright', { year: currentYear })}
                     </div>
                     <div className={'footer-additional-links display-flex gap-20'}>
-                        {SOCIAL_LINKS.map((sl, index) => (
+                        {socials.map((sl, index) => (
                             <CircleButtonLink
                                 linkPath={sl.url}
                                 label={sl.name}
@@ -54,11 +57,11 @@ function FooterMain() {
                             </CircleButtonLink>
                         ))}
                     </div>
-                    <div className={'privacy-policy-link'}>
-                        <Link className={'nav-link basic-mp'} to={'/privacy-policy'}>
-                            {t('common.privacy')}
+                    {isCmsTargetVisible(content, layout?.privacy_link ?? '/privacy-policy') && <div className={'privacy-policy-link'}>
+                        <Link className={'nav-link basic-mp'} to={layout?.privacy_link ?? '/privacy-policy'}>
+                            {layout?.privacy_text ?? t('common.privacy')}
                         </Link>
-                    </div>
+                    </div>}
                 </div>
             </footer>
         </div>

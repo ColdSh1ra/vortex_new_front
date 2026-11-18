@@ -190,46 +190,14 @@
     width: 320px;
   }
 }
-/* Section titles remain within their own content, below the mobile navigation. */
-.section-container .home-sticky-title{
+.section-container .home-sticky-title {
   align-self: stretch;
-  isolation: isolate;
   padding: 16px 12px 24px;
-  position: sticky;
   text-align: center;
-  top: var(--site-header-clearance, 90px);
-  transition: top 400ms ease;
   width: 100%;
-  z-index: 30;
 }
-
-.section-container .home-sticky-title::before{
-  background: linear-gradient(180deg, rgb(12 18 30 / .16), rgb(12 18 30 / .06) 62%, rgb(12 18 30 / 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  content: '';
-  inset: 0 -12px -4px;
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-  transition: opacity 400ms ease;
-  z-index: -1;
-}
-
-.section-container .home-sticky-title[data-stuck="true"]::before{
-  opacity: 1;
-}
-
 @media (max-width: 768px) {
-  .section-container .home-sticky-title{
-    padding: 12px 8px 18px;
-    top: var(--site-header-clearance, 76px);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .section-container .home-sticky-title { transition: none; }
-  .section-container .home-sticky-title::before { transition: none; }
+  .section-container .home-sticky-title { padding: 12px 8px 18px; }
 }
 
 /* --- ABOUT US CONTENT STYLES --- */

@@ -1,7 +1,20 @@
 const express = require('express');
 const blog = require('../services/blogService');
+const { clearPreview } = require('../middleware/cmsPreview');
 const router = express.Router();
 const pageNumber = value => typeof value === 'string' && /^[1-9]\d{0,5}$/.test(value) ? Number(value) : null;
+router.get('/preview/:id', async (req, res) => {
+  res.set({ 'Cache-Control': 'private, no-store', 'X-Robots-Tag': 'noindex, nofollow, noarchive' });
+  if (!req.cmsPreview) return res.status(403).json({ code: 'PREVIEW_FORBIDDEN' });
+  if (!/^[a-zA-Z0-9_-]{1,100}$/.test(req.params.id)) return res.status(404).json({ code: 'BLOG_NOT_FOUND' });
+  try { res.json(await blog.request(`preview/${encodeURIComponent(req.params.id)}`, { previewToken: req.cmsPreview.token })); }
+  catch (error) { if (error.status === 403) clearPreview(req, res); res.status(error.status || 503).json({ code: error.code || 'BLOG_API_UNAVAILABLE' }); }
+});
+router.get('/redirects/:slug', async (req, res) => {
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(req.params.slug) || req.params.slug.length > 160) return res.status(404).json({ code: 'BLOG_NOT_FOUND' });
+  try { const result = await blog.redirectForSlug(req.params.slug); if (!result) return res.status(404).json({ code: 'BLOG_NOT_FOUND' }); res.set('Cache-Control', 'no-cache').json({ data: result }); }
+  catch (error) { res.status(error.status || 503).json({ code: error.code || 'BLOG_API_UNAVAILABLE' }); }
+});
 router.get('/posts', async (req, res) => {
   const page = pageNumber(req.query.page ?? '1');
   if (!page || (req.query.limit !== undefined && req.query.limit !== '16')) return res.status(400).json({ code: 'BLOG_INVALID_QUERY' });

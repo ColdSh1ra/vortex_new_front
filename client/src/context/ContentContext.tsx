@@ -17,12 +17,14 @@ const ContentContext = createContext<{
   language: Language;
   setLanguage: (language: Language) => void;
   failed: boolean;
+  preview: boolean;
 } | null>(null);
 
-export function ContentProvider({ children, content = null }: {
+export function ContentProvider({ children, content = null, preview = false }: {
   children: ReactNode;
   content?: ContentCatalog | null;
   initialLanguage?: Language;
+  preview?: boolean;
 }) {
   const [catalog, setCatalog] = useState(content);
   const location = useLocation();
@@ -50,7 +52,7 @@ export function ContentProvider({ children, content = null }: {
     try { localStorage.setItem('vortex-language', next); } catch { /* Optional persistence. */ }
   };
 
-  return <ContentContext.Provider value={{ catalog, language, setLanguage, failed }}>{children}</ContentContext.Provider>;
+  return <ContentContext.Provider value={{ catalog, language, setLanguage, failed, preview }}>{children}</ContentContext.Provider>;
 }
 
 export function useI18n() {
@@ -58,9 +60,9 @@ export function useI18n() {
   if (!context) throw new Error('useI18n requires ContentProvider');
   const content = context.catalog?.[context.language] ?? context.catalog?.ua ?? null;
   const t = (key: string, values: Record<string, string | number> = {}) => {
-    const template = interfaceTranslations[context.language][key]
+    const template = content?.ui[key]
+      ?? interfaceTranslations[context.language][key]
       ?? (key === 'nav.blog' ? blogCopy[context.language]['nav.blog'] : undefined)
-      ?? content?.ui[key]
       ?? interfaceTranslations.ua[key]
       ?? context.catalog?.ua.ui[key]
       ?? (fallbackContent.ui as Record<string, string>)[key]

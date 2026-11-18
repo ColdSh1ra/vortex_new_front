@@ -13,5 +13,6 @@ export function blogUrl(language: Language, slug?: string, page = 1) {
   return localizedUrl(`/blog${slug ? `/${encodeURIComponent(slug)}` : ''}${query ? `?${query}` : ''}`, language);
 }
 export function formatBlogDate(value: string, language: Language) {
+  if(!Number.isFinite(Date.parse(value)))return '';
   return new Intl.DateTimeFormat(LANGUAGE_CODES[language], { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(value));
 }

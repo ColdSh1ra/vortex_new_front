@@ -1,3 +1,4 @@
+import StickyHeading from './default/StickyHeading';
 import { imageSize } from '../utils/imageSize';
 import { localizedUrl } from '../seo/urls';
 import { useState } from 'react';
@@ -25,7 +26,7 @@ function ClientTestimonialsComponent() {
       <div className="radial-bg-container" aria-hidden="true" />
       {content && (
         <div className="client-testimonials-wrapper">
-          <h2>{content.section_title}</h2>
+          <StickyHeading>{content.section_title}</StickyHeading>
 
           <div className="testimonials-controls">
             <button

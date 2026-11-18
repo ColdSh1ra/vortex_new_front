@@ -138,7 +138,7 @@ p.paragraph {
   color: var(--orange-bg-color);
   cursor: pointer;
   display: flex;
-  gap: 20px;
+  gap: 0;
   height: 44px;
   justify-content: space-between;
   left: 50%;
@@ -149,36 +149,99 @@ p.paragraph {
   top: 0;
   transform: translateX(-50%) scale(.78);
   transform-origin: center top;
-  transition: opacity 400ms ease, transform 400ms cubic-bezier(.2, .7, .2, 1), visibility 0s 400ms;
+  transition: width 400ms ease, opacity 400ms ease, transform 400ms cubic-bezier(.2, .7, .2, 1), visibility 0s 400ms;
   visibility: hidden;
-  width: 172px;
+  width: min(126px, 100%);
+  max-width: 100%;
   z-index: 3;
 }
 
-.header-compact-trigger img { display: block; height: 24px; width: 92px; }
+.header-compact-trigger img { display: block; flex: 0 0 92px; height: 24px; width: 92px; }
+.header-compact-trigger[data-has-heading="true"] { width: min(calc(142px + var(--header-title-width, 0px)), 100%); }
+.header-title-measure {
+  font: 600 16px/20px "Fira Sans Condensed", sans-serif;
+  left: -10000px;
+  pointer-events: none;
+  position: fixed;
+  visibility: hidden;
+  white-space: nowrap;
+  width: max-content;
+}
+.header-compact-title-slot {
+  display: block;
+  flex: 1 1 auto;
+  height: 20px;
+  margin-left: 0;
+  min-width: 0;
+  overflow: hidden;
+  position: relative;
+  transition: margin-left 400ms ease;
+}
+.header-compact-trigger[data-has-heading="true"] .header-compact-title-slot { margin-left: 16px; }
+.header-section-title {
+  color: #fff;
+  display: block;
+  font: 600 16px/20px "Fira Sans Condensed", sans-serif;
+  inset: 0;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.header-section-title-current { animation: header-title-first 400ms ease both; }
+.header-section-title-current.is-replacing { animation: header-title-reveal 400ms ease both; }
+.header-section-title-leaving { animation: header-title-leave 400ms ease both; }
+@keyframes header-title-first { from { opacity: 0; } to { opacity: 1; } }
+@keyframes header-title-reveal { from { clip-path: inset(100% 0 0); } to { clip-path: inset(0); } }
+@keyframes header-title-leave { from { transform: translateY(0); } to { transform: translateY(-110%); } }
 .header-compact-trigger:focus-visible { outline: 2px solid var(--orange-bg-color); outline-offset: 4px; }
 .header-compact-trigger:hover { background: var(--blue-color-4); }
 .header-is-compact .header-compact-trigger {
   opacity: 1;
   pointer-events: auto;
   transform: translateX(-50%) scale(1);
-  transition: opacity 400ms ease, transform 400ms cubic-bezier(.2, .7, .2, 1), visibility 0s;
+  transition: width 400ms ease, opacity 400ms ease, transform 400ms cubic-bezier(.2, .7, .2, 1), visibility 0s;
   visibility: visible;
-}
-
-.header-reveal-from-up:not(.header-is-compact) .header-full {
-  animation: header-slide-in 400ms cubic-bezier(.2, .7, .2, 1) both;
-}
-
-@keyframes header-slide-in {
-  from { opacity: 0; transform: translateY(calc(-100% - 20px)); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
 .mobile-menu-panel { display: none; }
 
+.cms-preview-notice {
+  align-items: center;
+  background: var(--blue-color-4);
+  border: 1px solid var(--orange-bg-color);
+  border-radius: 12px;
+  bottom: 16px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  gap: 12px;
+  left: 50%;
+  max-width: calc(100% - 32px);
+  padding: 12px 16px;
+  position: fixed;
+  transform: translateX(-50%);
+  width: max-content;
+  z-index: 110;
+}
+.cms-preview-notice button {
+  background: var(--orange-bg-color);
+  border: 0;
+  border-radius: 6px;
+  color: var(--grey-dark-text);
+  cursor: pointer;
+  font: inherit;
+  padding: 8px 12px;
+}
+.cms-preview-notice button:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+.cms-preview-notice button:disabled { cursor: wait; opacity: .65; }
+@media print { .cms-preview-notice { display: none; } }
+
 @media (prefers-reduced-motion: reduce) {
-  .header-full, .header-compact-trigger { animation: none !important; transition: none !important; }
+  .header-full, .header-compact-trigger, .header-compact-title-slot, .header-section-title { animation: none !important; transition: none !important; }
+  .header-section-title-leaving { display: none; }
 }
 
 .desktop-header-content {
@@ -278,17 +341,6 @@ p.paragraph {
   flex-shrink: 0;
   height: 20px;
   width: 20px;
-}
-
-.sticky-heading-sentinel {
-  display: block;
-  flex: 0 0 0;
-  height: 0;
-  margin: 0;
-  padding: 0;
-  pointer-events: none;
-  visibility: hidden;
-  width: 0;
 }
 
 .chevron-circle {

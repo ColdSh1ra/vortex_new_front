@@ -1,3 +1,4 @@
+import { CmsTecDocPage } from './cms/CmsPages';
 import ChevronCircle from '../components/default/ChevronCircle';
 import Link from '../components/default/LocalizedLink';
 import TrialRequestComponent from '../components/TrialRequestComponent';
@@ -14,7 +15,7 @@ const catalogStatistics = [
   { value: '160+', key: 'vehicles', suffix: 'thousand' },
 ];
 
-function TecDocLicensePage() {
+function LegacyTecDocLicensePage() {
   const { t } = useI18n();
 
   return (
@@ -102,4 +103,4 @@ function TecDocLicensePage() {
   );
 }
 
-export default TecDocLicensePage;
+export default function TecDocLicensePage() { const {content}=useI18n(); return content?.tecdoc ? <CmsTecDocPage data={content.tecdoc}/> : <LegacyTecDocLicensePage/>; }

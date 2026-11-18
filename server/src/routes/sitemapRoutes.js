@@ -1,9 +1,11 @@
 const express = require('express');
 const blog = require('../services/blogService');
+const contentService = require('../services/contentService');
+const { publicPaths } = require('../services/contentVisibility');
 const { origin, languageCodes, staticPaths, localizedUrl } = require('../seo/site');
 const router = express.Router();
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
-const xml = (res, content) => res.type('application/xml').set('Cache-Control', 'public, max-age=60').send(`<?xml version="1.0" encoding="UTF-8"?>${content}`);
+const xml = (res, content) => res.type('application/xml').set('Cache-Control', res.get('Cache-Control')?.includes('private') ? 'private, no-store' : 'public, max-age=60').send(`<?xml version="1.0" encoding="UTF-8"?>${content}`);
 const urlset = items => `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${items.join('')}</urlset>`;
 const blogPath = (slug, page = 1) => `/blog${slug ? `/${slug}` : page > 1 ? `?page=${page}` : ''}`;
 function variants(path, updatedAt) {
@@ -21,14 +23,17 @@ router.get('/sitemap.xml', async (req, res) => {
   xml(res, `<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${files.map(file => `<sitemap><loc>${origin}/sitemaps/${file}</loc></sitemap>`).join('')}</sitemapindex>`);
 });
 router.get('/sitemaps/pages.xml', async (req, res) => {
+  try {
   const result = await blogIndex();
-  const items = staticPaths.flatMap(path => variants(path));
+  const catalog = await contentService.fetchContent();
+  const items = publicPaths(catalog.ua, staticPaths).flatMap(path => variants(path));
   if (result) {
     const pages = Math.max(1, Math.ceil(result.pagination.total / blog.PAGE_SIZE));
     if (pages * Object.keys(languageCodes).length + items.length > 50000) return unavailable(res);
     for (let page = 1; page <= pages; page++) items.push(...variants(blogPath(undefined, page)));
   }
   xml(res, urlset(items));
+  } catch { unavailable(res); }
 });
 router.get('/sitemaps/blog-:page.xml', async (req, res) => {
   const page = /^[1-9]\d{0,5}$/.test(req.params.page) ? Number(req.params.page) : 0;

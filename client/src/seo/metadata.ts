@@ -1,3 +1,4 @@
+import {isCmsTargetVisible} from '../utils/cmsContent';
 import type { BlogResource } from '../blog/types';
 import { blogRoute } from '../blog/types';
 import { blogText } from '../blog/copy';
@@ -49,7 +50,7 @@ function plainText(html: string) {
 }
 
 function translatedLabel(language: Language, content: VortexContent | undefined, key: string, fallback: string) {
-  return interfaceTranslations[language][key] ?? content?.ui[key] ?? fallback;
+  return content?.ui[key] ?? interfaceTranslations[language][key] ?? fallback;
 }
 
 function languageAlternates(path: string) {
@@ -92,11 +93,12 @@ function buildGraph(seo: PageSeo, content: VortexContent | undefined, pageType: 
   seo.schemas = [{ '@context': 'https://schema.org', '@graph': graph }];
 }
 
-export function buildPageSeo(url: string, currentLanguage: Language, resource: BlogResource | null, catalog: ContentCatalog | null = null): PageSeo {
+export function buildPageSeo(url: string, currentLanguage: Language, resource: BlogResource | null, catalog: ContentCatalog | null = null, preview = false): PageSeo {
   const parsed = new URL(url, SITE_URL);
   const pathname = parsed.pathname.replace(/\/+$/, '') || '/';
   const language = parsed.searchParams.has('lang') ? languageFromSearch(parsed.search) : currentLanguage;
   const content = catalog?.[language];
+  const text=(key:string,values:Record<string,string|number>={})=>blogText(language,key,values,content);
   const label = (key: string, fallback: string) => translatedLabel(language, content, key, fallback);
   const fallback = seoCopy[language]['/'];
   const seo: PageSeo = {
@@ -118,13 +120,13 @@ export function buildPageSeo(url: string, currentLanguage: Language, resource: B
     const slug = resource?.article?.slug ?? route.slug ?? undefined;
     alternatePath = blogUrl('ua', slug, page);
     seo.canonical = absolute(blogUrl(language, slug, page));
-    seo.title = `${blogText(language, 'title')}${page > 1 ? ` — ${blogText(language, 'page', { page })}` : ''}`;
-    seo.description = blogText(language, 'intro');
-    breadcrumbs.push(homeCrumb, { name: blogText(language, 'nav.blog'), url: absolute(blogUrl(language)) });
+    seo.title = `${text('title')}${page > 1 ? ` — ${text('page', { page })}` : ''}`;
+    seo.description = text('intro');
+    breadcrumbs.push(homeCrumb, { name: text('nav.blog'), url: absolute(blogUrl(language)) });
     if (!resource || resource.status !== 'ready') {
       seo.status = resource?.status === 'not-found' ? 404 : 503;
       seo.robots = 'noindex,follow';
-      seo.title = `${blogText(language, resource?.status === 'not-found' ? 'missing' : 'error')} | Vortex`;
+      seo.title = `${text(resource?.status === 'not-found' ? 'missing' : 'error')} | Vortex`;
     } else {
       if (resource.mode === 'demo') seo.robots = 'noindex,follow';
       if (resource.article) {
@@ -164,7 +166,9 @@ export function buildPageSeo(url: string, currentLanguage: Language, resource: B
     }
   } else {
     const copy = seoCopy[language][pathname];
-    const integration = getApiIntegration(pathname.match(/^\/integrations\/([^/]+)$/)?.[1]);
+    const slug = pathname.match(/^\/integrations\/([^/]+)$/)?.[1];
+    const cmsPage = content?.integration_pages?.pages[slug ?? ''];
+    const integration = content?.integration_pages ? cmsPage ? {slug:cmsPage.slug} : undefined : getApiIntegration(slug);
     if (copy) {
       seo.title = copy.title;
       seo.description = copy.description;
@@ -191,7 +195,7 @@ export function buildPageSeo(url: string, currentLanguage: Language, resource: B
           acceptedAnswer: { '@type': 'Answer', text: plainText(item.answer) } }));
       } else if (pathname !== '/privacy-policy') serviceName = pageName;
     } else if (integration) {
-      const copy = getIntegrationCopy(language);
+      const copy = content?.integration_pages ?? getIntegrationCopy(language);
       const page = copy.pages[integration.slug];
       const card = content?.homepage.integrations_catalog_section.cards.find(item => item.link_href === `/integrations/${integration.slug}`);
       seo.title = `${page.title} — ${copy.eyebrow} | Vortex`;
@@ -201,10 +205,28 @@ export function buildPageSeo(url: string, currentLanguage: Language, resource: B
     } else {
       seo.status = 404;
       seo.robots = 'noindex,follow';
-      seo.title = `${blogText(language, 'missing')} | Vortex`;
+      seo.title = `${text('missing')} | Vortex`;
     }
   }
 
+  const cmsSeoKey:Record<string,'home'|'faq'|'contacts'|'car_service'|'websites'|'autoshrot'|'tecdoc'|'privacy_policy'|'blog'>={'/':'home','/faq':'faq','/contact':'contacts','/car-service':'car_service','/websites':'websites','/auto-dismantling':'autoshrot','/tecdoc-license':'tecdoc','/privacy-policy':'privacy_policy','/blog':'blog'};
+  const integrationSlug=pathname.match(/^\/integrations\/([^/]+)$/)?.[1];
+  const customSeo=integrationSlug ? content?.seo?.integrations?.[integrationSlug] : content?.seo?.[cmsSeoKey[pathname]];
+  if(customSeo && seo.status===200 && !resource?.article) {
+    seo.title=customSeo.title;
+    seo.description=customSeo.description;
+    seo.image=customSeo.share_image ? absolute(customSeo.share_image) : '';
+    seo.imageAlt=customSeo.share_image_alt;
+    delete seo.imageWidth; delete seo.imageHeight;
+    if(customSeo.indexing!=='index')seo.robots='noindex,follow';
+  }
+  if(!isCmsTargetVisible(content,pathname)) {
+    seo.status=404;seo.robots='noindex,follow';seo.title=text('missing')+' | Vortex';serviceName=undefined;
+  }
+  if(preview || route?.previewId || resource?.mode==='preview') {
+    seo.robots='noindex,nofollow,noarchive';
+    if(route?.previewId)seo.canonical=localizedAbsolute(pathname,language);
+  }
   if (serviceName) {
     pageProperties.mainEntity = { '@id': `${seo.canonical}#service` };
     extra.push({ '@type': 'Service', '@id': `${seo.canonical}#service`, name: serviceName, serviceType: serviceName,

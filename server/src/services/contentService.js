@@ -1,17 +1,10 @@
-const contentModel = require('../models/contentModel');
-const sanitizeContentHtml = require('../security/sanitizeContent');
+const cms = require('./cmsService');
 
-async function fetchContent() {
-  return sanitizeContentHtml(await contentModel.getContent());
-}
-
-async function updateContent(newContent) {
-  const sanitizedContent = await sanitizeContentHtml(newContent);
-
-  return contentModel.saveContent(sanitizedContent);
+async function fetchContent(options) {
+  return (await cms.snapshot(options)).content;
 }
 
 module.exports = {
   fetchContent,
-  updateContent,
+  snapshot: cms.snapshot,
 };

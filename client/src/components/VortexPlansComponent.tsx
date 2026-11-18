@@ -1,3 +1,4 @@
+import StickyHeading from './default/StickyHeading';
 import { useI18n, LANGUAGE_TAGS } from '../context/ContentContext';
 import type { Language, VortexPricingPlan } from '../types/content';
 import Link from './default/LocalizedLink';
@@ -12,7 +13,6 @@ const billingLabels: Record<Language, Record<VortexPricingPlan['billing_period']
 };
 
 function planTarget(target: string) {
-  if (target === 'form:trial' || target === 'form:demo') return '/#trial-request';
   if (target.startsWith('#')) return `/${target}`;
   if (target.startsWith('/') && !target.startsWith('//')) return target;
   if (/^(https:\/\/|mailto:|tel:)/i.test(target)) return target;
@@ -42,7 +42,7 @@ export default function VortexPlansComponent({ onPlanSelect }: VortexPlansProps)
     <section className="section-container vortex-plans-section" id="vortex-plans" aria-labelledby="vortex-plans-heading">
       <div className="vortex-plans-wrapper">
         <header className="vortex-plans-intro">
-          <h2 id="vortex-plans-heading">{section.section_title}</h2>
+          <StickyHeading id="vortex-plans-heading">{section.section_title}</StickyHeading>
           {section.section_description && <p>{section.section_description}</p>}
         </header>
         <div className="vortex-plans-grid">
@@ -52,7 +52,7 @@ export default function VortexPlansComponent({ onPlanSelect }: VortexPlansProps)
               {plan.description && <p className="vortex-plan-description">{plan.description}</p>}
               {plan.price !== null && <p className="vortex-plan-price">
                 <strong>{formatPrice.format(plan.price)} <span>{plan.currency}</span></strong>
-                <span>{billingLabels[language][plan.billing_period]}</span>
+                <span>{section.billing_labels?.[plan.billing_period] ?? billingLabels[language][plan.billing_period]}</span>
               </p>}
               {plan.features.length > 0 && <ul>{plan.features.map((feature, index) => <li key={`${plan.id}-${index}`}>{feature}</li>)}</ul>}
               <Link className="vortex-plan-choose" to={planTarget(plan.cta_target)!} onClick={() => onPlanSelect?.(plan.id)}>
