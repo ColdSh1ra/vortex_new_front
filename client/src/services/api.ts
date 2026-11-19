@@ -5,11 +5,17 @@ const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '/api').replace(/\/$/
 
 export type RequestedProduct = 'vortex' | 'tecdoc';
 
-export type TrialRequestLocation = {
-  latitude: number;
-  longitude: number;
-  accuracy?: number;
+/** What the visitor picked in the pricing calculator. The server reprices it from CMS data. */
+export type CalculatorSelection = {
+  manager_count: number;
+  store_count: number;
+  integrations: string[];
 };
+
+export type UtmParams = Partial<Record<
+  'utm_source' | 'utm_medium' | 'utm_campaign' | 'utm_term' | 'utm_content',
+  string
+>>;
 
 export type TrialRequestPayload = {
   source_page: 'home' | 'contact' | 'car-service' | 'websites' | 'auto-dismantling' | 'tecdoc-license';
@@ -20,7 +26,13 @@ export type TrialRequestPayload = {
   phone: string;
   total_sum: number;
   recaptcha_token: string;
-  location: TrialRequestLocation | null;
+  calculator?: CalculatorSelection;
+  utm?: UtmParams;
+  page_path: string;
+  /** Time since the form was shown; very fast submissions are dropped as bots. */
+  elapsed_ms: number;
+  /** Honeypot: hidden from people, so any value means a bot filled it. */
+  company_site: string;
 };
 
 export async function getContent(): Promise<ContentCatalog> {

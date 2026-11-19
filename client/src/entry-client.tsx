@@ -4,6 +4,9 @@ import App from './App';
 import './styles/base.css';
 import { loadPageStyles } from './styles/loadPageStyles';
 import { languageFromSearch } from './seo/urls';
+import { captureUtm } from './utils/utm';
+
+captureUtm();
 
 async function startApplication() {
   await loadPageStyles(window.location.pathname);

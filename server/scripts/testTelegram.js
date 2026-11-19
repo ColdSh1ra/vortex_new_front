@@ -5,7 +5,6 @@ async function main() {
     name: 'Anton Best Developer ',
     phone: '+380951880392',
     total_sum: 1488,
-    location: null,
   });
 
   console.log('Тестове сповіщення доставлено налаштованим одержувачам.');

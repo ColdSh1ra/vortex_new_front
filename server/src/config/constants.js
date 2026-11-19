@@ -13,6 +13,12 @@ const CLIENT_ORIGINS = (process.env.CLIENT_ORIGINS || 'http://localhost:5173,htt
   .split(',')
   .map((origin) => origin.trim())
   .filter(Boolean);
+// Director accepts site form submissions on the same API root as /content.
+const DIRECTOR_SITE_API = (process.env.DIRECTOR_SITE_API || process.env.CMS_API_BASE_URL || '')
+  .trim()
+  .replace(/\/+$/, '');
+// Server-only HMAC secret. Never expose it through VITE_* or write it to logs.
+const DIRECTOR_FORM_SECRET = (process.env.DIRECTOR_FORM_SECRET || '').trim();
 
 module.exports = {
   PORT,
@@ -21,4 +27,6 @@ module.exports = {
   RECAPTCHA_SECRET_KEY,
   RECAPTCHA_ALLOWED_HOSTNAMES,
   CLIENT_ORIGINS,
+  DIRECTOR_SITE_API,
+  DIRECTOR_FORM_SECRET,
 };

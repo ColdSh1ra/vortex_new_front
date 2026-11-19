@@ -3,18 +3,30 @@ import {formatCmsPrice} from '../utils/cmsContent';
 import ChevronCircle from './default/ChevronCircle';
 import { useLocation } from 'react-router-dom';
 import { useI18n } from '../context/ContentContext';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { submitTrialRequest } from '../services/api';
-import type { RequestedProduct, TrialRequestLocation } from '../services/api';
+import type { CalculatorSelection, RequestedProduct } from '../services/api';
 import InputComponent from './default/InputComponent';
 import RecaptchaCheckbox from './default/RecaptchaCheckbox';
 import type { WebsitePackage } from '../data/websitePlans';
+import { getUtm } from '../utils/utm';
 
 type TrialRequestComponentProps = {
   totalSum: number;
   requestedProduct?: RequestedProduct;
   showCalculatedPrice?: boolean;
   websitePackage?: WebsitePackage;
+  calculator?: CalculatorSelection;
+};
+
+// Off-screen rather than display:none, so simple bots still see and fill it.
+const HONEYPOT_STYLE: React.CSSProperties = {
+  position: 'absolute',
+  left: '-10000px',
+  top: 'auto',
+  width: '1px',
+  height: '1px',
+  overflow: 'hidden',
 };
 
 type FormErrors = {
@@ -32,6 +44,7 @@ function TrialRequestComponent({
   requestedProduct = 'vortex',
   showCalculatedPrice = true,
   websitePackage,
+  calculator,
 }: TrialRequestComponentProps) {
   const { t, language, content } = useI18n();
   const license=content?.tecdoc?.license;
@@ -46,8 +59,8 @@ function TrialRequestComponent({
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
-  const [location, setLocation] = useState<TrialRequestLocation | null>(null);
-  const [locationStatus, setLocationStatus] = useState('');
+  const [companySite, setCompanySite] = useState('');
+  const formShownAt = useRef(Date.now());
   const [errors, setErrors] = useState<FormErrors>({});
   const [submitStatus, setSubmitStatus] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -61,34 +74,6 @@ function TrialRequestComponent({
       ? Math.round(numericTotal * 100) / 100
       : 0;
   }, [totalSum]);
-
-  const requestLocation = () => {
-    if (!navigator.geolocation) {
-      setLocationStatus('trial.locationUnsupported');
-      return;
-    }
-
-    setLocationStatus('trial.locationWaiting');
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        setLocation({
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude,
-          accuracy: position.coords.accuracy,
-        });
-        setLocationStatus('trial.locationSuccess');
-      },
-      () => {
-        setLocation(null);
-        setLocationStatus('trial.locationDenied');
-      },
-      {
-        enableHighAccuracy: false,
-        timeout: 7000,
-        maximumAge: 300000,
-      },
-    );
-  };
 
   const validate = () => {
     const nextErrors: FormErrors = {};
@@ -141,13 +126,15 @@ function TrialRequestComponent({
         phone: validation.normalizedPhone,
         total_sum: safeTotal,
         recaptcha_token: recaptchaToken,
-        location,
+        ...(calculator && !isTecDoc && !websitePackage ? { calculator } : {}),
+        utm: getUtm(),
+        page_path: pageLocation.pathname,
+        elapsed_ms: Math.max(0, Date.now() - formShownAt.current),
+        company_site: companySite,
       });
 
       setName('');
       setPhone('');
-      setLocation(null);
-      setLocationStatus('');
       setErrors({});
       setSubmitStatus(isTecDoc ? 'tecdoc.success' : 'trial.success');
       setRecaptchaResetSignal((value) => value + 1);
@@ -217,12 +204,18 @@ function TrialRequestComponent({
               onChange={(event) => setPhone(event.target.value)}
             />
 
-            {!isTecDoc && <div className="trial-request-location">
-              <button type="button" onClick={requestLocation}>
-                {t(location ? 'trial.locationAdded' : 'trial.location')}
-              </button>
-              {locationStatus && <span aria-live="polite">{t(locationStatus)}</span>}
-            </div>}
+            <div style={HONEYPOT_STYLE} aria-hidden="true">
+              <label htmlFor="trial-request-company-site">Company website</label>
+              <input
+                id="trial-request-company-site"
+                name="company_site"
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+                value={companySite}
+                onChange={(event) => setCompanySite(event.target.value)}
+              />
+            </div>
 
             <RecaptchaCheckbox
               key={language}

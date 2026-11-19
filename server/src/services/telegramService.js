@@ -5,12 +5,19 @@ function formatMoney(value) {
   return Number.isInteger(value) ? String(value) : value.toFixed(2);
 }
 
+function directorLines(link) {
+  if (!link) return [];
+  const label = { ticket: 'Тікет у Director', lead: 'Лід у Director', repeat: 'Повторна заявка, лід у Director' }[link.kind];
+  return [`${label}: ${link.url}`];
+}
+
 function buildTelegramMessage({
   requested_product,
   name,
   phone,
   total_sum,
-  location,
+  calculator,
+  director_link,
   source_page = 'home',
   language = 'ua',
   website_package,
@@ -20,7 +27,10 @@ function buildTelegramMessage({
   content_revision,
 }) {
   if (requested_product === 'tecdoc') {
-    return `Нова заявка на ліцензію TecDoc\nІм'я: ${name}, Номер телефону: ${phone}`;
+    return [
+      `Нова заявка на ліцензію TecDoc\nІм'я: ${name}, Номер телефону: ${phone}`,
+      ...directorLines(director_link),
+    ].join('\n');
   }
 
   if (requested_product !== 'vortex') {
@@ -35,7 +45,7 @@ function buildTelegramMessage({
     `Мова: ${language}`,
     `Ім'я: <b>${name}</b>`,
     `Номер телефону: <b>${phone}</b>`,
-    `Розрахована сума: ${total_currency ? `${total_currency} ` : '$'}${formatMoney(total_sum)}`,
+    `Розрахована сума: ${total_currency ? `${total_currency} ` : calculator?.currency || '$'}${formatMoney(total_sum)}`,
   ];
 
   if (website_package) {
@@ -45,12 +55,17 @@ function buildTelegramMessage({
     if (content_revision !== undefined) messageLines.push(`Ревізія контенту: ${content_revision}`);
   }
 
-  if (location) {
-    const latitude = location.latitude.toFixed(6);
-    const longitude = location.longitude.toFixed(6);
-    messageLines.push(`Локація: https://maps.google.com/?q=${latitude},${longitude}`);
+  if (calculator) {
+    const currency = calculator.currency || '$';
+    const integrations = calculator.integrations
+      .map(({ label, price, billing_period }) => `${label} (${currency}${formatMoney(price)}${billing_period === 'monthly' ? '/міс.' : ' разово'})`)
+      .join(', ');
+    messageLines.push(`Менеджерів: ${calculator.manager_count}, магазинів: ${calculator.store_count}`);
+    messageLines.push(`Інтеграції: ${integrations || 'немає'}`);
+    messageLines.push(`Щомісяця: ${currency}${formatMoney(calculator.monthly)}, разово: ${currency}${formatMoney(calculator.one_time)}`);
   }
 
+  messageLines.push(...directorLines(director_link));
   return messageLines.join('\n');
 }
 

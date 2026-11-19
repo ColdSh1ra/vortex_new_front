@@ -11,13 +11,13 @@ import IntegrationsCatalogComponent from "../components/integrations/Integration
 import VortexSyncComponent from "../components/integrations/VortexSyncComponent";
 import CarServiceOverviewComponent from "../components/CarServiceOverviewComponent";
 import WebsiteDevelopmentComponent from "../components/WebsiteDevelopmentComponent";
-import PricingCalculatorComponent from "../components/PricingCalculatorComponent";
+import PricingCalculatorComponent, { type PricingCalculatorChoice } from "../components/PricingCalculatorComponent";
 import VortexPlansComponent from "../components/VortexPlansComponent";
 import TrialRequestComponent from "../components/TrialRequestComponent";
 
 
 function MainPage() {
-  const [totalSum, setTotalSum] = useState(0);
+  const [calculatorChoice, setCalculatorChoice] = useState<PricingCalculatorChoice | null>(null);
   const {content}=useI18n();
   const home=content?.homepage;
 
@@ -37,8 +37,8 @@ function MainPage() {
           {home?.car_service_section?.visible !== false && <CarServiceOverviewComponent/>}
           {home?.website_development_section?.visible !== false && <WebsiteDevelopmentComponent/>}
           <VortexPlansComponent/>
-          {content?.settings.pricing_calculator.visible !== false && <PricingCalculatorComponent onTotalChange={setTotalSum}/>}
-          <TrialRequestComponent totalSum={totalSum} requestedProduct="vortex"/>
+          {content?.settings.pricing_calculator.visible !== false && <PricingCalculatorComponent onSelectionChange={setCalculatorChoice}/>}
+          <TrialRequestComponent totalSum={calculatorChoice?.total ?? 0} calculator={calculatorChoice?.selection} requestedProduct="vortex"/>
       </>
   );
 }

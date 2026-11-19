@@ -1,10 +1,16 @@
 import StickyHeading from './default/StickyHeading';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useI18n } from '../context/ContentContext';
 import SelectComponent from './default/SelectComponent';
+import type { CalculatorSelection } from '../services/api';
+
+export type PricingCalculatorChoice = {
+  selection: CalculatorSelection;
+  total: number;
+};
 
 type PricingCalculatorComponentProps = {
-  onTotalChange?: (total: number) => void;
+  onSelectionChange?: (choice: PricingCalculatorChoice) => void;
 };
 
 type CounterProps = {
@@ -41,7 +47,7 @@ function QuantityCounter({ id, label, value, onChange }: CounterProps) {
   );
 }
 
-function PricingCalculatorComponent({ onTotalChange }: PricingCalculatorComponentProps) {
+function PricingCalculatorComponent({ onSelectionChange }: PricingCalculatorComponentProps) {
   const { content, t } = useI18n();
   const settings = content?.settings.pricing_calculator;
   const initialSettings = settings;
@@ -52,7 +58,6 @@ function PricingCalculatorComponent({ onTotalChange }: PricingCalculatorComponen
       .filter((integration) => integration.selected_by_default)
       .map((integration) => integration.id) ?? [],
   );
-  const sectionRef = useRef<HTMLElement>(null);
 
 
   const totals = useMemo(() => {
@@ -89,12 +94,18 @@ function PricingCalculatorComponent({ onTotalChange }: PricingCalculatorComponen
       return;
     }
 
-    onTotalChange?.(totals.total);
-    sectionRef.current?.dispatchEvent(new CustomEvent('pricing-total-change', {
-      bubbles: true,
-      detail: totals,
-    }));
-  }, [onTotalChange, settings, totals]);
+    onSelectionChange?.({
+      selection: {
+        manager_count: managerCount,
+        store_count: storeCount,
+        // Only ids that exist in the current settings; the server reprices them from CMS.
+        integrations: settings.integrations
+          .filter((integration) => selectedIntegrations.includes(integration.id))
+          .map((integration) => integration.id),
+      },
+      total: totals.total,
+    });
+  }, [managerCount, onSelectionChange, selectedIntegrations, settings, storeCount, totals]);
 
   const toggleIntegration = (integrationId: string, selected: boolean) => {
     setSelectedIntegrations((current) => (
@@ -105,7 +116,7 @@ function PricingCalculatorComponent({ onTotalChange }: PricingCalculatorComponen
   };
 
   return (
-    <section className="section-container pricing-calculator-section" id="pricing" ref={sectionRef}>
+    <section className="section-container pricing-calculator-section" id="pricing">
 
       {settings && (
         <div className="pricing-calculator-wrapper">

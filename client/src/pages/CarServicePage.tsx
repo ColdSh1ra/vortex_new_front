@@ -1,13 +1,13 @@
 import { imageSize } from '../utils/imageSize';
 import { useState } from 'react';
 import Link from '../components/default/LocalizedLink';
-import PricingCalculatorComponent from '../components/PricingCalculatorComponent';
+import PricingCalculatorComponent, { type PricingCalculatorChoice } from '../components/PricingCalculatorComponent';
 import TrialRequestComponent from '../components/TrialRequestComponent';
 import { useI18n } from '../context/ContentContext';
 
 function CarServicePage() {
   const { content, t } = useI18n();
-  const [totalSum, setTotalSum] = useState(0);
+  const [calculatorChoice, setCalculatorChoice] = useState<PricingCalculatorChoice | null>(null);
   const page = content?.car_service;
 
   return (
@@ -68,8 +68,8 @@ function CarServicePage() {
         </>}
       </div>
       <div className="car-service-bottom-transition" aria-hidden="true" />
-      {content?.settings.pricing_calculator.visible !== false && <PricingCalculatorComponent onTotalChange={setTotalSum} />}
-      <TrialRequestComponent totalSum={totalSum} requestedProduct="vortex" />
+      {content?.settings.pricing_calculator.visible !== false && <PricingCalculatorComponent onSelectionChange={setCalculatorChoice}/>}
+      <TrialRequestComponent totalSum={calculatorChoice?.total ?? 0} calculator={calculatorChoice?.selection} requestedProduct="vortex"/>
     </div>
   );
 }
