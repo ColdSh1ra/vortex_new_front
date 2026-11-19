@@ -89,6 +89,25 @@ npm run dev
 
 This runs both servers in parallel.
 
+## Testing Site Requests (Telegram + Director)
+
+Requests from the site form go to Telegram and, when `DIRECTOR_FORM_SECRET` is set in
+`server/.env`, to Director (`POST {DIRECTOR_SITE_API}/forms/submit`) as a lead + ticket.
+
+```bash
+npm run requests:list                       # all scenarios and tags
+npm run requests:dry                        # run all of them; nothing is sent, shows what would be sent
+npm run requests:dry -- --only=calculator   # by id or tag (calculator, pages, phones, bots, invalid, ...)
+npm run requests:live -- --only=calc-default             # real Telegram + Director from server/.env
+npm run requests:live -- --fresh --allow-prod            # new phone numbers; needed for a non-dev Director host
+npm run director:check -- --allow-prod      # Director contract checks (signature, replay, 400/401)
+npm run request:real                        # one real request: Ascention night, $50/month, $0 one-time, no add-ons
+npm run request:real -- --phone="+380 67 123 45 67"      # the same with your phone number
+```
+
+The scenarios go through the real `/api/trial-request` route; only reCAPTCHA is stubbed.
+Live runs create test leads and tickets in Director and post to the Telegram chat.
+
 ## Learning Notes
 
 - React routing is defined in `client/src/routes/AppRouter.tsx`.

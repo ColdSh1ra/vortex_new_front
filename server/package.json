@@ -7,7 +7,12 @@
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
     "telegram:test": "node scripts/testTelegram.js",
-    "test": "node --test test/*.test.js"
+    "test": "node --test test/*.test.js",
+    "requests:list": "node scripts/testRequests.js --list",
+    "requests:dry": "node scripts/testRequests.js",
+    "requests:live": "node scripts/testRequests.js --live",
+    "director:check": "node scripts/testDirectorContract.js",
+    "request:real": "node scripts/testRequests.js --live --allow-prod --only=real-request"
   },
   "keywords": [],
   "author": "",

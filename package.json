@@ -21,7 +21,12 @@
     "client": "npm --prefix client run dev",
     "client:build": "npm --prefix client run build",
     "build": "npm run client:build",
-    "start:ssr": "npm run build && npm run server:start"
+    "start:ssr": "npm run build && npm run server:start",
+    "requests:list": "npm --prefix server run requests:list --",
+    "requests:dry": "npm --prefix server run requests:dry --",
+    "requests:live": "npm --prefix server run requests:live --",
+    "director:check": "npm --prefix server run director:check --",
+    "request:real": "npm --prefix server run request:real --"
   },
   "keywords": [],
   "author": "",
