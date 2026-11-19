@@ -20,7 +20,7 @@ function isContactPath(pathname: string) {
   return pathname === '/contact' || pathname.startsWith('/contact/');
 }
 
-export function loadPageStyles(pathname: string) {
+function importPageStyles(pathname: string): Promise<unknown> {
   if (pathname === '/privacy-policy' || pathname === '/privacy-policy/') {
     privacyStylesPromise ??= import('./privacy.css');
     return privacyStylesPromise;
@@ -70,4 +70,18 @@ export function loadPageStyles(pathname: string) {
   pricingStylesPromise ??= import('./pricing-calculator.css');
   trialRequestStylesPromise ??= import('./trial-request.css');
   return Promise.all([mainStylesPromise, vortexPlansStylesPromise, pricingStylesPromise, trialRequestStylesPromise]);
+}
+
+// Paths whose styles have finished loading (or failed: the page is shown anyway).
+const readyPaths = new Set<string>();
+
+/** True once every stylesheet the path needs is applied; the server always has them inlined. */
+export function arePageStylesReady(pathname: string) {
+  return typeof window === 'undefined' || readyPaths.has(pathname);
+}
+
+export function loadPageStyles(pathname: string) {
+  const styles = importPageStyles(pathname);
+  styles.then(() => readyPaths.add(pathname), () => readyPaths.add(pathname));
+  return styles;
 }

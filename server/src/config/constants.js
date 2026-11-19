@@ -19,6 +19,9 @@ const DIRECTOR_SITE_API = (process.env.DIRECTOR_SITE_API || process.env.CMS_API_
   .replace(/\/+$/, '');
 // Server-only HMAC secret. Never expose it through VITE_* or write it to logs.
 const DIRECTOR_FORM_SECRET = (process.env.DIRECTOR_FORM_SECRET || '').trim();
+// Behind nginx every request comes from 127.0.0.1; set TRUST_PROXY=loopback so req.ip
+// is the visitor's address (rate limits, reCAPTCHA). Empty = no proxy (local dev).
+const TRUST_PROXY = (process.env.TRUST_PROXY || '').trim();
 
 module.exports = {
   PORT,
@@ -29,4 +32,5 @@ module.exports = {
   CLIENT_ORIGINS,
   DIRECTOR_SITE_API,
   DIRECTOR_FORM_SECRET,
+  TRUST_PROXY,
 };

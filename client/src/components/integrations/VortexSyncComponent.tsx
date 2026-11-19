@@ -2,8 +2,10 @@ import StickyHeading from '../default/StickyHeading';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
 import { useI18n } from '../../context/ContentContext';
-import { SYNC_ROUTES, SYNC_VIEWBOX } from './syncRoutes';
-import type { SyncPoint } from './syncRoutes';
+import { SYNC_LANE_Y, SYNC_ROUTES, SYNC_VIEWBOX } from './syncRoutes';
+import type { SyncPoint, SyncRoute } from './syncRoutes';
+
+type SyncDirection = SyncRoute['direction'];
 
 // Separate outbound and return roads avoid head-on traffic. Two spaced dots
 // share each road; negative delays make both directions busy from the first frame.
@@ -23,10 +25,19 @@ const TRANSFERS = SYNC_ROUTES.flatMap((route, routeIndex) => {
   }));
 });
 
-function pixelPath(points: readonly SyncPoint[], width: number, height: number) {
+// Outbound and return traffic meet the clients on one horizontal line. Each
+// direction gets its own lane, a few pixels above or below it, so arriving and
+// departing stripes run side by side instead of on top of each other.
+function laneOffset(direction: SyncDirection, width: number) {
+  const half = width < 560 ? 5 : 7;
+  return direction === 'to-right' ? -half : half;
+}
+
+function pixelPath(points: readonly SyncPoint[], width: number, height: number, direction: SyncDirection) {
+  const offset = laneOffset(direction, width);
   return points.map((point, index) => {
     const x = (point.x * width / SYNC_VIEWBOX.width).toFixed(3);
-    const y = (point.y * height / SYNC_VIEWBOX.height).toFixed(3);
+    const y = (point.y * height / SYNC_VIEWBOX.height + (point.y === SYNC_LANE_Y ? offset : 0)).toFixed(3);
     if (index === 0) return `M ${x} ${y}`;
     return point.x === points[index - 1].x ? `V ${y}` : `H ${x}`;
   }).join(' ');
@@ -61,7 +72,7 @@ function VortexSyncComponent() {
   // their heads aligned even when the responsive panel changes aspect ratio.
   const transfers = useMemo(() => TRANSFERS.map((transfer) => ({
     ...transfer,
-    path: pixelPath(transfer.points, size.width, size.height),
+    path: pixelPath(transfer.points, size.width, size.height, transfer.direction),
   })), [size.width, size.height]);
 
   const transferStyle = (transfer: typeof transfers[number]): CSSProperties => ({
@@ -102,7 +113,7 @@ function VortexSyncComponent() {
                 <path
                   key={route.id}
                   className={`vortex-sync-road vortex-sync-road-${route.direction}`}
-                  d={pixelPath(route.points, size.width, size.height)}
+                  d={pixelPath(route.points, size.width, size.height, route.direction)}
                   vectorEffect="non-scaling-stroke"
                 />
               ))}

@@ -8,6 +8,19 @@ const vehicleFields = ['vin', 'year', 'engine', 'body', 'fuel', 'cost'];
 const sections = ['vehicle', 'statuses', 'parts'];
 const methods = ['manual', 'diagram', 'groups'];
 
+// Vector illustrations. The previous 3D renders are still in the same folder:
+// set USE_RASTER_ART to true to switch back to them.
+const USE_RASTER_ART = false;
+const art = USE_RASTER_ART ? {
+  hero: { src: '/imgs/auto-dismantling/dismantling-car-premium.png', width: 1536, height: 1024 },
+  record: { src: '/imgs/auto-dismantling/vehicle-record-premium.png', width: 1199, height: 1312 },
+  parts: { src: '/imgs/auto-dismantling/parts-catalog-premium.png', width: 1536, height: 1024 },
+} : {
+  hero: { src: '/imgs/auto-dismantling/dismantling-car.svg', width: 684, height: 480 },
+  record: { src: '/imgs/auto-dismantling/vehicle-record.svg', width: 420, height: 530 },
+  parts: { src: '/imgs/auto-dismantling/parts-catalog.svg', width: 480, height: 384 },
+};
+
 function LegacyAutoDismantlingPage() {
   const { t } = useI18n();
 
@@ -33,7 +46,7 @@ function LegacyAutoDismantlingPage() {
             </a>
           </div>
           <div className="dismantling-hero-art">
-            <img src="/imgs/auto-dismantling/dismantling-car-premium.png" alt="" width="1536" height="1024" fetchPriority="high" />
+            <img src={art.hero.src} alt="" width={art.hero.width} height={art.hero.height} fetchPriority="high" />
           </div>
         </section>
 
@@ -49,7 +62,7 @@ function LegacyAutoDismantlingPage() {
 
         <section className="dismantling-vehicle" id="dismantling-vehicle" aria-labelledby="dismantling-vehicle-heading">
           <div className="dismantling-record-art">
-            <img src="/imgs/auto-dismantling/vehicle-record-premium.png" alt="" width="1199" height="1312" loading="lazy" />
+            <img src={art.record.src} alt="" width={art.record.width} height={art.record.height} loading="lazy" />
           </div>
           <div className="dismantling-vehicle-copy">
             <p className="dismantling-eyebrow">01 / {t('dismantling.vehicle.label')}</p>
@@ -96,7 +109,7 @@ function LegacyAutoDismantlingPage() {
             <h2 id="dismantling-parts-heading">{t('dismantling.parts.title')}</h2>
             <p>{t('dismantling.parts.description')}</p>
           </header>
-          <img src="/imgs/auto-dismantling/parts-catalog-premium.png" alt="" width="1536" height="1024" loading="lazy" />
+          <img src={art.parts.src} alt="" width={art.parts.width} height={art.parts.height} loading="lazy" />
         </div>
 
         <div className="dismantling-methods">

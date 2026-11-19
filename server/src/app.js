@@ -12,7 +12,7 @@ const blogService = require('./services/blogService');
 const cmsService = require('./services/cmsService');
 const { cmsPreview, privacyHeaders, previewError } = require('./middleware/cmsPreview');
 const { localizedUrl } = require('./seo/site');
-const { CLIENT_ORIGINS } = require('./config/constants');
+const { CLIENT_ORIGINS, TRUST_PROXY } = require('./config/constants');
 
 const app = express();
 const clientDistPath = path.join(__dirname, '..', '..', 'client', 'dist', 'client');
@@ -22,6 +22,7 @@ const { canonicalRequest, languageFromSearch, languageCodes } = require('./seo/s
 const discoveryRoutes = require('./routes/discoveryRoutes');
 const { gzipSync, brotliCompressSync, constants } = require('node:zlib');
 
+if (TRUST_PROXY) app.set('trust proxy', /^\d+$/.test(TRUST_PROXY) ? Number(TRUST_PROXY) : TRUST_PROXY);
 app.disable('x-powered-by');
 app.disable('etag'); // CMS revisions are explicit; private preview responses must not acquire automatic ETags.
 app.use((req, res, next) => {

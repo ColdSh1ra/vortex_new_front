@@ -463,14 +463,14 @@
             "label": "Binotel",
             "price": 50,
             "billing_period": "one_time",
-            "selected_by_default": true
+            "selected_by_default": false
           },
           {
             "id": "nova-poshta",
             "label": "Новою поштою",
             "price": 20,
             "billing_period": "one_time",
-            "selected_by_default": true
+            "selected_by_default": false
           }
         ],
         "included_features": [
@@ -1147,14 +1147,14 @@
             "label": "Binotel",
             "price": 50,
             "billing_period": "one_time",
-            "selected_by_default": true
+            "selected_by_default": false
           },
           {
             "id": "nova-poshta",
             "label": "Nova Poshta",
             "price": 20,
             "billing_period": "one_time",
-            "selected_by_default": true
+            "selected_by_default": false
           }
         ],
         "included_features": [
@@ -1831,14 +1831,14 @@
             "label": "Binotel",
             "price": 50,
             "billing_period": "one_time",
-            "selected_by_default": true
+            "selected_by_default": false
           },
           {
             "id": "nova-poshta",
             "label": "Nova Poshta",
             "price": 20,
             "billing_period": "one_time",
-            "selected_by_default": true
+            "selected_by_default": false
           }
         ],
         "included_features": [
@@ -2515,14 +2515,14 @@
             "label": "Binotel",
             "price": 50,
             "billing_period": "one_time",
-            "selected_by_default": true
+            "selected_by_default": false
           },
           {
             "id": "nova-poshta",
             "label": "Nova Poshta",
             "price": 20,
             "billing_period": "one_time",
-            "selected_by_default": true
+            "selected_by_default": false
           }
         ],
         "included_features": [
@@ -3199,14 +3199,14 @@
             "label": "Binotel",
             "price": 50,
             "billing_period": "one_time",
-            "selected_by_default": true
+            "selected_by_default": false
           },
           {
             "id": "nova-poshta",
             "label": "Nova Poshta",
             "price": 20,
             "billing_period": "one_time",
-            "selected_by_default": true
+            "selected_by_default": false
           }
         ],
         "included_features": [

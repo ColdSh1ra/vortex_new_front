@@ -11,7 +11,7 @@ export default function HeaderSectionTitle({ heading, onWidthChange }: {
   useEffect(() => {
     setTitles(previous => previous.current?.id === heading?.id && previous.current?.text === heading?.text
       ? previous : { current: heading, leaving: previous.current, revision: previous.revision + 1 });
-    const timer = window.setTimeout(() => setTitles(previous => ({ ...previous, leaving: null })), 400);
+    const timer = window.setTimeout(() => setTitles(previous => ({ ...previous, leaving: null })), 200);
     return () => window.clearTimeout(timer);
   }, [heading?.id, heading?.text]);
 
@@ -29,7 +29,7 @@ export default function HeaderSectionTitle({ heading, onWidthChange }: {
     <>
       <span className="header-title-measure" ref={measureRef} aria-hidden="true">{heading?.text}</span>
       <span className="header-compact-title-slot" aria-hidden="true">
-        {titles.current && <span key={`current-${titles.revision}`} className={`header-section-title header-section-title-current${titles.leaving ? ' is-replacing' : ''}`}>{titles.current.text}</span>}
+        {titles.current && <span key={`current-${titles.revision}`} className="header-section-title header-section-title-current">{titles.current.text}</span>}
         {titles.leaving && <span key={`leaving-${titles.revision}`} className="header-section-title header-section-title-leaving">{titles.leaving.text}</span>}
       </span>
     </>

@@ -8,6 +8,8 @@ export type SyncRoute = Readonly<{
 }>;
 
 export const SYNC_VIEWBOX = { width: 1000, height: 650 } as const;
+// Every road starts and ends on this line, level with the centre of both clients.
+export const SYNC_LANE_Y = 355;
 
 function createRoute(id: string, direction: SyncRoute['direction'], points: readonly SyncPoint[]): SyncRoute {
   const path = points.map((point, index) => {

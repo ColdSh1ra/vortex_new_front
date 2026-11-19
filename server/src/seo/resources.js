@@ -32,7 +32,7 @@ async function manifest() {
 
 async function primaryImage(pathname, content, blog) {
   if (pathname === '/') return content?.homepage.hero?.screenshots?.[1]?.image ?? '/imgs/vx-screenshot-2.png';
-  if (pathname === '/auto-dismantling') return content?.autoshrot?.hero?.image ?? '/imgs/auto-dismantling/dismantling-car-premium.png';
+  if (pathname === '/auto-dismantling') return content?.autoshrot?.hero?.image ?? '/imgs/auto-dismantling/dismantling-car.svg' /* keep in sync with USE_RASTER_ART in AutoDismantlingPage.tsx */;
   if (pathname === '/car-service') return content?.car_service.blocks[0]?.image_src;
   if (pathname === '/contact') return content?.contacts.workers[0]?.photo_path;
   if (pathname.startsWith('/integrations/')) return content?.integration_pages?.pages?.[pathname.split('/').pop()]?.logo ?? content?.homepage.integrations_catalog_section.cards.find(card => card.link_href === pathname)?.image_src;

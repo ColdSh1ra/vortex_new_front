@@ -155,13 +155,25 @@
     "width": 1536,
     "height": 1024
   },
+  "/imgs/auto-dismantling/dismantling-car.svg": {
+    "width": 684,
+    "height": 480
+  },
   "/imgs/auto-dismantling/parts-catalog-premium.png": {
     "width": 1536,
     "height": 1024
   },
+  "/imgs/auto-dismantling/parts-catalog.svg": {
+    "width": 480,
+    "height": 384
+  },
   "/imgs/auto-dismantling/vehicle-record-premium.png": {
     "width": 1199,
     "height": 1312
+  },
+  "/imgs/auto-dismantling/vehicle-record.svg": {
+    "width": 420,
+    "height": 530
   },
   "/imgs/car-service/bookings.png": {
     "width": 705,

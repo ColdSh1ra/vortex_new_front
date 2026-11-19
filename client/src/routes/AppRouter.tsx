@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useReducer, useRef } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Link from '../components/default/LocalizedLink';
 import HeaderMain from '../components/layout/HeaderMain';
@@ -14,7 +14,8 @@ import TecDocLicensePage from '../pages/TecDocLicensePage';
 import IntegrationPage from '../pages/IntegrationPage';
 import PrivacyPolicyPage from '../pages/PrivacyPolicyPage';
 import { useI18n } from '../context/ContentContext';
-import { loadPageStyles } from '../styles/loadPageStyles';
+import { arePageStylesReady, loadPageStyles } from '../styles/loadPageStyles';
+import PageSkeleton from '../components/layout/PageSkeleton';
 import BlogPage from '../pages/BlogPage';
 import BlogArticlePage from '../pages/BlogArticlePage';
 import SeoHead from '../seo/SeoHead';
@@ -42,29 +43,46 @@ function AppRouter() {
               : isIntegrationPage ? ' integration-route'
                 : isPrivacyPage ? ' privacy-route' : '';
 
+  // A page is rendered only once its route styles are applied; until then a skeleton
+  // stands in, so the visitor never sees unstyled content during navigation.
+  const [, rerender] = useReducer((count: number) => count + 1, 0);
+  const stylesReady = arePageStylesReady(location.pathname);
+  // The first page arrives server-rendered; only later navigations animate in.
+  const initialPath = useRef(location.pathname);
+  const animateEntry = location.pathname !== initialPath.current;
+  if (animateEntry) initialPath.current = '';
+
   useEffect(() => {
     let active = true;
     const styles = loadPageStyles(location.pathname);
-    if (location.hash) {
-      void styles.then(() => {
-        window.requestAnimationFrame(() => {
-          if (active) document.getElementById(location.hash.slice(1))?.scrollIntoView({ behavior: 'smooth' });
-        });
-      });
-    } else {
-      window.scrollTo(0, 0);
+    if (!arePageStylesReady(location.pathname)) {
+      void styles.catch(() => undefined).then(() => { if (active) rerender(); });
     }
+    if (!location.hash) window.scrollTo(0, 0);
     return () => { active = false; };
   }, [location.pathname, location.search, location.hash, hasContent]);
+
+  useEffect(() => {
+    if (!location.hash || !stylesReady) return undefined;
+    const frame = window.requestAnimationFrame(() => {
+      document.getElementById(location.hash.slice(1))?.scrollIntoView({ behavior: 'smooth' });
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [location.pathname, location.search, location.hash, hasContent, stylesReady]);
+
+  const skeletonVariant = isBlog ? 'blog' : location.pathname === '/' ? 'dark' : 'light';
 
   return (
     <div className={`app-shell document-body main-content-container${routeClassName}`}>
       <SeoHead />
       <HeaderMain />
       <main className="main-content">
-        {!content && !isBlog && !isPrivacyPage ? (
-          <p className="content-status" role="status">{t(failed ? 'common.loadError' : 'common.loading')}</p>
+        {!content && !isBlog && !isPrivacyPage && failed ? (
+          <p className="content-status" role="status">{t('common.loadError')}</p>
+        ) : (!content && !isBlog && !isPrivacyPage) || !stylesReady ? (
+          <PageSkeleton variant={skeletonVariant} label={t('common.loading')} />
         ) : (
+          <div key={location.pathname} className={animateEntry ? 'route-view route-view-enter' : 'route-view'}>
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/contact" element={<ContactPage />} />
@@ -80,6 +98,7 @@ function AppRouter() {
             <Route path="/blog/:slug" element={<BlogArticlePage />} />
             <Route path="*" element={<div className="blog-page blog-status"><h1>{blogText(language, 'missing')}</h1><Link to="/">{t('common.home')}</Link></div>} />
           </Routes>
+          </div>
         )}
         {isBlog && <div className="blog-bottom-transition" aria-hidden="true" />}
       </main>
