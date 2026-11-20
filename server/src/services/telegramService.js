@@ -83,7 +83,7 @@ async function sendTelegramNotification(requested_product, requestData) {
 
   const endpoint = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
 
-  await Promise.all(telegramRecipients.map(async ({ telegram_id, tg_tag }) => {
+  const results = await Promise.allSettled(telegramRecipients.map(async ({ telegram_id, tg_tag }) => {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 8000);
 
@@ -112,6 +112,14 @@ async function sendTelegramNotification(requested_product, requestData) {
       clearTimeout(timeout);
     }
   }));
+
+  // One recipient who blocked the bot must not fail the request for everyone else.
+  const failed = results.filter((result) => result.status === 'rejected');
+  if (failed.length === results.length) throw failed[0].reason;
+  if (failed.length > 0) {
+    console.error(`Telegram delivery failed for ${failed.length} of ${results.length} recipients:`,
+      failed.map((result) => result.reason?.message).join('; '));
+  }
 }
 
 module.exports = {
