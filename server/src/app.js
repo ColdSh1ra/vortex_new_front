@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs').promises;
 const path = require('path');
-const { pathToFileURL } = require('url');
 const contentRoutes = require('./routes/contentRoutes');
 const trialRequestRoutes = require('./routes/trialRequestRoutes');
 const contentService = require('./services/contentService');
@@ -16,7 +15,6 @@ const { CLIENT_ORIGINS, TRUST_PROXY } = require('./config/constants');
 
 const app = express();
 const clientDistPath = path.join(__dirname, '..', '..', 'client', 'dist', 'client');
-const ssrEntryPath = path.join(__dirname, '..', '..', 'client', 'dist', 'server', 'entry-server.js');
 const { routeResources } = require('./seo/resources');
 const { canonicalRequest, languageFromSearch, languageCodes } = require('./seo/site');
 const discoveryRoutes = require('./routes/discoveryRoutes');
@@ -83,7 +81,8 @@ app.use(async (req, res, next) => {
     const template = await fs.readFile(path.join(clientDistPath, 'index.html'), 'utf8');
     const snapshot = await contentService.snapshot({ previewToken: req.cmsPreview?.token });
     const content = snapshot.content;
-    const { render, loadBlogRoute } = await import(pathToFileURL(ssrEntryPath).href);
+    // Literal specifier so Vercel's file tracer bundles the SSR build and its node_modules.
+    const { render, loadBlogRoute } = await import('../../client/dist/server/entry-server.js');
     const requestUrl = new URL(req.originalUrl, 'http://localhost');
     const isBlog = requestUrl.pathname === '/blog' || requestUrl.pathname.startsWith('/blog/');
     const language = languageFromSearch(requestUrl.search);
