@@ -156,11 +156,12 @@ app.use((error, req, res, next) => {
       return res.status(400).json({ message: 'Некоректний JSON.' });
     }
 
-    console.error('API request failed:', error.name);
+    console.error('API request failed:', error.message, error.stack);
     return res.status(500).json({ message: 'Внутрішня помилка сервера.' });
   }
 
-  console.error('Page rendering failed:', error.name);
+  // Full message and stack: on Vercel a missing bundled file (ENOENT / ERR_MODULE_NOT_FOUND) is only visible here.
+  console.error('Page rendering failed:', error.message, error.stack);
   return res.status(503).set({ 'X-Robots-Tag': 'noindex, follow', 'Retry-After': '60', 'Cache-Control': 'no-store' }).type('text/plain').send('Page temporarily unavailable. Please try again shortly.');
 });
 

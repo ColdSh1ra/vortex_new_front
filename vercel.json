@@ -7,7 +7,7 @@
   "functions": {
     "api/index.js": {
       "maxDuration": 30,
-      "includeFiles": "{client/package.json,client/dist/**,client/public/**,client/src/locales/**/*.json,server/data/vortex.json,shared/**}"
+      "includeFiles": "{client/package.json,client/dist/**,client/dist/client/index.html,client/dist/client/.vite/**,client/dist/server/**,client/public/**,client/src/locales/**/*.json,server/data/vortex.json,shared/**}"
     }
   },
   "rewrites": [
