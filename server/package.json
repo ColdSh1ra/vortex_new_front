@@ -28,5 +28,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
+  },
+  "overrides": {
+    "jsdom": "26.1.0"
   }
 }
