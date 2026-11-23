@@ -324,10 +324,22 @@ async function submitTrialRequest(req, res) {
 
   try {
     if (data.website_package) {
-      const snapshot = await cms.snapshot();
-      const tariff = resolveWebsiteTariff(data, snapshot.content);
-      if (!tariff) return res.status(400).json({ message: 'Обраний пакет сайту недоступний.' });
-      Object.assign(data, tariff, snapshot.revision === undefined ? {} : { content_revision: snapshot.revision });
+      let snapshot = null;
+      try {
+        snapshot = await cms.snapshot();
+      } catch (error) {
+        // Director and the CMS share one API: when it is down the request still reaches
+        // Telegram, with the package price marked as unverified instead of being rejected.
+        if (!error.code?.startsWith('CONTENT_')) throw error;
+        console.warn('Website package price unavailable for trial request:', error.code);
+      }
+      if (snapshot) {
+        const tariff = resolveWebsiteTariff(data, snapshot.content);
+        if (!tariff) return res.status(400).json({ message: 'Обраний пакет сайту недоступний.' });
+        Object.assign(data, tariff, snapshot.revision === undefined ? {} : { content_revision: snapshot.revision });
+      } else {
+        data.price_unverified = true;
+      }
     } else {
       await attachPricingDetails(data);
     }
@@ -346,7 +358,12 @@ async function submitTrialRequest(req, res) {
 
     let telegramError = null;
     try {
-      await sendTelegramNotification(requested_product, { ...notificationData, director_link: directorLink(director) });
+      await sendTelegramNotification(requested_product, {
+        ...notificationData,
+        director_link: directorLink(director),
+        // Configured but failed: staff must add the request to Director by hand.
+        director_failed: !director.ok && !director.skipped,
+      });
     } catch (error) {
       telegramError = error;
     }

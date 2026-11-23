@@ -95,7 +95,8 @@ function buildDirectorComment(data) {
   } else if (data.website_package) {
     const name = cleanText(data.website_package_name) || cleanText(data.website_package);
     const money = formatMoney(data.total_sum, data.total_currency);
-    const price = data.billing_type === 'free' ? 'безкоштовно'
+    const price = data.price_unverified ? 'ціна не перевірена'
+      : data.billing_type === 'free' ? 'безкоштовно'
       : data.billing_type === 'monthly' ? `${money}/міс.` : `${money} разово`;
     lines.push(`Пакет сайту: ${name} (${price})`);
   } else if (data.tecdoc_license) {

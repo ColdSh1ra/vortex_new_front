@@ -5,10 +5,17 @@ function formatMoney(value) {
   return Number.isInteger(value) ? String(value) : value.toFixed(2);
 }
 
-function directorLines(link) {
+// Messages are sent with parse_mode HTML: every value from a visitor or the CMS is escaped,
+// so only the <b> tags written here are markup.
+function escapeHtml(value) {
+  return String(value ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function directorLines(link, failed = false) {
+  if (failed) return ['⚠️ Director недоступний: заявку не збережено в Director, внесіть її вручну.'];
   if (!link) return [];
   const label = { ticket: 'Тікет у Director', lead: 'Лід у Director', repeat: 'Повторна заявка, лід у Director' }[link.kind];
-  return [`${label}: ${link.url}`];
+  return [`${label}: ${escapeHtml(link.url)}`];
 }
 
 function buildTelegramMessage({
@@ -18,6 +25,8 @@ function buildTelegramMessage({
   total_sum,
   calculator,
   director_link,
+  director_failed = false,
+  price_unverified = false,
   source_page = 'home',
   language = 'ua',
   website_package,
@@ -28,8 +37,8 @@ function buildTelegramMessage({
 }) {
   if (requested_product === 'tecdoc') {
     return [
-      `Нова заявка на ліцензію TecDoc\nІм'я: ${name}, Номер телефону: ${phone}`,
-      ...directorLines(director_link),
+      `Нова заявка на ліцензію TecDoc\nІм'я: <b>${escapeHtml(name)}</b>, Номер телефону: <b>${escapeHtml(phone)}</b>`,
+      ...directorLines(director_link, director_failed),
     ].join('\n');
   }
 
@@ -41,31 +50,31 @@ function buildTelegramMessage({
 
   const messageLines = [
     source_page === 'websites' ? 'Нова заявка на розробку сайту Vortex' : 'Нова заявка на тестову Vortex',
-    `Сторінка: ${{ home: 'Головна', contact: 'Контакти', 'car-service': 'Облік СТО', websites: 'Розробка веб-сайтів', 'auto-dismantling': 'Автошрот' }[source_page] || source_page}`,
-    `Мова: ${language}`,
-    `Ім'я: <b>${name}</b>`,
-    `Номер телефону: <b>${phone}</b>`,
-    `Розрахована сума: ${total_currency ? `${total_currency} ` : calculator?.currency || '$'}${formatMoney(total_sum)}`,
+    `Сторінка: ${{ home: 'Головна', contact: 'Контакти', 'car-service': 'Облік СТО', websites: 'Розробка веб-сайтів', 'auto-dismantling': 'Автошрот' }[source_page] || escapeHtml(source_page)}`,
+    `Мова: ${escapeHtml(language)}`,
+    `Ім'я: <b>${escapeHtml(name)}</b>`,
+    `Номер телефону: <b>${escapeHtml(phone)}</b>`,
+    `Розрахована сума: ${escapeHtml(total_currency ? `${total_currency} ` : calculator?.currency || '$')}${formatMoney(total_sum)}${price_unverified ? ' (не перевірено: CMS недоступна)' : ''}`,
   ];
 
   if (website_package) {
     const packageName = { free: 'Безкоштовний', practical: 'Практичний', maximum: 'Максимальний' }[website_package];
-    messageLines.push(`Пакет сайту: ${website_package_name || packageName || website_package}`);
-    if (billing_type) messageLines.push(`Тип оплати: ${billing_type}`);
-    if (content_revision !== undefined) messageLines.push(`Ревізія контенту: ${content_revision}`);
+    messageLines.push(`Пакет сайту: ${escapeHtml(website_package_name || packageName || website_package)}`);
+    if (billing_type) messageLines.push(`Тип оплати: ${escapeHtml(billing_type)}`);
+    if (content_revision !== undefined) messageLines.push(`Ревізія контенту: ${escapeHtml(content_revision)}`);
   }
 
   if (calculator) {
-    const currency = calculator.currency || '$';
+    const currency = escapeHtml(calculator.currency || '$');
     const integrations = calculator.integrations
-      .map(({ label, price, billing_period }) => `${label} (${currency}${formatMoney(price)}${billing_period === 'monthly' ? '/міс.' : ' разово'})`)
+      .map(({ label, price, billing_period }) => `${escapeHtml(label)} (${currency}${formatMoney(price)}${billing_period === 'monthly' ? '/міс.' : ' разово'})`)
       .join(', ');
     messageLines.push(`Менеджерів: ${calculator.manager_count}, магазинів: ${calculator.store_count}`);
     messageLines.push(`Інтеграції: ${integrations || 'немає'}`);
     messageLines.push(`Щомісяця: ${currency}${formatMoney(calculator.monthly)}, разово: ${currency}${formatMoney(calculator.one_time)}`);
   }
 
-  messageLines.push(...directorLines(director_link));
+  messageLines.push(...directorLines(director_link, director_failed));
   return messageLines.join('\n');
 }
 
@@ -96,6 +105,7 @@ async function sendTelegramNotification(requested_product, requestData) {
         body: JSON.stringify({
           chat_id: telegram_id,
           text: message,
+          parse_mode: 'HTML',
           disable_web_page_preview: true,
         }),
         signal: controller.signal,
@@ -124,5 +134,6 @@ async function sendTelegramNotification(requested_product, requestData) {
 
 module.exports = {
   buildTelegramMessage,
+  escapeHtml,
   sendTelegramNotification,
 };

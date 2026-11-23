@@ -177,3 +177,21 @@ test('phone limit counts one number across formats and expires', () => {
   time = 1000;
   assert.equal(limiter.isLimited('+380671234567'), false);
 });
+
+test('Telegram message escapes CMS and visitor values so only our <b> tags are HTML', () => {
+  const message = buildTelegramMessage({
+    requested_product: 'vortex',
+    name: 'Антон',
+    phone: '+380 97 123 45 67',
+    total_sum: 95,
+    source_page: 'websites',
+    website_package: 'custom',
+    website_package_name: 'Сайт <Pro> & SEO',
+    total_currency: 'USD',
+  });
+  assert.match(message, /Ім'я: <b>Антон<\/b>/);
+  assert.match(message, /Пакет сайту: Сайт &lt;Pro&gt; &amp; SEO/);
+  assert.doesNotMatch(message, /<Pro>/);
+  const tecdoc = buildTelegramMessage({ requested_product: 'tecdoc', name: 'Антон', phone: '+380 97 123 45 67' });
+  assert.match(tecdoc, /Ім'я: <b>Антон<\/b>, Номер телефону: <b>\+380 97 123 45 67<\/b>/);
+});
