@@ -6,3 +6,4 @@ server/node_modules/
 client/dist/
 dist-vercel/
 .vercel/
+.DS_Store

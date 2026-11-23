@@ -27,6 +27,8 @@ npm run dev            # server :5001 (nodemon) + Vite :5173 (proxies /api to :5
 npm run build          # tsc --noEmit + client build (dist/client) + SSR build (dist/server)
 npm run start:ssr      # build, then serve production SSR on :5001
 npm run build:vercel   # build + copy static files to dist-vercel/
+npm run vercel:check   # build, then run the function as Vercel ships it (traced files only,
+                       # require(esm) off) and request every route — run before deploying
 npm --prefix server test   # node --test server/test/*.test.js
 ```
 
@@ -58,6 +60,10 @@ Never commit `.env` files or print secret values.
   is not live leave `CMS_API_BASE_URL` unset. As of 2026-11-23 both CMS hosts were not ready
   (HTTPS certificates issued for other domains, HTTP returns Apache 404 / an app error).
 - The SSR bundle is imported with a literal path in `app.js` so Vercel's file tracer bundles it.
+  `client/vite.config.ts` bundles React and react-router into it (`ssr.noExternal`): Vercel's
+  tracer ships react-router's `index.mjs` but its runtime (no require(esm)) loads `index.js`.
+- Vercel's runtime cannot `require()` ES modules: `jsdom` is pinned to 26.1.0 (newer versions pull
+  in the ESM-only `@exodus/bytes`). Check new server dependencies with `npm run vercel:check`.
 - Node 22 (`engines`). Serverless: filesystem is read-only and in-memory state is per instance.
 - Env vars must be set in the Vercel project (server ones at runtime, `VITE_*` at build time).
   On Vercel set `TRUST_PROXY=1` rather than `loopback`, and add the production domain to

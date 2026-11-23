@@ -27,13 +27,15 @@
     "requests:live": "npm --prefix server run requests:live --",
     "director:check": "npm --prefix server run director:check --",
     "request:real": "npm --prefix server run request:real --",
-    "build:vercel": "npm run build && node scripts/vercel-static.cjs"
+    "build:vercel": "npm run build && node scripts/vercel-static.cjs",
+    "vercel:check": "npm run build:vercel && node scripts/vercel-check.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@vercel/nft": "1.11.12",
     "concurrently": "^9.2.1",
     "nodemon": "^3.1.11"
   },
