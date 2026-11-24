@@ -25,6 +25,10 @@
   --h2-size: clamp(28px, 1.13vw + 23.8px, 40px);
   --heading-line-height: 1.1;
   --h2-gap: clamp(20px, 1.13vw + 15.8px, 32px);
+  /* Space between neighbouring blocks that share a background: 72px on phones, 120px on desktops. */
+  --section-gap: clamp(72px, 4.5vw + 55px, 120px);
+  /* Space between separate blocks inside one section: 24px on phones, 40px on desktops. */
+  --block-gap: clamp(24px, 1.5vw + 18.4px, 40px);
 }
 
 * {
@@ -570,6 +574,10 @@ div.p-absolute-element {
     height: 24px;
     width: 92px;
   }
+
+  /* The bar's 4px padding suits the round menu button; the logo needs the same inset as
+     the compact header's (16px from the rounded edge). */
+  .mobile-header-bar .header-logo-container { margin-left: 12px; }
 
   .mobile-menu-toggle {
     align-items: center;

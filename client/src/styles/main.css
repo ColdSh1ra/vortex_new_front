@@ -2327,3 +2327,21 @@
     transform: rotate(360deg);
   }
 }
+
+/* --- HOME: one gap between neighbouring blocks on the same background ---
+   Each pair below sits on one background, so the visible space between them is exactly
+   --section-gap. Transitions between the dark and white backgrounds keep their own
+   gradient padding. Scoped to the home page: these sections are reused on other pages. */
+.app-shell.home-route .section-container.about-us-content { margin-top: var(--section-gap); margin-bottom: var(--section-gap); }
+.app-shell.home-route .section-container.hero-page-slider-section { margin-bottom: var(--section-gap); padding-bottom: 0; padding-top: 0; }
+.app-shell.home-route .section-container.why-vortex-section { padding-top: 0; }
+.app-shell.home-route .section-container.vortex-audience-section { margin-bottom: var(--section-gap); padding-bottom: 0; }
+.app-shell.home-route .section-container.client-testimonials-section { padding-top: 0; }
+.app-shell.home-route .section-container.integrations-network-section { margin-bottom: var(--section-gap); }
+.app-shell.home-route .section-container.vortex-sync-section { padding-bottom: 0; }
+.app-shell.home-route .section-container.car-service-overview-section { padding-bottom: 0; padding-top: var(--section-gap); }
+.app-shell.home-route .section-container.website-development-section { padding-top: var(--section-gap); }
+.app-shell.home-route .section-container.vortex-plans-section { padding-bottom: 0; }
+.app-shell.home-route .section-container.vortex-plans-section + .pricing-calculator-section { padding-top: var(--section-gap); }
+.app-shell.home-route .section-container.pricing-calculator-section { padding-bottom: 0; }
+.app-shell.home-route .section-container.trial-request-section { padding-bottom: var(--section-gap); padding-top: var(--section-gap); }

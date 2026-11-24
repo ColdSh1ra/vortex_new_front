@@ -44,6 +44,10 @@
 .websites-pricing,
 .websites-examples { display: flex; flex-direction: column; }
 
+/* Separate blocks: the intro, the overview grid, the upgrade note; the plans title and the plans. */
+.websites-overview,
+.websites-pricing { gap: var(--block-gap); }
+
 .websites-panel {
   background: var(--grey-color-100);
   border-radius: 20px;

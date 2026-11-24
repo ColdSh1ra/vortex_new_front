@@ -15,8 +15,6 @@ import { SOCIAL_LINKS } from '../../data/socialLinks';
 import { isCmsTargetVisible, visibleCmsMenu } from '../../utils/cmsContent';
 import type { CmsMenuItem } from '../../types/cmsContent';
 
-const PINNED_SCROLL_TOLERANCE = 40;
-
 function getMenuLinks(t: (key: string) => string, pricingPath: string, blogPath: string): NavigationLink[] { return [
     { name: t("nav.home"), path: "/" },
     { name: t("nav.pricing"), path: pricingPath },
@@ -38,7 +36,6 @@ function HeaderMain() {
   const fullHeaderRef = useRef<HTMLDivElement>(null);
   const compactButtonRef = useRef<HTMLButtonElement>(null);
   const compactRef = useRef(false);
-  const pinnedAtY = useRef(0);
   const scheduleClearance = useRef<() => void>(() => {});
   const location = useLocation();
   const activeHeading = useActiveSectionHeading(location.pathname + ':' + language);
@@ -88,24 +85,29 @@ function HeaderMain() {
       frame = null;
       const y = Math.max(0, window.scrollY);
       setIsAtTop(y <= 1);
-      // A tapped-open header stays open until the visitor really scrolls on. On phones a tap
-      // is followed by a few pixels of momentum or toolbar movement, which must not close it.
-      if (Math.abs(y - pinnedAtY.current) > PINNED_SCROLL_TOLERANCE) setIsPinnedOpen(false);
+      // A clicked-open header travels with the page; back at the top it resets, so the next
+      // scroll down starts compact again.
+      if (y <= 1) setIsPinnedOpen(false);
     };
     const schedule = () => { if (frame === null) frame = window.requestAnimationFrame(measure); };
+    const isOutside = (event: Event) => !headerRef.current?.contains(event.target as Node);
     const closeOutside = (event: PointerEvent) => {
-      if (!headerRef.current?.contains(event.target as Node)) {
-        setIsPinnedOpen(false);
+      if (isOutside(event)) {
         setIsMenuOpen(false);
         setHasKeyboardFocus(false);
       }
     };
+    // A click, not pointerdown: on touch screens a swipe to scroll starts with pointerdown,
+    // and scrolling must not close the pinned header.
+    const unpinOutside = (event: MouseEvent) => { if (isOutside(event)) setIsPinnedOpen(false); };
     window.addEventListener('scroll', schedule, { passive: true });
     document.addEventListener('pointerdown', closeOutside);
+    document.addEventListener('click', unpinOutside);
     measure();
     return () => {
       window.removeEventListener('scroll', schedule);
       document.removeEventListener('pointerdown', closeOutside);
+      document.removeEventListener('click', unpinOutside);
       if (frame !== null) window.cancelAnimationFrame(frame);
     };
   }, []);
@@ -148,7 +150,6 @@ function HeaderMain() {
   useEffect(() => { scheduleClearance.current(); }, [isCompact]);
 
   const expandHeader = useCallback((keyboard: boolean) => {
-    pinnedAtY.current = Math.max(0, window.scrollY);
     setIsPinnedOpen(true);
     if (keyboard) window.requestAnimationFrame(() => {
       const selector = window.matchMedia('(max-width: 768px)').matches
@@ -196,6 +197,9 @@ function HeaderMain() {
       ref={headerRef}
       className={`header${isMenuOpen ? ' mobile-menu-active' : ''}${isCompact ? ' header-is-compact' : ''}`}
       onPointerLeave={() => setIsHovered(false)}
+      // On desktop hovering already reveals the full header, so the click lands on it rather
+      // than on the compact button. Any click inside pins it until the visitor clicks elsewhere.
+      onClick={() => { if (window.scrollY > 1) setIsPinnedOpen(true); }}
       onFocusCapture={(event) => {
         if (event.target instanceof HTMLElement && fullHeaderRef.current?.contains(event.target)
           && event.target.matches(':focus-visible')) setHasKeyboardFocus(true);
@@ -203,7 +207,9 @@ function HeaderMain() {
       onBlurCapture={(event) => {
         if (!event.currentTarget.contains(event.relatedTarget)) {
           setHasKeyboardFocus(false);
-          setIsPinnedOpen(false);
+          // Only a real focus move (Tab) out of the header closes it. relatedTarget is null when
+          // the clicked compact button hides itself; outside clicks are handled separately.
+          if (event.relatedTarget) setIsPinnedOpen(false);
         }
       }}
     >

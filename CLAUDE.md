@@ -73,3 +73,6 @@ Never commit `.env` files or print secret values.
 
 - Server is CommonJS; client is ESM/TypeScript. Server-facing user messages are in Ukrainian.
 - After UI changes run `npm run build` (it type-checks) and check mobile/laptop/wide widths.
+- Vertical rhythm tokens (`client/src/styles/base.css`): `--section-gap` between neighbouring blocks
+  that share a background, `--block-gap` between separate blocks inside one section. The home page
+  applies `--section-gap` per section pair at the end of `main.css` (scoped to `.home-route`).

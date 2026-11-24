@@ -41,7 +41,8 @@ function AppRouter() {
           : isDismantlingPage ? ' dismantling-route'
             : isTecDocPage ? ' tecdoc-route'
               : isIntegrationPage ? ' integration-route'
-                : isPrivacyPage ? ' privacy-route' : '';
+                : isPrivacyPage ? ' privacy-route'
+                  : location.pathname === '/' ? ' home-route' : '';
 
   // A page is rendered only once its route styles are applied; until then a skeleton
   // stands in, so the visitor never sees unstyled content during navigation.
