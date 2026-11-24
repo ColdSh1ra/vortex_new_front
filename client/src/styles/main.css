@@ -288,9 +288,9 @@
 }
 @media (max-width: 768px) {
   .app-shell .section-container.about-us-content{
-    border-radius: 10px;
-    margin-left: 16px;
-    margin-right: 16px;
+    border-radius: var(--border-radius);
+    margin-left: var(--mobile-padding);
+    margin-right: var(--mobile-padding);
     padding: 16px;
   }
 
