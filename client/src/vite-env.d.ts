@@ -9,6 +9,7 @@ declare global {
     __VORTEX_CONTENT__?: ContentCatalog;
     __VORTEX_LANGUAGE__?: Language;
     __VORTEX_BLOG__?: BlogResource | null;
+    __vortexRecaptchaLoaded?: () => void;
     grecaptcha?: {
       render: (
         container: HTMLElement,

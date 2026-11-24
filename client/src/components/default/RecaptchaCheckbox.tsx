@@ -1,6 +1,32 @@
 import { LANGUAGE_TAGS, useI18n } from '../../context/ContentContext';
 import { useEffect, useRef } from 'react';
 
+const ONLOAD_CALLBACK = '__vortexRecaptchaLoaded';
+let recaptchaReady: Promise<void> | null = null;
+
+/** Loads api.js once. Its script `load` event fires before grecaptcha.render exists (api.js
+ * pulls in a second script), so readiness comes from Google's `onload` callback instead. */
+function loadRecaptcha(): Promise<void> {
+  recaptchaReady ??= new Promise<void>((resolve, reject) => {
+    if (window.grecaptcha?.render) {
+      resolve();
+      return;
+    }
+    window[ONLOAD_CALLBACK] = () => resolve();
+    const script = document.createElement('script');
+    script.src = `https://www.google.com/recaptcha/api.js?onload=${ONLOAD_CALLBACK}&render=explicit`;
+    script.async = true;
+    script.defer = true;
+    script.onerror = () => {
+      script.remove();
+      recaptchaReady = null;
+      reject(new Error('reCAPTCHA failed to load'));
+    };
+    document.head.appendChild(script);
+  });
+  return recaptchaReady;
+}
+
 type RecaptchaCheckboxProps = {
   siteKey: string;
   onTokenChange: (token: string | null) => void;
@@ -21,7 +47,7 @@ function RecaptchaCheckbox({ siteKey, onTokenChange, resetSignal }: RecaptchaChe
 
     let active = true;
 
-    const renderWidget = () => {
+    loadRecaptcha().then(() => {
       if (!active || !containerRef.current || widgetIdRef.current !== null || !window.grecaptcha) {
         return;
       }
@@ -33,29 +59,9 @@ function RecaptchaCheckbox({ siteKey, onTokenChange, resetSignal }: RecaptchaChe
         'expired-callback': () => callbackRef.current(null),
         'error-callback': () => callbackRef.current(null),
       });
-    };
-
-    if (window.grecaptcha) {
-      renderWidget();
-    } else {
-      const scriptId = 'google-recaptcha-api';
-      let script = document.getElementById(scriptId) as HTMLScriptElement | null;
-
-      if (!script) {
-        script = document.createElement('script');
-        script.id = scriptId;
-        script.src = 'https://www.google.com/recaptcha/api.js?render=explicit';
-        script.async = true;
-        script.defer = true;
-        document.head.appendChild(script);
-      }
-
-      script.addEventListener('load', renderWidget);
-      return () => {
-        active = false;
-        script?.removeEventListener('load', renderWidget);
-      };
-    }
+    }).catch(() => {
+      // Blocked or offline: the form stays without a token and shows the captcha error on submit.
+    });
 
     return () => {
       active = false;
