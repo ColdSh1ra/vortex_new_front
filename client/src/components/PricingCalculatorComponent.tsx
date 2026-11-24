@@ -3,6 +3,10 @@ import { useEffect, useMemo, useState } from 'react';
 import { useI18n } from '../context/ContentContext';
 import SelectComponent from './default/SelectComponent';
 import type { CalculatorSelection } from '../services/api';
+import site from '../../../shared/site.json';
+
+// A plan always covers at least this many managers and branches; the server enforces the same floor.
+const { managers: MIN_MANAGERS, stores: MIN_STORES } = site.calculatorMinimums;
 
 export type PricingCalculatorChoice = {
   selection: CalculatorSelection;
@@ -17,10 +21,11 @@ type CounterProps = {
   id: string;
   label: string;
   value: number;
+  min: number;
   onChange: (value: number) => void;
 };
 
-function QuantityCounter({ id, label, value, onChange }: CounterProps) {
+function QuantityCounter({ id, label, value, min, onChange }: CounterProps) {
   const { t } = useI18n();
   return (
     <div className="pricing-counter">
@@ -28,8 +33,8 @@ function QuantityCounter({ id, label, value, onChange }: CounterProps) {
       <div className="pricing-counter-control">
         <button
           type="button"
-          onClick={() => onChange(Math.max(0, value - 1))}
-          disabled={value === 0}
+          onClick={() => onChange(Math.max(min, value - 1))}
+          disabled={value <= min}
           aria-label={t('pricing.decrease', { label })}
         >
           <img src="/icons/sm_black/minus.svg" alt="" />
@@ -51,8 +56,8 @@ function PricingCalculatorComponent({ onSelectionChange }: PricingCalculatorComp
   const { content, t } = useI18n();
   const settings = content?.settings.pricing_calculator;
   const initialSettings = settings;
-  const [managerCount, setManagerCount] = useState(initialSettings?.default_manager_count ?? 0);
-  const [storeCount, setStoreCount] = useState(initialSettings?.default_store_count ?? 0);
+  const [managerCount, setManagerCount] = useState(Math.max(MIN_MANAGERS, initialSettings?.default_manager_count ?? 0));
+  const [storeCount, setStoreCount] = useState(Math.max(MIN_STORES, initialSettings?.default_store_count ?? 0));
   const [selectedIntegrations, setSelectedIntegrations] = useState<string[]>(
     initialSettings?.integrations
       .filter((integration) => integration.selected_by_default)
@@ -131,12 +136,14 @@ function PricingCalculatorComponent({ onSelectionChange }: PricingCalculatorComp
                   id="manager-count"
                   label={t('pricing.managers')}
                   value={managerCount}
+                  min={MIN_MANAGERS}
                   onChange={setManagerCount}
                 />
                 <QuantityCounter
                   id="store-count"
                   label={t('pricing.branches')}
                   value={storeCount}
+                  min={MIN_STORES}
                   onChange={setStoreCount}
                 />
 

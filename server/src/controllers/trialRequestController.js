@@ -31,6 +31,8 @@ const CALCULATOR_FIELDS = new Set(['manager_count', 'store_count', 'integrations
 const UTM_FIELDS = new Set(['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content']);
 const PAGE_PATH_PATTERN = /^\/[A-Za-z0-9\-._~%/]{0,199}$/;
 const MAX_CALCULATOR_COUNT = 1000;
+// Same floor as the site calculator: an older or hand-made request is repriced from it.
+const { managers: MIN_MANAGERS, stores: MIN_STORES } = require('../../../shared/site.json').calculatorMinimums;
 const MAX_INTEGRATIONS = 20;
 const MAX_UTM_LENGTH = 100;
 const MIN_FILL_TIME_MS = 3000;
@@ -60,8 +62,8 @@ function validateCalculator(value) {
   }
 
   return {
-    manager_count: value.manager_count,
-    store_count: value.store_count,
+    manager_count: Math.max(MIN_MANAGERS, value.manager_count),
+    store_count: Math.max(MIN_STORES, value.store_count),
     integrations: [...new Set(value.integrations)],
   };
 }

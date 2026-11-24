@@ -84,6 +84,14 @@ test('calculator selection, UTM and page path are validated strictly', () => {
   assert.equal(result.data.page_path, '/car-service');
   assert.equal('elapsed_ms' in result.data || 'company_site' in result.data || 'location' in result.data, false);
 
+  // Below the calculator floor (3 managers, 1 branch) the selection is raised to it, not rejected.
+  const belowFloor = normalizeAndValidateTrialRequest({
+    ...request,
+    calculator: { manager_count: 1, store_count: 0, integrations: [] },
+  });
+  assert.equal(belowFloor.valid, true);
+  assert.deepEqual(belowFloor.data.calculator, { manager_count: 3, store_count: 1, integrations: [] });
+
   const invalid = [
     { calculator: { ...calculator, extra: 1 } },
     { calculator: { ...calculator, manager_count: -1 } },

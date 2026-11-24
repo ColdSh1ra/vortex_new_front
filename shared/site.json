@@ -1,6 +1,7 @@
 {
   "origin": "https://crm-vortex.com",
   "languageCodes": { "ua": "uk", "cz": "cs", "sk": "sk", "en": "en", "pl": "pl" },
+  "calculatorMinimums": { "managers": 3, "stores": 1 },
   "staticPaths": [
     "/", "/car-service", "/websites", "/auto-dismantling", "/tecdoc-license",
     "/faq", "/contact", "/privacy-policy",
