@@ -7,3 +7,5 @@ client/dist/
 dist-vercel/
 .vercel/
 .DS_Store
+# IDE: per-developer deployment server settings
+.idea/webServers.xml
