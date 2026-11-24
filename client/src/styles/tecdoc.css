@@ -10,7 +10,7 @@
 .tecdoc-hero { margin: 0 auto; max-width: 1100px; padding: 72px 0 56px; text-align: center; }
 .tecdoc-eyebrow { color: var(--blue-color-2); font-size: 14px; font-weight: 600; letter-spacing: .06em; margin: 0 0 20px; text-transform: uppercase; }
 .tecdoc-hero > .tecdoc-eyebrow { background: #f1f2f4; border-radius: 999px; display: inline-block; padding: 10px 18px; }
-.tecdoc-hero h1 { font-size: clamp(40px, 4.4vw, 64px); line-height: 1.08; margin: 0 auto; max-width: 920px; text-transform: uppercase; }
+.tecdoc-hero h1 { font-size: var(--h1-size); line-height: var(--heading-line-height); margin: 0 auto; max-width: 920px; text-transform: uppercase; }
 .tecdoc-hero h1 > span { color: var(--orange-bg-color); display: block; margin-bottom: 8px; }
 .tecdoc-hero-description { color: var(--blue-color-2); font-size: 22px; line-height: 1.45; margin: 24px auto 28px; max-width: 700px; }
 .tecdoc-hero-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
@@ -25,9 +25,9 @@
 .tecdoc-hero-details > span::before { background: var(--orange-bg-color); border-radius: 50%; content: ""; height: 6px; width: 6px; }
 
 .tecdoc-about { padding: 36px 0 80px; }
-.tecdoc-page h2 { font-size: 40px; line-height: 1.12; margin: 0 0 24px; text-transform: uppercase; }
+.tecdoc-page h2 { font-size: var(--h2-size); line-height: var(--heading-line-height); margin: 0 0 var(--h2-gap); text-transform: uppercase; }
 .tecdoc-page h3 { font-size: 26px; line-height: 1.2; margin: 0 0 20px; }
-.tecdoc-about > h2 { margin: 0 auto 36px; max-width: 800px; text-align: center; }
+.tecdoc-about > h2 { margin: 0 auto var(--h2-gap); max-width: 800px; text-align: center; }
 .tecdoc-about-grid { display: grid; gap: 8px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .tecdoc-about-grid > article { border-radius: 20px; padding: 36px; }
 .tecdoc-about-catalog { background: #f1f2f4; }
@@ -78,16 +78,15 @@
   .tecdoc-light-content { padding-top: 32px; }
   .tecdoc-breadcrumbs { font-size: 14px; }
   .tecdoc-hero { padding-top: 40px; padding-bottom: 32px; }
-  .tecdoc-hero h1 { font-size: 40px; }
+
   .tecdoc-eyebrow { font-size: 12px; margin-bottom: 16px; }
   .tecdoc-hero-description { font-size: 18px; margin-top: 20px; }
   .tecdoc-hero-actions { align-items: stretch; flex-direction: column; }
   .tecdoc-primary-link, .tecdoc-secondary-link { justify-content: center; }
   .tecdoc-hero-details { align-items: center; flex-direction: column; gap: 12px; margin-top: 32px; }
-  .tecdoc-page h2 { font-size: 30px; }
+
   .tecdoc-page h3 { font-size: 24px; }
   .tecdoc-about { padding-top: 28px; padding-bottom: 56px; }
-  .tecdoc-about > h2 { margin-bottom: 24px; }
   .tecdoc-about-grid, .tecdoc-feature-intro, .tecdoc-rmi { grid-template-columns: minmax(0, 1fr); }
   .tecdoc-about-grid > article { padding: 28px 24px; }
   .tecdoc-feature-intro header { grid-row: 1; }

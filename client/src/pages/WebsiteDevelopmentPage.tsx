@@ -1,6 +1,6 @@
 import { CmsWebsitePage } from './cms/CmsPages';
 import ChevronCircle from '../components/default/ChevronCircle';
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import Link from '../components/default/LocalizedLink';
 import TrialRequestComponent from '../components/TrialRequestComponent';
 import { useI18n } from '../context/ContentContext';
@@ -9,6 +9,8 @@ import {
   WEBSITE_PLANS, WEBSITE_SERVICES,
 } from '../data/websitePlans';
 import type { WebsitePackage } from '../data/websitePlans';
+import SliderControls from '../components/default/SliderControls';
+import { useScrollGallery } from '../utils/useScrollGallery';
 
 function WebsitePreview({ name, label, className = '' }: { name: string; label: string; className?: string }) {
   const image = getWebsiteImage(name);
@@ -23,35 +25,8 @@ function LegacyWebsiteDevelopmentPage() {
   const { content, t } = useI18n();
   const overview = content?.homepage.website_development_section;
   const [selectedPackage, setSelectedPackage] = useState<WebsitePackage | undefined>();
-  const galleryRef = useRef<HTMLDivElement>(null);
-  const [galleryPosition, setGalleryPosition] = useState({ atStart: true, atEnd: false });
+  const gallery = useScrollGallery();
   const selectedPlan = WEBSITE_PLANS.find((plan) => plan.id === selectedPackage);
-
-  const updateGalleryPosition = () => {
-    const gallery = galleryRef.current;
-    if (!gallery) return;
-    setGalleryPosition({
-      atStart: gallery.scrollLeft <= 2,
-      atEnd: gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth - 2,
-    });
-  };
-
-  useEffect(() => {
-    const gallery = galleryRef.current;
-    if (!gallery) return;
-    const observer = new ResizeObserver(updateGalleryPosition);
-    observer.observe(gallery);
-    updateGalleryPosition();
-    return () => observer.disconnect();
-  }, []);
-
-  const scrollGallery = (direction: number) => {
-    const gallery = galleryRef.current;
-    const firstCard = gallery?.firstElementChild;
-    if (gallery && firstCard) {
-      gallery.scrollBy({ left: direction * (firstCard.getBoundingClientRect().width + 8), behavior: 'smooth' });
-    }
-  };
 
   const choosePackage = (plan: WebsitePackage) => {
     setSelectedPackage(plan);
@@ -106,16 +81,15 @@ function LegacyWebsiteDevelopmentPage() {
         <section className="websites-examples" aria-labelledby="websites-examples-heading">
           <header className="websites-examples-header">
             <h2 id="websites-examples-heading" className="websites-section-title">{t('websites.examplesTitle')}</h2>
-            <div className="websites-gallery-controls">
-              <button type="button" onClick={() => scrollGallery(-1)} disabled={galleryPosition.atStart} aria-label={t('common.previous')} aria-controls="websites-gallery">
-                <img src="/icons/slider_scroll_right.svg" alt="" />
-              </button>
-              <button type="button" onClick={() => scrollGallery(1)} disabled={galleryPosition.atEnd} aria-label={t('common.next')} aria-controls="websites-gallery">
-                <img src="/icons/slider_scroll_right.svg" alt="" />
-              </button>
-            </div>
+            <SliderControls
+              onPrevious={() => gallery.scroll(-1)}
+              onNext={() => gallery.scroll(1)}
+              previousDisabled={gallery.position.atStart}
+              nextDisabled={gallery.position.atEnd}
+              controls="websites-gallery"
+            />
           </header>
-          <div className="websites-gallery" id="websites-gallery" ref={galleryRef} onScroll={updateGalleryPosition}>
+          <div className="websites-gallery" id="websites-gallery" ref={gallery.ref} onScroll={gallery.onScroll}>
             {WEBSITE_PLANS.map((plan) => (
               <article className="websites-example" key={plan.id}>
                 <WebsitePreview name={`example-${plan.id}`} label={t('websites.preview', { name: t(`websites.plan.${plan.id}`) })} />

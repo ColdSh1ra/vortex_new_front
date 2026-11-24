@@ -9,7 +9,7 @@
 
 .vortex-plans-wrapper { width: 100%; }
 .vortex-plans-intro { margin: 0 auto 40px; max-width: 760px; text-align: center; }
-.vortex-plans-intro h2 { color: var(--orange-bg-color); font-size: clamp(30px, 3vw, 40px); line-height: 1.1; margin: 0; text-transform: uppercase; }
+.vortex-plans-intro h2 { color: var(--orange-bg-color); font-size: var(--h2-size); line-height: var(--heading-line-height); margin: 0; text-transform: uppercase; }
 .vortex-plans-intro p { font-size: 20px; line-height: 1.5; margin: 20px 0 0; }
 .vortex-plans-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
 .vortex-plan { background: var(--blue-color-3); border: 1px solid transparent; border-radius: 20px; display: flex; flex-direction: column; min-width: 0; padding: 32px; }

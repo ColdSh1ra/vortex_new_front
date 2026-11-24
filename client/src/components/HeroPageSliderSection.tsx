@@ -2,6 +2,7 @@ import StickyHeading from './default/StickyHeading';
 import { useI18n } from '../context/ContentContext';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useInitialContent } from '../context/ContentContext';
+import SliderControls from './default/SliderControls';
 
 function HeroPageSliderSection() {
   const { t } = useI18n();
@@ -106,17 +107,11 @@ function HeroPageSliderSection() {
                         {content.section_title}
                     </StickyHeading>
 
-                    <div className={'carousel-buttons'}>
-                        <button type="button" onClick={goToPreviousSlide} aria-label={t('common.previous')}>
-                            <img src="/icons/slider_scroll_right.svg" alt="" />
-                        </button>
-                        <button type="button" onClick={goToNextSlide} aria-label={t('common.next')}>
-                            <img src="/icons/slider_scroll_right.svg" alt="" />
-                        </button>
-                    </div>
+                    <SliderControls onPrevious={goToPreviousSlide} onNext={goToNextSlide} controls="hero-slider" />
 
                     <div
                         className={'carousel-container'}
+                        id="hero-slider"
                         ref={carouselRef}
                         onScroll={updateCurrentSlideFromScroll}
                     >

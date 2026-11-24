@@ -42,7 +42,7 @@
 .websites-overview,
 .websites-overview-details,
 .websites-pricing,
-.websites-examples { display: flex; flex-direction: column; gap: 8px; }
+.websites-examples { display: flex; flex-direction: column; }
 
 .websites-panel {
   background: var(--grey-color-100);
@@ -52,9 +52,9 @@
 
 .websites-intro { text-align: center; }
 .websites-intro h1 {
-  font-size: 40px;
+  font-size: var(--h1-size);
   font-weight: 700;
-  line-height: 1.15;
+  line-height: var(--heading-line-height);
   margin: 0;
   text-transform: uppercase;
 }
@@ -98,16 +98,10 @@
   padding: 0 var(--desktop-padding) 120px;
 }
 
-.websites-section-title { color: var(--orange-bg-color); font-size: 40px; font-weight: 700; line-height: 1.15; margin: 0; text-align: center; text-transform: uppercase; }
+.websites-section-title { color: var(--orange-bg-color); font-size: var(--h2-size); font-weight: 700; line-height: var(--heading-line-height); margin: 0; text-align: center; text-transform: uppercase; }
 .websites-examples { position: relative; isolation: isolate; }
 .websites-examples::before { background: radial-gradient(ellipse, rgb(255 172 0 / .18), transparent 65%); content: ""; inset: 80px -40px 0; pointer-events: none; position: absolute; z-index: -1; }
-.websites-examples-header { display: flex; flex-direction: column; gap: 32px; }
-.websites-gallery-controls { display: flex; gap: 8px; justify-content: flex-end; padding-bottom: 16px; }
-.websites-gallery-controls button { align-items: center; background: var(--blue-color-3); border: 0; border-radius: 8px; cursor: pointer; display: flex; height: 40px; justify-content: center; width: 40px; }
-.websites-gallery-controls button img { height: 20px; width: 20px; }
-.websites-gallery-controls button:first-child img { transform: rotate(180deg); }
-.websites-gallery-controls button:disabled { opacity: .45; cursor: default; }
-.websites-gallery-controls button:focus-visible,
+.websites-examples-header { display: block; }
 .website-plan-choose:focus-visible { outline: 2px solid var(--orange-bg-color); outline-offset: 4px; }
 
 .websites-gallery { display: flex; gap: 8px; overflow-x: auto; overscroll-behavior-inline: contain; scroll-snap-type: x mandatory; scrollbar-width: none; }
@@ -166,7 +160,7 @@
   .websites-light-content { padding: 32px var(--mobile-padding) 0; }
   .websites-breadcrumbs { margin-bottom: 24px; font-size: 14px; }
   .websites-panel { padding: 24px 20px; }
-  .websites-intro h1, .websites-section-title { font-size: 30px; }
+
   .websites-intro p, .websites-upgrade p { font-size: 22px; }
   .websites-benefits { grid-template-columns: minmax(0, 1fr); }
   .websites-description p, .websites-benefit li { font-size: 18px; }

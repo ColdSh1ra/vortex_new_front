@@ -1,10 +1,9 @@
 import StickyHeading from './default/StickyHeading';
-import { useI18n } from '../context/ContentContext';
 import { useState } from 'react';
 import { useInitialContent } from '../context/ContentContext';
+import SliderControls from './default/SliderControls';
 
 function WhyVortexComponent() {
-  const { t } = useI18n();
   const content = useInitialContent()?.homepage.why_vortex_section ?? null;
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -30,24 +29,12 @@ function WhyVortexComponent() {
             <p>{content.section_description}</p>
           </header>
 
-          <div className="why-vortex-controls">
-            <button
-              type="button"
-              onClick={previousSlide}
-              disabled={currentSlide === 0}
-              aria-label={t('common.previous')}
-            >
-              <img src="/icons/slider_scroll_right.svg" alt="" />
-            </button>
-            <button
-              type="button"
-              onClick={nextSlide}
-              disabled={currentSlide === content.cards.length - 1}
-              aria-label={t('common.next')}
-            >
-              <img src="/icons/slider_scroll_right.svg" alt="" />
-            </button>
-          </div>
+          <SliderControls
+            onPrevious={previousSlide}
+            onNext={nextSlide}
+            previousDisabled={currentSlide === 0}
+            nextDisabled={currentSlide === content.cards.length - 1}
+          />
 
           <div className="why-vortex-carousel">
             <div

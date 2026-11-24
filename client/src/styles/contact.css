@@ -65,10 +65,10 @@
 }
 
 .contacts-intro h1 {
-  font-size: 40px;
+  font-size: var(--h1-size);
   font-weight: 700;
-  line-height: 1;
-  margin: 0 0 14px;
+  line-height: var(--heading-line-height);
+  margin: 0 0 var(--h2-gap);
   text-transform: uppercase;
 }
 
@@ -226,11 +226,6 @@
     border-radius: 12px;
     min-height: 165px;
     padding: 24px 20px;
-  }
-
-  .contacts-intro h1 {
-    font-size: 30px;
-    margin-bottom: 12px;
   }
 
   .contacts-intro p {

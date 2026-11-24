@@ -19,6 +19,12 @@
   --mobile-padding: 20px;
   --border-radius: 20px;
   --site-header-clearance: 90px;
+  /* One heading scale for every page: page titles (h1) and section titles (h2) grow fluidly
+     from 375px phones to 1440px desktops, so pages need no per-breakpoint font sizes. */
+  --h1-size: clamp(32px, 2.25vw + 23.6px, 56px);
+  --h2-size: clamp(28px, 1.13vw + 23.8px, 40px);
+  --heading-line-height: 1.1;
+  --h2-gap: clamp(20px, 1.13vw + 15.8px, 32px);
 }
 
 * {
@@ -40,6 +46,40 @@ body {
   position: relative;
 }
 
+/* Slider previous/next buttons (components/default/SliderControls.tsx), the same in every slider:
+   right-aligned with the content edge, directly above the slides. */
+.slider-controls {
+  display: flex;
+  gap: var(--gap-8);
+  justify-content: flex-end;
+  margin: var(--h2-gap) 0 16px;
+}
+.slider-controls button {
+  align-items: center;
+  background: var(--blue-color-3);
+  border: 1px solid rgb(255 255 255 / .08);
+  border-radius: 12px;
+  color: var(--orange-bg-color);
+  cursor: pointer;
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 200ms ease, opacity 200ms ease, transform 200ms ease;
+  width: 44px;
+}
+.slider-controls button:hover:not(:disabled) { background: var(--blue-color-2); }
+.slider-controls button:active:not(:disabled) { transform: scale(.96); }
+.slider-controls button:focus-visible { outline: 2px solid var(--orange-bg-color); outline-offset: 2px; }
+.slider-controls button:disabled { cursor: default; opacity: .4; }
+.slider-controls svg { display: block; flex-shrink: 0; }
+
+/* Main page and section titles wrap into even lines instead of leaving a single word last. */
+main h1,
+main h2 {
+  text-wrap: balance;
+}
+
 h1.heading,
 p.paragraph {
   margin: 0;
@@ -47,6 +87,10 @@ p.paragraph {
 
 .app-shell {
   min-height: 100vh;
+  /* Decorative glows (.radial-bg-container) are wider than a phone screen. body's clip is
+     propagated to the viewport, which still lets the page pan sideways (iOS Safari), so clip
+     here as well. clip, unlike hidden, keeps the sticky header working. */
+  overflow-x: clip;
 }
 
 .main-content {
@@ -569,7 +613,7 @@ div.p-absolute-element {
   .header.mobile-menu-active .header-full { animation: none; transform: none; }
 
   .mobile-menu-active .mobile-menu-panel {
-    align-items: center;
+    align-items: stretch;
     background-color: var(--blue-color-5);
     display: flex;
     flex-direction: column;
@@ -581,25 +625,56 @@ div.p-absolute-element {
     z-index: 1;
   }
 
-  .mobile-tecdoc-link { display: flex; margin-top: 18px; }
+  .mobile-tecdoc-link { align-self: flex-start; display: flex; margin-top: 18px; }
   .mobile-tecdoc-link img { border-radius: 8px; display: block; height: 34px; object-fit: contain; width: 121px; }
 
+  /* Full-width rows separated by hairlines; no item or submenu backgrounds. */
+  .mobile-menu-panel nav { width: 100%; }
   .mobile-nav-list {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 24px;
     list-style: none;
-    margin: 26px 0 28px;
+    margin: 12px 0 20px;
     padding: 0;
+    width: 100%;
   }
-
-  .mobile-nav-list .nav-link { font-size: 16px; line-height: 1; }
-  .mobile-nav-list .services-navigation { width: 100%; }
-  .mobile-nav-list .services-toggle { margin: 0 auto; }
-  .mobile-nav-list .services-panel { min-width: 0; padding-top: 16px; position: static; }
-  .mobile-nav-list .services-list { background: var(--blue-color-4); box-shadow: none; }
-  .mobile-nav-list .services-list a { font-size: 16px; }
+  .mobile-nav-list > li { border-bottom: 1px solid rgb(255 255 255 / .1); width: 100%; }
+  .mobile-nav-list > li:last-child { border-bottom: 0; }
+  .app-shell .mobile-nav-list .nav-link {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: space-between;
+    line-height: 1.2;
+    min-height: 56px;
+    padding: 0 4px;
+    text-align: left;
+    width: 100%;
+  }
+  .mobile-nav-list .nav-link:hover { text-decoration: none; }
+  .mobile-nav-list .nav-link[aria-current="page"],
+  .mobile-nav-list .services-toggle[aria-expanded="true"] { color: var(--orange-bg-color); }
+  .mobile-nav-list .nav-link:focus-visible { border-radius: 4px; outline: 2px solid var(--grey-color-100); outline-offset: -2px; }
+  .mobile-nav-list .services-toggle { margin: 0; }
+  .mobile-nav-list .services-toggle svg { height: 18px; width: 18px; }
+  .mobile-nav-list .services-panel { min-width: 0; padding: 0 0 8px; position: static; }
+  .mobile-nav-list .services-list { background: none; border: 0; border-radius: 0; box-shadow: none; padding: 0; }
+  .mobile-nav-list .services-list a {
+    background: none;
+    border-radius: 0;
+    color: rgb(255 255 255 / .78);
+    font-size: 16px;
+    font-weight: 500;
+    min-height: 48px;
+    padding: 0 4px 0 16px;
+    width: 100%;
+  }
+  .mobile-nav-list .services-list a:hover,
+  .mobile-nav-list .services-list a:focus-visible { background: none; color: #fff; }
+  .mobile-nav-list .services-list a[aria-current="page"] { background: none; color: var(--orange-bg-color); }
+  .mobile-nav-list .services-link-icon { display: none; }
   .mobile-menu-cta { border-bottom: 1px solid var(--grey-color-200); border-top: 1px solid var(--grey-color-200); padding: 18px 0; width: 100%; }
   .mobile-menu-cta .button { justify-content: center; width: 100%; }
   .mobile-social-links { border-bottom: 1px solid var(--grey-color-200); display: flex; gap: 20px; justify-content: center; padding: 18px 0; width: 100%; }

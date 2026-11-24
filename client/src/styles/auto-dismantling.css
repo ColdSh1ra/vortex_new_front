@@ -20,7 +20,7 @@
 
 .dismantling-hero { align-items: center; display: grid; gap: 24px; grid-template-columns: 1.1fr 1fr; padding: 56px 0 48px; }
 .dismantling-eyebrow { color: var(--blue-color-2); font-size: 14px; font-weight: 600; letter-spacing: .06em; margin: 0 0 20px; text-transform: uppercase; }
-.dismantling-hero h1 { font-size: clamp(40px, 4.2vw, 64px); font-weight: 700; line-height: 1.05; margin: 0; text-transform: uppercase; }
+.dismantling-hero h1 { font-size: var(--h1-size); font-weight: 700; line-height: var(--heading-line-height); margin: 0; text-transform: uppercase; }
 .dismantling-hero h1 > span { display: block; font-size: .7em; line-height: 1.12; margin-top: 12px; max-width: 600px; }
 .dismantling-lead { color: var(--blue-color-2); font-size: 20px; line-height: 1.5; margin: 24px 0 28px; max-width: 580px; }
 .dismantling-cta { align-items: center; background: var(--orange-bg-color); border-radius: 999px; color: var(--grey-dark-text); display: inline-flex; font-size: 16px; font-weight: 600; gap: 24px; min-height: 44px; padding: 8px 8px 8px 20px; text-decoration: none; }
@@ -34,7 +34,7 @@
 .dismantling-section-number { color: var(--blue-color-2); font-size: 16px; }
 .dismantling-section-links a > span:last-child { margin-left: auto; }
 
-.dismantling-page h2 { font-size: 40px; line-height: 1.1; margin: 0 0 20px; text-transform: uppercase; }
+.dismantling-page h2 { font-size: var(--h2-size); line-height: var(--heading-line-height); margin: 0 0 var(--h2-gap); text-transform: uppercase; }
 .dismantling-page h3 { font-size: 26px; line-height: 1.2; margin: 0 0 12px; }
 .dismantling-vehicle { align-items: center; background: #f1f2f4; border-radius: 20px; display: grid; gap: var(--dismantling-block-gap) 48px; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); padding: 40px; }
 .dismantling-record-art img { display: block; height: auto; margin: 0 auto; max-width: 380px; width: 100%; }
@@ -78,7 +78,7 @@
 #dismantling-vehicle, #dismantling-statuses, #dismantling-parts { scroll-margin-top: 80px; }
 
 @media (max-width: 1100px) {
-  .dismantling-hero h1 { font-size: 48px; }
+
   .dismantling-vehicle { gap: var(--dismantling-block-gap); padding: 28px; }
   .dismantling-method { padding: 24px; }
   .dismantling-section-links a { gap: 10px; padding: 16px; }
@@ -89,14 +89,14 @@
   .dismantling-light-content { padding-top: 32px; }
   .dismantling-breadcrumbs { font-size: 14px; padding-bottom: 20px; }
   .dismantling-hero { gap: 0; grid-template-columns: minmax(0, 1fr); padding: 36px 0 40px; }
-  .dismantling-hero h1 { font-size: 40px; }
+
   .dismantling-hero h1 > span { font-size: 30px; }
   .dismantling-eyebrow { font-size: 12px; margin-bottom: 16px; }
   .dismantling-lead { font-size: 18px; line-height: 1.45; margin-top: 20px; }
   .dismantling-hero-art { max-width: 380px; width: 100%; justify-self: center; }
   .dismantling-section-links { grid-template-columns: minmax(0, 1fr); }
   .dismantling-section-links a { min-height: 56px; padding: 16px; }
-  .dismantling-page h2 { font-size: 30px; }
+
   .dismantling-page h3 { font-size: 24px; }
   .dismantling-vehicle { grid-template-columns: minmax(0, 1fr); gap: var(--dismantling-block-gap); padding: 24px 20px; }
   .dismantling-record-art { grid-row: 2; }

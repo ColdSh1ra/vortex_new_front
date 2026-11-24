@@ -15,6 +15,8 @@ import { SOCIAL_LINKS } from '../../data/socialLinks';
 import { isCmsTargetVisible, visibleCmsMenu } from '../../utils/cmsContent';
 import type { CmsMenuItem } from '../../types/cmsContent';
 
+const PINNED_SCROLL_TOLERANCE = 40;
+
 function getMenuLinks(t: (key: string) => string, pricingPath: string, blogPath: string): NavigationLink[] { return [
     { name: t("nav.home"), path: "/" },
     { name: t("nav.pricing"), path: pricingPath },
@@ -36,6 +38,7 @@ function HeaderMain() {
   const fullHeaderRef = useRef<HTMLDivElement>(null);
   const compactButtonRef = useRef<HTMLButtonElement>(null);
   const compactRef = useRef(false);
+  const pinnedAtY = useRef(0);
   const scheduleClearance = useRef<() => void>(() => {});
   const location = useLocation();
   const activeHeading = useActiveSectionHeading(location.pathname + ':' + language);
@@ -68,7 +71,7 @@ function HeaderMain() {
   const privacyText = layout ? layout.privacy_text : t('common.privacy');
   const renderMenu = (mobile = false) => headerMenu.map(item => item.children
     ? <ServicesDropdown key={item.id} label={item.label} items={item.children.map(child=>({name:child.label,path:child.target!}))} onNavigate={mobile ? () => setIsMenuOpen(false) : undefined} />
-    : <li key={item.id}><Link className="nav-link" to={item.target!} onClick={mobile ? () => setIsMenuOpen(false) : undefined}>{item.label}</Link></li>);
+    : <li key={item.id}><Link className="nav-link" to={item.target!} aria-current={item.target === location.pathname ? 'page' : undefined} onClick={mobile ? () => setIsMenuOpen(false) : undefined}>{item.label}</Link></li>);
 
 
   useEffect(() => {
@@ -81,13 +84,13 @@ function HeaderMain() {
 
   useEffect(() => {
     let frame: number | null = null;
-    let lastY = window.scrollY;
     const measure = () => {
       frame = null;
       const y = Math.max(0, window.scrollY);
       setIsAtTop(y <= 1);
-      if (Math.abs(y - lastY) > 1) setIsPinnedOpen(false);
-      lastY = y;
+      // A tapped-open header stays open until the visitor really scrolls on. On phones a tap
+      // is followed by a few pixels of momentum or toolbar movement, which must not close it.
+      if (Math.abs(y - pinnedAtY.current) > PINNED_SCROLL_TOLERANCE) setIsPinnedOpen(false);
     };
     const schedule = () => { if (frame === null) frame = window.requestAnimationFrame(measure); };
     const closeOutside = (event: PointerEvent) => {
@@ -145,6 +148,7 @@ function HeaderMain() {
   useEffect(() => { scheduleClearance.current(); }, [isCompact]);
 
   const expandHeader = useCallback((keyboard: boolean) => {
+    pinnedAtY.current = Math.max(0, window.scrollY);
     setIsPinnedOpen(true);
     if (keyboard) window.requestAnimationFrame(() => {
       const selector = window.matchMedia('(max-width: 768px)').matches

@@ -53,11 +53,18 @@
   text-align: center;
 }
 
-.car-service-intro h1,
-.car-service-copy h2 {
-  font-size: 40px;
+.car-service-intro h1 {
+  font-size: var(--h1-size);
   font-weight: 700;
-  line-height: 1.15;
+  line-height: var(--heading-line-height);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.car-service-copy h2 {
+  font-size: var(--h2-size);
+  font-weight: 700;
+  line-height: var(--heading-line-height);
   margin: 0;
   text-transform: uppercase;
 }
@@ -99,7 +106,7 @@
 }
 
 .car-service-copy h2 {
-  margin-bottom: 20px;
+  margin-bottom: var(--h2-gap);
 }
 
 .car-service-text {
@@ -164,12 +171,7 @@
   background: #fff;
 }
 
-
 @media (max-width: 1024px) {
-  .car-service-intro h1,
-  .car-service-copy h2 {
-    font-size: 32px;
-  }
 
   .car-service-block { column-gap: 24px; }
 }
@@ -189,6 +191,6 @@
   .car-service-block { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .car-service-block-reverse .car-service-copy,
   .car-service-block-reverse .car-service-image { grid-column: auto; grid-row: auto; }
-  .car-service-copy h2 { font-size: 30px; margin-bottom: 16px; }
+
   .car-service-bottom-transition { height: 140px; }
 }

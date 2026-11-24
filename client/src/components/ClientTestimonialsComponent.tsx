@@ -3,9 +3,10 @@ import { imageSize } from '../utils/imageSize';
 import { localizedUrl } from '../seo/urls';
 import { useState } from 'react';
 import { useInitialContent, useI18n } from '../context/ContentContext';
+import SliderControls from './default/SliderControls';
 
 function ClientTestimonialsComponent() {
-  const { t, language } = useI18n();
+  const { language } = useI18n();
   const content = useInitialContent()?.homepage.client_testimonials_section ?? null;
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -28,24 +29,12 @@ function ClientTestimonialsComponent() {
         <div className="client-testimonials-wrapper">
           <StickyHeading>{content.section_title}</StickyHeading>
 
-          <div className="testimonials-controls">
-            <button
-              type="button"
-              onClick={previousSlide}
-              disabled={currentSlide === 0}
-              aria-label={t('common.previous')}
-            >
-              <img src="/icons/slider_scroll_right.svg" alt="" />
-            </button>
-            <button
-              type="button"
-              onClick={nextSlide}
-              disabled={currentSlide === content.reviews.length - 1}
-              aria-label={t('common.next')}
-            >
-              <img src="/icons/slider_scroll_right.svg" alt="" />
-            </button>
-          </div>
+          <SliderControls
+            onPrevious={previousSlide}
+            onNext={nextSlide}
+            previousDisabled={currentSlide === 0}
+            nextDisabled={currentSlide === content.reviews.length - 1}
+          />
 
           <div className="testimonials-carousel">
             <div

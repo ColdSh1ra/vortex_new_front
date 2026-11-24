@@ -103,11 +103,11 @@
   padding: 92px 0 88px;
 }
 
-.pricing-calculator-title{
+.pricing-calculator-title {
   color: var(--orange-bg-color);
-  font-size: 40px;
-  line-height: 1;
-  margin: 0 0 44px;
+  font-size: var(--h2-size);
+  line-height: var(--heading-line-height);
+  margin: 0 0 var(--h2-gap);
   text-align: center;
   text-transform: uppercase;
 }
@@ -397,11 +397,6 @@
 @media (max-width: 600px) {
   .app-shell .section-container.pricing-calculator-section{
     padding: 68px 0;
-  }
-
-  .pricing-calculator-title{
-    font-size: 34px;
-    margin-bottom: 34px;
   }
 
   .pricing-calculator-options,
