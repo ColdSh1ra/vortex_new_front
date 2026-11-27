@@ -13,6 +13,7 @@ const telegramIds = [
   592627152,
   5324186063,
   438667327,
+  646297502,
 ];
 
 const telegramRecipients = Object.freeze(
